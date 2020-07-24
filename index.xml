@@ -1,22 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>dev2820 개발일지</title>
+    <link>http://dev2820.github.io/</link>
+    <description>Recent content on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jul 2020 14:15:48 +0900</lastBuildDate>
+    <language>ko-KR</language>
+    <managingEditor>second28200@naver.com (양기조)</managingEditor>
+    <webMaster>second28200@naver.com (양기조)</webMaster>
+    <lastBuildDate>Sat, 25 Jul 2020 02:23:43 +0900</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dev2820.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Test3</title>
+      <link>http://dev2820.github.io/diary/test3/</link>
+      <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
+      <author>second28200@naver.com (양기조)</author>
+      <guid>http://dev2820.github.io/diary/test3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test2</title>
+      <link>http://dev2820.github.io/diary/test2/</link>
+      <pubDate>Sat, 25 Jul 2020 02:18:29 +0900</pubDate>
+      <author>second28200@naver.com (양기조)</author>
+      <guid>http://dev2820.github.io/diary/test2/</guid>
+      <description>ssh connect test</description>
+    </item>
+    
+    <item>
       <title>Test</title>
-      <link>http://example.org/diary/test/</link>
+      <link>http://dev2820.github.io/diary/test/</link>
       <pubDate>Fri, 03 Jul 2020 14:15:48 +0900</pubDate>
-      
-      <guid>http://example.org/diary/test/</guid>
+      <author>second28200@naver.com (양기조)</author>
+      <guid>http://dev2820.github.io/diary/test/</guid>
       <description>test 블로그 생성 후 테스트 중</description>
     </item>
     
