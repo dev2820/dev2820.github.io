@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>http://dev2820.github.io/tags/</loc>
+    <lastmod>2020-07-25T02:23:43+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://dev2820.github.io/categories/test/</loc>
     <lastmod>2020-07-25T02:23:43+09:00</lastmod>
   </url>
@@ -28,17 +33,8 @@
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/diary/test2/</loc>
-    <lastmod>2020-07-25T02:18:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/diary/test/</loc>
-    <lastmod>2020-07-03T14:15:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/</loc>
+    <loc>http://dev2820.github.io/tags/testdiary/</loc>
+    <lastmod>2020-07-25T02:23:43+09:00</lastmod>
   </url>
   
 </urlset>

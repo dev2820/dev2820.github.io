@@ -14,30 +14,14 @@
     
     
     <item>
-      <title>Test3</title>
+      <title>test 글 작성 중</title>
       <link>http://dev2820.github.io/diary/test3/</link>
       <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
       <author>second28200@naver.com (양기조)</author>
       <guid>http://dev2820.github.io/diary/test3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Test2</title>
-      <link>http://dev2820.github.io/diary/test2/</link>
-      <pubDate>Sat, 25 Jul 2020 02:18:29 +0900</pubDate>
-      <author>second28200@naver.com (양기조)</author>
-      <guid>http://dev2820.github.io/diary/test2/</guid>
-      <description>ssh connect test</description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>http://dev2820.github.io/diary/test/</link>
-      <pubDate>Fri, 03 Jul 2020 14:15:48 +0900</pubDate>
-      <author>second28200@naver.com (양기조)</author>
-      <guid>http://dev2820.github.io/diary/test/</guid>
-      <description>test 블로그 생성 후 테스트 중</description>
+      <description>-md 작성 테스트 중
+-h1 &amp;ndash;h2 &amp;mdash;h3 &amp;mdash;-h4
+ 목차   sub title1 sub title2 sub sub title  </description>
     </item>
     
   </channel>

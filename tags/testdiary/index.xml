@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Diaries on dev2820 개발일지</title>
-    <link>http://dev2820.github.io/diary/</link>
-    <description>Recent content in Diaries on dev2820 개발일지</description>
+    <title>test,diary on dev2820 개발일지</title>
+    <link>http://dev2820.github.io/tags/testdiary/</link>
+    <description>Recent content in test,diary on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (양기조)</managingEditor>
     <webMaster>second28200@naver.com (양기조)</webMaster>
     <lastBuildDate>Sat, 25 Jul 2020 02:23:43 +0900</lastBuildDate>
     
-	<atom:link href="http://dev2820.github.io/diary/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dev2820.github.io/tags/testdiary/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

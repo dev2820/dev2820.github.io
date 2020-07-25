@@ -8,9 +8,19 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (양기조)</managingEditor>
     <webMaster>second28200@naver.com (양기조)</webMaster>
+    <lastBuildDate>Sat, 25 Jul 2020 02:23:43 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>test,diary</title>
+      <link>http://dev2820.github.io/tags/testdiary/</link>
+      <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
+      <author>second28200@naver.com (양기조)</author>
+      <guid>http://dev2820.github.io/tags/testdiary/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
