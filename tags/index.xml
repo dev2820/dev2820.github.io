@@ -14,11 +14,20 @@
     
     
     <item>
-      <title>test,diary</title>
-      <link>http://dev2820.github.io/tags/testdiary/</link>
+      <title>diary</title>
+      <link>http://dev2820.github.io/tags/diary/</link>
       <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/testdiary/</guid>
+      <guid>http://dev2820.github.io/tags/diary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>http://dev2820.github.io/tags/test/</link>
+      <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/test/</guid>
       <description></description>
     </item>
     
