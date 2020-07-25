@@ -6,8 +6,8 @@
     <description>Recent content in test on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <managingEditor>second28200@naver.com (양기조)</managingEditor>
-    <webMaster>second28200@naver.com (양기조)</webMaster>
+    <managingEditor>second28200@naver.com (dev2820)</managingEditor>
+    <webMaster>second28200@naver.com (dev2820)</webMaster>
     <lastBuildDate>Sat, 25 Jul 2020 02:23:43 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/categories/test/index.xml" rel="self" type="application/rss+xml" />
@@ -17,11 +17,12 @@
       <title>test 글 작성 중</title>
       <link>http://dev2820.github.io/diary/test3/</link>
       <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
-      <author>second28200@naver.com (양기조)</author>
+      <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diary/test3/</guid>
-      <description>-md 작성 테스트 중
--h1 &amp;ndash;h2 &amp;mdash;h3 &amp;mdash;-h4
- 목차   sub title1 sub title2 sub sub title  </description>
+      <description>  md 작성 테스트 중
+  h1 &amp;ndash; h2 &amp;mdash; h3 &amp;mdash;- h4
+  hello hugo
+   title1   sub title1 sub title2 sub sub title  </description>
     </item>
     
   </channel>
