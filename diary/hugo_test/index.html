@@ -94,27 +94,41 @@
     <span class="title">차례</span>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#archetypes">archetypes</a></li>
+    <li><a href="#글머리">글머리</a></li>
+    <li><a href="#hugo로-build-하는-법">hugo로 build 하는 법</a></li>
+    <li><a href="#hugo로-글-싸는법">hugo로 글 싸는법</a>
+      <ul>
+        <li><a href="#archetypes">archetypes</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
   <section class="post-content">
-    <h1 id="글머리">글머리</h1>
+    <h2 id="글머리">글머리</h2>
 <p>지금 20만원짜리 똥 레노버 태블릿으로 원격연결해서 글을 써보고 있는데 답답해 미칠 것 같아서 지금 해놓은거 안까먹으려고 쓰는 글이다.</p>
 <p>연결이 일단 느리고 한글을 입력하고 스페이스바를 치면 스페이스바가 먼저 나오고 글이 입력된다. 미치고 환장할 노릇</p>
 <p>느린건 레노버 태블릿 램이 부족한건지 서버 돌리고 있는 노트북이 멀어서 그런건지 원래 원격ssh가 느린건지 알 수 없는데 제발 태블릿 문제였으면 좋겠다.
 태블릿 바꿔도 이모냥이면 노트북 대신 태블릿을 들고다니려는 내 계획이 무산된다. 제발</p>
-<h1 id="hugo로-build-하는-법">hugo로 build 하는 법</h1>
+<h2 id="hugo로-build-하는-법">hugo로 build 하는 법</h2>
 <p>hugo의 최상위 폴더로 가서 <code>hugo</code> 만 입력하면 된다.</p>
 <p>내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &lsquo;blog/hugo&rsquo; 여기 서 빌드하면 된다. hugo의 하위 폴더에서는 hugo 명령어가 먹지 않으니 주의</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~/blog/hugo
 hugo
-</code></pre></div><h1 id="hugo로-글-싸는법">hugo로 글 싸는법</h1>
-<p><code>hugo new [archetypes에 만들어 놓은 양식 이름]/[글 제목].md</code></p>
-<h2 id="archetypes">archetypes</h2>
+</code></pre></div><h2 id="hugo로-글-싸는법">hugo로 글 싸는법</h2>
+<p><code>hugo new [archetypes에 만들어 놓은 양식 이름]/[글 제목].md</code>
+혹은
+<code>hugo new [글 제목].md</code>
+이다.</p>
+<h3 id="archetypes">archetypes</h3>
 <p>hugo 최상위 폴더에는 <strong>archetypes</strong> 폴더가 있는데 이 폴더 안에 보면 <code>default.md</code> 파일이 있다. 뭐냐면</p>
 <pre><code>hugo new [아무이름].md
-</code></pre><p>이런 명령을 하면 <code>hugo/content</code> 위치에 <code>[아무이름].md</code> 의 파일이 생긴다. 바로 이 파일이 블로그에 올라갈 글 하나하나가 된다. default.md는 이 생성될 글의 default값을 저장할 파일이다. 더 자세하게 적고싶은데 운동가야해서 이만</p>
+</code></pre><p>이런 명령을 하면 <code>hugo/content</code> 위치에 <code>[아무이름].md</code> 의 파일이 생긴다. 바로 이 파일이 블로그에 올라갈 글 하나하나가 된다. default.md는 이 생성될 글의 default값을 저장할 파일이다.</p>
+<p>내용을 보여주고 싶지만 위에서 언급했듯 글쓰는 환경이 최악이라 생략하겠다.</p>
+<p>default.md 의 내용을 바꿔 기본 카테고리와 글의 커버 이지미 등을 바꿀 수 있다.</p>
+<p>default라는 이름에서 알 수 있듯 만약 post.md 라는 파일을 만든다면 포스트 타입의 글을 빠르게 작성할 수 있게된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new post/first_post.md
+</code></pre></div><p>이렇게 되면 <code>hugo/content/post/first_post.md</code>파일이 생성된다. 그리고 first_post.md 파일은 post.md 파일의 형식에 맞게 생성 된다.</p>
 
   </section>
   <div class="share">    
@@ -211,6 +225,12 @@ hugo
         </a>
       </li>
       
+      
+      <li>
+        <a href="http://dev2820.github.io/project/home_server/" rel="next">
+          <span>NAS 용 SPA만들기 (0)</span>
+        </a>
+      </li>
       
     </ul>
   </div>

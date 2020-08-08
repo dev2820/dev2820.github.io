@@ -8,10 +8,28 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Sat, 08 Aug 2020 15:25:11 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2020 18:20:55 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DIY</title>
+      <link>http://dev2820.github.io/tags/diy/</link>
+      <pubDate>Sat, 08 Aug 2020 18:20:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/diy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>project</title>
+      <link>http://dev2820.github.io/tags/project/</link>
+      <pubDate>Sat, 08 Aug 2020 18:20:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/project/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blog</title>

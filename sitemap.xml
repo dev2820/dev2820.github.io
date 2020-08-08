@@ -3,17 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://dev2820.github.io/tags/blog/</loc>
-    <lastmod>2020-08-08T15:25:11+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://dev2820.github.io/categories/</loc>
-    <lastmod>2020-08-08T15:25:11+09:00</lastmod>
+    <lastmod>2020-08-08T18:20:55+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://dev2820.github.io/</loc>
+    <lastmod>2020-08-08T18:20:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/diy/</loc>
+    <lastmod>2020-08-08T18:20:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/project/home_server/</loc>
+    <lastmod>2020-08-08T18:20:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/project/</loc>
+    <lastmod>2020-08-08T18:20:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/project/</loc>
+    <lastmod>2020-08-08T18:20:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/</loc>
+    <lastmod>2020-08-08T18:20:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/categories/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
+    <lastmod>2020-08-08T18:20:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/blog/</loc>
     <lastmod>2020-08-08T15:25:11+09:00</lastmod>
   </url>
   
@@ -24,11 +54,6 @@
   
   <url>
     <loc>http://dev2820.github.io/tags/hugo/</loc>
-    <lastmod>2020-08-08T15:25:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/</loc>
     <lastmod>2020-08-08T15:25:11+09:00</lastmod>
   </url>
   
