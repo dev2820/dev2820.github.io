@@ -136,8 +136,8 @@
     <div class="error-message">페이지를 찾을 수 없습니다.</div>
     <div class="error-description">링크가 변경되었을 수 있습니다.</div>
     <div class="go-other-page">
-      <button id="title"><a href="/">Go Home</a></button>
-      <button><a href="javascript:history.back();">Go Back</a></button>
+      <button id="title" onclick='goToUrl("\/");'><a href="/">Go Home</a></button>
+      <button onclick="javascript:history.back();"><a href="javascript:history.back();">Go Back</a></button>
     </div>
   </div>
 </main>
@@ -147,6 +147,7 @@
       <i class="fa fa-angle-double-up"></i>
       <span>위로</span>
     </button>
+    
     <span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
     <span>ALL RIGHTS RESERVED.</span>
   </footer>
