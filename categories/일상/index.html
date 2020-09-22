@@ -1,102 +1,229 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>일상  | dev2820 개발일지</title>
-  <meta name="description" content="dev2820의 개발일지 저장소 '일상'을 한 번 살펴보세요.">
-  <meta property="og:title" content="일상">
-  
-  <meta property="og:type" content="website">
-  
-  <meta property="og:description" content="dev2820의 개발일지 저장소 '일상'을 한 번 살펴보세요.">
-  <meta property="og:url" content="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/">
-  <meta property="og:site_name" content="dev2820 개발일지">
-  
-  <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
-  
-  
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="canonical" href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/">
-  <link rel="alternate" type="application/rss+xml" href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/index.xml" title="dev2820 개발일지" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/agate.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
-  <link rel="stylesheet" href="/css/styles.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  
-  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXXXXX-X');
-  </script>
-  
-  
-  <script type="text/javascript">
-  function toggle_visibility(id) {
-    var e = document.getElementById(id);
-    if (e.className === 'menu')
-      e.className = 'menu hidden';
-    else
-      e.className = 'menu';
-  }
-  </script>
-</head>
-<body>
-  <div class="navbar">    
-    <div class="logo">
-      <a href="/">
-        <img src="/images/logo.png" height="34px" />
-      </a>
-    </div>
-    <div class="burger">
-      <button onclick="toggle_visibility('menu')">
-        <i class="fa fa-bars" aria-hidden="true"></i> 메뉴
-      </button>
-    </div>
-    <div id="menu" class="menu hidden">
-      <ul>
-        <li><a href="/">#dev2820 개발일지</a></li>
-        <li><a href="/categories">#카테고리</a></li>
-        <li><a href="/tags">#태그</a></li>
-        <li><a href="/projects">#프로젝트</a></li>        
-      </ul>
-      <input class="search" id="search-input" type="search" placeholder="검색어" value="">
-    </div>
-  </div>
-  <div class="container">    
-<div class="container">
-  
-  <div class="post">
-  <div class="post-title">
-    <a href="http://dev2820.github.io/diary/hugo_test/" title="휴고에서 컨텐츠 지정하고 글 생성해보기">
-      <img src="/images/post-title-icon.png" />
-      <div class="post-meta">
-        <time>2020년 08월 08일 15시 25분</time>
-        <h1>휴고에서 컨텐츠 지정하고 글 생성해보기</h1>
-      </div>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일상  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 '일상'을 한 번 살펴보세요.">
+    <meta property="og:title" content="일상">
+    
+    <meta property="og:type" content="website">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 '일상'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/">
+    <link rel="alternate" type="application/rss+xml" href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/index.xml" title="dev2820 개발일지" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/agate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/homePage.css">
+    <link rel="stylesheet" href="/css/listPage.css">
+    <link rel="stylesheet" href="/css/notFound.css">
+    <link rel="stylesheet" href="/css/tags.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXX-X');
+    </script>
+    
+    
+    <script type="text/javascript">
+        function toggleAside(bool) {
+            let e = document.getElementById('aside');
+            if (e.classList.contains('hidden') && bool)
+                e.classList.remove('hidden');
+            else
+                e.classList.add('hidden');
+        }
+
+        function scrollToTop() {
+            let position =
+                document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+                scrollAnimation = setTimeout("scrollToTop()", 10);
+            } else clearTimeout(scrollAnimation);
+        }
+        function goToUrl(url) {
+            window.location.href = url;
+        }
+        window.onload = function () {
+            document.addEventListener('click', (event) => {
+                toggleAside(false);
+            });
+            document.getElementById('aside').addEventListener('click', (event) => {
+                event.stopPropagation();
+            })
+        }
+
+    </script>
+</head><body id="body"><div id="topbar" class="card">
+  <div class="logo">
+    <a href="/">
+      
+      <img src="/images/logo.png" height="32px" />
+      
     </a>
   </div>
-  
-  <div>
-    글머리 지금 20만원짜리 똥 레노버 태블릿으로 원격연결해서 글을 써보고 있는데 답답해 미칠 것 같아서 지금 해놓은거 안까먹으려고 쓰는 글이다.
-연결이 일단 느리고 한글을 입력하고 스페이스바를 치면 스페이스바가 먼저 나오고 글이 입력된다. 미치고 환장할 노릇
-느린건 레노버 태블릿 램이 부족한건지 서버 돌리고 있는 노트북이 멀어서 그런건지 원래 원격ssh가 느린건지 알 수 없는데 제발 태블릿 문제였으면 좋겠다. 태블릿 바꿔도 이모냥이면 노트북 대신 태블릿을 들고다니려는 내 계획이 무산된다. 제발
-hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 된다.
-    
-    <a href="/diary/hugo_test/" class="summary-more">더보기</a>
-    
+  <div class="burger">
+    <button onclick="event.stopPropagation(); toggleAside(true)">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </button>
   </div>
+</div><div id="aside" class="card hidden">
+    <div class="top">
+        <button onclick="event.stopPropagation(); toggleAside(false)">
+            <i class="fa fa-times fa-3x"></i>
+        </button>
+    </div>
+    <div class="profile"></div>
+    <div class="menu"></div>
+    <div class="profile">
+    
+    <img src="/images/ocean.jpg" height="150px" width="150px">
+    
+    <h2>dev2820</h2>
+    <h5>풀스텍 웹개발을 지향합니다</h5>
+    <h5>second28200@naver.com</h5>
 </div>
-
-  <hr class="summary-sep" />
+    <hr>
+    <div id="aside-menu">
+    <ul>
+        
+        <li><a href="/about">About me</a></li>
+        
+        <li><a href="/categories">Category</a></li>
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        <li><a href="/diaries">일상</a></li>
+        
+    </ul>
+    <hr>
+    <ul>
+        
+        <li><a href="http://dev2820.github.io/hugo_new_theme/">hugo_new_theme (0)</a></li>
+        
+        <li><a href="http://dev2820.github.io/nas_project/">Nas_project (1)</a></li>
+        
+        <li><a href="http://dev2820.github.io/diaries/">Diaries (2)</a></li>
+        
+    </ul>
+</div>
+</div>
+        <div id="content">
+<main>
+    <div class="taxonomy">
+        <h1>
+            카테고리:
+            
+            일상
+        </h1>
+    </div>
+    
+    <article class="summary card">
   
-</div>
-<div class="paging">
+  <div class="cover-image" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 270px),url('/images/ocean.jpg');">
+  
+    <div class="classification">
+      <div class="category">
+        
+        <h4>categories</h4>
+        
+           <a href="http://dev2820.github.io/categories/%ec%9d%bc%ec%83%81">일상</a>
+        
+      </div>
+      <div class="tags">
+        <h4>tags</h4>
+        <ul class="tag">
+          
+            <li><a href="http://dev2820.github.io/tags/blog/">#blog</a></li>
+          
+            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+          
+            <li><a href="http://dev2820.github.io/tags/longtesttagtest/">#longtesttagtest</a></li>
+          
+           외 6개의 태그 
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="cover-content">
+    <header onclick="goToUrl(&#34;http://dev2820.github.io/diaries/hugo_test/&#34;)">
+      
+      <img class="icon" src="/images/cover-icon.png" />
+      
+      <div class="title">
+        <div class="post-meta">Sat, Aug 8, 2020</div> 
+        <h2>휴고에서 컨텐츠 지정하고 글 생성해보기</h2>
+      </div>
+    </header>
+    <div class="content">hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다.
+내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &lsquo;blog/hugo&rsquo; 여기 서 빌드하면 됩니다. hugo의  …</div>
+    <div class="read-more"><a href="http://dev2820.github.io/diaries/hugo_test/">더 보기 →</a></div>
+  </div>
+
+</article>
+    <hr class="summary-sep" />
+    
+    <article class="summary card">
+  
+  <div class="cover-image" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 270px),url('/images/ocean.jpg');">
+  
+    <div class="classification">
+      <div class="category">
+        
+        <h4>categories</h4>
+        
+           <a href="http://dev2820.github.io/categories/%ec%9d%bc%ec%83%81">일상</a>
+        
+      </div>
+      <div class="tags">
+        <h4>tags</h4>
+        <ul class="tag">
+          
+            <li><a href="http://dev2820.github.io/tags/test/">#test</a></li>
+          
+            <li><a href="http://dev2820.github.io/tags/diary/">#diary</a></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="cover-content">
+    <header onclick="goToUrl(&#34;http://dev2820.github.io/diaries/test3/&#34;)">
+      
+      <img class="icon" src="/images/cover-icon.png" />
+      
+      <div class="title">
+        <div class="post-meta">Sat, Jul 25, 2020</div> 
+        <h2>test 글 작성 중</h2>
+      </div>
+    </header>
+    <div class="content">md 작성 테스트 중 h1 h2 h3 h4 h5 h6 &lt;p&gt;hello&lt;/p&gt;  hello hugo   title1   sub title1 sub title2 sub sub title  </div>
+    <div class="read-more"><a href="http://dev2820.github.io/diaries/test3/">더 보기 →</a></div>
+  </div>
+
+</article>
+    <hr class="summary-sep" />
+    
+    </div>
+    <div class="paging">
   
   <span class="page">
     페이지 1 / 1
@@ -104,16 +231,17 @@ hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하�
   
 </div>
 
-<div class="go-top">
-  <a href="#" class="go-top-button">
-    <i class="fa fa-angle-double-up"></i>
-    <span>위로</span>
-  </a>
-</div>
-<footer class="footer">
-  COPYRIGHT (C) <a href="https://blog.lulab.net">DONGGEUN,BANG (LUBANG).</a><br />
-  ALL RIGHTS RESERVED.
-</footer>
+</main>
+
+        </div>  <footer id="footer">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fa fa-angle-double-up"></i>
+      <span>위로</span>
+    </button>
+    <span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+    <span>ALL RIGHTS RESERVED.</span>
+  </footer>
 </body>
 </html>
-
+  </body>
+</html>
