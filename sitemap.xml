@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://dev2820.github.io/what_is_hugo/what_is_hugo1/</loc>
+    <lastmod>2020-09-23T21:30:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/categories/</loc>
+    <lastmod>2020-09-23T21:30:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/hugo/</loc>
+    <lastmod>2020-09-23T21:30:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/info/</loc>
+    <lastmod>2020-09-23T21:30:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/</loc>
+    <lastmod>2020-09-23T21:30:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</loc>
+    <lastmod>2020-09-23T21:30:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/categories/%ED%9C%B4%EA%B3%A0%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90/</loc>
+    <lastmod>2020-09-23T21:30:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/what_is_hugo/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://dev2820.github.io/about/</loc>
     <lastmod>2020-09-20T12:19:54+09:00</lastmod>
   </url>
@@ -20,11 +60,6 @@
   <url>
     <loc>http://dev2820.github.io/nas_project/</loc>
     <lastmod>2020-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/categories/</loc>
-    <lastmod>2020-09-18T18:20:55+09:00</lastmod>
   </url>
   
   <url>
@@ -48,22 +83,12 @@
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/tags/</loc>
-    <lastmod>2020-09-18T18:20:55+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://dev2820.github.io/tags/blog/</loc>
     <lastmod>2020-08-08T15:25:11+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://dev2820.github.io/diaries/</loc>
-    <lastmod>2020-08-08T15:25:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/hugo/</loc>
     <lastmod>2020-08-08T15:25:11+09:00</lastmod>
   </url>
   
@@ -84,11 +109,6 @@
   
   <url>
     <loc>http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/</loc>
-    <lastmod>2020-08-08T15:25:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</loc>
     <lastmod>2020-08-08T15:25:11+09:00</lastmod>
   </url>
   
