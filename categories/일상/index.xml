@@ -8,10 +8,22 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Sat, 08 Aug 2020 15:25:11 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 12:19:54 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>웹으로 즐기는 코딩 code-server</title>
+      <link>http://dev2820.github.io/diaries/code-server/</link>
+      <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/diaries/code-server/</guid>
+      <description>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &amp;lsquo;code-server&amp;rsquo; 라는게 있는 것을 알아서 지금 도커로 &amp;lsquo;code-server&#39;를 설치하고 돌려보는 중입니다. 지금 이 글도 &amp;lsquo;code-server&#39;로 쓰는 중&amp;hellip;
+대충 설치 방법은 이렇습니다.
+ code-server를 다운받는다. docker code-server 로 실행한다. (저의 경우 8080포트를 열어서 실행해줬습니다. 물론 포트포워딩이랑 방화벽 열어줘야합니다.)  정말 간단하죠? 허헣
+후기 써본 후기는 좋습니다! 속도도 빠르고 인터페이스도 vscode랑 똑같습니다. 심지어 vscode에서 사용가능한 모든 커멘드도 작동 합니다. extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</description>
+    </item>
     
     <item>
       <title>휴고에서 컨텐츠 지정하고 글 생성해보기</title>
