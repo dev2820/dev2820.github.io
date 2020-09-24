@@ -239,7 +239,7 @@ article.summary .read-more {
 }
 /* Profile */
 .profile {
-    height:100px;
+    height:10px;
     display:flex;
     flex-direction:column;
     justify-content:center;
