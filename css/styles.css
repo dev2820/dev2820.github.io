@@ -239,19 +239,19 @@ article.summary .read-more {
 }
 /* Profile */
 .profile {
-    height:10px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items: center;
 }
-.profile .cover {
+.profile div.cover {
     flex:1;
     margin:0 auto;
+    background-color:green;
 }
-.profile .cover img {
-    height:50px;
-    width:50px;
+.profile div.cover img {
+    height:70px;
+    width:70px;
     border-radius: 50%;
 }
 .profile h2 {
