@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo) 휴고에 대해 알아보자 on dev2820 개발일지</title>
+    <title>휴고에 대해 알아보자 on dev2820 개발일지</title>
     <link>http://dev2820.github.io/what_is_hugo/</link>
-    <description>Recent content in hugo) 휴고에 대해 알아보자 on dev2820 개발일지</description>
+    <description>Recent content in 휴고에 대해 알아보자 on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
@@ -14,12 +14,17 @@
     
     
     <item>
-      <title>[hugo] 휴고에 대해 알아보자(1)</title>
+      <title>[hugo] 휴고에 대해 알아보자 (1)</title>
       <link>http://dev2820.github.io/what_is_hugo/what_is_hugo1/</link>
       <pubDate>Wed, 23 Sep 2020 21:30:23 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/what_is_hugo/what_is_hugo1/</guid>
-      <description>글머리 </description>
+      <description>글머리 이 글은 Hugo(이하 휴고) 공식 홈페이지와 공식 홈페이지에서 소개하는 휴고에 대해 다루고 있습니다. 페이지 설명을 번역하며 휴고에 대해서 알아볼 것입니다.
+HUGO 홈페이지 공식 홈페이지
+홈페이지를 처음 접속하게 되면 보게되는 문구는 다음과 같습니다.
+ The world&amp;rsquo;s fastest framework for building websites
+ Hugo is one of the most popular open-source static site generators. With its amaing speed and flexibility, Hugo makes building websites fun again.
+  &amp;lsquo;웹사이트를 만드는데 있어 세계에서 가장 빠른 프레임 워크&amp;rsquo;</description>
     </item>
     
   </channel>
