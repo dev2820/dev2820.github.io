@@ -8,7 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Wed, 23 Sep 2020 21:30:23 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2020 20:09:17 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,9 +16,36 @@
     <item>
       <title>hugo</title>
       <link>http://dev2820.github.io/tags/hugo/</link>
-      <pubDate>Wed, 23 Sep 2020 21:30:23 +0900</pubDate>
+      <pubDate>Fri, 25 Sep 2020 20:09:17 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>휴고</title>
+      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
+      <pubDate>Fri, 25 Sep 2020 20:09:17 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>휴고 시작하기</title>
+      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Fri, 25 Sep 2020 20:09:17 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>휴고설치</title>
+      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0%EC%84%A4%EC%B9%98/</link>
+      <pubDate>Fri, 25 Sep 2020 20:09:17 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0%EC%84%A4%EC%B9%98/</guid>
       <description></description>
     </item>
     
@@ -28,15 +55,6 @@
       <pubDate>Wed, 23 Sep 2020 21:30:23 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/tags/info/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>휴고</title>
-      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
-      <pubDate>Wed, 23 Sep 2020 21:30:23 +0900</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
       <description></description>
     </item>
     

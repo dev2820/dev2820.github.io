@@ -8,23 +8,36 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Wed, 23 Sep 2020 21:30:23 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2020 20:09:17 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>휴고의_환경설정</title>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/</link>
+      <pubDate>Fri, 25 Sep 2020 20:09:17 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/</guid>
+      <description>이 글은 휴고의 설정값들에 대해 설명합니다. Configure Hugo https://gohugo.io/getting-started/configuration/ hugo의 기본 설정값들에 대한 페이지 입니다. Configuration File 휴고는 기본적으로 폴더의 루트에 존재하는 config.toml, config.yaml 또는 config.json 파일</description>
+    </item>
+    
+    <item>
+      <title>휴고_설치하기</title>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Fri, 25 Sep 2020 14:56:28 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</guid>
+      <description>이 글에서는 휴고 설치하는 법과 휴고가 생성하는 사이트의 폴더 구조에 대해 살펴볼 것입니다. Install Hugo 휴고 시작하기 https://gohugo.io/getting-started/ 휴고는 Go 컴파일러가 돌아가는 곳이면 어디에서든 작</description>
+    </item>
+    
+    <item>
       <title>[hugo] 휴고에 대해 알아보자 (1)</title>
-      <link>http://dev2820.github.io/what_is_hugo/what_is_hugo1/</link>
+      <link>http://dev2820.github.io/what_is_hugo/what_is_hugo/</link>
       <pubDate>Wed, 23 Sep 2020 21:30:23 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/what_is_hugo/what_is_hugo1/</guid>
-      <description>글머리 이 글은 Hugo(이하 휴고) 공식 홈페이지와 공식 홈페이지에서 소개하는 휴고에 대해 다루고 있습니다. 페이지 설명을 번역하며 휴고에 대해서 알아볼 것입니다.
-HUGO 홈페이지 공식 홈페이지
-홈페이지를 처음 접속하게 되면 보게되는 문구는 다음과 같습니다.
- The world&amp;rsquo;s fastest framework for building websites
- Hugo is one of the most popular open-source static site generators. With its amaing speed and flexibility, Hugo makes building websites fun again.
-  &amp;lsquo;웹사이트를 만드는데 있어 세계에서 가장 빠른 프레임 워크&amp;rsquo;</description>
+      <guid>http://dev2820.github.io/what_is_hugo/what_is_hugo/</guid>
+      <description>글머리 이 글은 Hugo(이하 휴고) 공식 홈페이지와 공식 홈페이지에서 소개하는 휴고에 대해 다루고 있습니다. 페이지 설명을 번역하며 휴고에 대해서 알아볼 것입니</description>
     </item>
     
     <item>
@@ -33,10 +46,7 @@ HUGO 홈페이지 공식 홈페이지
       <pubDate>Sat, 08 Aug 2020 15:25:11 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/hugo_test/</guid>
-      <description>hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다.
-내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &amp;lsquo;blog/hugo&amp;rsquo; 여기 서 빌드하면 됩니다. hugo의 하위 폴더에서는 hugo 명령어가 먹지 않으니 주의
-cd ~/blog/hugo hugo hugo 사용할 테마 정하는 방법 테마를 받아서 (github에서 clone) themes폴더에 저장하고 hugo 명령을 사용할 때 -t 옵션과 사용할 테마명을 입력해주면 됩니다.
-hugo -t [테마명] hugo로 글 쓰는법 hugo new [archetypes에 만들어 놓은 양식 이름]/[글 제목].</description>
+      <description>hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다. 내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &amp;lsquo;blog/hugo&amp;rsquo; 여기 서 빌드하면 됩니다. hugo</description>
     </item>
     
   </channel>

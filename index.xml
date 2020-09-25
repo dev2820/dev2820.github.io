@@ -14,17 +14,30 @@
     
     
     <item>
+      <title>휴고의_환경설정</title>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/</link>
+      <pubDate>Fri, 25 Sep 2020 20:09:17 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/</guid>
+      <description>이 글은 휴고의 설정값들에 대해 설명합니다. Configure Hugo https://gohugo.io/getting-started/configuration/ hugo의 기본 설정값들에 대한 페이지 입니다. Configuration File 휴고는 기본적으로 폴더의 루트에 존재하는 config.toml, config.yaml 또는 config.json 파일</description>
+    </item>
+    
+    <item>
+      <title>휴고_설치하기</title>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Fri, 25 Sep 2020 14:56:28 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</guid>
+      <description>이 글에서는 휴고 설치하는 법과 휴고가 생성하는 사이트의 폴더 구조에 대해 살펴볼 것입니다. Install Hugo 휴고 시작하기 https://gohugo.io/getting-started/ 휴고는 Go 컴파일러가 돌아가는 곳이면 어디에서든 작</description>
+    </item>
+    
+    <item>
       <title>[hugo] 휴고에 대해 알아보자 (1)</title>
-      <link>http://dev2820.github.io/what_is_hugo/what_is_hugo1/</link>
+      <link>http://dev2820.github.io/what_is_hugo/what_is_hugo/</link>
       <pubDate>Wed, 23 Sep 2020 21:30:23 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/what_is_hugo/what_is_hugo1/</guid>
-      <description>글머리 이 글은 Hugo(이하 휴고) 공식 홈페이지와 공식 홈페이지에서 소개하는 휴고에 대해 다루고 있습니다. 페이지 설명을 번역하며 휴고에 대해서 알아볼 것입니다.
-HUGO 홈페이지 공식 홈페이지
-홈페이지를 처음 접속하게 되면 보게되는 문구는 다음과 같습니다.
- The world&amp;rsquo;s fastest framework for building websites
- Hugo is one of the most popular open-source static site generators. With its amaing speed and flexibility, Hugo makes building websites fun again.
-  &amp;lsquo;웹사이트를 만드는데 있어 세계에서 가장 빠른 프레임 워크&amp;rsquo;</description>
+      <guid>http://dev2820.github.io/what_is_hugo/what_is_hugo/</guid>
+      <description>글머리 이 글은 Hugo(이하 휴고) 공식 홈페이지와 공식 홈페이지에서 소개하는 휴고에 대해 다루고 있습니다. 페이지 설명을 번역하며 휴고에 대해서 알아볼 것입니</description>
     </item>
     
     <item>
@@ -33,10 +46,7 @@ HUGO 홈페이지 공식 홈페이지
       <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/code-server/</guid>
-      <description>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &amp;lsquo;code-server&amp;rsquo; 라는게 있는 것을 알아서 지금 도커로 &amp;lsquo;code-server&#39;를 설치하고 돌려보는 중입니다. 지금 이 글도 &amp;lsquo;code-server&#39;로 쓰는 중&amp;hellip;
-대충 설치 방법은 이렇습니다.
- code-server를 다운받는다. docker code-server 로 실행한다. (저의 경우 8080포트를 열어서 실행해줬습니다. 물론 포트포워딩이랑 방화벽 열어줘야합니다.)  정말 간단하죠? 허헣
-후기 써본 후기는 좋습니다! 속도도 빠르고 인터페이스도 vscode랑 똑같습니다. 심지어 vscode에서 사용가능한 모든 커멘드도 작동 합니다. extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</description>
+      <description>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &amp;lsquo;code-server&amp;rsquo; 라는게 있는 것을 알아서 지금 도커로 &amp;lsquo;code-server&#39;를 설치하고 돌려</description>
     </item>
     
     <item>
@@ -45,14 +55,7 @@ HUGO 홈페이지 공식 홈페이지
       <pubDate>Sun, 20 Sep 2020 12:19:54 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/about/</guid>
-      <description>양기조(GI JO YANG)
-nickname: Dev2820
-웹개발을 위주로 하지만 필요에 따라 안드로이드도 합니다.
-컴퓨터를 전공하고 있습니다. 대학원은 안가요 안가
-디자인 + 풀스텍 을 쌓아 웹개발 유니콘이 되는 것이 목표지만 현실은 풀스텍 쌓는 것도 어렵군요.
-front: +++++++++++++++
-back: +++++
-desine: ++++++++</description>
+      <description>양기조(GI JO YANG) nickname: Dev2820 웹개발을 위주로 하지만 필요에 따라 안드로이드도 합니다. 컴퓨터를 전공하고 있습니다. 대학원은 안가요 안가 디자인 + 풀스텍 을 쌓아 웹개발</description>
     </item>
     
     <item>
@@ -61,8 +64,7 @@ desine: ++++++++</description>
       <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/nas_project/home_server/</guid>
-      <description>글머리 본디 이 글은 자작NAS를 만드는 전반적인 내용을 모두 담으려고 했으나 이 블로그를 자작NAS 설정을 마치고서야 집밖에서 SSH로 연결해 글을 쓰는 중이라 사진도 못넣고 양질의 글을 쓰지도 못하기 때문에 적당히 NAS를 만드는 과정은 생략하고 SPA를 만드는 과정만 담았습니다.
-프로젝트 개요 원래 쓰던 삼성노트북을 안쓰게되어 형을 주고 형이 쓰던 노트북을 받았는데 중고로 산데다 5년 정도 학대하던 노트북이라 느리고 발열이 심해 들고다니면서 쓰기는 어렵고 이참에 개인서버를 하나 만들어야겠다 싶어서 우분투를 깔고 NAS로 만들었다.</description>
+      <description>글머리 본디 이 글은 자작NAS를 만드는 전반적인 내용을 모두 담으려고 했으나 이 블로그를 자작NAS 설정을 마치고서야 집밖에서 SSH로 연결해 글을 쓰는 중이라 사</description>
     </item>
     
     <item>
@@ -71,10 +73,7 @@ desine: ++++++++</description>
       <pubDate>Sat, 08 Aug 2020 15:25:11 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/hugo_test/</guid>
-      <description>hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다.
-내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &amp;lsquo;blog/hugo&amp;rsquo; 여기 서 빌드하면 됩니다. hugo의 하위 폴더에서는 hugo 명령어가 먹지 않으니 주의
-cd ~/blog/hugo hugo hugo 사용할 테마 정하는 방법 테마를 받아서 (github에서 clone) themes폴더에 저장하고 hugo 명령을 사용할 때 -t 옵션과 사용할 테마명을 입력해주면 됩니다.
-hugo -t [테마명] hugo로 글 쓰는법 hugo new [archetypes에 만들어 놓은 양식 이름]/[글 제목].</description>
+      <description>hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다. 내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &amp;lsquo;blog/hugo&amp;rsquo; 여기 서 빌드하면 됩니다. hugo</description>
     </item>
     
     <item>
@@ -83,7 +82,7 @@ hugo -t [테마명] hugo로 글 쓰는법 hugo new [archetypes에 만들어 놓�
       <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/test3/</guid>
-      <description>md 작성 테스트 중 h1 h2 h3 h4 h5 h6 &amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt;  hello hugo   title1   sub title1 sub title2 sub sub title  </description>
+      <description>md 작성 테스트 중 h1 h2 h3 h4 h5 h6 &amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt; hello hugo title1 sub title1 sub title2 sub sub title</description>
     </item>
     
   </channel>

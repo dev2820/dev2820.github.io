@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴고_설치하기  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 '휴고_설치하기'을 한 번 살펴보세요.">
+    <meta property="og:title" content="휴고_설치하기">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2020-09-25">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 '휴고_설치하기'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="hugo">
+    
+    <meta property="og:tags" content="휴고">
+    
+    <meta property="og:tags" content="휴고 시작하기">
+    
+    <meta property="og:tags" content="휴고설치">
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/agate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/homePage.css">
+    <link rel="stylesheet" href="/css/listPage.css">
+    <link rel="stylesheet" href="/css/notFound.css">
+    <link rel="stylesheet" href="/css/tags.css">
+    <link rel="stylesheet" href="/css/markdown.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXX-X');
+    </script>
+    
+    
+    <script type="text/javascript">
+        function toggleAside(bool) {
+            let e = document.getElementById('aside');
+            if (e.classList.contains('hidden') && bool)
+                e.classList.remove('hidden');
+            else
+                e.classList.add('hidden');
+        }
+
+        function scrollToTop() {
+            let position =
+                document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+                scrollAnimation = setTimeout("scrollToTop()", 10);
+            } else clearTimeout(scrollAnimation);
+        }
+        function goToUrl(url) {
+            window.location.href = url;
+        }
+        window.onload = function () {
+            document.addEventListener('click', (event) => {
+                toggleAside(false);
+            });
+            document.getElementById('aside').addEventListener('click', (event) => {
+                event.stopPropagation();
+            })
+        }
+
+    </script>
+</head><body id="body"><div id="topbar" class="card">
+  <div class="logo">
+    <a href="/">
+      
+      <img src="/images/logo.png" height="32px" />
+      
+    </a>
+  </div>
+  <div class="burger">
+    <button onclick="event.stopPropagation(); toggleAside(true)">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+</div><div id="aside" class="card hidden">
+    <div class="top">
+        <button onclick="event.stopPropagation(); toggleAside(false)">
+            <i class="fa fa-times fa-3x"></i>
+        </button>
+    </div>
+    <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+    <h5>풀스텍 웹개발을 지향합니다</h5>
+</div>
+    <div id="aside-menu">
+    <ul>
+        <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+        <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(8)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/diaries/">Diaries <small>(3)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/what_is_hugo/">휴고에 대해 알아보자 <small>(3)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/hugo_new_theme/">hugo_new_theme <small>(0)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/nas_project/">Nas_project <small>(1)</small></a></li>
+        
+    </ul>
+</div>
+</div>  
+        <div id="content">
+<section id="main">
+  <h1 id="title">휴고_설치하기</h1>
+  <div>
+        <article class="content">
+           <p>이 글에서는 휴고 설치하는 법과 휴고가 생성하는 사이트의 폴더 구조에 대해 살펴볼 것입니다.</p>
+<h2 id="install-hugo">Install Hugo</h2>
+<p>휴고 시작하기 <a href="https://gohugo.io/getting-started/">https://gohugo.io/getting-started/</a></p>
+<p>휴고는 Go 컴파일러가 돌아가는 곳이면 어디에서든 작동합니다.
+그렇다고 Go를 설치할 필요가 있는 것은 아닙니다. precompiled binary(컴파일된 파일들을 말함)를 가져다 쓰세요. 휴고는 현재 컴파일된 바이너리 파일들을 다음과 같은 운영체제에서 지원합니다.</p>
+<ul>
+<li>맥OS 그리고 ARM</li>
+<li>윈도우</li>
+<li>리눅스</li>
+<li>OpenBSD</li>
+<li>FreeBSD</li>
+</ul>
+<p>휴고는 또한 Go toolchain(Go를 실행할 수 있는 환경을 말합니다.)이 돌아갈 수 있는 곳이라면 어디서든 컴파일을 할 수 있습니다.</p>
+<h3 id="quick-install">Quick Install</h3>
+<p>hugo를 설치하는 법에 대해 나와있는 페이지 입니다.</p>
+<p><strong>Binary(Cross-platform)</strong><br>
+<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>
+위 주소에서 받을 수 있는 바이너리 파일로 계속 전역적으로 쓸 수 있습니다. <code>/usr/local/bin</code> 에 까는 것이 보통입니다.</p>
+<p>근데 이런 것보다 패키지 관리자로 받는 것이 편하죠?</p>
+<p><strong>Docker</strong><br>
+도커는 Hugo에서 공식으로 지원하지 않습니다. 다만 다음 주소의 이미지를 사용하는것을 추천합니다.<br>
+<a href="https://hub.docker.com/r/klakegg/hugo/">https://hub.docker.com/r/klakegg/hugo/</a></p>
+<p><strong>Homebrew(macOS)</strong></p>
+<pre><code>brew install hugo
+</code></pre><p>brew가 없다면 다음 코드로 brew를 깔아줍니다.</p>
+<pre><code>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre><p><strong>MacPorts(macOS)</strong></p>
+<pre><code>port istall hugo
+</code></pre><p><strong>Chocolatey(Windows)</strong></p>
+<pre><code>choco install hugo -confirm
+</code></pre><p>또는 Sass/SCSS 를 사용가능한 &lsquo;extended&rsquo; 버전이 필요하다면 다음과 같이</p>
+<pre><code>choco install hugo-extended -confirm
+</code></pre><p><strong>Snap(Linux)</strong>
+sass/scss가 사용가능한 버전을 깔려면 다음과 같이</p>
+<pre><code>snap install hugo --channel=extended
+</code></pre><p>일반 버전은 다음과 같이</p>
+<pre><code>snap install hugo 
+</code></pre><p><strong>Debian &amp; Ubuntu</strong></p>
+<pre><code>sudo apt-get install hugo
+</code></pre><p>우분투 버전 18.04까지는 sass/scss 를 지원하지 않지만 19.04부터는 sass/scss를 지원한다고 합니다.</p>
+<p><strong>Fedora, Red Hat and CentOS</strong></p>
+<pre><code>sudo dnf install hugo
+</code></pre><p>대충 많이 쓰는 OS 위주로 정리했습니다. 이 밖에 사용하는 OS가 있다면 홈페이지 내용을 참조하시길 바랍니다.</p>
+<p><a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/</a></p>
+<h2 id="basic-usage">Basic Usage</h2>
+<p><a href="https://gohugo.io/getting-started/usage/">https://gohugo.io/getting-started/usage/</a></p>
+<p>잘 설치되었는지 확인하려면 다음 코드를 입력하면 됩니다.</p>
+<pre><code>hugo help
+</code></pre><p>대충 휴고에 대한 커맨드들이 뜨면 성공입니다.</p>
+<p>나머지는 휴고의 간단한 기본 사용에 대하여 기술하고 있는데 이는 나중에 다룰 내용들이라 읽어보실 분들만 읽어보시길 추천합니다.</p>
+<h2 id="directory-structure">Directory Structure</h2>
+<p><a href="https://gohugo.io/getting-started/directory-structure/">https://gohugo.io/getting-started/directory-structure/</a></p>
+<pre><code>hugo new site
+</code></pre><p>위 명령은 현재 위치에 다음과 같은 구조의 새로운 사이트를 만들어냅니다.</p>
+<pre><code>.
+├── archetypes
+├── config.toml
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+</code></pre><p>이것이 바로 새로 생길 사이트인데 각각 다음과 같습니다.</p>
+<h3 id="archetypes"><code>archetypes</code></h3>
+<p>우리는 새로운 컨텐츠를 <code>hugo new</code>명령을 통해 만들 수 있습니다. 기본적으로 Hugo는 새로운 컨텐츠 파일에 <code>date</code>,<code>title</code>,그리고 <code>draft = true</code>라는 내용을 넣어줍니다. 당신은 당신만의 archetypes를 만들어 컨텐츠의 front matter로 사용할 수 있습니다.</p>
+<p>이게 무슨 말인가 하면 우리는 archetypes 폴더에 기본적인 파일인 <code>default.md</code>를 가지고 있습니다. 이 default 파일은 다음과 같이 생겼습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/default.md&#39;
+---
+title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
+date: {{ .Date }}
+categories: []
+tags: []
+cover: &#34;&#34;
+draft: true
+---
+</code></pre></div><p>우리가 <code>hugo new test.md</code>라는 명령을 수행하면 <code>/content/</code>폴더에 <code>test.md</code>파일이 생성됩니다. 그리고 이 생성된 파일엔 <code>default.md</code> 와 같은 내용이 들어있습니다. 즉 <code>archetypes</code> 폴더는 생성할 글의 front matter와 디폴트로 들어갈 내용을 정해주는 틀이 들어가는 폴더입니다.</p>
+<p>이제 한번 archetypes 폴더에 <code>post.md</code>라는 파일을 만들고 다음과 같이 써봅시다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/post.md&#39;
+---
+title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
+date: {{ .Date }}
+categories: [&#34;post&#34;]
+tags: [&#34;포스트&#34;]
+cover: &#34;&#34;
+draft: true
+---
+</code></pre></div><p>그런 다음 <code>hugo new post/post1.md</code>라는 명령을 수행하면 다음과 같이 됩니다.</p>
+<ol>
+<li><code>/content/post/</code> 폴더와 <code>/content/post/post1.md</code> 파일이 생성된다.</li>
+<li>이 <code>post1.md</code> 파일은 다음과 같은 내용을 담는다.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/post.md&#39;
+---
+title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
+date: {{ .Date }}
+categories: [&#34;post&#34;]
+tags: [&#34;포스트&#34;]
+cover: &#34;&#34;
+draft: true
+---
+</code></pre></div><p>대충 archetypes 폴더를 어떻게 사용해야할지 감이 오시나요?
+정리하자면 archetypes는 생성할 글의 틀을 저장하는 공간입니다.</p>
+<h3 id="assets"><code>assets</code></h3>
+<p>이 폴더는 기본적으로 생성되지 않고 유저가 직접 만들어줘야 합니다.(그래서 위 폴더 목록에 없습니다.) Hugo Pipe들로 가공된 파일들이 저장됩니다. <code>.Permalink</code> 또는 <code>RelPermalink</code>가 사용된 파일들만이 출판되어 public 폴더안에 생성됩니다. 이 부분은 Hugo Pipes에 대해 다루면서 자세히 알려드리겠습니다.</p>
+<h3 id="config"><code>config</code></h3>
+<p>config 폴더는 기본적으로 생성되지 않고 유저가 직접 만들어줘야합니다. 혹은 config 폴더를 대신할 <code>config.toml</code> 파일이 존재합니다.</p>
+<p>휴고는 다양한 설정값을 가지고 있습니다. <code>config</code> 폴더는 JSON,YAML 또는 TOML 형식의 설정파일들을 저장하는 공간입니다. 딱히 다양한 설정파일들이나 환경에 대한 제어가 필요없다면 root에 위치한 <code>config.toml</code>파일 하나만으로도 충분합니다. 휴고는 다양한 환경변수를 제공하여 여러분이 원하는대로 사이트를 만들어줍니다. 이부분은 다음 글 Configure Hugo에서 더 자세히 알려드리겠습니다.</p>
+<h3 id="content"><code>content</code></h3>
+<p>여러분이 웹사이트에서 보여줄 모든 컨텐츠들이 저장될 공간입니다. 이 폴더의 최상위에 위치할 각 폴더들은 휴고에서 하나의 &lsquo;section'으로 판단합니다. 예를 들어 여러분의 사이트에 &lsquo;blog&rsquo;,&lsquo;articles&rsquo;,&lsquo;tutorials'라는 메인 섹션이 있다고 한다면 &lsquo;content/blog&rsquo;, &lsquo;content/articles&rsquo;, &lsquo;content/tutorials&rsquo; 이렇게 세 개의 폴더가 content 폴더 안에 존재한다는 뜻입니다. 휴고는 섹션을 컨텐츠의 기본타입(content types)으로 사용합니다.</p>
+<p>기본타입이 무엇인가 하면 만약 <code>content/blog/first.md</code> 파일이 있다고 하면 이 <code>first.md</code>파일의 타입은 <code>blog</code>가 된다는 뜻입니다. 마찬가지로 위 archetypes에서 설명했듯 <code>hugo new blog/second.md</code> 명령을 실행하면 휴고는 <code>second.md</code> 파일을 <code>blog</code> 타입으로 여겨 archetypes 폴더에서 <code>blog.md</code> 파일을 가져다 <code>second.md</code>파일을 생성합니다. 그리고 기본타입은 글이 어떤 형식으로 보일 것인가도 결정합니다.(이 형식을 정하는 방법은 나중에 나옵니다.)</p>
+<h3 id="data"><code>data</code></h3>
+<p>이 폴더는 여러분이 만들 웹사이트에 사용될 설정파일들이 저장되는 공간입니다. <code>config</code> 폴더와는 성격이 조금 다른게 <code>config</code> 폴더는 사이트 생성에 관해 기본적으로 저장된 설정값을 제어하는데 사용되는 반면 <code>data</code> 폴더는 hugo에 저장된 설정값이 아닌 사용자 임의의 설정값이 저장되는 공간입니다. 예를 들면 config 폴더에는 Author(저자),BaseURL(사이트 주소) 등등 Hugo에서 기본적으로 사용하는 값들이 저장되는 반면, data 폴더에는 사용자의 고양이 이름,가족 구성원 등 hugo에서 사용하지 않고 유저가 화면을 구성할 때 필요한 <strong>hugo 기본 설정값 외의</strong> 설정값을 만들어 저장하는 공간입니다. 말이 어려웠는데 요약하면 기본설정 외 추가적인 설정값을 저장하는 공간입니다.</p>
+<p>config 폴더와 마찬가지로 YAML,JSON,TOML 형식의 데이터를 저장할 수 있습니다.</p>
+<h3 id="layouts"><code>layouts</code></h3>
+<p>이 폴더는 사용자에게 보여줄 화면, 즉 html 파일들을 저장하는 공간입니다. 이 폴더에 홈페이지, taxonomy 페이지 등등이 포함됩니다. 처음엔 비어있습니다.</p>
+<h3 id="static"><code>static</code></h3>
+<p>정적인 컨텐츠를 저장하는 공간입니다. 이미지,CSS,JavaScript 등등이 들어갑니다. 휴고는 사이트를 생성할 때 이 폴더의 내용을 복사해서 사용합니다.</p>
+<p>다음 글에서는 휴고의 환경변수(설정값)들이 뭐가 있고 어떻게 설정하는지 알아보겠습니다.</p>
+
+        </article>
+  </div>
+</section>
+<aside id="meta">
+    <div>
+    <section>
+      <h4 id="date"> Fri Sep 25, 2020 </h4>
+      <h5 id="wordcount"> 2585 Words </h5>
+    </section>
+    
+    <ul>
+    tags
+    
+        <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">#휴고 시작하기</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0%EC%84%A4%EC%B9%98/">#휴고설치</a></li>
+   
+</ul>
+    </div>
+    <div>
+        
+          이전글<a class="previous" href="http://dev2820.github.io/what_is_hugo/what_is_hugo/"> [hugo] 휴고에 대해 알아보자 (1)</a>
+        
+        
+          다음글<a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/"> 휴고의_환경설정</a>
+        
+    </div>
+</aside>
+
+        </div>  <footer id="footer">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fa fa-angle-double-up"></i>
+      <span>위로</span>
+    </button>
+    
+    
+    <span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+    <span>ALL RIGHTS RESERVED.</span>
+  </footer>
+</body>
+</html>
+  </body>
+</html>

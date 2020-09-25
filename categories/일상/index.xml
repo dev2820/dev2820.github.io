@@ -19,10 +19,7 @@
       <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/code-server/</guid>
-      <description>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &amp;lsquo;code-server&amp;rsquo; 라는게 있는 것을 알아서 지금 도커로 &amp;lsquo;code-server&#39;를 설치하고 돌려보는 중입니다. 지금 이 글도 &amp;lsquo;code-server&#39;로 쓰는 중&amp;hellip;
-대충 설치 방법은 이렇습니다.
- code-server를 다운받는다. docker code-server 로 실행한다. (저의 경우 8080포트를 열어서 실행해줬습니다. 물론 포트포워딩이랑 방화벽 열어줘야합니다.)  정말 간단하죠? 허헣
-후기 써본 후기는 좋습니다! 속도도 빠르고 인터페이스도 vscode랑 똑같습니다. 심지어 vscode에서 사용가능한 모든 커멘드도 작동 합니다. extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</description>
+      <description>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &amp;lsquo;code-server&amp;rsquo; 라는게 있는 것을 알아서 지금 도커로 &amp;lsquo;code-server&#39;를 설치하고 돌려</description>
     </item>
     
     <item>
@@ -31,10 +28,7 @@
       <pubDate>Sat, 08 Aug 2020 15:25:11 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/hugo_test/</guid>
-      <description>hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다.
-내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &amp;lsquo;blog/hugo&amp;rsquo; 여기 서 빌드하면 됩니다. hugo의 하위 폴더에서는 hugo 명령어가 먹지 않으니 주의
-cd ~/blog/hugo hugo hugo 사용할 테마 정하는 방법 테마를 받아서 (github에서 clone) themes폴더에 저장하고 hugo 명령을 사용할 때 -t 옵션과 사용할 테마명을 입력해주면 됩니다.
-hugo -t [테마명] hugo로 글 쓰는법 hugo new [archetypes에 만들어 놓은 양식 이름]/[글 제목].</description>
+      <description>hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다. 내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &amp;lsquo;blog/hugo&amp;rsquo; 여기 서 빌드하면 됩니다. hugo</description>
     </item>
     
     <item>
@@ -43,7 +37,7 @@ hugo -t [테마명] hugo로 글 쓰는법 hugo new [archetypes에 만들어 놓�
       <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/test3/</guid>
-      <description>md 작성 테스트 중 h1 h2 h3 h4 h5 h6 &amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt;  hello hugo   title1   sub title1 sub title2 sub sub title  </description>
+      <description>md 작성 테스트 중 h1 h2 h3 h4 h5 h6 &amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt; hello hugo title1 sub title1 sub title2 sub sub title</description>
     </item>
     
   </channel>

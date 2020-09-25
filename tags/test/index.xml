@@ -19,10 +19,7 @@
       <pubDate>Sat, 08 Aug 2020 15:25:11 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/hugo_test/</guid>
-      <description>hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다.
-내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &amp;lsquo;blog/hugo&amp;rsquo; 여기 서 빌드하면 됩니다. hugo의 하위 폴더에서는 hugo 명령어가 먹지 않으니 주의
-cd ~/blog/hugo hugo hugo 사용할 테마 정하는 방법 테마를 받아서 (github에서 clone) themes폴더에 저장하고 hugo 명령을 사용할 때 -t 옵션과 사용할 테마명을 입력해주면 됩니다.
-hugo -t [테마명] hugo로 글 쓰는법 hugo new [archetypes에 만들어 놓은 양식 이름]/[글 제목].</description>
+      <description>hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다. 내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &amp;lsquo;blog/hugo&amp;rsquo; 여기 서 빌드하면 됩니다. hugo</description>
     </item>
     
     <item>
@@ -31,7 +28,7 @@ hugo -t [테마명] hugo로 글 쓰는법 hugo new [archetypes에 만들어 놓�
       <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/test3/</guid>
-      <description>md 작성 테스트 중 h1 h2 h3 h4 h5 h6 &amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt;  hello hugo   title1   sub title1 sub title2 sub sub title  </description>
+      <description>md 작성 테스트 중 h1 h2 h3 h4 h5 h6 &amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt; hello hugo title1 sub title1 sub title2 sub sub title</description>
     </item>
     
   </channel>

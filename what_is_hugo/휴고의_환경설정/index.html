@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴고의_환경설정  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 '휴고의_환경설정'을 한 번 살펴보세요.">
+    <meta property="og:title" content="휴고의_환경설정">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2020-09-25">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 '휴고의_환경설정'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="hugo">
+    
+    <meta property="og:tags" content="휴고">
+    
+    <meta property="og:tags" content="휴고 시작하기">
+    
+    <meta property="og:tags" content="휴고설치">
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/agate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/homePage.css">
+    <link rel="stylesheet" href="/css/listPage.css">
+    <link rel="stylesheet" href="/css/notFound.css">
+    <link rel="stylesheet" href="/css/tags.css">
+    <link rel="stylesheet" href="/css/markdown.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXX-X');
+    </script>
+    
+    
+    <script type="text/javascript">
+        function toggleAside(bool) {
+            let e = document.getElementById('aside');
+            if (e.classList.contains('hidden') && bool)
+                e.classList.remove('hidden');
+            else
+                e.classList.add('hidden');
+        }
+
+        function scrollToTop() {
+            let position =
+                document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+                scrollAnimation = setTimeout("scrollToTop()", 10);
+            } else clearTimeout(scrollAnimation);
+        }
+        function goToUrl(url) {
+            window.location.href = url;
+        }
+        window.onload = function () {
+            document.addEventListener('click', (event) => {
+                toggleAside(false);
+            });
+            document.getElementById('aside').addEventListener('click', (event) => {
+                event.stopPropagation();
+            })
+        }
+
+    </script>
+</head><body id="body"><div id="topbar" class="card">
+  <div class="logo">
+    <a href="/">
+      
+      <img src="/images/logo.png" height="32px" />
+      
+    </a>
+  </div>
+  <div class="burger">
+    <button onclick="event.stopPropagation(); toggleAside(true)">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+</div><div id="aside" class="card hidden">
+    <div class="top">
+        <button onclick="event.stopPropagation(); toggleAside(false)">
+            <i class="fa fa-times fa-3x"></i>
+        </button>
+    </div>
+    <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+    <h5>풀스텍 웹개발을 지향합니다</h5>
+</div>
+    <div id="aside-menu">
+    <ul>
+        <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+        <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(8)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/diaries/">Diaries <small>(3)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/what_is_hugo/">휴고에 대해 알아보자 <small>(3)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/hugo_new_theme/">hugo_new_theme <small>(0)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/nas_project/">Nas_project <small>(1)</small></a></li>
+        
+    </ul>
+</div>
+</div>  
+        <div id="content">
+<section id="main">
+  <h1 id="title">휴고의_환경설정</h1>
+  <div>
+        <article class="content">
+           <p>이 글은 휴고의 설정값들에 대해 설명합니다.</p>
+<h2 id="configure-hugo">Configure Hugo</h2>
+<p><a href="https://gohugo.io/getting-started/configuration/">https://gohugo.io/getting-started/configuration/</a></p>
+<p>hugo의 기본 설정값들에 대한 페이지 입니다.</p>
+<h3 id="configuration-file">Configuration File</h3>
+<p>휴고는 기본적으로 폴더의 루트에 존재하는 config.toml, config.yaml 또는 config.json 파일을 기본 사이트 설정 파일로 사용합니다.</p>
+<p>또한 사용자는 이 기본 설정 파일을 덮어씌울(override) 하나 또는 하나 이상의 사이트 설정파일을 <code>--config</code>옵션을 통해 정해줄 수 있습니다.</p>
+<pre><code>hugo --config debugconfig.toml
+hugo --config a.toml,b.toml,c.toml`
+</code></pre><p>루트에 <code>config.</code> 파일이 여러개 있는 경우 TOML,YAML,JSON 순서로 설정파일로 사용됩니다.</p>
+<h3 id="configuration">Configuration</h3>
+<p>Directory
+하나 이상의 설정 파일이 사용된다면, <code>config</code>폴더를 만들어 설정 파일들을 관리해줄 수 있습니다.</p>
+<pre><code>// config 폴더 예시
+
+├── config
+│   ├── _default
+│   │   ├── config.toml
+│   │   ├── languages.toml
+│   │   ├── menus.en.toml
+│   │   ├── menus.zh.toml
+│   │   └── params.toml
+│   ├── production
+│   │   ├── config.toml
+│   │   └── params.toml
+│   └── staging
+│       ├── config.toml
+│       └── params.toml
+</code></pre><ul>
+<li>사용할 설정들(<code>config.toml</code>에 담길 내용들)을 <code>languages.toml</code>, <code>parms.toml</code> 처럼 여러 파일에 분산시킬 수 있습니다.</li>
+<li>각 폴더는 유니크한 환경을 제공합니다.(즉 production 폴더의 config.toml이 staging 폴더의 config.toml에 간섭하지 않습니다.)</li>
+<li><code>menus.en.toml</code>, <code>menus.zh.toml</code> 처럼 언어권에 따라 다른 설정 파일을 사용할 수 있습니다.</li>
+</ul>
+<p>위와 같은 config를 만들었다고 할 때 staging 설정으로 만든 사이트가 필요하면 <code>hugo --environment staging</code>명령을 사용하면 됩니다. staging 폴더에 없는 설정값들은 _default 폴더의 설정값을 가져다 씁니다. 어떤 config를 사용할지 정하지 않으면 _default 폴더의 설정을 가져다 씁니다.</p>
+<h2 id="example-configuration">Example Configuration</h2>
+<p>다음은 <code>config</code>파일의 예시입니다. 예시는 toml 형식만 예로 들겠습니다. 나머지(yaml,json)은 사이트에 나와있는것을 직접 참고하시면  되겠습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">toml</span> <span style="color:#a6e22e">예시</span>
+
+<span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://yoursite.example.com/&#34;</span>
+<span style="color:#a6e22e">footnoteReturnLinkContents</span> = <span style="color:#e6db74">&#34;↩&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My Hugo Site&#34;</span>
+
+[<span style="color:#a6e22e">params</span>]
+  <span style="color:#a6e22e">AuthorName</span> = <span style="color:#e6db74">&#34;Jon Doe&#34;</span>
+  <span style="color:#a6e22e">GitHubUser</span> = <span style="color:#e6db74">&#34;spf13&#34;</span>
+  <span style="color:#a6e22e">ListOfFoo</span> = [<span style="color:#e6db74">&#34;foo1&#34;</span>, <span style="color:#e6db74">&#34;foo2&#34;</span>]
+  <span style="color:#a6e22e">SidebarRecentLimit</span> = <span style="color:#ae81ff">5</span>
+  <span style="color:#a6e22e">Subtitle</span> = <span style="color:#e6db74">&#34;Hugo is Absurdly Fast!&#34;</span>
+
+[<span style="color:#a6e22e">permalinks</span>]
+  <span style="color:#a6e22e">posts</span> = <span style="color:#e6db74">&#34;/:year/:month/:title/&#34;</span>
+</code></pre></div><p>위처럼 각 변수에 값을 입력해주면 되고 위에 기술되지 않은 값들은 default값이 사용됩니다. 또한 위 config 폴더에서 분류한 것처럼 네임스페이스별로 파일을 나눌 수 있습니다.
+<code>permalinks.toml</code> 파일을 만들어</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">permalinks</span>]
+  <span style="color:#a6e22e">posts</span> = <span style="color:#e6db74">&#34;/:year/:month/:title/&#34;</span>
+</code></pre></div><p>처럼 값을 입력하고 같은 위치에 파일을 넣어주면 됩니다.</p>
+<h2 id="all-configuration-settings">All Configuration Settings</h2>
+<p>이 다음부터는 봐도 아직은 이해가 되지 않을 것입니다. 그냥 훑어만 보고 다음에 다시와서 이해하는 페이지 되겠습니다. 별로 안궁금하면 그냥 넘기셔도 됩니다.</p>
+<p>여기서부터는 휴고에서 사용하는 기본 설정값들에 대해 설명합니다. 중요한 것들 위주로 설명하고 중요하지 않은 것들은 뺐습니다. 여기 없는 값들은 다음 링크에서 확인해 주시기 바랍니다.</p>
+<p><a href="https://gohugo.io/getting-started/configuration/#configure-build">https://gohugo.io/getting-started/configuration/#configure-build</a></p>
+<p>괄호안의 값은 default값 입니다.</p>
+<p><strong>archetypeDir(&ldquo;archetypes&rdquo;)</strong></p>
+<p>휴고가 어떤 폴더를 archetypes 폴더로 사용할지 정해주는 변수입니다.</p>
+<p><strong>assetDir(&ldquo;assets&rdquo;)</strong></p>
+<p>휴고가 어떤 폴더를 asset 폴더로 사용할지 정해주는 변수입니다.</p>
+<p><strong>baseURL</strong></p>
+<p>사이트의 호스팅주소를 저장하는 변수입니다.</p>
+<p><strong>markup</strong></p>
+<p>마크다운 렌더링 엔진을 설정해주는 네임스페이스입니다. default로 goldmark 엔진을 사용하고있고 blackfriday 엔진을 사용할 수도 있습니다. 그 밖에도 하이라이팅과 렌더링 설정을 정해줄 수 있습니다.자세한건 아래 링크를 참조하시면 됩니다.</p>
+<p><a href="https://gohugo.io/getting-started/configuration-markup">https://gohugo.io/getting-started/configuration-markup</a></p>
+<p><strong>buildDrafts(false)</strong></p>
+<p>사이트를 빌드할때 draft가 true로 된 파일들을 포함할지 결정하는 변수입니다.</p>
+<p><strong>buildExpired(false)</strong></p>
+<p>expire 기간을 넘긴 (즉 만료)파일들을 빌드할때 포함할지 결정하는 변수입니다.</p>
+<p><strong>buildFuture(false)</strong></p>
+<p>publishdate(출간일)이 아직 되지 않은 파일들을 빌드할때 포함할지 결정하는 변수입니다.</p>
+<p><strong>canonifyURLs(false)</strong></p>
+<p>상대주소를 절대주소로 변경할지 묻는 변수입니다.</p>
+<p><strong>contentDir(&ldquo;content&rdquo;)</strong></p>
+<p>content 폴더를 어느 폴더로 할지 결정하는 변수입니다.</p>
+<p><strong>dataDir(&ldquo;data&rdquo;)</strong></p>
+<p>data 폴더를 어느 폴더로 할지 결정하는 변수입니다.</p>
+<p><strong>defaultContentLanguage(&ldquo;en&rdquo;)</strong></p>
+<p>language indicator가 없을 때 어떤언어를 default로 컨텐츠를 표시할지 결정하는 변수입니다.</p>
+<p><strong>disableAliases(false)</strong></p>
+<p>가주소(해당 주소로 이동하면 다른 주소로 리다이렉트 되는 기능)기능을 막을지 물어보는 변수입니다.</p>
+<p><strong>disableKinds([])</strong></p>
+<p>특정 종류의 페이지 사용을 막습니다. 허용되고 있는 종류는 다음과 같습니다. &ldquo;page&rdquo;,&ldquo;home&rdquo;,&ldquo;section&rdquo;,&ldquo;taxonomy&rdquo;,&ldquo;term&rdquo;,&ldquo;RSS&rdquo;,&ldquo;sitemap&rdquo;,&ldquo;robotsTXT&rdquo;,&ldquo;404&rdquo;.</p>
+<p><strong>disableLiveReload(false)</strong></p>
+<p>true가 되면 개발시에 변경사항이 감지되면 화면이 자동으로 갱신되는 것을 막습니다.</p>
+<p><strong>disablePathToLower(false)</strong></p>
+<p>주소를 자동으로 소문자로 변환하지 않습니다. true가 되면 /Section/First.md 이런 주소도 가능해집니다. default는 이를 막습니다.</p>
+<p><strong>enableGitInfo(false)</strong></p>
+<p>만약 휴고 사이트가 git으로 버전관리 되고있다면 각 페이지에서 페이지의 .GitInfo를 사용할 수 있게 됩니다. 이는 Lastmod 파라미터를 해당 페이지가 커밋될 때 자동으로 갱신합니다.</p>
+<p><strong>enableRobotsTXT(false)</strong></p>
+<p><code>robots.txt</code>파일이 생성가능해집니다.</p>
+<p><strong>frontmatter</strong></p>
+<p>컨텐츠의 date,lastmod,publishDate,expiryDate에 어떤 날짜값을 할당해줄지 우선순위를 정하는 네임스페이스입니다. 자세한건 다음 링크를 참조해주세요.</p>
+<p><a href="https://gohugo.io/getting-started/configuration/#configure-front-matter">https://gohugo.io/getting-started/configuration/#configure-front-matter</a></p>
+<p><strong>googleAnalytics(&quot;&quot;)</strong></p>
+<p>google Analytics 트래킹 아이디가 있다면 입력해주면 됩니다.</p>
+<p><strong>hasCJKLanguage(false)</strong></p>
+<p>Chinese/Japanese/Korean 언어가 들어가면 true로 해줘야 요약이나 단어 수 새는 매커니즘이 제대로 작동합니다.</p>
+<p><strong>imaging</strong></p>
+<p>이미지 관련 설정 네임스페이스입니다.</p>
+<p><a href="https://gohugo.io/">https://gohugo.io/</a>
+content-management/image-processing/#image-processing-config</p>
+<p><strong>languages</strong></p>
+<p>언어 관련 설정 네임스페이스 입니다.</p>
+<p><a href="https://gohugo.io/content-management/multilingual/#configure-languages">https://gohugo.io/content-management/multilingual/#configure-languages</a></p>
+<p><strong>languageCode(&quot;&quot;)</strong></p>
+<p>RSS template이 어떤 언어를 default로 하는지 설정할때 쓰입니다. 우리는 &ldquo;ko-KR&rdquo; 이렇게 설정하면 됩니다.</p>
+<p><strong>layoutDir(&ldquo;layouts&rdquo;)</strong></p>
+<p>layout 폴더를 어떤 폴더로 할지 결정하는 변수입입다.</p>
+<p><strong>log(false)</strong></p>
+<p>로그를 남기는 것이 가능해집니다.</p>
+<p><strong>logFile(&quot;&quot;)</strong></p>
+<p>로그파일의 경로를 입력해주면 됩니다.</p>
+<p><strong>menu</strong></p>
+<p>사이트 메뉴 관련 옵션을 설정하는 네임스페이스입니다. 이부분에 대해서는 나중에 다루겠습니다.</p>
+<p><a href="https://gohugo.io/content-management/menus/#add-non-content-entries-to-a-menu">https://gohugo.io/content-management/menus/#add-non-content-entries-to-a-menu</a></p>
+<p><strong>paginate(10)</strong></p>
+<p>pagination이 샐 페이지당 요소 수 입니다. 그냥 한 페이지에 나올 summary 페이지의 수 라고 생각하시면 됩니다.</p>
+<p><strong>paginatePath(&ldquo;page&rdquo;)</strong></p>
+<p>pagination이 사용할 path입니다.
+ex) 다음페이지로 넘어가면 주소가 다음과 같이 됩니다. <a href="https://example.com/page/2">https://example.com/page/2</a></p>
+<p><strong>pemalinks</strong></p>
+<p>permalink에 대해 설정하는 네임스페이스 입니다. 이 부분도 추후 다루겠습니다.</p>
+<p><a href="https://gohugo.io/content-management/urls/#permalinks">https://gohugo.io/content-management/urls/#permalinks</a></p>
+<p><strong>publishDir(&ldquo;public&rdquo;)</strong></p>
+<p>사이트가 생성될 폴더를 결정하는 변수입니다.</p>
+<p><strong>related</strong></p>
+<p>연관있는 컨텐츠에 대한 세팅을 해주는 네임스페이스입니다. <a href="https://gohugo.io/content-management/related/#configure-related-content">https://gohugo.io/content-management/related/#configure-related-content</a></p>
+<p><strong>staticDir(&ldquo;static&rdquo;)</strong></p>
+<p>static 폴더는 어떤 폴더를 쓸지 결정해주는 변수입니다.</p>
+<p><strong>summaryLength(70)</strong></p>
+<p>요약본에 몇 단어 까지 사용할지 즉, 요약본의 사이즈를 결정하는 변수입니다.</p>
+<p><strong>taxonomies</strong></p>
+<p>어떻게 컨텐츠를 분류할지 세팅해주는 네임스페이스입니다.</p>
+<p><a href="https://gohugo.io/content-management/taxonomies#configure-taxonomies">https://gohugo.io/content-management/taxonomies#configure-taxonomies</a></p>
+<p><strong>theme(&quot;&quot;)</strong></p>
+<p>어떤 테마를 사용할지 입력하는 변수입니다. 여기 입력된 변수로 페이지가 빌드됩니다. 나중에 테마 사용법을 알려드리면서 다시 알려드리겠습니다.</p>
+<p><strong>themesDir(&ldquo;themes&rdquo;)</strong></p>
+<p>테마 폴더는 어떤 폴더를 쓸지 정해주는 변수입니다.</p>
+<p><strong>title(&quot;&quot;)</strong></p>
+<p>사이트 타이틀 변수입니다.
+브라우저 탭에 나올 사이트 이름으로 사용됩니다.</p>
+<p>후아 대충 이정도 있는것 같군요. 총 변경 가능한 설정값은 더 많습니다. 여기 없는 값이 필요하면 휴고 공식페이지를 확인해보세요.</p>
+<p>이번글은 전체를 다 읽어보기보단 두고두고 참고하면서 보시라고 만든 페이지 입니다.</p>
+<p>다음글은 CONTENT MANAGEMENT 로 찾아뵙겠습니다.</p>
+
+        </article>
+  </div>
+</section>
+<aside id="meta">
+    <div>
+    <section>
+      <h4 id="date"> Fri Sep 25, 2020 </h4>
+      <h5 id="wordcount"> 2480 Words </h5>
+    </section>
+    
+    <ul>
+    tags
+    
+        <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">#휴고 시작하기</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0%EC%84%A4%EC%B9%98/">#휴고설치</a></li>
+   
+</ul>
+    </div>
+    <div>
+        
+          이전글<a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/"> 휴고_설치하기</a>
+        
+        
+    </div>
+</aside>
+
+        </div>  <footer id="footer">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fa fa-angle-double-up"></i>
+      <span>위로</span>
+    </button>
+    
+    
+    <span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+    <span>ALL RIGHTS RESERVED.</span>
+  </footer>
+</body>
+</html>
+  </body>
+</html>
