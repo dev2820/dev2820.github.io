@@ -235,11 +235,11 @@ article.summary .content {
 article.summary .read-more {
     display:flex;
     flex-direction:row;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 /* Profile */
 .profile {
-    height:120px;
+    height:130px;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -248,11 +248,10 @@ article.summary .read-more {
 .profile div.cover {
     flex:1;
     margin:0 auto;
-    background-color:green;
 }
 .profile div.cover img {
-    height:70px;
-    width:70px;
+    height:80px;
+    width: 80px;
     border-radius: 50%;
 }
 .profile h2 {
