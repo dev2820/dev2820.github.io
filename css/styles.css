@@ -105,7 +105,7 @@ hr.summary-sep {
 /* Content*/
 #content {
     margin:0 auto;
-    
+    width: 90%;
     max-width:1200px;
     padding:50px;
     display:flex;
