@@ -114,7 +114,7 @@
     <ul>
         <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
         <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
-        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(9)</small></a></li>
+        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(10)</small></a></li>
         
         <li><a href="http://dev2820.github.io/what_is_hugo/">휴고에 대해 알아보자 <small>(4)</small></a></li>
         
@@ -133,11 +133,12 @@
   <div>
         <article class="content">
            <p>이번 글에서는 휴고의 컨텐츠 관리에 관해서 알아보겠습니다.</p>
+<p><a href="https://gohugo.io/content-management/">https://gohugo.io/content-management/</a></p>
 <h2 id="content-organization">Content Organization</h2>
 <p>휴고의 컨텐츠 조직화에 관한 페이지입니다.</p>
 <p><a href="https://gohugo.io/content-management/organization/">https://gohugo.io/content-management/organization/</a></p>
 <h3 id="page-bundles">page Bundles</h3>
-<p>휴고는 페이지별로 다른 설정, 다른 frontmatter 값을 줄 수 있고 페이지별로 컨텐츠 파일과 이미지폴더를 가질 수 있습니다.</p>
+<p>휴고는 페이지별로 다른 설정, 다른 front matter 값을 줄 수 있고 페이지별로 컨텐츠 파일과 이미지폴더를 가질 수 있습니다.</p>
 <pre><code>/content
 ├ 1-logo.png
 ├ _index.md
@@ -158,7 +159,7 @@
         └ post2.md     
 </code></pre><p>단 홈페이지는 여러 페이지를 가질 수 없습니다.(다른 파일들은 가능합니다.)</p>
 <h3 id="organization-of-content-source">Organization of Content Source</h3>
-<p>휴고에서 <code>content</code>폴더의 탑레벨 폴더들은 의미를 가집니다. (<code>content/&lt;DIRECTORIES&gt;</code>) 이 폴더들은 내부에 속한 컨텐츠들에 어떤 layout이 사용될지 사용됩니다. 이는 section에 대해 설명할 때 더 자세히 다루겠습니다.</p>
+<p>휴고에서 <code>content</code>폴더의 각 폴더들은 의미를 가집니다. (<code>content/&lt;DIRECTORIES&gt;</code>) 이 폴더들은 내부에 속한 컨텐츠들에 어떤 layout이 사용될지 사용됩니다. 이는 section에 대해 설명할 때 더 자세히 다루겠습니다.</p>
 <p>추가적인 설정이 따로 없으면 컨텐츠의 내용들은 다음과 같은 경로에 매치됩니다.</p>
 <pre><code>.
 └── content
@@ -174,9 +175,10 @@
         └── second.md      // &lt;- https://example.com/quote/second/
 </code></pre><p>위 예제는 <code>config</code>파일에 <code>baseURL = &quot;https://example.com&quot;</code>이라고 정의 된 경우 입니다. 페이지는 baseURL을 기반으로 만들어집니다.</p>
 <h3 id="index-pages-_indexmd">Index Pages: _index.md</h3>
-<p><code>_index.md</code>는 휴고에서 특별한 역할을 합니다. 이 문서는 여러분의 list 템플릿에서 쓸 front matter와 내용을 저장하는 문서입니다.</p>
+<p><code>_index.md</code>는 휴고에서 특별한 역할을 합니다. 이 문서는 여러분의 list template에서 쓸 front matter와 내용을 저장하는 문서입니다. template은 화면에 보일 layout입니다. list template은 이란 section,taxonomies 같이 무언가 나열하는 화면요소의 layout을 말합니다. 예를 들면 블로그의 &lsquo;맛집&rsquo; 카테고리 페이지에 들어가면 &lsquo;맛집'과 관련된 글들이 주르륵 나열되잖아요? 이건 list template에 &lsquo;맛집&rsquo; 카테고리 정보글들을 모아 만들어진 페이지 인겁니다. 이는 템플릿을 설명하면서 더 자세히 다루겠습니다.</p>
 <p>여러분은 홈페이지와 각 컨텐츠 section,taxonomies, 그리고 taxonomy terms마다 하나의 <code>_index.md</code> 파일을 둘 수 있습니다.</p>
-<p>다음 예시를 보시죠</p>
+<p>다음 예시를 보시죠
+빌드전</p>
 <pre><code>.         url
 .       ⊢--^-⊣
 .        path    slug
@@ -184,7 +186,83 @@
 .           filepath
 .       ⊢------^------⊣
 content/posts/_index.md
-</code></pre><p>위와 같이 content 폴더 아래 posts라는 폴더가 있다고 합시다. hugo는 이 posts 폴더를 하나의 섹션으로 취급합니다.</p>
+</code></pre><p>위와 같이 content 폴더 아래 posts라는 폴더가 있다고 합시다. hugo는 이 posts 폴더를 하나의 섹션으로 취급하고 섹션의 index 페이지를 만듦니다.</p>
+<p>빌드후</p>
+<pre><code>                     url (&quot;/posts/&quot;)
+                    ⊢-^-⊣
+       baseurl      section(&quot;posts&quot;)
+⊢--------^---------⊣⊢-^-⊣
+        permalink
+⊢----------^-------------⊣
+https://example.com/posts/index.html
+</code></pre><p>따라서 여러분이 /posts/ 로 접근하게되면 posts의 섹션페이지(index.html)을 볼 수 있습니다. <code>content/posts/_index.md</code>파일은 이 섹션페이지의 메타데이터가 됩니다. <code>_index.md</code> 파일에 <code>title:post페이지</code>라고 저장하면 섹션페이지에서 title을 가져올때 &lsquo;post페이지&rsquo; 라는 문구를 가져오게 되는겁니다. <code>_index.md</code> 파일의 용도를 아시겠죠?</p>
+<p>참고로 섹션페이지에서는 이 <code>_index.md</code>파일 내용을 <code>.Site.GetPage</code> function을 통해 불러올 수 있습니다.</p>
+<h3 id="single-pages-in-sections">Single Pages in Sections</h3>
+<p>섹션의 각 컨텐츠 파일은 single page template에 따라 생성됩니다.</p>
+<p>포스트 섹션에 다음과 같은 컨텐츠가 있다고 합시다.</p>
+<pre><code>                   path (&quot;posts/my-first-hugo-post.md&quot;)
+.       ⊢-----------^------------⊣
+.      section        slug
+.       ⊢-^-⊣⊢--------^----------⊣
+content/posts/my-first-hugo-post.md
+</code></pre><p>사이트를 빌드하고 나면 다음과 같은 파일이 생성됩니다.</p>
+<pre><code>url (&quot;/posts/my-first-hugo-post/&quot;)
+                   ⊢------------^----------⊣
+       baseurl     section     slug
+⊢--------^--------⊣⊢-^--⊣⊢-------^---------⊣
+                 permalink
+⊢--------------------^---------------------⊣
+https://example.com/posts/my-first-hugo-post/index.html
+</code></pre><p>이 index.html은 single page template에 따라 만들어지고 &lsquo;/posts/my-first-hugo-post/&rsquo; 주소로 접근하면 읽을 수 있게됩니다.</p>
+<p>single page template, list page template을 커스텀 하는 방법은 template 관련 글에서 다루겠습니다.</p>
+<h3 id="paths-explained">Paths Explained</h3>
+<p>위에서 예시를 들면서 각 페이지로의 주소가 어떤 구조로 되어있는지 나왔는데 이 부분에 대한 디테일한 설명을 하겠습니다.</p>
+<pre><code>url (&quot;/posts/my-first-hugo-post/&quot;)
+                   ⊢------------^----------⊣
+       baseurl     section     slug
+⊢--------^--------⊣⊢-^--⊣⊢-------^---------⊣
+                 permalink
+⊢--------------------^---------------------⊣
+https://example.com/posts/my-first-hugo-post/index.html
+</code></pre><p>특정 컨텐츠는 baseUrl+section+slug 를 절대주소로 가지게 됩니다.
+또한 section+slug를 url이라 하며 상대주소를 나타냅니다. 이 url은 front matter로 바꿀 수 있습니다.
+<strong>section</strong><br>
+주소의 <code>section</code>부분은 컨텐츠가 어떤 타입인지 결정합니다. 타입에 따라 layout을 다르게 주는 등 컨텐츠별로 개성을 줄 수 있습니다. 특정 컨텐츠가 어떤 <code>section</code>에 속하는지는 <code>/content</code> 폴더 내에 컨텐츠가 어디 위치하는지에 따라 결정됩니다. 이 <code>section</code>은 front matter 값으로 덮어씌울 수 없습니다.</p>
+<p><strong>slug</strong>
+슬러그는 <code>section</code> 내에서 해당 컨텐츠로 가는 주소입니다. 이 <code>slug</code>는 컨텐츠파일의 이름(<code>lollapalooza.md</code>파일이라면 lollapalooza가 slug가 됩니다.) 또는 컨텐츠에 정해둔 front matter값으로 덮어씌울 수 있습니다.</p>
+<h3 id="override-destination-paths-via-front-matter">Override Destination Paths via Front Matter</h3>
+<p>휴고는 특정 컨텐츠로의 주소를 front matter로 덮어씌울 수 있습니다. <code>content/posts/my-post.md</code> 컨텐츠가 있다면 이 컨텐츠로의 주소는 기본적으로 <code>example.com/posts/my-post/</code>가 됩니다.</p>
+<p><strong>slug</strong>
+front matter 값으로 slug를 넣어주면 해당 컨텐츠로의 slug가 덮어씌워집니다.</p>
+<pre><code>content/post/old-post.md
+---
+title: A new post with the filename old-post.md
+slug: &quot;new-post&quot;
+---
+</code></pre><p>my-post.md의 front matter를 위와 같이 주게되면 우리는 사이트가 빌드되면 다음 주소에서 my-post의 글을 보게됩니다.</p>
+<pre><code>example.com/posts/new-post/
+</code></pre><p><strong>section</strong>
+section은 오로지 <code>content</code>폴더 어디에 위치하는지에 따라 결정되며 front matter로 바꿀 수 없습니다.</p>
+<p><strong>type</strong>
+컨텐츠의 타입을 정해 해당 컨텐츠는 다른 layout을 가지도록 설정해줄 수 있습니다.</p>
+<pre><code>content/posts/my-post.md
+
+---
+title: My Post
+type: new
+layout: mylayout
+---
+</code></pre><p>my-post 컨텐츠는 <code>layouts/new/mylayout.html</code> 템플릿에 따라 생성됩니다.</p>
+<p><strong>url</strong>
+<code>section</code>은 바꿀 수 없지만 해당 컨텐츠로의 경로를 통째로 지정해줄 수는 있습니다.</p>
+<pre><code>content/posts/old-url.md
+---
+title: Old URL
+url: /blog/new-url/
+---
+</code></pre><p>이제 <code>old-url</code>컨텐츠로가는 주소는 다음과 같아집니다.</p>
+<pre><code>https://example.com/blog/new-url/
+</code></pre><p>url은 반드시 baseURL 경로로부터 시작해야합니다.(즉 <code>/</code> 로 시작해야합니다.)</p>
 
         </article>
   </div>
@@ -193,7 +271,7 @@ content/posts/_index.md
     <div>
     <section>
       <h4 id="date"> Sat Sep 26, 2020 </h4>
-      <h5 id="wordcount"> 656 Words </h5>
+      <h5 id="wordcount"> 2421 Words </h5>
     </section>
     
     <ul>

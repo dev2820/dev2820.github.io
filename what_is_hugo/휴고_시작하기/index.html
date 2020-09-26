@@ -112,7 +112,7 @@
     <ul>
         <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
         <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
-        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(9)</small></a></li>
+        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(10)</small></a></li>
         
         <li><a href="http://dev2820.github.io/what_is_hugo/">휴고에 대해 알아보자 <small>(4)</small></a></li>
         
@@ -196,7 +196,7 @@ sass/scss가 사용가능한 버전을 깔려면 다음과 같이</p>
 <h3 id="archetypes"><code>archetypes</code></h3>
 <p>우리는 새로운 컨텐츠를 <code>hugo new</code>명령을 통해 만들 수 있습니다. 기본적으로 Hugo는 새로운 컨텐츠 파일에 <code>date</code>,<code>title</code>,그리고 <code>draft = true</code>라는 내용을 넣어줍니다. 당신은 당신만의 archetypes를 만들어 컨텐츠의 front matter로 사용할 수 있습니다.</p>
 <p>이게 무슨 말인가 하면 우리는 archetypes 폴더에 기본적인 파일인 <code>default.md</code>를 가지고 있습니다. 이 default 파일은 다음과 같이 생겼습니다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/default.md&#39;
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">// &#39;/archetypes/default.md&#39;
 ---
 title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
 date: {{ .Date }}
@@ -207,7 +207,7 @@ draft: true
 ---
 </code></pre></div><p>우리가 <code>hugo new test.md</code>라는 명령을 수행하면 <code>/content/</code>폴더에 <code>test.md</code>파일이 생성됩니다. 그리고 이 생성된 파일엔 <code>default.md</code> 와 같은 내용이 들어있습니다. 즉 <code>archetypes</code> 폴더는 생성할 글의 front matter와 디폴트로 들어갈 내용을 정해주는 틀이 들어가는 폴더입니다.</p>
 <p>이제 한번 archetypes 폴더에 <code>post.md</code>라는 파일을 만들고 다음과 같이 써봅시다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/post.md&#39;
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">// &#39;/archetypes/post.md&#39;
 ---
 title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
 date: {{ .Date }}
@@ -221,7 +221,7 @@ draft: true
 <li><code>/content/post/</code> 폴더와 <code>/content/post/post1.md</code> 파일이 생성된다.</li>
 <li>이 <code>post1.md</code> 파일은 다음과 같은 내용을 담는다.</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/post.md&#39;
+<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">// &#39;/archetypes/post.md&#39;
 ---
 title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
 date: {{ .Date }}
@@ -230,7 +230,8 @@ tags: [&#34;포스트&#34;]
 cover: &#34;&#34;
 draft: true
 ---
-</code></pre></div><p>대충 archetypes 폴더를 어떻게 사용해야할지 감이 오시나요?
+</code></pre></div><p>여기서 archetypes가 만든 &lsquo;&mdash; ~ &mdash;&rsquo; 부분을 문서의 front matter 라고 합니다. 앞으로 자주 나오는 용어이니 기억하셔야합니다.</p>
+<p>대충 archetypes 폴더를 어떻게 사용해야할지 감이 오시나요?
 정리하자면 archetypes는 생성할 글의 틀을 저장하는 공간입니다.</p>
 <h3 id="assets"><code>assets</code></h3>
 <p>이 폴더는 기본적으로 생성되지 않고 유저가 직접 만들어줘야 합니다.(그래서 위 폴더 목록에 없습니다.) Hugo Pipe들로 가공된 파일들이 저장됩니다. <code>.Permalink</code> 또는 <code>RelPermalink</code>가 사용된 파일들만이 출판되어 public 폴더안에 생성됩니다. 이 부분은 Hugo Pipes에 대해 다루면서 자세히 알려드리겠습니다.</p>
@@ -315,7 +316,7 @@ draft = true인 파일을 포함해 서버를 엽니다.
     <div>
     <section>
       <h4 id="date"> Fri Sep 25, 2020 </h4>
-      <h5 id="wordcount"> 3371 Words </h5>
+      <h5 id="wordcount"> 3425 Words </h5>
     </section>
     
     <ul>
