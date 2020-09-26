@@ -112,11 +112,11 @@
     <ul>
         <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
         <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
-        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(8)</small></a></li>
+        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(9)</small></a></li>
         
-        <li><a href="http://dev2820.github.io/diaries/">Diaries <small>(3)</small></a></li>
+        <li><a href="http://dev2820.github.io/what_is_hugo/">휴고에 대해 알아보자 <small>(4)</small></a></li>
         
-        <li><a href="http://dev2820.github.io/what_is_hugo/">휴고에 대해 알아보자 <small>(3)</small></a></li>
+        <li><a href="http://dev2820.github.io/diaries/"> <small>(4)</small></a></li>
         
         <li><a href="http://dev2820.github.io/hugo_new_theme/">hugo_new_theme <small>(0)</small></a></li>
         
@@ -247,6 +247,65 @@ draft: true
 <p>이 폴더는 사용자에게 보여줄 화면, 즉 html 파일들을 저장하는 공간입니다. 이 폴더에 홈페이지, taxonomy 페이지 등등이 포함됩니다. 처음엔 비어있습니다.</p>
 <h3 id="static"><code>static</code></h3>
 <p>정적인 컨텐츠를 저장하는 공간입니다. 이미지,CSS,JavaScript 등등이 들어갑니다. 휴고는 사이트를 생성할 때 이 폴더의 내용을 복사해서 사용합니다.</p>
+<h2 id="commands">Commands</h2>
+<p>대표적으로 필요한 휴고 명령어들을 모았습니다. 모든 명령어는 다음 사이트에서 확인하면 됩니다.</p>
+<p><a href="https://gohugo.io/commands/">https://gohugo.io/commands/</a></p>
+<h3 id="hugo">hugo</h3>
+<pre><code>hugo [flags]
+</code></pre><p>사이트를 빌드하는 명령입니다.</p>
+<p>대표적인 옵션은 다음과 같습니다.</p>
+<pre><code>hugo -D ------ draft = true 인 파일도 빌드합니다.
+
+hugo -E ------ expired인 파일도 빌드합니다.
+
+hugo -F ------ 출간예정인 파일도 빌드합니다.
+
+hugo -h ----- 휴고 도움말
+
+hugo -t string ------ 특정 테마로 사이트를 빌드합니다.
+</code></pre><h3 id="hugo-config">hugo config</h3>
+<pre><code>hugo config 
+</code></pre><p>휴고의 설정 파일 정보를 나열합니다.</p>
+<h3 id="hugo-config-mounts">hugo config mounts</h3>
+<pre><code>hugo config mounts
+</code></pre><p>휴고의 기본폴더들이 어느 폴더에 매치되는지 알려줍니다.
+config 파일에서 archetypes를 &lsquo;archetypes'폴더가 아니라 다른 이름의 폴더로 대신할 수 있게 설정가능했죠? 이 명령어는 그래서 어느 폴더가 어느 폴더로 연결됐는지 한눈에 확인시켜줍니다.</p>
+<h3 id="hugo-envhugo-version">hugo env,hugo version</h3>
+<pre><code>hugo env
+</code></pre><p>휴고 버전과 빌드 환경을 알려줍니다(OS,ARCH,GOVERSION)</p>
+<pre><code>hugo version
+</code></pre><p>휴고의 버전만 알려줍니다.</p>
+<h3 id="hugo-list">hugo list</h3>
+<p>가지고 있는 컨텐츠를 나열합니다.</p>
+<pre><code>hugo list all ----- 모든 컨텐츠 나열
+
+hugo list drafts ----- draft = true 인 뫼든 컨텐츠 나열
+
+hugo list expired ----- expired 된 모든 컨텐츠 나열
+
+hugo list future ------ 미래애 출판 예정인 컨텐츠 나열
+</code></pre><h3 id="hugo-new">hugo new</h3>
+<pre><code>hugo new [path] [flags]
+
+ex) hugo new test.md
+</code></pre><p>새로 컨텐츠를 생성합니다. 새로 생성된 컨텐츠는 자동으로 날짜와 타이틀을 생성합니다.(archetypes에 따라서 말이죠)</p>
+<p><code>-k</code> 옵션으로 만들 컨텐츠의 kind를 설정해 줄 수 있습니다. 어떤 kind가 있는지는 나중에 살펴보겠습니다.</p>
+<h3 id="hugo-new-site">hugo new site</h3>
+<pre><code>hugo new site [path] [flags]
+</code></pre><p>새 사이트의 뼈대를 만들어주는 명령입니다.</p>
+<p><code>-f</code>옵션으로 config와 frontmatter로 어떤 포멧(JSON,TOML,YAML)을 사용할지 정해줄 수 있습니다.</p>
+<p>예시</p>
+<pre><code>hugo new site -f json
+</code></pre><p>기본포멧은 toml 입니다.</p>
+<h3 id="hugo-new-theme">hugo new theme</h3>
+<pre><code>hugo new theme [name] [flags]
+</code></pre><p>사이트를 빌드하는데 쓸 새 테마의 뼈대를 만들어줍니다.</p>
+<h3 id="hugo-server">hugo server</h3>
+<pre><code>hugo server [flags]
+</code></pre><p>생성한 컨텐츠를 시연해볼 임시 서버를 열어줍니다. 기본주소는 <code>localhost:1313</code>이고 이 주소로 접속해보면 빌드될 사이트의 모습을 미리볼 수 있어 개발에 용의합니다.</p>
+<pre><code>hugo server -D 
+draft = true인 파일을 포함해 서버를 엽니다. 
+</code></pre><h2 id="마무리">마무리</h2>
 <p>다음 글에서는 휴고의 환경변수(설정값)들이 뭐가 있고 어떻게 설정하는지 알아보겠습니다.</p>
 
         </article>
@@ -256,7 +315,7 @@ draft: true
     <div>
     <section>
       <h4 id="date"> Fri Sep 25, 2020 </h4>
-      <h5 id="wordcount"> 2585 Words </h5>
+      <h5 id="wordcount"> 3371 Words </h5>
     </section>
     
     <ul>

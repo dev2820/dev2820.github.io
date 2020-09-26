@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test 용페이지 on dev2820 개발일지</title>
+    <link>http://dev2820.github.io/diaries/test/</link>
+    <description>Recent content in test 용페이지 on dev2820 개발일지</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>second28200@naver.com (dev2820)</managingEditor>
+    <webMaster>second28200@naver.com (dev2820)</webMaster>
+    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://dev2820.github.io/diaries/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
