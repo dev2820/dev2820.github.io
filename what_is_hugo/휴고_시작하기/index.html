@@ -196,7 +196,20 @@ sass/scss가 사용가능한 버전을 깔려면 다음과 같이</p>
 <h3 id="archetypes"><code>archetypes</code></h3>
 <p>우리는 새로운 컨텐츠를 <code>hugo new</code>명령을 통해 만들 수 있습니다. 기본적으로 Hugo는 새로운 컨텐츠 파일에 <code>date</code>,<code>title</code>,그리고 <code>draft = true</code>라는 내용을 넣어줍니다. 당신은 당신만의 archetypes를 만들어 컨텐츠의 front matter로 사용할 수 있습니다.</p>
 <p>이게 무슨 말인가 하면 우리는 archetypes 폴더에 기본적인 파일인 <code>default.md</code>를 가지고 있습니다. 이 default 파일은 다음과 같이 생겼습니다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/default.md&#39;
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/default.md&#39;
 ---
 title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
 date: {{ .Date }}
@@ -205,9 +218,24 @@ tags: []
 cover: &#34;&#34;
 draft: true
 ---
-</code></pre></div><p>우리가 <code>hugo new test.md</code>라는 명령을 수행하면 <code>/content/</code>폴더에 <code>test.md</code>파일이 생성됩니다. 그리고 이 생성된 파일엔 <code>default.md</code> 와 같은 내용이 들어있습니다. 즉 <code>archetypes</code> 폴더는 생성할 글의 front matter와 디폴트로 들어갈 내용을 정해주는 틀이 들어가는 폴더입니다.</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>우리가 <code>hugo new test.md</code>라는 명령을 수행하면 <code>/content/</code>폴더에 <code>test.md</code>파일이 생성됩니다. 그리고 이 생성된 파일엔 <code>default.md</code> 와 같은 내용이 들어있습니다. 즉 <code>archetypes</code> 폴더는 생성할 글의 front matter와 디폴트로 들어갈 내용을 정해주는 틀이 들어가는 폴더입니다.</p>
 <p>이제 한번 archetypes 폴더에 <code>post.md</code>라는 파일을 만들고 다음과 같이 써봅시다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/post.md&#39;
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/post.md&#39;
 ---
 title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
 date: {{ .Date }}
@@ -216,12 +244,27 @@ tags: [&#34;포스트&#34;]
 cover: &#34;&#34;
 draft: true
 ---
-</code></pre></div><p>그런 다음 <code>hugo new post/post1.md</code>라는 명령을 수행하면 다음과 같이 됩니다.</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>그런 다음 <code>hugo new post/post1.md</code>라는 명령을 수행하면 다음과 같이 됩니다.</p>
 <ol>
 <li><code>/content/post/</code> 폴더와 <code>/content/post/post1.md</code> 파일이 생성된다.</li>
 <li>이 <code>post1.md</code> 파일은 다음과 같은 내용을 담는다.</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/post.md&#39;
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">// &#39;/archetypes/post.md&#39;
 ---
 title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
 date: {{ .Date }}
@@ -230,7 +273,9 @@ tags: [&#34;포스트&#34;]
 cover: &#34;&#34;
 draft: true
 ---
-</code></pre></div><p>여기서 archetypes가 만든 &lsquo;&mdash; ~ &mdash;&rsquo; 부분을 문서의 front matter 라고 합니다. 앞으로 자주 나오는 용어이니 기억하셔야합니다.</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>여기서 archetypes가 만든 &lsquo;&mdash; ~ &mdash;&rsquo; 부분을 문서의 front matter 라고 합니다. 앞으로 자주 나오는 용어이니 기억하셔야합니다.</p>
 <p>대충 archetypes 폴더를 어떻게 사용해야할지 감이 오시나요?
 정리하자면 archetypes는 생성할 글의 틀을 저장하는 공간입니다.</p>
 <h3 id="assets"><code>assets</code></h3>
@@ -316,7 +361,7 @@ draft = true인 파일을 포함해 서버를 엽니다.
     <div>
     <section>
       <h4 id="date"> Fri Sep 25, 2020 </h4>
-      <h5 id="wordcount"> 3425 Words </h5>
+      <h5 id="wordcount"> 3452 Words </h5>
     </section>
     
     <ul>
