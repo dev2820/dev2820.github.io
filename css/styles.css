@@ -102,6 +102,11 @@ hr.summary-sep {
     margin:auto 0;
     background:none;
 }
+#aside .aside-sep {
+    width:80%;
+    height:2px;
+    margin:3px 0;
+}
 /* Content*/
 #content {
     margin:0 auto;

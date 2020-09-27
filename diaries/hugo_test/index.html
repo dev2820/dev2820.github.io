@@ -111,6 +111,7 @@
     <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
     <h5>풀스텍 웹개발을 지향합니다</h5>
 </div>
+    <hr class="aside-sep">
     <div id="aside-menu">
     <ul>
         <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
@@ -136,12 +137,12 @@
            <h2 id="hugo로-build-하는-법">hugo로 build 하는 법</h2>
 <p>hugo의 최상위 폴더로 가서 <code>hugo</code> 만 입력하면 됩니다.</p>
 <p>내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &lsquo;blog/hugo&rsquo; 여기 서 빌드하면 됩니다. hugo의 하위 폴더에서는 hugo 명령어가 먹지 않으니 주의</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~/blog/hugo
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8be9fd;font-style:italic">cd</span> ~/blog/hugo
 hugo
 </code></pre></div><h2 id="hugo-사용할-테마-정하는-방법">hugo 사용할 테마 정하는 방법</h2>
 <p>테마를 받아서 (github에서 clone) themes폴더에 저장하고
 hugo 명령을 사용할 때 <code>-t</code> 옵션과 사용할 테마명을 입력해주면 됩니다.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo -t <span class="o">[</span>테마명<span class="o">]</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo -t <span style="color:#ff79c6">[</span>테마명<span style="color:#ff79c6">]</span>
 </code></pre></div><h2 id="hugo로-글-쓰는법">hugo로 글 쓰는법</h2>
 <p><code>hugo new [archetypes에 만들어 놓은 양식 이름]/[글 제목].md</code>
 혹은
@@ -149,33 +150,33 @@ hugo 명령을 사용할 때 <code>-t</code> 옵션과 사용할 테마명을 �
 입니다.</p>
 <h3 id="archetypes">archetypes</h3>
 <p>hugo 최상위 폴더에는 <strong>archetypes</strong> 폴더가 있는데 이 폴더 안에 보면 <code>default.md</code> 파일이 있습니다. 이 default.md 파일이 글을 쓸 때 기본 템플릿이 됩니다.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">archetypes/default.md 파일
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">archetypes/default.md 파일
 ---
-title: <span class="s2">&#34;{{ replace .Name &#34;</span>-<span class="s2">&#34; &#34;</span> <span class="s2">&#34; | title }}&#34;</span>
-date: <span class="o">{{</span> .Date <span class="o">}}</span>
-categories: <span class="o">[]</span>
-tags: <span class="o">[]</span>
-cover: <span class="s2">&#34;&#34;</span>
-draft: <span class="nb">true</span>
+title: <span style="color:#f1fa8c">&#34;{{ replace .Name &#34;</span>-<span style="color:#f1fa8c">&#34; &#34;</span> <span style="color:#f1fa8c">&#34; | title }}&#34;</span>
+date: <span style="color:#ff79c6">{{</span> .Date <span style="color:#ff79c6">}}</span>
+categories: <span style="color:#ff79c6">[]</span>
+tags: <span style="color:#ff79c6">[]</span>
+cover: <span style="color:#f1fa8c">&#34;&#34;</span>
+draft: <span style="color:#8be9fd;font-style:italic">true</span>
 ---
 
 </code></pre></div><pre><code>hugo new [아무이름].md
 </code></pre><p>위와 같은 명령을 하면 <code>hugo/content</code> 위치에 <code>[아무이름].md</code> 의 파일이 생깁니다. 바로 이 파일이 블로그에 올라갈 글 하나하나가 됩니다.</p>
 <p>default.md 의 내용을 바꿔 기본 카테고리와 글의 커버 이미지 등을 바꿀 수 있습니다.</p>
 <p>default라는 이름에서 알 수 있듯 만약 post.md 라는 템플릿 파일을 만든다면 포스트 타입의 글을 빠르게 작성할 수 있게됩니다.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">archetypes/post.md 파일
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">archetypes/post.md 파일
 ---
-title: <span class="s2">&#34;{{ replace .Name &#34;</span>-<span class="s2">&#34; &#34;</span> <span class="s2">&#34; | title }}&#34;</span>
-date: <span class="o">{{</span> .Date <span class="o">}}</span>
-categories: <span class="o">[</span><span class="s1">&#39;post&#39;</span><span class="o">]</span>
-tags: <span class="o">[]</span>
-cover: <span class="s2">&#34;&#34;</span>
-draft: <span class="nb">true</span>
+title: <span style="color:#f1fa8c">&#34;{{ replace .Name &#34;</span>-<span style="color:#f1fa8c">&#34; &#34;</span> <span style="color:#f1fa8c">&#34; | title }}&#34;</span>
+date: <span style="color:#ff79c6">{{</span> .Date <span style="color:#ff79c6">}}</span>
+categories: <span style="color:#ff79c6">[</span><span style="color:#f1fa8c">&#39;post&#39;</span><span style="color:#ff79c6">]</span>
+tags: <span style="color:#ff79c6">[]</span>
+cover: <span style="color:#f1fa8c">&#34;&#34;</span>
+draft: <span style="color:#8be9fd;font-style:italic">true</span>
 ---
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new post/first_post.md
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new post/first_post.md
 </code></pre></div><p>이렇게 되면 <code>content/post/first_post.md</code>파일이 생성됩니다. 그리고 first_post.md 파일은 post.md 파일의 형식에 맞게 생성 됩니다.</p>
 <h2 id="작성한-글-미리보기">작성한 글 미리보기</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo server -D
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -D
 </code></pre></div><p>위 명령을 입력하면 localhost:1313 위치에 임시 서버가 오픈되어 작성할 글을 테마를 적용하여 미리볼 수 있습니다. 이 임시서버에 보여주는 컨텐츠는 <code>draft</code>가 <code>true</code>로 되어있어도 글이 보여 글을 업로드 하기전에 볼 수 있습니다.</p>
 <p>어떤 테마로 블로그를 만들어 보여줄지는 최상위 폴더의 config.toml에 theme 값을 뭘로 해주느냐에 따라 결정됩니다.</p>
 

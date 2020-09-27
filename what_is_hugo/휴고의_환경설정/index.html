@@ -107,6 +107,7 @@
     <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
     <h5>풀스텍 웹개발을 지향합니다</h5>
 </div>
+    <hr class="aside-sep">
     <div id="aside-menu">
     <ul>
         <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
@@ -165,25 +166,25 @@ hugo --config a.toml,b.toml,c.toml`
 <p>위와 같은 config를 만들었다고 할 때 staging 설정으로 만든 사이트가 필요하면 <code>hugo --environment staging</code>명령을 사용하면 됩니다. staging 폴더에 없는 설정값들은 _default 폴더의 설정값을 가져다 씁니다. 어떤 config를 사용할지 정하지 않으면 _default 폴더의 설정을 가져다 씁니다.</p>
 <h2 id="example-configuration">Example Configuration</h2>
 <p>다음은 <code>config</code>파일의 예시입니다. 예시는 toml 형식만 예로 들겠습니다. 나머지(yaml,json)은 사이트에 나와있는것을 직접 참고하시면  되겠습니다.</p>
-<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">config</span><span class="p">.</span><span class="nx">toml</span> <span class="nx">예시</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">config.toml 예시
 
-<span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;https://yoursite.example.com/&#34;</span>
-<span class="nx">footnoteReturnLinkContents</span> <span class="p">=</span> <span class="s2">&#34;↩&#34;</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;My Hugo Site&#34;</span>
+baseURL = <span style="color:#f1fa8c">&#34;https://yoursite.example.com/&#34;</span>
+footnoteReturnLinkContents = <span style="color:#f1fa8c">&#34;↩&#34;</span>
+title = <span style="color:#f1fa8c">&#34;My Hugo Site&#34;</span>
 
-<span class="p">[</span><span class="nx">params</span><span class="p">]</span>
-  <span class="nx">AuthorName</span> <span class="p">=</span> <span class="s2">&#34;Jon Doe&#34;</span>
-  <span class="nx">GitHubUser</span> <span class="p">=</span> <span class="s2">&#34;spf13&#34;</span>
-  <span class="nx">ListOfFoo</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;foo1&#34;</span><span class="p">,</span> <span class="s2">&#34;foo2&#34;</span><span class="p">]</span>
-  <span class="nx">SidebarRecentLimit</span> <span class="p">=</span> <span class="mi">5</span>
-  <span class="nx">Subtitle</span> <span class="p">=</span> <span class="s2">&#34;Hugo is Absurdly Fast!&#34;</span>
+[params]
+  AuthorName = <span style="color:#f1fa8c">&#34;Jon Doe&#34;</span>
+  GitHubUser = <span style="color:#f1fa8c">&#34;spf13&#34;</span>
+  ListOfFoo = [<span style="color:#f1fa8c">&#34;foo1&#34;</span>, <span style="color:#f1fa8c">&#34;foo2&#34;</span>]
+  SidebarRecentLimit = <span style="color:#bd93f9">5</span>
+  Subtitle = <span style="color:#f1fa8c">&#34;Hugo is Absurdly Fast!&#34;</span>
 
-<span class="p">[</span><span class="nx">permalinks</span><span class="p">]</span>
-  <span class="nx">posts</span> <span class="p">=</span> <span class="s2">&#34;/:year/:month/:title/&#34;</span>
+[permalinks]
+  posts = <span style="color:#f1fa8c">&#34;/:year/:month/:title/&#34;</span>
 </code></pre></div><p>위처럼 각 변수에 값을 입력해주면 되고 위에 기술되지 않은 값들은 default값이 사용됩니다. 또한 위 config 폴더에서 분류한 것처럼 네임스페이스별로 파일을 나눌 수 있습니다.
 <code>permalinks.toml</code> 파일을 만들어</p>
-<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">permalinks</span><span class="p">]</span>
-  <span class="nx">posts</span> <span class="p">=</span> <span class="s2">&#34;/:year/:month/:title/&#34;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[permalinks]
+  posts = <span style="color:#f1fa8c">&#34;/:year/:month/:title/&#34;</span>
 </code></pre></div><p>처럼 값을 입력하고 같은 위치에 파일을 넣어주면 됩니다.</p>
 <h2 id="all-configuration-settings">All Configuration Settings</h2>
 <p>이 다음부터는 봐도 아직은 이해가 되지 않을 것입니다. 그냥 훑어만 보고 다음에 다시와서 이해하는 페이지 되겠습니다. 별로 안궁금하면 그냥 넘기셔도 됩니다.</p>
