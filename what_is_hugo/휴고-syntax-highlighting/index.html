@@ -112,7 +112,7 @@
     <ul>
         <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
         <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
-        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(11)</small></a></li>
+        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(10)</small></a></li>
         
         <li><a href="http://dev2820.github.io/what_is_hugo/">휴고에 대해 알아보자 <small>(5)</small></a></li>
         
@@ -157,11 +157,20 @@ pygmentsOptions = <span style="color:#f1fa8c">&#34;linenos=table&#34;</span>
 <p>세 번째 <code>pygmentsOptions</code>는 말그대로 옵션입니다. 사용 가능한 옵션은 다음과 같습니다.</p>
 <ul>
 <li>linenos: 줄번호를 넣어줄지 결정하는 옵션입니다. false를 넣어주면 줄번호가 안나오고 table을 넣어주면 줄번호가 나옵니다.</li>
-<li>hl_lines: 배열인데 특정 줄을 강조할때 사용하는 옵션입니다. 8번줄과 15~17줄을 강조한다면 hl_lines=[8,&ldquo;15-17&rdquo;] 이렇게 넣어주면 됩니다만, config 파일에 쓰면 모든 code fence에 적용이 되니 있다 알려줄 각 code fence마다 옵션 적용하는 방법을 볼때 쓰시면 되겠습니다.</li>
+<li>hl_lines: 배열인데 특정 줄을 강조할때 사용하는 옵션입니다. 8번줄과 15~17줄을 강조한다면 hl_lines=[8,&ldquo;15-17&rdquo;] 이렇게 넣어주면 됩니다.</li>
 <li>linenostart: 줄번호를 몇번부터 시작할지 정해주는 옵션입니다. <code>linenostart=1</code> 이런식으로 쓰면 됩니다.</li>
-<li>anchorlinenos: Configure anchors on line numbers. Valid values are true or false;</li>
-<li>lineanchors: Configure a prefix for the anchors on line numbers. Will be suffixed with -, so linking to the line number 1 with the option lineanchors=prefix adds the anchor prefix-1 to the page.</li>
 </ul>
+<p>옵션이 두개 더있는데 필요하면 맨 위 링크에서 찾아보시길 권합니다.</p>
+<h3 id="highlighting-in-code-fences">Highlighting in Code Fences</h3>
+<p>이번엔 옵션을 마크다운파일 안의 code fence에 직접 적용하는 방법을 알려드리겠습니다.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>이렇게하면 됩니다. 참 쉽죠?</p>
+<h3 id="chorma가-어떤-언어에-highlight를-지원하는지">chorma가 어떤 언어에 highlight를 지원하는지?</h3>
+<p><a href="https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages">https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages</a></p>
+<p>위 링크에 나와있는데, 대충 다있다고 보면 됩니다. 필요한 분들만 찾아보세요.</p>
+<h2 id="마무리">마무리</h2>
+<p>이상으로 code fence에 syntax highlight 적용하는 방법을 알아봤고 다음글에서는</p>
 
         </article>
   </div>
@@ -170,7 +179,7 @@ pygmentsOptions = <span style="color:#f1fa8c">&#34;linenos=table&#34;</span>
     <div>
     <section>
       <h4 id="date"> Sun Sep 27, 2020 </h4>
-      <h5 id="wordcount"> 663 Words </h5>
+      <h5 id="wordcount"> 744 Words </h5>
     </section>
     
     <ul>

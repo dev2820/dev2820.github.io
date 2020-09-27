@@ -78,15 +78,6 @@
     </item>
     
     <item>
-      <title>About me</title>
-      <link>http://dev2820.github.io/about/</link>
-      <pubDate>Sun, 20 Sep 2020 12:19:54 +0900</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/about/</guid>
-      <description>양기조(GI JO YANG) nickname: Dev2820 웹개발을 위주로 하지만 필요에 따라 안드로이드도 합니다. 컴퓨터를 전공하고 있습니다. 대학원은 안가요 안가 디자인 + 풀스텍 을 쌓아 웹개발</description>
-    </item>
-    
-    <item>
       <title>NAS 용 SPA만들기 (0)</title>
       <link>http://dev2820.github.io/nas_project/home_server/</link>
       <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
