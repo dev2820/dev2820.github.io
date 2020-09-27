@@ -108,7 +108,7 @@ hr.summary-sep {
 #aside .aside-sep {
     width:80%;
     height:2px;
-    margin:auto 0;
+    margin:0 auto;
 }
 /* Content*/
 #content {
