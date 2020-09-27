@@ -2,28 +2,32 @@
 <html><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test 글 작성 중  | dev2820 개발일지</title>
+    <title>휴고 Syntax Highlighting  | dev2820 개발일지</title>
     <meta name="description"
-        content="dev2820의 개발일지 저장소 'test 글 작성 중'을 한 번 살펴보세요.">
-    <meta property="og:title" content="test 글 작성 중">
+        content="dev2820의 개발일지 저장소 '휴고 Syntax Highlighting'을 한 번 살펴보세요.">
+    <meta property="og:title" content="휴고 Syntax Highlighting">
     
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2020-07-25">
+    <meta property="article:published_time" content="2020-09-27">
     
     <meta property="og:description"
-        content="dev2820의 개발일지 저장소 'test 글 작성 중'을 한 번 살펴보세요.">
-    <meta property="og:url" content="http://dev2820.github.io/diaries/test3/">
+        content="dev2820의 개발일지 저장소 '휴고 Syntax Highlighting'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/">
     <meta property="og:site_name" content="dev2820 개발일지">
     
     <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
     
     
-    <meta property="og:tags" content="test">
+    <meta property="og:tags" content="hugo">
     
-    <meta property="og:tags" content="diary">
+    <meta property="og:tags" content="휴고">
+    
+    <meta property="og:tags" content="highlight">
+    
+    <meta property="og:tags" content="code fence">
     
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="http://dev2820.github.io/diaries/test3/">
+    <link rel="canonical" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="http://dev2820.github.io/css/syntax.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/homePage.css">
@@ -123,34 +127,41 @@
 </div>  
         <div id="content">
 <section id="main">
-  <h1 id="title">test 글 작성 중</h1>
+  <h1 id="title">휴고 Syntax Highlighting</h1>
   <div>
         <article class="content">
-           <h1 id="md-작성-테스트-중">md 작성 테스트 중</h1>
-<h1 id="h1">h1</h1>
-<h2 id="h2">h2</h2>
-<h3 id="h3">h3</h3>
-<h4 id="h4">h4</h4>
-<h5 id="h5">h5</h5>
-<h6 id="h6">h6</h6>
+           <p>이번글엔 컨텐츠에 들어가는 code fences에 테마 및 highlight 적용하는 방법이 들어갑니다. hightlight를 적용하는 방법은 여러가지가 있지만, 그 중에서도 딱 한가지 code fence에서 highlighting 적용하는 방법만 다루겠습니다.</p>
+<h2 id="syntax-highlighting">Syntax Highlighting</h2>
+<p><a href="https://gohugo.io/content-management/syntax-highlighting/">https://gohugo.io/content-management/syntax-highlighting/</a></p>
+<p>code fence가 뭔지 모르실 분들을 위해 설명하자면 이겁니다.</p>
+<!-- raw HTML omitted -->
+<p>그런데 이 code fence의 테마나 css를 적용해주지 않으면 여러분이 다른 블로그에서 보시던 멋진 highlight가 적용되지 않은체 컨텐츠가 생성됩니다.</p>
+<p>휴고에서는 go로 만들어진 <strong>chroma</strong> 라는 code highlighter를 제공합니다.</p>
+<p>사용법은 다음과 같습니다.
+<code>config</code> 파일에 다음 세 줄을 추가합니다.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#ff79c6">p</span>&gt;hello&lt;/<span style="color:#ff79c6">p</span>&gt;
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">pygmentsCodefences = <span style="color:#ff79c6">true</span>
+pygmentsStyle = <span style="color:#f1fa8c">&#34;dracula&#34;</span>
+pygmentsOptions = <span style="color:#f1fa8c">&#34;linenos=table&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>hello hugo</li>
-</ul>
+</div><p>맨 위 <code>pygmentsCodefences = true</code>는 코드 하이라이팅을 쓴다는 뜻입니다. 꼭 넣어주세요</p>
+<p>두 번째 <code>pygmentsStyle</code>은 사용할 테마입니다. 테마 없으면 밋밋하잖아요. 넣어주면 됩니다. 다른 테마를 쓰시는 분은 아래 링크를 참조해서 하나 넣어주시면 됩니다.</p>
+<p><a href="https://xyproto.github.io/splash/docs/all.html">https://xyproto.github.io/splash/docs/all.html</a></p>
+<p>세 번째 <code>pygmentsOptions</code>는 말그대로 옵션입니다. 사용 가능한 옵션은 다음과 같습니다.</p>
 <ul>
-<li>title1</li>
-</ul>
-<ul>
-<li>sub title1</li>
-<li>sub title2</li>
-<li>sub sub title</li>
+<li>linenos: 줄번호를 넣어줄지 결정하는 옵션입니다. false를 넣어주면 줄번호가 안나오고 table을 넣어주면 줄번호가 나옵니다.</li>
+<li>hl_lines: 배열인데 특정 줄을 강조할때 사용하는 옵션입니다. 8번줄과 15~17줄을 강조한다면 hl_lines=[8,&ldquo;15-17&rdquo;] 이렇게 넣어주면 됩니다만, config 파일에 쓰면 모든 code fence에 적용이 되니 있다 알려줄 각 code fence마다 옵션 적용하는 방법을 볼때 쓰시면 되겠습니다.</li>
+<li>linenostart: 줄번호를 몇번부터 시작할지 정해주는 옵션입니다. <code>linenostart=1</code> 이런식으로 쓰면 됩니다.</li>
+<li>anchorlinenos:
+anchorlinenos: Configure anchors on line numbers. Valid values are true or false;
+lineanchors: Configure a prefix for the anchors on line numbers. Will be suffixed with -, so linking to the line number 1 with the option lineanchors=prefix adds the anchor prefix-1 to the page.</li>
 </ul>
 
         </article>
@@ -159,23 +170,27 @@
 <aside id="meta">
     <div>
     <section>
-      <h4 id="date"> Sat Jul 25, 2020 </h4>
-      <h5 id="wordcount"> 25 Words </h5>
+      <h4 id="date"> Sun Sep 27, 2020 </h4>
+      <h5 id="wordcount"> 664 Words </h5>
     </section>
     
     <ul>
     tags
     
-        <li><a href="http://dev2820.github.io/tags/test/">#test</a></li>
+        <li><a href="http://dev2820.github.io/tags/code-fence/">#code fence</a></li>
    
-        <li><a href="http://dev2820.github.io/tags/diary/">#diary</a></li>
+        <li><a href="http://dev2820.github.io/tags/highlight/">#highlight</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
    
 </ul>
     </div>
     <div>
         
+          이전글<a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/"> 휴고의 컨텐츠 관리</a>
         
-          다음글<a class="next" href="http://dev2820.github.io/diaries/hugo_test/"> 휴고에서 컨텐츠 지정하고 글 생성해보기</a>
         
     </div>
 </aside>

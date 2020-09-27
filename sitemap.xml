@@ -3,18 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://dev2820.github.io/diaries/test/test2/</loc>
-    <lastmod>2020-09-26T23:01:48+09:00</lastmod>
+    <loc>http://dev2820.github.io/categories/</loc>
+    <lastmod>2020-09-27T15:09:40+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/categories/</loc>
-    <lastmod>2020-09-26T20:39:14+09:00</lastmod>
+    <loc>http://dev2820.github.io/tags/code-fence/</loc>
+    <lastmod>2020-09-27T15:09:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/highlight/</loc>
+    <lastmod>2020-09-27T15:09:40+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://dev2820.github.io/tags/hugo/</loc>
-    <lastmod>2020-09-26T20:39:14+09:00</lastmod>
+    <lastmod>2020-09-27T15:09:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/</loc>
+    <lastmod>2020-09-27T15:09:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/categories/what_is_hugo/</loc>
+    <lastmod>2020-09-27T15:09:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</loc>
+    <lastmod>2020-09-27T15:09:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/</loc>
+    <lastmod>2020-09-27T15:09:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/diaries/test/test2/</loc>
+    <lastmod>2020-09-26T23:01:48+09:00</lastmod>
   </url>
   
   <url>
@@ -23,22 +53,7 @@
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/tags/</loc>
-    <lastmod>2020-09-26T20:39:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/categories/what_is_hugo/</loc>
-    <lastmod>2020-09-26T20:39:14+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://dev2820.github.io/tags/%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</loc>
-    <lastmod>2020-09-26T20:39:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</loc>
     <lastmod>2020-09-26T20:39:14+09:00</lastmod>
   </url>
   
