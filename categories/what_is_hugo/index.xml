@@ -8,10 +8,37 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Sun, 27 Sep 2020 15:09:40 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2020 23:48:55 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/categories/what_is_hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>휴고 Content Section,content Type 그리고 Archetypes</title>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/</link>
+      <pubDate>Tue, 29 Sep 2020 23:48:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/</guid>
+      <description>이번 글에서는 section, type 그리고 archetypes에 대해 각각 다뤄보겠습니다. Content Sections https://gohugo.io/content-management/sections/ 휴고는 여러분의 컨텐츠와 일치하는 section tree를 생성합니다. Sectio</description>
+    </item>
+    
+    <item>
+      <title>휴고 Front Matter</title>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/</link>
+      <pubDate>Tue, 29 Sep 2020 21:54:15 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/</guid>
+      <description>이번 글은 휴고 컨텐츠의 &amp;lsquo;front matter&amp;rsquo; 에 대해 설명하는 글입니다. front matter는 말하자면 컨텐츠의 메타데이터, 컨텐츠의 설정값입니다. 컨텐츠의 타이틀, 생성날짜,</description>
+    </item>
+    
+    <item>
+      <title>휴고 연관성 있는 컨텐츠</title>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/</link>
+      <pubDate>Sun, 27 Sep 2020 16:35:32 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/</guid>
+      <description>이건 여담인데 여러분 이거 읽다보면 아니 그래서 어떻게 단다는 거야 처음부터 따라가는데 하나도 모르겠고 자꾸 헛소리만하네 같은 생각이 들 수 있는데 네! 저도 같은 생각</description>
+    </item>
     
     <item>
       <title>휴고 Syntax Highlighting</title>

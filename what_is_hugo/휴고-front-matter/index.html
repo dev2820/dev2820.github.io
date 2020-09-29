@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴고 Front Matter  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 '휴고 Front Matter'을 한 번 살펴보세요.">
+    <meta property="og:title" content="휴고 Front Matter">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2020-09-29">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 '휴고 Front Matter'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="hugo">
+    
+    <meta property="og:tags" content="휴고">
+    
+    <meta property="og:tags" content="front matter">
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="http://dev2820.github.io/css/syntax.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/homePage.css">
+    <link rel="stylesheet" href="/css/listPage.css">
+    <link rel="stylesheet" href="/css/notFound.css">
+    <link rel="stylesheet" href="/css/tags.css">
+   
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXX-X');
+    </script>
+    
+    
+    <script type="text/javascript">
+        function toggleAside(bool) {
+            let e = document.getElementById('aside');
+            if (e.classList.contains('hidden') && bool)
+                e.classList.remove('hidden');
+            else
+                e.classList.add('hidden');
+        }
+
+        function scrollToTop() {
+            let position =
+                document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+                scrollAnimation = setTimeout("scrollToTop()", 10);
+            } else clearTimeout(scrollAnimation);
+        }
+        function goToUrl(url) {
+            window.location.href = url;
+        }
+        window.onload = function () {
+            document.addEventListener('click', (event) => {
+                toggleAside(false);
+            });
+            document.getElementById('aside').addEventListener('click', (event) => {
+                event.stopPropagation();
+            })
+        }
+
+    </script>
+</head>
+<body id="body"><div id="topbar" class="card">
+  <div class="logo">
+    <a href="/">
+      
+      <img src="/images/logo.png" height="32px" />
+      
+    </a>
+  </div>
+  <div class="burger">
+    <button onclick="event.stopPropagation(); toggleAside(true)">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+</div><div id="aside" class="card hidden">
+    <div class="top">
+        <button onclick="event.stopPropagation(); toggleAside(false)">
+            <i class="fa fa-times fa-3x"></i>
+        </button>
+    </div>
+    <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+    <h5>풀스텍 웹개발을 지향합니다</h5>
+</div>
+    <hr class="aside-sep">
+    <div id="aside-menu">
+    <ul>
+        <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+        <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(13)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/what_is_hugo/">휴고에 대해 알아보자 <small>(8)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/hugo_new_theme/">hugo_new_theme <small>(0)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/nas_project/">Nas_project <small>(1)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/diaries/">일상 <small>(4)</small></a></li>
+        
+    </ul>
+</div>
+</div>  
+        <div id="content">
+<section id="main">
+  <h1 id="title">휴고 Front Matter</h1>
+  <div>
+        <article class="content">
+           <p>이번 글은 휴고 컨텐츠의 &lsquo;front matter&rsquo; 에 대해 설명하는 글입니다. front matter는 말하자면 컨텐츠의 메타데이터, 컨텐츠의 설정값입니다. 컨텐츠의 타이틀, 생성날짜, 만기일 등등을 정해주고 심지어는 어떤 화면으로 컨텐츠를 표출시킬지 레이아웃을 정해주거나 컨텐츠로가는 주소를 바꿔주는등 여러가지를 할 수 있습니다.</p>
+<h2 id="front-matter-formats">Front Matter Formats</h2>
+<p><a href="https://gohugo.io/content-management/front-matter/">https://gohugo.io/content-management/front-matter/</a></p>
+<p>휴고에서 사용 가능한 front matter 형식은 총 4가지 있습니다.</p>
+<ol>
+<li>TOML</li>
+</ol>
+<ul>
+<li>toml은 <code>+++</code>로 시작하고 끝나는 부분까지를 toml로 인식합니다.</li>
+</ul>
+<ol start="2">
+<li>YAML</li>
+</ol>
+<ul>
+<li><code>---</code>로 시작하고 끝나는 부분까지를 yaml로 인식합니다.</li>
+</ul>
+<ol start="3">
+<li>JSON</li>
+</ol>
+<ul>
+<li><code>{</code> 과 <code>}</code> 사이를 json으로 인식합니다.</li>
+</ul>
+<ol start="4">
+<li>ORG</li>
+</ol>
+<ul>
+<li>얘는 사용방법이 조금 독특하고 마이너해서 딱히 기술하진 않겠습니다.</li>
+</ul>
+<p><strong>Example</strong>
+toml 예시만 보여드리겠습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">+++
+categories = [<span style="color:#f1fa8c">&#34;Development&#34;</span>, <span style="color:#f1fa8c">&#34;VIM&#34;</span>]
+date = <span style="color:#f1fa8c">&#34;2012-04-06&#34;</span>
+description = <span style="color:#f1fa8c">&#34;spf13-vim is a cross platform distribution of vim plugins and resources for Vim.&#34;</span>
+slug = <span style="color:#f1fa8c">&#34;spf13-vim-3-0-release-and-new-website&#34;</span>
+tags = [<span style="color:#f1fa8c">&#34;.vimrc&#34;</span>, <span style="color:#f1fa8c">&#34;plugins&#34;</span>, <span style="color:#f1fa8c">&#34;spf13-vim&#34;</span>, <span style="color:#f1fa8c">&#34;vim&#34;</span>]
+title = <span style="color:#f1fa8c">&#34;spf13-vim 3.0 release and new website&#34;</span>
++++
+
+...
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="front-matter-variables">Front Matter Variables</h2>
+<p>front matter로 사용 가능한 변수는 다음과 같습니다.</p>
+<p>여기에 나오는 변수들은 휴고에서 페이지 변수로 불러와 사용할 수 있습니다. 이는 template에서 page variable을 설명할 때 자세히 사용법을 적겠습니다.</p>
+<p><strong>aliases</strong><br>
+하나 또는 하나이상의 컨텐츠로의 진입 경로를 기술하는 배열입니다. 이 변수는 사이트를 build할 때 적힌 aliases에 맞는 디렉토리를 생성합니다.</p>
+<p>사용법</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">+++
+aliases = [
+    <span style="color:#f1fa8c">&#34;/posts/my-original-url/&#34;</span>,
+    <span style="color:#f1fa8c">&#34;/2010/01/01/even-earlier-url.html&#34;</span>
+]
++++
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>audio</strong><br>
+페이지와 관련있는 오디오 파일들의 경로를 담는 배열입니다. <code>opengraph</code>에 사용됩니다.</p>
+<p><strong>cascade</strong> <br>
+하위 컨텐츠로 계속 전달할 front matter 키들의 맵입니다.
+더 하위의 컨텐츠 front matter가 덮어씌우지 않는 한 계속 전달됩니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#6272a4"># content/blog/_index.md  </span>
+title = <span style="color:#f1fa8c">&#34;Blog&#34;</span>
+
+[cascade]
+  banner = <span style="color:#f1fa8c">&#34;images/typewriter.jpg&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>만약 blog폴더의 <code>_index.md</code>파일에 cascade 값으로 <code>banner</code> 가 설정되어있다면, <code>content/blog/introduce.md</code>에 <code>banner</code>가 없더라도 <code>banner</code>를 가져다 쓸 수 있습니다.</p>
+<p><strong>date</strong><br>
+해당 컨텐츠를 만든 날짜정보 string입니다.</p>
+<p><strong>description</strong><br>
+해당 컨텐츠에 대한 설명입니다.</p>
+<p><strong>draft</strong><br>
+만일 <code>true</code>라면 사이트를 build할 시 <code>--buildDrafts</code> 옵션을 주지 않는다면 해당 컨텐츠를 포함하지 않습니다.</p>
+<p><strong>expiryDate</strong><br>
+이 변수로 설정한 날짜가 지나면 휴고는 <code>--buildExpired</code> 옵션을 주지 않는 이상 이 컨텐츠를 출판하지 않습니다.</p>
+<p><strong>headless</strong><br>
+만약 <code>true</code>라면 해당 컨텐츠를 <code>headless</code>상태로 만듦니다.
+<code>headless</code> 상태가 된 컨텐츠는 접근 가능한 경로가 없어집니다.</p>
+<p><code>.Site.GetPage</code> 메소드를 통해 해당 컨텐츠를 불러올 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ $headless := .Site.GetPage &#34;/some-headless-bundle&#34; }}
+{{ $reusablePages := $headless.Resources.Match &#34;author*&#34; }}
+&lt;<span style="color:#ff79c6">h2</span>&gt;Authors&lt;/<span style="color:#ff79c6">h2</span>&gt;
+{{ range $reusablePages }}
+    &lt;<span style="color:#ff79c6">h3</span>&gt;{{ .Title }}&lt;/<span style="color:#ff79c6">h3</span>&gt;
+    {{ .Content }}
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><p>따라서 <code>headless</code>는 컨텐츠의 재활용성이 높은 경우 컨텐츠를 복붙하는 경우 사용합니다.</p>
+<p><strong>images</strong><br>
+페이지와 관련있는 이미지들의 경로가 들어간 배열입니다.</p>
+<p><strong>isCJKLanguage</strong><br>
+한자,일본어,한국어가 들어간 경우 <code>true</code>로 해줘야 <code>.Summary</code>와 <code>.WordCount</code>가 제대로 작동합니다.</p>
+<p><strong>keywords</strong><br>
+컨텐츠의 키워드들 저장합니다.</p>
+<p><strong>layout</strong><br>
+해당 컨텐츠에 어떤 레이아웃을 사용할지 직접 정해줍니다. 만약 이 컨텐츠가 어떤 <code>type</code>인지 정해져있지 않다면 휴고는 레이아웃 디렉토리에서 컨텐츠의 섹션과 같은 이름을 가지는 레이아웃을 찾습니다.</p>
+<p><strong>lastmod</strong><br>
+컨텐츠가 마지막으로 변경된 날짜입니다.</p>
+<p><strong>linkTitle</strong> <br>
+해당 컨텐츠로 가는 링크를 만들 때 사용합니다. 만약 설정되면 <code>title</code> front matter보다 <code>linkTitle</code>을 먼저 사용합니다. string 입니다.</p>
+<p><strong>outputs</strong><br>
+컨텐츠의 출력형식을 정해줄 수 있습니다.
+<a href="https://gohugo.io/templates/output-formats/">https://gohugo.io/templates/output-formats/</a></p>
+<p><strong>publishDate</strong><br>
+출판일 날짜(string)입니다. 아직 해당날짜가 되지 않은 컨텐츠는 <code>--buildFuture</code> 옵션을 주지 않으면 빌드할 때 포함되지 않습니다.</p>
+<p><strong>resources</strong><br>
+페이지 리소스를 구성하는데 사용됩니다.
+대충 이런식으로 씁니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">date = <span style="color:#f1fa8c">&#34;2018-01-25&#34;</span>
+title = <span style="color:#f1fa8c">&#34;Application&#34;</span>
+
+[[resources]]
+  name = <span style="color:#f1fa8c">&#34;header&#34;</span>
+  src = <span style="color:#f1fa8c">&#34;images/sunset.jpg&#34;</span>
+
+[[resources]]
+  src = <span style="color:#f1fa8c">&#34;documents/photo_specs.pdf&#34;</span>
+  title = <span style="color:#f1fa8c">&#34;Photo Specifications&#34;</span>
+  [resources.params]
+    icon = <span style="color:#f1fa8c">&#34;photo&#34;</span>
+
+[[resources]]
+  src = <span style="color:#f1fa8c">&#34;documents/guide.pdf&#34;</span>
+  title = <span style="color:#f1fa8c">&#34;Instruction Guide&#34;</span>
+
+[[resources]]
+  src = <span style="color:#f1fa8c">&#34;documents/checklist.pdf&#34;</span>
+  title = <span style="color:#f1fa8c">&#34;Document Checklist&#34;</span>
+
+[[resources]]
+  src = <span style="color:#f1fa8c">&#34;documents/payment.docx&#34;</span>
+  title = <span style="color:#f1fa8c">&#34;Proof of Payment&#34;</span>
+
+[[resources]]
+  name = <span style="color:#f1fa8c">&#34;pdf-file-:counter&#34;</span>
+  src = <span style="color:#f1fa8c">&#34;**.pdf&#34;</span>
+  [resources.params]
+    icon = <span style="color:#f1fa8c">&#34;pdf&#34;</span>
+
+[[resources]]
+  src = <span style="color:#f1fa8c">&#34;**.docx&#34;</span>
+  [resources.params]
+    icon = <span style="color:#f1fa8c">&#34;word&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>series</strong><br>
+이 페이지가 속한 시리즈들을 적는 배열입니다. <code>series</code> 분류에 사용됩니다. <code>opengraph</code>에 사용됩니다.</p>
+<p><strong>slug</strong><br>
+접근 경로중 <code>slug</code>값을 정해주는 변수입니다. 파일이름으로 되어있는 기본 slug를 다른 string으로 덮어쓸 수 있습니다.</p>
+<p><strong>summary</strong>
+이 컨텐츠의 요약입니다. 기본적으로 컨텐츠의 앞부분부터 잘라 자동으로 summary를 생성하지만 이렇게 front matter로 사용할 텍스트를 정해줄 수 있습니다.</p>
+<p><strong>title</strong><br>
+글의 제목string 입니다.</p>
+<p><strong>type</strong><br>
+컨텐츠의 <code>type</code>은 폴더에 따라 자동으로 생성되지만 front matter로 직접 정해줄 수도 있습니다.</p>
+<p><strong>url</strong><br>
+컨텐츠로 접근하는 root로 부터의 full path 입니다.</p>
+<p><strong>videos</strong>
+페이지와 관련된 비디오 경로의 배열입니다. <code>opengraph</code>에 사용됩니다.</p>
+<p><strong>weight</strong>
+해당 컨텐츠를 컨텐츠 리스트에서 얼마나 상위에 둘지 결정하는 변수입니다. 낮은 값을 줄 수록 우선순위가 올라갑니다. 0은 될 수 없고 0값이 주어지면 리스트에서 제외됩니다.</p>
+<p><strong>tags,categories</strong><br>
+<code>tags</code> 와 <code>categories</code> 변수는 이름대로 각각 태그와 카테고리를 담는 배열입니다. 태그별, 카테고리별 분류할 때 사용합니다.</p>
+<p><strong>사용자정의</strong><br>
+위에 언급되지 않은 변수도 사용자가 직접 만들 수 있습니다. <code>.Params</code> 변수는 이렇게 사용자정의된 front matter 값을 불러오는데 사용합니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">include_toc = <span style="color:#ff79c6">true</span>
+show_comments = <span style="color:#ff79c6">false</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><code>.Params.include_toc</code>, <code>.Params.show_comments</code> 같은 형식으로 페이지에서 불러올 수 있습니다.</p>
+<h2 id="build-options">Build Options</h2>
+<p><a href="https://gohugo.io/content-management/build-options/">https://gohugo.io/content-management/build-options/</a></p>
+<p>이 옵션은 front matter object로 주어지며, 휴고가해당 컨텐츠를 build 할 때 어떻게 빌드할지 정해주는 옵션입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[_build]
+    render = <span style="color:#ff79c6">true</span>
+    list = always
+    publishResources = <span style="color:#ff79c6">true</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>다음과 같은 값을 줄 수 있습니다.</p>
+<p><strong>render</strong><br>
+<code>true</code>라면 이 페이지는 출판된 페이지로 여겨집니다.</p>
+<p><strong>list</strong><br>
+다음 값들이 가능합니다.
+never: 이 페이지는 어느 페이지 콜렉션에도 포함되지 않습니다.</p>
+<p>always: 디폴트값입니다. 이 페이지는 모든 페이지 콜렉션에 포함됩니다. (ex. site.RegularPages,$page.Pages)</p>
+<p>local: 이 페이지는 로컬 페이지 컬렉션에 포함됩니다. (ex.$page.RegularPages, $page.Pages)</p>
+<p><strong>publishResources</strong><br>
+<code>true</code>로 설정되면 번들 리소스를 출판합니다. <code>false</code>가 되면 <code>.Permalink</code>, <code>RelPermalink</code>같이 직접 가져다 쓰는 것은 가능하지만 나머지는 사용이 불가능해집니다.</p>
+<h3 id="사용-예시">사용 예시</h3>
+<p>사람들은 종종 홈페이지에 사용될 &lsquo;who we are&rsquo; 컨텐츠 파일이 필요하지만 이런 컨텐츠는 딱히 어디에도 두기 애매합니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#6272a4"># content/who-we-are.md</span>
+title = <span style="color:#f1fa8c">&#39;who we are&#39;</span>
+[_build]
+    list = <span style="color:#ff79c6">false</span>
+    render = <span style="color:#ff79c6">false</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{/* layouts/index.html */}}
+&lt;<span style="color:#ff79c6">section</span> <span style="color:#50fa7b">id</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;who-we-are&#34;</span>&gt;
+{{ with site.GetPage &#34;who-we-are&#34; }}
+  {{ .Content }}
+{{ end }}
+&lt;/<span style="color:#ff79c6">section</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="마치며">마치며</h2>
+<p>다음글에서는 content sections, content types, archetypes에 대해 알아보겠습니다.</p>
+
+        </article>
+  </div>
+</section>
+<aside id="meta">
+    <div>
+    <section>
+      <h4 id="date"> Tue Sep 29, 2020 </h4>
+      <h5 id="wordcount"> 2367 Words </h5>
+    </section>
+    
+    <ul>
+    tags
+    
+        <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/front-matter/">#front matter</a></li>
+   
+</ul>
+    </div>
+    <div>
+        
+          이전글<a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/"> 휴고 연관성 있는 컨텐츠</a>
+        
+        
+          다음글<a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/"> 휴고 Content Section,content Type 그리고 Archetypes</a>
+        
+    </div>
+    <div>
+      
+
+<h3>비슷한 컨텐츠 더보기</h3>
+<ul>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/">휴고 연관성 있는 컨텐츠</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/">휴고 Syntax Highlighting</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/">휴고의 컨텐츠 관리</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/">휴고의_환경설정</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">휴고_설치하기</a></li>
+	
+</ul>
+
+    </div>
+</aside>
+
+        </div>  <footer id="footer">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fa fa-angle-double-up"></i>
+      <span>위로</span>
+    </button>
+    
+    
+    <span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+    <span>ALL RIGHTS RESERVED.</span>
+  </footer>
+</body>
+</html>
+  </body>
+</html>
