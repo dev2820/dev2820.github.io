@@ -8,10 +8,20 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Wed, 30 Sep 2020 19:06:31 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2020 20:07:32 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>휴고 Summary</title>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/</link>
+      <pubDate>Wed, 30 Sep 2020 20:07:32 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/</guid>
+      <description>&lt;p&gt;휴고는 page 변수로 &lt;code&gt;.Summary&lt;/code&gt;를 제공합니다. 이 summary는 페이지에 대한 요약이며 자동으로 휴고가 생성해줍니다만 사용자 정의 요약을 사용할 수도 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/content-management/summaries/&#34;&gt;https://gohugo.io/content-management/summaries/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>휴고 Taxonomies</title>
