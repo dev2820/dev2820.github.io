@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴고 Taxonomies  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 '휴고 Taxonomies'을 한 번 살펴보세요.">
+    <meta property="og:title" content="휴고 Taxonomies">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2020-09-30">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 '휴고 Taxonomies'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="hugo">
+    
+    <meta property="og:tags" content="휴고">
+    
+    <meta property="og:tags" content="taxonomy">
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="http://dev2820.github.io/css/syntax.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/homePage.css">
+    <link rel="stylesheet" href="/css/listPage.css">
+    <link rel="stylesheet" href="/css/notFound.css">
+    <link rel="stylesheet" href="/css/tags.css">
+   
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXX-X');
+    </script>
+    
+    
+    <script type="text/javascript">
+        function toggleAside(bool) {
+            let e = document.getElementById('aside');
+            if (e.classList.contains('hidden') && bool)
+                e.classList.remove('hidden');
+            else
+                e.classList.add('hidden');
+        }
+
+        function scrollToTop() {
+            let position =
+                document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+                scrollAnimation = setTimeout("scrollToTop()", 10);
+            } else clearTimeout(scrollAnimation);
+        }
+        function goToUrl(url) {
+            window.location.href = url;
+        }
+        window.onload = function () {
+            document.addEventListener('click', (event) => {
+                toggleAside(false);
+            });
+            document.getElementById('aside').addEventListener('click', (event) => {
+                event.stopPropagation();
+            })
+        }
+
+    </script>
+</head>
+<body id="body"><div id="topbar" class="card">
+  <div class="logo">
+    <a href="/">
+      
+      <img src="/images/logo.png" height="32px" />
+      
+    </a>
+  </div>
+  <div class="burger">
+    <button onclick="event.stopPropagation(); toggleAside(true)">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+</div><div id="aside" class="card hidden">
+    <div class="top">
+        <button onclick="event.stopPropagation(); toggleAside(false)">
+            <i class="fa fa-times fa-3x"></i>
+        </button>
+    </div>
+    <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+    <h5>풀스텍 웹개발을 지향합니다</h5>
+</div>
+    <hr class="aside-sep">
+    <div id="aside-menu">
+    <ul>
+        <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+        <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(15)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/what_is_hugo/">휴고에 대해 알아보자 <small>(10)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/hugo_new_theme/">hugo_new_theme <small>(0)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/nas_project/">Nas_project <small>(1)</small></a></li>
+        
+        <li><a href="http://dev2820.github.io/diaries/">일상 <small>(4)</small></a></li>
+        
+    </ul>
+</div>
+    
+
+<aside>
+    <ul>
+        
+        
+        <li>
+            <a href="#" target="_blank">Hardcoded Link 1</a>
+        </li>
+        <li>
+            <a href="#" target="_blank">Hardcoded Link 2</a>
+        </li>
+    </ul>
+</aside>
+</div>  
+        <div id="content">
+<section id="main">
+  <h1 id="title">휴고 Taxonomies</h1>
+  <small>
+    <div class="breadcrumbnav">
+  
+
+
+
+
+
+  <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> > 
+
+
+  <a href="http://dev2820.github.io/what_is_hugo/" >휴고에 대해 알아보자</a> > 
+
+
+  <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/"  class="active">휴고 Taxonomies</a> > 
+
+</div>
+
+  </small>
+  <div>
+        <article class="content">
+           <p>taxonomy, 즉 분류입니다. 컨텐츠를 어떻게 분류하고 그룹화하는지에 대해 다룹니다.</p>
+<p><a href="https://gohugo.io/content-management/taxonomies/">https://gohugo.io/content-management/taxonomies/</a></p>
+<h2 id="what-is-a-taxonomy">What is a Taxonomy?</h2>
+<p>휴고는 컨텐츠를 그룹화하는 taxonomies 라는 도우미를 포함하고 있습니다. taxonomies는 컨텐츠를 컨텐츠간의 논리관계에 따라 분류합니다.</p>
+<h3 id="definitions">Definitions</h3>
+<p><strong>Taxonomy</strong><br>
+컨텐츠를 클래스화하는데 사용되는 분류 입니다.</p>
+<p><strong>Term</strong><br>
+분류에 사용하는 키입니다.</p>
+<p><strong>Value</strong><br>
+term에 할당된 일부 컨텐츠들의 묶음입니다.</p>
+<h3 id="example-taxonomy-movie-website">Example Taxonomy: Movie Website</h3>
+<p>영화와 관련된 웹사이트를 만든다고 가정해 봅시다. 당신은 아마 다음과 같은 taxonomy를 포함할 겁니다.</p>
+<ul>
+<li>Actors</li>
+<li>Directors</li>
+<li>Studios</li>
+<li>Genre</li>
+<li>Year</li>
+<li>Awards</li>
+</ul>
+<p>Actor 에 대한 분류는 다음과 같은 형식으로 이루어질겁니다.</p>
+<pre><code>Actor                    &lt;- Taxonomy
+    Bruce Willis         &lt;- Term
+        The Sixth Sense  &lt;- Value
+        Unbreakable      &lt;- Value
+        Moonrise Kingdom &lt;- Value
+    Samuel L. Jackson    &lt;- Term
+        Unbreakable      &lt;- Value
+        The Avengers     &lt;- Value
+        xXx              &lt;- Value
+</code></pre><p>영화제목을 중점으로 보면 컨텐츠의 정보와 라벨은 그대로여도 컨텐츠간의 관계는 다르게 나타납니다.</p>
+<pre><code>Unbreakable                 &lt;- Value
+    Actors                  &lt;- Taxonomy
+        Bruce Willis        &lt;- Term
+        Samuel L. Jackson   &lt;- Term
+    Director                &lt;- Taxonomy
+        M. Night Shyamalan  &lt;- Term
+    ...
+Moonrise Kingdom            &lt;- Value
+    Actors                  &lt;- Taxonomy
+        Bruce Willis        &lt;- Term
+        Bill Murray         &lt;- Term
+    Director                &lt;- Taxonomy
+        Wes Anderson        &lt;- Term
+    ...
+</code></pre><h2 id="hugo-taxonomy-defaults">Hugo Taxonomy Defaults</h2>
+<p>휴고는 자동으로 <code>tags</code>와 <code>categories</code>에 대한 taxonomy를 만듦니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#6272a4"># config.toml의 default 설정값</span>
+[taxonomies]
+    category = <span style="color:#f1fa8c">&#34;categories&#34;</span>
+    tag = <span style="color:#f1fa8c">&#34;tags&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>다음과 같은 방식으로 taxonomy를 추가할 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#6272a4"># config.toml</span>
+<span style="color:#6272a4"># series라는 새 taxonomy를 만들 때</span>
+[taxonomies]
+    category = <span style="color:#f1fa8c">&#34;categories&#34;</span>
+    series = <span style="color:#f1fa8c">&#34;series&#34;</span>
+    tag = <span style="color:#f1fa8c">&#34;tags&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>다음과 같은 방식으로 default taxonomy를 제거할 수도 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#6272a4"># config.toml</span>
+<span style="color:#6272a4"># category taxonomy를 제거할 때</span>
+[taxonomies]
+    tag = <span style="color:#f1fa8c">&#34;tags&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>만일 여러분의 사이트에서 taxonomy를 사용하길 원치 않는다면 다음과 같은 값을 설정에 추가해줍니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#6272a4"># config.toml</span>
+disableKinds = [<span style="color:#f1fa8c">&#34;taxonomy&#34;</span>,<span style="color:#f1fa8c">&#34;term&#34;</span>]
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="default-destinations">Default Destinations</h3>
+<p>휴고는 여러분의 Taxonomy들을 가지고 컨텐츠를 분류하는 화면을 기본적으로 제공합니다. 예를 들어, <code>categories</code>라는 taxonomy가 설정파일에 있고 여러분의 컨텐츠 파일 front matter가 <code>categories</code>를 가지고 있다면</p>
+<ul>
+<li>
+<p><code>example.com/categories/</code> 페이지가 생성됩니다. 이 페이지는 모든 <code>term</code>를 포함하는 페이지 입니다.</p>
+</li>
+<li>
+<p>각 term에 해당하는 페이지 리스트를 포함하는 페이지가 생성됩니다.(ex. <code>example.com/categories/development/</code>) 해당 term을 front matter에 가진 컨텐츠는 이 페이지 리스트에 포함됩니다.</p>
+</li>
+</ul>
+<h3 id="add-taxonomies-to-content">Add Taxonomies to Content</h3>
+<p>컨텐츠가 어느 taxonomy 속할지 정하는 방법입니다.</p>
+<p>간단히 front matter에 taxonomy를 추가하면 됩니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">categories = [<span style="color:#f1fa8c">&#34;Development&#34;</span>]
+project_url = <span style="color:#f1fa8c">&#34;https://github.com/gohugoio/hugo&#34;</span>
+series = [<span style="color:#f1fa8c">&#34;Go Web Dev&#34;</span>]
+slug = <span style="color:#f1fa8c">&#34;hugo&#34;</span>
+tags = [<span style="color:#f1fa8c">&#34;Development&#34;</span>, <span style="color:#f1fa8c">&#34;Go&#34;</span>, <span style="color:#f1fa8c">&#34;fast&#34;</span>, <span style="color:#f1fa8c">&#34;Blogging&#34;</span>]
+title = <span style="color:#f1fa8c">&#34;Hugo: A fast and flexible static site generator&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+        </article>
+  </div>
+</section>
+<aside id="meta">
+    <div>
+    <section>
+      <h4 id="date"> Wed Sep 30, 2020 </h4>
+      <h5 id="wordcount"> 911 Words </h5>
+    </section>
+    
+    <ul>
+    tags
+    
+        <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/taxonomy/">#taxonomy</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+   
+</ul>
+    </div>
+    <div>
+        
+          이전글<a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/"> 휴고 Shortcodes</a>
+        
+        
+    </div>
+    <div>
+      
+
+<h3>비슷한 컨텐츠 더보기</h3>
+<ul>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/">휴고 Shortcodes</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/">휴고 Content Section,content Type 그리고 Archetypes</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/">휴고 Front Matter</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/">휴고 연관성 있는 컨텐츠</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/">휴고 Syntax Highlighting</a></li>
+	
+</ul>
+
+    </div>
+</aside>
+
+        </div>  <footer id="footer">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fa fa-angle-double-up"></i>
+      <span>위로</span>
+    </button>
+    
+    
+    <span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+    <span>ALL RIGHTS RESERVED.</span>
+  </footer>
+</body>
+</html>
+  </body>
+</html>

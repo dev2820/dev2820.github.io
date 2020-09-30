@@ -395,3 +395,8 @@ ul.contents li {
 .taxonomy h1{
     margin:2rem 0;
 }
+/* breadCrumbNav */
+.breadcrumbnav .active{
+    font-weight:400;
+    color:#999999;
+}
