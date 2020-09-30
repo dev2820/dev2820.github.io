@@ -78,17 +78,18 @@
             });
             document.getElementById('aside').addEventListener('click', (event) => {
                 event.stopPropagation();
-            })
-        }
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-            
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+            });
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 });
             });
-        });
+        }
+        
     </script>
 </head>
 <body id="body"><div id="topbar" class="card">
@@ -141,7 +142,6 @@
 <aside>
     <ul>
         
-        map[]
         
     </ul>
 </aside>
