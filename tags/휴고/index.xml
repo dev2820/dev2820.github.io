@@ -8,10 +8,28 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Wed, 30 Sep 2020 20:07:32 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2020 21:56:57 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>휴고 URL Management</title>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/</link>
+      <pubDate>Thu, 01 Oct 2020 21:56:57 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/</guid>
+      <description>이번글은 휴고가 지원하는 permalinks, aliases, link canonicalization 그리고 절대경로와 상대경로를 다루는 옵션들에 대해 다룹니다. https://gohugo.io/content-management/urls/ Permalinks 휴고가 여러분의 사이트를 build 하게 되면 생성되는 웹사이트는 public/</description>
+    </item>
+    
+    <item>
+      <title>휴고 Link and Cross Reference</title>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/</link>
+      <pubDate>Thu, 01 Oct 2020 21:25:59 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/</guid>
+      <description>이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크를 만드는 rel,relref shortcode에 대해 다룹니다. 이 두 shortcode는 각각 한 문</description>
+    </item>
     
     <item>
       <title>휴고 Summary</title>

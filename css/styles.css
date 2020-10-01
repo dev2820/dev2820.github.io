@@ -396,7 +396,9 @@ ul.contents li {
     margin:2rem 0;
 }
 /* breadCrumbNav */
+.breadcrumbnav {
+    color: #cccccc;
+}
 .breadcrumbnav .active{
-    font-weight:400;
-    color:#999999;
+    color:#3EB489;
 }
