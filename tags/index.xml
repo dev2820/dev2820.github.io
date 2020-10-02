@@ -8,7 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Thu, 01 Oct 2020 21:56:57 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2020 23:42:40 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,9 +16,27 @@
     <item>
       <title>hugo</title>
       <link>http://dev2820.github.io/tags/hugo/</link>
-      <pubDate>Thu, 01 Oct 2020 21:56:57 +0900</pubDate>
+      <pubDate>Thu, 01 Oct 2020 23:42:40 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>menu</title>
+      <link>http://dev2820.github.io/tags/menu/</link>
+      <pubDate>Thu, 01 Oct 2020 23:42:40 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/menu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>휴고</title>
+      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
+      <pubDate>Thu, 01 Oct 2020 23:42:40 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
       <description></description>
     </item>
     
@@ -28,15 +46,6 @@
       <pubDate>Thu, 01 Oct 2020 21:56:57 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/tags/url/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>휴고</title>
-      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
-      <pubDate>Thu, 01 Oct 2020 21:56:57 +0900</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
       <description></description>
     </item>
     
