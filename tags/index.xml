@@ -8,17 +8,89 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Thu, 01 Oct 2020 23:42:40 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 20:01:13 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>comment</title>
+      <link>http://dev2820.github.io/tags/comment/</link>
+      <pubDate>Fri, 02 Oct 2020 20:01:13 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/comment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>hugo</title>
       <link>http://dev2820.github.io/tags/hugo/</link>
-      <pubDate>Thu, 01 Oct 2020 23:42:40 +0900</pubDate>
+      <pubDate>Fri, 02 Oct 2020 20:01:13 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>댓글창 만들기</title>
+      <link>http://dev2820.github.io/tags/%EB%8C%93%EA%B8%80%EC%B0%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
+      <pubDate>Fri, 02 Oct 2020 20:01:13 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%EB%8C%93%EA%B8%80%EC%B0%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>휴고</title>
+      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
+      <pubDate>Fri, 02 Oct 2020 20:01:13 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Table of Contents</title>
+      <link>http://dev2820.github.io/tags/table-of-contents/</link>
+      <pubDate>Fri, 02 Oct 2020 20:00:12 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/table-of-contents/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>목차</title>
+      <link>http://dev2820.github.io/tags/%EB%AA%A9%EC%B0%A8/</link>
+      <pubDate>Fri, 02 Oct 2020 20:00:12 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%EB%AA%A9%EC%B0%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>문서에 목차 달기</title>
+      <link>http://dev2820.github.io/tags/%EB%AC%B8%EC%84%9C%EC%97%90-%EB%AA%A9%EC%B0%A8-%EB%8B%AC%EA%B8%B0/</link>
+      <pubDate>Fri, 02 Oct 2020 20:00:12 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%EB%AC%B8%EC%84%9C%EC%97%90-%EB%AA%A9%EC%B0%A8-%EB%8B%AC%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static</title>
+      <link>http://dev2820.github.io/tags/static/</link>
+      <pubDate>Fri, 02 Oct 2020 18:14:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/static/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static files</title>
+      <link>http://dev2820.github.io/tags/static-files/</link>
+      <pubDate>Fri, 02 Oct 2020 18:14:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/static-files/</guid>
       <description></description>
     </item>
     
@@ -28,15 +100,6 @@
       <pubDate>Thu, 01 Oct 2020 23:42:40 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/tags/menu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>휴고</title>
-      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
-      <pubDate>Thu, 01 Oct 2020 23:42:40 +0900</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
       <description></description>
     </item>
     
