@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴고 Page Resources  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 '휴고 Page Resources'을 한 번 살펴보세요.">
+    <meta property="og:title" content="휴고 Page Resources">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2020-10-03">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 '휴고 Page Resources'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="hugo">
+    
+    <meta property="og:tags" content="휴고">
+    
+    <meta property="og:tags" content="Page Resources">
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="http://dev2820.github.io/css/syntax.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/homePage.css">
+    <link rel="stylesheet" href="/css/listPage.css">
+    <link rel="stylesheet" href="/css/notFound.css">
+    <link rel="stylesheet" href="/css/tags.css">
+   
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXX-X');
+    </script>
+    
+    
+    <script type="text/javascript">
+        function toggleAside(bool) {
+            let e = document.getElementById('aside');
+            if (e.classList.contains('hidden') && bool)
+                e.classList.remove('hidden');
+            else
+                e.classList.add('hidden');
+        }
+
+        function scrollToTop() {
+            let position =
+                document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+                scrollAnimation = setTimeout("scrollToTop()", 10);
+            } else clearTimeout(scrollAnimation);
+        }
+        function goToUrl(url) {
+            window.location.href = url;
+        }
+        window.onload = function () {
+            document.addEventListener('click', (event) => {
+                toggleAside(false);
+            });
+            document.getElementById('aside').addEventListener('click', (event) => {
+                event.stopPropagation();
+            });
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+        
+    </script>
+</head>
+<body id="body"><div id="topbar" class="card">
+  <div class="logo">
+    <a href="/">
+      
+      <img src="/images/logo.png" height="32px" />
+      
+    </a>
+  </div>
+  <div class="burger">
+    <button onclick="event.stopPropagation(); toggleAside(true)">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+</div><div id="aside" class="card hidden">
+    <div class="top">
+        <button onclick="event.stopPropagation(); toggleAside(false)">
+            <i class="fa fa-times fa-3x"></i>
+        </button>
+    </div>
+    <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+    <h5>풀스텍 웹개발을 지향합니다</h5>
+</div>
+    <hr class="aside-sep">
+    <div id="aside-menu">
+    <ul>
+        <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+        <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(24)</small></a></li>
+    </ul>
+</div>
+    <nav class="sidebar-nav">
+    
+    <ul>
+        
+        <li><a class="sidebar-nav-item" href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme</a></li>
+        
+        <li><a class="sidebar-nav-item" href="/nas_project/" title="Nas_project">Nas_project</a></li>
+        
+        <li><a class="sidebar-nav-item" href="/diaries/" title="일상">일상</a></li>
+        
+        <li><a class="sidebar-nav-item active" href="/what_is_hugo/" title="휴고에 대해 알아보자">휴고에 대해 알아보자</a></li>
+        
+    </ul>
+</nav>
+</div>  
+        <div id="content">
+<section id="main">
+  <h1 id="title">휴고 Page Resources</h1>
+  <small>
+    <div class="breadcrumbnav">
+  
+
+
+
+
+
+  <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> > 
+
+
+  <a href="http://dev2820.github.io/what_is_hugo/" >휴고에 대해 알아보자</a> > 
+
+
+  <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/"  class="active">휴고 Page Resources</a> > 
+
+</div>
+
+  </small>
+  <div class="post-toc">
+    <span class="title">차례</span>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#properties">Properties</a></li>
+    <li><a href="#methods">Methods</a>
+      <ul>
+        <li><a href="#매칭-예시">매칭 예시</a></li>
+      </ul>
+    </li>
+    <li><a href="#page-resources-metadata">Page Resources Metadata</a>
+      <ul>
+        <li><a href="#예제">예제</a></li>
+        <li><a href="#the-counter-placeholder-in-name-and-title">The <code>:counter</code> placeholder in <code>name</code> and <code>title</code></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+  <div>
+        <article class="content">
+           <p>이미지, 다른 페이지, 문서 등등 모든 페이지 리소스는 relative URL과 메타데이터를 가집니다. 페이지 리소스는 페이지 리소스가 포함된 페이지 번들에서만 사용가능합니다.</p>
+<p><a href="https://gohugo.io/content-management/page-resources/">https://gohugo.io/content-management/page-resources/</a></p>
+<h2 id="properties">Properties</h2>
+<p><strong>ResourceType</strong><br>
+리소스의 메인 타입입니다. 예를들어 MIME type 이 <code>image/jpeg</code>인 파일의 ResourceType은 <code>image</code>입니다.</p>
+<p><strong>Name</strong><br>
+기본적으론 파일이름이 Name이 됩니다. front matter를 통해 Name을 바꿔줄 수 있습니다.</p>
+<p><strong>Title</strong><br>
+default값은 <code>.Name</code>과 같습니다. 마찬가지로 front matter에서 바꿔줄 수 있습니다.</p>
+<p><strong>Permalink</strong><br>
+리소스로 가는 절대경로입니다. <code>page</code> 타입의 리소스는 이 값을 가지지 않습니다.</p>
+<p><strong>RelPermalink</strong><br>
+리소스로 가는 상대경로입니다. 마찬가지로 <code>page</code> 타입의 리소스는 이 값을 가지지 않습니다.</p>
+<p><strong>Content</strong><br>
+리소스의 content 입니다. 대부분의 리소스는 <code>.Content</code>가 파일의 contents를 string으로 반환합니다. 이는 inline 코드에 사용될 수 있습니다.
+예를들어 <code>&lt;script&gt;{{ (.Resources.GetMatch &quot;myscript.js&quot;).Content | safeJS }}&lt;/script&gt;</code>나<code>&lt;img src=&quot;{{ (.Resources.GetMatch &quot;mylogo.png&quot;).Content | base64Encode }}&quot;&gt;</code> 처럼요.</p>
+<p><strong>MediaType</strong><br>
+리소스의 MIME type입니다. (예를들면 <code>image/jpeg</code>)</p>
+<p><strong>MediaType.MainType</strong><br>
+리소스의 MIME type중 메인 type입니다.예를들어 <code>application/pdf</code>가 MIME type이면 <code>application</code>이 해당됩니다.</p>
+<p><strong>MediaType.SubType</strong><br>
+리소스의 MIME type중 서브 type입니다.예를들어 <code>application/pdf</code>가 MIME type이면 <code>pdf</code>이 해당됩니다. 주의할점은 이 값이 파일확장자를 의미하는것은 아니라는 점입니다. 파워포인트같은 경우는 subtype이 <code>vnd.mspowerpoint</code>가 됩니다.</p>
+<p><strong>MediaType.Suffixes</strong><br>
+리소스의 MIME type중 가능한 접미사 조각입니다.</p>
+<h2 id="methods">Methods</h2>
+<p><strong>ByType</strong><br>
+페이지 리소스의 타입을 반환합니다.</p>
+<pre><code>{{ .Resources.ByType &quot;image&quot; }}
+</code></pre><p><strong>Match</strong><br>
+이름이 매치되는 모든 페이지 리소스를 반환합니다.</p>
+<pre><code>{{ .Resources.Match &quot;images/*&quot; }}
+</code></pre><p><strong>GetMatch</strong><br>
+<code>Match</code>와 같지만 일치하는 첫 번째 값만 반환합니다.</p>
+<h3 id="매칭-예시">매칭 예시</h3>
+<pre><code>// Using Match/GetMatch to find this images/sunset.jpg ?
+.Resources.Match &quot;images/sun*&quot; ✅
+.Resources.Match &quot;**/sunset.jpg&quot; ✅
+.Resources.Match &quot;images/*.jpg&quot; ✅
+.Resources.Match &quot;**.jpg&quot; ✅
+.Resources.Match &quot;*&quot; 🚫
+.Resources.Match &quot;sunset.jpg&quot; 🚫
+.Resources.Match &quot;*sunset.jpg&quot; 🚫
+</code></pre><h2 id="page-resources-metadata">Page Resources Metadata</h2>
+<p>페이지 리소스의 메타데이터는 페이지의 front matter에 <code>resources</code> 배열이나 테이블로 관리됩니다. 여러분은 여기에 와일드카드를 사용할 수 있습니다.</p>
+<p><strong>name</strong><br>
+리소스의 <code>Name</code>을 정합니다.
+<code>Match</code>나 <code>GetMatch</code> 메소드는 이 이름을 사용해 매치되는지 찾습니다.</p>
+<p><strong>title</strong><br>
+<code>Title</code>이 반환할 값을 정해줍니다.</p>
+<p><strong>params</strong><br>
+커스텀 key/value 맵입니다.</p>
+<h3 id="예제">예제</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#6272a4"># 특정 페이지의 front matter</span>
+date = <span style="color:#f1fa8c">&#34;2018-01-25&#34;</span>
+title = <span style="color:#f1fa8c">&#34;Application&#34;</span>
+
+[[resources]]
+  name = <span style="color:#f1fa8c">&#34;header&#34;</span>
+  src = <span style="color:#f1fa8c">&#34;images/sunset.jpg&#34;</span>
+
+[[resources]]
+  src = <span style="color:#f1fa8c">&#34;documents/photo_specs.pdf&#34;</span>
+  title = <span style="color:#f1fa8c">&#34;Photo Specifications&#34;</span>
+  [resources.params]
+    icon = <span style="color:#f1fa8c">&#34;photo&#34;</span>
+
+[[resources]]
+  src = <span style="color:#f1fa8c">&#34;documents/guide.pdf&#34;</span>
+  title = <span style="color:#f1fa8c">&#34;Instruction Guide&#34;</span>
+
+[[resources]]
+  src = <span style="color:#f1fa8c">&#34;documents/checklist.pdf&#34;</span>
+  title = <span style="color:#f1fa8c">&#34;Document Checklist&#34;</span>
+
+[[resources]]
+  src = <span style="color:#f1fa8c">&#34;documents/payment.docx&#34;</span>
+  title = <span style="color:#f1fa8c">&#34;Proof of Payment&#34;</span>
+
+[[resources]]
+  name = <span style="color:#f1fa8c">&#34;pdf-file-:counter&#34;</span>
+  src = <span style="color:#f1fa8c">&#34;**.pdf&#34;</span>
+  [resources.params]
+    icon = <span style="color:#f1fa8c">&#34;pdf&#34;</span>
+
+[[resources]]
+  src = <span style="color:#f1fa8c">&#34;**.docx&#34;</span>
+  [resources.params]
+    icon = <span style="color:#f1fa8c">&#34;word&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="the-counter-placeholder-in-name-and-title">The <code>:counter</code> placeholder in <code>name</code> and <code>title</code></h3>
+<p><code>:counter</code>는 특별한 placeholder 입니다. 이 placeholder는 <code>resources</code>파라미터의 <code>name</code>과 <code>title</code> 에만 사용할 수 있습니다.</p>
+<p>예를 들어, 현재 번들이 <code>photo_specs.pdf</code>,<code>other_specs.pdf</code>,<code>guide.pdf</code> 그리고 <code>checklist.pdf</code>라는 리소스를 가지고 있다고 합시다. 그리고 페이지에 다음과같은 front matter가 정의되어있다 합시다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[[resources]]
+    src = <span style="color:#f1fa8c">&#34;*specs.pdf&#34;</span>
+    title = <span style="color:#f1fa8c">&#34;Specification #:counter&#34;</span>
+
+[[resources]]
+    name = <span style="color:#f1fa8c">&#34;pdf-file-:counter&#34;</span>
+    src = <span style="color:#f1fa8c">&#34;**.pdf&#34;</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p>이제 리소스의 <code>Name</code>과 <code>Title</code>은 다음과 같이 매치됩니다.
+| Resource file | <code>Name</code> | <code>Title</code> |
+|&mdash;|:&mdash;:|&mdash;:|
+| checklist.pdf | <code>&quot;pdf-file-1.pdf&quot;</code> | <code>&quot;checklist.pdf&quot;</code> |
+| guide.pdf | <code>&quot;pdf-file-2.pdf&quot;</code> | <code>&quot;guide.pdf&quot;</code> |
+| other_specs.pdf | <code>&quot;pdf-file-3.pdf&quot;</code> | <code>&quot;Specification#1&quot;</code> |
+| photo_specs.pdf | <code>&quot;pdf-file-4.pdf&quot;</code> | <code>&quot;Specification#2&quot;</code> |</p>
+
+        </article>
+  </div>
+</section>
+<aside id="meta">
+    <div>
+    <section>
+      <h4 id="date"> Sat Oct 3, 2020 </h4>
+      <h5 id="wordcount"> 1226 Words </h5>
+    </section>
+    
+    <ul>
+    tags
+    
+        <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/page-resources/">#Page Resources</a></li>
+   
+        <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+   
+</ul>
+    </div>
+    <div>
+        
+          이전글<a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/"> 휴고 Multilingual Mode</a>
+        
+        
+    </div>
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "disqus_INRYoTikoC" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <div>
+      
+
+<h3>비슷한 컨텐츠 더보기</h3>
+<ul>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/">휴고 Multilingual Mode</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/">휴고 Comment</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/">휴고 Table of Content</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-static-files/">휴고 Static Files</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/">휴고 Menus</a></li>
+	
+</ul>
+
+    </div>
+</aside>
+
+        </div>  <footer id="footer">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fa fa-angle-double-up"></i>
+      <span>위로</span>
+    </button>
+    
+    
+    <span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+    <span>ALL RIGHTS RESERVED.</span>
+  </footer>
+</body>
+</html>
+  </body>
+</html>
