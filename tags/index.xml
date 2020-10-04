@@ -8,7 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Sat, 03 Oct 2020 17:47:18 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2020 17:47:33 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,9 +16,27 @@
     <item>
       <title>hugo</title>
       <link>http://dev2820.github.io/tags/hugo/</link>
-      <pubDate>Sat, 03 Oct 2020 17:47:18 +0900</pubDate>
+      <pubDate>Sat, 03 Oct 2020 17:47:33 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>이미지 처리</title>
+      <link>http://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/</link>
+      <pubDate>Sat, 03 Oct 2020 17:47:33 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>휴고</title>
+      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
+      <pubDate>Sat, 03 Oct 2020 17:47:33 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
       <description></description>
     </item>
     
@@ -28,15 +46,6 @@
       <pubDate>Sat, 03 Oct 2020 17:47:18 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/tags/page-resources/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>휴고</title>
-      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
-      <pubDate>Sat, 03 Oct 2020 17:47:18 +0900</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
       <description></description>
     </item>
     

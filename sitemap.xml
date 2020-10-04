@@ -4,31 +4,41 @@
   
   <url>
     <loc>http://dev2820.github.io/categories/</loc>
-    <lastmod>2020-10-03T17:47:18+09:00</lastmod>
+    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://dev2820.github.io/tags/hugo/</loc>
-    <lastmod>2020-10-03T17:47:18+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/page-resources/</loc>
-    <lastmod>2020-10-03T17:47:18+09:00</lastmod>
+    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://dev2820.github.io/tags/</loc>
-    <lastmod>2020-10-03T17:47:18+09:00</lastmod>
+    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://dev2820.github.io/categories/what_is_hugo/</loc>
-    <lastmod>2020-10-03T17:47:18+09:00</lastmod>
+    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/</loc>
+    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</loc>
+    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-image-processing/</loc>
+    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/page-resources/</loc>
     <lastmod>2020-10-03T17:47:18+09:00</lastmod>
   </url>
   
