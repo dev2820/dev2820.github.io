@@ -87,7 +87,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -172,14 +175,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">웹으로 즐기는 코딩 code-server</h1>
-  <section>
-    <h4 id="date"> Wed Sep 23, 2020 </h4>
-    <h5 id="wordcount"> 915 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">웹으로 즐기는 코딩 code-server</h1>
+    <section>
+      <h4 id="date"> 2020년 09월 23일 12시 19분 </h4>
+      <h5 id="wordcount"> 915 Words </h5>
+      <h5 id="timetoread"> 2 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -196,8 +219,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -231,9 +259,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <p>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &lsquo;code-server&rsquo; 라는게 있는 것을 알아서 지금 도커로 &lsquo;code-server'를 설치하고 돌려보는 중입니다. 지금 이 글도 &lsquo;code-server'로 쓰는 중&hellip;</p>
+    <div>
+          <article class="content">
+            <p>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &lsquo;code-server&rsquo; 라는게 있는 것을 알아서 지금 도커로 &lsquo;code-server'를 설치하고 돌려보는 중입니다. 지금 이 글도 &lsquo;code-server'로 쓰는 중&hellip;</p>
 <p>대충 설치 방법은 이렇습니다.</p>
 <ol>
 <li>code-server를 다운받는다.</li>
@@ -261,11 +289,19 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
 </ul>
 <p>그 동안 ssh에 서버 연결해서 vim으로 코딩을 했는데 드디어 이 그지같은 환경에서 벗어날 수 있겠군요 ㅠㅠ 깃헙에 star도 이미 35000개나 달렸더라구요. 응당 받을만합니다. 뭔가 기대하지 않고 설치해서 써봤는데 기대 이상이라 기분이 너무 좋네요. 이상 웹에서 즐기는 vscode, code-server 였습니다.</p>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <a class="previous" href="http://dev2820.github.io/diaries/hugo_test/"><i class="fa fa-arrow-circle-left"></i> 휴고에서 컨텐츠 지정하고 글 생성해보기</a>
+    
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -290,12 +326,7 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-          <a class="previous" href="http://dev2820.github.io/diaries/hugo_test/"><i class="fa fa-arrow-circle-left"></i> 휴고에서 컨텐츠 지정하고 글 생성해보기</a>
-        
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -322,6 +353,7 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

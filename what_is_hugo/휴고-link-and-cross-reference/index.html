@@ -87,7 +87,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -172,14 +175,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">휴고 Link and Cross Reference</h1>
-  <section>
-    <h4 id="date"> Thu Oct 1, 2020 </h4>
-    <h5 id="wordcount"> 821 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">휴고 Link and Cross Reference</h1>
+    <section>
+      <h4 id="date"> 2020년 10월 01일 21시 25분 </h4>
+      <h5 id="wordcount"> 821 Words </h5>
+      <h5 id="timetoread"> 2 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -196,8 +219,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -237,9 +265,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <p>이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크를 만드는 <code>rel</code>,<code>relref</code> shortcode에 대해 다룹니다. 이 두 shortcode는 각각 한 문서로 가는 절대 경로와 상대 경로를 보여줍니다.</p>
+    <div>
+          <article class="content">
+            <p>이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크를 만드는 <code>rel</code>,<code>relref</code> shortcode에 대해 다룹니다. 이 두 shortcode는 각각 한 문서로 가는 절대 경로와 상대 경로를 보여줍니다.</p>
 <p><a href="https://gohugo.io/content-management/cross-references/">https://gohugo.io/content-management/cross-references/</a></p>
 <h2 id="use-ref-and-relref">Use <code>ref</code> and <code>relref</code></h2>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -393,11 +421,21 @@
 <h2 id="마치며">마치며</h2>
 <p>다음글은 &lsquo;휴고 URL mangement&rsquo; 입니다.</p>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/"><i class="fa fa-arrow-circle-left"></i> 휴고 Summary</a>
+    
+    
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/"> 휴고 URL Management<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -422,14 +460,7 @@
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-          <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/"><i class="fa fa-arrow-circle-left"></i> 휴고 Summary</a>
-        
-        
-          <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/"> 휴고 URL Management<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -557,6 +588,7 @@
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

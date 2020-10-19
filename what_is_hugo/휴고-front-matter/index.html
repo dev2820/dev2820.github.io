@@ -87,7 +87,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -172,14 +175,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">휴고 Front Matter</h1>
-  <section>
-    <h4 id="date"> Tue Sep 29, 2020 </h4>
-    <h5 id="wordcount"> 2367 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">휴고 Front Matter</h1>
+    <section>
+      <h4 id="date"> 2020년 09월 29일 21시 54분 </h4>
+      <h5 id="wordcount"> 2367 Words </h5>
+      <h5 id="timetoread"> 5 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -196,8 +219,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -237,9 +265,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <p>이번 글은 휴고 컨텐츠의 &lsquo;front matter&rsquo; 에 대해 설명하는 글입니다. front matter는 말하자면 컨텐츠의 메타데이터, 컨텐츠의 설정값입니다. 컨텐츠의 타이틀, 생성날짜, 만기일 등등을 정해주고 심지어는 어떤 화면으로 컨텐츠를 표출시킬지 레이아웃을 정해주거나 컨텐츠로가는 주소를 바꿔주는등 여러가지를 할 수 있습니다.</p>
+    <div>
+          <article class="content">
+            <p>이번 글은 휴고 컨텐츠의 &lsquo;front matter&rsquo; 에 대해 설명하는 글입니다. front matter는 말하자면 컨텐츠의 메타데이터, 컨텐츠의 설정값입니다. 컨텐츠의 타이틀, 생성날짜, 만기일 등등을 정해주고 심지어는 어떤 화면으로 컨텐츠를 표출시킬지 레이아웃을 정해주거나 컨텐츠로가는 주소를 바꿔주는등 여러가지를 할 수 있습니다.</p>
 <h2 id="front-matter-formats">Front Matter Formats</h2>
 <p><a href="https://gohugo.io/content-management/front-matter/">https://gohugo.io/content-management/front-matter/</a></p>
 <p>휴고에서 사용 가능한 front matter 형식은 총 4가지 있습니다.</p>
@@ -567,11 +595,21 @@ title = <span style="color:#f1fa8c">&#39;who we are&#39;</span>
 </div><h2 id="마치며">마치며</h2>
 <p>다음글에서는 content sections, content types, archetypes에 대해 알아보겠습니다.</p>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/"><i class="fa fa-arrow-circle-left"></i> 휴고 연관성 있는 컨텐츠</a>
+    
+    
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/"> 휴고 Content Section,content Type 그리고 Archetypes<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -596,14 +634,7 @@ title = <span style="color:#f1fa8c">&#39;who we are&#39;</span>
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-          <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/"><i class="fa fa-arrow-circle-left"></i> 휴고 연관성 있는 컨텐츠</a>
-        
-        
-          <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/"> 휴고 Content Section,content Type 그리고 Archetypes<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -731,6 +762,7 @@ title = <span style="color:#f1fa8c">&#39;who we are&#39;</span>
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

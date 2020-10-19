@@ -89,7 +89,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -174,14 +177,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">휴고 Multilingual Mode</h1>
-  <section>
-    <h4 id="date"> Sat Oct 3, 2020 </h4>
-    <h5 id="wordcount"> 3382 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">휴고 Multilingual Mode</h1>
+    <section>
+      <h4 id="date"> 2020년 10월 03일 17시 46분 </h4>
+      <h5 id="wordcount"> 3382 Words </h5>
+      <h5 id="timetoread"> 7 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -198,8 +221,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -265,9 +293,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <p>이번글은 휴고 사이트의 다중언어지원에 대한 글입니다.</p>
+    <div>
+          <article class="content">
+            <p>이번글은 휴고 사이트의 다중언어지원에 대한 글입니다.</p>
 <p><a href="https://gohugo.io/content-management/multilingual/">https://gohugo.io/content-management/multilingual/</a></p>
 <h2 id="configure-languages">Configure Languages</h2>
 <p>다음 예제는 다중언어지원을 위한 <code>config</code> 파일입니다.</p>
@@ -777,11 +805,21 @@ weight = <span style="color:#bd93f9">0</span>
 <p>설정이 되어있지 않은 언어는 default language를 사용합니다. default value가 없다면 빈 string이 보일겁니다.</p>
 <p><code>config</code>파일에서 <code>enableMissingTranslationPlaceholders</code>를 <code>true</code>로 설정하면 찾을 수 없는 언어 번역은<code>[i18n] identifier</code>에서 string placeholder를 찾아 사용합니다. <code>identifier</code>는 찾을 수 없는 언어 id 입니다.</p>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/"><i class="fa fa-arrow-circle-left"></i> 휴고 Table of Content</a>
+    
+    
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/"> 휴고 Page Resources<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -808,14 +846,7 @@ weight = <span style="color:#bd93f9">0</span>
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-          <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/"><i class="fa fa-arrow-circle-left"></i> 휴고 Table of Content</a>
-        
-        
-          <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/"> 휴고 Page Resources<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -943,6 +974,7 @@ weight = <span style="color:#bd93f9">0</span>
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

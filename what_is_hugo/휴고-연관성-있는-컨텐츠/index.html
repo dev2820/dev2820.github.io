@@ -87,7 +87,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -172,14 +175,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">휴고 연관성 있는 컨텐츠</h1>
-  <section>
-    <h4 id="date"> Sun Sep 27, 2020 </h4>
-    <h5 id="wordcount"> 1618 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">휴고 연관성 있는 컨텐츠</h1>
+    <section>
+      <h4 id="date"> 2020년 09월 27일 16시 35분 </h4>
+      <h5 id="wordcount"> 1618 Words </h5>
+      <h5 id="timetoread"> 4 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -196,8 +219,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -237,9 +265,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <p>이건 여담인데 여러분 이거 읽다보면 아니 그래서 어떻게 단다는 거야 처음부터 따라가는데 하나도 모르겠고 자꾸 헛소리만하네 같은 생각이 들 수 있는데 네! 저도 같은 생각입니다! 휴고에서 알려주는 순서대로 따라가면 얼추 혼자서 블로그도 만들고 팅팅탱탱후라이팬놀이 할줄 알았는데 아니었습니다. 껄껄껄</p>
+    <div>
+          <article class="content">
+            <p>이건 여담인데 여러분 이거 읽다보면 아니 그래서 어떻게 단다는 거야 처음부터 따라가는데 하나도 모르겠고 자꾸 헛소리만하네 같은 생각이 들 수 있는데 네! 저도 같은 생각입니다! 휴고에서 알려주는 순서대로 따라가면 얼추 혼자서 블로그도 만들고 팅팅탱탱후라이팬놀이 할줄 알았는데 아니었습니다. 껄껄껄</p>
 <p>그래서 이 컨텐츠는 적당히 필요한 휴고의 기능들, 휴고의 구요등을 설명하는 컨텐츠로 두고 따로 다음에 휴고로 블로그 개설하는 컨텐츠를 진행하겠습니다. 순 서대로 밟아가며 따라갈 수 있는 컨텐츠로요.</p>
 <h2 id="related-content">Related Content</h2>
 <p>블로그 글 다읽고 하단에 보면 비슷한 글 더보기, 다른 컨텐츠 보기 등등 나오죠? 그거 휴고에서 어떻게 만드는지 관한 글입니다.</p>
@@ -361,11 +389,21 @@ true로 설정하면 연관있는 페이지 배열에 현재 페이지보다 최
 <h2 id="마치며">마치며</h2>
 <p>연관성 있는 글을 수집하는 것은 위에 나온 메소드 말고 직접 구현할 수도 있습니다.  하지만 구지 그러지 않는 것을 추천합니다. 쓸대없는 개발기간만 늘리거든요. 다음글은 컨텐츠의 front matter 값에 대해 알아보겠습니다.</p>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/"><i class="fa fa-arrow-circle-left"></i> 휴고 Syntax Highlighting</a>
+    
+    
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/"> 휴고 Front Matter<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -390,14 +428,7 @@ true로 설정하면 연관있는 페이지 배열에 현재 페이지보다 최
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-          <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/"><i class="fa fa-arrow-circle-left"></i> 휴고 Syntax Highlighting</a>
-        
-        
-          <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/"> 휴고 Front Matter<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -525,6 +556,7 @@ true로 설정하면 연관있는 페이지 배열에 현재 페이지보다 최
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

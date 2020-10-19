@@ -91,7 +91,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -176,14 +179,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">휴고의 컨텐츠 관리</h1>
-  <section>
-    <h4 id="date"> Sat Sep 26, 2020 </h4>
-    <h5 id="wordcount"> 2459 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">휴고의 컨텐츠 관리</h1>
+    <section>
+      <h4 id="date"> 2020년 09월 26일 20시 39분 </h4>
+      <h5 id="wordcount"> 2459 Words </h5>
+      <h5 id="timetoread"> 5 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -200,8 +223,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -244,9 +272,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <p>이번 글에서는 휴고의 컨텐츠 관리에 관해서 알아보겠습니다.</p>
+    <div>
+          <article class="content">
+            <p>이번 글에서는 휴고의 컨텐츠 관리에 관해서 알아보겠습니다.</p>
 <p><a href="https://gohugo.io/content-management/">https://gohugo.io/content-management/</a></p>
 <h2 id="content-organization">Content Organization</h2>
 <p>휴고의 컨텐츠 조직화에 관한 페이지입니다.</p>
@@ -380,11 +408,21 @@ url: /blog/new-url/
 <h2 id="마치며">마치며</h2>
 <p>다음글에서는 codefence에 syntax highlight 적용하는 방법에 대해 알아보겠습니다.</p>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/"><i class="fa fa-arrow-circle-left"></i> 휴고의_환경설정</a>
+    
+    
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/"> 휴고 Syntax Highlighting<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -413,14 +451,7 @@ url: /blog/new-url/
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-          <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/"><i class="fa fa-arrow-circle-left"></i> 휴고의_환경설정</a>
-        
-        
-          <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/"> 휴고 Syntax Highlighting<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -516,6 +547,7 @@ url: /blog/new-url/
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

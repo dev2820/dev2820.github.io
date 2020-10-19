@@ -89,7 +89,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -174,14 +177,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">휴고 Static Files</h1>
-  <section>
-    <h4 id="date"> Fri Oct 2, 2020 </h4>
-    <h5 id="wordcount"> 609 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">휴고 Static Files</h1>
+    <section>
+      <h4 id="date"> 2020년 10월 02일 18시 14분 </h4>
+      <h5 id="wordcount"> 609 Words </h5>
+      <h5 id="timetoread"> 2 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -198,8 +221,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -236,9 +264,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <p>이 글은 휴고의 static file에 대해 다룹니다. <code>static/</code> 디렉토리에 들어가는 모든 파일들은 다 static file이라고 생각하시면 됩니다.</p>
+    <div>
+          <article class="content">
+            <p>이 글은 휴고의 static file에 대해 다룹니다. <code>static/</code> 디렉토리에 들어가는 모든 파일들은 다 static file이라고 생각하시면 됩니다.</p>
 <p><a href="https://gohugo.io/content-management/static-files/">https://gohugo.io/content-management/static-files/</a></p>
 <h2 id="static-files">Static Files</h2>
 <p>static file이란 사이트 루트에 고정적으로 주어지는 파일들을 말합니다. (로고 이미지,css 등등)</p>
@@ -290,11 +318,21 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
 <h3 id="주의점">주의점</h3>
 <p><code>staticDir2</code>의 2는 0~10 사이의 수를 사용할 수 있습니다. 그리고 이 숫자는 휴고에게 이 static 디렉토리를 추가하라고 알려줍니다.</p>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/"><i class="fa fa-arrow-circle-left"></i> 휴고 Menus</a>
+    
+    
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/"> 휴고 Table of Content<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -321,14 +359,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-          <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/"><i class="fa fa-arrow-circle-left"></i> 휴고 Menus</a>
-        
-        
-          <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/"> 휴고 Table of Content<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -456,6 +487,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

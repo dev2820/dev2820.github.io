@@ -91,7 +91,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -176,14 +179,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">휴고 Table of Content</h1>
-  <section>
-    <h4 id="date"> Fri Oct 2, 2020 </h4>
-    <h5 id="wordcount"> 580 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">휴고 Table of Content</h1>
+    <section>
+      <h4 id="date"> 2020년 10월 02일 20시 00분 </h4>
+      <h5 id="wordcount"> 580 Words </h5>
+      <h5 id="timetoread"> 2 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -200,8 +223,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -236,9 +264,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <p>이번글은 문서의 목차를 만드는 방법에 대해 다루겠습니다. 휴고는 markdown 문서를 분석해 자동으로 목차를 만들어줍니다.</p>
+    <div>
+          <article class="content">
+            <p>이번글은 문서의 목차를 만드는 방법에 대해 다루겠습니다. 휴고는 markdown 문서를 분석해 자동으로 목차를 만들어줍니다.</p>
 <p><a href="https://gohugo.io/content-management/toc/">https://gohugo.io/content-management/toc/</a></p>
 <h2 id="usage">Usage</h2>
 <p>일반적으로 마크다운으로 문서를 만들면 우리는 문서에 헤드를 답니다.</p>
@@ -334,11 +362,21 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
 </div>
 </div><h2 id="template-example-toc-partial">Template Example: TOC Partial</h2>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-static-files/"><i class="fa fa-arrow-circle-left"></i> 휴고 Static Files</a>
+    
+    
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/"> 휴고 Multilingual Mode<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -367,14 +405,7 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-          <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-static-files/"><i class="fa fa-arrow-circle-left"></i> 휴고 Static Files</a>
-        
-        
-          <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/"> 휴고 Multilingual Mode<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -502,6 +533,7 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

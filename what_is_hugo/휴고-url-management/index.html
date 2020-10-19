@@ -87,7 +87,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -172,14 +175,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">휴고 URL Management</h1>
-  <section>
-    <h4 id="date"> Thu Oct 1, 2020 </h4>
-    <h5 id="wordcount"> 2370 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">휴고 URL Management</h1>
+    <section>
+      <h4 id="date"> 2020년 10월 01일 21시 56분 </h4>
+      <h5 id="wordcount"> 2370 Words </h5>
+      <h5 id="timetoread"> 5 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -196,8 +219,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -249,9 +277,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <p>이번글은 휴고가 지원하는 permalinks, aliases, link canonicalization 그리고 절대경로와 상대경로를 다루는 옵션들에 대해 다룹니다.</p>
+    <div>
+          <article class="content">
+            <p>이번글은 휴고가 지원하는 permalinks, aliases, link canonicalization 그리고 절대경로와 상대경로를 다루는 옵션들에 대해 다룹니다.</p>
 <p><a href="https://gohugo.io/content-management/urls/">https://gohugo.io/content-management/urls/</a></p>
 <h2 id="permalinks">Permalinks</h2>
 <p>휴고가 여러분의 사이트를 build 하게 되면 생성되는 웹사이트는 <code>public/</code> 디렉토리에 생성됩니다. 그러나 어느 디렉토리에 웹사이트를 build 할지는 <code>config</code>파일의 <code>publishDir</code> 변수값을 바꿔 다른 디렉토리에서 사이트가 build 되도록 설정해 줄 수 있습니다.</p>
@@ -490,11 +518,21 @@ content/posts/post-1.md
 <p>기본적으로 휴고의 모든 상대 URL은 바뀌지 않습니다. 만약 <code>config</code> 파일의 <code>relativeURLs</code> 변수를 <code>true</code>로 설정하면 여러분의 사이트는 상대 주소를 현재주소에 기반에 바꿔줄 겁니다.</p>
 <p>예를 들어 <code>/posts/first/</code> 페이지에 포함된 <code>/about/</code> 링크는 <code>../../about</code>으로 변경됩니다.</p>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/"><i class="fa fa-arrow-circle-left"></i> 휴고 Link and Cross Reference</a>
+    
+    
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/"> 휴고 Menus<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -519,14 +557,7 @@ content/posts/post-1.md
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-          <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/"><i class="fa fa-arrow-circle-left"></i> 휴고 Link and Cross Reference</a>
-        
-        
-          <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/"> 휴고 Menus<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -654,6 +685,7 @@ content/posts/post-1.md
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

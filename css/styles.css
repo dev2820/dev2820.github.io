@@ -15,7 +15,7 @@ body {
   line-height: 1.83em;
 }
 body {
-    min-width:800px;
+    /* min-width:800px; */
     scroll-behavior: smooth;
     transition:0.8s;
     background-color:#ffffff;
@@ -61,6 +61,7 @@ hr.summary-sep {
     height: 55px;
     position: fixed;
     top:0;
+    z-index:50;
 }
 #topbar .menus {
     height:50px;
@@ -104,7 +105,7 @@ hr.summary-sep {
     transform:translateX(0px);
     transition:0.2s ease-out;
     background-color:white;
-    z-index:10;
+    z-index:60;
     padding:0 10px;
     display:flex;
     flex-direction:column;
@@ -145,15 +146,66 @@ hr.summary-sep {
 }
 /* Content*/
 #content {
-    margin:0 auto;
-    max-width:1000px;
-    padding:50px;
+    max-width:100%;
     display:flex;
     flex-direction:column;
     justify-content: center;
 }
+#content #banner {
+    height:400px;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#content #banner .title {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: absolute;
+    width: 100%;
+    height:400px;
+    text-align:center;
+    margin:auto 0;
+    color:white;
+    z-index:0;
+    /* background-color:green; */
+}
 #content #main {
-    width:90%;
+    background-color:white;
+    width:100%;
+    padding:30px 50px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    position:relative;
+    top:400px;
+    z-index:10;
+}
+#content #main .center {
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+}
+#content #meta {
+    background-color:white;
+    position:relative;
+    top:400px;
+    padding:0 30px;
+    width:100%;
+    margin:0 auto;
+    z-index:10;
+}
+#content #meta .center {
+    width:1000px;
     margin:0 auto;
 }
 /* Summary */
@@ -312,11 +364,15 @@ article.summary .cover-content .read-more {
 }
 /* Footer*/
 #footer {
-    height:150px;
+    position:relative;
+    height:400px;
+    background-color:#cccccc;
     display:flex;
     flex-direction:column;
     justify-content: center;
     text-align:center;
+    z-index:10;
+    top:400px;
 }
 #footer span {
     font-size:0.7rem;
@@ -522,6 +578,7 @@ ul.contents li {
     overflow: hidden;
     margin:5px 10px;
     cursor:pointer;
+    background-color:white;
 }
 .summary-card .banner{
     height:50%;

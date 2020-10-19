@@ -87,7 +87,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -172,14 +175,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">[hugo] 휴고에 대해 알아보자 (1)</h1>
-  <section>
-    <h4 id="date"> Wed Sep 23, 2020 </h4>
-    <h5 id="wordcount"> 2141 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">[hugo] 휴고에 대해 알아보자 (1)</h1>
+    <section>
+      <h4 id="date"> 2020년 09월 23일 21시 30분 </h4>
+      <h5 id="wordcount"> 2141 Words </h5>
+      <h5 id="timetoread"> 5 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -196,8 +219,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -250,9 +278,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <h2 id="글머리">글머리</h2>
+    <div>
+          <article class="content">
+            <h2 id="글머리">글머리</h2>
 <p>이 글은 Hugo(이하 휴고) 공식 홈페이지와 공식 홈페이지에서 소개하는 휴고에 대해 다루고 있습니다. 페이지 설명을 번역하며 휴고에 대해서 알아볼 것입니다.</p>
 <h2 id="hugo-홈페이지">HUGO 홈페이지</h2>
 <p><a href="http://gohugo.io">공식 홈페이지</a></p>
@@ -342,11 +370,19 @@
 <p><a href="https://gohugo.io/about/">https://gohugo.io/about/</a></p>
 <p>이상으로 휴고 공식홈페이지에서 설명하는 휴고에 대해 알아보았고 다음 글에서는 휴고를 시작하는 방법을 알아보겠습니다.</p>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+    
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/"> 휴고_설치하기<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -371,12 +407,7 @@
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-        
-          <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/"> 휴고_설치하기<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -424,6 +455,7 @@
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

@@ -93,7 +93,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -178,14 +181,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">휴고에서 컨텐츠 지정하고 글 생성해보기</h1>
-  <section>
-    <h4 id="date"> Sat Aug 8, 2020 </h4>
-    <h5 id="wordcount"> 725 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">휴고에서 컨텐츠 지정하고 글 생성해보기</h1>
+    <section>
+      <h4 id="date"> 2020년 08월 08일 15시 25분 </h4>
+      <h5 id="wordcount"> 725 Words </h5>
+      <h5 id="timetoread"> 2 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -202,8 +225,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -243,9 +271,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <h2 id="hugo로-build-하는-법">hugo로 build 하는 법</h2>
+    <div>
+          <article class="content">
+            <h2 id="hugo로-build-하는-법">hugo로 build 하는 법</h2>
 <p>hugo의 최상위 폴더로 가서 <code>hugo</code> 만 입력하면 됩니다.</p>
 <p>내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &lsquo;blog/hugo&rsquo; 여기 서 빌드하면 됩니다. hugo의 하위 폴더에서는 hugo 명령어가 먹지 않으니 주의</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -351,11 +379,21 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
 </div><p>위 명령을 입력하면 localhost:1313 위치에 임시 서버가 오픈되어 작성할 글을 테마를 적용하여 미리볼 수 있습니다. 이 임시서버에 보여주는 컨텐츠는 <code>draft</code>가 <code>true</code>로 되어있어도 글이 보여 글을 업로드 하기전에 볼 수 있습니다.</p>
 <p>어떤 테마로 블로그를 만들어 보여줄지는 최상위 폴더의 config.toml에 theme 값을 뭘로 해주느냐에 따라 결정됩니다.</p>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <a class="previous" href="http://dev2820.github.io/diaries/test3/"><i class="fa fa-arrow-circle-left"></i> test 글 작성 중</a>
+    
+    
+      <a class="next" href="http://dev2820.github.io/diaries/code-server/"> 웹으로 즐기는 코딩 code-server<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -386,14 +424,7 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-          <a class="previous" href="http://dev2820.github.io/diaries/test3/"><i class="fa fa-arrow-circle-left"></i> test 글 작성 중</a>
-        
-        
-          <a class="next" href="http://dev2820.github.io/diaries/code-server/"> 웹으로 즐기는 코딩 code-server<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -441,6 +472,7 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

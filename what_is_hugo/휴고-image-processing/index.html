@@ -87,7 +87,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -172,14 +175,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">휴고 Image Processing</h1>
-  <section>
-    <h4 id="date"> Sat Oct 3, 2020 </h4>
-    <h5 id="wordcount"> 2200 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">휴고 Image Processing</h1>
+    <section>
+      <h4 id="date"> 2020년 10월 03일 17시 47분 </h4>
+      <h5 id="wordcount"> 2200 Words </h5>
+      <h5 id="timetoread"> 5 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -196,8 +219,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -253,9 +281,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <p>이번 글은 휴고의 이미지 프로세싱에 관한 글입니다.</p>
+    <div>
+          <article class="content">
+            <p>이번 글은 휴고의 이미지 프로세싱에 관한 글입니다.</p>
 <p><a href="https://gohugo.io/content-management/image-processing/">https://gohugo.io/content-management/image-processing/</a></p>
 <h2 id="the-image-page-resource">The Image Page Resource</h2>
 <p><code>image</code>는 페이지 리소스이고 프로세싱 메소드는 <code>/static</code> 폴더 안에 있는 이미지에 대해서는 작동하지 않습니다.</p>
@@ -536,11 +564,21 @@ disableLatLong = <span style="color:#ff79c6">false</span>
 </code></pre></td></tr></table>
 </div>
 </div>
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/"><i class="fa fa-arrow-circle-left"></i> 휴고 Page Resources</a>
+    
+    
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/"> 휴고 Comment 추가하기<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -565,14 +603,7 @@ disableLatLong = <span style="color:#ff79c6">false</span>
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-          <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/"><i class="fa fa-arrow-circle-left"></i> 휴고 Page Resources</a>
-        
-        
-          <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/"> 휴고 Comment 추가하기<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -700,6 +731,7 @@ disableLatLong = <span style="color:#ff79c6">false</span>
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">

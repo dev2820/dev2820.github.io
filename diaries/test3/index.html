@@ -85,7 +85,10 @@
             document.addEventListener('scroll',(event)=>{
                 const scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
+                if(progressbar){
+                    progressbar.style.width = (scroll/height)*100+'%';
+                }
             })
         }
         
@@ -170,14 +173,34 @@
     </nav>
 </div>  
         <div id="content">
-<section id="main">
-  <h1 id="title">test 글 작성 중</h1>
-  <section>
-    <h4 id="date"> Sat Jul 25, 2020 </h4>
-    <h5 id="wordcount"> 25 Words </h5>
-  </section>
-  <small>
-    <div class="breadcrumbnav">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 400) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+
+  <div class="title" style="backdrop-filter:brightness(50%)">
+    <h1 id="title">test 글 작성 중</h1>
+    <section>
+      <h4 id="date"> 2020년 07월 25일 02시 23분 </h4>
+      <h5 id="wordcount"> 25 Words </h5>
+      <h5 id="timetoread"> 1 mins </h5>
+    </section>
+    <small>
+      <div class="breadcrumbnav">
   
 
 
@@ -194,8 +217,13 @@
 
 </div>
 
-  </small>
-  <script>
+    </small>
+    <small>by dev2820</small>
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <script>
     let toggle = true;
     function toggleTable(){
         console.log(toggle)
@@ -232,9 +260,9 @@
 </nav>
     </div>
 </div>
-  <div>
-        <article class="content">
-           <h1 id="md-작성-테스트-중">md 작성 테스트 중</h1>
+    <div>
+          <article class="content">
+            <h1 id="md-작성-테스트-중">md 작성 테스트 중</h1>
 <h1 id="h1">h1</h1>
 <h2 id="h2">h2</h2>
 <h3 id="h3">h3</h3>
@@ -261,11 +289,19 @@
 <li>sub sub title</li>
 </ul>
 
-        </article>
+          </article>
+    </div>
   </div>
 </section>
-<hr>
 <aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+    
+      <a class="next" href="http://dev2820.github.io/diaries/hugo_test/"> 휴고에서 컨텐츠 지정하고 글 생성해보기<i class="fa fa-arrow-circle-right"></i></a>
+    
+  </nav>
+  <hr>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -288,12 +324,7 @@
         
     </ul>
 </div>
-    <nav class="section-move">
-        
-        
-          <a class="next" href="http://dev2820.github.io/diaries/hugo_test/"> 휴고에서 컨텐츠 지정하고 글 생성해보기<i class="fa fa-arrow-circle-right"></i></a>
-        
-    </nav>
+    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -320,6 +351,7 @@
 
 </div>
     </div>
+  </div>
 </aside>
 
         </div>  <footer id="footer">
