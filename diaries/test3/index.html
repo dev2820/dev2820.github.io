@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="/css/listPage.css">
     <link rel="stylesheet" href="/css/notFound.css">
     <link rel="stylesheet" href="/css/tags.css">
-   
+    <link rel="stylesheet" href="/css/markdown.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     
@@ -82,22 +82,32 @@
                     });
                 });
             });
+            document.addEventListener('scroll',(event)=>{
+                const scroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+            })
         }
         
     </script>
 </head>
 <body id="body"><div id="topbar" class="card">
-  <div class="logo">
-    <a href="/">
-      
-      <img src="/images/logo.png" height="32px" />
-      
-    </a>
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/logo.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
-  <div class="burger">
-    <button onclick="event.stopPropagation(); toggleAside(true)">
-      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    </button>
+  <div class="progress-bar">
+    <span class="progress"></span>
   </div>
 </div><div id="aside" class="card hidden">
     <div class="top">
@@ -115,27 +125,49 @@
     <h5>풀스텍 웹개발을 지향합니다</h5>
 </div>
     <hr class="aside-sep">
-    <div id="aside-menu">
-    <ul>
-        <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
-        <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
-        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(25)</small></a></li>
-    </ul>
-</div>
+    <div class="aside-menu">
+        <ul>
+            <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+            <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+            <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(25)</small></a>
+                <small>- 2020/10/18</small></li>
+        </ul>
+    </div>
     <nav class="sidebar-nav">
-    
-    <ul>
         
-        <li><a class="sidebar-nav-item" href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme</a></li>
         
-        <li><a class="sidebar-nav-item" href="/nas_project/" title="Nas_project">Nas_project</a></li>
-        
-        <li><a class="sidebar-nav-item active" href="/diaries/" title="일상">일상</a></li>
-        
-        <li><a class="sidebar-nav-item" href="/what_is_hugo/" title="휴고에 대해 알아보자">휴고에 대해 알아보자</a></li>
-        
-    </ul>
-</nav>
+        <ul>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item active" href="/diaries/" title="Diaries">Diaries<small>(4)</small></a>
+                <small>- 2020/09/26</small>
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme<small>(0)</small></a>
+                
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/nas_project/" title="Nas_project">Nas_project<small>(1)</small></a>
+                <small>- 2020/09/18</small>
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/what_is_hugo/" title="what_is_hugo">what_is_hugo<small>(20)</small></a>
+                <small>- 2020/10/18</small>
+            </li>
+            
+        </ul>
+    </nav>
 </div>  
         <div id="content">
 <section id="main">
@@ -148,19 +180,43 @@
 
 
 
-  <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> > 
+  <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> 
+ >
 
+  <a href="http://dev2820.github.io/diaries/" >Diaries</a> 
+ >
 
-  <a href="http://dev2820.github.io/diaries/" >일상</a> > 
-
-
-  <a href="http://dev2820.github.io/diaries/test3/"  class="active">test 글 작성 중</a> > 
+  <a href="http://dev2820.github.io/diaries/test3/"  class="active">test 글 작성 중</a> 
 
 </div>
 
   </small>
-  <div class="post-toc">
-    <span class="title">차례</span>
+  <script>
+    let toggle = true;
+    function toggleTable(){
+        console.log(toggle)
+        if(toggle){
+            document.getElementById('table').classList.add('hidden')
+            document.querySelector('.post-toc .title').classList.add('toggle-off')
+            document.querySelector('.post-toc .fa-angle-down').classList.remove('hidden')
+            document.querySelector('.post-toc .fa-angle-up').classList.add('hidden')
+        }
+        else {
+            document.getElementById('table').classList.remove('hidden')
+            document.querySelector('.post-toc .title').classList.remove('toggle-off')
+            document.querySelector('.post-toc .fa-angle-down').classList.add('hidden')
+            document.querySelector('.post-toc .fa-angle-up').classList.remove('hidden')
+        }
+        toggle = !toggle;
+    }
+</script>
+<div class="post-toc">
+    <div class="title" onclick="toggleTable()">
+        차례
+        <i class="fa fa-angle-down hidden"></i>
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <div id="table">
     <nav id="TableOfContents">
   <ul>
     <li><a href="#h2">h2</a>
@@ -170,6 +226,7 @@
     </li>
   </ul>
 </nav>
+    </div>
 </div>
   <div>
         <article class="content">

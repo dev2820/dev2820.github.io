@@ -8,17 +8,44 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Sat, 03 Oct 2020 17:47:33 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2020 21:17:54 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>disqus</title>
+      <link>http://dev2820.github.io/tags/disqus/</link>
+      <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/disqus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>hugo</title>
       <link>http://dev2820.github.io/tags/hugo/</link>
-      <pubDate>Sat, 03 Oct 2020 17:47:33 +0900</pubDate>
+      <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>코멘트 추가하기</title>
+      <link>http://dev2820.github.io/tags/%EC%BD%94%EB%A9%98%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%EC%BD%94%EB%A9%98%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>휴고</title>
+      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
+      <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
       <description></description>
     </item>
     
@@ -28,15 +55,6 @@
       <pubDate>Sat, 03 Oct 2020 17:47:33 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>휴고</title>
-      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
-      <pubDate>Sat, 03 Oct 2020 17:47:33 +0900</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
       <description></description>
     </item>
     
@@ -64,24 +82,6 @@
       <pubDate>Sat, 03 Oct 2020 17:46:56 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/tags/%EB%8B%A4%EC%A4%91%EC%96%B8%EC%96%B4%EC%A7%80%EC%9B%90/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>comment</title>
-      <link>http://dev2820.github.io/tags/comment/</link>
-      <pubDate>Fri, 02 Oct 2020 20:01:13 +0900</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/comment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>댓글창 만들기</title>
-      <link>http://dev2820.github.io/tags/%EB%8C%93%EA%B8%80%EC%B0%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
-      <pubDate>Fri, 02 Oct 2020 20:01:13 +0900</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/%EB%8C%93%EA%B8%80%EC%B0%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
       <description></description>
     </item>
     

@@ -2,15 +2,15 @@
 <html><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>휴고에 대해 알아보자  | dev2820 개발일지</title>
+    <title>what_is_hugo  | dev2820 개발일지</title>
     <meta name="description"
-        content="dev2820의 개발일지 저장소 '휴고에 대해 알아보자'을 한 번 살펴보세요.">
-    <meta property="og:title" content="휴고에 대해 알아보자">
+        content="dev2820의 개발일지 저장소 'what_is_hugo'을 한 번 살펴보세요.">
+    <meta property="og:title" content="what_is_hugo">
     
     <meta property="og:type" content="website">
     
     <meta property="og:description"
-        content="dev2820의 개발일지 저장소 '휴고에 대해 알아보자'을 한 번 살펴보세요.">
+        content="dev2820의 개발일지 저장소 'what_is_hugo'을 한 번 살펴보세요.">
     <meta property="og:url" content="http://dev2820.github.io/what_is_hugo/">
     <meta property="og:site_name" content="dev2820 개발일지">
     
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="/css/listPage.css">
     <link rel="stylesheet" href="/css/notFound.css">
     <link rel="stylesheet" href="/css/tags.css">
-   
+    <link rel="stylesheet" href="/css/markdown.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     
@@ -78,22 +78,32 @@
                     });
                 });
             });
+            document.addEventListener('scroll',(event)=>{
+                const scroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+            })
         }
         
     </script>
 </head>
 <body id="body"><div id="topbar" class="card">
-  <div class="logo">
-    <a href="/">
-      
-      <img src="/images/logo.png" height="32px" />
-      
-    </a>
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/logo.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
-  <div class="burger">
-    <button onclick="event.stopPropagation(); toggleAside(true)">
-      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    </button>
+  <div class="progress-bar">
+    <span class="progress"></span>
   </div>
 </div><div id="aside" class="card hidden">
     <div class="top">
@@ -111,31 +121,53 @@
     <h5>풀스텍 웹개발을 지향합니다</h5>
 </div>
     <hr class="aside-sep">
-    <div id="aside-menu">
-    <ul>
-        <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
-        <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
-        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(25)</small></a></li>
-    </ul>
-</div>
+    <div class="aside-menu">
+        <ul>
+            <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+            <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+            <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(25)</small></a>
+                <small>- 2020/10/18</small></li>
+        </ul>
+    </div>
     <nav class="sidebar-nav">
-    
-    <ul>
         
-        <li><a class="sidebar-nav-item" href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme</a></li>
         
-        <li><a class="sidebar-nav-item" href="/nas_project/" title="Nas_project">Nas_project</a></li>
-        
-        <li><a class="sidebar-nav-item" href="/diaries/" title="일상">일상</a></li>
-        
-        <li><a class="sidebar-nav-item active" href="/what_is_hugo/" title="휴고에 대해 알아보자">휴고에 대해 알아보자</a></li>
-        
-    </ul>
-</nav>
+        <ul>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/diaries/" title="Diaries">Diaries<small>(4)</small></a>
+                <small>- 2020/09/26</small>
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme<small>(0)</small></a>
+                
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/nas_project/" title="Nas_project">Nas_project<small>(1)</small></a>
+                <small>- 2020/09/18</small>
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item active" href="/what_is_hugo/" title="what_is_hugo">what_is_hugo<small>(20)</small></a>
+                <small>- 2020/10/18</small>
+            </li>
+            
+        </ul>
+    </nav>
 </div>  
         <div id="content">
 <main class="sections">
-    <h1>Section: 휴고에 대해 알아보자</h1>
+    <h1>Section: what_is_hugo</h1>
     <p>이 컨텐츠는 hugo(이하 휴고)의 공식 홈페이지 gohugo.io 를 둘러보며 hugo에 대해 알아보는 컨텐츠입니다. 휴고에 대해서 살펴본 뒤, 사용법과 제공하는 기능들, 그리고 hugo로 시작하는 Github 블로그에 대해 알아볼 것입니다.</p>
 
     <ul class="contents">
@@ -169,7 +201,7 @@
     </div>
   </div>
   <div class="cover-content">
-    <header onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/&#34;)">
+    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/">
       
       <img class="icon" src="/images/cover-icon.png" />
       
@@ -177,7 +209,7 @@
         <div class="post-meta">2020년 10월 01일 21시 56분</div> 
         <h2>휴고 URL Management</h2>
       </div>
-    </header>
+    </a>
     <div class="content">이번글은 휴고가 지원하는 permalinks, aliases, link canonicalization 그리고 절대경로와 상대경로를 다루는 옵션들에 대해 다룹니다. …</div>
     <div class="read-more"><span>2370 words, 5 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/">더 보기 →</a></div>
   </div>
@@ -216,7 +248,7 @@
     </div>
   </div>
   <div class="cover-content">
-    <header onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/&#34;)">
+    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/">
       
       <img class="icon" src="/images/cover-icon.png" />
       
@@ -224,7 +256,7 @@
         <div class="post-meta">2020년 10월 01일 21시 25분</div> 
         <h2>휴고 Link and Cross Reference</h2>
       </div>
-    </header>
+    </a>
     <div class="content">이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크를 만드는 rel,relref shortcode에 대해 다룹니다. 이 두 shortcode는 각각 한 문</div>
     <div class="read-more"><span>821 words, 2 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/">더 보기 →</a></div>
   </div>
@@ -261,7 +293,7 @@
     </div>
   </div>
   <div class="cover-content">
-    <header onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/&#34;)">
+    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/">
       
       <img class="icon" src="/images/cover-icon.png" />
       
@@ -269,7 +301,7 @@
         <div class="post-meta">2020년 09월 30일 20시 07분</div> 
         <h2>휴고 Summary</h2>
       </div>
-    </header>
+    </a>
     <div class="content"><p>휴고는 page 변수로 <code>.Summary</code>를 제공합니다. 이 summary는 페이지에 대한 요약이며 자동으로 휴고가 생성해줍니다만 사용자 정의 요약을 사용할 수도 있습니다. …</p></div>
     <div class="read-more"><span>654 words, 2 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/">더 보기 →</a></div>
   </div>
@@ -308,7 +340,7 @@
     </div>
   </div>
   <div class="cover-content">
-    <header onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/&#34;)">
+    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/">
       
       <img class="icon" src="/images/cover-icon.png" />
       
@@ -316,7 +348,7 @@
         <div class="post-meta">2020년 09월 30일 19시 06분</div> 
         <h2>휴고 Taxonomies</h2>
       </div>
-    </header>
+    </a>
     <div class="content">taxonomy, 즉 분류입니다. 컨텐츠를 어떻게 분류하고 그룹화하는지에 대해 다룹니다. https://gohugo.io/content-management/taxonomies/ What is a Taxonomy? 휴고는 컨텐츠를 그룹 …</div>
     <div class="read-more"><span>911 words, 2 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/">더 보기 →</a></div>
   </div>
@@ -355,7 +387,7 @@
     </div>
   </div>
   <div class="cover-content">
-    <header onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/&#34;)">
+    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/">
       
       <img class="icon" src="/images/cover-icon.png" />
       
@@ -363,7 +395,7 @@
         <div class="post-meta">2020년 09월 30일 15시 45분</div> 
         <h2>휴고 Shortcodes</h2>
       </div>
-    </header>
+    </a>
     <div class="content">이 글은 간단한 코드를 컨텐츠 안에 집어넣는 Shortcodes 기능을 소개합니다. 참고로 hugo 문법을 md파일에 썼더니 죄다 hugo에서 해석해버려서 { {와 } }는 {{와 }}로 읽</div>
     <div class="read-more"><span>2569 words, 6 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/">더 보기 →</a></div>
   </div>
@@ -402,7 +434,7 @@
     </div>
   </div>
   <div class="cover-content">
-    <header onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/&#34;)">
+    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/">
       
       <img class="icon" src="/images/cover-icon.png" />
       
@@ -410,7 +442,7 @@
         <div class="post-meta">2020년 09월 29일 23시 48분</div> 
         <h2>휴고 Content Section,content …</h2>
       </div>
-    </header>
+    </a>
     <div class="content">이번 글에서는 section, type 그리고 archetypes에 대해 각각 다뤄보겠습니다. Content Sections https://gohugo.io/content-management/sections/ …</div>
     <div class="read-more"><span>1491 words, 3 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/">더 보기 →</a></div>
   </div>
@@ -449,7 +481,7 @@
     </div>
   </div>
   <div class="cover-content">
-    <header onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/&#34;)">
+    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/">
       
       <img class="icon" src="/images/cover-icon.png" />
       
@@ -457,7 +489,7 @@
         <div class="post-meta">2020년 09월 29일 21시 54분</div> 
         <h2>휴고 Front Matter</h2>
       </div>
-    </header>
+    </a>
     <div class="content">이번 글은 휴고 컨텐츠의 &lsquo;front matter&rsquo; 에 대해 설명하는 글입니다. front matter는 말하자면 컨텐츠의 메타데이터, 컨텐츠의 설정값입니다. 컨텐츠의 타이틀, 생성날짜,</div>
     <div class="read-more"><span>2367 words, 5 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/">더 보기 →</a></div>
   </div>
@@ -470,18 +502,26 @@
     </ul>
     <div class="paging">
   
-  <a href="/what_is_hugo/" rel="prev">
-    이전
-    <i class="fa fa-caret-left" aria-hidden="true"></i>
+  <a class="first" href="/what_is_hugo/" rel="prev">
+    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+  </a>
+  
+  
+  <a class="prev" href="/what_is_hugo/" rel="prev">
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
   </a>
   
   <span class="page">
     페이지 2 / 3
   </span>
   
-  <a href="/what_is_hugo/page/3/" rel="next">
-    <i class="fa fa-caret-right" aria-hidden="true"></i>
-    
+  <a class="next" href="/what_is_hugo/page/3/" rel="next">
+    <i class="fa fa-angle-right" aria-hidden="true"></i>
+  </a>
+  
+  
+  <a class="last" href="/what_is_hugo/page/3/" rel="next">
+    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
   </a>
   
 </div>

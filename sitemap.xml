@@ -4,31 +4,46 @@
   
   <url>
     <loc>http://dev2820.github.io/categories/</loc>
-    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
+    <lastmod>2020-10-18T21:17:54+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/disqus/</loc>
+    <lastmod>2020-10-18T21:17:54+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://dev2820.github.io/tags/hugo/</loc>
-    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
+    <lastmod>2020-10-18T21:17:54+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://dev2820.github.io/tags/</loc>
-    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
+    <lastmod>2020-10-18T21:17:54+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://dev2820.github.io/categories/what_is_hugo/</loc>
-    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
+    <lastmod>2020-10-18T21:17:54+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/</loc>
-    <lastmod>2020-10-03T17:47:33+09:00</lastmod>
+    <loc>http://dev2820.github.io/tags/%EC%BD%94%EB%A9%98%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2020-10-18T21:17:54+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</loc>
+    <lastmod>2020-10-18T21:17:54+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/</loc>
+    <lastmod>2020-10-18T21:17:54+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/</loc>
     <lastmod>2020-10-03T17:47:33+09:00</lastmod>
   </url>
   
@@ -60,21 +75,6 @@
   <url>
     <loc>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/</loc>
     <lastmod>2020-10-03T17:46:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/comment/</loc>
-    <lastmod>2020-10-02T20:01:13+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/%EB%8C%93%EA%B8%80%EC%B0%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
-    <lastmod>2020-10-02T20:01:13+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/</loc>
-    <lastmod>2020-10-02T20:01:13+09:00</lastmod>
   </url>
   
   <url>
@@ -308,6 +308,11 @@
   </url>
   
   <url>
+    <loc>http://dev2820.github.io/diaries/</loc>
+    <lastmod>2020-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://dev2820.github.io/hugo_new_theme/</loc>
     <lastmod>2020-09-19T00:00:00+00:00</lastmod>
   </url>
@@ -319,11 +324,6 @@
   
   <url>
     <loc>http://dev2820.github.io/diaries/test/</loc>
-    <lastmod>2020-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/diaries/</loc>
     <lastmod>2020-09-19T00:00:00+00:00</lastmod>
   </url>
   

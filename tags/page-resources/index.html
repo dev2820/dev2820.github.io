@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="/css/listPage.css">
     <link rel="stylesheet" href="/css/notFound.css">
     <link rel="stylesheet" href="/css/tags.css">
-   
+    <link rel="stylesheet" href="/css/markdown.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     
@@ -78,22 +78,32 @@
                     });
                 });
             });
+            document.addEventListener('scroll',(event)=>{
+                const scroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+            })
         }
         
     </script>
 </head>
 <body id="body"><div id="topbar" class="card">
-  <div class="logo">
-    <a href="/">
-      
-      <img src="/images/logo.png" height="32px" />
-      
-    </a>
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/logo.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
-  <div class="burger">
-    <button onclick="event.stopPropagation(); toggleAside(true)">
-      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    </button>
+  <div class="progress-bar">
+    <span class="progress"></span>
   </div>
 </div><div id="aside" class="card hidden">
     <div class="top">
@@ -111,27 +121,49 @@
     <h5>풀스텍 웹개발을 지향합니다</h5>
 </div>
     <hr class="aside-sep">
-    <div id="aside-menu">
-    <ul>
-        <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
-        <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
-        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(25)</small></a></li>
-    </ul>
-</div>
+    <div class="aside-menu">
+        <ul>
+            <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+            <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+            <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(25)</small></a>
+                <small>- 2020/10/18</small></li>
+        </ul>
+    </div>
     <nav class="sidebar-nav">
-    
-    <ul>
         
-        <li><a class="sidebar-nav-item" href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme</a></li>
         
-        <li><a class="sidebar-nav-item" href="/nas_project/" title="Nas_project">Nas_project</a></li>
-        
-        <li><a class="sidebar-nav-item" href="/diaries/" title="일상">일상</a></li>
-        
-        <li><a class="sidebar-nav-item" href="/what_is_hugo/" title="휴고에 대해 알아보자">휴고에 대해 알아보자</a></li>
-        
-    </ul>
-</nav>
+        <ul>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/diaries/" title="Diaries">Diaries<small>(4)</small></a>
+                <small>- 2020/09/26</small>
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme<small>(0)</small></a>
+                
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/nas_project/" title="Nas_project">Nas_project<small>(1)</small></a>
+                <small>- 2020/09/18</small>
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/what_is_hugo/" title="what_is_hugo">what_is_hugo<small>(20)</small></a>
+                <small>- 2020/10/18</small>
+            </li>
+            
+        </ul>
+    </nav>
 </div>  
         <div id="content">
 <main>
@@ -170,7 +202,7 @@
     </div>
   </div>
   <div class="cover-content">
-    <header onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/&#34;)">
+    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/">
       
       <img class="icon" src="/images/cover-icon.png" />
       
@@ -178,7 +210,7 @@
         <div class="post-meta">2020년 10월 03일 17시 47분</div> 
         <h2>휴고 Page Resources</h2>
       </div>
-    </header>
+    </a>
     <div class="content">이미지, 다른 페이지, 문서 등등 모든 페이지 리소스는 relative URL과 메타데이터를 가집니다. 페이지 리소스는 페이지 리소스가 포함된 페이지 번들에서만 사용가능합니</div>
     <div class="read-more"><span>1226 words, 3 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/">더 보기 →</a></div>
   </div>
@@ -189,9 +221,11 @@
     </div>
     <div class="paging">
   
+  
   <span class="page">
     페이지 1 / 1
   </span>
+  
   
 </div>
 

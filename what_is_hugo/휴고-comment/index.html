@@ -2,16 +2,16 @@
 <html><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>휴고 Comment  | dev2820 개발일지</title>
+    <title>휴고 Comment 추가하기  | dev2820 개발일지</title>
     <meta name="description"
-        content="dev2820의 개발일지 저장소 '휴고 Comment'을 한 번 살펴보세요.">
-    <meta property="og:title" content="휴고 Comment">
+        content="dev2820의 개발일지 저장소 '휴고 Comment 추가하기'을 한 번 살펴보세요.">
+    <meta property="og:title" content="휴고 Comment 추가하기">
     
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2020-10-02">
+    <meta property="article:published_time" content="2020-10-18">
     
     <meta property="og:description"
-        content="dev2820의 개발일지 저장소 '휴고 Comment'을 한 번 살펴보세요.">
+        content="dev2820의 개발일지 저장소 '휴고 Comment 추가하기'을 한 번 살펴보세요.">
     <meta property="og:url" content="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/">
     <meta property="og:site_name" content="dev2820 개발일지">
     
@@ -22,9 +22,9 @@
     
     <meta property="og:tags" content="휴고">
     
-    <meta property="og:tags" content="comment">
+    <meta property="og:tags" content="disqus">
     
-    <meta property="og:tags" content="댓글창 만들기">
+    <meta property="og:tags" content="코멘트 추가하기">
     
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="canonical" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/">
@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="/css/listPage.css">
     <link rel="stylesheet" href="/css/notFound.css">
     <link rel="stylesheet" href="/css/tags.css">
-   
+    <link rel="stylesheet" href="/css/markdown.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     
@@ -86,22 +86,32 @@
                     });
                 });
             });
+            document.addEventListener('scroll',(event)=>{
+                const scroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                document.querySelector('#topbar.card .progress-bar .progress').style.width = (scroll/height)*100+'%';
+            })
         }
         
     </script>
 </head>
 <body id="body"><div id="topbar" class="card">
-  <div class="logo">
-    <a href="/">
-      
-      <img src="/images/logo.png" height="32px" />
-      
-    </a>
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/logo.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
-  <div class="burger">
-    <button onclick="event.stopPropagation(); toggleAside(true)">
-      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    </button>
+  <div class="progress-bar">
+    <span class="progress"></span>
   </div>
 </div><div id="aside" class="card hidden">
     <div class="top">
@@ -119,31 +129,53 @@
     <h5>풀스텍 웹개발을 지향합니다</h5>
 </div>
     <hr class="aside-sep">
-    <div id="aside-menu">
-    <ul>
-        <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
-        <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
-        <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(25)</small></a></li>
-    </ul>
-</div>
+    <div class="aside-menu">
+        <ul>
+            <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+            <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+            <li><a href="http://dev2820.github.io/">전체글 모아보기 <small>(25)</small></a>
+                <small>- 2020/10/18</small></li>
+        </ul>
+    </div>
     <nav class="sidebar-nav">
-    
-    <ul>
         
-        <li><a class="sidebar-nav-item" href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme</a></li>
         
-        <li><a class="sidebar-nav-item" href="/nas_project/" title="Nas_project">Nas_project</a></li>
-        
-        <li><a class="sidebar-nav-item" href="/diaries/" title="일상">일상</a></li>
-        
-        <li><a class="sidebar-nav-item active" href="/what_is_hugo/" title="휴고에 대해 알아보자">휴고에 대해 알아보자</a></li>
-        
-    </ul>
-</nav>
+        <ul>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/diaries/" title="Diaries">Diaries<small>(4)</small></a>
+                <small>- 2020/09/26</small>
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme<small>(0)</small></a>
+                
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item" href="/nas_project/" title="Nas_project">Nas_project<small>(1)</small></a>
+                <small>- 2020/09/18</small>
+            </li>
+            
+            <li>
+                
+                
+                <a class="sidebar-nav-item active" href="/what_is_hugo/" title="what_is_hugo">what_is_hugo<small>(20)</small></a>
+                <small>- 2020/10/18</small>
+            </li>
+            
+        </ul>
+    </nav>
 </div>  
         <div id="content">
 <section id="main">
-  <h1 id="title">휴고 Comment</h1>
+  <h1 id="title">휴고 Comment 추가하기</h1>
   <small>
     <div class="breadcrumbnav">
   
@@ -152,32 +184,64 @@
 
 
 
-  <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> > 
+  <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> 
+ >
 
+  <a href="http://dev2820.github.io/what_is_hugo/" >what_is_hugo</a> 
+ >
 
-  <a href="http://dev2820.github.io/what_is_hugo/" >휴고에 대해 알아보자</a> > 
-
-
-  <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/"  class="active">휴고 Comment</a> > 
+  <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/"  class="active">휴고 Comment 추가하기</a> 
 
 </div>
 
   </small>
-  <div class="post-toc">
-    <span class="title">차례</span>
+  <script>
+    let toggle = true;
+    function toggleTable(){
+        console.log(toggle)
+        if(toggle){
+            document.getElementById('table').classList.add('hidden')
+            document.querySelector('.post-toc .title').classList.add('toggle-off')
+            document.querySelector('.post-toc .fa-angle-down').classList.remove('hidden')
+            document.querySelector('.post-toc .fa-angle-up').classList.add('hidden')
+        }
+        else {
+            document.getElementById('table').classList.remove('hidden')
+            document.querySelector('.post-toc .title').classList.remove('toggle-off')
+            document.querySelector('.post-toc .fa-angle-down').classList.add('hidden')
+            document.querySelector('.post-toc .fa-angle-up').classList.remove('hidden')
+        }
+        toggle = !toggle;
+    }
+</script>
+<div class="post-toc">
+    <div class="title" onclick="toggleTable()">
+        차례
+        <i class="fa fa-angle-down hidden"></i>
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <div id="table">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#render-hugos-built-in-disqus-partial-template">Render Hugo&rsquo;s Built-in Disqus Partial Template</a></li>
-    <li><a href="#comments-alternatives">Comments Alternatives</a></li>
+    <li><a href="#comments">Comments</a>
+      <ul>
+        <li><a href="#add-disqus">Add Disqus</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
+    </div>
 </div>
   <div>
         <article class="content">
-           <p>이번글은 휴고에서 지원하는 댓글창 시스템과 기본적으로 내장된 Disqus template에 대해 다루겠습니다.</p>
+           <h2 id="comments">Comments</h2>
+<p>휴고는 Disqus 템플릿을 기본적으로 제공합니다. 물론 disqus 말고도 다른 코멘트 시스템을 이용할 수도 있습니다.
+하지만 여기선 Disqus 다는 방법에 대해서만 설명하겠습니다.</p>
 <p><a href="https://gohugo.io/content-management/comments/">https://gohugo.io/content-management/comments/</a></p>
-<p>Disqus는 서드파티 서비스로 코멘트와 커뮤니티를 자바스크립트를 통해 웹사이트에 제공합니다.</p>
-<p>그 다음 <code>config</code> 파일에 다음을 추가합니다.</p>
+<h3 id="add-disqus">Add Disqus</h3>
+<p>먼저 disqus 계정이 필요하니 아래 링크에서 disqus에 가입합니다.</p>
+<p><a href="https://disqus.com/">https://disqus.com/</a></p>
+<p>가입하고 &lsquo;I want to install Disqus on my site&rsquo; 를 클릭하면 사이트를 만들 수 있는 창이 뜹니다. 대충 뚜따뚜따 만들고나면 사이트의 admin 페이지에 들어갈 수 있게 되는데, 여기서 settings-&gt;general 에 들어가면 Shortname이 무엇인지 알려줍니다. 이를 config 파일 안에 넣어줍니다.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -186,18 +250,16 @@
 <pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">disqusShortname = <span style="color:#f1fa8c">&#34;yourdiscussshortname&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>글마다 front matter를 추가해줄 수 도 있습니다.</p>
-<ul>
-<li>disqus_identifier</li>
-<li>disqus_title</li>
-<li>disqus_url</li>
-</ul>
-<h2 id="render-hugos-built-in-disqus-partial-template">Render Hugo&rsquo;s Built-in Disqus Partial Template</h2>
-<p>필요한 layout에 다음을 추가합니다.</p>
-<pre><code>{{ template &quot;_internal/disqus.html&quot; . }}
-</code></pre><h2 id="comments-alternatives">Comments Alternatives</h2>
-<p>대체 가능한 코멘트 서비스는 다음을 참고하십시오</p>
-<p><a href="https://gohugo.io/content-management/comments/#comments-alternatives">https://gohugo.io/content-management/comments/#comments-alternatives</a></p>
+</div><p>그리고 comment 창이 나올 (대부분 single.html 아래) 부분에 다음 줄을 추가합니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ template &#34;_internal/disqus.html&#34; .}}
+</code></pre></td></tr></table>
+</div>
+</div><p>이렇게 하면 Disqus 코멘트창이 뜨게됩니다.</p>
 
         </article>
   </div>
@@ -205,29 +267,27 @@
 <aside id="meta">
     <div>
     <section>
-      <h4 id="date"> Fri Oct 2, 2020 </h4>
-      <h5 id="wordcount"> 190 Words </h5>
+      <h4 id="date"> Sun Oct 18, 2020 </h4>
+      <h5 id="wordcount"> 261 Words </h5>
     </section>
     
     <ul>
     tags
     
+        <li><a href="http://dev2820.github.io/tags/disqus/">#disqus</a></li>
+   
         <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
    
+        <li><a href="http://dev2820.github.io/tags/%EC%BD%94%EB%A9%98%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/">#코멘트 추가하기</a></li>
+   
         <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
-   
-        <li><a href="http://dev2820.github.io/tags/comment/">#comment</a></li>
-   
-        <li><a href="http://dev2820.github.io/tags/%EB%8C%93%EA%B8%80%EC%B0%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0/">#댓글창 만들기</a></li>
    
 </ul>
     </div>
     <div>
         
-          이전글<a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/"> 휴고 Table of Content</a>
+          이전글<a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-image-processing/"> 휴고 Image Processing</a>
         
-        
-          다음글<a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/"> 휴고 Multilingual Mode</a>
         
     </div>
     <div id="disqus_thread"></div>
@@ -256,15 +316,15 @@
 <h3>비슷한 컨텐츠 더보기</h3>
 <ul>
 	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-image-processing/">휴고 Image Processing</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/">휴고 Page Resources</a></li>
+	
+	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/">휴고 Multilingual Mode</a></li>
+	
 	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/">휴고 Table of Content</a></li>
 	
 	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-static-files/">휴고 Static Files</a></li>
-	
-	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/">휴고 Menus</a></li>
-	
-	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/">휴고 URL Management</a></li>
-	
-	<li><a href="/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/">휴고 Link and Cross Reference</a></li>
 	
 </ul>
 
