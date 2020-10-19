@@ -146,12 +146,15 @@ hr.summary-sep {
 /* Content*/
 #content {
     margin:0 auto;
-    width: 90%;
-    max-width:1200px;
+    max-width:1000px;
     padding:50px;
     display:flex;
     flex-direction:column;
     justify-content: center;
+}
+#content #main {
+    width:90%;
+    margin:0 auto;
 }
 /* Summary */
 article.summary {
@@ -168,7 +171,7 @@ article.summary .cover-image {
     width:270px;
     height:270px;
     background-position:left;
-    background-size:270px 270px;
+    background-size:100% 100%;
     background-repeat:no-repeat;
     margin:auto 0;
 }
@@ -473,4 +476,71 @@ ul.contents li {
 .post-toc .title.toggle-off {
     background-color:transparent;
     transition: 0.3s;
+}
+/* profile-in-article */
+.profile-in-article {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    padding:30px 0;
+}
+.profile-in-article .profile-image{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    padding:0 20px;
+    /* background:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgb(200, 200, 200) 50%, rgb(200, 200, 200) 100%); */
+}
+.profile-in-article .profile-image img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
+.profile-in-article .profile-introduce {
+    color:#272727;
+    margin:auto 0;
+}
+.profile-in-article .profile-introduce a{
+    color:#272727;
+}
+/* related-content */
+.related-content ul {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.related-content ul li {
+    list-style: none;
+}
+/* summary-card */
+.summary-card {
+    height:270px;
+    width:280px;
+    display:inline-block;
+    border-radius:4px;
+    overflow: hidden;
+    margin:5px 10px;
+    cursor:pointer;
+}
+.summary-card .banner{
+    height:50%;
+    width:100%;
+    display:inline-block;
+    background-position:left;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.summary-card .title {
+    text-align: center;
+}
+.summary-card h3 {
+    padding:10px 10px;
+}
+/* section-move */
+.section-move {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
 }
