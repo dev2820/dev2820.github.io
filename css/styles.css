@@ -617,3 +617,12 @@ ul.contents li {
     flex-direction:row;
     justify-content: space-between;
 }
+/* about */
+.about {
+    position:relative;
+    top:70px;
+    width:90%;
+    min-width:800px;
+    max-width:1000px;
+    margin:0 auto;
+}
