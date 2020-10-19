@@ -1,13 +1,19 @@
 .tags {
+    position:relative;
+    top:70px;
     display:flex;
     flex-direction:column;
     justify-content: center;
+    width:90%;
+    min-width:800px;
+    max-width:1000px;
+    margin:0 auto;
 }
-.tags ul.tag {
+ul.tag {
     margin:0;
     padding:0;
 }
-.tags ul.tag li{
+ul.tag li{
     box-sizing:content-box;
     display:inline-block;
     vertical-align: middle;
@@ -19,7 +25,7 @@
     border:2px solid #cccccc;
     border-radius: 15px;
 }
-.tags ul.tag li a {
+ul.tag li a {
     height:100%;
     width:100%;
     text-decoration: none;
@@ -28,6 +34,6 @@
     font-size:14px;
     line-height:1;
 }
-.tags ul.tag li:hover {
+ul.tag li:hover {
     background-color:#cccccc;
 }

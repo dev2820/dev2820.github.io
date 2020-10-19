@@ -150,6 +150,7 @@ hr.summary-sep {
     display:flex;
     flex-direction:column;
     justify-content: center;
+    z-index:5;
 }
 #content #banner {
     height:400px;
@@ -245,18 +246,18 @@ article.summary:hover .cover-image .classification {
     visibility:visible;
     transition:0.3s;
 }
-article.summary .cover-image .classification .category {
+article.summary .cover-image .classification .summary-category {
     margin:0 auto;
     display:flex;
     flex-direction:column;
     height:40%;
 }
-article.summary .cover-image .classification .category * {
+article.summary .cover-image .classification .summary-category * {
     color:white;
     margin:0 auto;
     text-align:center;
 }
-article.summary .cover-image .classification .tags {
+article.summary .cover-image .classification .summary-tags {
     height:60%;
     margin:0 auto;
     display:flex;
@@ -264,21 +265,21 @@ article.summary .cover-image .classification .tags {
     justify-content: center;
     padding:10px 20px;
 }
-article.summary .cover-image .classification .tags h4 {
+article.summary .cover-image .classification .summary-tags h4 {
     margin:0;
     text-align: center;
 }
 
-article.summary .cover-image .classification .tags ul.tag{
+article.summary .cover-image .classification .summary-tags ul.tag{
     display:flex;
     flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
 }
-article.summary .cover-image .classification .tags ul.tag * {
+article.summary .cover-image .classification .summary-tags ul.tag * {
     color:white;
 }
-article.summary .cover-image .classification .tags .etc {
+article.summary .cover-image .classification .summary-tags .etc {
     margin:auto 0;
     text-align: center;
 }
@@ -408,6 +409,7 @@ ul.contents li {
 }
 /* Pagination */
 .paging {
+    padding:10px 0 50px 0;
     display:flex;
     justify-content: center;
 }
@@ -427,9 +429,15 @@ ul.contents li {
     padding:0 0 0 10px;
 }
 /* Cateories */
+.categories {
+    position:relative;
+    top:70px;
+    width:90%;
+    min-width:800px;
+    max-width:1000px;
+    margin:0 auto;
+}
 .categories ul{
-    margin: 0;
-    padding: 0;
     display:inline-block;
 }
 .categories ul li{
@@ -490,8 +498,16 @@ ul.contents li {
     text-decoration: underline;
 }
 /* Sections */
+.sections {
+    position:relative;
+    top:70px;
+    width:90%;
+    min-width:800px;
+    max-width:1000px;
+    margin:0 auto;
+}
 .sections h1 {
-    margin:2rem 0;
+    margin:0 0 2rem 0;
 }
 /* Taxonomy */
 .taxonomy {
