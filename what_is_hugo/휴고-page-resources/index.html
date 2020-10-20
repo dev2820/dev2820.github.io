@@ -147,16 +147,15 @@
   });
 </script>
 
-<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+<header id="banner" style="background-image:url(/images/ocean.jpg);">
 
   <div class="title">
     <h1 id="title">휴고 Page Resources</h1>
     <section>
       <h4 id="date"> 2020년 10월 03일 17시 47분 </h4>
-      <h5 id="wordcount"> 1226 Words </h5>
-      <h5 id="timetoread"> 3 mins </h5>
+      <h5 id="wordcount"> 1226 Words, 3 mins  </h5>
     </section>
-    <small>
+    <small class="breadcrumb">
       <div class="breadcrumbnav">
   
 
@@ -175,7 +174,7 @@
 </div>
 
     </small>
-    <small>by dev2820</small>
+    <small class="author">by dev2820</small>
   </div>
 </header>
 <section id="main">
@@ -400,7 +399,7 @@ title = <span style="color:#f1fa8c">&#34;Application&#34;</span>
       <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/"><i class="fa fa-arrow-circle-left"></i> 휴고 Multilingual Mode</a>
     
     
-      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-image-processing/"> 휴고 Image Processing<i class="fa fa-arrow-circle-right"></i></a>
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-image-processing/">휴고 Image Processing <i class="fa fa-arrow-circle-right"></i></a>
     
   </nav>
   <hr>
@@ -417,6 +416,8 @@ title = <span style="color:#f1fa8c">&#34;Application&#34;</span>
     </div>
 </div>
     
+    
+    category: <a href="http://dev2820.github.io/what_is_hugo">what_is_hugo</a>
     <div class="tags">
     <ul class="tag">
         
@@ -465,9 +466,11 @@ title = <span style="color:#f1fa8c">&#34;Application&#34;</span>
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/">
-        <h3>휴고 Multilingual Mode</h3> 
-        <p>이번글은 휴고 사이트의 다중언어지원에 대한 글입니다. …</p> 
-        <span>2020-10-03</span>
+        <h3 class="name">휴고 Multilingual Mode</h3> 
+        <p class="summary">이번글은 휴고 사이트의 다중언어지원에 대한 글입니다. …</p>
+        <div class="date">
+          <small>2020-10-03</small>
+        </div>
       </a>
     </div>
   </div>
@@ -482,9 +485,11 @@ title = <span style="color:#f1fa8c">&#34;Application&#34;</span>
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/">
-        <h3>휴고 Table of Content</h3> 
-        <p>이번글은 문서의 목차를 만드는 방법에 대해 다루겠습니다. …</p> 
-        <span>2020-10-02</span>
+        <h3 class="name">휴고 Table of Content</h3> 
+        <p class="summary">이번글은 문서의 목차를 만드는 방법에 대해 다루겠습니다. …</p>
+        <div class="date">
+          <small>2020-10-02</small>
+        </div>
       </a>
     </div>
   </div>
@@ -499,9 +504,11 @@ title = <span style="color:#f1fa8c">&#34;Application&#34;</span>
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-static-files/">
-        <h3>휴고 Static Files</h3> 
-        <p>이 글은 휴고의 static file에 대해 다룹니다. static/ 디 …</p> 
-        <span>2020-10-02</span>
+        <h3 class="name">휴고 Static Files</h3> 
+        <p class="summary">이 글은 휴고의 static file에 대해 다룹니다. static/ 디 …</p>
+        <div class="date">
+          <small>2020-10-02</small>
+        </div>
       </a>
     </div>
   </div>
@@ -516,9 +523,11 @@ title = <span style="color:#f1fa8c">&#34;Application&#34;</span>
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/">
-        <h3>휴고 Menus</h3> 
-        <p>휴고엔 강력한 메뉴 시스템이 있습니다. 이 메뉴시스템으론 다음과 같은 일 …</p> 
-        <span>2020-10-01</span>
+        <h3 class="name">휴고 Menus</h3> 
+        <p class="summary">휴고엔 강력한 메뉴 시스템이 있습니다. 이 메뉴시스템으론 다음과 같은 일 …</p>
+        <div class="date">
+          <small>2020-10-01</small>
+        </div>
       </a>
     </div>
   </div>
@@ -533,9 +542,11 @@ title = <span style="color:#f1fa8c">&#34;Application&#34;</span>
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/">
-        <h3>휴고 URL Management</h3> 
-        <p>이번글은 휴고가 지원하는 permalinks, aliases, link …</p> 
-        <span>2020-10-01</span>
+        <h3 class="name">휴고 URL Management</h3> 
+        <p class="summary">이번글은 휴고가 지원하는 permalinks, aliases, link …</p>
+        <div class="date">
+          <small>2020-10-01</small>
+        </div>
       </a>
     </div>
   </div>
@@ -550,9 +561,11 @@ title = <span style="color:#f1fa8c">&#34;Application&#34;</span>
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/">
-        <h3>휴고 Link and Cross Reference</h3> 
-        <p>이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크 …</p> 
-        <span>2020-10-01</span>
+        <h3 class="name">휴고 Link and Cross …</h3> 
+        <p class="summary">이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크 …</p>
+        <div class="date">
+          <small>2020-10-01</small>
+        </div>
       </a>
     </div>
   </div>

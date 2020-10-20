@@ -149,16 +149,15 @@
   });
 </script>
 
-<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+<header id="banner" style="background-image:url(/images/ocean.jpg);">
 
   <div class="title">
     <h1 id="title">휴고 Static Files</h1>
     <section>
       <h4 id="date"> 2020년 10월 02일 18시 14분 </h4>
-      <h5 id="wordcount"> 609 Words </h5>
-      <h5 id="timetoread"> 2 mins </h5>
+      <h5 id="wordcount"> 609 Words, 2 mins  </h5>
     </section>
-    <small>
+    <small class="breadcrumb">
       <div class="breadcrumbnav">
   
 
@@ -177,7 +176,7 @@
 </div>
 
     </small>
-    <small>by dev2820</small>
+    <small class="author">by dev2820</small>
   </div>
 </header>
 <section id="main">
@@ -284,7 +283,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
       <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/"><i class="fa fa-arrow-circle-left"></i> 휴고 Menus</a>
     
     
-      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/"> 휴고 Table of Content<i class="fa fa-arrow-circle-right"></i></a>
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/">휴고 Table of Content <i class="fa fa-arrow-circle-right"></i></a>
     
   </nav>
   <hr>
@@ -301,6 +300,8 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     </div>
 </div>
     
+    
+    category: <a href="http://dev2820.github.io/what_is_hugo">what_is_hugo</a>
     <div class="tags">
     <ul class="tag">
         
@@ -351,9 +352,11 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/">
-        <h3>휴고 Menus</h3> 
-        <p>휴고엔 강력한 메뉴 시스템이 있습니다. 이 메뉴시스템으론 다음과 같은 일 …</p> 
-        <span>2020-10-01</span>
+        <h3 class="name">휴고 Menus</h3> 
+        <p class="summary">휴고엔 강력한 메뉴 시스템이 있습니다. 이 메뉴시스템으론 다음과 같은 일 …</p>
+        <div class="date">
+          <small>2020-10-01</small>
+        </div>
       </a>
     </div>
   </div>
@@ -368,9 +371,11 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/">
-        <h3>휴고 URL Management</h3> 
-        <p>이번글은 휴고가 지원하는 permalinks, aliases, link …</p> 
-        <span>2020-10-01</span>
+        <h3 class="name">휴고 URL Management</h3> 
+        <p class="summary">이번글은 휴고가 지원하는 permalinks, aliases, link …</p>
+        <div class="date">
+          <small>2020-10-01</small>
+        </div>
       </a>
     </div>
   </div>
@@ -385,9 +390,11 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/">
-        <h3>휴고 Link and Cross Reference</h3> 
-        <p>이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크 …</p> 
-        <span>2020-10-01</span>
+        <h3 class="name">휴고 Link and Cross …</h3> 
+        <p class="summary">이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크 …</p>
+        <div class="date">
+          <small>2020-10-01</small>
+        </div>
       </a>
     </div>
   </div>
@@ -402,9 +409,11 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/">
-        <h3>휴고 Summary</h3> 
-        <p><p>휴고는 page 변수로 <code>.Summary</code>를 제공합니다. 이 summary …</p></p> 
-        <span>2020-09-30</span>
+        <h3 class="name">휴고 Summary</h3> 
+        <p class="summary"><p>휴고는 page 변수로 <code>.Summary</code>를 제공합니다. 이 summary …</p></p>
+        <div class="date">
+          <small>2020-09-30</small>
+        </div>
       </a>
     </div>
   </div>
@@ -419,9 +428,11 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/">
-        <h3>휴고 Taxonomies</h3> 
-        <p>taxonomy, 즉 분류입니다. …</p> 
-        <span>2020-09-30</span>
+        <h3 class="name">휴고 Taxonomies</h3> 
+        <p class="summary">taxonomy, 즉 분류입니다. …</p>
+        <div class="date">
+          <small>2020-09-30</small>
+        </div>
       </a>
     </div>
   </div>
@@ -436,9 +447,11 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/">
-        <h3>휴고 Shortcodes</h3> 
-        <p>이 글은 간단한 코드를 컨텐츠 안에 집어넣는 Shortcodes 기능을  …</p> 
-        <span>2020-09-30</span>
+        <h3 class="name">휴고 Shortcodes</h3> 
+        <p class="summary">이 글은 간단한 코드를 컨텐츠 안에 집어넣는 Shortcodes 기능을  …</p>
+        <div class="date">
+          <small>2020-09-30</small>
+        </div>
       </a>
     </div>
   </div>

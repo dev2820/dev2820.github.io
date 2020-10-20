@@ -147,16 +147,15 @@
   });
 </script>
 
-<header id="banner" style="background-image:url(/images/ocean.jpg); backdrop-filter:brightness(50%);">
+<header id="banner" style="background-image:url(/images/ocean.jpg);">
 
   <div class="title">
     <h1 id="title">휴고 Menus</h1>
     <section>
       <h4 id="date"> 2020년 10월 01일 23시 42분 </h4>
-      <h5 id="wordcount"> 475 Words </h5>
-      <h5 id="timetoread"> 1 mins </h5>
+      <h5 id="wordcount"> 475 Words, 1 mins  </h5>
     </section>
-    <small>
+    <small class="breadcrumb">
       <div class="breadcrumbnav">
   
 
@@ -175,7 +174,7 @@
 </div>
 
     </small>
-    <small>by dev2820</small>
+    <small class="author">by dev2820</small>
   </div>
 </header>
 <section id="main">
@@ -336,7 +335,7 @@ menu = [<span style="color:#f1fa8c">&#34;main&#34;</span>,<span style="color:#f1
       <a class="previous" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/"><i class="fa fa-arrow-circle-left"></i> 휴고 URL Management</a>
     
     
-      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-static-files/"> 휴고 Static Files<i class="fa fa-arrow-circle-right"></i></a>
+      <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-static-files/">휴고 Static Files <i class="fa fa-arrow-circle-right"></i></a>
     
   </nav>
   <hr>
@@ -353,6 +352,8 @@ menu = [<span style="color:#f1fa8c">&#34;main&#34;</span>,<span style="color:#f1
     </div>
 </div>
     
+    
+    category: <a href="http://dev2820.github.io/what_is_hugo">what_is_hugo</a>
     <div class="tags">
     <ul class="tag">
         
@@ -401,9 +402,11 @@ menu = [<span style="color:#f1fa8c">&#34;main&#34;</span>,<span style="color:#f1
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/">
-        <h3>휴고 URL Management</h3> 
-        <p>이번글은 휴고가 지원하는 permalinks, aliases, link …</p> 
-        <span>2020-10-01</span>
+        <h3 class="name">휴고 URL Management</h3> 
+        <p class="summary">이번글은 휴고가 지원하는 permalinks, aliases, link …</p>
+        <div class="date">
+          <small>2020-10-01</small>
+        </div>
       </a>
     </div>
   </div>
@@ -418,9 +421,11 @@ menu = [<span style="color:#f1fa8c">&#34;main&#34;</span>,<span style="color:#f1
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/">
-        <h3>휴고 Link and Cross Reference</h3> 
-        <p>이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크 …</p> 
-        <span>2020-10-01</span>
+        <h3 class="name">휴고 Link and Cross …</h3> 
+        <p class="summary">이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크 …</p>
+        <div class="date">
+          <small>2020-10-01</small>
+        </div>
       </a>
     </div>
   </div>
@@ -435,9 +440,11 @@ menu = [<span style="color:#f1fa8c">&#34;main&#34;</span>,<span style="color:#f1
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/">
-        <h3>휴고 Summary</h3> 
-        <p><p>휴고는 page 변수로 <code>.Summary</code>를 제공합니다. 이 summary …</p></p> 
-        <span>2020-09-30</span>
+        <h3 class="name">휴고 Summary</h3> 
+        <p class="summary"><p>휴고는 page 변수로 <code>.Summary</code>를 제공합니다. 이 summary …</p></p>
+        <div class="date">
+          <small>2020-09-30</small>
+        </div>
       </a>
     </div>
   </div>
@@ -452,9 +459,11 @@ menu = [<span style="color:#f1fa8c">&#34;main&#34;</span>,<span style="color:#f1
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/">
-        <h3>휴고 Taxonomies</h3> 
-        <p>taxonomy, 즉 분류입니다. …</p> 
-        <span>2020-09-30</span>
+        <h3 class="name">휴고 Taxonomies</h3> 
+        <p class="summary">taxonomy, 즉 분류입니다. …</p>
+        <div class="date">
+          <small>2020-09-30</small>
+        </div>
       </a>
     </div>
   </div>
@@ -469,9 +478,11 @@ menu = [<span style="color:#f1fa8c">&#34;main&#34;</span>,<span style="color:#f1
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/">
-        <h3>휴고 Shortcodes</h3> 
-        <p>이 글은 간단한 코드를 컨텐츠 안에 집어넣는 Shortcodes 기능을  …</p> 
-        <span>2020-09-30</span>
+        <h3 class="name">휴고 Shortcodes</h3> 
+        <p class="summary">이 글은 간단한 코드를 컨텐츠 안에 집어넣는 Shortcodes 기능을  …</p>
+        <div class="date">
+          <small>2020-09-30</small>
+        </div>
       </a>
     </div>
   </div>
@@ -486,9 +497,11 @@ menu = [<span style="color:#f1fa8c">&#34;main&#34;</span>,<span style="color:#f1
     </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/">
-        <h3>휴고 Content Section,content Type …</h3> 
-        <p>이번 글에서는 section, type 그리고 archetypes …</p> 
-        <span>2020-09-29</span>
+        <h3 class="name">휴고 Content …</h3> 
+        <p class="summary">이번 글에서는 section, type 그리고 archetypes …</p>
+        <div class="date">
+          <small>2020-09-29</small>
+        </div>
       </a>
     </div>
   </div>
