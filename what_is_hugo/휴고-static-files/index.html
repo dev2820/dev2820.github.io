@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="/css/listPage.css">
     <link rel="stylesheet" href="/css/notFound.css">
     <link rel="stylesheet" href="/css/tags.css">
+    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/markdown.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -50,53 +51,7 @@
     </script>
     
     
-    <script type="text/javascript">
-        function toggleAside(bool) {
-            let e = document.getElementById('aside');
-            if (e.classList.contains('hidden') && bool)
-                e.classList.remove('hidden');
-            else
-                e.classList.add('hidden');
-        }
-
-        function scrollToTop() {
-            let position =
-                document.body.scrollTop || document.documentElement.scrollTop;
-            if (position) {
-                window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
-                scrollAnimation = setTimeout("scrollToTop()", 10);
-            } else clearTimeout(scrollAnimation);
-        }
-        function goToUrl(url) {
-            window.location.href = url;
-        }
-        window.onload = function () {
-            document.addEventListener('click', (event) => {
-                toggleAside(false);
-            });
-            document.getElementById('aside').addEventListener('click', (event) => {
-                event.stopPropagation();
-            });
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-            document.addEventListener('scroll',(event)=>{
-                const scroll = document.body.scrollTop || document.documentElement.scrollTop;
-                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                const progressbar = document.querySelector('#topbar.card .progress-bar .progress');
-                if(progressbar){
-                    progressbar.style.width = (scroll/height)*100+'%';
-                }
-            })
-        }
-        
-    </script>
+    <script src="/js/default.js"></script>
 </head>
 <body id="body"><div id="topbar" class="card">
   <div class="menus">
@@ -341,7 +296,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     </div>
     <div class="profile-introduce">
         <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
-        <h5>풀스텍 웹개발을 지향합니다</h5>
+        <p>풀스텍 웹개발을 지향합니다</p>
         <div class="">깃허브 등등 추가</div>
     </div>
 </div>
@@ -380,7 +335,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    <div>
+    <div class="more-content">
       <div class="related-content">
 
 
@@ -389,7 +344,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
 	
 	<li>
 		
-<div class="summary-card card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-menus\/')">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-menus\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
     
@@ -397,6 +352,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/">
         <h3>휴고 Menus</h3> 
+        <p>휴고엔 강력한 메뉴 시스템이 있습니다. 이 메뉴시스템으론 다음과 같은 일 …</p> 
         <span>2020-10-01</span>
       </a>
     </div>
@@ -405,7 +361,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
 	
 	<li>
 		
-<div class="summary-card card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-url-management\/')">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-url-management\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
     
@@ -413,6 +369,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/">
         <h3>휴고 URL Management</h3> 
+        <p>이번글은 휴고가 지원하는 permalinks, aliases, link …</p> 
         <span>2020-10-01</span>
       </a>
     </div>
@@ -421,7 +378,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
 	
 	<li>
 		
-<div class="summary-card card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-link-and-cross-reference\/')">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-link-and-cross-reference\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
     
@@ -429,6 +386,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/">
         <h3>휴고 Link and Cross Reference</h3> 
+        <p>이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크 …</p> 
         <span>2020-10-01</span>
       </a>
     </div>
@@ -437,7 +395,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
 	
 	<li>
 		
-<div class="summary-card card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-summary\/')">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-summary\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
     
@@ -445,6 +403,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/">
         <h3>휴고 Summary</h3> 
+        <p><p>휴고는 page 변수로 <code>.Summary</code>를 제공합니다. 이 summary …</p></p> 
         <span>2020-09-30</span>
       </a>
     </div>
@@ -453,7 +412,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
 	
 	<li>
 		
-<div class="summary-card card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-taxonomies\/')">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-taxonomies\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
     
@@ -461,6 +420,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/">
         <h3>휴고 Taxonomies</h3> 
+        <p>taxonomy, 즉 분류입니다. …</p> 
         <span>2020-09-30</span>
       </a>
     </div>
@@ -469,7 +429,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
 	
 	<li>
 		
-<div class="summary-card card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-shortcodes\/')">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-shortcodes\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
     
@@ -477,6 +437,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/">
         <h3>휴고 Shortcodes</h3> 
+        <p>이 글은 간단한 코드를 컨텐츠 안에 집어넣는 Shortcodes 기능을  …</p> 
         <span>2020-09-30</span>
       </a>
     </div>

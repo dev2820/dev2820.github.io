@@ -14,22 +14,24 @@ ul.tag {
     padding:0;
 }
 ul.tag li{
-    box-sizing:content-box;
-    display:inline-block;
-    vertical-align: middle;
+    display:inline-flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self:center;
     list-style: none;
     text-align:center;
-    margin-right:3px;
+    margin-right:5px;
     margin-bottom:7px;
-    height:30px;
+    height:34px;
     border:2px solid #cccccc;
-    border-radius: 15px;
+    border-radius: 17px;
 }
 ul.tag li a {
     height:100%;
     width:100%;
     text-decoration: none;
-    padding:3px 12px 3px 12px;
+    padding:7px 12px 3px 12px;
     font-weight:300;
     font-size:14px;
     line-height:1;
