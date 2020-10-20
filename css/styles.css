@@ -306,6 +306,9 @@ article.summary .cover-image .classification .summary-tags ul.tag{
     justify-content: center;
     flex-wrap: wrap;
 }
+article.summary .cover-image .classification .summary-tags ul.tag li{
+    border:1px solid white;
+}
 article.summary .cover-image .classification .summary-tags ul.tag li a{
     color:white;
 }
@@ -471,6 +474,14 @@ ul.contents li {
     max-width:1000px;
     margin:0 auto;
 }
+.categories .title {
+    font-weight:100;
+    font-size:3rem;
+    margin:30px 0;
+}
+.categories .description {
+    margin-bottom:30px;
+}
 .categories ul{
     display:inline-flex;
     flex-wrap:wrap;
@@ -509,19 +520,29 @@ ul.contents li {
 }
 .categories ul li .summary.card .title{
     background-color:white;
+    font-size:1rem;
     width:310px;
     height:40%;
+    margin: 0;
     display:flex;
     flex-direction:column;
+    justify-content: center;
 }
 .categories ul li .summary.card .title a{
     text-decoration: none;
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
 }
 .categories ul li .summary.card .title a h3{
-    margin:0;
+    height:50%;
     font-size:1.5rem;
     font-weight:300;
     text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
     padding:10px 0;
 }
 .categories ul li .summary.card:hover .title a h3{
@@ -529,6 +550,10 @@ ul.contents li {
 }
 .categories ul li .summary.card .title a div{
     text-align: center;
+    height:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 .categories ul li .summary.card:hover .title a div{
     text-decoration: underline;
@@ -542,8 +567,14 @@ ul.contents li {
     max-width:1000px;
     margin:0 auto;
 }
-.sections h1 {
-    margin:0 0 2rem 0;
+.sections h1.title {
+    font-weight:100;
+    font-size:3rem;
+    line-height:3rem;
+    margin:30px 0;
+}
+.sections .description {
+    margin-bottom: 30px;
 }
 /* Taxonomy */
 #taxonomies {
@@ -623,7 +654,6 @@ ul.contents li {
     width:1000px;
     padding:5px;
     margin:0 auto;
-    overflow-x:scroll;
 }
 .related-content ul {
     display:flex;
@@ -689,4 +719,81 @@ ul.contents li {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+}
+/* clock */
+.clock {
+    position:absolute;
+    right:10%;
+    top:10px;
+    width:150px;
+    height:150px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-size:cover;
+    border: 4px solid #cccccc;
+    border-radius:50%;
+    box-shadow:0 -15px 15px rgba(255,255,255,0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.3),
+                inset 0 15px 15px rgba(0,0,0,0.3);
+}
+.clock:before {
+    content: '';
+    position: absolute;
+    width:10px;
+    height:10px;
+    background-color:#fff;
+    border-radius:50%;
+    z-index:1000;
+}
+.clock .hour,
+.clock .min,
+.clock .sec {
+    position:absolute;
+}
+.clock .hour, .hr {
+    width:80px;
+    height:80px;
+}
+.clock .min, .mn {
+    width:100px;
+    height:100px;
+}
+.clock .sec, .sc {
+    width:120px;
+    height:120px;
+}
+.hr, .mn, .sc {
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    border-radius:50%;
+}
+.hr:before {
+    content: '';
+    position:absolute;
+    width:6px;
+    height:40px;
+    background:#ff105e;
+    z-index:10;
+    border-radius:6px 6px 0 0;
+}
+.mn:before {
+    content: '';
+    position:absolute;
+    width:4px;
+    height:50px;
+    background:#fff;
+    z-index:11;
+    border-radius:6px 6px 0 0;
+}
+.sc:before {
+    content: '';
+    position:absolute;
+    width:2px;
+    height:80px;
+    background:#fff;
+    z-index:12;
+    border-radius:6px 6px 0 0;
 }
