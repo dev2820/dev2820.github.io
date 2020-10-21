@@ -1,6 +1,6 @@
 /* Home Page Css */
 #home-head {
-    height: 400px;
+    height: 450px;
     width:100%;
     background-attachment: fixed;
     background-position: center;
@@ -40,7 +40,7 @@
     background-color:white;
     position:relative;
     z-index:10;
-    top:400px;
+    top:450px;
   }
   #home-menu ul{
       padding:0;
@@ -82,7 +82,7 @@
       z-index:10;
       background-color:white;
       position:relative;
-      top:400px;
+      top:450px;
       padding-top:50px;
   }
   #home-summary .center {

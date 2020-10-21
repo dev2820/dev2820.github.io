@@ -68,6 +68,15 @@
       </a>
     </div>
     <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
       <button onclick="event.stopPropagation(); toggleAside(true)">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </button>
@@ -141,7 +150,7 @@
   document.getElementById('topbar').classList.remove('card')
   window.addEventListener('scroll', (event) => {
     let e = document.getElementById('topbar');
-    if (this.scrollY > 400) {
+    if (this.scrollY > 450) {
       if (!e.classList.contains('card')) {
         e.classList.add('card');
       }
@@ -160,7 +169,7 @@
     <h1 id="title">휴고에서 컨텐츠 지정하고 글 생성해보기</h1>
     <section>
       <h4 id="date"> 2020년 08월 08일 15시 25분 </h4>
-      <h5 id="wordcount"> 725 Words, 2 mins  </h5>
+      <h5 id="wordcount"> 725 Words · 2 mins  </h5>
     </section>
     <small class="breadcrumb">
       <div class="breadcrumbnav">
@@ -181,7 +190,10 @@
 </div>
 
     </small>
-    <small class="author">by dev2820</small>
+    
+    
+    <small class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></small>
+    
   </div>
 </header>
 <section id="main">
@@ -348,7 +360,24 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
       <a class="next" href="http://dev2820.github.io/diaries/code-server/">웹으로 즐기는 코딩 code-server <i class="fa fa-arrow-circle-right"></i></a>
     
   </nav>
-  <hr>
+    
+    <div class="tags">
+    <ul class="tag">
+        
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/blog/"># blog</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/longtesttagtest/"># longtesttagtest</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/test/"># test</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/"># 블로그</a></li>
+        
+    </ul>
+</div>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -361,27 +390,6 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
         <div class="">깃허브 등등 추가</div>
     </div>
 </div>
-    
-    
-    category: <a href="http://dev2820.github.io/Diaries">Diaries</a>
-    <div class="tags">
-    <ul class="tag">
-        
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/blog/">#blog</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/longtesttagtest/">#longtesttagtest</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/test/">#test</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">#블로그</a></li>
-        
-    </ul>
-</div>
-    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -404,13 +412,18 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     <div class="more-content">
       <div class="related-content">
-
-
-<h3>비슷한 컨텐츠 더보기</h3>
-<ul>
-	
-	<li>
+	<div class="title">
+		<p>&#34;Diaries&#34; 와 비슷한 컨텐츠 더보기</p>
 		
+		<a href="http://dev2820.github.io/Diaries">more</a>
+	</div>
+	
+	
+	<div class="container">
+		<ul>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/diaries\/test3\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -426,10 +439,11 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
       </a>
     </div>
   </div>
-	</li>
+			</li>
+			
+		</ul>
+	</div>
 	
-</ul>
-
 </div>
     </div>
   </div>

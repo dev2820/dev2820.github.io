@@ -56,6 +56,15 @@
       </a>
     </div>
     <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
       <button onclick="event.stopPropagation(); toggleAside(true)">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </button>
@@ -166,11 +175,11 @@
     </a>
     
     <div class="post-meta">
-      by <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      on 2020년 09월 18일 18시 20분
+      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      | 2020년 09월 18일 18시 20분
     </div>
     <div class="content">글머리 본디 이 글은 자작NAS를 만드는 전반적인 내용을 모두 담으려고 했으나 이 블로그를 자작NAS 설정을 마치고서야 집밖에서 SSH로 연결해 글을 쓰는 중이라 사</div>
-    <div class="read-more"><span>448 words · 1 mins</span><a href="http://dev2820.github.io/nas_project/home_server/">더 보기 →</a></div>
+    <div class="read-more"><span>448 words · 1 mins</span><a class="go-to-read" href="http://dev2820.github.io/nas_project/home_server/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>

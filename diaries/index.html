@@ -56,6 +56,15 @@
       </a>
     </div>
     <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
       <button onclick="event.stopPropagation(); toggleAside(true)">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </button>
@@ -168,11 +177,11 @@
     </a>
     
     <div class="post-meta">
-      by <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      on 2020년 09월 23일 12시 19분
+      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      | 2020년 09월 23일 12시 19분
     </div>
     <div class="content">어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &lsquo;code-server&rsquo; 라는게 있는 것을 알아서 지금 도커로 &lsquo;code-server'를 설치하고 돌려</div>
-    <div class="read-more"><span>915 words · 2 mins</span><a href="http://dev2820.github.io/diaries/code-server/">더 보기 →</a></div>
+    <div class="read-more"><span>915 words · 2 mins</span><a class="go-to-read" href="http://dev2820.github.io/diaries/code-server/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>
@@ -204,7 +213,7 @@
             <li><a href="http://dev2820.github.io/tags/blog/">#blog</a></li>
           
         </ul>
-         <small class="etc">외 총 6개의 태그</small> 
+         <small class="etc">+ 6개의 태그</small> 
       </div>
     </div>
   </div>
@@ -217,11 +226,11 @@
     </a>
     
     <div class="post-meta">
-      by <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      on 2020년 08월 08일 15시 25분
+      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      | 2020년 08월 08일 15시 25분
     </div>
     <div class="content">hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다. 내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &lsquo;blog/hugo&rsquo; 여기 서 빌드하면 됩니다. hugo</div>
-    <div class="read-more"><span>725 words · 2 mins</span><a href="http://dev2820.github.io/diaries/hugo_test/">더 보기 →</a></div>
+    <div class="read-more"><span>725 words · 2 mins</span><a class="go-to-read" href="http://dev2820.github.io/diaries/hugo_test/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>
@@ -264,11 +273,11 @@
     </a>
     
     <div class="post-meta">
-      by <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      on 2020년 07월 25일 02시 23분
+      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      | 2020년 07월 25일 02시 23분
     </div>
     <div class="content">md 작성 테스트 중 h1 h2 h3 h4 h5 h6 1 &lt;p&gt;hello&lt;/p&gt; hello hugo title1 sub title1 sub title2 sub sub title</div>
-    <div class="read-more"><span>25 words · 1 mins</span><a href="http://dev2820.github.io/diaries/test3/">더 보기 →</a></div>
+    <div class="read-more"><span>25 words · 1 mins</span><a class="go-to-read" href="http://dev2820.github.io/diaries/test3/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>

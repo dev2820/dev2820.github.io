@@ -57,6 +57,15 @@
       </a>
     </div>
     <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
       <button onclick="event.stopPropagation(); toggleAside(true)">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </button>
@@ -173,7 +182,7 @@
   document.getElementById('topbar').classList.remove('card')
   window.addEventListener('scroll', (event) => {
     let e = document.getElementById('topbar');
-    if (this.scrollY > 400) {
+    if (this.scrollY > 450) {
       if (!e.classList.contains('card')) {
         e.classList.add('card');
       }
@@ -223,11 +232,11 @@
     </a>
     
     <div class="post-meta">
-      by <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      on 2020년 09월 27일 16시 35분
+      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      | 2020년 09월 27일 16시 35분
     </div>
     <div class="content">이건 여담인데 여러분 이거 읽다보면 아니 그래서 어떻게 단다는 거야 처음부터 따라가는데 하나도 모르겠고 자꾸 헛소리만하네 같은 생각이 들 수 있는데 네! 저도 같은 생각</div>
-    <div class="read-more"><span>1618 words · 4 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/">더 보기 →</a></div>
+    <div class="read-more"><span>1618 words · 4 mins</span><a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>
@@ -255,7 +264,7 @@
             <li><a href="http://dev2820.github.io/tags/code-fence/">#code …</a></li>
           
         </ul>
-         <small class="etc">외 총 4개의 태그</small> 
+         <small class="etc">+ 4개의 태그</small> 
       </div>
     </div>
   </div>
@@ -268,11 +277,11 @@
     </a>
     
     <div class="post-meta">
-      by <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      on 2020년 09월 27일 15시 09분
+      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      | 2020년 09월 27일 15시 09분
     </div>
     <div class="content">이번글엔 컨텐츠에 들어가는 code fences에 테마 및 highlight 적용하는 방법이 들어갑니다. hightlight를 적용하는 방법은 여러가지가 있지만, 그 중에서도 딱</div>
-    <div class="read-more"><span>766 words · 2 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/">더 보기 →</a></div>
+    <div class="read-more"><span>766 words · 2 mins</span><a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>
@@ -305,11 +314,11 @@
     </a>
     
     <div class="post-meta">
-      by <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      on 2020년 09월 26일 23시 01분
+      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      | 2020년 09월 26일 23시 01분
     </div>
-    <div class="content">1 2 3 4 5 6 7 8 9 10  const a = 1; const b = 2; const c = 3; for(let i =0; i&lt;10; i++) { const d = 4; const e = 5; const f = 6; …</div>
-    <div class="read-more"><span>95 words · 1 mins</span><a href="http://dev2820.github.io/diaries/test/test2/">더 보기 →</a></div>
+    <div class="content">1 2 3 4 5 6 7 8 9 10  const a = 1; const b = 2; const c = 3; for(let i =0; i&lt;10; i++) { const d = 4; const e = 5; const f = 6; } console.log(&#39;end&#39;) …</div>
+    <div class="read-more"><span>95 words · 1 mins</span><a class="go-to-read" href="http://dev2820.github.io/diaries/test/test2/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>
@@ -337,7 +346,7 @@
             <li><a href="http://dev2820.github.io/tags/hugo-management/">#hugo …</a></li>
           
         </ul>
-         <small class="etc">외 총 5개의 태그</small> 
+         <small class="etc">+ 5개의 태그</small> 
       </div>
     </div>
   </div>
@@ -350,11 +359,11 @@
     </a>
     
     <div class="post-meta">
-      by <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      on 2020년 09월 26일 20시 39분
+      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      | 2020년 09월 26일 20시 39분
     </div>
     <div class="content">이번 글에서는 휴고의 컨텐츠 관리에 관해서 알아보겠습니다. https://gohugo.io/content-management/ Content Organization 휴고의 컨텐츠 조직화에 관한 페이지입니다. …</div>
-    <div class="read-more"><span>2459 words · 5 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/">더 보기 →</a></div>
+    <div class="read-more"><span>2459 words · 5 mins</span><a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>
@@ -382,7 +391,7 @@
             <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">#휴고 시작하기</a></li>
           
         </ul>
-         <small class="etc">외 총 4개의 태그</small> 
+         <small class="etc">+ 4개의 태그</small> 
       </div>
     </div>
   </div>
@@ -395,11 +404,11 @@
     </a>
     
     <div class="post-meta">
-      by <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      on 2020년 09월 25일 20시 09분
+      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      | 2020년 09월 25일 20시 09분
     </div>
-    <div class="content">이 글은 휴고의 설정값들에 대해 설명합니다. Configure Hugo https://gohugo.io/getting-started/configuration/ hugo의 기본 설정값들에 대한 페이지 입니다. Configuration …</div>
-    <div class="read-more"><span>2497 words · 5 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/">더 보기 →</a></div>
+    <div class="content">이 글은 휴고의 설정값들에 대해 설명합니다. Configure Hugo https://gohugo.io/getting-started/configuration/ hugo의 기본 설정값들에 대한 페이지 입니다. Configuration File …</div>
+    <div class="read-more"><span>2497 words · 5 mins</span><a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>
@@ -427,7 +436,7 @@
             <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">#휴고 시작하기</a></li>
           
         </ul>
-         <small class="etc">외 총 4개의 태그</small> 
+         <small class="etc">+ 4개의 태그</small> 
       </div>
     </div>
   </div>
@@ -440,11 +449,11 @@
     </a>
     
     <div class="post-meta">
-      by <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      on 2020년 09월 25일 14시 56분
+      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      | 2020년 09월 25일 14시 56분
     </div>
-    <div class="content">이 글에서는 휴고 설치하는 법과 휴고가 생성하는 사이트의 폴더 구조에 대해 살펴볼 것입니다. Install Hugo 휴고 시작하기 https://gohugo.io/getting-started/ 휴고는 Go 컴파일러가 돌아가는 곳이면  …</div>
-    <div class="read-more"><span>3452 words · 7 mins</span><a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">더 보기 →</a></div>
+    <div class="content">이 글에서는 휴고 설치하는 법과 휴고가 생성하는 사이트의 폴더 구조에 대해 살펴볼 것입니다. Install Hugo 휴고 시작하기 https://gohugo.io/getting-started/ 휴고는 Go 컴파일러가 돌아가는 곳이면 어디에서든 작</div>
+    <div class="read-more"><span>3452 words · 7 mins</span><a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>
@@ -485,11 +494,11 @@
     </a>
     
     <div class="post-meta">
-      by <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      on 2020년 09월 23일 21시 30분
+      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      | 2020년 09월 23일 21시 30분
     </div>
     <div class="content">글머리 이 글은 Hugo(이하 휴고) 공식 홈페이지와 공식 홈페이지에서 소개하는 휴고에 대해 다루고 있습니다. 페이지 설명을 번역하며 휴고에 대해서 알아볼 것입니</div>
-    <div class="read-more"><span>2141 words · 5 mins</span><a href="http://dev2820.github.io/what_is_hugo/what_is_hugo/">더 보기 →</a></div>
+    <div class="read-more"><span>2141 words · 5 mins</span><a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/what_is_hugo/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>

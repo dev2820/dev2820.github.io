@@ -62,6 +62,15 @@
       </a>
     </div>
     <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
       <button onclick="event.stopPropagation(); toggleAside(true)">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </button>
@@ -135,7 +144,7 @@
   document.getElementById('topbar').classList.remove('card')
   window.addEventListener('scroll', (event) => {
     let e = document.getElementById('topbar');
-    if (this.scrollY > 400) {
+    if (this.scrollY > 450) {
       if (!e.classList.contains('card')) {
         e.classList.add('card');
       }
@@ -154,7 +163,7 @@
     <h1 id="title">웹으로 즐기는 코딩 code-server</h1>
     <section>
       <h4 id="date"> 2020년 09월 23일 12시 19분 </h4>
-      <h5 id="wordcount"> 915 Words, 2 mins  </h5>
+      <h5 id="wordcount"> 915 Words · 2 mins  </h5>
     </section>
     <small class="breadcrumb">
       <div class="breadcrumbnav">
@@ -175,7 +184,10 @@
 </div>
 
     </small>
-    <small class="author">by dev2820</small>
+    
+    
+    <small class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></small>
+    
   </div>
 </header>
 <section id="main">
@@ -256,7 +268,18 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
     
     
   </nav>
-  <hr>
+    
+    <div class="tags">
+    <ul class="tag">
+        
+            <li><a href="http://dev2820.github.io/tags/code-server/"># code-server</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%EC%8B%A0%EA%B8%B0%ED%95%A8/"># 신기함</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%BD%94%EB%94%A9/"># 웹에서 코딩</a></li>
+        
+    </ul>
+</div>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -269,21 +292,6 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
         <div class="">깃허브 등등 추가</div>
     </div>
 </div>
-    
-    
-    category: <a href="http://dev2820.github.io/Diaries">Diaries</a>
-    <div class="tags">
-    <ul class="tag">
-        
-            <li><a href="http://dev2820.github.io/tags/code-server/">#code-server</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/%EC%8B%A0%EA%B8%B0%ED%95%A8/">#신기함</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%BD%94%EB%94%A9/">#웹에서 코딩</a></li>
-        
-    </ul>
-</div>
-    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -306,8 +314,13 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     <div class="more-content">
       <div class="related-content">
-
-
+	<div class="title">
+		<p>&#34;Diaries&#34; 와 비슷한 컨텐츠 더보기</p>
+		
+		<a href="http://dev2820.github.io/Diaries">more</a>
+	</div>
+	
+	
 </div>
     </div>
   </div>

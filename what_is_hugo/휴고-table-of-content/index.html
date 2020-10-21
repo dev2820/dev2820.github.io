@@ -66,6 +66,15 @@
       </a>
     </div>
     <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
       <button onclick="event.stopPropagation(); toggleAside(true)">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </button>
@@ -139,7 +148,7 @@
   document.getElementById('topbar').classList.remove('card')
   window.addEventListener('scroll', (event) => {
     let e = document.getElementById('topbar');
-    if (this.scrollY > 400) {
+    if (this.scrollY > 450) {
       if (!e.classList.contains('card')) {
         e.classList.add('card');
       }
@@ -158,7 +167,7 @@
     <h1 id="title">휴고 Table of Content</h1>
     <section>
       <h4 id="date"> 2020년 10월 02일 20시 00분 </h4>
-      <h5 id="wordcount"> 580 Words, 2 mins  </h5>
+      <h5 id="wordcount"> 580 Words · 2 mins  </h5>
     </section>
     <small class="breadcrumb">
       <div class="breadcrumbnav">
@@ -179,7 +188,10 @@
 </div>
 
     </small>
-    <small class="author">by dev2820</small>
+    
+    
+    <small class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></small>
+    
   </div>
 </header>
 <section id="main">
@@ -331,7 +343,22 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
       <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/">휴고 Multilingual Mode <i class="fa fa-arrow-circle-right"></i></a>
     
   </nav>
-  <hr>
+    
+    <div class="tags">
+    <ul class="tag">
+        
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/table-of-contents/"># Table of Contents</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%EB%AA%A9%EC%B0%A8/"># 목차</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%EB%AC%B8%EC%84%9C%EC%97%90-%EB%AA%A9%EC%B0%A8-%EB%8B%AC%EA%B8%B0/"># 문서에 목차 달기</a></li>
+        
+    </ul>
+</div>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -344,25 +371,6 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
         <div class="">깃허브 등등 추가</div>
     </div>
 </div>
-    
-    
-    category: <a href="http://dev2820.github.io/what_is_hugo">what_is_hugo</a>
-    <div class="tags">
-    <ul class="tag">
-        
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/table-of-contents/">#Table of Contents</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/%EB%AA%A9%EC%B0%A8/">#목차</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/%EB%AC%B8%EC%84%9C%EC%97%90-%EB%AA%A9%EC%B0%A8-%EB%8B%AC%EA%B8%B0/">#문서에 목차 달기</a></li>
-        
-    </ul>
-</div>
-    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -385,13 +393,18 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     <div class="more-content">
       <div class="related-content">
-
-
-<h3>비슷한 컨텐츠 더보기</h3>
-<ul>
-	
-	<li>
+	<div class="title">
+		<p>&#34;what_is_hugo&#34; 와 비슷한 컨텐츠 더보기</p>
 		
+		<a href="http://dev2820.github.io/what_is_hugo">more</a>
+	</div>
+	
+	
+	<div class="container">
+		<ul>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-static-files\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -407,10 +420,10 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-menus\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -426,10 +439,10 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-url-management\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -445,10 +458,10 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-link-and-cross-reference\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -464,10 +477,10 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-summary\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -483,10 +496,10 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-taxonomies\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -502,10 +515,11 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
       </a>
     </div>
   </div>
-	</li>
+			</li>
+			
+		</ul>
+	</div>
 	
-</ul>
-
 </div>
     </div>
   </div>

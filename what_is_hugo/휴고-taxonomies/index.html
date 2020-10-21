@@ -62,6 +62,15 @@
       </a>
     </div>
     <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
       <button onclick="event.stopPropagation(); toggleAside(true)">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </button>
@@ -135,7 +144,7 @@
   document.getElementById('topbar').classList.remove('card')
   window.addEventListener('scroll', (event) => {
     let e = document.getElementById('topbar');
-    if (this.scrollY > 400) {
+    if (this.scrollY > 450) {
       if (!e.classList.contains('card')) {
         e.classList.add('card');
       }
@@ -154,7 +163,7 @@
     <h1 id="title">휴고 Taxonomies</h1>
     <section>
       <h4 id="date"> 2020년 09월 30일 19시 06분 </h4>
-      <h5 id="wordcount"> 911 Words, 2 mins  </h5>
+      <h5 id="wordcount"> 911 Words · 2 mins  </h5>
     </section>
     <small class="breadcrumb">
       <div class="breadcrumbnav">
@@ -175,7 +184,10 @@
 </div>
 
     </small>
-    <small class="author">by dev2820</small>
+    
+    
+    <small class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></small>
+    
   </div>
 </header>
 <section id="main">
@@ -379,7 +391,18 @@ title = <span style="color:#f1fa8c">&#34;Hugo: A fast and flexible static site g
       <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/">휴고 Summary <i class="fa fa-arrow-circle-right"></i></a>
     
   </nav>
-  <hr>
+    
+    <div class="tags">
+    <ul class="tag">
+        
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/taxonomy/"># taxonomy</a></li>
+        
+    </ul>
+</div>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -392,21 +415,6 @@ title = <span style="color:#f1fa8c">&#34;Hugo: A fast and flexible static site g
         <div class="">깃허브 등등 추가</div>
     </div>
 </div>
-    
-    
-    category: <a href="http://dev2820.github.io/what_is_hugo">what_is_hugo</a>
-    <div class="tags">
-    <ul class="tag">
-        
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/taxonomy/">#taxonomy</a></li>
-        
-    </ul>
-</div>
-    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -429,13 +437,18 @@ title = <span style="color:#f1fa8c">&#34;Hugo: A fast and flexible static site g
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     <div class="more-content">
       <div class="related-content">
-
-
-<h3>비슷한 컨텐츠 더보기</h3>
-<ul>
-	
-	<li>
+	<div class="title">
+		<p>&#34;what_is_hugo&#34; 와 비슷한 컨텐츠 더보기</p>
 		
+		<a href="http://dev2820.github.io/what_is_hugo">more</a>
+	</div>
+	
+	
+	<div class="container">
+		<ul>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-shortcodes\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -451,10 +464,10 @@ title = <span style="color:#f1fa8c">&#34;Hugo: A fast and flexible static site g
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -470,10 +483,10 @@ title = <span style="color:#f1fa8c">&#34;Hugo: A fast and flexible static site g
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-front-matter\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -489,10 +502,10 @@ title = <span style="color:#f1fa8c">&#34;Hugo: A fast and flexible static site g
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -508,10 +521,10 @@ title = <span style="color:#f1fa8c">&#34;Hugo: A fast and flexible static site g
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-syntax-highlighting\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -527,10 +540,10 @@ title = <span style="color:#f1fa8c">&#34;Hugo: A fast and flexible static site g
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -546,10 +559,11 @@ title = <span style="color:#f1fa8c">&#34;Hugo: A fast and flexible static site g
       </a>
     </div>
   </div>
-	</li>
+			</li>
+			
+		</ul>
+	</div>
 	
-</ul>
-
 </div>
     </div>
   </div>

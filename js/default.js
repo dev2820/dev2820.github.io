@@ -1,11 +1,26 @@
 function toggleAside(bool) {
-    let e = document.getElementById('aside');
+    const e = document.getElementById('aside');
     if (e.classList.contains('hidden') && bool)
         e.classList.remove('hidden');
     else
         e.classList.add('hidden');
 }
-
+function toggleSearch(bool) {
+    const e = document.getElementById('search');
+    let i = document.getElementsByClassName('fa-search')[0];
+    if(!i)
+        i = document.getElementsByClassName('fa-times')[0];
+    if(e.classList.contains('active') && bool){
+        e.classList.remove('active');
+        i.classList.add('fa-search');
+        i.classList.remove('fa-times');
+    }
+    else{
+        e.classList.add('active');
+        i.classList.remove('fa-search');
+        i.classList.add('fa-times');
+    }
+}
 function scrollToTop() {
     let position =
         document.body.scrollTop || document.documentElement.scrollTop;

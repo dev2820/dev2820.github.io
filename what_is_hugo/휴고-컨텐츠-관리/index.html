@@ -66,6 +66,15 @@
       </a>
     </div>
     <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
       <button onclick="event.stopPropagation(); toggleAside(true)">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </button>
@@ -139,7 +148,7 @@
   document.getElementById('topbar').classList.remove('card')
   window.addEventListener('scroll', (event) => {
     let e = document.getElementById('topbar');
-    if (this.scrollY > 400) {
+    if (this.scrollY > 450) {
       if (!e.classList.contains('card')) {
         e.classList.add('card');
       }
@@ -158,7 +167,7 @@
     <h1 id="title">휴고의 컨텐츠 관리</h1>
     <section>
       <h4 id="date"> 2020년 09월 26일 20시 39분 </h4>
-      <h5 id="wordcount"> 2459 Words, 5 mins  </h5>
+      <h5 id="wordcount"> 2459 Words · 5 mins  </h5>
     </section>
     <small class="breadcrumb">
       <div class="breadcrumbnav">
@@ -179,7 +188,10 @@
 </div>
 
     </small>
-    <small class="author">by dev2820</small>
+    
+    
+    <small class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></small>
+    
   </div>
 </header>
 <section id="main">
@@ -377,7 +389,22 @@ url: /blog/new-url/
       <a class="next" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/">휴고 Syntax Highlighting <i class="fa fa-arrow-circle-right"></i></a>
     
   </nav>
-  <hr>
+    
+    <div class="tags">
+    <ul class="tag">
+        
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/hugo-management/"># hugo management</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/"># 컨텐츠 관리</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/"># 휴고 시작하기</a></li>
+        
+    </ul>
+</div>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -390,25 +417,6 @@ url: /blog/new-url/
         <div class="">깃허브 등등 추가</div>
     </div>
 </div>
-    
-    
-    category: <a href="http://dev2820.github.io/what_is_hugo">what_is_hugo</a>
-    <div class="tags">
-    <ul class="tag">
-        
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/hugo-management/">#hugo management</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/">#컨텐츠 관리</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">#휴고 시작하기</a></li>
-        
-    </ul>
-</div>
-    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -431,13 +439,18 @@ url: /blog/new-url/
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     <div class="more-content">
       <div class="related-content">
-
-
-<h3>비슷한 컨텐츠 더보기</h3>
-<ul>
-	
-	<li>
+	<div class="title">
+		<p>&#34;what_is_hugo&#34; 와 비슷한 컨텐츠 더보기</p>
 		
+		<a href="http://dev2820.github.io/what_is_hugo">more</a>
+	</div>
+	
+	
+	<div class="container">
+		<ul>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -453,10 +466,10 @@ url: /blog/new-url/
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -472,10 +485,10 @@ url: /blog/new-url/
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/what_is_hugo\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -491,10 +504,10 @@ url: /blog/new-url/
       </a>
     </div>
   </div>
-	</li>
-	
-	<li>
-		
+			</li>
+			
+			<li>
+				
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/diaries\/hugo_test\/')">
     
     <div class="banner" style="background-image:url(/images/ocean.jpg)">
@@ -510,10 +523,11 @@ url: /blog/new-url/
       </a>
     </div>
   </div>
-	</li>
+			</li>
+			
+		</ul>
+	</div>
 	
-</ul>
-
 </div>
     </div>
   </div>

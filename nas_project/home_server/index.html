@@ -60,6 +60,15 @@
       </a>
     </div>
     <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
       <button onclick="event.stopPropagation(); toggleAside(true)">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </button>
@@ -133,7 +142,7 @@
   document.getElementById('topbar').classList.remove('card')
   window.addEventListener('scroll', (event) => {
     let e = document.getElementById('topbar');
-    if (this.scrollY > 400) {
+    if (this.scrollY > 450) {
       if (!e.classList.contains('card')) {
         e.classList.add('card');
       }
@@ -152,7 +161,7 @@
     <h1 id="title">NAS 용 SPA만들기 (0)</h1>
     <section>
       <h4 id="date"> 2020년 09월 18일 18시 20분 </h4>
-      <h5 id="wordcount"> 448 Words, 1 mins  </h5>
+      <h5 id="wordcount"> 448 Words · 1 mins  </h5>
     </section>
     <small class="breadcrumb">
       <div class="breadcrumbnav">
@@ -173,7 +182,10 @@
 </div>
 
     </small>
-    <small class="author">by dev2820</small>
+    
+    
+    <small class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></small>
+    
   </div>
 </header>
 <section id="main">
@@ -241,7 +253,16 @@ DB - db는 사용되지 않는다.</p>
     
     
   </nav>
-  <hr>
+    
+    <div class="tags">
+    <ul class="tag">
+        
+            <li><a href="http://dev2820.github.io/tags/diy/"># DIY</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/projects/"># projects</a></li>
+        
+    </ul>
+</div>
     <div class="profile-in-article">
     <div class="profile-image">
         
@@ -254,19 +275,6 @@ DB - db는 사용되지 않는다.</p>
         <div class="">깃허브 등등 추가</div>
     </div>
 </div>
-    
-    
-    category: <a href="http://dev2820.github.io/Nas_project">Nas_project</a>
-    <div class="tags">
-    <ul class="tag">
-        
-            <li><a href="http://dev2820.github.io/tags/diy/">#DIY</a></li>
-        
-            <li><a href="http://dev2820.github.io/tags/projects/">#projects</a></li>
-        
-    </ul>
-</div>
-    
     <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -289,8 +297,13 @@ DB - db는 사용되지 않는다.</p>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     <div class="more-content">
       <div class="related-content">
-
-
+	<div class="title">
+		<p>&#34;Nas_project&#34; 와 비슷한 컨텐츠 더보기</p>
+		
+		<a href="http://dev2820.github.io/Nas_project">more</a>
+	</div>
+	
+	
 </div>
     </div>
   </div>
