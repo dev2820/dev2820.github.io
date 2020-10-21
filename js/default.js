@@ -41,6 +41,7 @@ window.onload = function () {
             progressbar.style.width = (scroll/height)*100+'%';
         }
     });
+    //clock javascript
     const deg = 6;
     const hr = document.querySelector('#hr');
     const mn = document.querySelector('#mn');
@@ -50,8 +51,8 @@ window.onload = function () {
         let hh = day.getHours() * 30;
         let mm = day.getMinutes() * deg;
         let ss = day.getSeconds() * deg;
-        hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
-        mn.style.transform = `rotateZ(${mm}deg)`;
-        sc.style.transform = `rotateZ(${ss}deg)`;
+        if(hr) hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+        if(mn) mn.style.transform = `rotateZ(${mm}deg)`;
+        if(sc) sc.style.transform = `rotateZ(${ss}deg)`;
     },1000)
 }
