@@ -436,20 +436,22 @@ article.summary .cover-content .read-more .go-to-read span {
     flex-direction:column;
     justify-content:center;
     align-items: center;
+    background-color:#152238;
+    color:#fefefe;
 }
 .profile div.cover {
     flex:1;
     margin:0 auto;
 }
 .profile div.cover img {
-    height:80px;
-    width: 80px;
-    border-radius: 50%;
+    height:90%;
+    width: 90%;
+    border-radius:8px;
 }
 .profile h2 {
     margin:0;
 }
-.profile h5 {
+.profile p {
     margin:5px 10px;
     text-align:center;
 }
