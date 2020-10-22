@@ -142,7 +142,6 @@ hr.summary-sep {
     transition:0.2s ease-out;
     background-color:#152238;
     z-index:60;
-    padding:0 10px;
     display:flex;
     flex-direction:column;
 }
@@ -151,13 +150,13 @@ hr.summary-sep {
     transition:0.2s ease-out;
 }
 #aside .top {
-    background-color:#528a22;
+    background-color:#528aae;
     height:50px;
     display:flex;
     justify-content: flex-end;
 }
 #aside .top button {
-    margin:auto 0;
+    margin:auto 5px;
     background:#ff5349;
 }
 #aside .aside-sep {
