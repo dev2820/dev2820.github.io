@@ -161,9 +161,7 @@ hr.summary-sep {
     background:#ff5349;
 }
 #aside .aside-sep {
-    width:80%;
     height:2px;
-    margin:8px auto;
 }
 #aside .aside-menu {
     padding:0 20px;
@@ -172,6 +170,7 @@ hr.summary-sep {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+    padding:5px;
 }
 #aside .aside-menu ul li .aside-menu-item {
     width:60%;
