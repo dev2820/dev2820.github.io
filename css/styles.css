@@ -451,7 +451,8 @@ article.summary .cover-content .read-more .go-to-read span {
 }
 .profile h2 {
     color:#fefefe;
-    margin:0;
+    font-size:1.5rem;
+    margin:0 auto;
 }
 .profile p {
     margin:5px 10px;
