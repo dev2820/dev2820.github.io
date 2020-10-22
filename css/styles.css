@@ -166,12 +166,19 @@ hr.summary-sep {
     margin:8px auto;
 }
 #aside .aside-menu {
-    padding-left:20px;
+    padding:0 20px;
 }
 #aside .aside-menu ul li {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+}
+#aside .aside-menu ul li .aside-menu-item {
+    width:60%;
+}
+#aside .aside-menu ul li .date {
+    width:40%;
+    text-align:right;
 }
 #aside .sidebar-nav {
     padding:0 20px;
@@ -188,6 +195,7 @@ hr.summary-sep {
 #aside .sidebar-nav ul li small.date {
     width:40%;
     margin:auto 0;
+    text-align:right;
 }
 /* Content*/
 #content {
