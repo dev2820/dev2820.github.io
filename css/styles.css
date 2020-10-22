@@ -180,6 +180,14 @@ hr.summary-sep {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+    padding:5px;
+}
+#aside .sidebar-nav ul li a.sidebar-nav-item {
+    width:60%;
+} 
+#aside .sidebar-nav ul li small.date {
+    width:40%;
+    margin:auto 0;
 }
 /* Content*/
 #content {
@@ -442,16 +450,16 @@ article.summary .cover-content .read-more .go-to-read span {
     align-items:center;
     margin:0 auto;
     width:100%;
-    height:320px;
+    height:240px;
 }
 .profile div.cover img {
-    height:270px;
-    width: 300px;
+    height:200px;
+    width: 200px;
     border-radius:12px;
 }
 .profile h2 {
     color:#fefefe;
-    font-size:1.5rem;
+    font-size:1.8rem;
     margin:0 auto;
 }
 .profile p {
