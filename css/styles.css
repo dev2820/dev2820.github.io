@@ -432,12 +432,10 @@ article.summary .cover-content .read-more .go-to-read span {
 }
 /* Profile */
 .profile {
-    height:130px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items: center;
-    background-color:#152238;
     color:#fefefe;
 }
 .profile div.cover {
@@ -450,6 +448,7 @@ article.summary .cover-content .read-more .go-to-read span {
     border-radius:8px;
 }
 .profile h2 {
+    color:#fefefe;
     margin:0;
 }
 .profile p {
