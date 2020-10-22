@@ -156,7 +156,8 @@ hr.summary-sep {
     justify-content: flex-end;
 }
 #aside .top button {
-    margin:auto 5px;
+    height:100%;
+    width:50px;
     background:#ff5349;
 }
 #aside .aside-sep {
@@ -433,17 +434,15 @@ article.summary .cover-content .read-more .go-to-read span {
 .profile {
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items: center;
     color:#fefefe;
 }
 .profile div.cover {
-    flex:1;
     margin:0 auto;
 }
 .profile div.cover img {
     height:90%;
     width: 90%;
+    padding:5%;
     border-radius:8px;
 }
 .profile h2 {
