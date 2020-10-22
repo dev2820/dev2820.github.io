@@ -437,13 +437,17 @@ article.summary .cover-content .read-more .go-to-read span {
     color:#fefefe;
 }
 .profile div.cover {
+    display:flex;
+    justify-content:center;
+    align-items:center;
     margin:0 auto;
+    width:100%;
+    height:350px;
 }
 .profile div.cover img {
-    height:90%;
-    width: 90%;
-    padding:5%;
-    border-radius:8px;
+    height:300px;
+    width: 300px;
+    border-radius:12px;
 }
 .profile h2 {
     color:#fefefe;
