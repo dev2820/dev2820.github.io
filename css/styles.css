@@ -161,16 +161,16 @@ hr.summary-sep {
     background:#ff5349;
 }
 #aside .aside-sep {
-    height:2px;
+    height:1px;
+    width:90%;
 }
 #aside .aside-menu {
-    padding:0 20px;
 }
 #aside .aside-menu ul li {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    padding:5px;
+    padding:5px 20px;
 }
 #aside .aside-menu ul li .aside-menu-item {
     width:60%;
@@ -186,7 +186,7 @@ hr.summary-sep {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    padding:5px;
+    padding:5px 20px;
 }
 #aside .sidebar-nav ul li a.sidebar-nav-item {
     width:60%;
