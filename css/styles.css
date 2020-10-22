@@ -174,7 +174,7 @@ hr.summary-sep {
     justify-content: space-between;
 }
 #aside .sidebar-nav {
-    padding-left:20px;
+    padding:0 20px;
 }
 #aside .sidebar-nav ul li {
     display:flex;
