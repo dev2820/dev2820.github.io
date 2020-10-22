@@ -140,7 +140,7 @@ hr.summary-sep {
     top:0;
     transform:translateX(0px);
     transition:0.2s ease-out;
-    background-color:white;
+    background-color:#152238;
     z-index:60;
     padding:0 10px;
     display:flex;
@@ -151,13 +151,14 @@ hr.summary-sep {
     transition:0.2s ease-out;
 }
 #aside .top {
+    background-color:#528a22;
     height:50px;
     display:flex;
     justify-content: flex-end;
 }
 #aside .top button {
     margin:auto 0;
-    background:none;
+    background:#ff5349;
 }
 #aside .aside-sep {
     width:80%;
