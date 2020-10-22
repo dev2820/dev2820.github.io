@@ -164,6 +164,7 @@ hr.summary-sep {
     height:1px;
     width:80%;
     margin:0 auto;
+    color:#fefefe;
 }
 #aside .aside-menu ul li {
     display:flex;
@@ -176,7 +177,9 @@ hr.summary-sep {
 }
 #aside .aside-menu ul li .date {
     width:40%;
+    margin:auto 0;
     text-align:right;
+    color:#cccccc;
 }
 #aside .sidebar-nav ul li {
     display:flex;
@@ -191,6 +194,7 @@ hr.summary-sep {
     width:40%;
     margin:auto 0;
     text-align:right;
+    color:#cccccc;
 }
 /* Content*/
 #content {
