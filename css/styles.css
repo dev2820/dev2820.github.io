@@ -676,6 +676,7 @@ ul.contents li {
 .post-toc .title {
     background-color:#cccccc;
     padding:10px;
+    height:40px;
 }
 .post-toc .title.toggle-off {
     background-color:#F5F5DC;
