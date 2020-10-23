@@ -137,7 +137,6 @@ hr.summary-sep {
 /* Aside */
 #aside {
     height:100%;
-    overflow:auto;
     width:350px;
     max-width:50%;
     position:fixed;
@@ -167,6 +166,7 @@ hr.summary-sep {
 }
 #aside .container {
     overflow:auto;
+    flex-grow:1;
 }
 #aside .aside-sep {
     height:1px;
