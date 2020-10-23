@@ -165,6 +165,9 @@ hr.summary-sep {
     width:50px;
     background:#ff5349;
 }
+#aside .container {
+    overflow:auto;
+}
 #aside .aside-sep {
     height:1px;
     width:85%;
