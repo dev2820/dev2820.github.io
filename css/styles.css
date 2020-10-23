@@ -236,6 +236,7 @@ hr.summary-sep {
 }
 #content #banner .title  #title {
     height:25%;
+    width:100%;
     font-weight:100;
     font-size:3rem;
     padding:10px;
@@ -244,11 +245,11 @@ hr.summary-sep {
     top:40%;
     text-align:center;
     overflow:hidden;
-    margin:0 auto;
 }
 #content #banner .title section {
     position:absolute;
     text-align:center;
+    width:100%;
     top:65%;
     margin:0 auto;
 }
@@ -796,16 +797,20 @@ ul.contents li {
     width:100%;
     display:flex;
     flex-direction:column;
+    margin-bottom:10px;
 }
 .section-move *{
-    margin:auto 0;
+    display:flex;
+    align-items:center;
     font-size:1.5rem;
 }
 .section-move .previous {
     text-align:left;
     height:50px;
+    padding-left:10px;
 }
 .section-move .next {
     text-align:right;
     height:50px;
+    padding-right:10px;
 }
