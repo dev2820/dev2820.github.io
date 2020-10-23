@@ -792,10 +792,16 @@ ul.contents li {
 .section-move {
     width:100%;
     display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    height:50px;
+    flex-direction:column;
 }
 .section-move *{
     margin:auto 0;
+}
+.section-move .previous {
+    text-align:left;
+    height:50px;
+}
+.section-move .next {
+    text-align:right;
+    height:50px;
 }
