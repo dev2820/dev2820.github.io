@@ -680,7 +680,9 @@ ul.contents li {
 }
 .post-toc .title {
     background-color:#cccccc;
-    margin-bottom:10px;
+    display:flex;
+    align-items:center;
+    /* padding:10px 0; */
     height:50px;
 }
 .post-toc .title.toggle-off {
