@@ -665,7 +665,7 @@ ul.contents li {
 }
 /* post-toc */
 .post-toc {
-    background-color:#cccccc;
+    background-color:#333333;
     border-radius:20px;
 }
 .post-toc #table {
