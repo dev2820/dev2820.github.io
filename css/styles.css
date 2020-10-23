@@ -673,13 +673,12 @@ ul.contents li {
 }
 /* post-toc */
 .post-toc {
-    background-color:#cccccc;
+    background-color:#eeeeee;
     border-radius:25px;
     padding:0 20px;
     overflow:hidden;
 }
 .post-toc #table {
-    background-color:#eeeeee;
     overflow: hidden;
 }
 .post-toc #table li {
