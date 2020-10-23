@@ -179,7 +179,7 @@ hr.summary-sep {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    padding:10px 10%;
+    padding:7px 10%;
 }
 #aside .aside-menu ul li .aside-menu-item {
     width:60%;
@@ -194,7 +194,7 @@ hr.summary-sep {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    padding:5px 10%;
+    padding:7px 10%;
 }
 #aside .sidebar-nav ul li a.sidebar-nav-item {
     width:60%;
@@ -234,17 +234,18 @@ hr.summary-sep {
     /* background-color:green; */
 }
 #content #banner .title  #title {
+    height:25%;
     font-weight:100;
     font-size:3rem;
     padding:10px;
-    position: relative;
+    position: absolute;
     line-height:3rem;
     top:40%;
     margin:0 auto;
 }
 #content #banner .title section {
-    position:relative;
-    top:45%;
+    position:absolute;
+    top:65%;
 }
 #content #banner .title .breadcrumb {
     position:absolute;
@@ -256,8 +257,8 @@ hr.summary-sep {
     display:block;
     width:100%;
     text-align: center;
-    position: relative;
-    top:50%;
+    position: absolute;
+    top:70%;
     margin:0 auto;
     color: #eeeeee;
 }
