@@ -661,21 +661,23 @@ ul.contents li {
     color:#3EB489;
 }
 /* post-toc */
+.post-toc {
+    background-color:#cccccc;
+    border-radius:20px;
+}
 .post-toc #table {
     background-color:#cccccc;
     overflow: hidden;
-    border-radius: 0 0 16px 16px;
+    /* border-radius: 0 0 16px 16px; */
 }
 .post-toc .title {
     background-color:#cccccc;
     padding:10px;
-    transition: 0.3s;
-    border-radius:16px 16px 0 0;
+    /* border-radius:16px 16px 0 0; */
 }
 .post-toc .title.toggle-off {
     background-color:#cccccc;
-    transition: 0.3s;
-    border-radius:16px;
+    /* border-radius:16px; */
 }
 /* profile-in-article */
 .profile-in-article {
