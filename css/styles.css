@@ -674,13 +674,16 @@ ul.contents li {
     background-color:#cccccc;
     overflow: hidden;
 }
+.post-toc #table li {
+    list-style:decimal;
+}
 .post-toc .title {
     background-color:#cccccc;
     padding:10px;
     height:40px;
 }
 .post-toc .title.toggle-off {
-    background-color:#F5F5DC;
+    background-color:#cccccc;
 }
 /* profile-in-article */
 .profile-in-article {
