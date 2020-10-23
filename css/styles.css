@@ -665,22 +665,20 @@ ul.contents li {
 }
 /* post-toc */
 .post-toc {
-    background-color:#333333;
+    background-color:#cccccc;
     border-radius:20px;
+    overflow:hidden;
 }
 .post-toc #table {
     background-color:#cccccc;
     overflow: hidden;
-    /* border-radius: 0 0 16px 16px; */
 }
 .post-toc .title {
     background-color:#cccccc;
     padding:10px;
-    /* border-radius:16px 16px 0 0; */
 }
 .post-toc .title.toggle-off {
-    background-color:#cccccc;
-    /* border-radius:16px; */
+    background-color:#F5F5DC;
 }
 /* profile-in-article */
 .profile-in-article {
