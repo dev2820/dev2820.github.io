@@ -156,6 +156,7 @@ hr.summary-sep {
 #aside .top {
     background-color:#528aae;
     height:50px;
+    flex-shrink:0;
     display:flex;
     justify-content: flex-end;
 }
