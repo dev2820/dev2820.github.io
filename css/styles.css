@@ -129,6 +129,10 @@ hr.summary-sep {
 #topbar .burger .icon {
     margin:auto 0;
     z-index:5;
+    color:#cccccc;
+}
+#topbar.card .burger .icon {
+    color:#333333;
 }
 /* Aside */
 #aside {
@@ -656,21 +660,21 @@ ul.contents li {
     color:#3EB489;
 }
 /* post-toc */
-.post-toc {
-    height:fit-content;
-}
 .post-toc #table {
     background-color:#cccccc;
     overflow: hidden;
+    border-radius: 0 0 12px 12px;
 }
 .post-toc .title {
     background-color:#cccccc;
     padding:10px;
     transition: 0.3s;
+    border-radius:12px;
 }
 .post-toc .title.toggle-off {
     background-color:#cccccc;
     transition: 0.3s;
+    border-radius:12px 12px 0 0;
 }
 /* profile-in-article */
 .profile-in-article {
