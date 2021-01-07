@@ -23,12 +23,30 @@
     </item>
     
     <item>
+      <title>Hello Programmer Theme</title>
+      <link>http://dev2820.github.io/diaries/hello-programmer-theme/</link>
+      <pubDate>Sat, 08 Aug 2020 19:53:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/diaries/hello-programmer-theme/</guid>
+      <description>이 테마를 쓰면서 알게된 점 정리 config.toml 에 적어둔 title을 메뉴에서 선택할 수 있다. 그 타이틀을 메뉴에서 선택하면 메인화면으로 간다. projects 라는 이름의 형식을 arch</description>
+    </item>
+    
+    <item>
       <title>휴고에서 컨텐츠 지정하고 글 생성해보기</title>
       <link>http://dev2820.github.io/diaries/hugo_test/</link>
       <pubDate>Sat, 08 Aug 2020 15:25:11 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/hugo_test/</guid>
       <description>hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다. 내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &amp;lsquo;blog/hugo&amp;rsquo; 여기 서 빌드하면 됩니다. hugo</description>
+    </item>
+    
+    <item>
+      <title>Test2</title>
+      <link>http://dev2820.github.io/diaries/test2/</link>
+      <pubDate>Sat, 25 Jul 2020 12:19:54 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/diaries/test2/</guid>
+      <description></description>
     </item>
     
     <item>

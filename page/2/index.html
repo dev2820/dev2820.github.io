@@ -25,25 +25,10 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/homePage.css">
-    <link rel="stylesheet" href="/css/listPage.css">
-    <link rel="stylesheet" href="/css/notFound.css">
-    <link rel="stylesheet" href="/css/tags.css">
-    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/markdown.css">
-    <link rel="stylesheet" href="/css/clock.css">
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-XXXXXXXX-X');
-    </script>
-    
     
     <script src="/js/default.js"></script>
 </head>
@@ -52,7 +37,7 @@
     <div class="logo">
       <a href="/">
         
-        <img src="/images/logo.png" height="32px" />
+        <img src="/images/site_logo.png" height="32px" />
         
       </a>
     </div>
@@ -96,9 +81,9 @@
                 <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
                 <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
                 <li><a class="aside-menu-item" href="http://dev2820.github.io/">전체글 모아보기
-                        <small>(25)</small></a>
+                        <small>(32)</small></a>
                     <small
-                        class="date">- 2020/10/18</small></li>
+                        class="date">- 2020/11/15</small></li>
             </ul>
         </div>
         <hr class="aside-sep">
@@ -111,7 +96,7 @@
                     
                     
                     <a class="sidebar-nav-item"
-                        href="/diaries/" title="Diaries">Diaries <small>(4)</small></a>
+                        href="/diaries/" title="Diaries">Diaries <small>(7)</small></a>
                     <small class="date">- 2020/09/26</small>
                 </li>
                 <hr class="aside-sep">
@@ -120,8 +105,8 @@
                     
                     
                     <a class="sidebar-nav-item"
-                        href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme <small>(0)</small></a>
-                    
+                        href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme <small>(3)</small></a>
+                    <small class="date">- 2020/09/19</small>
                 </li>
                 <hr class="aside-sep">
                 
@@ -138,8 +123,8 @@
                     
                     
                     <a class="sidebar-nav-item"
-                        href="/what_is_hugo/" title="what_is_hugo">what_is_hugo <small>(20)</small></a>
-                    <small class="date">- 2020/10/18</small>
+                        href="/what_is_hugo/" title="what_is_hugo">what_is_hugo <small>(21)</small></a>
+                    <small class="date">- 2020/11/15</small>
                 </li>
                 <hr class="aside-sep">
                 
@@ -147,11 +132,14 @@
         </nav>
     </div>
 </div>
+<link rel="stylesheet" href="/css/homePage.css">
 
 <header id="home-head" class="card" style="background-image:url(/images/space.jpg);">
 
   <div class="container">
-  <div class="clock">
+  <link rel="stylesheet" href="/css/clock.css">
+<script src="/js/clock.js"></script>
+<div class="clock">
     <div class="hour">
         <div class="hr" id="hr"></div>
     </div>
@@ -163,7 +151,7 @@
     </div>
 </div>
     <h1 class="title">dev2820의 개발 블로그</h1>
-    <div class="content"><p>dev2820의 아무거나 저장하는 개발 공간에 오신것을 환영합니다. 아직 사이트 개발중입니다.</p>
+    <div class="content"><p>dev2820의 아무거나 저장하는 개발 공간에 오신 것을 환영합니다. 아직 사이트 개발중입니다.</p>
 </div>
   </div>
 </header>
@@ -225,11 +213,56 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/url/">#URL</a></li>
+            <li><a href="http://dev2820.github.io/tags/menu/"># menu</a></li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+  <div class="cover-content">
+    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/">
+      
+      <img class="icon" src="/images/cover-icon.png" />
+      
+      <h2 class="title">휴고 Menus</h2>
+    </a>
+    
+    <div class="post-meta">
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
+      | 2020년 10월 01일
+    </div>
+    <div class="content">휴고엔 강력한 메뉴 시스템이 있습니다. 이 메뉴시스템으론 다음과 같은 일을 할 수 있습니다. 메뉴 안에 컨텐츠 배치 제한없는 메뉴 depth 어떠한 컨텐츠도 필요없는 메뉴 엔트</div>
+    <div class="read-more"><span>1 mins read</span><a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
+  </div>
+
+</article>
+    <hr class="summary-sep" />
+    
+    <article class="summary card">
+  
+  <div class="cover-image" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 271px),url('/images/ocean.jpg');">
+  
+    <div class="classification">
+      <div class="summary-category">
+        <h4>Category</h4>
+        
+           <a href="http://dev2820.github.io/categories/what_is_hugo/">what_is_hugo</a>
+        
+      </div>
+      <div class="summary-tags">
+        <h4>Tags</h4>
+        <ul class="tag">
+          
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
+          
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
+          
+            <li><a href="http://dev2820.github.io/tags/url/"># URL</a></li>
           
         </ul>
         
@@ -245,7 +278,7 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 10월 01일
     </div>
     <div class="content">이번글은 휴고가 지원하는 permalinks, aliases, link canonicalization 그리고 절대경로와 상대경로를 다루는 옵션들에 대해 다룹니다. https://gohugo.io/content-management/urls/ Permalinks …</div>
@@ -270,11 +303,11 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/ref-and-relref/">#ref and …</a></li>
+            <li><a href="http://dev2820.github.io/tags/ref-and-relref/"># ref and …</a></li>
           
         </ul>
         
@@ -290,7 +323,7 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 10월 01일
     </div>
     <div class="content">이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크를 만드는 rel,relref shortcode에 대해 다룹니다. 이 두 shortcode는 각각 한 문</div>
@@ -315,9 +348,9 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
           
         </ul>
         
@@ -333,7 +366,7 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 09월 30일
     </div>
     <div class="content"><p>휴고는 page 변수로 <code>.Summary</code>를 제공합니다. 이 summary는 페이지에 대한 요약이며 자동으로 휴고가 생성해줍니다만 사용자 정의 요약을 사용할 수도 있습니다.</p>
@@ -359,11 +392,11 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/taxonomy/">#taxonom …</a></li>
+            <li><a href="http://dev2820.github.io/tags/taxonomy/"># taxonom …</a></li>
           
         </ul>
         
@@ -379,7 +412,7 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 09월 30일
     </div>
     <div class="content">taxonomy, 즉 분류입니다. 컨텐츠를 어떻게 분류하고 그룹화하는지에 대해 다룹니다. https://gohugo.io/content-management/taxonomies/ What is a Taxonomy? 휴고는 컨텐츠를 그룹화하는 taxonomies 라는 도우미를 포함하고 있습 …</div>
@@ -404,11 +437,11 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/shortcodes/">#shortco …</a></li>
+            <li><a href="http://dev2820.github.io/tags/shortcodes/"># shortco …</a></li>
           
         </ul>
         
@@ -424,7 +457,7 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 09월 30일
     </div>
     <div class="content">이 글은 간단한 코드를 컨텐츠 안에 집어넣는 Shortcodes 기능을 소개합니다. 참고로 hugo 문법을 md파일에 썼더니 죄다 hugo에서 해석해버려서 { {와 } }는 {{와 }}로 읽</div>
@@ -449,11 +482,11 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/archetypes/">#archety …</a></li>
+            <li><a href="http://dev2820.github.io/tags/archetypes/"># archety …</a></li>
           
         </ul>
          <small class="etc">+ 5개의 태그</small> 
@@ -469,56 +502,11 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 09월 29일
     </div>
     <div class="content">이번 글에서는 section, type 그리고 archetypes에 대해 각각 다뤄보겠습니다. Content Sections https://gohugo.io/content-management/sections/ 휴고는 여러분의 컨텐츠와 일치하는 section tree를 생성합니다. …</div>
     <div class="read-more"><span>3 mins read</span><a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
-  </div>
-
-</article>
-    <hr class="summary-sep" />
-    
-    <article class="summary card">
-  
-  <div class="cover-image" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 271px),url('/images/ocean.jpg');">
-  
-    <div class="classification">
-      <div class="summary-category">
-        <h4>Category</h4>
-        
-           <a href="http://dev2820.github.io/categories/what_is_hugo/">what_is_hugo</a>
-        
-      </div>
-      <div class="summary-tags">
-        <h4>Tags</h4>
-        <ul class="tag">
-          
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
-          
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
-          
-            <li><a href="http://dev2820.github.io/tags/front-matter/">#front …</a></li>
-          
-        </ul>
-        
-      </div>
-    </div>
-  </div>
-  <div class="cover-content">
-    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/">
-      
-      <img class="icon" src="/images/cover-icon.png" />
-      
-      <h2 class="title">휴고 Front Matter</h2>
-    </a>
-    
-    <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      | 2020년 09월 29일
-    </div>
-    <div class="content">이번 글은 휴고 컨텐츠의 &lsquo;front matter&rsquo; 에 대해 설명하는 글입니다. front matter는 말하자면 컨텐츠의 메타데이터, 컨텐츠의 설정값입니다. 컨텐츠의 타이틀, 생성날짜,</div>
-    <div class="read-more"><span>5 mins read</span><a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
   </div>
 
 </article>
@@ -536,7 +524,7 @@
   </a>
   
   <span class="page">
-    페이지 2 / 4
+    페이지 2 / 5
   </span>
   
   <a class="next" href="/page/3/" rel="next">
@@ -544,7 +532,7 @@
   </a>
   
   
-  <a class="last" href="/page/4/" rel="next">
+  <a class="last" href="/page/5/" rel="next">
     <i class="fa fa-angle-double-right" aria-hidden="true"></i>
   </a>
   

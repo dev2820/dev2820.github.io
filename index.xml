@@ -14,6 +14,15 @@
     
     
     <item>
+      <title>Introduction to Hugo Templating</title>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Sun, 15 Nov 2020 13:26:07 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</guid>
+      <description>Introduction to Hugo Templating 출처) https://gohugo.io/templates/introduction/ 휴고에선 Go의 html/template와 text/template 라이브러리를 기본적으로 템플릿화 하는데 사용할 수 있습니다. 기본 문법 Go Template</description>
+    </item>
+    
+    <item>
       <title>휴고 Comment 추가하기</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/</link>
       <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
@@ -169,6 +178,15 @@
     </item>
     
     <item>
+      <title>Test1</title>
+      <link>http://dev2820.github.io/diaries/test/test1/</link>
+      <pubDate>Sat, 26 Sep 2020 21:35:04 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/diaries/test/test1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>휴고의 컨텐츠 관리</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</link>
       <pubDate>Sat, 26 Sep 2020 20:39:14 +0900</pubDate>
@@ -214,6 +232,15 @@
     </item>
     
     <item>
+      <title>Hugo new theme 3</title>
+      <link>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_3/</link>
+      <pubDate>Sat, 19 Sep 2020 23:12:23 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_3/</guid>
+      <description>index.html 블로그의 홈페이지 입니다. 이 페이지는 content/_index.md 파일의 설정에 따라 {{.Title}}과 {{.Content}} 의 내용이 결정됩니다.</description>
+    </item>
+    
+    <item>
       <title>NAS 용 SPA만들기 (0)</title>
       <link>http://dev2820.github.io/nas_project/home_server/</link>
       <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
@@ -223,12 +250,48 @@
     </item>
     
     <item>
+      <title>Hugo new theme 1</title>
+      <link>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/</link>
+      <pubDate>Fri, 18 Sep 2020 16:10:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/</guid>
+      <description>Hugo에서 새로운 테마 만들기 1 hugo new theme [테마이름] 위 명령을 입력하면 &amp;lsquo;themes/테마이름&amp;rsquo; 에 새로운 폴더가 생깁니다. themes</description>
+    </item>
+    
+    <item>
+      <title>Hugo new theme 2</title>
+      <link>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/</link>
+      <pubDate>Fri, 18 Sep 2020 16:10:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/</guid>
+      <description>글머리 앞서 만들어진 구조를 천천히 살펴보며 페이지 제작 구상을 좀 해봅시다. 우선 보여주는 부분을 꾸며야 하니 layouts을 보겠습니다. layouts 폴더는 _default, partials, 404.html, index.html 로</description>
+    </item>
+    
+    <item>
+      <title>Hello Programmer Theme</title>
+      <link>http://dev2820.github.io/diaries/hello-programmer-theme/</link>
+      <pubDate>Sat, 08 Aug 2020 19:53:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/diaries/hello-programmer-theme/</guid>
+      <description>이 테마를 쓰면서 알게된 점 정리 config.toml 에 적어둔 title을 메뉴에서 선택할 수 있다. 그 타이틀을 메뉴에서 선택하면 메인화면으로 간다. projects 라는 이름의 형식을 arch</description>
+    </item>
+    
+    <item>
       <title>휴고에서 컨텐츠 지정하고 글 생성해보기</title>
       <link>http://dev2820.github.io/diaries/hugo_test/</link>
       <pubDate>Sat, 08 Aug 2020 15:25:11 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/hugo_test/</guid>
       <description>hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다. 내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &amp;lsquo;blog/hugo&amp;rsquo; 여기 서 빌드하면 됩니다. hugo</description>
+    </item>
+    
+    <item>
+      <title>Test2</title>
+      <link>http://dev2820.github.io/diaries/test2/</link>
+      <pubDate>Sat, 25 Jul 2020 12:19:54 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/diaries/test2/</guid>
+      <description></description>
     </item>
     
     <item>

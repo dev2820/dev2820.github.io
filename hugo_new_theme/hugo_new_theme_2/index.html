@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo new theme 2  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 'Hugo new theme 2'을 한 번 살펴보세요.">
+    <meta property="og:title" content="Hugo new theme 2">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2020-09-18">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 'Hugo new theme 2'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="project">
+    
+    <meta property="og:tags" content="DIY">
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/markdown.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script src="/js/default.js"></script>
+</head>
+<body id="body"><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="progress-bar">
+    <span class="progress"></span>
+  </div>
+</div><div id="aside" class="card hidden">
+    <div class="top">
+        <button onclick="event.stopPropagation(); toggleAside(false)">
+            <i class="fa fa-times fa-3x"></i>
+        </button>
+    </div>
+    <div class="container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+    <p>풀스텍 웹개발을 지향합니다</p>
+</div>
+        <hr class="aside-sep">
+        <div class="aside-menu">
+            <ul>
+                <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+                <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+                <li><a class="aside-menu-item" href="http://dev2820.github.io/">전체글 모아보기
+                        <small>(32)</small></a>
+                    <small
+                        class="date">- 2020/11/15</small></li>
+            </ul>
+        </div>
+        <hr class="aside-sep">
+        <nav class="sidebar-nav">
+            
+            
+            <ul>
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item"
+                        href="/diaries/" title="Diaries">Diaries <small>(7)</small></a>
+                    <small class="date">- 2020/09/26</small>
+                </li>
+                <hr class="aside-sep">
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item active"
+                        href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme <small>(3)</small></a>
+                    <small class="date">- 2020/09/19</small>
+                </li>
+                <hr class="aside-sep">
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item"
+                        href="/nas_project/" title="Nas_project">Nas_project <small>(1)</small></a>
+                    <small class="date">- 2020/09/18</small>
+                </li>
+                <hr class="aside-sep">
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item"
+                        href="/what_is_hugo/" title="what_is_hugo">what_is_hugo <small>(21)</small></a>
+                    <small class="date">- 2020/11/15</small>
+                </li>
+                <hr class="aside-sep">
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+        <div id="content">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 450) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg);">
+
+  <div class="title">
+    <h1 id="title">Hugo new theme 2</h1>
+    <section>
+      <p id="date"> 2020년 09월 18일 </p>
+      <p id="wordcount"> 4 mins  </p>
+    </section>
+    <small class="breadcrumb">
+      <div class="breadcrumbnav">
+  
+
+
+
+
+
+  <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> 
+ >
+
+  <a href="http://dev2820.github.io/hugo_new_theme/" >hugo_new_theme</a> 
+ >
+
+  <a href="http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/"  class="active">Hugo new theme 2</a> 
+
+</div>
+
+    </small>
+    
+    
+    <small class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></small>
+    
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <link rel="stylesheet" href="/css/table_of_content.css">
+<script>
+    let toggle = true;
+    function toggleTable() {
+        if (toggle) {
+            document.getElementById('table').classList.add('hidden')
+            document.querySelector('.post-toc .title').classList.add('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
+        }
+        else {
+            document.getElementById('table').classList.remove('hidden')
+            document.querySelector('.post-toc .title').classList.remove('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
+        }
+        toggle = !toggle;
+    }
+</script>
+<div class="post-toc">
+    <div class="title" onclick="toggleTable()">
+        <i class="fa fa-angle-right hidden right-angle icon"></i>
+        <i class="fa fa-angle-down down-angle icon"></i>
+        차례
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#글머리">글머리</a></li>
+    <li><a href="#_default">_default</a>
+      <ul>
+        <li><a href="#listhtml">list.html</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+    <div>
+          <article class="content">
+            <h2 id="글머리">글머리</h2>
+<p>앞서 만들어진 구조를 천천히 살펴보며 페이지 제작 구상을 좀 해봅시다.</p>
+<p>우선 보여주는 부분을 꾸며야 하니 layouts을 보겠습니다.</p>
+<p>layouts 폴더는 _default, partials, 404.html, index.html
+로 구성되어 시작됩니다.</p>
+<h2 id="_default">_default</h2>
+<p>_default 폴더 안에는 baseof.html, list.html, single.html이 주어집니다. 열어보면 list.html, single.html은 비어있고 baseof.html에 가이드 템플릿이 주어진 것을 확인할 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#ff79c6">html</span>&gt;
+    {{- partial &#34;head.html&#34; . -}} --------------(1)
+    &lt;<span style="color:#ff79c6">body</span>&gt;
+        {{- partial &#34;header.html&#34; . -}} --------(2)
+        &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">id</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;content&#34;</span>&gt;
+        {{- block &#34;main&#34; . }}{{- end }} --------(3)
+        &lt;/<span style="color:#ff79c6">div</span>&gt;
+        {{- partial &#34;footer.html&#34; . -}}
+    &lt;/<span style="color:#ff79c6">body</span>&gt;
+&lt;/<span style="color:#ff79c6">html</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>(1)에 들어가는 head.html은 partials 폴더 안에 정의되어있습니다. 물론 비어있지만말입니다. head.html은 말 그대로 html의 head 부분을 정의하는 곳입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#ff79c6">head</span>&gt;
+    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">http-equiv</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;content-type&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;text/html; charset=utf-8&#34;</span>&gt;
+    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;viewport&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+    &lt;<span style="color:#ff79c6">title</span>&gt;dev2820 개발 블로그&lt;/<span style="color:#ff79c6">title</span>&gt;
+    ...
+    &lt;<span style="color:#ff79c6">link</span>&gt;
+    ...
+    &lt;<span style="color:#ff79c6">script</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+    ...
+&lt;/<span style="color:#ff79c6">head</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>대충 위와 같이 필요한 link(cdn), script, title 등 head에 들어갈 내용들을 정의해놓으면 필요하면 (1)과 같이 가져다 붙일 수 있습니다.</p>
+<p>(2)도 마찬가지로 header를 만들고 필요한 내용을 넣으면 됩니다. 위 코드에서 눈치챌 수 있듯이 partials 폴더의 html 파일들은</p>
+<pre><code>{{ partial &quot;[파일이름].html&quot; . }}
+</code></pre><p>형식으로 가져올 수 있습니다.</p>
+<p>(3) 은 조금 다른 형식입니다. &ldquo;main&quot;블록을 가져오라고 되어있는데 이 &ldquo;main&quot;은 어디에도 정의되어있지 않습니다.</p>
+<p>바로 _default 폴더에 들어갈 html 파일들입니다. _default 폴더에 들어간 파일들에 정의된 내용을 바탕으로 해당 파일들의 block을 가져옵니다. 말이 어려우니 직접 보면서 이해하는게 빠를 것 같습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">single.html
+
+{{ define &#34;title&#34; }}
+    This is the single
+    {{ .Title }} &amp;ndash; {{ .Site.Title }}
+{{ end }}
+{{ define &#34;main&#34; }}
+    &lt;<span style="color:#ff79c6">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#ff79c6">h1</span>&gt;
+    {{ .Content }}
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><p>위 코드는 _default/single.html을 가볍게 작성한 것입니다. (hugo 공식 홈페이지에 나와있는 예시입니다.) 우리가 작성한 글 중 하나를 보여주게 되면 우리는 baseof.html 기반에 single.html을 md 파일에 맞춰 보여주게 됩니다. 사진을 보여주기 어려운 환경이라 말로 설명하는데 어려워도 양해 부탁드립니다. ㅜ</p>
+<p>예를 들어 content/projects/hello_hugo.md 라는 파일이 있다고 합시다.
+우리가 만든 hugo 블로그를 통해 <code>hello_hugo.md</code> 파일을 보려면 우리는 <code>hello_hugo.md</code>를 <code>html</code>로 변환해줘야합니다. 이 때 보여줄 화면의 기본 베이스는 <code>_default/baseof.html</code> 파일이 됩니다. 그리고 보여줄 화면이 하나의 md 파일이기 때문에 hugo는 이 페이지를 single페이지라 판단하고 <code>single.html</code>을 <code>baseof.html</code>위에 가져옵니다. 따라서 <code>baseof.html</code>에서
+<code>{{- block &quot;main&quot; .}}{{- end}}</code> 코드는 <code>single.html</code> 파일에 main 이라고 정의된 (<code>{{define &quot;main&quot; }} ~ {{ end }}</code>) 블록을 가져옵니다.
+마찬가지로 baseof.html에 <code>{{-block &quot;title&quot; . }}{{-end}}</code>를 삽입한다면 <code>single.html</code>의 <code>{{define &quot;title&quot; }} ~ {{ end }}</code> 를 가져오겠죠?
+그리고 보려는 페이지가 single이 아니라면 다른 html에서 block을 가져올 것입니다.</p>
+<p>설명하고보니 두서가 없는데 나중에 hugo의 block 시스템에 대해 자세히 기술하겠습니다.</p>
+<h3 id="listhtml">list.html</h3>
+<p>list.html은 글들의 섹션 리스트와 taxonomy 리스트를 보여줄 때 사용됩니다.</p>
+<p>각 콘텐츠 폴더에는 <code>_index.md</code> 파일을 정의할 수 있는데 예를 들어 보겠습니다.</p>
+<pre><code>└ content
+    └ projects
+        └ _index.md
+        └ my_project.md
+        └ hugo_project.md
+</code></pre><p>hugo content의 폴더 구조가 위와 같다고 하겠습니다. 우리가 블로그에서  projects 글들에 대한 글 리스트를 제공할 때 <code>_index.md</code>파일을 추가해주면 list.html에서 이 md파일을 가져와 추가적인 정보를 제공할 수 있습니다.</p>
+<p>_index.md 파일 내용</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">---
+title: test
+date: 2020-09-19
+publishdate: 2020-09-19
+---
+
+test 1 2 3
+</code></pre></td></tr></table>
+</div>
+</div><p><code>content/projects/_index.md</code> 파일을 다음과 같이 저장했다고 합시다.</p>
+<p>list.html</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ define &#34;main&#34; }}
+&lt;<span style="color:#ff79c6">main</span>&gt;
+    &lt;<span style="color:#ff79c6">article</span>&gt;
+        &lt;<span style="color:#ff79c6">header</span>&gt;
+            &lt;<span style="color:#ff79c6">h1</span>&gt;{{.Title}}&lt;/<span style="color:#ff79c6">h1</span>&gt;
+        &lt;/<span style="color:#ff79c6">header</span>&gt;
+        {{.Content}}
+    &lt;/<span style="color:#ff79c6">article</span>&gt;
+    &lt;<span style="color:#ff79c6">ul</span>&gt;
+    {{ range .Pages }}
+        &lt;<span style="color:#ff79c6">li</span>&gt;
+            &lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;{{.Permalink}}&#34;</span>&gt;{{.Date.Format &#34;2006-01-02&#34;}} | {{.Title}}&lt;/<span style="color:#ff79c6">a</span>&gt;
+        &lt;/<span style="color:#ff79c6">li</span>&gt;
+    {{ end }}
+    &lt;/<span style="color:#ff79c6">ul</span>&gt;
+&lt;/<span style="color:#ff79c6">main</span>&gt;
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><p>list.html은 gohugo.io 에 나온 예시대로 작성해 봤습니다. 이렇게 되면 &lsquo;[블로그주소]/projects/&rsquo; 에 접속하게 되면 <code>{{.Title}}</code>은 &lsquo;test'로, <code>{{.Content}}</code>는 &lsquo;test 1 2 3'으로 대체된 것을 확인할 수 있습니다.</p>
+
+          </article>
+    </div>
+  </div>
+</section>
+<aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+    
+      <div class="next"><a href="http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/">Hugo new theme 1<i class="fa fa-arrow-circle-right icon"></i></a></div>
+    
+    
+  </nav>
+    
+    <div class="tags">
+    <ul class="tag">
+        
+            <li><a href="http://dev2820.github.io/tags/diy/"># DIY</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/project/"># project</a></li>
+        
+    </ul>
+</div>
+    <div class="profile-in-article">
+    <div class="profile-image">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <div class="profile-introduce">
+        <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+        <p>풀스텍 웹개발을 지향합니다</p>
+        <div class="">깃허브 등등 추가</div>
+    </div>
+</div>
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <div class="more-content">
+      <link rel="stylesheet" href="/css/related-content.css">
+<div class="related-content">
+	<div class="title">
+		<p>&#34;hugo_new_theme&#34; 와 비슷한 컨텐츠 더보기</p>
+		
+		<a href="http://dev2820.github.io/hugo_new_theme">more</a>
+	</div>
+	
+	
+	<div class="container">
+		<ul>
+			
+			<li>
+				
+<link rel="stylesheet" href="/css/summary-small.css">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/hugo_new_theme\/hugo_new_theme_1\/')">
+    
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
+    
+    <div class="title">
+      <a href="http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/">
+        <h3 class="name">Hugo new theme 1</h3> 
+        <p class="summary">Hugo에서 새로운 테마 만들기 1 hugo new theme [테마이 …</p>
+        <div class="date">
+          <small>2020-09-18</small>
+        </div>
+      </a>
+    </div>
+  </div>
+			</li>
+			
+		</ul>
+	</div>
+	
+</div>
+    </div>
+  </div>
+</aside>
+
+        </div>
+    <footer id="footer">
+
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fa fa-angle-double-up"></i>
+      <span>위로</span>
+    </button>
+    
+    
+    <span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+    <span>ALL RIGHTS RESERVED.</span>
+  </footer>
+</body>
+</html>
+  </body>
+</html>

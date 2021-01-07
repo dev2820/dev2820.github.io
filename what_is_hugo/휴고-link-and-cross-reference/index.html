@@ -30,25 +30,10 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/homePage.css">
-    <link rel="stylesheet" href="/css/listPage.css">
-    <link rel="stylesheet" href="/css/notFound.css">
-    <link rel="stylesheet" href="/css/tags.css">
-    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/markdown.css">
-    <link rel="stylesheet" href="/css/clock.css">
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-XXXXXXXX-X');
-    </script>
-    
     
     <script src="/js/default.js"></script>
 </head>
@@ -57,7 +42,7 @@
     <div class="logo">
       <a href="/">
         
-        <img src="/images/logo.png" height="32px" />
+        <img src="/images/site_logo.png" height="32px" />
         
       </a>
     </div>
@@ -101,9 +86,9 @@
                 <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
                 <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
                 <li><a class="aside-menu-item" href="http://dev2820.github.io/">전체글 모아보기
-                        <small>(25)</small></a>
+                        <small>(32)</small></a>
                     <small
-                        class="date">- 2020/10/18</small></li>
+                        class="date">- 2020/11/15</small></li>
             </ul>
         </div>
         <hr class="aside-sep">
@@ -116,7 +101,7 @@
                     
                     
                     <a class="sidebar-nav-item"
-                        href="/diaries/" title="Diaries">Diaries <small>(4)</small></a>
+                        href="/diaries/" title="Diaries">Diaries <small>(7)</small></a>
                     <small class="date">- 2020/09/26</small>
                 </li>
                 <hr class="aside-sep">
@@ -125,8 +110,8 @@
                     
                     
                     <a class="sidebar-nav-item"
-                        href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme <small>(0)</small></a>
-                    
+                        href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme <small>(3)</small></a>
+                    <small class="date">- 2020/09/19</small>
                 </li>
                 <hr class="aside-sep">
                 
@@ -143,8 +128,8 @@
                     
                     
                     <a class="sidebar-nav-item active"
-                        href="/what_is_hugo/" title="what_is_hugo">what_is_hugo <small>(20)</small></a>
-                    <small class="date">- 2020/10/18</small>
+                        href="/what_is_hugo/" title="what_is_hugo">what_is_hugo <small>(21)</small></a>
+                    <small class="date">- 2020/11/15</small>
                 </li>
                 <hr class="aside-sep">
                 
@@ -205,29 +190,30 @@
 </header>
 <section id="main">
   <div class="center">
-    <script>
+    <link rel="stylesheet" href="/css/table_of_content.css">
+<script>
     let toggle = true;
     function toggleTable() {
         if (toggle) {
             document.getElementById('table').classList.add('hidden')
             document.querySelector('.post-toc .title').classList.add('toggle-off')
-            document.querySelector('.post-toc .fa-angle-down').classList.remove('hidden')
-            document.querySelector('.post-toc .fa-angle-up').classList.add('hidden')
+            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
         }
         else {
             document.getElementById('table').classList.remove('hidden')
             document.querySelector('.post-toc .title').classList.remove('toggle-off')
-            document.querySelector('.post-toc .fa-angle-down').classList.add('hidden')
-            document.querySelector('.post-toc .fa-angle-up').classList.remove('hidden')
+            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
         }
         toggle = !toggle;
     }
 </script>
 <div class="post-toc">
     <div class="title" onclick="toggleTable()">
+        <i class="fa fa-angle-right hidden right-angle icon"></i>
+        <i class="fa fa-angle-down down-angle icon"></i>
         차례
-        <i class="fa fa-angle-down hidden icon"></i>
-        <i class="fa fa-angle-up icon"></i>
     </div>
     <div id="table">
         <nav id="TableOfContents">
@@ -460,7 +446,8 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     <div class="more-content">
-      <div class="related-content">
+      <link rel="stylesheet" href="/css/related-content.css">
+<div class="related-content">
 	<div class="title">
 		<p>&#34;what_is_hugo&#34; 와 비슷한 컨텐츠 더보기</p>
 		
@@ -473,11 +460,11 @@
 			
 			<li>
 				
+<link rel="stylesheet" href="/css/summary-small.css">
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-summary\/')">
     
-    <div class="banner" style="background-image:url(/images/ocean.jpg)">
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
     
-    </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/">
         <h3 class="name">휴고 Summary</h3> 
@@ -492,11 +479,11 @@
 			
 			<li>
 				
+<link rel="stylesheet" href="/css/summary-small.css">
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-taxonomies\/')">
     
-    <div class="banner" style="background-image:url(/images/ocean.jpg)">
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
     
-    </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/">
         <h3 class="name">휴고 Taxonomies</h3> 
@@ -511,11 +498,11 @@
 			
 			<li>
 				
+<link rel="stylesheet" href="/css/summary-small.css">
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-shortcodes\/')">
     
-    <div class="banner" style="background-image:url(/images/ocean.jpg)">
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
     
-    </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/">
         <h3 class="name">휴고 Shortcodes</h3> 
@@ -530,11 +517,11 @@
 			
 			<li>
 				
+<link rel="stylesheet" href="/css/summary-small.css">
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes\/')">
     
-    <div class="banner" style="background-image:url(/images/ocean.jpg)">
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
     
-    </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/">
         <h3 class="name">휴고 Content …</h3> 
@@ -549,11 +536,11 @@
 			
 			<li>
 				
+<link rel="stylesheet" href="/css/summary-small.css">
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-front-matter\/')">
     
-    <div class="banner" style="background-image:url(/images/ocean.jpg)">
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
     
-    </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/">
         <h3 class="name">휴고 Front Matter</h3> 
@@ -568,11 +555,11 @@
 			
 			<li>
 				
+<link rel="stylesheet" href="/css/summary-small.css">
 <div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0\/')">
     
-    <div class="banner" style="background-image:url(/images/ocean.jpg)">
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
     
-    </div>
     <div class="title">
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/">
         <h3 class="name">휴고 연관성 있는 컨텐츠</h3> 

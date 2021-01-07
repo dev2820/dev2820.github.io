@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo new theme 1  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 'Hugo new theme 1'을 한 번 살펴보세요.">
+    <meta property="og:title" content="Hugo new theme 1">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2020-09-18">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 'Hugo new theme 1'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="project">
+    
+    <meta property="og:tags" content="DIY">
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/markdown.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script src="/js/default.js"></script>
+</head>
+<body id="body"><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="progress-bar">
+    <span class="progress"></span>
+  </div>
+</div><div id="aside" class="card hidden">
+    <div class="top">
+        <button onclick="event.stopPropagation(); toggleAside(false)">
+            <i class="fa fa-times fa-3x"></i>
+        </button>
+    </div>
+    <div class="container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+    <p>풀스텍 웹개발을 지향합니다</p>
+</div>
+        <hr class="aside-sep">
+        <div class="aside-menu">
+            <ul>
+                <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+                <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+                <li><a class="aside-menu-item" href="http://dev2820.github.io/">전체글 모아보기
+                        <small>(32)</small></a>
+                    <small
+                        class="date">- 2020/11/15</small></li>
+            </ul>
+        </div>
+        <hr class="aside-sep">
+        <nav class="sidebar-nav">
+            
+            
+            <ul>
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item"
+                        href="/diaries/" title="Diaries">Diaries <small>(7)</small></a>
+                    <small class="date">- 2020/09/26</small>
+                </li>
+                <hr class="aside-sep">
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item active"
+                        href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme <small>(3)</small></a>
+                    <small class="date">- 2020/09/19</small>
+                </li>
+                <hr class="aside-sep">
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item"
+                        href="/nas_project/" title="Nas_project">Nas_project <small>(1)</small></a>
+                    <small class="date">- 2020/09/18</small>
+                </li>
+                <hr class="aside-sep">
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item"
+                        href="/what_is_hugo/" title="what_is_hugo">what_is_hugo <small>(21)</small></a>
+                    <small class="date">- 2020/11/15</small>
+                </li>
+                <hr class="aside-sep">
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+        <div id="content">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 450) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg);">
+
+  <div class="title">
+    <h1 id="title">Hugo new theme 1</h1>
+    <section>
+      <p id="date"> 2020년 09월 18일 </p>
+      <p id="wordcount"> 1 mins  </p>
+    </section>
+    <small class="breadcrumb">
+      <div class="breadcrumbnav">
+  
+
+
+
+
+
+  <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> 
+ >
+
+  <a href="http://dev2820.github.io/hugo_new_theme/" >hugo_new_theme</a> 
+ >
+
+  <a href="http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/"  class="active">Hugo new theme 1</a> 
+
+</div>
+
+    </small>
+    
+    
+    <small class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></small>
+    
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <link rel="stylesheet" href="/css/table_of_content.css">
+<script>
+    let toggle = true;
+    function toggleTable() {
+        if (toggle) {
+            document.getElementById('table').classList.add('hidden')
+            document.querySelector('.post-toc .title').classList.add('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
+        }
+        else {
+            document.getElementById('table').classList.remove('hidden')
+            document.querySelector('.post-toc .title').classList.remove('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
+        }
+        toggle = !toggle;
+    }
+</script>
+<div class="post-toc">
+    <div class="title" onclick="toggleTable()">
+        <i class="fa fa-angle-right hidden right-angle icon"></i>
+        <i class="fa fa-angle-down down-angle icon"></i>
+        차례
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo에서-새로운-테마-만들기">Hugo에서 새로운 테마 만들기</a></li>
+    <li><a href="#indexhtml">index.html</a></li>
+    <li><a href="#페이지-변수들">페이지 변수들</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+    <div>
+          <article class="content">
+            <h2 id="hugo에서-새로운-테마-만들기">Hugo에서 새로운 테마 만들기</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new theme <span style="color:#ff79c6">[</span>테마이름<span style="color:#ff79c6">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>위 명령을 입력하면 &lsquo;themes/테마이름&rsquo; 에 새로운 폴더가 생깁니다.</p>
+<pre><code>themes
+└ theme_name
+    └ archetypes
+        └ default.md
+    └ layouts
+        └ _default
+            └ baseof.html
+            └ list.html
+            └ single.html
+        └ partials
+            └ footer.html
+            └ head.html
+            └ header.html
+        └ 404.html
+        └ index.html
+    └ static
+        └ css
+        └ js
+    └ LICENSE
+    └ theme.toml
+</code></pre><p>생성되는 기본 테마 구조는 위와 같은데 여기서 자유롭게 변형하면 됩니다.</p>
+<p>archetypes - 글의 기본 템플릿을 저장하는 폴더입니다.</p>
+<p>layouts - 블로그의 전체적인 view를 구성하는 곳입니다.</p>
+<p>static - 이것 저것 정적인 파일을 저장하는 곳입니다.</p>
+<h2 id="indexhtml">index.html</h2>
+<p>홈페이지. 블로그를 들어가면 처음 보게될 페이지 입니다.</p>
+<h2 id="페이지-변수들">페이지 변수들</h2>
+<p>페이지의 상태를 알기위한 여러가지 변수를 가져다 쓸 수 있는데 자세한 내용은 hugo 공식 홈페이지에 나와있습니다.</p>
+<p><a href="ttps://gohugo.io/variables/page/">ttps://gohugo.io/variables/page/</a></p>
+
+          </article>
+    </div>
+  </div>
+</section>
+<aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <div class="previous"> <a href="http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/"><i class="fa fa-arrow-circle-left icon"></i>Hugo new theme 2</a></div>
+    
+    
+      <div class="next"><a href="http://dev2820.github.io/hugo_new_theme/hugo_new_theme_3/">Hugo new theme 3<i class="fa fa-arrow-circle-right icon"></i></a></div>
+    
+    
+  </nav>
+    
+    <div class="tags">
+    <ul class="tag">
+        
+            <li><a href="http://dev2820.github.io/tags/diy/"># DIY</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/project/"># project</a></li>
+        
+    </ul>
+</div>
+    <div class="profile-in-article">
+    <div class="profile-image">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <div class="profile-introduce">
+        <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+        <p>풀스텍 웹개발을 지향합니다</p>
+        <div class="">깃허브 등등 추가</div>
+    </div>
+</div>
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <div class="more-content">
+      <link rel="stylesheet" href="/css/related-content.css">
+<div class="related-content">
+	<div class="title">
+		<p>&#34;hugo_new_theme&#34; 와 비슷한 컨텐츠 더보기</p>
+		
+		<a href="http://dev2820.github.io/hugo_new_theme">more</a>
+	</div>
+	
+	
+	<div class="container">
+		<ul>
+			
+			<li>
+				
+<link rel="stylesheet" href="/css/summary-small.css">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/hugo_new_theme\/hugo_new_theme_2\/')">
+    
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
+    
+    <div class="title">
+      <a href="http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/">
+        <h3 class="name">Hugo new theme 2</h3> 
+        <p class="summary">글머리 앞서 만들어진 구조를 천천히 살펴보며 페이지 제작 구상을 좀 해봅 …</p>
+        <div class="date">
+          <small>2020-09-18</small>
+        </div>
+      </a>
+    </div>
+  </div>
+			</li>
+			
+		</ul>
+	</div>
+	
+</div>
+    </div>
+  </div>
+</aside>
+
+        </div>
+    <footer id="footer">
+
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fa fa-angle-double-up"></i>
+      <span>위로</span>
+    </button>
+    
+    
+    <span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+    <span>ALL RIGHTS RESERVED.</span>
+  </footer>
+</body>
+</html>
+  </body>
+</html>

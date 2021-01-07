@@ -13,5 +13,32 @@
 	<atom:link href="http://dev2820.github.io/hugo_new_theme/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Hugo new theme 3</title>
+      <link>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_3/</link>
+      <pubDate>Sat, 19 Sep 2020 23:12:23 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_3/</guid>
+      <description>index.html 블로그의 홈페이지 입니다. 이 페이지는 content/_index.md 파일의 설정에 따라 {{.Title}}과 {{.Content}} 의 내용이 결정됩니다.</description>
+    </item>
+    
+    <item>
+      <title>Hugo new theme 1</title>
+      <link>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/</link>
+      <pubDate>Fri, 18 Sep 2020 16:10:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/</guid>
+      <description>Hugo에서 새로운 테마 만들기 1 hugo new theme [테마이름] 위 명령을 입력하면 &amp;lsquo;themes/테마이름&amp;rsquo; 에 새로운 폴더가 생깁니다. themes</description>
+    </item>
+    
+    <item>
+      <title>Hugo new theme 2</title>
+      <link>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/</link>
+      <pubDate>Fri, 18 Sep 2020 16:10:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/</guid>
+      <description>글머리 앞서 만들어진 구조를 천천히 살펴보며 페이지 제작 구상을 좀 해봅시다. 우선 보여주는 부분을 꾸며야 하니 layouts을 보겠습니다. layouts 폴더는 _default, partials, 404.html, index.html 로</description>
+    </item>
+    
   </channel>
 </rss>

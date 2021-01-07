@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Hugo Templating  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 'Introduction to Hugo Templating'을 한 번 살펴보세요.">
+    <meta property="og:title" content="Introduction to Hugo Templating">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2020-11-15">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 'Introduction to Hugo Templating'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="hugo">
+    
+    <meta property="og:tags" content="휴고">
+    
+    <meta property="og:tags" content="템플릿">
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/markdown.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script src="/js/default.js"></script>
+</head>
+<body id="body"><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <div class="container">
+        <div class="input-container">
+          <input id="search" type="text" placeholder="Search...">
+        </div>
+        <div class="icon" onclick="toggleSearch(true)">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="progress-bar">
+    <span class="progress"></span>
+  </div>
+</div><div id="aside" class="card hidden">
+    <div class="top">
+        <button onclick="event.stopPropagation(); toggleAside(false)">
+            <i class="fa fa-times fa-3x"></i>
+        </button>
+    </div>
+    <div class="container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+    <p>풀스텍 웹개발을 지향합니다</p>
+</div>
+        <hr class="aside-sep">
+        <div class="aside-menu">
+            <ul>
+                <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
+                <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
+                <li><a class="aside-menu-item" href="http://dev2820.github.io/">전체글 모아보기
+                        <small>(32)</small></a>
+                    <small
+                        class="date">- 2020/11/15</small></li>
+            </ul>
+        </div>
+        <hr class="aside-sep">
+        <nav class="sidebar-nav">
+            
+            
+            <ul>
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item"
+                        href="/diaries/" title="Diaries">Diaries <small>(7)</small></a>
+                    <small class="date">- 2020/09/26</small>
+                </li>
+                <hr class="aside-sep">
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item"
+                        href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme <small>(3)</small></a>
+                    <small class="date">- 2020/09/19</small>
+                </li>
+                <hr class="aside-sep">
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item"
+                        href="/nas_project/" title="Nas_project">Nas_project <small>(1)</small></a>
+                    <small class="date">- 2020/09/18</small>
+                </li>
+                <hr class="aside-sep">
+                
+                <li>
+                    
+                    
+                    <a class="sidebar-nav-item active"
+                        href="/what_is_hugo/" title="what_is_hugo">what_is_hugo <small>(21)</small></a>
+                    <small class="date">- 2020/11/15</small>
+                </li>
+                <hr class="aside-sep">
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+        <div id="content">
+<script>
+  document.getElementById('topbar').classList.remove('card')
+  window.addEventListener('scroll', (event) => {
+    let e = document.getElementById('topbar');
+    if (this.scrollY > 450) {
+      if (!e.classList.contains('card')) {
+        e.classList.add('card');
+      }
+    }
+    else {
+      if (e.classList.contains('card')) {
+        e.classList.remove('card');
+      }
+    }
+  });
+</script>
+
+<header id="banner" style="background-image:url(/images/ocean.jpg);">
+
+  <div class="title">
+    <h1 id="title">Introduction to Hugo Templating</h1>
+    <section>
+      <p id="date"> 2020년 11월 15일 </p>
+      <p id="wordcount"> 7 mins  </p>
+    </section>
+    <small class="breadcrumb">
+      <div class="breadcrumbnav">
+  
+
+
+
+
+
+  <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> 
+ >
+
+  <a href="http://dev2820.github.io/what_is_hugo/" >what_is_hugo</a> 
+ >
+
+  <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/"  class="active">Introduction to Hugo Templating</a> 
+
+</div>
+
+    </small>
+    
+    
+    <small class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></small>
+    
+  </div>
+</header>
+<section id="main">
+  <div class="center">
+    <link rel="stylesheet" href="/css/table_of_content.css">
+<script>
+    let toggle = true;
+    function toggleTable() {
+        if (toggle) {
+            document.getElementById('table').classList.add('hidden')
+            document.querySelector('.post-toc .title').classList.add('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
+        }
+        else {
+            document.getElementById('table').classList.remove('hidden')
+            document.querySelector('.post-toc .title').classList.remove('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
+        }
+        toggle = !toggle;
+    }
+</script>
+<div class="post-toc">
+    <div class="title" onclick="toggleTable()">
+        <i class="fa fa-angle-right hidden right-angle icon"></i>
+        <i class="fa fa-angle-down down-angle icon"></i>
+        차례
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-to-hugo-templating">Introduction to Hugo Templating</a></li>
+    <li><a href="#기본-문법">기본 문법</a>
+      <ul>
+        <li><a href="#사전-정의된-변수-불러오기">사전 정의된 변수 불러오기</a></li>
+        <li><a href="#함수와-필드는-점을-통해-접근할-수-있다">함수와 필드는 점을 통해 접근할 수 있다.</a></li>
+        <li><a href="#괄호를-사용해-아이템을-그룹지어-사용할-수-있다">괄호를 사용해 아이템을 그룹지어 사용할 수 있다.</a></li>
+      </ul>
+    </li>
+    <li><a href="#변수">변수</a></li>
+    <li><a href="#함수">함수</a>
+      <ul>
+        <li><a href="#example-1-adding-numbers">Example 1: Adding Numbers</a></li>
+        <li><a href="#example-2--comparing-numbers">Example 2 : Comparing Numbers</a></li>
+      </ul>
+    </li>
+    <li><a href="#템플릿-불러오기">템플릿 불러오기</a>
+      <ul>
+        <li><a href="#partial">Partial</a></li>
+        <li><a href="#template">Template</a></li>
+      </ul>
+    </li>
+    <li><a href="#로직">로직</a>
+      <ul>
+        <li><a href="#iteration">Iteration</a></li>
+        <li><a href="#조건">조건</a></li>
+      </ul>
+    </li>
+    <li><a href="#파이프라인">파이프라인</a>
+      <ul>
+        <li><a href="#example-1-shuffle">Example 1: <code>shuffle</code></a></li>
+        <li><a href="#example-2-index">Example 2: <code>index</code></a></li>
+        <li><a href="#example-3-or-with-isset">Example 3: <code>or</code> with <code>isset</code></a></li>
+        <li><a href="#example-4-internet-explorer-conditional-comments">Example 4: Internet Explorer Conditional Comments</a></li>
+      </ul>
+    </li>
+    <li><a href="#context-aka-the-dot">Context (aka &ldquo;the dot&rdquo;)</a>
+      <ul>
+        <li><a href="#1-define-a-variable-independent-of-context">1. Define a Variable Independent of Context</a></li>
+        <li><a href="#2-use--to-access-the-global-context">2. Use <code>$.</code> to Access the Global Context</a></li>
+      </ul>
+    </li>
+    <li><a href="#whitespace공백">Whitespace(공백)</a></li>
+    <li><a href="#주석">주석</a>
+      <ul>
+        <li><a href="#go-templates-주석">Go Templates 주석</a></li>
+        <li><a href="#html-주석">HTML 주석</a></li>
+        <li><a href="#go-template에-포함된-html-주석">Go Template에 포함된 HTML 주석</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+    <div>
+          <article class="content">
+            <h2 id="introduction-to-hugo-templating">Introduction to Hugo Templating</h2>
+<p>출처)
+<a href="https://gohugo.io/templates/introduction/">https://gohugo.io/templates/introduction/</a></p>
+<p>휴고에선 Go의 <code>html/template</code>와 <code>text/template</code> 라이브러리를 기본적으로 템플릿화 하는데 사용할 수 있습니다.</p>
+<h2 id="기본-문법">기본 문법</h2>
+<p>Go Template은 변수와 함수가 더해진 HTML 파일입니다. Go Template의 변수와 함수들은 <code>{{ }}</code>를 통해 이용가능합니다.</p>
+<h3 id="사전-정의된-변수-불러오기">사전 정의된 변수 불러오기</h3>
+<p>사전정의된 변수는 현재 스코프에 이미 존재하는 변수 (<code>.Title</code> 변수를 가져와 사용하는 것 처럼) 또는 커스텀변수(<code>$address</code>처럼) 가 될 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ .Title }}
+{{ $address }}
+</code></pre></td></tr></table>
+</div>
+</div><p>함수에 사용되는 파라미터는 분산되어 주어집니다. 다음처럼요</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ FUNCTION ARG1 ARG2 ..}}
+</code></pre></td></tr></table>
+</div>
+</div><p>다음은 <code>add</code> 함수에 1과 2를 집어넣는
+예제입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ add <span style="color:#bd93f9">1</span> <span style="color:#bd93f9">2</span>}}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="함수와-필드는-점을-통해-접근할-수-있다">함수와 필드는 점을 통해 접근할 수 있다.</h3>
+<p>front matter로 정의되어있는 <code>bar</code> 는 다음과 같이 불러올 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ .Params.bar }}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="괄호를-사용해-아이템을-그룹지어-사용할-수-있다">괄호를 사용해 아이템을 그룹지어 사용할 수 있다.</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">if</span> <span style="color:#50fa7b">or</span> (isset .Params <span style="color:#f1fa8c">&#34;alt&#34;</span>) (isset. Params <span style="color:#f1fa8c">&#34;caption&#34;</span>) }} Caption {{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="변수">변수</h2>
+<p>각각의 Go Template은 데이터 객체를 얻는다. 휴고에서, 각 템플릿은 <code>Page</code>로 전달된다. 다음 예제에서, <code>.Title</code>은 <code>Page</code> 변수를 통해 접근할 수 있는 요소중 하나다.</p>
+<p><code>Page</code> 변수가 템플릿의 default 스코프로 주어지기 때문에, 현재 스코프(<code>.</code>)에 있는 <code>Title</code> 요소는 점을 찍어 간단히 접근할 수 있다.(<code>.Title</code>)</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">&lt;title&gt;{{ .Title }}&lt;<span style="color:#ff79c6">/</span>title&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p><code>$</code>를 통해 커스텀 변수에 값을 저장할 수도 있다.</p>
+<blockquote>
+<p>커스텀 변수는 반드시 <code>$</code>를 앞에 붙여줘야 합니다.</p>
+</blockquote>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ $address <span style="color:#ff79c6">:=</span> <span style="color:#f1fa8c">&#34;123 Main St.&#34;</span> }}
+{{ $address }}
+</code></pre></td></tr></table>
+</div>
+</div><p>휴고 v0.48 부터는 변수에 값을 저장할 때 <code>=</code>를 사용할 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ $<span style="color:#8be9fd;font-style:italic">var</span> <span style="color:#ff79c6">:=</span> <span style="color:#f1fa8c">&#34;Hugo Page&#34;</span> }}
+{{ <span style="color:#ff79c6">if</span> .IsHome }}
+    {{ $<span style="color:#8be9fd;font-style:italic">var</span> = <span style="color:#f1fa8c">&#34;Hugo Home&#34;</span> }}
+{{ end }}
+Var is {{ $<span style="color:#8be9fd;font-style:italic">var</span> }}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="함수">함수</h2>
+<p>Go Template은 기본 함수들을 제공할 뿐만 아니라 새로운 함수를 추가할 수 있는 메커니즘을 제공합니다.</p>
+<p>Hugo template 함수들은 웹사이트를 생성하는데 필요한 추가적인 기능명세를 제공합니다. 함수들은 함수 이름 다음에 필요한 파라미터를 space로 구분하여 제공하는 것으로 사용가능합니다. 템플릿 함수들은 Hugo에 의해 리컴파일링 되지 않고는 추가될 수 없습니다.</p>
+<h3 id="example-1-adding-numbers">Example 1: Adding Numbers</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ add <span style="color:#bd93f9">1</span> <span style="color:#bd93f9">2</span> }}
+&lt;!<span style="color:#ff79c6">--</span> prints <span style="color:#bd93f9">3</span> <span style="color:#ff79c6">--</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="example-2--comparing-numbers">Example 2 : Comparing Numbers</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ lt <span style="color:#bd93f9">1</span> <span style="color:#bd93f9">2</span> }}
+&lt;!<span style="color:#ff79c6">--</span> prints <span style="color:#ff79c6">true</span> <span style="color:#ff79c6">--</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>두 예제는 Go Template의 math 함수를 이용하고 있음을 주의해라</p>
+<h2 id="템플릿-불러오기">템플릿 불러오기</h2>
+<p>템플릿을 불러올 때 여러분은 템플릿을 불러오는데 필요한 데이터를 넘겨줘야합니다.</p>
+<blockquote>
+<p>현재 페이지를 넘겨주기 위해선 <code>.</code>을 포함시켜야 하는것을 기억하십시오.</p>
+</blockquote>
+<p>템플릿의 위치는 항상 휴고의 <code>layouts/</code> 디렉토리 위치에서 시작한다.</p>
+<h3 id="partial">Partial</h3>
+<p><code>partial</code> 함수는 partial 템플릿을 불러올 때 사용한다. 다음과 같이 사용한다. <code>{{ partial &quot;&lt;PATH&gt;/&lt;PARTIAL&gt;.&lt;EXTENSION&gt;&quot; . }}</code></p>
+<p><code>layouts/partials/header.html</code> 템플릿을 불러오는 예제이다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ partial <span style="color:#f1fa8c">&#34;header.html&#34;</span> . }}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="template">Template</h3>
+<p><code>template</code>함수는 예전 버전에선 partial 템플릿을 불러오는데 사용됐지만, 지금은 internal template을 불러오는데만 사용됩니다. 문법은 다음과 같습니다. <code>{{ template &quot;_internal/&lt;TEMPLATE&gt;.&lt;EXTENSION&gt;&quot; . }}</code></p>
+<blockquote>
+<p>사용가능한 internal 템플릿은 다음 주소를 참고하십시오. <a href="https://github.com/gohugoio/hugo/tree/master/tpl/tplimpl/embedded/templates">https://github.com/gohugoio/hugo/tree/master/tpl/tplimpl/embedded/templates</a></p>
+</blockquote>
+<p>internal 템플릿인 <code>opengraph.html</code> 템플릿을 불러오는 예제입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ template <span style="color:#f1fa8c">&#34;_internal/opengraph.html&#34;</span> . }}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="로직">로직</h2>
+<p>Go Template은 아주 기본적인 이터레이터와 조건로직을 제공한다.</p>
+<h3 id="iteration">Iteration</h3>
+<p>Go Template의 <code>range</code>를 이용해 map,array 또는 slice를 순회할 수 있습니다. 다음 예제들은 <code>range</code>의 다양한 사용법들입니다.</p>
+<h4 id="example-1-using-context-">Example 1: Using Context (.)</h4>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">range</span> $array }}
+    {{ . }}
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="example-2-declaring-a-variable-name-for-an-array-elements-value">Example 2: Declaring a variable name for an array element&rsquo;s value</h4>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">range</span> $elem_val <span style="color:#ff79c6">:=</span> $array }}
+    {{ $elem_val }}
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="example-3-declaring-variable-names-for-an-array-elements-index-and-value">Example 3: Declaring variable names for an array element&rsquo;s index and value</h4>
+<p>array나 slice에선 첫번째 선언된 변수에 인덱스가 매치됩니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">range</span> $elem_index, $elem_val <span style="color:#ff79c6">:=</span> $array }}
+    {{ $elem_index }} <span style="color:#ff79c6">--</span> {{ $elem_val }}
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="example-4-declaring-variable-names-for-a-map-elements-key-and-value">Example 4: Declaring variable names for a map element&rsquo;s key and value</h4>
+<p>map에선 첫번째 선언된 변수에 key값이 매치됩니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">range</span> $elem_key, $elem_val <span style="color:#ff79c6">:=</span> $<span style="color:#8be9fd;font-style:italic">map</span> }}
+    {{ $elem_key }} <span style="color:#ff79c6">--</span> {{ $elem_val }}
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="example-5-conditional-on-empty-map-array-or-slice">Example 5: Conditional on empty map, array, or slice.</h4>
+<p>map,array 또는 slice가 비어있을 때를 위한 로직을 추가할 수도 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">range</span> $array }}
+    {{.}}
+{{ <span style="color:#ff79c6">else</span> }}
+    &lt;!<span style="color:#ff79c6">--</span> 만약 $array가 비어있다면 여기있는 로직이 실행됩니다. <span style="color:#ff79c6">--</span>&gt;
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="조건">조건</h3>
+<p><code>if</code>,<code>else</code>,<code>with</code>,<code>or</code> 그리고 <code>and</code>는 Go Template에서 조건을 핸들링할 수 있는 프레임워크를 제공합니다. <code>range</code>처럼 각 로직은 <code>{{ end }}</code>로 닫혀야합니다.</p>
+<p>Go Template은 다음과 같은 값들을 <strong>false</strong>로 간주합니다.</p>
+<ul>
+<li><code>false</code>(boolean)</li>
+<li>0 (integer)</li>
+<li>비어있는 모든 array,slice,map 또는 string</li>
+</ul>
+<h4 id="example-1-with">Example 1: <code>with</code></h4>
+<p>&lsquo;~~가 있으면(존재하면) ~~해라&rsquo; 식의 조건은 <code>with</code>를 사용합니다.</p>
+<blockquote>
+<p><code>range</code>처럼 <code>with</code>도 안의 내용을 <code>.</code>.`을 통해 접근하게 됩니다.</p>
+</blockquote>
+<p><code>with</code>는 만약 조건에 부합하거나 해당 변수가 없으면 그 블록을 스킵합니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ with .Params.title }}
+    &lt;h4&gt;{{ . }}&lt;<span style="color:#ff79c6">/</span>h4&gt;
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="example-2-withelse">Example 2: <code>with</code>..<code>else</code></h4>
+<p>다음 예제는 front-matter로 &ldquo;description&quot;이 있으면 해당 값을 표출하고 없으면 default로<code>.Summary</code> 를 표출합니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ with .Param <span style="color:#f1fa8c">&#34;description&#34;</span> }}
+    {{ . }}
+{{ <span style="color:#ff79c6">else</span> }}
+    {{ .Summary }}
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="example-3-if">Example 3: <code>if</code></h4>
+<p>앞서 나온 1번 예제를 <code>if</code>를 사용해 다시 써보면 다음과 같습니다. <code>isset</code>은 해당 변수가 존재하는지 확인해 true/false로 반환하는 함수입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">if</span> isset .Params <span style="color:#f1fa8c">&#34;title&#34;</span> }}
+    &lt;h4&gt;{{ index .Params <span style="color:#f1fa8c">&#34;title&#34;</span> }}&lt;<span style="color:#ff79c6">/</span>h4&gt;
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="example-4-ifelse">Example 4: <code>if</code>..<code>else</code></h4>
+<p>2번 예제를 <code>if</code>..<code>else</code>로 다시쓰면 다음과 같습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">if</span> (isset .Params <span style="color:#f1fa8c">&#34;description&#34;</span>) }}
+    {{ index .Params <span style="color:#f1fa8c">&#34;description&#34;</span> }}
+{{ <span style="color:#ff79c6">else</span> }}
+    {{ .Summary }}
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="example-5-ifelse-ifelse">Example 5: <code>if</code>..<code>else if</code>..<code>else</code></h4>
+<p><code>with</code>과 다르게 <code>if</code>는 <code>else if</code>를 통해 조건을 계속 추가할 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">if</span> (isset .Params <span style="color:#f1fa8c">&#34;description&#34;</span>) }}
+    {{ index .Params <span style="color:#f1fa8c">&#34;description&#34;</span> }}
+{{ <span style="color:#ff79c6">else</span> <span style="color:#ff79c6">if</span> (isset .Params <span style="color:#f1fa8c">&#34;summary&#34;</span>) }}
+    {{ index .Params <span style="color:#f1fa8c">&#34;summary&#34;</span> }}
+{{ <span style="color:#ff79c6">else</span> }}
+    {{ .Summary }}
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="example-6-and--or">Example 6: <code>and</code> &amp; <code>or</code></h4>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">if</span> (<span style="color:#50fa7b">and</span> (<span style="color:#50fa7b">or</span> (isset .Params <span style="color:#f1fa8c">&#34;title&#34;</span>) (isset .Params <span style="color:#f1fa8c">&#34;caption&#34;</span>)) (isset .Params <span style="color:#f1fa8c">&#34;attr&#34;</span>)) }}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="파이프라인">파이프라인</h2>
+<p>Go Template의 가장 강력한 구성요소중 하나는 명령을 쌓을 수 있다는 것입니다. pipe를 사용해 그렇게할 수 있다. pipe는 Unix pipe에서 빌려온 개념으로, 간단하다. 각 파이프라인의 결과는 다음 파이프라인의 input이 됩니다.</p>
+<p>아주 간단한 Go Template의 문법 덕분에 파이프는 함수 호출도 함께 연결할 수 있습니다. 단점은 하나뿐입니다. 파이프라인은 한가지 값만을 반환할 수 있고 그 값은 다음 파이프라인의 마지막 파라미터가 된다는 것입니다.</p>
+<h3 id="example-1-shuffle">Example 1: <code>shuffle</code></h3>
+<p>다음 두 예제는 완전히 동일하게 작동합니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#50fa7b">shuffle</span> (seq <span style="color:#bd93f9">1</span> <span style="color:#bd93f9">5</span>) }}
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ (seq <span style="color:#bd93f9">1</span> <span style="color:#bd93f9">5</span>) | shuffle }}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="example-2-index">Example 2: <code>index</code></h3>
+<p>다음 예제는 &ldquo;disqus_url&quot;이라는 page parameter를 html형식으로 출력하는 예제입니다. 또한, 이 예제는 <code>index</code> 함수를 사용하는데 이 함수는 1번 파라미터의 2번파라미터 key에 해당하는 값을 불러옵니다.(ex. index $array 1 =&gt; $array[1], index $dict &ldquo;a&rdquo; =&gt; $dict[&ldquo;a&rdquo;])</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ index .Params <span style="color:#f1fa8c">&#34;disqus_url&#34;</span> | html }}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="example-3-or-with-isset">Example 3: <code>or</code> with <code>isset</code></h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">if</span> <span style="color:#50fa7b">or</span> (<span style="color:#50fa7b">or</span> (isset .Params <span style="color:#f1fa8c">&#34;title&#34;</span>) (isset .Params <span style="color:#f1fa8c">&#34;caption&#34;</span>)) (isset .Params <span style="color:#f1fa8c">&#34;attr&#34;</span>) }}
+Stuff Here
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><p>위 예제는 다음과 같이 다시 쓰일 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#ff79c6">if</span> isset .Params <span style="color:#f1fa8c">&#34;caption&#34;</span> | or isset .Params <span style="color:#f1fa8c">&#34;title&#34;</span> | or isset .Params <span style="color:#f1fa8c">&#34;attr&#34;</span> }}
+Stuff Here
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="example-4-internet-explorer-conditional-comments">Example 4: Internet Explorer Conditional Comments</h3>
+<p>기본적으로 , Go Template은 HTML 주석을 결과에서 제거합니다.</p>
+<p>이 기능은 인터넷익스플로어 버전을 검사하는 부수효과를 냅니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#f1fa8c">&#34;&lt;!--[if lt IE 9]&gt;&#34;</span> | safeHTML }}
+  &lt;script src=<span style="color:#f1fa8c">&#34;html5shiv.js&#34;</span>&gt;&lt;<span style="color:#ff79c6">/</span>script&gt;
+{{ <span style="color:#f1fa8c">&#34;&lt;![endif]--&gt;&#34;</span> | safeHTML }}
+</code></pre></td></tr></table>
+</div>
+</div><p>다른 방법으로 백틱(<!-- raw HTML omitted -->`<!-- raw HTML omitted -->)을 사용할 수도 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ <span style="color:#f1fa8c">`&lt;!--[if lt IE 7]&gt;&lt;html class=&#34;no-js lt-ie9 lt-ie8 lt-ie7&#34;&gt;&lt;![endif]--&gt;`</span> | safeHTML }}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="context-aka-the-dot">Context (aka &ldquo;the dot&rdquo;)</h2>
+<p>Go Template에 대해 이해하는데 가장 쉽게 간과되곤 하는 개념이 <code>{{ . }}</code>는 항상 현재 내용을 참조한다는 것입니다.</p>
+<ul>
+<li>
+<p><code>.</code>은 여러분이 만든 템플릿의 가장 상위에서 사용할 수 있는 데이터 셋이 됩니다.</p>
+</li>
+<li>
+<p>이터레이터 안에서 <code>.</code>은 현재 아이템이 됩니다.</p>
+</li>
+</ul>
+<h3 id="1-define-a-variable-independent-of-context">1. Define a Variable Independent of Context</h3>
+<p>다음 예제는 어떻게 독립 변수를 로직안에 정의할 수 있는지 알려주는 예제입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ $title <span style="color:#ff79c6">:=</span> .Site.Title }}
+&lt;ul&gt;
+{{ <span style="color:#ff79c6">range</span> .Params.tags }}
+    &lt;li&gt;
+        &lt;a href=<span style="color:#f1fa8c">&#34;/tags/{{ . | urlize }}&#34;</span>&gt;{{ . }}&lt;<span style="color:#ff79c6">/</span>a&gt;
+        <span style="color:#ff79c6">-</span> {{ $title }}
+    &lt;<span style="color:#ff79c6">/</span>li&gt;
+{{ end }}
+&lt;<span style="color:#ff79c6">/</span>ul&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2-use--to-access-the-global-context">2. Use <code>$.</code> to Access the Global Context</h3>
+<p>여러분의 템플릿에서 <code>$</code>는 특별한 문자입니다. <code>$</code> 는 기본적으로 <code>.</code>의 시작값입니다. 이는 글로벌 스코프에 어느곳에서든 접근할 수 있다는 뜻입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">&lt;ul&gt;
+{{ <span style="color:#ff79c6">range</span> .Params.tags }}
+  &lt;li&gt;
+    &lt;a href=<span style="color:#f1fa8c">&#34;/tags/{{ . | urlize }}&#34;</span>&gt;{{ . }}&lt;<span style="color:#ff79c6">/</span>a&gt;
+            <span style="color:#ff79c6">-</span> {{ $.Site.Title }}
+  &lt;<span style="color:#ff79c6">/</span>li&gt;
+{{ end }}
+&lt;<span style="color:#ff79c6">/</span>ul&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="whitespace공백">Whitespace(공백)</h2>
+<p><code>-</code> 기호는 <code>{{</code> 또는 <code>}}</code> 옆의 공백을 지워줍니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">&lt;div&gt;
+    {{ .Title }}
+&lt;<span style="color:#ff79c6">/</span>div&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>결과:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#ff79c6">div</span>&gt;
+    Hello, World!
+&lt;/<span style="color:#ff79c6">div</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>이제 <code>-</code>를 사용하면 이렇게 됩니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">&lt;div&gt;
+    {{<span style="color:#ff79c6">-</span> .Title <span style="color:#ff79c6">-</span>}}
+&lt;<span style="color:#ff79c6">/</span>div&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>결과:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#ff79c6">div</span>&gt;Hello, World!&lt;/<span style="color:#ff79c6">div</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>Go는 다음을 공백으로 여깁니다.</p>
+<ul>
+<li>space</li>
+<li>horizontal tab</li>
+<li>carriage return</li>
+<li>newline</li>
+</ul>
+<h2 id="주석">주석</h2>
+<p>템플릿에 주석을 추가할 수 있습니다. Hugo엔 두 가지 주석을 다는 방법이 있습니다.</p>
+<h3 id="go-templates-주석">Go Templates 주석</h3>
+<p>Go Template은 <code>{{/*</code>와 <code>*/}}</code>로 주석을 달 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">Bonsoir, {{<span style="color:#6272a4">/* {{ add 0 + 2}} */</span>}}Eliott.
+</code></pre></td></tr></table>
+</div>
+</div><p>결과는 <code>Bonsoir, Eliott.</code>가 됩니다.</p>
+<h3 id="html-주석">HTML 주석</h3>
+<p>여러분의 템플릿에 HTML 주석을 달 일이 있다면 <a href="https://gohugo.io/templates/introduction/#ie-conditional-comments">https://gohugo.io/templates/introduction/#ie-conditional-comments</a>를 참고하십시오. 만약 HTML 주석에 변수를 사용해야 한다면 다음과 같은 방법이 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">{{ printf <span style="color:#f1fa8c">&#34;&lt;!-- Our website is named: %s --&gt;&#34;</span> .Site.Title | safeHTML }}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="go-template에-포함된-html-주석">Go Template에 포함된 HTML 주석</h3>
+<p>HTML 주석에 포함된 Go Template도 랜더링이 됩니다.</p>
+<blockquote>
+<p>하지만 그렇게 하지는 말아주십시오.</p>
+</blockquote>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Go" data-lang="Go">&lt;!<span style="color:#ff79c6">--</span> {{ $author <span style="color:#ff79c6">:=</span> <span style="color:#f1fa8c">&#34;Emma Goldman&#34;</span> }} was a great woman. <span style="color:#ff79c6">--</span>&gt;
+{{ $author }}
+</code></pre></td></tr></table>
+</div>
+</div><p>위 예제는 <code>Emma Goldman</code>을 정상적으로 렌더링 합니다. 그러나 HTML 주석 안의 코드가 에러를 낸다면 렌더링에 실패합니다.</p>
+
+          </article>
+    </div>
+  </div>
+</section>
+<aside id="meta">
+  <div class="center">
+  <nav class="section-move">
+    
+      <div class="previous"> <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/"><i class="fa fa-arrow-circle-left icon"></i>휴고 Comment 추가하기</a></div>
+    
+    
+    
+  </nav>
+    
+    <div class="tags">
+    <ul class="tag">
+        
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%ED%85%9C%ED%94%8C%EB%A6%BF/"># 템플릿</a></li>
+        
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
+        
+    </ul>
+</div>
+    <div class="profile-in-article">
+    <div class="profile-image">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <div class="profile-introduce">
+        <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+        <p>풀스텍 웹개발을 지향합니다</p>
+        <div class="">깃허브 등등 추가</div>
+    </div>
+</div>
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <div class="more-content">
+      <link rel="stylesheet" href="/css/related-content.css">
+<div class="related-content">
+	<div class="title">
+		<p>&#34;what_is_hugo&#34; 와 비슷한 컨텐츠 더보기</p>
+		
+		<a href="http://dev2820.github.io/what_is_hugo">more</a>
+	</div>
+	
+	
+	<div class="container">
+		<ul>
+			
+			<li>
+				
+<link rel="stylesheet" href="/css/summary-small.css">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-comment\/')">
+    
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
+    
+    <div class="title">
+      <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/">
+        <h3 class="name">휴고 Comment 추가하기</h3> 
+        <p class="summary">Comments 휴고는 Disqus 템플릿을 기본적으로 제공합니다. …</p>
+        <div class="date">
+          <small>2020-10-18</small>
+        </div>
+      </a>
+    </div>
+  </div>
+			</li>
+			
+			<li>
+				
+<link rel="stylesheet" href="/css/summary-small.css">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-image-processing\/')">
+    
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
+    
+    <div class="title">
+      <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-image-processing/">
+        <h3 class="name">휴고 Image Processing</h3> 
+        <p class="summary">이번 글은 휴고의 이미지 프로세싱에 관한 글입니다. …</p>
+        <div class="date">
+          <small>2020-10-03</small>
+        </div>
+      </a>
+    </div>
+  </div>
+			</li>
+			
+			<li>
+				
+<link rel="stylesheet" href="/css/summary-small.css">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-page-resources\/')">
+    
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
+    
+    <div class="title">
+      <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/">
+        <h3 class="name">휴고 Page Resources</h3> 
+        <p class="summary">이미지, 다른 페이지, 문서 등등 모든 페이지 리소스는 relative …</p>
+        <div class="date">
+          <small>2020-10-03</small>
+        </div>
+      </a>
+    </div>
+  </div>
+			</li>
+			
+			<li>
+				
+<link rel="stylesheet" href="/css/summary-small.css">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-multilingual-mode\/')">
+    
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
+    
+    <div class="title">
+      <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/">
+        <h3 class="name">휴고 Multilingual Mode</h3> 
+        <p class="summary">이번글은 휴고 사이트의 다중언어지원에 대한 글입니다. …</p>
+        <div class="date">
+          <small>2020-10-03</small>
+        </div>
+      </a>
+    </div>
+  </div>
+			</li>
+			
+			<li>
+				
+<link rel="stylesheet" href="/css/summary-small.css">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-table-of-content\/')">
+    
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
+    
+    <div class="title">
+      <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/">
+        <h3 class="name">휴고 Table of Content</h3> 
+        <p class="summary">이번글은 문서의 목차를 만드는 방법에 대해 다루겠습니다. …</p>
+        <div class="date">
+          <small>2020-10-02</small>
+        </div>
+      </a>
+    </div>
+  </div>
+			</li>
+			
+			<li>
+				
+<link rel="stylesheet" href="/css/summary-small.css">
+<div class="summary-small card" onclick="goToUrl('http:\/\/dev2820.github.io\/what_is_hugo\/%ED%9C%B4%EA%B3%A0-static-files\/')">
+    
+    <div class="banner" style="background-image:url(/images/ocean.jpg)"></div>
+    
+    <div class="title">
+      <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-static-files/">
+        <h3 class="name">휴고 Static Files</h3> 
+        <p class="summary">이 글은 휴고의 static file에 대해 다룹니다. static/ 디 …</p>
+        <div class="date">
+          <small>2020-10-02</small>
+        </div>
+      </a>
+    </div>
+  </div>
+			</li>
+			
+		</ul>
+	</div>
+	
+</div>
+    </div>
+  </div>
+</aside>
+
+        </div>
+    <footer id="footer">
+
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fa fa-angle-double-up"></i>
+      <span>위로</span>
+    </button>
+    
+    
+    <span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+    <span>ALL RIGHTS RESERVED.</span>
+  </footer>
+</body>
+</html>
+  </body>
+</html>

@@ -8,10 +8,19 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Fri, 18 Sep 2020 18:20:55 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2020 23:12:23 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/diy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo new theme 3</title>
+      <link>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_3/</link>
+      <pubDate>Sat, 19 Sep 2020 23:12:23 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_3/</guid>
+      <description>index.html 블로그의 홈페이지 입니다. 이 페이지는 content/_index.md 파일의 설정에 따라 {{.Title}}과 {{.Content}} 의 내용이 결정됩니다.</description>
+    </item>
     
     <item>
       <title>NAS 용 SPA만들기 (0)</title>
@@ -20,6 +29,24 @@
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/nas_project/home_server/</guid>
       <description>글머리 본디 이 글은 자작NAS를 만드는 전반적인 내용을 모두 담으려고 했으나 이 블로그를 자작NAS 설정을 마치고서야 집밖에서 SSH로 연결해 글을 쓰는 중이라 사</description>
+    </item>
+    
+    <item>
+      <title>Hugo new theme 1</title>
+      <link>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/</link>
+      <pubDate>Fri, 18 Sep 2020 16:10:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/</guid>
+      <description>Hugo에서 새로운 테마 만들기 1 hugo new theme [테마이름] 위 명령을 입력하면 &amp;lsquo;themes/테마이름&amp;rsquo; 에 새로운 폴더가 생깁니다. themes</description>
+    </item>
+    
+    <item>
+      <title>Hugo new theme 2</title>
+      <link>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/</link>
+      <pubDate>Fri, 18 Sep 2020 16:10:55 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/</guid>
+      <description>글머리 앞서 만들어진 구조를 천천히 살펴보며 페이지 제작 구상을 좀 해봅시다. 우선 보여주는 부분을 꾸며야 하니 layouts을 보겠습니다. layouts 폴더는 _default, partials, 404.html, index.html 로</description>
     </item>
     
   </channel>

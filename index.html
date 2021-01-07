@@ -25,25 +25,10 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/homePage.css">
-    <link rel="stylesheet" href="/css/listPage.css">
-    <link rel="stylesheet" href="/css/notFound.css">
-    <link rel="stylesheet" href="/css/tags.css">
-    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/markdown.css">
-    <link rel="stylesheet" href="/css/clock.css">
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-XXXXXXXX-X');
-    </script>
-    
     
     <script src="/js/default.js"></script>
 </head>
@@ -52,7 +37,7 @@
     <div class="logo">
       <a href="/">
         
-        <img src="/images/logo.png" height="32px" />
+        <img src="/images/site_logo.png" height="32px" />
         
       </a>
     </div>
@@ -96,9 +81,9 @@
                 <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
                 <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
                 <li><a class="aside-menu-item" href="http://dev2820.github.io/">전체글 모아보기
-                        <small>(25)</small></a>
+                        <small>(32)</small></a>
                     <small
-                        class="date">- 2020/10/18</small></li>
+                        class="date">- 2020/11/15</small></li>
             </ul>
         </div>
         <hr class="aside-sep">
@@ -111,7 +96,7 @@
                     
                     
                     <a class="sidebar-nav-item"
-                        href="/diaries/" title="Diaries">Diaries <small>(4)</small></a>
+                        href="/diaries/" title="Diaries">Diaries <small>(7)</small></a>
                     <small class="date">- 2020/09/26</small>
                 </li>
                 <hr class="aside-sep">
@@ -120,8 +105,8 @@
                     
                     
                     <a class="sidebar-nav-item"
-                        href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme <small>(0)</small></a>
-                    
+                        href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme <small>(3)</small></a>
+                    <small class="date">- 2020/09/19</small>
                 </li>
                 <hr class="aside-sep">
                 
@@ -138,8 +123,8 @@
                     
                     
                     <a class="sidebar-nav-item"
-                        href="/what_is_hugo/" title="what_is_hugo">what_is_hugo <small>(20)</small></a>
-                    <small class="date">- 2020/10/18</small>
+                        href="/what_is_hugo/" title="what_is_hugo">what_is_hugo <small>(21)</small></a>
+                    <small class="date">- 2020/11/15</small>
                 </li>
                 <hr class="aside-sep">
                 
@@ -147,11 +132,14 @@
         </nav>
     </div>
 </div>
+<link rel="stylesheet" href="/css/homePage.css">
 
 <header id="home-head" class="card" style="background-image:url(/images/space.jpg);">
 
   <div class="container">
-  <div class="clock">
+  <link rel="stylesheet" href="/css/clock.css">
+<script src="/js/clock.js"></script>
+<div class="clock">
     <div class="hour">
         <div class="hr" id="hr"></div>
     </div>
@@ -163,7 +151,7 @@
     </div>
 </div>
     <h1 class="title">dev2820의 개발 블로그</h1>
-    <div class="content"><p>dev2820의 아무거나 저장하는 개발 공간에 오신것을 환영합니다. 아직 사이트 개발중입니다.</p>
+    <div class="content"><p>dev2820의 아무거나 저장하는 개발 공간에 오신 것을 환영합니다. 아직 사이트 개발중입니다.</p>
 </div>
   </div>
 </header>
@@ -225,11 +213,56 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/disqus/">#disqus</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%85%9C%ED%94%8C%EB%A6%BF/"># 템플릿</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%EC%BD%94%EB%A9%98%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/">#코멘트 추가하 …</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+  <div class="cover-content">
+    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/">
+      
+      <img class="icon" src="/images/cover-icon.png" />
+      
+      <h2 class="title">Introduction to Hugo Templating</h2>
+    </a>
+    
+    <div class="post-meta">
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
+      | 2020년 11월 15일
+    </div>
+    <div class="content">Introduction to Hugo Templating 출처) https://gohugo.io/templates/introduction/ 휴고에선 Go의 html/template와 text/template 라이브러리를 기본적으로 템플릿화 하는데 사용할 수 있습니다. 기본 문법 Go …</div>
+    <div class="read-more"><span>7 mins read</span><a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
+  </div>
+
+</article>
+    <hr class="summary-sep" />
+    
+    <article class="summary card">
+  
+  <div class="cover-image" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 271px),url('/images/ocean.jpg');">
+  
+    <div class="classification">
+      <div class="summary-category">
+        <h4>Category</h4>
+        
+           <a href="http://dev2820.github.io/categories/what_is_hugo/">what_is_hugo</a>
+        
+      </div>
+      <div class="summary-tags">
+        <h4>Tags</h4>
+        <ul class="tag">
+          
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
+          
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
+          
+            <li><a href="http://dev2820.github.io/tags/disqus/"># disqus</a></li>
           
         </ul>
          <small class="etc">+ 4개의 태그</small> 
@@ -245,7 +278,7 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 10월 18일
     </div>
     <div class="content">Comments 휴고는 Disqus 템플릿을 기본적으로 제공합니다. 물론 disqus 말고도 다른 코멘트 시스템을 이용할 수도 있습니다. 하지만 여기선 Disqus 다는 방법에 대해서만 설명하겠습니다. https://gohugo.io/content-management/comments/</div>
@@ -270,11 +303,11 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/">#이미지 처리</a></li>
+            <li><a href="http://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/"># 이미지 처리</a></li>
           
         </ul>
         
@@ -290,7 +323,7 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 10월 03일
     </div>
     <div class="content">이번 글은 휴고의 이미지 프로세싱에 관한 글입니다. https://gohugo.io/content-management/image-processing/ The Image Page Resource image는 페이지 리소스이고 프로세싱 메소드는 /static 폴더 안에 있는 이미지에 대해서 …</div>
@@ -315,11 +348,11 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/page-resources/">#Page …</a></li>
+            <li><a href="http://dev2820.github.io/tags/page-resources/"># Page …</a></li>
           
         </ul>
         
@@ -335,7 +368,7 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 10월 03일
     </div>
     <div class="content">이미지, 다른 페이지, 문서 등등 모든 페이지 리소스는 relative URL과 메타데이터를 가집니다. 페이지 리소스는 페이지 리소스가 포함된 페이지 번들에서만 사용가능합니</div>
@@ -360,11 +393,11 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/multilingual-mode/">#multili …</a></li>
+            <li><a href="http://dev2820.github.io/tags/multilingual-mode/"># multili …</a></li>
           
         </ul>
          <small class="etc">+ 4개의 태그</small> 
@@ -380,7 +413,7 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 10월 03일
     </div>
     <div class="content">이번글은 휴고 사이트의 다중언어지원에 대한 글입니다. https://gohugo.io/content-management/multilingual/ Configure Languages 다음 예제는 다중언어지원을 위한 config 파일입니다. 1 2 3 4 5 6 7 8 9 10 11 12 …</div>
@@ -405,11 +438,11 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/table-of-contents/">#Table …</a></li>
+            <li><a href="http://dev2820.github.io/tags/table-of-contents/"># Table …</a></li>
           
         </ul>
          <small class="etc">+ 5개의 태그</small> 
@@ -425,7 +458,7 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 10월 02일
     </div>
     <div class="content">이번글은 문서의 목차를 만드는 방법에 대해 다루겠습니다. 휴고는 markdown 문서를 분석해 자동으로 목차를 만들어줍니다. https://gohugo.io/content-management/toc/ Usage 일반적으로 마크다운으로 문서를 만들면 우리</div>
@@ -450,11 +483,11 @@
         <h4>Tags</h4>
         <ul class="tag">
           
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
+            <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
+            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/"># 휴고</a></li>
           
-            <li><a href="http://dev2820.github.io/tags/static/">#static</a></li>
+            <li><a href="http://dev2820.github.io/tags/static/"># static</a></li>
           
         </ul>
          <small class="etc">+ 4개의 태그</small> 
@@ -470,7 +503,7 @@
     </a>
     
     <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
+      <button class="author" onclick="goToUrl( &#34;http://dev2820.github.io/about/&#34; )">dev2820</button>
       | 2020년 10월 02일
     </div>
     <div class="content">이 글은 휴고의 static file에 대해 다룹니다. static/ 디렉토리에 들어가는 모든 파일들은 다 static file이라고 생각하시면 됩니다. https://gohugo.io/content-management/static-files/ Static Files static …</div>
@@ -480,56 +513,11 @@
 </article>
     <hr class="summary-sep" />
     
-    <article class="summary card">
-  
-  <div class="cover-image" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 271px),url('/images/ocean.jpg');">
-  
-    <div class="classification">
-      <div class="summary-category">
-        <h4>Category</h4>
-        
-           <a href="http://dev2820.github.io/categories/what_is_hugo/">what_is_hugo</a>
-        
-      </div>
-      <div class="summary-tags">
-        <h4>Tags</h4>
-        <ul class="tag">
-          
-            <li><a href="http://dev2820.github.io/tags/hugo/">#hugo</a></li>
-          
-            <li><a href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/">#휴고</a></li>
-          
-            <li><a href="http://dev2820.github.io/tags/menu/">#menu</a></li>
-          
-        </ul>
-        
-      </div>
-    </div>
-  </div>
-  <div class="cover-content">
-    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/">
-      
-      <img class="icon" src="/images/cover-icon.png" />
-      
-      <h2 class="title">휴고 Menus</h2>
-    </a>
-    
-    <div class="post-meta">
-      <button class="author" onclick="goToUrl(&#34;http://dev2820.github.io/about/&#34;)">dev2820</button>
-      | 2020년 10월 01일
-    </div>
-    <div class="content">휴고엔 강력한 메뉴 시스템이 있습니다. 이 메뉴시스템으론 다음과 같은 일을 할 수 있습니다. 메뉴 안에 컨텐츠 배치 제한없는 메뉴 depth 어떠한 컨텐츠도 필요없는 메뉴 엔트</div>
-    <div class="read-more"><span>1 mins read</span><a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/"><span>더 보기</span><i class="fa fa-angle-right"></i></a></div>
-  </div>
-
-</article>
-    <hr class="summary-sep" />
-    
     <div class="paging">
   
   
   <span class="page">
-    페이지 1 / 4
+    페이지 1 / 5
   </span>
   
   <a class="next" href="/page/2/" rel="next">
@@ -537,7 +525,7 @@
   </a>
   
   
-  <a class="last" href="/page/4/" rel="next">
+  <a class="last" href="/page/5/" rel="next">
     <i class="fa fa-angle-double-right" aria-hidden="true"></i>
   </a>
   

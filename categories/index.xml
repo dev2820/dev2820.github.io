@@ -8,7 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>second28200@naver.com (dev2820)</managingEditor>
     <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Sun, 18 Oct 2020 21:17:54 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 13:26:07 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,7 +16,7 @@
     <item>
       <title>what_is_hugo</title>
       <link>http://dev2820.github.io/categories/what_is_hugo/</link>
-      <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
+      <pubDate>Sun, 15 Nov 2020 13:26:07 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/categories/what_is_hugo/</guid>
       <description></description>
@@ -32,11 +32,29 @@
     </item>
     
     <item>
+      <title>hugo_new_theme</title>
+      <link>http://dev2820.github.io/categories/hugo_new_theme/</link>
+      <pubDate>Sat, 19 Sep 2020 23:12:23 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/categories/hugo_new_theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Nas_project</title>
       <link>http://dev2820.github.io/categories/nas_project/</link>
       <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/categories/nas_project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>http://dev2820.github.io/categories/test/</link>
+      <pubDate>Sat, 25 Jul 2020 12:19:54 +0900</pubDate>
+      <author>second28200@naver.com (dev2820)</author>
+      <guid>http://dev2820.github.io/categories/test/</guid>
       <description></description>
     </item>
     
