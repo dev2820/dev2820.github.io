@@ -196,46 +196,8 @@
   </div>
 </header>
 <section id="main">
-  <link rel="stylesheet" href="/css/table_of_content.css">
-<script>
-    let toggle = true;
-    function toggleTable() {
-        if (toggle) {
-            document.getElementById('table').classList.add('hidden')
-            document.querySelector('.post-toc .title').classList.add('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
-        }
-        else {
-            document.getElementById('table').classList.remove('hidden')
-            document.querySelector('.post-toc .title').classList.remove('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
-        }
-        toggle = !toggle;
-    }
-</script>
-<div class="post-toc">
-    <div class="title" onclick="toggleTable()">
-        <i class="fa fa-angle-right hidden right-angle icon"></i>
-        <i class="fa fa-angle-down down-angle icon"></i>
-        차례
-    </div>
-    <div id="table">
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#hugo로-build-하는-법">hugo로 build 하는 법</a></li>
-    <li><a href="#hugo-사용할-테마-정하는-방법">hugo 사용할 테마 정하는 방법</a></li>
-    <li><a href="#hugo로-글-쓰는법">hugo로 글 쓰는법</a>
-      <ul>
-        <li><a href="#archetypes">archetypes</a></li>
-      </ul>
-    </li>
-    <li><a href="#작성한-글-미리보기">작성한 글 미리보기</a></li>
-  </ul>
-</nav>
-    </div>
-</div>
+  <div class="left">
+  </div>
   <div class="center">
     <div>
           <article class="content">
@@ -347,6 +309,50 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
 
           </article>
     </div>
+  </div>
+  <div class="right">
+    <link rel="stylesheet" href="/css/table_of_content.css">
+<script>
+    let toggle = true;
+    function toggleTable() {
+        if (toggle) {
+            document.getElementById('table').classList.add('hidden')
+            document.querySelector('.post-toc .title').classList.add('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
+        }
+        else {
+            document.getElementById('table').classList.remove('hidden')
+            document.querySelector('.post-toc .title').classList.remove('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
+        }
+        toggle = !toggle;
+    }
+    
+
+</script>
+<div class="post-toc" id="post-toc">
+    <div class="title" onclick="toggleTable()">
+        <i class="fa fa-angle-right hidden right-angle icon"></i>
+        <i class="fa fa-angle-down down-angle icon"></i>
+        차례
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo로-build-하는-법">hugo로 build 하는 법</a></li>
+    <li><a href="#hugo-사용할-테마-정하는-방법">hugo 사용할 테마 정하는 방법</a></li>
+    <li><a href="#hugo로-글-쓰는법">hugo로 글 쓰는법</a>
+      <ul>
+        <li><a href="#archetypes">archetypes</a></li>
+      </ul>
+    </li>
+    <li><a href="#작성한-글-미리보기">작성한 글 미리보기</a></li>
+  </ul>
+</nav>
+    </div>
+</div>    
   </div>
 </section>
 <aside id="meta">

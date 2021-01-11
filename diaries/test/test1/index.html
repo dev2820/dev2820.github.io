@@ -189,7 +189,17 @@
   </div>
 </header>
 <section id="main">
-  <link rel="stylesheet" href="/css/table_of_content.css">
+  <div class="left">
+  </div>
+  <div class="center">
+    <div>
+          <article class="content">
+            
+          </article>
+    </div>
+  </div>
+  <div class="right">
+    <link rel="stylesheet" href="/css/table_of_content.css">
 <script>
     let toggle = true;
     function toggleTable() {
@@ -207,8 +217,10 @@
         }
         toggle = !toggle;
     }
+    
+
 </script>
-<div class="post-toc">
+<div class="post-toc" id="post-toc">
     <div class="title" onclick="toggleTable()">
         <i class="fa fa-angle-right hidden right-angle icon"></i>
         <i class="fa fa-angle-down down-angle icon"></i>
@@ -217,13 +229,7 @@
     <div id="table">
         <nav id="TableOfContents"></nav>
     </div>
-</div>
-  <div class="center">
-    <div>
-          <article class="content">
-            
-          </article>
-    </div>
+</div>    
   </div>
 </section>
 <aside id="meta">

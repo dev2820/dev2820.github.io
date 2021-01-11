@@ -184,7 +184,23 @@
   </div>
 </header>
 <section id="main">
-  <link rel="stylesheet" href="/css/table_of_content.css">
+  <div class="left">
+  </div>
+  <div class="center">
+    <div>
+          <article class="content">
+            <h2 id="이-테마를-쓰면서-알게된-점-정리">이 테마를 쓰면서 알게된 점 정리</h2>
+<ol>
+<li>config.toml 에 적어둔 title을 메뉴에서 선택할 수 있다.</li>
+<li>그 타이틀을 메뉴에서 선택하면 메인화면으로 간다.</li>
+<li>projects 라는 이름의 형식을 archetypes에 저장하고 글을 쓰면 메뉴에서 &lsquo;프로젝트'를 클릭해 projects 타입의 글을 모아볼 수 있다.</li>
+</ol>
+
+          </article>
+    </div>
+  </div>
+  <div class="right">
+    <link rel="stylesheet" href="/css/table_of_content.css">
 <script>
     let toggle = true;
     function toggleTable() {
@@ -202,8 +218,10 @@
         }
         toggle = !toggle;
     }
+    
+
 </script>
-<div class="post-toc">
+<div class="post-toc" id="post-toc">
     <div class="title" onclick="toggleTable()">
         <i class="fa fa-angle-right hidden right-angle icon"></i>
         <i class="fa fa-angle-down down-angle icon"></i>
@@ -216,19 +234,7 @@
   </ul>
 </nav>
     </div>
-</div>
-  <div class="center">
-    <div>
-          <article class="content">
-            <h2 id="이-테마를-쓰면서-알게된-점-정리">이 테마를 쓰면서 알게된 점 정리</h2>
-<ol>
-<li>config.toml 에 적어둔 title을 메뉴에서 선택할 수 있다.</li>
-<li>그 타이틀을 메뉴에서 선택하면 메인화면으로 간다.</li>
-<li>projects 라는 이름의 형식을 archetypes에 저장하고 글을 쓰면 메뉴에서 &lsquo;프로젝트'를 클릭해 projects 타입의 글을 모아볼 수 있다.</li>
-</ol>
-
-          </article>
-    </div>
+</div>    
   </div>
 </section>
 <aside id="meta">

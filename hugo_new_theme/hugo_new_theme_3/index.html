@@ -188,7 +188,20 @@
   </div>
 </header>
 <section id="main">
-  <link rel="stylesheet" href="/css/table_of_content.css">
+  <div class="left">
+  </div>
+  <div class="center">
+    <div>
+          <article class="content">
+            <h2 id="indexhtml">index.html</h2>
+<p>블로그의 홈페이지 입니다.</p>
+<p>이 페이지는 <code>content/_index.md</code> 파일의 설정에 따라 {{.Title}}과 {{.Content}} 의 내용이 결정됩니다.</p>
+
+          </article>
+    </div>
+  </div>
+  <div class="right">
+    <link rel="stylesheet" href="/css/table_of_content.css">
 <script>
     let toggle = true;
     function toggleTable() {
@@ -206,8 +219,10 @@
         }
         toggle = !toggle;
     }
+    
+
 </script>
-<div class="post-toc">
+<div class="post-toc" id="post-toc">
     <div class="title" onclick="toggleTable()">
         <i class="fa fa-angle-right hidden right-angle icon"></i>
         <i class="fa fa-angle-down down-angle icon"></i>
@@ -220,16 +235,7 @@
   </ul>
 </nav>
     </div>
-</div>
-  <div class="center">
-    <div>
-          <article class="content">
-            <h2 id="indexhtml">index.html</h2>
-<p>블로그의 홈페이지 입니다.</p>
-<p>이 페이지는 <code>content/_index.md</code> 파일의 설정에 따라 {{.Title}}과 {{.Content}} 의 내용이 결정됩니다.</p>
-
-          </article>
-    </div>
+</div>    
   </div>
 </section>
 <aside id="meta">

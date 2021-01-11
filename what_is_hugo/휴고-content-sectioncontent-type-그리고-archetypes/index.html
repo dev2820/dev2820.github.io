@@ -194,56 +194,8 @@
   </div>
 </header>
 <section id="main">
-  <link rel="stylesheet" href="/css/table_of_content.css">
-<script>
-    let toggle = true;
-    function toggleTable() {
-        if (toggle) {
-            document.getElementById('table').classList.add('hidden')
-            document.querySelector('.post-toc .title').classList.add('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
-        }
-        else {
-            document.getElementById('table').classList.remove('hidden')
-            document.querySelector('.post-toc .title').classList.remove('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
-        }
-        toggle = !toggle;
-    }
-</script>
-<div class="post-toc">
-    <div class="title" onclick="toggleTable()">
-        <i class="fa fa-angle-right hidden right-angle icon"></i>
-        <i class="fa fa-angle-down down-angle icon"></i>
-        차례
-    </div>
-    <div id="table">
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#content-sections">Content Sections</a>
-      <ul>
-        <li><a href="#nested-sections">Nested Sections</a></li>
-      </ul>
-    </li>
-    <li><a href="#section-page-variables-and-methods">Section Page Variables and Methods</a>
-      <ul>
-        <li><a href="#content-section-lists">Content Section Lists</a></li>
-        <li><a href="#content-section-vs-content-type">Content Section vs Content Type</a></li>
-      </ul>
-    </li>
-    <li><a href="#content-types">Content Types</a></li>
-    <li><a href="#archetypes">Archetypes</a>
-      <ul>
-        <li><a href="#create-a-new-archetype-template">Create a New Archetype Template</a></li>
-        <li><a href="#directory-based-archetypes">Directory based archetypes</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </div>
-</div>
+  <div class="left">
+  </div>
   <div class="center">
     <div>
           <article class="content">
@@ -409,6 +361,60 @@ draft: true
 
           </article>
     </div>
+  </div>
+  <div class="right">
+    <link rel="stylesheet" href="/css/table_of_content.css">
+<script>
+    let toggle = true;
+    function toggleTable() {
+        if (toggle) {
+            document.getElementById('table').classList.add('hidden')
+            document.querySelector('.post-toc .title').classList.add('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
+        }
+        else {
+            document.getElementById('table').classList.remove('hidden')
+            document.querySelector('.post-toc .title').classList.remove('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
+        }
+        toggle = !toggle;
+    }
+    
+
+</script>
+<div class="post-toc" id="post-toc">
+    <div class="title" onclick="toggleTable()">
+        <i class="fa fa-angle-right hidden right-angle icon"></i>
+        <i class="fa fa-angle-down down-angle icon"></i>
+        차례
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#content-sections">Content Sections</a>
+      <ul>
+        <li><a href="#nested-sections">Nested Sections</a></li>
+      </ul>
+    </li>
+    <li><a href="#section-page-variables-and-methods">Section Page Variables and Methods</a>
+      <ul>
+        <li><a href="#content-section-lists">Content Section Lists</a></li>
+        <li><a href="#content-section-vs-content-type">Content Section vs Content Type</a></li>
+      </ul>
+    </li>
+    <li><a href="#content-types">Content Types</a></li>
+    <li><a href="#archetypes">Archetypes</a>
+      <ul>
+        <li><a href="#create-a-new-archetype-template">Create a New Archetype Template</a></li>
+        <li><a href="#directory-based-archetypes">Directory based archetypes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>    
   </div>
 </section>
 <aside id="meta">

@@ -192,69 +192,8 @@
   </div>
 </header>
 <section id="main">
-  <link rel="stylesheet" href="/css/table_of_content.css">
-<script>
-    let toggle = true;
-    function toggleTable() {
-        if (toggle) {
-            document.getElementById('table').classList.add('hidden')
-            document.querySelector('.post-toc .title').classList.add('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
-        }
-        else {
-            document.getElementById('table').classList.remove('hidden')
-            document.querySelector('.post-toc .title').classList.remove('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
-        }
-        toggle = !toggle;
-    }
-</script>
-<div class="post-toc">
-    <div class="title" onclick="toggleTable()">
-        <i class="fa fa-angle-right hidden right-angle icon"></i>
-        <i class="fa fa-angle-down down-angle icon"></i>
-        차례
-    </div>
-    <div id="table">
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#install-hugo">Install Hugo</a>
-      <ul>
-        <li><a href="#quick-install">Quick Install</a></li>
-      </ul>
-    </li>
-    <li><a href="#basic-usage">Basic Usage</a></li>
-    <li><a href="#directory-structure">Directory Structure</a>
-      <ul>
-        <li><a href="#archetypes"><code>archetypes</code></a></li>
-        <li><a href="#assets"><code>assets</code></a></li>
-        <li><a href="#config"><code>config</code></a></li>
-        <li><a href="#content"><code>content</code></a></li>
-        <li><a href="#data"><code>data</code></a></li>
-        <li><a href="#layouts"><code>layouts</code></a></li>
-        <li><a href="#static"><code>static</code></a></li>
-      </ul>
-    </li>
-    <li><a href="#commands">Commands</a>
-      <ul>
-        <li><a href="#hugo">hugo</a></li>
-        <li><a href="#hugo-config">hugo config</a></li>
-        <li><a href="#hugo-config-mounts">hugo config mounts</a></li>
-        <li><a href="#hugo-envhugo-version">hugo env,hugo version</a></li>
-        <li><a href="#hugo-list">hugo list</a></li>
-        <li><a href="#hugo-new">hugo new</a></li>
-        <li><a href="#hugo-new-site">hugo new site</a></li>
-        <li><a href="#hugo-new-theme">hugo new theme</a></li>
-        <li><a href="#hugo-server">hugo server</a></li>
-      </ul>
-    </li>
-    <li><a href="#마무리">마무리</a></li>
-  </ul>
-</nav>
-    </div>
-</div>
+  <div class="left">
+  </div>
   <div class="center">
     <div>
           <article class="content">
@@ -484,6 +423,73 @@ draft = true인 파일을 포함해 서버를 엽니다.
 
           </article>
     </div>
+  </div>
+  <div class="right">
+    <link rel="stylesheet" href="/css/table_of_content.css">
+<script>
+    let toggle = true;
+    function toggleTable() {
+        if (toggle) {
+            document.getElementById('table').classList.add('hidden')
+            document.querySelector('.post-toc .title').classList.add('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
+        }
+        else {
+            document.getElementById('table').classList.remove('hidden')
+            document.querySelector('.post-toc .title').classList.remove('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
+        }
+        toggle = !toggle;
+    }
+    
+
+</script>
+<div class="post-toc" id="post-toc">
+    <div class="title" onclick="toggleTable()">
+        <i class="fa fa-angle-right hidden right-angle icon"></i>
+        <i class="fa fa-angle-down down-angle icon"></i>
+        차례
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#install-hugo">Install Hugo</a>
+      <ul>
+        <li><a href="#quick-install">Quick Install</a></li>
+      </ul>
+    </li>
+    <li><a href="#basic-usage">Basic Usage</a></li>
+    <li><a href="#directory-structure">Directory Structure</a>
+      <ul>
+        <li><a href="#archetypes"><code>archetypes</code></a></li>
+        <li><a href="#assets"><code>assets</code></a></li>
+        <li><a href="#config"><code>config</code></a></li>
+        <li><a href="#content"><code>content</code></a></li>
+        <li><a href="#data"><code>data</code></a></li>
+        <li><a href="#layouts"><code>layouts</code></a></li>
+        <li><a href="#static"><code>static</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#commands">Commands</a>
+      <ul>
+        <li><a href="#hugo">hugo</a></li>
+        <li><a href="#hugo-config">hugo config</a></li>
+        <li><a href="#hugo-config-mounts">hugo config mounts</a></li>
+        <li><a href="#hugo-envhugo-version">hugo env,hugo version</a></li>
+        <li><a href="#hugo-list">hugo list</a></li>
+        <li><a href="#hugo-new">hugo new</a></li>
+        <li><a href="#hugo-new-site">hugo new site</a></li>
+        <li><a href="#hugo-new-theme">hugo new theme</a></li>
+        <li><a href="#hugo-server">hugo server</a></li>
+      </ul>
+    </li>
+    <li><a href="#마무리">마무리</a></li>
+  </ul>
+</nav>
+    </div>
+</div>    
   </div>
 </section>
 <aside id="meta">

@@ -190,87 +190,8 @@
   </div>
 </header>
 <section id="main">
-  <link rel="stylesheet" href="/css/table_of_content.css">
-<script>
-    let toggle = true;
-    function toggleTable() {
-        if (toggle) {
-            document.getElementById('table').classList.add('hidden')
-            document.querySelector('.post-toc .title').classList.add('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
-        }
-        else {
-            document.getElementById('table').classList.remove('hidden')
-            document.querySelector('.post-toc .title').classList.remove('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
-        }
-        toggle = !toggle;
-    }
-</script>
-<div class="post-toc">
-    <div class="title" onclick="toggleTable()">
-        <i class="fa fa-angle-right hidden right-angle icon"></i>
-        <i class="fa fa-angle-down down-angle icon"></i>
-        차례
-    </div>
-    <div id="table">
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#introduction-to-hugo-templating">Introduction to Hugo Templating</a></li>
-    <li><a href="#기본-문법">기본 문법</a>
-      <ul>
-        <li><a href="#사전-정의된-변수-불러오기">사전 정의된 변수 불러오기</a></li>
-        <li><a href="#함수와-필드는-점을-통해-접근할-수-있다">함수와 필드는 점을 통해 접근할 수 있다.</a></li>
-        <li><a href="#괄호를-사용해-아이템을-그룹지어-사용할-수-있다">괄호를 사용해 아이템을 그룹지어 사용할 수 있다.</a></li>
-      </ul>
-    </li>
-    <li><a href="#변수">변수</a></li>
-    <li><a href="#함수">함수</a>
-      <ul>
-        <li><a href="#example-1-adding-numbers">Example 1: Adding Numbers</a></li>
-        <li><a href="#example-2--comparing-numbers">Example 2 : Comparing Numbers</a></li>
-      </ul>
-    </li>
-    <li><a href="#템플릿-불러오기">템플릿 불러오기</a>
-      <ul>
-        <li><a href="#partial">Partial</a></li>
-        <li><a href="#template">Template</a></li>
-      </ul>
-    </li>
-    <li><a href="#로직">로직</a>
-      <ul>
-        <li><a href="#iteration">Iteration</a></li>
-        <li><a href="#조건">조건</a></li>
-      </ul>
-    </li>
-    <li><a href="#파이프라인">파이프라인</a>
-      <ul>
-        <li><a href="#example-1-shuffle">Example 1: <code>shuffle</code></a></li>
-        <li><a href="#example-2-index">Example 2: <code>index</code></a></li>
-        <li><a href="#example-3-or-with-isset">Example 3: <code>or</code> with <code>isset</code></a></li>
-        <li><a href="#example-4-internet-explorer-conditional-comments">Example 4: Internet Explorer Conditional Comments</a></li>
-      </ul>
-    </li>
-    <li><a href="#context-aka-the-dot">Context (aka &ldquo;the dot&rdquo;)</a>
-      <ul>
-        <li><a href="#1-define-a-variable-independent-of-context">1. Define a Variable Independent of Context</a></li>
-        <li><a href="#2-use--to-access-the-global-context">2. Use <code>$.</code> to Access the Global Context</a></li>
-      </ul>
-    </li>
-    <li><a href="#whitespace공백">Whitespace(공백)</a></li>
-    <li><a href="#주석">주석</a>
-      <ul>
-        <li><a href="#go-templates-주석">Go Templates 주석</a></li>
-        <li><a href="#html-주석">HTML 주석</a></li>
-        <li><a href="#go-template에-포함된-html-주석">Go Template에 포함된 HTML 주석</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </div>
-</div>
+  <div class="left">
+  </div>
   <div class="center">
     <div>
           <article class="content">
@@ -851,6 +772,91 @@ Stuff Here
 
           </article>
     </div>
+  </div>
+  <div class="right">
+    <link rel="stylesheet" href="/css/table_of_content.css">
+<script>
+    let toggle = true;
+    function toggleTable() {
+        if (toggle) {
+            document.getElementById('table').classList.add('hidden')
+            document.querySelector('.post-toc .title').classList.add('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
+        }
+        else {
+            document.getElementById('table').classList.remove('hidden')
+            document.querySelector('.post-toc .title').classList.remove('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
+        }
+        toggle = !toggle;
+    }
+    
+
+</script>
+<div class="post-toc" id="post-toc">
+    <div class="title" onclick="toggleTable()">
+        <i class="fa fa-angle-right hidden right-angle icon"></i>
+        <i class="fa fa-angle-down down-angle icon"></i>
+        차례
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-to-hugo-templating">Introduction to Hugo Templating</a></li>
+    <li><a href="#기본-문법">기본 문법</a>
+      <ul>
+        <li><a href="#사전-정의된-변수-불러오기">사전 정의된 변수 불러오기</a></li>
+        <li><a href="#함수와-필드는-점을-통해-접근할-수-있다">함수와 필드는 점을 통해 접근할 수 있다.</a></li>
+        <li><a href="#괄호를-사용해-아이템을-그룹지어-사용할-수-있다">괄호를 사용해 아이템을 그룹지어 사용할 수 있다.</a></li>
+      </ul>
+    </li>
+    <li><a href="#변수">변수</a></li>
+    <li><a href="#함수">함수</a>
+      <ul>
+        <li><a href="#example-1-adding-numbers">Example 1: Adding Numbers</a></li>
+        <li><a href="#example-2--comparing-numbers">Example 2 : Comparing Numbers</a></li>
+      </ul>
+    </li>
+    <li><a href="#템플릿-불러오기">템플릿 불러오기</a>
+      <ul>
+        <li><a href="#partial">Partial</a></li>
+        <li><a href="#template">Template</a></li>
+      </ul>
+    </li>
+    <li><a href="#로직">로직</a>
+      <ul>
+        <li><a href="#iteration">Iteration</a></li>
+        <li><a href="#조건">조건</a></li>
+      </ul>
+    </li>
+    <li><a href="#파이프라인">파이프라인</a>
+      <ul>
+        <li><a href="#example-1-shuffle">Example 1: <code>shuffle</code></a></li>
+        <li><a href="#example-2-index">Example 2: <code>index</code></a></li>
+        <li><a href="#example-3-or-with-isset">Example 3: <code>or</code> with <code>isset</code></a></li>
+        <li><a href="#example-4-internet-explorer-conditional-comments">Example 4: Internet Explorer Conditional Comments</a></li>
+      </ul>
+    </li>
+    <li><a href="#context-aka-the-dot">Context (aka &ldquo;the dot&rdquo;)</a>
+      <ul>
+        <li><a href="#1-define-a-variable-independent-of-context">1. Define a Variable Independent of Context</a></li>
+        <li><a href="#2-use--to-access-the-global-context">2. Use <code>$.</code> to Access the Global Context</a></li>
+      </ul>
+    </li>
+    <li><a href="#whitespace공백">Whitespace(공백)</a></li>
+    <li><a href="#주석">주석</a>
+      <ul>
+        <li><a href="#go-templates-주석">Go Templates 주석</a></li>
+        <li><a href="#html-주석">HTML 주석</a></li>
+        <li><a href="#go-template에-포함된-html-주석">Go Template에 포함된 HTML 주석</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>    
   </div>
 </section>
 <aside id="meta">

@@ -190,59 +190,8 @@
   </div>
 </header>
 <section id="main">
-  <link rel="stylesheet" href="/css/table_of_content.css">
-<script>
-    let toggle = true;
-    function toggleTable() {
-        if (toggle) {
-            document.getElementById('table').classList.add('hidden')
-            document.querySelector('.post-toc .title').classList.add('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
-        }
-        else {
-            document.getElementById('table').classList.remove('hidden')
-            document.querySelector('.post-toc .title').classList.remove('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
-        }
-        toggle = !toggle;
-    }
-</script>
-<div class="post-toc">
-    <div class="title" onclick="toggleTable()">
-        <i class="fa fa-angle-right hidden right-angle icon"></i>
-        <i class="fa fa-angle-down down-angle icon"></i>
-        차례
-    </div>
-    <div id="table">
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#글머리">글머리</a></li>
-    <li><a href="#hugo-홈페이지">HUGO 홈페이지</a>
-      <ul>
-        <li><a href="#hugo의-특징">HUGO의 특징</a></li>
-      </ul>
-    </li>
-    <li><a href="#what-is-hugo">What is Hugo</a>
-      <ul>
-        <li><a href="#what-does-hugo-do">What Does Hugo Do?</a></li>
-        <li><a href="#who-should-use-hugo">Who Should Use Hugo?</a></li>
-      </ul>
-    </li>
-    <li><a href="#hugo-features">Hugo Features</a>
-      <ul>
-        <li><a href="#general">General</a></li>
-        <li><a href="#orgaization">Orgaization</a></li>
-        <li><a href="#content">Content</a></li>
-        <li><a href="#additional-features">Additional Features</a></li>
-      </ul>
-    </li>
-    <li><a href="#그-밖의-페이지들">그 밖의 페이지들</a></li>
-  </ul>
-</nav>
-    </div>
-</div>
+  <div class="left">
+  </div>
   <div class="center">
     <div>
           <article class="content">
@@ -338,6 +287,63 @@
 
           </article>
     </div>
+  </div>
+  <div class="right">
+    <link rel="stylesheet" href="/css/table_of_content.css">
+<script>
+    let toggle = true;
+    function toggleTable() {
+        if (toggle) {
+            document.getElementById('table').classList.add('hidden')
+            document.querySelector('.post-toc .title').classList.add('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
+        }
+        else {
+            document.getElementById('table').classList.remove('hidden')
+            document.querySelector('.post-toc .title').classList.remove('toggle-off')
+            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
+            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
+        }
+        toggle = !toggle;
+    }
+    
+
+</script>
+<div class="post-toc" id="post-toc">
+    <div class="title" onclick="toggleTable()">
+        <i class="fa fa-angle-right hidden right-angle icon"></i>
+        <i class="fa fa-angle-down down-angle icon"></i>
+        차례
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#글머리">글머리</a></li>
+    <li><a href="#hugo-홈페이지">HUGO 홈페이지</a>
+      <ul>
+        <li><a href="#hugo의-특징">HUGO의 특징</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-is-hugo">What is Hugo</a>
+      <ul>
+        <li><a href="#what-does-hugo-do">What Does Hugo Do?</a></li>
+        <li><a href="#who-should-use-hugo">Who Should Use Hugo?</a></li>
+      </ul>
+    </li>
+    <li><a href="#hugo-features">Hugo Features</a>
+      <ul>
+        <li><a href="#general">General</a></li>
+        <li><a href="#orgaization">Orgaization</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#additional-features">Additional Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#그-밖의-페이지들">그 밖의 페이지들</a></li>
+  </ul>
+</nav>
+    </div>
+</div>    
   </div>
 </section>
 <aside id="meta">
