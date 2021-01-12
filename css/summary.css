@@ -2,14 +2,14 @@
 article.summary {
     margin:0 auto;
     height:250px;
-    min-width:100%;
+    width:100%;
     overflow:hidden;
     display:flex;
     flex-direction:row;
     background-color:white;
 }
 article.summary .cover-image {
-    widows:250px;
+    width:250px;
     height:250px;
     background-position:left;
     background-size:100% 100%;
