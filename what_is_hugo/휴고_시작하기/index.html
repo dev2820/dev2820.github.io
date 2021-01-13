@@ -433,20 +433,18 @@ draft = true인 파일을 포함해 서버를 엽니다.
     function toggleTable() {
         if (toggle) {
             document.getElementById('table').classList.add('hidden')
-            document.querySelector('.post-toc .title').classList.add('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.remove('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.add('hidden')
+            document.querySelector('#post-toc .title').classList.add('toggle-off')
+            document.querySelector('#post-toc .right-angle.icon').classList.remove('hidden')
+            document.querySelector('#post-toc .down-angle.icon').classList.add('hidden')
         }
         else {
             document.getElementById('table').classList.remove('hidden')
-            document.querySelector('.post-toc .title').classList.remove('toggle-off')
-            document.querySelector('.post-toc .right-angle.icon').classList.add('hidden')
-            document.querySelector('.post-toc .down-angle.icon').classList.remove('hidden')
+            document.querySelector('#post-toc .title').classList.remove('toggle-off')
+            document.querySelector('#post-toc .right-angle.icon').classList.add('hidden')
+            document.querySelector('#post-toc .down-angle.icon').classList.remove('hidden')
         }
         toggle = !toggle;
     }
-    
-
 </script>
 <div class="post-toc" id="post-toc">
     <div class="title" onclick="toggleTable()">
