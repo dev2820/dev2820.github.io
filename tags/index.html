@@ -31,7 +31,10 @@
     
     <script src="/js/default.js"></script>
 </head>
-<body id="body"><div id="topbar" class="card">
+<div id="loader">
+        loading...
+    </div>
+    <body id="body"><div id="topbar" class="card">
   <div class="menus">
     <div class="logo">
       <a href="/">
@@ -168,6 +171,7 @@
     <div class="tag-list-head">
         <p class="counter">42개의 태그</p>
         <div class="view-options">
+            <span>sort by</span> 
             <button class="option alphabetical toggle-on" onclick="toggleViewOption(0)">Alphabetical</button>
             <button class="option count" onclick="toggleViewOption(1)">Count</button>
         </div>
@@ -707,7 +711,5 @@
 </html>
   <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
     </body>
-    <div id="loader">
-        loading...
-    </div>
+
 </html>
