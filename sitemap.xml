@@ -363,6 +363,11 @@
   </url>
   
   <url>
+    <loc>http://dev2820.github.io/categories/test/</loc>
+    <lastmod>2020-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://dev2820.github.io/diaries/test/</loc>
     <lastmod>2020-09-19T00:00:00+00:00</lastmod>
   </url>
@@ -420,11 +425,6 @@
   <url>
     <loc>http://dev2820.github.io/diaries/hugo_test/</loc>
     <lastmod>2020-08-08T15:25:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/categories/test/</loc>
-    <lastmod>2020-07-25T12:19:54+09:00</lastmod>
   </url>
   
   <url>

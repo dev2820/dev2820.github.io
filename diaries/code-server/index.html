@@ -141,23 +141,6 @@
     </div>
 </div>
         <div id="content">
-<script>
-  
-  document.getElementById('topbar').classList.remove('card')
-  window.addEventListener('scroll', (event) => {
-    let e = document.getElementById('topbar');
-    if (this.scrollY > 450) {
-      if (!e.classList.contains('card')) {
-        e.classList.add('card');
-      }
-    }
-    else {
-      if (e.classList.contains('card')) {
-        e.classList.remove('card');
-      }
-    }
-  });
-</script>
 
 <header id="banner" style="background-image:url(/images/ocean.jpg);">
 
@@ -165,7 +148,7 @@
     <h1 id="title">웹으로 즐기는 코딩 code-server</h1>
     <section>
       <p id="date"> 2020-09-23 </p>
-      <p id="wordcount"> 2 mins  </p>
+      <p id="wordcount"> 2 <i class="far fa-clock"></i>  </p>
     </section>
     <small class="breadcrumb">
       <div class="breadcrumbnav">
@@ -188,7 +171,7 @@
     </small>
     
     
-    <small class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></small>
+    <p class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></p>
     
   </div>
 </header>
@@ -334,10 +317,6 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   </div>
 </aside>
-<script>
-  const topHeight = document.querySelector('#content header#banner').offsetHeight;
-  document.querySelector('#content section#main').style.top = topHeight+'px'; 
-</script>
 
         </div>
     <footer id="footer">
