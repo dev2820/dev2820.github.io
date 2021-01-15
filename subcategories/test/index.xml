@@ -15,10 +15,10 @@
     
     <item>
       <title>Test4</title>
-      <link>http://dev2820.github.io/diaries/test/test4/</link>
+      <link>http://dev2820.github.io/diaries/test4/</link>
       <pubDate>Sat, 26 Sep 2020 21:35:04 +0900</pubDate>
       <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/diaries/test/test4/</guid>
+      <guid>http://dev2820.github.io/diaries/test4/</guid>
       <description>test4</description>
     </item>
     
@@ -29,15 +29,6 @@
       <author>second28200@naver.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/code-server/</guid>
       <description>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &amp;lsquo;code-server&amp;rsquo; 라는게 있는 것을 알아서 지금 도커로 &amp;lsquo;code-server&#39;를 설치하고 돌려</description>
-    </item>
-    
-    <item>
-      <title>test 용페이지</title>
-      <link>http://dev2820.github.io/diaries/test/</link>
-      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
-      <guid>http://dev2820.github.io/diaries/test/</guid>
-      <description>dev2820의 test</description>
     </item>
     
   </channel>

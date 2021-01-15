@@ -87,7 +87,7 @@
                 <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
                 <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
                 <li><a class="aside-menu-item" href="http://dev2820.github.io/">전체글 모아보기
-                        <small>(33)</small></a>
+                        <small>(31)</small></a>
                     
                     <small class="date">- 2020/11/15</small></li>
             </ul>
@@ -102,7 +102,7 @@
                     
                     
                     <a class="sidebar-nav-item"
-                        href="/diaries/" title="Diaries">Diaries <small>(8)</small></a>
+                        href="/diaries/" title="Diaries">Diaries <small>(6)</small></a>
                     <small class="date">- 2020/09/26</small>
                 </li>
                 <hr class="aside-sep">
@@ -139,6 +139,36 @@
     </div>
 </div>
         <div id="content">
+<script>
+    function byDate() {
+        const elByDate = document.querySelector('main#taxonomies div.by-date');
+        const elByDateReverse = document.querySelector('main#taxonomies div.by-date-reverse');
+        const elByDateOption = document.querySelector('main#taxonomies button.by-date');
+        const elByDateReverseOption = document.querySelector('main#taxonomies button.by-date-reverse');
+        if(elByDate.classList.contains('hidden')) {
+            elByDate.classList.remove('hidden');
+            elByDateOption.classList.add('toggle-on');
+        }
+        if(!elByDateReverse.classList.contains('hidden')) {
+            elByDateReverse.classList.add('hidden');
+            elByDateReverseOption.classList.remove('toggle-on');
+        }
+    }
+    function byDateReverse() {
+        const elByDate = document.querySelector('main#taxonomies div.by-date');
+        const elByDateReverse = document.querySelector('main#taxonomies div.by-date-reverse');
+        const elByDateOption = document.querySelector('main#taxonomies button.by-date');
+        const elByDateReverseOption = document.querySelector('main#taxonomies button.by-date-reverse');
+        if(elByDateReverse.classList.contains('hidden')) {
+            elByDateReverse.classList.remove('hidden');
+            elByDateReverseOption.classList.add('toggle-on');
+        }
+        if(!elByDate.classList.contains('hidden')) {
+            elByDate.classList.add('hidden');
+            elByDateOption.classList.remove('toggle-on');
+        }
+    }
+</script>
 <main id="taxonomies">
     
     <div class="taxonomy">
@@ -149,8 +179,14 @@
         </h1>
         <p>총 1 개의 글</p>
     </div>
+    <button class="by-date option" onclick="byDate()">오래된글부터</button>
+    <button class="by-date-reverse option toggle-on" onclick="byDateReverse()">최신글부터</button>
+    <div class="by-date hidden">
+        <ul class="contents">
     
-    <article class="summary card float">
+        <li>
+            <div>  
+                <article class="summary card float">
   
   
   <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/ocean.jpg);"></div>
@@ -179,8 +215,54 @@
   </div>
 
 </article>
-    <hr class="summary-sep" />
+            </div>
+        </li>
+        <hr class="summary-sep" />
     
+</ul>
+
+    </div>
+    <div class="by-date-reverse">
+        <ul class="contents">
+    
+        <li>
+            <div>  
+                <article class="summary card float">
+  
+  
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/ocean.jpg);"></div>
+  
+  <div class="cover-content">
+    <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/">
+      
+      <img class="icon" src="/images/cover-icon.png" />
+      
+      <h2 class="title">휴고 Content Section,content Type 그리고 Archetypes</h2>
+    </a>
+    
+    <div class="post-meta">
+      <i class="far fa-calendar" aria-hidden="true"></i>
+      <span class="date">2020-09-29 | </span>
+      <i class="fas fa-comments" aria-hidden="true"></i>
+      <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/#disqus_thread"></a>
+    </div>
+    <div class="content">이번 글에서는 section, type 그리고 archetypes에 대해 각각 다뤄보겠습니다. Content Sections https://gohugo.io/content-management/sections/ 휴고는 여러분의 컨텐츠와 일치하는 section tree를 생성합니다. …</div>
+    <div class="read-more">
+      <a class="go-to-read" href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/">
+        <span>더 보기</span>
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+  </div>
+
+</article>
+            </div>
+        </li>
+        <hr class="summary-sep" />
+    
+</ul>
+
+    </div>
     <div class="paging">
   
   

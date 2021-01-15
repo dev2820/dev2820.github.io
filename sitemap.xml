@@ -13,7 +13,17 @@
   </url>
   
   <url>
+    <loc>http://dev2820.github.io/subcategories/hugo/</loc>
+    <lastmod>2020-11-15T13:26:07+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2020-11-15T13:26:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/subcategories/</loc>
     <lastmod>2020-11-15T13:26:07+09:00</lastmod>
   </url>
   
@@ -233,27 +243,12 @@
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/diaries/test/test2/</loc>
-    <lastmod>2020-09-26T23:01:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/subcategories/</loc>
-    <lastmod>2020-09-26T21:35:04+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://dev2820.github.io/subcategories/test/</loc>
     <lastmod>2020-09-26T21:35:04+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/diaries/test/test1/</loc>
-    <lastmod>2020-09-26T21:35:04+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/diaries/test/test4/</loc>
+    <loc>http://dev2820.github.io/diaries/test4/</loc>
     <lastmod>2020-09-26T21:35:04+09:00</lastmod>
   </url>
   
@@ -363,18 +358,13 @@
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/hugo_new_theme/</loc>
-    <lastmod>2020-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://dev2820.github.io/nas_project/</loc>
     <lastmod>2020-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/diaries/test/</loc>
-    <lastmod>2020-09-19T00:00:00+00:00</lastmod>
+    <loc>http://dev2820.github.io/hugo_new_theme/</loc>
+    <lastmod>2020-09-19T00:00:00+09:00</lastmod>
   </url>
   
   <url>
@@ -430,11 +420,6 @@
   <url>
     <loc>http://dev2820.github.io/diaries/hugo_test/</loc>
     <lastmod>2020-08-08T15:25:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/categories/test/</loc>
-    <lastmod>2020-07-25T12:19:54+09:00</lastmod>
   </url>
   
   <url>
