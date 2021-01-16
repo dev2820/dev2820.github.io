@@ -6,8 +6,8 @@
     <description>Recent content in 블로그 on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <managingEditor>second28200@naver.com (dev2820)</managingEditor>
-    <webMaster>second28200@naver.com (dev2820)</webMaster>
+    <managingEditor>second28200@gmail.com (dev2820)</managingEditor>
+    <webMaster>second28200@gmail.com (dev2820)</webMaster>
     <lastBuildDate>Sat, 08 Aug 2020 15:25:11 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +17,7 @@
       <title>휴고에서 컨텐츠 지정하고 글 생성해보기</title>
       <link>http://dev2820.github.io/diaries/hugo_test/</link>
       <pubDate>Sat, 08 Aug 2020 15:25:11 +0900</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
+      <author>second28200@gmail.com (dev2820)</author>
       <guid>http://dev2820.github.io/diaries/hugo_test/</guid>
       <description>hugo로 build 하는 법 hugo의 최상위 폴더로 가서 hugo 만 입력하면 됩니다. 내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &amp;lsquo;blog/hugo&amp;rsquo; 여기 서 빌드하면 됩니다. hugo</description>
     </item>

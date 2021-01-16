@@ -25,12 +25,14 @@
     <link rel="icon" href="http://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
     <link rel="canonical" href="http://dev2820.github.io/">
     <link rel="alternate" type="application/rss+xml" href="http://dev2820.github.io/index.xml" title="dev2820 개발일지" />
+    <link rel="alternate" type="application/json" href="http://dev2820.github.io/index.json" title="dev2820 개발일지" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
     <link rel="stylesheet" href="/css/styles.css">
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     
     <script src="/js/default.js"></script>
@@ -45,14 +47,8 @@
       </a>
     </div>
     <div class="burger">
-      <div class="container">
-        <div class="input-container">
-          <input id="search" type="text" placeholder="Search...">
-        </div>
-        <div class="icon" onclick="toggleSearch(true)">
-          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-        </div>
-      </div>
+      <button onclick="event.stopPropagation(); toggleSearch(true)">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
       </button>
       <button onclick="event.stopPropagation(); toggleAside(true)">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
@@ -138,6 +134,28 @@
             </ul>
         </nav>
     </div>
+</div><script>
+    readTextFile("/lunr.json", function(docs){
+        let data = JSON.parse(docs);
+        console.log(data);
+    });
+    var idx = lunr(function () {
+        this.ref('title')
+        this.field('content')
+        
+        documents.forEach(function (doc) {
+            this.add(doc)
+        }, this)
+    })
+    
+    const result = idx.search("hugo")
+    console.log(result);
+</script>
+<div id="search" class="hidden">
+    search
+    <button onclick="toggleSearch(false)">
+        <i class="fa fa-times fa-3x"></i>
+    </button>
 </div>
 
 <header id="home-head" class="card" style="background-image:url(/images/space.jpg);">
@@ -211,7 +229,6 @@
       </a>
     </div>
   </div>
-
 </article>
     <hr class="summary-sep" />
     
@@ -242,7 +259,6 @@
       </a>
     </div>
   </div>
-
 </article>
     <hr class="summary-sep" />
     
@@ -273,7 +289,6 @@
       </a>
     </div>
   </div>
-
 </article>
     <hr class="summary-sep" />
     
@@ -304,7 +319,6 @@
       </a>
     </div>
   </div>
-
 </article>
     <hr class="summary-sep" />
     
@@ -335,7 +349,6 @@
       </a>
     </div>
   </div>
-
 </article>
     <hr class="summary-sep" />
     
@@ -366,7 +379,6 @@
       </a>
     </div>
   </div>
-
 </article>
     <hr class="summary-sep" />
     
@@ -397,7 +409,6 @@
       </a>
     </div>
   </div>
-
 </article>
     <hr class="summary-sep" />
     

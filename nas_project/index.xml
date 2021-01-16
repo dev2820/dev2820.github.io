@@ -6,9 +6,9 @@
     <description>Recent content in Nas_project on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <managingEditor>second28200@naver.com (dev2820)</managingEditor>
-    <webMaster>second28200@naver.com (dev2820)</webMaster>
-    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <managingEditor>second28200@gmail.com (dev2820)</managingEditor>
+    <webMaster>second28200@gmail.com (dev2820)</webMaster>
+    <lastBuildDate>Sat, 19 Sep 2020 12:19:54 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/nas_project/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +17,7 @@
       <title>NAS 용 SPA만들기 (0)</title>
       <link>http://dev2820.github.io/nas_project/home_server/</link>
       <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
+      <author>second28200@gmail.com (dev2820)</author>
       <guid>http://dev2820.github.io/nas_project/home_server/</guid>
       <description>글머리 본디 이 글은 자작NAS를 만드는 전반적인 내용을 모두 담으려고 했으나 이 블로그를 자작NAS 설정을 마치고서야 집밖에서 SSH로 연결해 글을 쓰는 중이라 사</description>
     </item>

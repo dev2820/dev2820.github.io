@@ -6,8 +6,8 @@
     <description>Recent content in taxonomy on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <managingEditor>second28200@naver.com (dev2820)</managingEditor>
-    <webMaster>second28200@naver.com (dev2820)</webMaster>
+    <managingEditor>second28200@gmail.com (dev2820)</managingEditor>
+    <webMaster>second28200@gmail.com (dev2820)</webMaster>
     <lastBuildDate>Wed, 30 Sep 2020 19:06:31 +0900</lastBuildDate>
     
 	<atom:link href="http://dev2820.github.io/tags/taxonomy/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +17,7 @@
       <title>휴고 Taxonomies</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/</link>
       <pubDate>Wed, 30 Sep 2020 19:06:31 +0900</pubDate>
-      <author>second28200@naver.com (dev2820)</author>
+      <author>second28200@gmail.com (dev2820)</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/</guid>
       <description>taxonomy, 즉 분류입니다. 컨텐츠를 어떻게 분류하고 그룹화하는지에 대해 다룹니다. https://gohugo.io/content-management/taxonomies/ What is a Taxonomy? 휴고는 컨텐츠를 그룹화하는 taxonomies 라는 도우미를 포함하고 있습니다. taxo</description>
     </item>
