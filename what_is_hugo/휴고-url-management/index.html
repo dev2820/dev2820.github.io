@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <div id="loader">
-        loading...
+        <span class="description">
+            loading...
+        </span>
     </div><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,7 +64,7 @@
   <div class="progress-bar">
     <span class="progress"></span>
   </div>
-</div><div id="aside" class="card hidden">
+</div><aside id="aside" class="card hidden">
     <div class="top">
         <button onclick="event.stopPropagation(); toggleAside(false)">
             <i class="fa fa-times fa-3x"></i>
@@ -138,31 +140,9 @@
             </ul>
         </nav>
     </div>
-</div><script>
-    readTextFile("/lunr.json", function(docs){
-        let documents = JSON.parse(docs);
-        var idx = lunr(function () {
-            this.ref('title')
-            this.field('content')
-            
-            documents.forEach(function (doc) {
-                this.add(doc)
-            }, this)
-        })
+</aside>
 
-        const result = idx.search("hugo")
-        console.log(result);
-    });
-</script>
-<div id="search" class="hidden">
-    search
-    <button onclick="toggleSearch(false)">
-        <i class="fa fa-times fa-3x"></i>
-    </button>
-</div>
-        <div id="content">
-
-<header id="banner" style="background-image:url(/images/ocean.jpg);">
+<header id="single-header" style="background-image:url(/images/ocean.jpg);">
 
   <div class="title appear-500ms">
     <h1 id="title">휴고 URL Management</h1>
@@ -195,13 +175,16 @@
     
   </div>
 </header>
-<section id="main">
-  <div class="left">
-  </div>
-  <div class="center appear-1000ms">
-    <div>
-          <article class="content">
-            <p>이번글은 휴고가 지원하는 permalinks, aliases, link canonicalization 그리고 절대경로와 상대경로를 다루는 옵션들에 대해 다룹니다.</p>
+
+<main id="single-main">
+  <section id="content">
+    <div class="left">
+      
+    </div>
+    <div class="center appear-1000ms">
+      <div>
+            <article class="content">
+              <p>이번글은 휴고가 지원하는 permalinks, aliases, link canonicalization 그리고 절대경로와 상대경로를 다루는 옵션들에 대해 다룹니다.</p>
 <p><a href="https://gohugo.io/content-management/urls/">https://gohugo.io/content-management/urls/</a></p>
 <h2 id="permalinks">Permalinks</h2>
 <p>휴고가 여러분의 사이트를 build 하게 되면 생성되는 웹사이트는 <code>public/</code> 디렉토리에 생성됩니다. 그러나 어느 디렉토리에 웹사이트를 build 할지는 <code>config</code>파일의 <code>publishDir</code> 변수값을 바꿔 다른 디렉토리에서 사이트가 build 되도록 설정해 줄 수 있습니다.</p>
@@ -440,11 +423,11 @@ content/posts/post-1.md
 <p>기본적으로 휴고의 모든 상대 URL은 바뀌지 않습니다. 만약 <code>config</code> 파일의 <code>relativeURLs</code> 변수를 <code>true</code>로 설정하면 여러분의 사이트는 상대 주소를 현재주소에 기반에 바꿔줄 겁니다.</p>
 <p>예를 들어 <code>/posts/first/</code> 페이지에 포함된 <code>/about/</code> 링크는 <code>../../about</code>으로 변경됩니다.</p>
 
-          </article>
+            </article>
+      </div>
     </div>
-  </div>
-  <div class="right">
-    <script>
+    <div class="right">
+      <script>
     let toggle = true;
     function toggleTable() {
         if (toggle) {
@@ -495,11 +478,11 @@ content/posts/post-1.md
 </nav>
     </div>
 </div>    
-  </div>
-</section>
-<aside id="meta">
-  <div class="center">
-    <nav class="section-move">
+    </div>
+  </section>
+  <aside id="meta">
+    <div class="center">
+      <nav class="section-move">
     
       <div class="previous card float"> 
         <i class="fas fa-angle-double-left icon"></i>
@@ -520,8 +503,8 @@ content/posts/post-1.md
     
 </nav>
   
-    
-    <ul class="tags">
+      
+      <ul class="tags">
     
         <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
     
@@ -531,7 +514,7 @@ content/posts/post-1.md
     
 </ul>
 
-    <div class="profile-in-article">
+      <div class="profile-in-article">
     <div class="profile-image">
         
         <img src="/images/ocean.jpg">
@@ -546,7 +529,7 @@ content/posts/post-1.md
 </div>
     </div>
 </div>
-    <div class="related-content">
+      <div class="related-content">
 	<div class="title">
 		<p>&#34;what_is_hugo&#34; 카테고리의 다른 글</p>
 		
@@ -571,7 +554,7 @@ content/posts/post-1.md
 	</ul>
 	
 </div>
-    <div id="disqus_thread"></div>
+      <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -591,11 +574,11 @@ content/posts/post-1.md
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-</aside>
+    </div>
+  </aside>
+</main>
 <script src="/js/cardClassControl.js"></script>
 
-        </div>
     <footer id="footer">
 
     <button onclick="scrollToTop()" class="scroll-to-top card">

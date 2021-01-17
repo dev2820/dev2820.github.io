@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <div id="loader">
-        loading...
+        <span class="description">
+            loading...
+        </span>
     </div><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +58,7 @@
   <div class="progress-bar">
     <span class="progress"></span>
   </div>
-</div><div id="aside" class="card hidden">
+</div><aside id="aside" class="card hidden">
     <div class="top">
         <button onclick="event.stopPropagation(); toggleAside(false)">
             <i class="fa fa-times fa-3x"></i>
@@ -132,29 +134,15 @@
             </ul>
         </nav>
     </div>
-</div><script>
-    readTextFile("/lunr.json", function(docs){
-        let documents = JSON.parse(docs);
-        var idx = lunr(function () {
-            this.ref('title')
-            this.field('content')
-            
-            documents.forEach(function (doc) {
-                this.add(doc)
-            }, this)
-        })
-
-        const result = idx.search("hugo")
-        console.log(result);
-    });
-</script>
-<div id="search" class="hidden">
-    search
-    <button onclick="toggleSearch(false)">
-        <i class="fa fa-times fa-3x"></i>
-    </button>
+</aside>
+<header>
+    <div class="center">
+        <h1 class="title">Section: Nas_project</h1>
+        <div class="description"><p>안쓰는 노트북을 쓰는 NAS 제작 프로젝트 입니다.</p>
 </div>
-        <div id="content">
+    </div>
+</header>
+
 <script>
     function byDate() {
         const elByDate = document.querySelector('main#sections div.by-date');
@@ -186,13 +174,11 @@
     }
 </script>
 <main id="sections">
-    <h1 class="title">Section: Nas_project</h1>
-    <div class="description"><p>안쓰는 노트북을 쓰는 NAS 제작 프로젝트 입니다.</p>
-</div>
-    <button class="by-date option" onclick="byDate()">오래된글부터</button>
-    <button class="by-date-reverse option toggle-on" onclick="byDateReverse()">최신글부터</button>
-    <div class="by-date hidden">
-        <ul class="contents">
+    <div class="center">
+        <button class="by-date option" onclick="byDate()">오래된글부터</button>
+        <button class="by-date-reverse option toggle-on" onclick="byDateReverse()">최신글부터</button>
+        <div class="by-date hidden">
+            <ul class="contents">
     
         <li>
             <div>  
@@ -230,9 +216,9 @@
     
 </ul>
 
-    </div>
-    <div class="by-date-reverse">
-        <ul class="contents">
+        </div>
+        <div class="by-date-reverse">
+            <ul class="contents">
     
         <li>
             <div>  
@@ -269,8 +255,8 @@
         <hr class="summary-sep" />
     
 </ul>
-    </div>
-    <div class="paging">
+        </div>
+        <div class="paging">
   
   
   <span class="page">
@@ -280,9 +266,9 @@
   
 </div>
 
+    </div>
 </main>
 
-        </div>
     <footer id="footer" class="relative-small">
 
     <button onclick="scrollToTop()" class="scroll-to-top card">

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <div id="loader">
-        loading...
+        <span class="description">
+            loading...
+        </span>
     </div><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +58,7 @@
   <div class="progress-bar">
     <span class="progress"></span>
   </div>
-</div><div id="aside" class="card hidden">
+</div><aside id="aside" class="card hidden">
     <div class="top">
         <button onclick="event.stopPropagation(); toggleAside(false)">
             <i class="fa fa-times fa-3x"></i>
@@ -132,29 +134,7 @@
             </ul>
         </nav>
     </div>
-</div><script>
-    readTextFile("/lunr.json", function(docs){
-        let documents = JSON.parse(docs);
-        var idx = lunr(function () {
-            this.ref('title')
-            this.field('content')
-            
-            documents.forEach(function (doc) {
-                this.add(doc)
-            }, this)
-        })
-
-        const result = idx.search("hugo")
-        console.log(result);
-    });
-</script>
-<div id="search" class="hidden">
-    search
-    <button onclick="toggleSearch(false)">
-        <i class="fa fa-times fa-3x"></i>
-    </button>
-</div>
-        <div id="content">
+</aside>
 <main id="list">
     <article>
         <header>
@@ -175,7 +155,6 @@
     </ul>
 </main>
 
-        </div>
     <footer id="footer" class="relative-small">
 
     <button onclick="scrollToTop()" class="scroll-to-top card">

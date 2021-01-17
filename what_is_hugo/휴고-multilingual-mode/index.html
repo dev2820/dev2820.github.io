@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <div id="loader">
-        loading...
+        <span class="description">
+            loading...
+        </span>
     </div><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,7 +66,7 @@
   <div class="progress-bar">
     <span class="progress"></span>
   </div>
-</div><div id="aside" class="card hidden">
+</div><aside id="aside" class="card hidden">
     <div class="top">
         <button onclick="event.stopPropagation(); toggleAside(false)">
             <i class="fa fa-times fa-3x"></i>
@@ -140,31 +142,9 @@
             </ul>
         </nav>
     </div>
-</div><script>
-    readTextFile("/lunr.json", function(docs){
-        let documents = JSON.parse(docs);
-        var idx = lunr(function () {
-            this.ref('title')
-            this.field('content')
-            
-            documents.forEach(function (doc) {
-                this.add(doc)
-            }, this)
-        })
+</aside>
 
-        const result = idx.search("hugo")
-        console.log(result);
-    });
-</script>
-<div id="search" class="hidden">
-    search
-    <button onclick="toggleSearch(false)">
-        <i class="fa fa-times fa-3x"></i>
-    </button>
-</div>
-        <div id="content">
-
-<header id="banner" style="background-image:url(/images/ocean.jpg);">
+<header id="single-header" style="background-image:url(/images/ocean.jpg);">
 
   <div class="title appear-500ms">
     <h1 id="title">휴고 Multilingual Mode</h1>
@@ -197,13 +177,16 @@
     
   </div>
 </header>
-<section id="main">
-  <div class="left">
-  </div>
-  <div class="center appear-1000ms">
-    <div>
-          <article class="content">
-            <p>이번글은 휴고 사이트의 다중언어지원에 대한 글입니다.</p>
+
+<main id="single-main">
+  <section id="content">
+    <div class="left">
+      
+    </div>
+    <div class="center appear-1000ms">
+      <div>
+            <article class="content">
+              <p>이번글은 휴고 사이트의 다중언어지원에 대한 글입니다.</p>
 <p><a href="https://gohugo.io/content-management/multilingual/">https://gohugo.io/content-management/multilingual/</a></p>
 <h2 id="configure-languages">Configure Languages</h2>
 <p>다음 예제는 다중언어지원을 위한 <code>config</code> 파일입니다.</p>
@@ -713,11 +696,11 @@ weight = <span style="color:#bd93f9">0</span>
 <p>설정이 되어있지 않은 언어는 default language를 사용합니다. default value가 없다면 빈 string이 보일겁니다.</p>
 <p><code>config</code>파일에서 <code>enableMissingTranslationPlaceholders</code>를 <code>true</code>로 설정하면 찾을 수 없는 언어 번역은<code>[i18n] identifier</code>에서 string placeholder를 찾아 사용합니다. <code>identifier</code>는 찾을 수 없는 언어 id 입니다.</p>
 
-          </article>
+            </article>
+      </div>
     </div>
-  </div>
-  <div class="right">
-    <script>
+    <div class="right">
+      <script>
     let toggle = true;
     function toggleTable() {
         if (toggle) {
@@ -782,11 +765,11 @@ weight = <span style="color:#bd93f9">0</span>
 </nav>
     </div>
 </div>    
-  </div>
-</section>
-<aside id="meta">
-  <div class="center">
-    <nav class="section-move">
+    </div>
+  </section>
+  <aside id="meta">
+    <div class="center">
+      <nav class="section-move">
     
       <div class="previous card float"> 
         <i class="fas fa-angle-double-left icon"></i>
@@ -807,8 +790,8 @@ weight = <span style="color:#bd93f9">0</span>
     
 </nav>
   
-    
-    <ul class="tags">
+      
+      <ul class="tags">
     
         <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
     
@@ -820,7 +803,7 @@ weight = <span style="color:#bd93f9">0</span>
     
 </ul>
 
-    <div class="profile-in-article">
+      <div class="profile-in-article">
     <div class="profile-image">
         
         <img src="/images/ocean.jpg">
@@ -835,7 +818,7 @@ weight = <span style="color:#bd93f9">0</span>
 </div>
     </div>
 </div>
-    <div class="related-content">
+      <div class="related-content">
 	<div class="title">
 		<p>&#34;what_is_hugo&#34; 카테고리의 다른 글</p>
 		
@@ -860,7 +843,7 @@ weight = <span style="color:#bd93f9">0</span>
 	</ul>
 	
 </div>
-    <div id="disqus_thread"></div>
+      <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -880,11 +863,11 @@ weight = <span style="color:#bd93f9">0</span>
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-</aside>
+    </div>
+  </aside>
+</main>
 <script src="/js/cardClassControl.js"></script>
 
-        </div>
     <footer id="footer">
 
     <button onclick="scrollToTop()" class="scroll-to-top card">

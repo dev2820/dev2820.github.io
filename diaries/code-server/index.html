@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <div id="loader">
-        loading...
+        <span class="description">
+            loading...
+        </span>
     </div><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,7 +64,7 @@
   <div class="progress-bar">
     <span class="progress"></span>
   </div>
-</div><div id="aside" class="card hidden">
+</div><aside id="aside" class="card hidden">
     <div class="top">
         <button onclick="event.stopPropagation(); toggleAside(false)">
             <i class="fa fa-times fa-3x"></i>
@@ -138,31 +140,9 @@
             </ul>
         </nav>
     </div>
-</div><script>
-    readTextFile("/lunr.json", function(docs){
-        let documents = JSON.parse(docs);
-        var idx = lunr(function () {
-            this.ref('title')
-            this.field('content')
-            
-            documents.forEach(function (doc) {
-                this.add(doc)
-            }, this)
-        })
+</aside>
 
-        const result = idx.search("hugo")
-        console.log(result);
-    });
-</script>
-<div id="search" class="hidden">
-    search
-    <button onclick="toggleSearch(false)">
-        <i class="fa fa-times fa-3x"></i>
-    </button>
-</div>
-        <div id="content">
-
-<header id="banner" style="background-image:url(/images/ocean.jpg);">
+<header id="single-header" style="background-image:url(/images/ocean.jpg);">
 
   <div class="title appear-500ms">
     <h1 id="title">웹으로 즐기는 코딩 code-server</h1>
@@ -195,13 +175,16 @@
     
   </div>
 </header>
-<section id="main">
-  <div class="left">
-  </div>
-  <div class="center appear-1000ms">
-    <div>
-          <article class="content">
-            <p>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &lsquo;code-server&rsquo; 라는게 있는 것을 알아서 지금 도커로 &lsquo;code-server'를 설치하고 돌려보는 중입니다. 지금 이 글도 &lsquo;code-server'로 쓰는 중&hellip;</p>
+
+<main id="single-main">
+  <section id="content">
+    <div class="left">
+      
+    </div>
+    <div class="center appear-1000ms">
+      <div>
+            <article class="content">
+              <p>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &lsquo;code-server&rsquo; 라는게 있는 것을 알아서 지금 도커로 &lsquo;code-server'를 설치하고 돌려보는 중입니다. 지금 이 글도 &lsquo;code-server'로 쓰는 중&hellip;</p>
 <p>대충 설치 방법은 이렇습니다.</p>
 <ol>
 <li>code-server를 다운받는다.</li>
@@ -229,11 +212,11 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
 </ul>
 <p>그 동안 ssh에 서버 연결해서 vim으로 코딩을 했는데 드디어 이 그지같은 환경에서 벗어날 수 있겠군요 ㅠㅠ 깃헙에 star도 이미 35000개나 달렸더라구요. 응당 받을만합니다. 뭔가 기대하지 않고 설치해서 써봤는데 기대 이상이라 기분이 너무 좋네요. 이상 웹에서 즐기는 vscode, code-server 였습니다.</p>
 
-          </article>
+            </article>
+      </div>
     </div>
-  </div>
-  <div class="right">
-    <script>
+    <div class="right">
+      <script>
     let toggle = true;
     function toggleTable() {
         if (toggle) {
@@ -266,11 +249,11 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
 </nav>
     </div>
 </div>    
-  </div>
-</section>
-<aside id="meta">
-  <div class="center">
-    <nav class="section-move">
+    </div>
+  </section>
+  <aside id="meta">
+    <div class="center">
+      <nav class="section-move">
     
       <div class="previous card float"> 
         <i class="fas fa-angle-double-left icon"></i>
@@ -291,8 +274,8 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
     
 </nav>
   
-    
-    <ul class="tags">
+      
+      <ul class="tags">
     
         <li><a href="http://dev2820.github.io/tags/code-server/"># code-server</a></li>
     
@@ -302,7 +285,7 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
     
 </ul>
 
-    <div class="profile-in-article">
+      <div class="profile-in-article">
     <div class="profile-image">
         
         <img src="/images/ocean.jpg">
@@ -317,7 +300,7 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
 </div>
     </div>
 </div>
-    <div class="related-content">
+      <div class="related-content">
 	<div class="title">
 		<p>&#34;Diaries&#34; 카테고리의 다른 글</p>
 		
@@ -326,7 +309,7 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
 	
 	
 </div>
-    <div id="disqus_thread"></div>
+      <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -346,11 +329,11 @@ extension도 설치 가능하고 bash쉘도 되고 그냥 다 됩니다.</p>
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-</aside>
+    </div>
+  </aside>
+</main>
 <script src="/js/cardClassControl.js"></script>
 
-        </div>
     <footer id="footer">
 
     <button onclick="scrollToTop()" class="scroll-to-top card">

@@ -7,16 +7,17 @@
     </div><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Page not found  | dev2820 개발일지</title>
+    <title>Search  | dev2820 개발일지</title>
     <meta name="description"
-        content="dev2820의 개발일지 저장소 '404 Page not found'을 한 번 살펴보세요.">
-    <meta property="og:title" content="404 Page not found">
+        content="dev2820의 개발일지 저장소 'Search'을 한 번 살펴보세요.">
+    <meta property="og:title" content="Search">
     
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2021-01-17">
     
     <meta property="og:description"
-        content="dev2820의 개발일지 저장소 '404 Page not found'을 한 번 살펴보세요.">
-    <meta property="og:url" content="http://dev2820.github.io/404.html">
+        content="dev2820의 개발일지 저장소 'Search'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/search/">
     <meta property="og:site_name" content="dev2820 개발일지">
     
     <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
@@ -24,7 +25,7 @@
     
     
     <link rel="icon" href="http://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
-    <link rel="canonical" href="http://dev2820.github.io/404.html">
+    <link rel="canonical" href="http://dev2820.github.io/search/">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
@@ -134,24 +135,49 @@
         </nav>
     </div>
 </aside>
-<main id="notFound">
-  <div class="error-cover">
-    
-    <img src="/images/404NotFound.png"/>
-    
-  </div>
-  <div class="error-content">
-    <div class="error-code">404</div>
-    <div class="error-message">페이지를 찾을 수 없습니다.</div>
-    <div class="error-description">링크가 변경되었을 수 있습니다.</div>
-    <div class="go-other-page">
-      <button id="title" onclick='goToUrl("\/");'><a href="/">Go Home</a></button>
-      <button onclick="javascript:history.back();"><a href="javascript:history.back();">Go Back</a></button>
-    </div>
-  </div>
-</main>
 
-    <footer id="footer" class="relative-small">
+<header id="search-header">
+    <div class="center">
+        <h1>Search</h1>
+    </div>
+</header>
+
+
+<main id="search-main">
+    <div class="center">
+        <div class="search-bar">
+            <input id="search-input" type="text" placeholder="search..." name="search">
+            <i class="fas fa-search icon"></i>
+            <i class="fas fa-times icon hidden"></i>
+        </div>
+        <div id="search-result">
+        </div>
+    </div>
+</main>
+<script>
+    let idx = null;
+    readTextFile("/lunr.json", function(docs){
+        let documents = JSON.parse(docs);
+        idx = lunr(function () {
+            this.ref('title')
+            this.field('content')
+            
+            documents.forEach(function (doc) {
+                this.add(doc)
+            }, this)
+        })
+    });
+    document.getElementById('search-input').addEventListener('change',function (event){
+        if(idx){
+            const result = idx.search(event.target.value);
+            const resultCount = document.createElement('p');
+            resultCount.innerHTML = result.length;
+            document.getElementById('search-result').appendChild(resultCount);
+        }
+    })
+</script>
+
+    <footer id="footer">
 
     <button onclick="scrollToTop()" class="scroll-to-top card">
       <i class="fa fa-angle-double-up"></i>

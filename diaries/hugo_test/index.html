@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <div id="loader">
-        loading...
+        <span class="description">
+            loading...
+        </span>
     </div><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,7 +70,7 @@
   <div class="progress-bar">
     <span class="progress"></span>
   </div>
-</div><div id="aside" class="card hidden">
+</div><aside id="aside" class="card hidden">
     <div class="top">
         <button onclick="event.stopPropagation(); toggleAside(false)">
             <i class="fa fa-times fa-3x"></i>
@@ -144,31 +146,9 @@
             </ul>
         </nav>
     </div>
-</div><script>
-    readTextFile("/lunr.json", function(docs){
-        let documents = JSON.parse(docs);
-        var idx = lunr(function () {
-            this.ref('title')
-            this.field('content')
-            
-            documents.forEach(function (doc) {
-                this.add(doc)
-            }, this)
-        })
+</aside>
 
-        const result = idx.search("hugo")
-        console.log(result);
-    });
-</script>
-<div id="search" class="hidden">
-    search
-    <button onclick="toggleSearch(false)">
-        <i class="fa fa-times fa-3x"></i>
-    </button>
-</div>
-        <div id="content">
 
-  
 
   <div class="title appear-500ms">
     <h1 id="title">휴고에서 컨텐츠 지정하고 글 생성해보기</h1>
@@ -201,13 +181,16 @@
     
   </div>
 </header>
-<section id="main">
-  <div class="left">
-  </div>
-  <div class="center appear-1000ms">
-    <div>
-          <article class="content">
-            <h2 id="hugo로-build-하는-법">hugo로 build 하는 법</h2>
+
+<main id="single-main">
+  <section id="content">
+    <div class="left">
+      
+    </div>
+    <div class="center appear-1000ms">
+      <div>
+            <article class="content">
+              <h2 id="hugo로-build-하는-법">hugo로 build 하는 법</h2>
 <p>hugo의 최상위 폴더로 가서 <code>hugo</code> 만 입력하면 됩니다.</p>
 <p>내가 지금 hugo를 blog 폴더 안에 만들어 놨으니 대충 &lsquo;blog/hugo&rsquo; 여기 서 빌드하면 됩니다. hugo의 하위 폴더에서는 hugo 명령어가 먹지 않으니 주의</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -313,11 +296,11 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
 </div><p>위 명령을 입력하면 localhost:1313 위치에 임시 서버가 오픈되어 작성할 글을 테마를 적용하여 미리볼 수 있습니다. 이 임시서버에 보여주는 컨텐츠는 <code>draft</code>가 <code>true</code>로 되어있어도 글이 보여 글을 업로드 하기전에 볼 수 있습니다.</p>
 <p>어떤 테마로 블로그를 만들어 보여줄지는 최상위 폴더의 config.toml에 theme 값을 뭘로 해주느냐에 따라 결정됩니다.</p>
 
-          </article>
+            </article>
+      </div>
     </div>
-  </div>
-  <div class="right">
-    <script>
+    <div class="right">
+      <script>
     let toggle = true;
     function toggleTable() {
         if (toggle) {
@@ -356,11 +339,11 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
 </nav>
     </div>
 </div>    
-  </div>
-</section>
-<aside id="meta">
-  <div class="center">
-    <nav class="section-move">
+    </div>
+  </section>
+  <aside id="meta">
+    <div class="center">
+      <nav class="section-move">
     
       <div class="previous card float"> 
         <i class="fas fa-angle-double-left icon"></i>
@@ -381,8 +364,8 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
     
 </nav>
   
-    
-    <ul class="tags">
+      
+      <ul class="tags">
     
         <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
     
@@ -398,7 +381,7 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
     
 </ul>
 
-    <div class="profile-in-article">
+      <div class="profile-in-article">
     <div class="profile-image">
         
         <img src="/images/ocean.jpg">
@@ -413,7 +396,7 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
 </div>
     </div>
 </div>
-    <div class="related-content">
+      <div class="related-content">
 	<div class="title">
 		<p>&#34;Diaries&#34; 카테고리의 다른 글</p>
 		
@@ -430,7 +413,7 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
 	</ul>
 	
 </div>
-    <div id="disqus_thread"></div>
+      <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -450,11 +433,11 @@ draft: <span style="color:#8be9fd;font-style:italic">true</span>
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-</aside>
+    </div>
+  </aside>
+</main>
 <script src="/js/cardClassControl.js"></script>
 
-        </div>
     <footer id="footer">
 
     <button onclick="scrollToTop()" class="scroll-to-top card">

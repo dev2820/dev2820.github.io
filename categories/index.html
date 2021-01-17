@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <div id="loader">
-        loading...
+        <span class="description">
+            loading...
+        </span>
     </div><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +58,7 @@
   <div class="progress-bar">
     <span class="progress"></span>
   </div>
-</div><div id="aside" class="card hidden">
+</div><aside id="aside" class="card hidden">
     <div class="top">
         <button onclick="event.stopPropagation(); toggleAside(false)">
             <i class="fa fa-times fa-3x"></i>
@@ -132,185 +134,169 @@
             </ul>
         </nav>
     </div>
-</div><script>
-    readTextFile("/lunr.json", function(docs){
-        let documents = JSON.parse(docs);
-        var idx = lunr(function () {
-            this.ref('title')
-            this.field('content')
-            
-            documents.forEach(function (doc) {
-                this.add(doc)
-            }, this)
-        })
+</aside>
+<header id="category-header">
+  <div class="center">
+    <h1 class="title">카테고리</h1>
+    <p class="description">카테고리 별 글을 볼 수 있습니다. 최신 글은 날짜를 클릭하여 바로 읽을 수 있습니다.</p>
+  </div>
+</header>
 
-        const result = idx.search("hugo")
-        console.log(result);
-    });
-</script>
-<div id="search" class="hidden">
-    search
-    <button onclick="toggleSearch(false)">
-        <i class="fa fa-times fa-3x"></i>
-    </button>
-</div>
-        <div id="content">
-<div id="category-term">
-  <h1 class="title">카테고리</h1>
-  <p class="description">카테고리 별 글을 볼 수 있습니다. 최신 글은 날짜를 클릭하여 바로 읽을 수 있습니다.</p>
-  <ul>
-    
-    
-    
-    
-    <li class="term">
-      <div class="content">
-        <div class="title">
-          <a href="http://dev2820.github.io/categories/hugo_new_theme">
-            
-              
-                <div class="cover"></div>
-              
-            
-            <p class="name">Hugo new theme</p> 
-            <div class="count">
-              <span class="num">3</span><span class="unit">posts</span>
-            </div>
-          </a>
-          <hr/>
-          <hr/>
-        </div>
-        <div class="subcategories">
-          
-          <ul>
-          
-            
-          
-            
-          
-          </ul>
-        </div>
-      </div>
-    </li>
-    
-    <li class="term">
-      <div class="content">
-        <div class="title">
-          <a href="http://dev2820.github.io/categories/nas_project">
-            
+<main id="category-term">
+  <div class="center">
+    <ul>
+      
+      
+      
+      
+      <li class="term">
+        <div class="content">
+          <div class="title">
+            <a href="http://dev2820.github.io/categories/hugo_new_theme">
               
                 
-                  <div class="cover" style="background-image:url(/nas_project/project-icon.png);"></div>
-                
-              
-            
-            <p class="name">Nas project</p> 
-            <div class="count">
-              <span class="num">1</span><span class="unit">posts</span>
-            </div>
-          </a>
-          <hr/>
-          <hr/>
-        </div>
-        <div class="subcategories">
-          
-          <ul>
-          
-            
-          
-            
-          
-          </ul>
-        </div>
-      </div>
-    </li>
-    
-    <li class="term">
-      <div class="content">
-        <div class="title">
-          <a href="http://dev2820.github.io/categories/what_is_hugo">
-            
-              
-                
-                  <div class="cover" style="background-image:url(/what_is_hugo/%EC%95%84%EC%9D%B4%EC%BD%98-code.png);"></div>
-                
-              
-            
-            <p class="name">What is hugo</p> 
-            <div class="count">
-              <span class="num">21</span><span class="unit">posts</span>
-            </div>
-          </a>
-          <hr/>
-          <hr/>
-        </div>
-        <div class="subcategories">
-          
-          <ul>
-          
-            
-              <li class="term">
-                <a href="http://dev2820.github.io/subcategories/hugo">
                   <div class="cover"></div>
-                  <p class="name">Hugo</p>
-                  <div class="count">
-                    <span class="num">21</span><span class="unit">posts</span>
-                  </div>
-                </a>
-              </li>
+                
+              
+              <p class="name">Hugo new theme</p> 
+              <div class="count">
+                <span class="num">3</span><span class="unit">posts</span>
+              </div>
+            </a>
+            <hr/>
+            <hr/>
+          </div>
+          <div class="subcategories">
             
-          
-            
-          
-          </ul>
-        </div>
-      </div>
-    </li>
-    
-    <li class="term">
-      <div class="content">
-        <div class="title">
-          <a href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81">
+            <ul>
             
               
-                <div class="cover"></div>
+            
               
             
-            <p class="name">일상</p> 
-            <div class="count">
-              <span class="num">6</span><span class="unit">posts</span>
-            </div>
-          </a>
-          <hr/>
-          <hr/>
+            </ul>
+          </div>
         </div>
-        <div class="subcategories">
-          
-          <ul>
-          
+      </li>
+      
+      <li class="term">
+        <div class="content">
+          <div class="title">
+            <a href="http://dev2820.github.io/categories/nas_project">
+              
+                
+                  
+                    <div class="cover" style="background-image:url(/nas_project/project-icon.png);"></div>
+                  
+                
+              
+              <p class="name">Nas project</p> 
+              <div class="count">
+                <span class="num">1</span><span class="unit">posts</span>
+              </div>
+            </a>
+            <hr/>
+            <hr/>
+          </div>
+          <div class="subcategories">
             
-          
+            <ul>
             
-              <li class="term">
-                <a href="http://dev2820.github.io/subcategories/test">
+              
+            
+              
+            
+            </ul>
+          </div>
+        </div>
+      </li>
+      
+      <li class="term">
+        <div class="content">
+          <div class="title">
+            <a href="http://dev2820.github.io/categories/what_is_hugo">
+              
+                
+                  
+                    <div class="cover" style="background-image:url(/what_is_hugo/%EC%95%84%EC%9D%B4%EC%BD%98-code.png);"></div>
+                  
+                
+              
+              <p class="name">What is hugo</p> 
+              <div class="count">
+                <span class="num">21</span><span class="unit">posts</span>
+              </div>
+            </a>
+            <hr/>
+            <hr/>
+          </div>
+          <div class="subcategories">
+            
+            <ul>
+            
+              
+                <li class="term">
+                  <a href="http://dev2820.github.io/subcategories/hugo">
+                    <div class="cover"></div>
+                    <p class="name">Hugo</p>
+                    <div class="count">
+                      <span class="num">21</span><span class="unit">posts</span>
+                    </div>
+                  </a>
+                </li>
+              
+            
+              
+            
+            </ul>
+          </div>
+        </div>
+      </li>
+      
+      <li class="term">
+        <div class="content">
+          <div class="title">
+            <a href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81">
+              
+                
                   <div class="cover"></div>
-                  <p class="name">Test</p>
-                  <div class="count">
-                    <span class="num">2</span><span class="unit">posts</span>
-                  </div>
-                </a>
-              </li>
+                
+              
+              <p class="name">일상</p> 
+              <div class="count">
+                <span class="num">6</span><span class="unit">posts</span>
+              </div>
+            </a>
+            <hr/>
+            <hr/>
+          </div>
+          <div class="subcategories">
             
-          
-          </ul>
+            <ul>
+            
+              
+            
+              
+                <li class="term">
+                  <a href="http://dev2820.github.io/subcategories/test">
+                    <div class="cover"></div>
+                    <p class="name">Test</p>
+                    <div class="count">
+                      <span class="num">2</span><span class="unit">posts</span>
+                    </div>
+                  </a>
+                </li>
+              
+            
+            </ul>
+          </div>
         </div>
-      </div>
-    </li>
-    
-  </ul>
-</div>
+      </li>
+      
+    </ul>
+  </div>
+</main>
 
-        </div>
     <footer id="footer" class="relative-small">
 
     <button onclick="scrollToTop()" class="scroll-to-top card">

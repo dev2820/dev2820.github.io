@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <div id="loader">
-        loading...
+        <span class="description">
+            loading...
+        </span>
     </div><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +62,7 @@
   <div class="progress-bar">
     <span class="progress"></span>
   </div>
-</div><div id="aside" class="card hidden">
+</div><aside id="aside" class="card hidden">
     <div class="top">
         <button onclick="event.stopPropagation(); toggleAside(false)">
             <i class="fa fa-times fa-3x"></i>
@@ -136,31 +138,9 @@
             </ul>
         </nav>
     </div>
-</div><script>
-    readTextFile("/lunr.json", function(docs){
-        let documents = JSON.parse(docs);
-        var idx = lunr(function () {
-            this.ref('title')
-            this.field('content')
-            
-            documents.forEach(function (doc) {
-                this.add(doc)
-            }, this)
-        })
+</aside>
 
-        const result = idx.search("hugo")
-        console.log(result);
-    });
-</script>
-<div id="search" class="hidden">
-    search
-    <button onclick="toggleSearch(false)">
-        <i class="fa fa-times fa-3x"></i>
-    </button>
-</div>
-        <div id="content">
-
-<header id="banner" style="background-image:url(/images/ocean.jpg);">
+<header id="single-header" style="background-image:url(/images/ocean.jpg);">
 
   <div class="title appear-500ms">
     <h1 id="title">NAS 용 SPA만들기 (0)</h1>
@@ -193,13 +173,16 @@
     
   </div>
 </header>
-<section id="main">
-  <div class="left">
-  </div>
-  <div class="center appear-1000ms">
-    <div>
-          <article class="content">
-            <h2 id="글머리">글머리</h2>
+
+<main id="single-main">
+  <section id="content">
+    <div class="left">
+      
+    </div>
+    <div class="center appear-1000ms">
+      <div>
+            <article class="content">
+              <h2 id="글머리">글머리</h2>
 <p>본디 이 글은 자작NAS를 만드는 전반적인 내용을 모두 담으려고 했으나  이 블로그를 자작NAS 설정을 마치고서야 집밖에서 SSH로 연결해 글을 쓰는 중이라 사진도 못넣고 양질의 글을 쓰지도 못하기 때문에 적당히 NAS를 만드는 과정은 생략하고 SPA를 만드는 과정만 담았습니다.</p>
 <h2 id="프로젝트-개요">프로젝트 개요</h2>
 <p>원래 쓰던 삼성노트북을 안쓰게되어 형을 주고 형이 쓰던 노트북을 받았는데 중고로 산데다 5년 정도 학대하던 노트북이라 느리고 발열이 심해 들고다니면서 쓰기는 어렵고 이참에 개인서버를 하나 만들어야겠다 싶어서 우분투를 깔고 NAS로 만들었다. 그런데 Monsta ftp 가 제공하는 웹페이지가 별로라서 이참에 파일다운로드 말고 여러 서비스를 같이 제공할 겸 + ftp 말고 http 프로토콜을 통해 파일다운로드 서비스를 재공하는 클라우드를 만들 겸 해서 간단한 서버 메인 페이지를 만들게 되었다.</p>
@@ -214,11 +197,11 @@ Back - Node.js(express)
 DB - db는 사용되지 않는다.</p>
 <p>언어는 전부 JavaScript(ES6)로 짤 예정이고 서버는 Docker 를 이용해 컨테이너화 하여 관리할 생각이다.</p>
 
-          </article>
+            </article>
+      </div>
     </div>
-  </div>
-  <div class="right">
-    <script>
+    <div class="right">
+      <script>
     let toggle = true;
     function toggleTable() {
         if (toggle) {
@@ -253,17 +236,17 @@ DB - db는 사용되지 않는다.</p>
 </nav>
     </div>
 </div>    
-  </div>
-</section>
-<aside id="meta">
-  <div class="center">
-    <nav class="section-move">
+    </div>
+  </section>
+  <aside id="meta">
+    <div class="center">
+      <nav class="section-move">
     
     
 </nav>
   
-    
-    <ul class="tags">
+      
+      <ul class="tags">
     
         <li><a href="http://dev2820.github.io/tags/diy/"># DIY</a></li>
     
@@ -271,7 +254,7 @@ DB - db는 사용되지 않는다.</p>
     
 </ul>
 
-    <div class="profile-in-article">
+      <div class="profile-in-article">
     <div class="profile-image">
         
         <img src="/images/ocean.jpg">
@@ -286,7 +269,7 @@ DB - db는 사용되지 않는다.</p>
 </div>
     </div>
 </div>
-    <div class="related-content">
+      <div class="related-content">
 	<div class="title">
 		<p>&#34;Nas_project&#34; 카테고리의 다른 글</p>
 		
@@ -307,7 +290,7 @@ DB - db는 사용되지 않는다.</p>
 	</ul>
 	
 </div>
-    <div id="disqus_thread"></div>
+      <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -327,11 +310,11 @@ DB - db는 사용되지 않는다.</p>
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-</aside>
+    </div>
+  </aside>
+</main>
 <script src="/js/cardClassControl.js"></script>
 
-        </div>
     <footer id="footer">
 
     <button onclick="scrollToTop()" class="scroll-to-top card">

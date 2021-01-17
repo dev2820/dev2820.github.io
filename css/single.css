@@ -1,0 +1,105 @@
+/* single*/
+header#single-header {
+    margin:0;
+    position:fixed;
+    top:0;
+    height:450px;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header#single-header .title {
+    background-color:rgba(0,0,0,0.5);
+    width: 100%;
+    height:100%;
+    text-align:center;
+    margin:auto 0;
+    color:white;
+    z-index:0;
+    position:relative;
+}
+header#single-header .title  #title {
+    height:25%;
+    width:100%;
+    font-weight:100;
+    font-size:3rem;
+    padding:10px;
+    position: absolute;
+    line-height:3rem;
+    top:40%;
+    text-align:center;
+    overflow:hidden;
+}
+header#single-header .title section {
+    position:absolute;
+    text-align:center;
+    width:100%;
+    top:65%;
+    margin:0 auto;
+}
+header#single-header .title .breadcrumb {
+    position:absolute;
+    top:10%;
+    display:block;
+    width:100%;
+}
+header#single-header .title .author {
+    display:block;
+    width:100%;
+    text-align: center;
+    position: absolute;
+    top:80%;
+    margin:0 auto;
+    color: #eeeeee;
+}
+header#single-header .title .author a {
+    color:#3EB489;
+}
+main#single-main {
+    max-width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    z-index:5;
+}
+main#single-main section#content {
+    background-color:white;
+    width:100%;
+    padding:30px 20px;
+    margin:0 auto;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    z-index:10;
+    top:450px;
+}
+main#single-main section#content .center {
+    position:relative;
+    margin:0;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+}
+main#single-main section#content .right,
+main#single-main section#content .left {
+    width:230px;
+    display:flex;
+}
+main#single-main aside#meta {
+    background-color:white;
+    position:relative;
+    top:450px;
+    padding:100px 20px;
+    width:100%;
+    margin:0 auto;
+    z-index:10;
+}
+main#single-main aside#meta .center {
+    width:100%;
+    max-width:800px;
+    min-width:600px;
+    margin:0 auto;
+}
