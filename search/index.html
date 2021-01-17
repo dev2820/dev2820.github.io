@@ -159,8 +159,10 @@
     readTextFile("/lunr.json", function(docs){
         let documents = JSON.parse(docs);
         idx = lunr(function () {
-            this.ref('title')
+            this.ref('uri')
+            this.field('title')
             this.field('content')
+            this.field('tags')
             
             documents.forEach(function (doc) {
                 this.add(doc)
