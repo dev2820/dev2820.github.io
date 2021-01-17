@@ -172,9 +172,7 @@
     document.getElementById('search-input').addEventListener('change',function (event){
         if(idx){
             const result = idx.search(event.target.value);
-            const resultCount = document.createElement('p');
-            resultCount.innerHTML = result.length;
-            document.getElementById('search-result').appendChild(resultCount);
+            document.getElementById('search-result').innerHTML(result);
         }
     })
 </script>
