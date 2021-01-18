@@ -58,13 +58,13 @@
   <div class="progress-bar">
     <span class="progress"></span>
   </div>
-</div><aside id="aside" class="card hidden">
-    <div class="top">
-        <button onclick="event.stopPropagation(); toggleAside(false)">
+</div><aside id="aside" class="hidden">
+    <div class="profile-container">
+        <div class="aside-image" style="background-image:url('/images/space.jpg')">
+        </div>
+        <button class="hide-aside" onclick="event.stopPropagation(); toggleAside(false)">
             <i class="fa fa-times fa-3x"></i>
         </button>
-    </div>
-    <div class="container">
         <div class="profile">
     <div class="cover">
         
@@ -78,61 +78,112 @@
     <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a>
 </div>
 </div>
-        <hr class="aside-sep">
+    </div>
+    <div class="navigation-container card">
         <div class="aside-menu">
             <ul>
-                <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
-                <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
-                <li><a class="aside-menu-item" href="http://dev2820.github.io/">전체글 모아보기
-                        <small>(31)</small></a>
-                    
-                    <small class="date">- 2020/11/15</small></li>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="http://dev2820.github.io/">홈</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="http://dev2820.github.io//categories">카테고리</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="http://dev2820.github.io//tags">태그</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="http://dev2820.github.io//search">검색</a>
+                </li>
             </ul>
         </div>
-        <hr class="aside-sep">
         <nav class="sidebar-nav">
             
             
-            <ul>
+            
+            <ul class="categories">
                 
                 <li>
-                    
-                    
-                    <a class="sidebar-nav-item"
-                        href="/diaries/" title="Diaries">Diaries <small>(6)</small></a>
-                    <small class="date">- 2020/09/26</small>
+                    <i class="fas fa-folder icon"></i>
+                    <a href="http://dev2820.github.io/categories/hugo_new_theme">
+                        <p class="name">Hugo new theme<small class="num">(3)</small></p> 
+                    </a>
                 </li>
-                <hr class="aside-sep">
+                
+                <ul class="subcategories">
+                    
+                    
+                    
+                    
+                    
+                </ul>
                 
                 <li>
-                    
-                    
-                    <a class="sidebar-nav-item"
-                        href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme <small>(3)</small></a>
-                    <small class="date">- 2020/09/19</small>
+                    <i class="fas fa-folder icon"></i>
+                    <a href="http://dev2820.github.io/categories/nas_project">
+                        <p class="name">Nas project<small class="num">(1)</small></p> 
+                    </a>
                 </li>
-                <hr class="aside-sep">
+                
+                <ul class="subcategories">
+                    
+                    
+                    
+                    
+                    
+                </ul>
                 
                 <li>
-                    
-                    
-                    <a class="sidebar-nav-item active"
-                        href="/nas_project/" title="Nas_project">Nas_project <small>(1)</small></a>
-                    <small class="date">- 2020/09/18</small>
+                    <i class="fas fa-folder icon"></i>
+                    <a href="http://dev2820.github.io/categories/what_is_hugo">
+                        <p class="name">What is hugo<small class="num">(21)</small></p> 
+                    </a>
                 </li>
-                <hr class="aside-sep">
+                
+                <ul class="subcategories">
+                    
+                    
+                    <li>
+                        <i class="fas fa-folder icon"></i>
+                        <a href="http://dev2820.github.io/subcategories/hugo">
+                            <p class="name">Hugo<small class="num">(21)</small></p>     
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
                 
                 <li>
-                    
-                    
-                    <a class="sidebar-nav-item"
-                        href="/what_is_hugo/" title="what_is_hugo">what_is_hugo <small>(21)</small></a>
-                    <small class="date">- 2020/11/15</small>
+                    <i class="fas fa-folder icon"></i>
+                    <a href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81">
+                        <p class="name">일상<small class="num">(6)</small></p> 
+                    </a>
                 </li>
-                <hr class="aside-sep">
+                
+                <ul class="subcategories">
+                    
+                    
+                    
+                    
+                    <li>
+                        <i class="fas fa-folder icon"></i>
+                        <a href="http://dev2820.github.io/subcategories/test">
+                            <p class="name">Test<small class="num">(2)</small></p>     
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
                 
             </ul>
         </nav>
+    </div>
+    <div class="empty-container" onclick="event.stopPropagation(); toggleAside(false)">
     </div>
 </aside>
 <header>
