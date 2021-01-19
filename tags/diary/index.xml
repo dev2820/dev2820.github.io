@@ -15,10 +15,10 @@
     
     <item>
       <title>test 글 작성 중</title>
-      <link>http://dev2820.github.io/diaries/test3/</link>
+      <link>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test3/</link>
       <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
       <author>second28200@gmail.com (dev2820)</author>
-      <guid>http://dev2820.github.io/diaries/test3/</guid>
+      <guid>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test3/</guid>
       <description>md 작성 테스트 중 h1 h2 h3 h4 h5 h6 1 &amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt; hello hugo title1 sub title1 sub title2 sub sub title</description>
     </item>
     

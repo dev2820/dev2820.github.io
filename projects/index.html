@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <div id="loader">
+        <span class="description">
+            loading...
+        </span>
+    </div><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 'Project'을 한 번 살펴보세요.">
+    <meta property="og:title" content="Project">
+    
+    <meta property="og:type" content="website">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 'Project'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/projects/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    
+    <link rel="icon" href="http://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="http://dev2820.github.io/projects/">
+    <link rel="alternate" type="application/rss+xml" href="http://dev2820.github.io/projects/index.xml" title="dev2820 개발일지" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script src="/js/default.js"></script>
+</head>
+<body id="body"><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="progress-bar">
+    <span class="progress"></span>
+  </div>
+</div><aside id="aside" class="hidden">
+    <div class="right-container">
+        <div class="profile-container">
+            <div class="aside-image" style="background-image:url('/images/space.jpg')">
+            </div>
+            <button class="hide-aside" onclick="event.stopPropagation(); toggleAside(false)">
+                <i class="fa fa-times fa-3x"></i>
+            </button>
+            <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="share">
+    <a href ="https://github.com/dev2820"><i class="fab fa-github"></i></a>
+    <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a> 
+    <a href ="/index.xml"><i class="fas fa-rss"></i></a>
+</div>
+</div>
+        </div>
+        <div class="navigation-container card">
+            <div class="aside-menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-home icon"></i>
+                        <a href="http://dev2820.github.io/">홈</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-list icon"></i>
+                        <a href="http://dev2820.github.io//categories">카테고리</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-tags icon"></i>
+                        <a href="http://dev2820.github.io//tags">태그</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-search icon"></i>
+                        <a href="http://dev2820.github.io//search">검색</a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="sidebar-nav">
+                
+                
+                
+                <ul class="categories">
+                    
+                    <li>
+                        <i class="fas fa-folder icon"></i>
+                        <a href="http://dev2820.github.io/categories/projects">
+                            <p class="name">Projects<small class="num"> (1)</small></p> 
+                        </a>
+                    </li>
+                    
+                    <ul class="subcategories">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                    
+                    <li>
+                        <i class="fas fa-folder icon"></i>
+                        <a href="http://dev2820.github.io/categories/what_is_hugo">
+                            <p class="name">What is hugo<small class="num"> (21)</small></p> 
+                        </a>
+                    </li>
+                    
+                    <ul class="subcategories">
+                        
+                        
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/hugo">
+                                <p class="name">Hugo<small class="num">(21)</small></p>     
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                    
+                    <li>
+                        <i class="fas fa-folder icon"></i>
+                        <a href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81">
+                            <p class="name">일상<small class="num"> (5)</small></p> 
+                        </a>
+                    </li>
+                    
+                    <ul class="subcategories">
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/test">
+                                <p class="name">Test<small class="num">(3)</small></p>     
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81">
+                                <p class="name">일상<small class="num">(1)</small></p>     
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C">
+                                <p class="name">추천<small class="num">(1)</small></p>     
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="empty-container" onclick="event.stopPropagation(); toggleAside(false)">
+    </div>
+</aside>
+<header>
+    <div class="center">
+        <h1 class="title">Section: Project</h1>
+        <div class="description"><p>프로젝트 모음입니다.</p>
+</div>
+    </div>
+</header>
+
+<script>
+    function byDate() {
+        const elByDate = document.querySelector('main#sections div.by-date');
+        const elByDateReverse = document.querySelector('main#sections div.by-date-reverse');
+        const elByDateOption = document.querySelector('main#sections button.by-date');
+        const elByDateReverseOption = document.querySelector('main#sections button.by-date-reverse');
+        if(elByDate.classList.contains('hidden')) {
+            elByDate.classList.remove('hidden');
+            elByDateOption.classList.add('toggle-on');
+        }
+        if(!elByDateReverse.classList.contains('hidden')) {
+            elByDateReverse.classList.add('hidden');
+            elByDateReverseOption.classList.remove('toggle-on');
+        }
+    }
+    function byDateReverse() {
+        const elByDate = document.querySelector('main#sections div.by-date');
+        const elByDateReverse = document.querySelector('main#sections div.by-date-reverse');
+        const elByDateOption = document.querySelector('main#sections button.by-date');
+        const elByDateReverseOption = document.querySelector('main#sections button.by-date-reverse');
+        if(elByDateReverse.classList.contains('hidden')) {
+            elByDateReverse.classList.remove('hidden');
+            elByDateReverseOption.classList.add('toggle-on');
+        }
+        if(!elByDate.classList.contains('hidden')) {
+            elByDate.classList.add('hidden');
+            elByDateOption.classList.remove('toggle-on');
+        }
+    }
+</script>
+<main id="sections">
+    <div class="center">
+        <button class="by-date option" onclick="byDate()">오래된글부터</button>
+        <button class="by-date-reverse option toggle-on" onclick="byDateReverse()">최신글부터</button>
+        <div class="by-date hidden">
+            <ul class="contents">
+    
+</ul>
+
+        </div>
+        <div class="by-date-reverse">
+            <ul class="contents">
+    
+</ul>
+        </div>
+        <div class="paging">
+  
+  
+  <span class="page">
+    페이지 1 / 0
+  </span>
+  
+  
+</div>
+
+    </div>
+</main>
+
+    <footer id="footer" class="relative-small">
+
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    <div class="share">
+    <a href ="https://github.com/dev2820"><i class="fab fa-github"></i></a>
+    <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a> 
+    <a href ="/index.xml"><i class="fas fa-rss"></i></a>
+</div><span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+    <span>ALL RIGHTS RESERVED.</span>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>

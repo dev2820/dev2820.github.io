@@ -31,5 +31,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>추천</title>
+      <link>http://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C/</link>
+      <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
+      <author>second28200@gmail.com (dev2820)</author>
+      <guid>http://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nas_project</title>
+      <link>http://dev2820.github.io/subcategories/nas_project/</link>
+      <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
+      <author>second28200@gmail.com (dev2820)</author>
+      <guid>http://dev2820.github.io/subcategories/nas_project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>일상</title>
+      <link>http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81/</link>
+      <pubDate>Sat, 08 Aug 2020 19:53:55 +0900</pubDate>
+      <author>second28200@gmail.com (dev2820)</author>
+      <guid>http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

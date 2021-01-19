@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <div id="loader">
+        <span class="description">
+            loading...
+        </span>
+    </div><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAS 용 SPA만들기 (0)  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 'NAS 용 SPA만들기 (0)'을 한 번 살펴보세요.">
+    <meta property="og:title" content="NAS 용 SPA만들기 (0)">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2020-09-18">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 'NAS 용 SPA만들기 (0)'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/projects/nas_project/home_server/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="projects">
+    
+    <meta property="og:tags" content="DIY">
+    
+    
+    <link rel="icon" href="http://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="http://dev2820.github.io/projects/nas_project/home_server/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script src="/js/default.js"></script>
+</head>
+<body id="body"><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="progress-bar">
+    <span class="progress"></span>
+  </div>
+</div><aside id="aside" class="hidden">
+    <div class="right-container">
+        <div class="profile-container">
+            <div class="aside-image" style="background-image:url('/images/space.jpg')">
+            </div>
+            <button class="hide-aside" onclick="event.stopPropagation(); toggleAside(false)">
+                <i class="fa fa-times fa-3x"></i>
+            </button>
+            <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="share">
+    <a href ="https://github.com/dev2820"><i class="fab fa-github"></i></a>
+    <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a> 
+    <a href ="/index.xml"><i class="fas fa-rss"></i></a>
+</div>
+</div>
+        </div>
+        <div class="navigation-container card">
+            <div class="aside-menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-home icon"></i>
+                        <a href="http://dev2820.github.io/">홈</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-list icon"></i>
+                        <a href="http://dev2820.github.io//categories">카테고리</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-tags icon"></i>
+                        <a href="http://dev2820.github.io//tags">태그</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-search icon"></i>
+                        <a href="http://dev2820.github.io//search">검색</a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="sidebar-nav">
+                
+                
+                
+                <ul class="categories">
+                    
+                    <li>
+                        <i class="fas fa-folder icon"></i>
+                        <a href="http://dev2820.github.io/categories/projects">
+                            <p class="name">Projects<small class="num"> (1)</small></p> 
+                        </a>
+                    </li>
+                    
+                    <ul class="subcategories">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                    
+                    <li>
+                        <i class="fas fa-folder icon"></i>
+                        <a href="http://dev2820.github.io/categories/what_is_hugo">
+                            <p class="name">What is hugo<small class="num"> (21)</small></p> 
+                        </a>
+                    </li>
+                    
+                    <ul class="subcategories">
+                        
+                        
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/hugo">
+                                <p class="name">Hugo<small class="num">(21)</small></p>     
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                    
+                    <li>
+                        <i class="fas fa-folder icon"></i>
+                        <a href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81">
+                            <p class="name">일상<small class="num"> (5)</small></p> 
+                        </a>
+                    </li>
+                    
+                    <ul class="subcategories">
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/test">
+                                <p class="name">Test<small class="num">(3)</small></p>     
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81">
+                                <p class="name">일상<small class="num">(1)</small></p>     
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C">
+                                <p class="name">추천<small class="num">(1)</small></p>     
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="empty-container" onclick="event.stopPropagation(); toggleAside(false)">
+    </div>
+</aside>
+
+<header id="single-header" style="background-image:url(/images/ocean.jpg);">
+
+  <div class="title appear-500ms">
+    <h1 id="title">NAS 용 SPA만들기 (0)</h1>
+    <section>
+      <p id="date"> 2020-09-18 </p>
+      <p id="wordcount"> 1 <i class="far fa-clock"></i>  </p>
+    </section>
+    <small class="breadcrumb">
+      <div class="breadcrumbnav">
+  
+
+
+
+
+
+
+
+  <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> 
+ <i class="fas fa-angle-right icon"></i>
+
+  <a href="http://dev2820.github.io/projects/" >Project</a> 
+ <i class="fas fa-angle-right icon"></i>
+
+  <a href="http://dev2820.github.io/projects/nas_project/" >Nas_project</a> 
+ <i class="fas fa-angle-right icon"></i>
+
+  <a href="http://dev2820.github.io/projects/nas_project/home_server/"  class="active">NAS 용 SPA만들기 (0)</a> 
+
+</div>
+
+    </small>
+    
+    
+    <p class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></p>
+    
+  </div>
+</header>
+
+<main id="single-main">
+  <section id="content">
+    <div class="left">
+      
+    </div>
+    <div class="center appear-1000ms">
+      <div>
+            <article class="content">
+              <h2 id="글머리">글머리</h2>
+<p>본디 이 글은 자작NAS를 만드는 전반적인 내용을 모두 담으려고 했으나  이 블로그를 자작NAS 설정을 마치고서야 집밖에서 SSH로 연결해 글을 쓰는 중이라 사진도 못넣고 양질의 글을 쓰지도 못하기 때문에 적당히 NAS를 만드는 과정은 생략하고 SPA를 만드는 과정만 담았습니다.</p>
+<h2 id="프로젝트-개요">프로젝트 개요</h2>
+<p>원래 쓰던 삼성노트북을 안쓰게되어 형을 주고 형이 쓰던 노트북을 받았는데 중고로 산데다 5년 정도 학대하던 노트북이라 느리고 발열이 심해 들고다니면서 쓰기는 어렵고 이참에 개인서버를 하나 만들어야겠다 싶어서 우분투를 깔고 NAS로 만들었다. 그런데 Monsta ftp 가 제공하는 웹페이지가 별로라서 이참에 파일다운로드 말고 여러 서비스를 같이 제공할 겸 + ftp 말고 http 프로토콜을 통해 파일다운로드 서비스를 재공하는 클라우드를 만들 겸 해서 간단한 서버 메인 페이지를 만들게 되었다.</p>
+<h2 id="프로젝트-목적">프로젝트 목적</h2>
+<ol>
+<li>개인서버가 제공할 메인 페이지를 만드는 것</li>
+<li>간단한 http 파일다운로드 서비스를 제공할 클라우드를 만드는 것</li>
+</ol>
+<h2 id="스택">스택</h2>
+<p>Front - Vue.js(vue-cli4)
+Back - Node.js(express)
+DB - db는 사용되지 않는다.</p>
+<p>언어는 전부 JavaScript(ES6)로 짤 예정이고 서버는 Docker를 이용해 컨테이너화 하여 관리할 생각이다.</p>
+
+            </article>
+      </div>
+    </div>
+    <div class="right">
+      <script>
+    let toggle = true;
+    function toggleTable() {
+        if (toggle) {
+            document.getElementById('table').classList.add('hidden')
+            document.querySelector('#post-toc .title').classList.add('toggle-off')
+            document.querySelector('#post-toc .right-angle.icon').classList.remove('hidden')
+            document.querySelector('#post-toc .down-angle.icon').classList.add('hidden')
+        }
+        else {
+            document.getElementById('table').classList.remove('hidden')
+            document.querySelector('#post-toc .title').classList.remove('toggle-off')
+            document.querySelector('#post-toc .right-angle.icon').classList.add('hidden')
+            document.querySelector('#post-toc .down-angle.icon').classList.remove('hidden')
+        }
+        toggle = !toggle;
+    }
+</script>
+<div class="post-toc" id="post-toc">
+    <div class="title" onclick="toggleTable()">
+        <i class="fa fa-angle-right hidden right-angle icon"></i>
+        <i class="fa fa-angle-down down-angle icon"></i>
+        차례
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#글머리">글머리</a></li>
+    <li><a href="#프로젝트-개요">프로젝트 개요</a></li>
+    <li><a href="#프로젝트-목적">프로젝트 목적</a></li>
+    <li><a href="#스택">스택</a></li>
+  </ul>
+</nav>
+    </div>
+</div>    
+    </div>
+  </section>
+  <aside id="meta">
+    <div class="center">
+      <nav class="section-move">
+    
+    
+</nav>
+  
+      
+      <ul class="tags">
+    
+        <li><a href="http://dev2820.github.io/tags/diy/"># DIY</a></li>
+    
+        <li><a href="http://dev2820.github.io/tags/projects/"># projects</a></li>
+    
+</ul>
+
+      <div class="profile-in-article">
+    <div class="profile-image">
+        
+        <img src="/images/ocean.jpg">
+        
+    </div>
+    <div class="profile-introduce">
+        <h2><a href="http://dev2820.github.io//about">dev2820</a></h2>
+        <p>풀스텍 웹개발을 지향합니다</p>
+        <div class="share">
+    <a href ="https://github.com/dev2820"><i class="fab fa-github"></i></a>
+    <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a> 
+    <a href ="/index.xml"><i class="fas fa-rss"></i></a>
+</div>
+    </div>
+</div>
+      <div class="related-content">
+	<div class="title">
+		<p>&#34;Projects&#34; 카테고리의 다른 글</p>
+		
+		<a href="http://dev2820.github.io/Projects">more</a>
+	</div>
+	
+	
+</div>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </aside>
+</main>
+<script src="/js/cardClassControl.js"></script>
+
+    <footer id="footer">
+
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    <div class="share">
+    <a href ="https://github.com/dev2820"><i class="fab fa-github"></i></a>
+    <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a> 
+    <a href ="/index.xml"><i class="fas fa-rss"></i></a>
+</div><span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+    <span>ALL RIGHTS RESERVED.</span>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>

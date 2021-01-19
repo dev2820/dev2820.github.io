@@ -15,20 +15,29 @@
     
     <item>
       <title>Test4</title>
-      <link>http://dev2820.github.io/diaries/test4/</link>
+      <link>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test4/</link>
       <pubDate>Sat, 26 Sep 2020 21:35:04 +0900</pubDate>
       <author>second28200@gmail.com (dev2820)</author>
-      <guid>http://dev2820.github.io/diaries/test4/</guid>
+      <guid>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test4/</guid>
       <description>test4</description>
     </item>
     
     <item>
-      <title>웹으로 즐기는 코딩 code-server</title>
-      <link>http://dev2820.github.io/diaries/code-server/</link>
-      <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
+      <title>Test2</title>
+      <link>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test2/</link>
+      <pubDate>Sat, 25 Jul 2020 12:19:54 +0900</pubDate>
       <author>second28200@gmail.com (dev2820)</author>
-      <guid>http://dev2820.github.io/diaries/code-server/</guid>
-      <description>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &amp;lsquo;code-server&amp;rsquo; 라는게 있는 것을 알아서 지금 도커로 &amp;lsquo;code-server&#39;를 설치하고 돌려</description>
+      <guid>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test 글 작성 중</title>
+      <link>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test3/</link>
+      <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
+      <author>second28200@gmail.com (dev2820)</author>
+      <guid>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test3/</guid>
+      <description>md 작성 테스트 중 h1 h2 h3 h4 h5 h6 1 &amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt; hello hugo title1 sub title1 sub title2 sub sub title</description>
     </item>
     
   </channel>

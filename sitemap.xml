@@ -297,7 +297,7 @@
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/diaries/test4/</loc>
+    <loc>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test4/</loc>
     <lastmod>2020-09-26T21:35:04+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
@@ -375,44 +375,26 @@
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/tags/%EC%8B%A0%EA%B8%B0%ED%95%A8/</loc>
-    <lastmod>2020-09-23T12:19:54+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
     <loc>http://dev2820.github.io/tags/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%BD%94%EB%94%A9/</loc>
     <lastmod>2020-09-23T12:19:54+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/diaries/code-server/</loc>
+    <loc>http://dev2820.github.io/%EC%9D%BC%EC%83%81/code-server/</loc>
     <lastmod>2020-09-23T12:19:54+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/tags/diy/</loc>
-    <lastmod>2020-09-19T23:12:23+09:00</lastmod>
+    <loc>http://dev2820.github.io/tags/%EC%B6%94%EC%B2%9C/</loc>
+    <lastmod>2020-09-23T12:19:54+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_3/</loc>
-    <lastmod>2020-09-19T23:12:23+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/categories/hugo_new_theme/</loc>
-    <lastmod>2020-09-19T23:12:23+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/project/</loc>
-    <lastmod>2020-09-19T23:12:23+09:00</lastmod>
+    <loc>http://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C/</loc>
+    <lastmod>2020-09-23T12:19:54+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
@@ -423,31 +405,49 @@
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/diaries/</loc>
+    <loc>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/</loc>
     <lastmod>2020-09-19T12:19:54+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/hugo_new_theme/</loc>
+    <loc>http://dev2820.github.io/projects/nas_project/</loc>
     <lastmod>2020-09-19T12:19:54+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/nas_project/</loc>
+    <loc>http://dev2820.github.io/projects/</loc>
     <lastmod>2020-09-19T12:19:54+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/nas_project/home_server/</loc>
+    <loc>http://dev2820.github.io/%EC%9D%BC%EC%83%81/</loc>
+    <lastmod>2020-09-19T12:19:54+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/diy/</loc>
     <lastmod>2020-09-18T18:20:55+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/categories/nas_project/</loc>
+    <loc>http://dev2820.github.io/projects/nas_project/home_server/</loc>
+    <lastmod>2020-09-18T18:20:55+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/subcategories/nas_project/</loc>
+    <lastmod>2020-09-18T18:20:55+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/categories/projects/</loc>
     <lastmod>2020-09-18T18:20:55+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
@@ -459,55 +459,19 @@
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_1/</loc>
-    <lastmod>2020-09-18T16:10:55+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/hugo_new_theme/hugo_new_theme_2/</loc>
-    <lastmod>2020-09-18T16:10:55+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/diaries/hello-programmer-theme/</loc>
+    <loc>http://dev2820.github.io/%EC%9D%BC%EC%83%81/hello-programmer-theme/</loc>
     <lastmod>2020-08-08T19:53:55+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/tags/blog/</loc>
-    <lastmod>2020-08-08T15:25:11+09:00</lastmod>
+    <loc>http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81/</loc>
+    <lastmod>2020-08-08T19:53:55+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/tags/longtesttagtest/</loc>
-    <lastmod>2020-08-08T15:25:11+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/test/</loc>
-    <lastmod>2020-08-08T15:25:11+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
-    <lastmod>2020-08-08T15:25:11+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/diaries/hugo_test/</loc>
-    <lastmod>2020-08-08T15:25:11+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/diaries/test2/</loc>
+    <loc>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test2/</loc>
     <lastmod>2020-07-25T12:19:54+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
@@ -519,7 +483,13 @@
   </url>
   
   <url>
-    <loc>http://dev2820.github.io/diaries/test3/</loc>
+    <loc>http://dev2820.github.io/tags/test/</loc>
+    <lastmod>2020-07-25T02:23:43+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test3/</loc>
     <lastmod>2020-07-25T02:23:43+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>

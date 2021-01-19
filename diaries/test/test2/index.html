@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <div id="loader">
-        loading...
+        <span class="description">
+            loading...
+        </span>
     </div><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +13,7 @@
     <meta property="og:title" content="Test2">
     
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2020-09-26">
+    <meta property="article:published_time" content="2020-07-25">
     
     <meta property="og:description"
         content="dev2820의 개발일지 저장소 'Test2'을 한 번 살펴보세요.">
@@ -30,6 +32,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     
     <script src="/js/default.js"></script>
@@ -44,14 +47,8 @@
       </a>
     </div>
     <div class="burger">
-      <div class="container">
-        <div class="input-container">
-          <input id="search" type="text" placeholder="Search...">
-        </div>
-        <div class="icon" onclick="toggleSearch(true)">
-          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-        </div>
-      </div>
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
       </button>
       <button onclick="event.stopPropagation(); toggleAside(true)">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
@@ -61,14 +58,15 @@
   <div class="progress-bar">
     <span class="progress"></span>
   </div>
-</div><div id="aside" class="card hidden">
-    <div class="top">
-        <button onclick="event.stopPropagation(); toggleAside(false)">
-            <i class="fa fa-times fa-3x"></i>
-        </button>
-    </div>
-    <div class="container">
-        <div class="profile">
+</div><aside id="aside" class="hidden">
+    <div class="right-container">
+        <div class="profile-container">
+            <div class="aside-image" style="background-image:url('/images/space.jpg')">
+            </div>
+            <button class="hide-aside" onclick="event.stopPropagation(); toggleAside(false)">
+                <i class="fa fa-times fa-3x"></i>
+            </button>
+            <div class="profile">
     <div class="cover">
         
         <img src="/images/ocean.jpg">
@@ -78,75 +76,130 @@
     <p>풀스텍 웹개발을 지향합니다</p>
     <div class="share">
     <a href ="https://github.com/dev2820"><i class="fab fa-github"></i></a>
-    <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a> 
+    <a href ="/index.xml"><i class="fas fa-rss"></i></a>
 </div>
 </div>
-        <hr class="aside-sep">
-        <div class="aside-menu">
-            <ul>
-                <li><a href="http://dev2820.github.io//categories">카테고리 모아보기</a></li>
-                <li><a href="http://dev2820.github.io//tags">태그 모아보기</a></li>
-                <li><a class="aside-menu-item" href="http://dev2820.github.io/">전체글 모아보기
-                        <small>(33)</small></a>
-                    
-                    <small class="date">- 2020/11/15</small></li>
-            </ul>
         </div>
-        <hr class="aside-sep">
-        <nav class="sidebar-nav">
-            
-            
-            <ul>
+        <div class="navigation-container card">
+            <div class="aside-menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-home icon"></i>
+                        <a href="http://dev2820.github.io/">홈</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-list icon"></i>
+                        <a href="http://dev2820.github.io//categories">카테고리</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-tags icon"></i>
+                        <a href="http://dev2820.github.io//tags">태그</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-search icon"></i>
+                        <a href="http://dev2820.github.io//search">검색</a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="sidebar-nav">
                 
-                <li>
-                    
-                    
-                    <a class="sidebar-nav-item active"
-                        href="/diaries/" title="Diaries">Diaries <small>(8)</small></a>
-                    <small class="date">- 2020/09/26</small>
-                </li>
-                <hr class="aside-sep">
                 
-                <li>
-                    
-                    
-                    <a class="sidebar-nav-item"
-                        href="/hugo_new_theme/" title="hugo_new_theme">hugo_new_theme <small>(3)</small></a>
-                    <small class="date">- 2020/09/19</small>
-                </li>
-                <hr class="aside-sep">
                 
-                <li>
+                <ul class="categories">
                     
+                    <li>
+                        <i class="fas fa-folder icon"></i>
+                        <a href="http://dev2820.github.io/categories/projects">
+                            <p class="name">Projects<small class="num"> (1)</small></p> 
+                        </a>
+                    </li>
                     
-                    <a class="sidebar-nav-item"
-                        href="/nas_project/" title="Nas_project">Nas_project <small>(1)</small></a>
-                    <small class="date">- 2020/09/18</small>
-                </li>
-                <hr class="aside-sep">
-                
-                <li>
+                    <ul class="subcategories">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
                     
+                    <li>
+                        <i class="fas fa-folder icon"></i>
+                        <a href="http://dev2820.github.io/categories/what_is_hugo">
+                            <p class="name">What is hugo<small class="num"> (21)</small></p> 
+                        </a>
+                    </li>
                     
-                    <a class="sidebar-nav-item"
-                        href="/what_is_hugo/" title="what_is_hugo">what_is_hugo <small>(21)</small></a>
-                    <small class="date">- 2020/11/15</small>
-                </li>
-                <hr class="aside-sep">
-                
-            </ul>
-        </nav>
+                    <ul class="subcategories">
+                        
+                        
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/hugo">
+                                <p class="name">Hugo<small class="num">(21)</small></p>     
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                    
+                    <li>
+                        <i class="fas fa-folder icon"></i>
+                        <a href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81">
+                            <p class="name">일상<small class="num"> (5)</small></p> 
+                        </a>
+                    </li>
+                    
+                    <ul class="subcategories">
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/test">
+                                <p class="name">Test<small class="num">(3)</small></p>     
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                    
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
-        <div id="content">
+    <div class="empty-container" onclick="event.stopPropagation(); toggleAside(false)">
+    </div>
+</aside>
 
-<header id="banner" style="background-image:url(/images/ocean.jpg);">
+<header id="single-header" style="background-image:url(/images/ocean.jpg);">
 
   <div class="title appear-500ms">
     <h1 id="title">Test2</h1>
     <section>
-      <p id="date"> 2020-09-26 </p>
-      <p id="wordcount"> 1 <i class="far fa-clock"></i>  </p>
+      <p id="date"> 2020-07-25 </p>
+      <p id="wordcount"> 0 <i class="far fa-clock"></i>  </p>
     </section>
     <small class="breadcrumb">
       <div class="breadcrumbnav">
@@ -159,13 +212,13 @@
 
 
   <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> 
- >
+ <i class="fas fa-angle-right icon"></i>
 
   <a href="http://dev2820.github.io/diaries/" >Diaries</a> 
- >
+ <i class="fas fa-angle-right icon"></i>
 
-  <a href="http://dev2820.github.io/diaries/test/" >test 용페이지</a> 
- >
+  <a href="http://dev2820.github.io/diaries/test/" >Diaries</a> 
+ <i class="fas fa-angle-right icon"></i>
 
   <a href="http://dev2820.github.io/diaries/test/test2/"  class="active">Test2</a> 
 
@@ -178,71 +231,21 @@
     
   </div>
 </header>
-<section id="main">
-  <div class="left">
-  </div>
-  <div class="center appear-1000ms">
-    <div>
-          <article class="content">
-            <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="display:block;width:100%;background-color:#3d3f4a"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">const</span> a <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>;
-<span style="color:#ff79c6">const</span> b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">2</span>;
-<span style="color:#ff79c6">const</span> c <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">3</span>;
-<span style="color:#ff79c6">for</span>(<span style="color:#8be9fd;font-style:italic">let</span> i <span style="color:#ff79c6">=</span><span style="color:#bd93f9">0</span>; i<span style="color:#ff79c6">&lt;</span><span style="color:#bd93f9">10</span>; i<span style="color:#ff79c6">++</span>)
-{
-	<span style="color:#ff79c6">const</span> d <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">4</span>;
-	<span style="color:#ff79c6">const</span> e <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">5</span>;
-<span style="display:block;width:100%;background-color:#3d3f4a">	<span style="color:#ff79c6">const</span> f <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">6</span>;
-</span>}
-console.log(<span style="color:#f1fa8c">&#39;end&#39;</span>)
-</code></pre></td></tr></table>
-</div>
-</div><p>next code fence</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">const</span> a <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>;
-<span style="color:#ff79c6">const</span> b <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">2</span>;
-<span style="color:#ff79c6">const</span> c <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">3</span>;
-<span style="color:#ff79c6">const</span> d <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">4</span>;
-<span style="color:#ff79c6">const</span> e <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">5</span>;
-<span style="color:#ff79c6">const</span> f <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">6</span>;
-<span style="color:#ff79c6">const</span> g <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">7</span>;
-<span style="color:#ff79c6">const</span> h <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">8</span>;
-<span style="color:#ff79c6">const</span> i <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">9</span>;
-<span style="color:#ff79c6">const</span> j <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>;
-</code></pre></td></tr></table>
-</div>
-</div>
-          </article>
+
+<main id="single-main">
+  <section id="content">
+    <div class="left">
+      
     </div>
-  </div>
-  <div class="right">
-    <script>
+    <div class="center appear-1000ms">
+      <div>
+            <article class="content">
+              
+            </article>
+      </div>
+    </div>
+    <div class="right">
+      <script>
     let toggle = true;
     function toggleTable() {
         if (toggle) {
@@ -270,29 +273,37 @@ console.log(<span style="color:#f1fa8c">&#39;end&#39;</span>)
         <nav id="TableOfContents"></nav>
     </div>
 </div>    
-  </div>
-</section>
-<aside id="meta">
-  <div class="center">
-    <nav class="section-move">
+    </div>
+  </section>
+  <aside id="meta">
+    <div class="center">
+      <nav class="section-move">
     
       <div class="previous card float"> 
         <i class="fas fa-angle-double-left icon"></i>
         <div class="title">
           <small>prev</small>
-          <a href="http://dev2820.github.io/diaries/test/test1/">Test1</a>
+          <a href="http://dev2820.github.io/diaries/test/test3/">test 글 작성 중</a>
         </div>
       </div>
     
     
+      <div class="next card float">
+        <div class="title">
+          <small>next</small>  
+          <a href="http://dev2820.github.io/diaries/test/test4/">Test4</a>
+        </div>
+        <i class="fas fa-angle-double-right icon"></i>
+      </div>
+    
 </nav>
   
-    
-    <ul class="tags">
+      
+      <ul class="tags">
     
 </ul>
 
-    <div class="profile-in-article">
+      <div class="profile-in-article">
     <div class="profile-image">
         
         <img src="/images/ocean.jpg">
@@ -303,11 +314,12 @@ console.log(<span style="color:#f1fa8c">&#39;end&#39;</span>)
         <p>풀스텍 웹개발을 지향합니다</p>
         <div class="share">
     <a href ="https://github.com/dev2820"><i class="fab fa-github"></i></a>
-    <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a> 
+    <a href ="/index.xml"><i class="fas fa-rss"></i></a>
 </div>
     </div>
 </div>
-    <div class="related-content">
+      <div class="related-content">
 	<div class="title">
 		<p>&#34;Diaries&#34; 카테고리의 다른 글</p>
 		
@@ -316,7 +328,7 @@ console.log(<span style="color:#f1fa8c">&#39;end&#39;</span>)
 	
 	
 </div>
-    <div id="disqus_thread"></div>
+      <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -336,21 +348,23 @@ console.log(<span style="color:#f1fa8c">&#39;end&#39;</span>)
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-</aside>
+    </div>
+  </aside>
+</main>
 <script src="/js/cardClassControl.js"></script>
 
-        </div>
     <footer id="footer">
 
     <button onclick="scrollToTop()" class="scroll-to-top card">
-      <i class="fa fa-angle-double-up"></i>
-      <span>위로</span>
+      <i class="fas fa-angle-double-up icon"></i>
     </button>
-    
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
     <div class="share">
     <a href ="https://github.com/dev2820"><i class="fab fa-github"></i></a>
-    <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href ="https://mailto:second28200@gmail.com"><i class="fas fa-envelope"></i></a> 
+    <a href ="/index.xml"><i class="fas fa-rss"></i></a>
 </div><span>COPYRIGHT (C) <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
     <span>ALL RIGHTS RESERVED.</span>
   </footer>

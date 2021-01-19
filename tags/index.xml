@@ -302,15 +302,6 @@
     </item>
     
     <item>
-      <title>신기함</title>
-      <link>http://dev2820.github.io/tags/%EC%8B%A0%EA%B8%B0%ED%95%A8/</link>
-      <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/%EC%8B%A0%EA%B8%B0%ED%95%A8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>웹에서 코딩</title>
       <link>http://dev2820.github.io/tags/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%BD%94%EB%94%A9/</link>
       <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
@@ -320,20 +311,20 @@
     </item>
     
     <item>
-      <title>DIY</title>
-      <link>http://dev2820.github.io/tags/diy/</link>
-      <pubDate>Sat, 19 Sep 2020 23:12:23 +0900</pubDate>
+      <title>추천</title>
+      <link>http://dev2820.github.io/tags/%EC%B6%94%EC%B2%9C/</link>
+      <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
       <author>second28200@gmail.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/diy/</guid>
+      <guid>http://dev2820.github.io/tags/%EC%B6%94%EC%B2%9C/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>project</title>
-      <link>http://dev2820.github.io/tags/project/</link>
-      <pubDate>Sat, 19 Sep 2020 23:12:23 +0900</pubDate>
+      <title>DIY</title>
+      <link>http://dev2820.github.io/tags/diy/</link>
+      <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
       <author>second28200@gmail.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/project/</guid>
+      <guid>http://dev2820.github.io/tags/diy/</guid>
       <description></description>
     </item>
     
@@ -347,47 +338,20 @@
     </item>
     
     <item>
-      <title>blog</title>
-      <link>http://dev2820.github.io/tags/blog/</link>
-      <pubDate>Sat, 08 Aug 2020 15:25:11 +0900</pubDate>
+      <title>diary</title>
+      <link>http://dev2820.github.io/tags/diary/</link>
+      <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
       <author>second28200@gmail.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>longtesttagtest</title>
-      <link>http://dev2820.github.io/tags/longtesttagtest/</link>
-      <pubDate>Sat, 08 Aug 2020 15:25:11 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/longtesttagtest/</guid>
+      <guid>http://dev2820.github.io/tags/diary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test</title>
       <link>http://dev2820.github.io/tags/test/</link>
-      <pubDate>Sat, 08 Aug 2020 15:25:11 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>블로그</title>
-      <link>http://dev2820.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</link>
-      <pubDate>Sat, 08 Aug 2020 15:25:11 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>diary</title>
-      <link>http://dev2820.github.io/tags/diary/</link>
       <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
       <author>second28200@gmail.com (dev2820)</author>
-      <guid>http://dev2820.github.io/tags/diary/</guid>
+      <guid>http://dev2820.github.io/tags/test/</guid>
       <description></description>
     </item>
     
