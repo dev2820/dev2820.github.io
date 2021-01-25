@@ -8,11 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (dev2820)</managingEditor>
     <webMaster>second28200@gmail.com (dev2820)</webMaster>
-    <lastBuildDate>Sat, 25 Jul 2020 02:23:43 +0900</lastBuildDate>
-    
-	<atom:link href="http://dev2820.github.io/tags/diary/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 25 Jul 2020 02:23:43 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/diary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>test 글 작성 중</title>
       <link>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test3/</link>

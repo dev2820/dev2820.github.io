@@ -8,11 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (dev2820)</managingEditor>
     <webMaster>second28200@gmail.com (dev2820)</webMaster>
-    <lastBuildDate>Sun, 27 Sep 2020 15:09:40 +0900</lastBuildDate>
-    
-	<atom:link href="http://dev2820.github.io/tags/code-fence/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 27 Sep 2020 15:09:40 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/code-fence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>휴고 Syntax Highlighting</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/</link>

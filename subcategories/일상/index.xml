@@ -8,11 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (dev2820)</managingEditor>
     <webMaster>second28200@gmail.com (dev2820)</webMaster>
-    <lastBuildDate>Sat, 08 Aug 2020 19:53:55 +0900</lastBuildDate>
-    
-	<atom:link href="http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 08 Aug 2020 19:53:55 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello Programmer Theme</title>
       <link>http://dev2820.github.io/%EC%9D%BC%EC%83%81/hello-programmer-theme/</link>

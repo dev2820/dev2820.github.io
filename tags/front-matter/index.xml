@@ -8,11 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (dev2820)</managingEditor>
     <webMaster>second28200@gmail.com (dev2820)</webMaster>
-    <lastBuildDate>Tue, 29 Sep 2020 21:54:15 +0900</lastBuildDate>
-    
-	<atom:link href="http://dev2820.github.io/tags/front-matter/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 29 Sep 2020 21:54:15 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/front-matter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>휴고 Front Matter</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/</link>

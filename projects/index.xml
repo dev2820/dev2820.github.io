@@ -8,10 +8,6 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (dev2820)</managingEditor>
     <webMaster>second28200@gmail.com (dev2820)</webMaster>
-    <lastBuildDate>Sat, 19 Sep 2020 12:19:54 +0900</lastBuildDate>
-    
-	<atom:link href="http://dev2820.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 19 Sep 2020 12:19:54 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
