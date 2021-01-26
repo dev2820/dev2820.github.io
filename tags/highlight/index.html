@@ -120,6 +120,13 @@
                         
                         
                         
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/nas_project">
+                                <p class="name">Nas project<small class="num"> (1)</small></p>     
+                            </a>
+                        </li>
+                        
                         
                         
                         
@@ -142,7 +149,7 @@
                         <li>
                             <i class="fas fa-folder icon"></i>
                             <a href="http://dev2820.github.io/subcategories/hugo">
-                                <p class="name">Hugo<small class="num">(21)</small></p>     
+                                <p class="name">Hugo<small class="num"> (21)</small></p>     
                             </a>
                         </li>
                         
@@ -174,7 +181,7 @@
                         <li>
                             <i class="fas fa-folder icon"></i>
                             <a href="http://dev2820.github.io/subcategories/test">
-                                <p class="name">Test<small class="num">(3)</small></p>     
+                                <p class="name">Test<small class="num"> (3)</small></p>     
                             </a>
                         </li>
                         
@@ -183,7 +190,7 @@
                         <li>
                             <i class="fas fa-folder icon"></i>
                             <a href="http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81">
-                                <p class="name">일상<small class="num">(1)</small></p>     
+                                <p class="name">일상<small class="num"> (1)</small></p>     
                             </a>
                         </li>
                         
@@ -192,7 +199,7 @@
                         <li>
                             <i class="fas fa-folder icon"></i>
                             <a href="http://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C">
-                                <p class="name">추천<small class="num">(1)</small></p>     
+                                <p class="name">추천<small class="num"> (1)</small></p>     
                             </a>
                         </li>
                         
@@ -203,7 +210,7 @@
             </nav>
         </div>
     </div>
-    <div class="empty-container" onclick="event.stopPropagation(); toggleAside(false)">
+    <div class="left-container" onclick="event.stopPropagation(); toggleAside(false);">
     </div>
 </aside>
 <header class="taxonomy">
@@ -248,9 +255,11 @@
     }
 </script>
 <main id="taxonomies">
-    <div class="center">    
-        <button class="by-date option" onclick="byDate()">오래된글부터</button>
-        <button class="by-date-reverse option toggle-on" onclick="byDateReverse()">최신글부터</button>
+    <div class="center">   
+        <div class="sort-options">
+            <button class="by-date option" onclick="byDate()">오래된글부터</button>
+            <button class="by-date-reverse option toggle-on" onclick="byDateReverse()">최신글부터</button>        
+        </div> 
         <div class="by-date hidden">
             <ul class="contents">
     

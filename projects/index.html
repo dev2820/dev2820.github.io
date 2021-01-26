@@ -7,15 +7,15 @@
     </div><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project  | dev2820 개발일지</title>
+    <title>Projects  | dev2820 개발일지</title>
     <meta name="description"
-        content="dev2820의 개발일지 저장소 'Project'을 한 번 살펴보세요.">
-    <meta property="og:title" content="Project">
+        content="dev2820의 개발일지 저장소 'Projects'을 한 번 살펴보세요.">
+    <meta property="og:title" content="Projects">
     
     <meta property="og:type" content="website">
     
     <meta property="og:description"
-        content="dev2820의 개발일지 저장소 'Project'을 한 번 살펴보세요.">
+        content="dev2820의 개발일지 저장소 'Projects'을 한 번 살펴보세요.">
     <meta property="og:url" content="http://dev2820.github.io/projects/">
     <meta property="og:site_name" content="dev2820 개발일지">
     
@@ -120,6 +120,13 @@
                         
                         
                         
+                        <li>
+                            <i class="fas fa-folder icon"></i>
+                            <a href="http://dev2820.github.io/subcategories/nas_project">
+                                <p class="name">Nas project<small class="num"> (1)</small></p>     
+                            </a>
+                        </li>
+                        
                         
                         
                         
@@ -142,7 +149,7 @@
                         <li>
                             <i class="fas fa-folder icon"></i>
                             <a href="http://dev2820.github.io/subcategories/hugo">
-                                <p class="name">Hugo<small class="num">(21)</small></p>     
+                                <p class="name">Hugo<small class="num"> (21)</small></p>     
                             </a>
                         </li>
                         
@@ -174,7 +181,7 @@
                         <li>
                             <i class="fas fa-folder icon"></i>
                             <a href="http://dev2820.github.io/subcategories/test">
-                                <p class="name">Test<small class="num">(3)</small></p>     
+                                <p class="name">Test<small class="num"> (3)</small></p>     
                             </a>
                         </li>
                         
@@ -183,7 +190,7 @@
                         <li>
                             <i class="fas fa-folder icon"></i>
                             <a href="http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81">
-                                <p class="name">일상<small class="num">(1)</small></p>     
+                                <p class="name">일상<small class="num"> (1)</small></p>     
                             </a>
                         </li>
                         
@@ -192,7 +199,7 @@
                         <li>
                             <i class="fas fa-folder icon"></i>
                             <a href="http://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C">
-                                <p class="name">추천<small class="num">(1)</small></p>     
+                                <p class="name">추천<small class="num"> (1)</small></p>     
                             </a>
                         </li>
                         
@@ -203,62 +210,16 @@
             </nav>
         </div>
     </div>
-    <div class="empty-container" onclick="event.stopPropagation(); toggleAside(false)">
+    <div class="left-container" onclick="event.stopPropagation(); toggleAside(false);">
     </div>
 </aside>
-<header>
-    <div class="center">
-        <h1 class="title">Section: Project</h1>
-        <div class="description"><p>프로젝트 모음입니다.</p>
-</div>
-    </div>
-</header>
-
-<script>
-    function byDate() {
-        const elByDate = document.querySelector('main#sections div.by-date');
-        const elByDateReverse = document.querySelector('main#sections div.by-date-reverse');
-        const elByDateOption = document.querySelector('main#sections button.by-date');
-        const elByDateReverseOption = document.querySelector('main#sections button.by-date-reverse');
-        if(elByDate.classList.contains('hidden')) {
-            elByDate.classList.remove('hidden');
-            elByDateOption.classList.add('toggle-on');
-        }
-        if(!elByDateReverse.classList.contains('hidden')) {
-            elByDateReverse.classList.add('hidden');
-            elByDateReverseOption.classList.remove('toggle-on');
-        }
-    }
-    function byDateReverse() {
-        const elByDate = document.querySelector('main#sections div.by-date');
-        const elByDateReverse = document.querySelector('main#sections div.by-date-reverse');
-        const elByDateOption = document.querySelector('main#sections button.by-date');
-        const elByDateReverseOption = document.querySelector('main#sections button.by-date-reverse');
-        if(elByDateReverse.classList.contains('hidden')) {
-            elByDateReverse.classList.remove('hidden');
-            elByDateReverseOption.classList.add('toggle-on');
-        }
-        if(!elByDate.classList.contains('hidden')) {
-            elByDate.classList.add('hidden');
-            elByDateOption.classList.remove('toggle-on');
-        }
-    }
-</script>
-<main id="sections">
-    <div class="center">
-        <button class="by-date option" onclick="byDate()">오래된글부터</button>
-        <button class="by-date-reverse option toggle-on" onclick="byDateReverse()">최신글부터</button>
-        <div class="by-date hidden">
-            <ul class="contents">
-    
-</ul>
-
-        </div>
-        <div class="by-date-reverse">
-            <ul class="contents">
-    
-</ul>
-        </div>
+<main>
+    <div>
+        section page for "projects"
+        <h1>Projects</h1>
+        <ul class="contents">
+            
+        </ul>
         <div class="paging">
   
   
