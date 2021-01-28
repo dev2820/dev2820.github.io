@@ -224,32 +224,16 @@
 
 <header id="single-header" style="background-image:url(/images/default_banner.jpg);">
 
-  <div class="title appear-300ms">
-    <h1 id="title">휴고 Static Files</h1>
-    <section>
-      <p id="date"> 2020-10-02 </p>
-      <p id="wordcount"> 2 <i class="far fa-clock"></i>  </p>
+  <div class="title">
+    <h1 id="title" class="appear-300ms">휴고 Static Files</h1>
+    <section class="appear-700ms">
+      <p id="date"> <i class="far fa-calendar"></i> 2020-10-02 </p>
+      <p id="wordcount"> <i class="far fa-clock"></i> 2</p>
     </section>
-    <div class="breadcrumbnav">
-  
-
-
-
-
-
-  <a href="http://dev2820.github.io/" >dev2820의 개발 블로그</a> 
- <i class="fas fa-angle-right icon"></i>
-
-  <a href="http://dev2820.github.io/what_is_hugo/" >what_is_hugo</a> 
- <i class="fas fa-angle-right icon"></i>
-
-  <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-static-files/"  class="active">휴고 Static Files</a> 
-
-</div>
-
     
     
-    <p class="author">by <a href="http://dev2820.github.io/about/">dev2820</a></p>
+    
+    <p class="author appear-700ms"><i class="fas fa-feather-alt"></i> <a href="http://dev2820.github.io/about/">dev2820</a></p>
     
   </div>
 </header>
@@ -259,7 +243,7 @@
     <div class="left">
       
     </div>
-    <div class="center appear-500ms">
+    <div class="center appear-1200ms">
       <div>
             <article class="content">
               <p>이 글은 휴고의 static file에 대해 다룹니다. <code>static/</code> 디렉토리에 들어가는 모든 파일들은 다 static file이라고 생각하시면 됩니다.</p>
@@ -360,8 +344,8 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
     <div class="center">
       <nav class="section-move">
     
-      <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/" class="previous slide-left"> 
-        <i class="fas fa-angle-double-left icon"></i>
+      <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/" class="previous"> 
+        <i class="fas fa-angle-double-left icon slide-left"></i>
         <div class="title">
           <small>prev</small>
           <span>휴고 Menus</span>
@@ -369,17 +353,33 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
       </a>
     
     
-      <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/" class="next slide-right">
+      <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/" class="next">
         <div class="title">
           <small>next</small>  
           <span>휴고 Table of Content</span>
         </div>
-        <i class="fas fa-angle-double-right icon"></i>
+        <i class="fas fa-angle-double-right icon slide-right"></i>
       </a>
     
 </nav>
   
       
+      
+<div class="category_breadcrumb">
+    <a href="http://dev2820.github.io/categories/what_is_hugo" class="solid name">
+        <i class="fas fa-folder icon"></i>
+        what_is_hugo
+    </a>
+    <i class="fas fa-angle-right icon"></i>
+    
+    <a href="http://dev2820.github.io/subcategories/hugo" class="solid name">
+        <i class="fas fa-folder icon"></i>  
+        <span class="name">Hugo</span>     
+    </a>
+    
+</div>
+
+
       <ul class="tags">
     
         <li><a href="http://dev2820.github.io/tags/hugo/"># hugo</a></li>
@@ -408,31 +408,7 @@ staticDir = [<span style="color:#f1fa8c">&#34;static1&#34;</span>, <span style="
 </div>
     </div>
 </div>
-      <div class="related-content">
-	<div class="title">
-		<p></p>
-		
-		<a href="http://dev2820.github.io/what_is_hugo">more</a>
-	</div>
-	
-	
-	<ul class="container">
-		
-		<li>
-			<a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/">휴고 Menus</a>
-		</li>
-		
-		<li>
-			<a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/">휴고 URL Management</a>
-		</li>
-		
-		<li>
-			<a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/">휴고 Link and Cross Reference</a>
-		</li>
-		
-	</ul>
-	
-</div>
+      
       <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {

@@ -5,6 +5,7 @@ Hugo-mania Theme CSS
 @import './aside.css';
 @import './breadcrumbnav.css';
 @import './categories.css';
+@import './category_breadcrumb.css';
 @import './footer.css';
 @import './homePage.css';
 @import './list.css';
@@ -40,12 +41,12 @@ body {
     padding: 0;
     color: #343A40;
     font-family: 'Noto Sans KR', sans-serif;
+    background-color:#E9E9E9;
     line-height: 1.73em;
 }
 body {
     scroll-behavior: smooth;
     transition:0.3s;
-    background-color:#ffffff;
     display:flex;
     flex-direction:column;
 }
@@ -89,40 +90,58 @@ hr.summary-sep {
     margin:20px auto;
 }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius:2px;
 }
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
 }
 .float:hover {
     /* animation: float 1s infinite; */
     transform:translateY(-5px);
 }
+.solid {
+    border-radius:4px;
+    padding: 4px 12px;    
+    box-shadow: 3px 3px rgba(0,0,0,0.2),
+                -2px -2px rgba(255,255,255,0.3);
+}
 .slide-left:hover {
+    transition:transform 0.3s;
     transform:translateX(-5px);
 }
 .slide-right:hover {
+    transition:transform 0.3s;
     transform:translateX(5px);
 }
 .hidden {
-    display:none;
     z-index:-1;
+    opacity:0;
 }
 .appear-300ms {
     opacity:0;
-    animation: appear-top 0.5s linear 0.3s 1;
+    animation: appear-top 0.3s linear 0.3s 1;
     animation-fill-mode: forwards;
 }
 .appear-500ms {
     opacity:0;
-    animation: appear-top 0.5s linear 0.5s 1;
+    animation: appear-top 0.3s linear 0.5s 1;
+    animation-fill-mode: forwards;
+}
+.appear-700ms {
+    opacity:0;
+    animation: appear-top 0.3s linear 0.7s 1;
     animation-fill-mode: forwards;
 }
 .appear-1000ms {
     opacity:0;
-    animation: appear-top 0.5s linear 1s 1;
+    animation: appear-top 0.3s linear 1s 1;
+    animation-fill-mode: forwards;
+}
+.appear-1200ms {
+    opacity:0;
+    animation: appear-top 0.3s linear 1.2s 1;
     animation-fill-mode: forwards;
 }
 /* Section, List, Taxonomy */
