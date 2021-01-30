@@ -45,36 +45,10 @@
     
     <script src="/js/default.js"></script>
 </head>
-<body id="body"><div id="topbar" class="card">
-  <div class="menus">
-    <div class="logo">
-      <a href="/">
-        
-        <img src="/images/site_logo_dark.png" height="32px" />
-        
-      </a>
-    </div>
-    <div class="burger">
-      <button onclick="event.stopPropagation(); goToUrl('/search')">
-        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-      </button>
-      <button onclick="event.stopPropagation(); toggleAside(true)">
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-      </button>
-    </div>
-  </div>
-  <div class="progress-bar">
-    <span class="progress"></span>
-  </div>
-</div><aside id="aside" class="hidden">
-    <div class="right-container">
-        <div class="profile-container">
-            <div class="aside-image" style="background-image:url('/images/space.jpg')">
-            </div>
-            <button class="hide-aside" onclick="event.stopPropagation(); toggleAside(false)">
-                <i class="fa fa-times fa-3x"></i>
-            </button>
-            <div class="profile">
+<body id="body">
+        <aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
     <div class="cover">
         
         <img src="/images/ocean.jpg">
@@ -88,165 +62,53 @@
     <a href ="/index.xml"><i class="fas fa-rss"></i></a>
 </div>
 </div>
-        </div>
-        <div class="navigation-container card">
-            <div class="aside-menu">
-                <ul>
-                    <li>
-                        <i class="fas fa-home icon"></i>
-                        <a href="http://dev2820.github.io/">홈</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-list icon"></i>
-                        <a href="http://dev2820.github.io//categories">카테고리</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-tags icon"></i>
-                        <a href="http://dev2820.github.io//tags">태그</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-search icon"></i>
-                        <a href="http://dev2820.github.io//search">검색</a>
-                    </li>
-                </ul>
-            </div>
-            <nav class="sidebar-nav">
-                
-                
-                
-                <ul class="categories">
-                    
-                    <li>
-                        <i class="fas fa-folder icon"></i>
-                        <a href="http://dev2820.github.io/categories/projects">
-                            <p class="name">Projects<small class="num"> (1)</small></p> 
-                        </a>
-                    </li>
-                    
-                    <ul class="subcategories">
-                        
-                        
-                        
-                        
-                        <li>
-                            <i class="fas fa-folder icon"></i>
-                            <a href="http://dev2820.github.io/subcategories/nas_project">
-                                <p class="name">Nas project<small class="num"> (1)</small></p>     
-                            </a>
-                        </li>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                    </ul>
-                    
-                    <li>
-                        <i class="fas fa-folder icon"></i>
-                        <a href="http://dev2820.github.io/categories/what_is_hugo">
-                            <p class="name">What is hugo<small class="num"> (21)</small></p> 
-                        </a>
-                    </li>
-                    
-                    <ul class="subcategories">
-                        
-                        
-                        <li>
-                            <i class="fas fa-folder icon"></i>
-                            <a href="http://dev2820.github.io/subcategories/hugo">
-                                <p class="name">Hugo<small class="num"> (21)</small></p>     
-                            </a>
-                        </li>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                    </ul>
-                    
-                    <li>
-                        <i class="fas fa-folder icon"></i>
-                        <a href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81">
-                            <p class="name">일상<small class="num"> (5)</small></p> 
-                        </a>
-                    </li>
-                    
-                    <ul class="subcategories">
-                        
-                        
-                        
-                        
-                        
-                        
-                        <li>
-                            <i class="fas fa-folder icon"></i>
-                            <a href="http://dev2820.github.io/subcategories/test">
-                                <p class="name">Test<small class="num"> (3)</small></p>     
-                            </a>
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <i class="fas fa-folder icon"></i>
-                            <a href="http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81">
-                                <p class="name">일상<small class="num"> (1)</small></p>     
-                            </a>
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <i class="fas fa-folder icon"></i>
-                            <a href="http://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C">
-                                <p class="name">추천<small class="num"> (1)</small></p>     
-                            </a>
-                        </li>
-                        
-                        
-                    </ul>
-                    
-                </ul>
-            </nav>
-        </div>
     </div>
-    <div class="left-container" onclick="event.stopPropagation(); toggleAside(false);">
+    <div class="navigation-container">
+        <div class="aside-menu">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="http://dev2820.github.io/">홈</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="http://dev2820.github.io//categories">카테고리</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="http://dev2820.github.io//tags">태그</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="http://dev2820.github.io//search">검색</a>
+                </li>
+            </ul>
+        </div>
+        
     </div>
 </aside>
 
 <header id="single-header" style="background-image:url(/images/default_banner.jpg);">
 
-  <div class="title">
-    <h1 id="title" class="appear-300ms">휴고의_환경설정</h1>
-    <section class="appear-700ms">
-      <p id="date"> <i class="far fa-calendar"></i> 2020-09-25 </p>
-      <p id="wordcount"> <i class="far fa-clock"></i> 5</p>
-    </section>
-    
-    
-    
-    <p class="author appear-700ms"><i class="fas fa-feather-alt"></i> <a href="http://dev2820.github.io/about/">dev2820</a></p>
+  <div class="curtain">
+    <h1 class="title appear-300ms">휴고의_환경설정</h1>
+    <div class="meta-data appear-700ms">
+      <p class="date"> <i class="far fa-calendar"></i> 2020-09-25 </p>
+      <p class="wordcount"> <i class="far fa-clock"></i> 5</p>
+      
+      
+      <p class="author"><i class="fas fa-feather-alt"></i> <a href="http://dev2820.github.io/about/">dev2820</a></p>
+      
+    </div>
     
   </div>
 </header>
 
 <main id="single-main">
-  <section id="content">
-    <div class="left">
-      
-    </div>
-    <div class="center appear-1200ms">
-      <div>
-            <article class="content">
-              <p>이 글은 휴고의 설정값들에 대해 설명합니다.</p>
+  <div class="roller"></div>
+  <section id="content" class="appear-1200ms">
+    <article class="content card">
+      <p>이 글은 휴고의 설정값들에 대해 설명합니다.</p>
 <h2 id="configure-hugo">Configure Hugo</h2>
 <p><a href="https://gohugo.io/getting-started/configuration/">https://gohugo.io/getting-started/configuration/</a></p>
 <p>hugo의 기본 설정값들에 대한 페이지 입니다.</p>
@@ -426,33 +288,11 @@ ex) 다음페이지로 넘어가면 주소가 다음과 같이 됩니다. <a hre
 <p>이번글은 전체를 다 읽어보기보단 두고두고 참고하면서 보시라고 만든 페이지 입니다.</p>
 <p>다음글은 CONTENT MANAGEMENT 로 찾아뵙겠습니다.</p>
 
-            </article>
-      </div>
-    </div>
-    <div class="right">
-      <script>
-    let toggle = true;
-    function toggleTable() {
-        if (toggle) {
-            document.getElementById('table').classList.add('hidden')
-            document.querySelector('#post-toc .title').classList.add('toggle-off')
-            document.querySelector('#post-toc .right-angle.icon').classList.remove('hidden')
-            document.querySelector('#post-toc .down-angle.icon').classList.add('hidden')
-        }
-        else {
-            document.getElementById('table').classList.remove('hidden')
-            document.querySelector('#post-toc .title').classList.remove('toggle-off')
-            document.querySelector('#post-toc .right-angle.icon').classList.add('hidden')
-            document.querySelector('#post-toc .down-angle.icon').classList.remove('hidden')
-        }
-        toggle = !toggle;
-    }
-</script>
-<div class="post-toc" id="post-toc">
-    <div class="title" onclick="toggleTable()">
-        <i class="fa fa-angle-right hidden right-angle icon"></i>
-        <i class="fa fa-angle-down down-angle icon"></i>
-        차례
+    </article>
+    <aside id="right-aside">
+      <div class="post-toc card" id="post-toc">
+    <div class="post-toc-title">
+        <span>차례</span>
     </div>
     <div id="table">
         <nav id="TableOfContents">
@@ -468,11 +308,11 @@ ex) 다음페이지로 넘어가면 주소가 다음과 같이 됩니다. <a hre
   </ul>
 </nav>
     </div>
-</div>    
-    </div>
+</div>
+    </aside>
   </section>
-  <aside id="meta">
-    <div class="center">
+  <section id="meta">
+    <div class="card">
       <nav class="section-move">
     
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" class="previous"> 
@@ -501,7 +341,11 @@ ex) 다음페이지로 넘어가면 주소가 다음과 같이 됩니다. <a hre
         <i class="fas fa-folder icon"></i>
         what_is_hugo
     </a>
-    <i class="fas fa-angle-right icon"></i>
+    
+    <span class="solid slash">
+        /
+    </span>
+
     
     <a href="http://dev2820.github.io/subcategories/hugo" class="solid name">
         <i class="fas fa-folder icon"></i>  
@@ -561,9 +405,9 @@ ex) 다음페이지로 넘어가면 주소가 다음과 같이 됩니다. <a hre
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
-  </aside>
+  </section>
 </main>
-<script src="/js/cardClassControl.js"></script>
+
 
     <footer id="footer">
 

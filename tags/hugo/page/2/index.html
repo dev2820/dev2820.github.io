@@ -37,36 +37,10 @@
     
     <script src="/js/default.js"></script>
 </head>
-<body id="body"><div id="topbar" class="card">
-  <div class="menus">
-    <div class="logo">
-      <a href="/">
-        
-        <img src="/images/site_logo_dark.png" height="32px" />
-        
-      </a>
-    </div>
-    <div class="burger">
-      <button onclick="event.stopPropagation(); goToUrl('/search')">
-        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-      </button>
-      <button onclick="event.stopPropagation(); toggleAside(true)">
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-      </button>
-    </div>
-  </div>
-  <div class="progress-bar">
-    <span class="progress"></span>
-  </div>
-</div><aside id="aside" class="hidden">
-    <div class="right-container">
-        <div class="profile-container">
-            <div class="aside-image" style="background-image:url('/images/space.jpg')">
-            </div>
-            <button class="hide-aside" onclick="event.stopPropagation(); toggleAside(false)">
-                <i class="fa fa-times fa-3x"></i>
-            </button>
-            <div class="profile">
+<body id="body">
+        <aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
     <div class="cover">
         
         <img src="/images/ocean.jpg">
@@ -80,137 +54,29 @@
     <a href ="/index.xml"><i class="fas fa-rss"></i></a>
 </div>
 </div>
-        </div>
-        <div class="navigation-container card">
-            <div class="aside-menu">
-                <ul>
-                    <li>
-                        <i class="fas fa-home icon"></i>
-                        <a href="http://dev2820.github.io/">홈</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-list icon"></i>
-                        <a href="http://dev2820.github.io//categories">카테고리</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-tags icon"></i>
-                        <a href="http://dev2820.github.io//tags">태그</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-search icon"></i>
-                        <a href="http://dev2820.github.io//search">검색</a>
-                    </li>
-                </ul>
-            </div>
-            <nav class="sidebar-nav">
-                
-                
-                
-                <ul class="categories">
-                    
-                    <li>
-                        <i class="fas fa-folder icon"></i>
-                        <a href="http://dev2820.github.io/categories/projects">
-                            <p class="name">Projects<small class="num"> (1)</small></p> 
-                        </a>
-                    </li>
-                    
-                    <ul class="subcategories">
-                        
-                        
-                        
-                        
-                        <li>
-                            <i class="fas fa-folder icon"></i>
-                            <a href="http://dev2820.github.io/subcategories/nas_project">
-                                <p class="name">Nas project<small class="num"> (1)</small></p>     
-                            </a>
-                        </li>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                    </ul>
-                    
-                    <li>
-                        <i class="fas fa-folder icon"></i>
-                        <a href="http://dev2820.github.io/categories/what_is_hugo">
-                            <p class="name">What is hugo<small class="num"> (21)</small></p> 
-                        </a>
-                    </li>
-                    
-                    <ul class="subcategories">
-                        
-                        
-                        <li>
-                            <i class="fas fa-folder icon"></i>
-                            <a href="http://dev2820.github.io/subcategories/hugo">
-                                <p class="name">Hugo<small class="num"> (21)</small></p>     
-                            </a>
-                        </li>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                    </ul>
-                    
-                    <li>
-                        <i class="fas fa-folder icon"></i>
-                        <a href="http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81">
-                            <p class="name">일상<small class="num"> (5)</small></p> 
-                        </a>
-                    </li>
-                    
-                    <ul class="subcategories">
-                        
-                        
-                        
-                        
-                        
-                        
-                        <li>
-                            <i class="fas fa-folder icon"></i>
-                            <a href="http://dev2820.github.io/subcategories/test">
-                                <p class="name">Test<small class="num"> (3)</small></p>     
-                            </a>
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <i class="fas fa-folder icon"></i>
-                            <a href="http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81">
-                                <p class="name">일상<small class="num"> (1)</small></p>     
-                            </a>
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <i class="fas fa-folder icon"></i>
-                            <a href="http://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C">
-                                <p class="name">추천<small class="num"> (1)</small></p>     
-                            </a>
-                        </li>
-                        
-                        
-                    </ul>
-                    
-                </ul>
-            </nav>
-        </div>
     </div>
-    <div class="left-container" onclick="event.stopPropagation(); toggleAside(false);">
+    <div class="navigation-container">
+        <div class="aside-menu">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="http://dev2820.github.io/">홈</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="http://dev2820.github.io//categories">카테고리</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="http://dev2820.github.io//tags">태그</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="http://dev2820.github.io//search">검색</a>
+                </li>
+            </ul>
+        </div>
+        
     </div>
 </aside>
 <header id="taxonomies-header">
@@ -255,7 +121,7 @@
     }
 </script>
 <main id="taxonomies-main">
-    <div class="center">   
+    <div class="center card">   
         <div class="sort-options">
             <button class="by-date option" onclick="byDate()">최신글부터</button>
             <button class="by-date-reverse option toggle-on" onclick="byDateReverse()">오래된글부터</button>        
@@ -268,7 +134,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/">
@@ -302,7 +168,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/">
@@ -336,7 +202,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/">
@@ -370,7 +236,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/">
@@ -405,7 +271,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/">
@@ -439,7 +305,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/">
@@ -473,7 +339,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/">
@@ -513,7 +379,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/">
@@ -547,7 +413,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/">
@@ -581,7 +447,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/">
@@ -615,7 +481,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/">
@@ -650,7 +516,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/">
@@ -684,7 +550,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/">
@@ -718,7 +584,7 @@
                 <article class="summary card">
   
   
-  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/&#34;)" style="background-image: linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 251px),url(/images/default_summary.png);"></div>
+  <div class="cover-image" onclick="goToUrl(&#34;http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
   
   <div class="cover-content">
     <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/">
