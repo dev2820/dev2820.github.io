@@ -5,23 +5,34 @@ header#single-header {
 header#single-header .curtain {
     position:relative;
 }
+header#single-header .curtain a.go-back {
+    position:absolute;
+    top: 20px;
+    left: 20px;
+}
+header#single-header .curtain a.go-back .icon {
+    font-size:2rem;
+    font: weight lighter;
+    color:#eeeeee;
+}
 header#single-header .curtain  h1.title {
     width:100%;
     font-weight:100;
     font-size:3rem;
     padding:10px;
-    position: relative;
+    position: absolute;
     line-height:4rem;
     text-align:center;
     overflow:hidden;
     z-index:10;
+    top:35%;
 }
 header#single-header .curtain div.meta-data {
-    position:relative;
+    position:absolute;
     text-align:center;
     width:100%;
     margin:0 auto;
-    top:1rem;
+    top:70%;
 }
 header#single-header .curtain div.meta-data p .icon {
     margin-right:5px;

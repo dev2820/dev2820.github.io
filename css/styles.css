@@ -107,6 +107,9 @@ section {
     padding-bottom:10px;
     position: relative;
 }
+section:last-child {
+    padding-bottom:200px;
+}
 hr.summary-sep {
     width:100%;
     border:0px dashed #bbb;
@@ -190,29 +193,34 @@ hr.summary-sep {
     z-index:-1;
     opacity:0;
 }
+.appear-100ms {
+    opacity:0;
+    animation: appear 0.3s linear 0.1s 1;
+    animation-fill-mode: forwards;
+}
 .appear-300ms {
     opacity:0;
-    animation: appear-top 0.3s linear 0.3s 1;
+    animation: appear 0.3s linear 0.3s 1;
     animation-fill-mode: forwards;
 }
 .appear-500ms {
     opacity:0;
-    animation: appear-top 0.3s linear 0.5s 1;
+    animation: appear 0.3s linear 0.5s 1;
     animation-fill-mode: forwards;
 }
 .appear-700ms {
     opacity:0;
-    animation: appear-top 0.3s linear 0.7s 1;
+    animation: appear 0.3s linear 0.7s 1;
     animation-fill-mode: forwards;
 }
 .appear-1000ms {
     opacity:0;
-    animation: appear-top 0.3s linear 1s 1;
+    animation: appear 0.3s linear 1s 1;
     animation-fill-mode: forwards;
 }
 .appear-1200ms {
     opacity:0;
-    animation: appear-top 0.3s linear 1.2s 1;
+    animation: appear 0.3s linear 1.2s 1;
     animation-fill-mode: forwards;
 }
 /* Section, List, Taxonomy */
@@ -267,20 +275,6 @@ ul.contents li {
     margin-left:-50%;
     color:black;
 }
-
-.curtainup {
-    transform-style: preserve-3d;
-}
-.curtainup:before,
-.curtainup:after{
-    transform-origin: center center;
-    transform: scale(1,0);
-}
-.curtainup:hover:before,
-.curtainup:hover:after{
-    transform: scale(1);
-    border-radius: 0;
-}
 @keyframes appear-top {
     0% {
         opacity:0;
@@ -289,5 +283,13 @@ ul.contents li {
     100% {
         opacity:1;
         transform:translateY(0px);
+    }
+}
+@keyframes appear {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
     }
 }
