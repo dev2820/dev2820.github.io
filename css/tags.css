@@ -1,14 +1,15 @@
 /* tag page css */
+header#tag-header{
+    height:300px;
+}
 header#tag-header .center {
-    height:100%;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
+    flex-direction:column;
 }
 header#tag-header .title {
     font-weight:bolder;
     font-size:3rem;
     line-height:3rem;
+    padding-left:20px;
     margin:30px 0;
 }
 header#tag-header .title .icon{
@@ -17,17 +18,20 @@ header#tag-header .title .icon{
 header#tag-header .description {
     font-size:1.1rem;
     margin-bottom:30px;
+    padding-left:20px;
 }
-header#tag-header .tag-list-head {
+header#tag-header .tag-count {
     margin-bottom:20px;
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+    padding-left:20px;
 }
 main#tag-term {
     display:flex;
     flex-direction:column;
     justify-content: center;
+    margin-top:380px;
 }
 main#tag-term .sort-options {
     display:flex;
