@@ -92,23 +92,26 @@
         
     </div>
 </aside>
-<header id="taxonomies-header">
+<header id="taxonomy-header" class="card-inset bg-cover">
     <div class="center">
-        <h1>
-            카테고리 -
+        <h1 class="title">
+            
+                <i class="fas fa-folder-open"></i>
             
             일상
         </h1>
-        <p>총 5 개의 글</p>
+        <div class="taxonomy-count">
+            <p class="counter">총 5 개의 글</p>
+        </div>
     </div>
 </header>
 
 <script>
     function byDate() {
-        const elByDate = document.querySelector('main#taxonomies-main div.by-date');
-        const elByDateReverse = document.querySelector('main#taxonomies-main div.by-date-reverse');
-        const elByDateOption = document.querySelector('main#taxonomies-main button.by-date');
-        const elByDateReverseOption = document.querySelector('main#taxonomies-main button.by-date-reverse');
+        const elByDate = document.querySelector('main#taxonomy-main div.by-date');
+        const elByDateReverse = document.querySelector('main#taxonomy-main div.by-date-reverse');
+        const elByDateOption = document.querySelector('main#taxonomy-main button.by-date');
+        const elByDateReverseOption = document.querySelector('main#taxonomy-main button.by-date-reverse');
         if(elByDate.classList.contains('hidden')) {
             elByDate.classList.remove('hidden');
             elByDateOption.classList.add('toggle-on');
@@ -119,10 +122,10 @@
         }
     }
     function byDateReverse() {
-        const elByDate = document.querySelector('main#taxonomies-main div.by-date');
-        const elByDateReverse = document.querySelector('main#taxonomies-main div.by-date-reverse');
-        const elByDateOption = document.querySelector('main#taxonomies-main button.by-date');
-        const elByDateReverseOption = document.querySelector('main#taxonomies-main button.by-date-reverse');
+        const elByDate = document.querySelector('main#taxonomy-main div.by-date');
+        const elByDateReverse = document.querySelector('main#taxonomy-main div.by-date-reverse');
+        const elByDateOption = document.querySelector('main#taxonomy-main button.by-date');
+        const elByDateReverseOption = document.querySelector('main#taxonomy-main button.by-date-reverse');
         if(elByDateReverse.classList.contains('hidden')) {
             elByDateReverse.classList.remove('hidden');
             elByDateReverseOption.classList.add('toggle-on');
@@ -133,11 +136,12 @@
         }
     }
 </script>
-<main id="taxonomies-main">
-    <div class="center card">   
-        <div class="sort-options">
-            <button class="by-date option" onclick="byDate()">최신글부터</button>
-            <button class="by-date-reverse option toggle-on" onclick="byDateReverse()">오래된글부터</button>        
+<main id="taxonomy-main">
+    <div class="roller"></div>
+    <section id="taxonomy-list">   
+        <div class="sort-options card">
+            <button class="by-date option solid" onclick="byDate()">오래된글부터</button>
+            <button class="by-date-reverse option solid toggle-on" onclick="byDateReverse()">최신글부터</button>        
         </div> 
         <div class="by-date hidden">
             <ul class="contents">
@@ -159,7 +163,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-07-25 | </span>
+      <span class="date">2020.07.25 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test3/#disqus_thread"></a>
     </div>
@@ -174,7 +178,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
         <li>
             <div>  
@@ -193,7 +196,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-07-25 | </span>
+      <span class="date">2020.07.25 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test2/#disqus_thread"></a>
     </div>
@@ -208,7 +211,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
         <li>
             <div>  
@@ -229,7 +231,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-08-08 | </span>
+      <span class="date">2020.08.08 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/%EC%9D%BC%EC%83%81/hello-programmer-theme/#disqus_thread"></a>
     </div>
@@ -244,7 +246,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
         <li>
             <div>  
@@ -263,7 +264,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-09-23 | </span>
+      <span class="date">2020.09.23 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/%EC%9D%BC%EC%83%81/code-server/#disqus_thread"></a>
     </div>
@@ -278,7 +279,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
         <li>
             <div>  
@@ -301,7 +301,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-09-26 | </span>
+      <span class="date">2020.09.26 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test4/#disqus_thread"></a>
     </div>
@@ -316,7 +316,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
 </ul>
 
@@ -345,7 +344,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-09-26 | </span>
+      <span class="date">2020.09.26 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test4/#disqus_thread"></a>
     </div>
@@ -360,7 +359,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
         <li>
             <div>  
@@ -379,7 +377,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-09-23 | </span>
+      <span class="date">2020.09.23 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/%EC%9D%BC%EC%83%81/code-server/#disqus_thread"></a>
     </div>
@@ -394,7 +392,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
         <li>
             <div>  
@@ -415,7 +412,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-08-08 | </span>
+      <span class="date">2020.08.08 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/%EC%9D%BC%EC%83%81/hello-programmer-theme/#disqus_thread"></a>
     </div>
@@ -430,7 +427,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
         <li>
             <div>  
@@ -449,7 +445,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-07-25 | </span>
+      <span class="date">2020.07.25 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test2/#disqus_thread"></a>
     </div>
@@ -464,7 +460,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
         <li>
             <div>  
@@ -483,7 +478,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-07-25 | </span>
+      <span class="date">2020.07.25 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test3/#disqus_thread"></a>
     </div>
@@ -498,11 +493,11 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
 </ul>
         </div>
-        <div class="pagination">
+        <div class="center">
+            <div class="pagination">
   
   
   <span class="page">
@@ -512,7 +507,8 @@
   
 </div>  
 
-    </div>
+        </div>
+    </section>
 </main>
   <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
     <button onclick="scrollToTop()" class="scroll-to-top card">

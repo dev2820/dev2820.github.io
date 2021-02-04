@@ -92,23 +92,26 @@
         
     </div>
 </aside>
-<header id="taxonomies-header">
+<header id="taxonomy-header" class="card-inset bg-cover">
     <div class="center">
-        <h1>
-            태그 -
+        <h1 class="title">
+            
+                <i class="fas fa-tag"></i>
             
             휴고설치
         </h1>
-        <p>총 2 개의 글</p>
+        <div class="taxonomy-count">
+            <p class="counter">총 2 개의 글</p>
+        </div>
     </div>
 </header>
 
 <script>
     function byDate() {
-        const elByDate = document.querySelector('main#taxonomies-main div.by-date');
-        const elByDateReverse = document.querySelector('main#taxonomies-main div.by-date-reverse');
-        const elByDateOption = document.querySelector('main#taxonomies-main button.by-date');
-        const elByDateReverseOption = document.querySelector('main#taxonomies-main button.by-date-reverse');
+        const elByDate = document.querySelector('main#taxonomy-main div.by-date');
+        const elByDateReverse = document.querySelector('main#taxonomy-main div.by-date-reverse');
+        const elByDateOption = document.querySelector('main#taxonomy-main button.by-date');
+        const elByDateReverseOption = document.querySelector('main#taxonomy-main button.by-date-reverse');
         if(elByDate.classList.contains('hidden')) {
             elByDate.classList.remove('hidden');
             elByDateOption.classList.add('toggle-on');
@@ -119,10 +122,10 @@
         }
     }
     function byDateReverse() {
-        const elByDate = document.querySelector('main#taxonomies-main div.by-date');
-        const elByDateReverse = document.querySelector('main#taxonomies-main div.by-date-reverse');
-        const elByDateOption = document.querySelector('main#taxonomies-main button.by-date');
-        const elByDateReverseOption = document.querySelector('main#taxonomies-main button.by-date-reverse');
+        const elByDate = document.querySelector('main#taxonomy-main div.by-date');
+        const elByDateReverse = document.querySelector('main#taxonomy-main div.by-date-reverse');
+        const elByDateOption = document.querySelector('main#taxonomy-main button.by-date');
+        const elByDateReverseOption = document.querySelector('main#taxonomy-main button.by-date-reverse');
         if(elByDateReverse.classList.contains('hidden')) {
             elByDateReverse.classList.remove('hidden');
             elByDateReverseOption.classList.add('toggle-on');
@@ -133,11 +136,12 @@
         }
     }
 </script>
-<main id="taxonomies-main">
-    <div class="center card">   
-        <div class="sort-options">
-            <button class="by-date option" onclick="byDate()">최신글부터</button>
-            <button class="by-date-reverse option toggle-on" onclick="byDateReverse()">오래된글부터</button>        
+<main id="taxonomy-main">
+    <div class="roller"></div>
+    <section id="taxonomy-list">   
+        <div class="sort-options card">
+            <button class="by-date option solid" onclick="byDate()">오래된글부터</button>
+            <button class="by-date-reverse option solid toggle-on" onclick="byDateReverse()">최신글부터</button>        
         </div> 
         <div class="by-date hidden">
             <ul class="contents">
@@ -159,7 +163,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-09-25 | </span>
+      <span class="date">2020.09.25 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/#disqus_thread"></a>
     </div>
@@ -174,7 +178,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
         <li>
             <div>  
@@ -193,7 +196,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-09-25 | </span>
+      <span class="date">2020.09.25 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/#disqus_thread"></a>
     </div>
@@ -208,7 +211,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
 </ul>
 
@@ -233,7 +235,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-09-25 | </span>
+      <span class="date">2020.09.25 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/#disqus_thread"></a>
     </div>
@@ -248,7 +250,6 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
         <li>
             <div>  
@@ -267,7 +268,7 @@
     
     <div class="post-meta">
       <i class="far fa-calendar" aria-hidden="true"></i>
-      <span class="date">2020-09-25 | </span>
+      <span class="date">2020.09.25 | </span>
       <i class="fas fa-comments" aria-hidden="true"></i>
       <a href="http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/#disqus_thread"></a>
     </div>
@@ -282,11 +283,11 @@
 </article>
             </div>
         </li>
-        <hr class="summary-sep" />
     
 </ul>
         </div>
-        <div class="pagination">
+        <div class="center">
+            <div class="pagination">
   
   
   <span class="page">
@@ -296,7 +297,8 @@
   
 </div>  
 
-    </div>
+        </div>
+    </section>
 </main>
   <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
     <button onclick="scrollToTop()" class="scroll-to-top card">
