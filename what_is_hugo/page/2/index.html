@@ -32,10 +32,11 @@
     <link rel="stylesheet" href="/css/styles.css">
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    
     <script>hljs.initHighlightingOnLoad();</script>
     
     <script src="/js/default.js"></script>
+    
 </head>
 <body id="body">
         <aside id="left-aside">
@@ -137,7 +138,7 @@
             <button class="by-date option solid" onclick="byDate()">오래된글부터</button>
             <button class="by-date-reverse option solid toggle-on" onclick="byDateReverse()">최신글부터</button>    
         </div>
-        <div class="by-date">
+        <div class="by-date hidden">
             <ul class="contents">
     
         <li>
@@ -375,7 +376,7 @@
 </ul>
 
         </div>
-        <div class="by-date-reverse hidden">
+        <div class="by-date-reverse">
             <ul class="contents">
     
         <li>
