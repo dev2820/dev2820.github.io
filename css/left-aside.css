@@ -1,5 +1,6 @@
 /* Aside */
 aside#left-aside {
+    color:var(--on-background-color);
     position:fixed;
     top:0;
     left:50%;
@@ -26,8 +27,12 @@ aside#left-aside nav.aside-menu ul li {
     display:flex;
     flex-direction:row;
     margin-bottom:30px;
+    font-size:1.1rem;
 }
 aside#left-aside nav.aside-menu ul li .icon {
     margin:auto 0;
-    width:40px;
+    width:50px;
+}
+aside#left-aside nav.aside-menu a {
+    color:var(--on-background-color);
 }
