@@ -6,14 +6,14 @@
     <description>Recent content in what_is_hugo on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <managingEditor>second28200@gmail.com (dev2820)</managingEditor>
-    <webMaster>second28200@gmail.com (dev2820)</webMaster>
+    <managingEditor>second28200@gmail.com (YANG GI JO )</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO )</webMaster>
     <lastBuildDate>Wed, 23 Sep 2020 12:19:54 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/what_is_hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Hugo Templating</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sun, 15 Nov 2020 13:26:07 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</guid>
       <description>Introduction to Hugo Templating 출처) https://gohugo.io/templates/introduction/ 휴고에선 Go의 html/template와 text/template 라이브러리를 기본적으로 템플릿화 하는데 사용할 수 있습니다. 기본 문법 Go Template</description>
     </item>
@@ -22,7 +22,7 @@
       <title>휴고 Comment 추가하기</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/</link>
       <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-comment/</guid>
       <description>Comments 휴고는 Disqus 템플릿을 기본적으로 제공합니다. 물론 disqus 말고도 다른 코멘트 시스템을 이용할 수도 있습니다. 하지만 여기선 Disqus 다는 방법에 대해서만 설명하겠습니다. https://gohugo.io/content-management/comments/</description>
     </item>
@@ -31,7 +31,7 @@
       <title>휴고 Image Processing</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-image-processing/</link>
       <pubDate>Sat, 03 Oct 2020 17:47:33 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-image-processing/</guid>
       <description>이번 글은 휴고의 이미지 프로세싱에 관한 글입니다. https://gohugo.io/content-management/image-processing/ The Image Page Resource image는 페이지 리소스이고 프로세싱 메소드는 /static 폴더 안에 있는 이미지에 대해서는 작동하지 않습</description>
     </item>
@@ -40,7 +40,7 @@
       <title>휴고 Page Resources</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/</link>
       <pubDate>Sat, 03 Oct 2020 17:47:18 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/</guid>
       <description>이미지, 다른 페이지, 문서 등등 모든 페이지 리소스는 relative URL과 메타데이터를 가집니다. 페이지 리소스는 페이지 리소스가 포함된 페이지 번들에서만 사용가능합니</description>
     </item>
@@ -49,7 +49,7 @@
       <title>휴고 Multilingual Mode</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/</link>
       <pubDate>Sat, 03 Oct 2020 17:46:56 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/</guid>
       <description>이번글은 휴고 사이트의 다중언어지원에 대한 글입니다. https://gohugo.io/content-management/multilingual/ Configure Languages 다음 예제는 다중언어지원을 위한 config 파일입니다. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22</description>
     </item>
@@ -58,7 +58,7 @@
       <title>휴고 Table of Content</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/</link>
       <pubDate>Fri, 02 Oct 2020 20:00:12 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-table-of-content/</guid>
       <description>이번글은 문서의 목차를 만드는 방법에 대해 다루겠습니다. 휴고는 markdown 문서를 분석해 자동으로 목차를 만들어줍니다. https://gohugo.io/content-management/toc/ Usage 일반적으로 마크다운으로 문서를 만들면 우리</description>
     </item>
@@ -67,7 +67,7 @@
       <title>휴고 Static Files</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-static-files/</link>
       <pubDate>Fri, 02 Oct 2020 18:14:55 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-static-files/</guid>
       <description>이 글은 휴고의 static file에 대해 다룹니다. static/ 디렉토리에 들어가는 모든 파일들은 다 static file이라고 생각하시면 됩니다. https://gohugo.io/content-management/static-files/ Static Files static file이란 사이트 루트에 고</description>
     </item>
@@ -76,7 +76,7 @@
       <title>휴고 Menus</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/</link>
       <pubDate>Thu, 01 Oct 2020 23:42:40 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-menus/</guid>
       <description>휴고엔 강력한 메뉴 시스템이 있습니다. 이 메뉴시스템으론 다음과 같은 일을 할 수 있습니다. 메뉴 안에 컨텐츠 배치 제한없는 메뉴 depth 어떠한 컨텐츠도 필요없는 메뉴 엔트</description>
     </item>
@@ -85,7 +85,7 @@
       <title>휴고 URL Management</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/</link>
       <pubDate>Thu, 01 Oct 2020 21:56:57 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/</guid>
       <description>이번글은 휴고가 지원하는 permalinks, aliases, link canonicalization 그리고 절대경로와 상대경로를 다루는 옵션들에 대해 다룹니다. https://gohugo.io/content-management/urls/ Permalinks 휴고가 여러분의 사이트를 build 하게 되면 생성되는 웹사이트는 public/</description>
     </item>
@@ -94,7 +94,7 @@
       <title>휴고 Link and Cross Reference</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/</link>
       <pubDate>Thu, 01 Oct 2020 21:25:59 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-link-and-cross-reference/</guid>
       <description>이번엔 휴고의 Reference에 대한 글입니다. 특정 문서로 가는 링크를 만드는 rel,relref shortcode에 대해 다룹니다. 이 두 shortcode는 각각 한 문</description>
     </item>
@@ -103,7 +103,7 @@
       <title>휴고 Summary</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/</link>
       <pubDate>Wed, 30 Sep 2020 20:07:32 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-summary/</guid>
       <description>&lt;p&gt;휴고는 page 변수로 &lt;code&gt;.Summary&lt;/code&gt;를 제공합니다. 이 summary는 페이지에 대한 요약이며 자동으로 휴고가 생성해줍니다만 사용자 정의 요약을 사용할 수도 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://gohugo.io/content-management/summaries/&#34;&gt;https://gohugo.io/content-management/summaries/&lt;/a&gt;&lt;/p&gt;</description>
@@ -113,7 +113,7 @@
       <title>휴고 Taxonomies</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/</link>
       <pubDate>Wed, 30 Sep 2020 19:06:31 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-taxonomies/</guid>
       <description>taxonomy, 즉 분류입니다. 컨텐츠를 어떻게 분류하고 그룹화하는지에 대해 다룹니다. https://gohugo.io/content-management/taxonomies/ What is a Taxonomy? 휴고는 컨텐츠를 그룹화하는 taxonomies 라는 도우미를 포함하고 있습니다. taxo</description>
     </item>
@@ -122,7 +122,7 @@
       <title>휴고 Shortcodes</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/</link>
       <pubDate>Wed, 30 Sep 2020 15:45:34 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-shortcodes/</guid>
       <description>이 글은 간단한 코드를 컨텐츠 안에 집어넣는 Shortcodes 기능을 소개합니다. 참고로 hugo 문법을 md파일에 썼더니 죄다 hugo에서 해석해버려서 { {와 } }는 {{와 }}로 읽</description>
     </item>
@@ -131,7 +131,7 @@
       <title>휴고 Content Section,content Type 그리고 Archetypes</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/</link>
       <pubDate>Tue, 29 Sep 2020 23:48:55 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-content-sectioncontent-type-%EA%B7%B8%EB%A6%AC%EA%B3%A0-archetypes/</guid>
       <description>이번 글에서는 section, type 그리고 archetypes에 대해 각각 다뤄보겠습니다. Content Sections https://gohugo.io/content-management/sections/ 휴고는 여러분의 컨텐츠와 일치하는 section tree를 생성합니다. Sectio</description>
     </item>
@@ -140,7 +140,7 @@
       <title>휴고 Front Matter</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/</link>
       <pubDate>Tue, 29 Sep 2020 21:54:15 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-front-matter/</guid>
       <description>이번 글은 휴고 컨텐츠의 &amp;lsquo;front matter&amp;rsquo; 에 대해 설명하는 글입니다. front matter는 말하자면 컨텐츠의 메타데이터, 컨텐츠의 설정값입니다. 컨텐츠의 타이틀, 생성날짜,</description>
     </item>
@@ -149,7 +149,7 @@
       <title>휴고 연관성 있는 컨텐츠</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/</link>
       <pubDate>Sun, 27 Sep 2020 16:35:32 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/</guid>
       <description>Related Content 블로그 글 다읽고 하단에 보면 비슷한 글 더보기, 다른 컨텐츠 보기 등등 나오죠? 그거 휴고에서 어떻게 만드는지 관한 글입니다. 휴고에서는 각 컨텐츠의 front matter 를 기반</description>
     </item>
@@ -158,7 +158,7 @@
       <title>휴고 Syntax Highlighting</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/</link>
       <pubDate>Sun, 27 Sep 2020 15:09:40 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-syntax-highlighting/</guid>
       <description>이번글엔 컨텐츠에 들어가는 code fences에 테마 및 highlight 적용하는 방법이 들어갑니다. hightlight를 적용하는 방법은 여러가지가 있지만, 그 중에서도 딱</description>
     </item>
@@ -167,7 +167,7 @@
       <title>휴고의 컨텐츠 관리</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</link>
       <pubDate>Sat, 26 Sep 2020 20:39:14 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</guid>
       <description>이번 글에서는 휴고의 컨텐츠 관리에 관해서 알아보겠습니다. https://gohugo.io/content-management/ Content Organization 휴고의 컨텐츠 조직화에 관한 페이지입니다. https://gohugo.io/content-management/organization/ page Bundles 휴고는 페이지별로 다른 설정, 다른 front matter 값을</description>
     </item>
@@ -176,7 +176,7 @@
       <title>휴고의_환경설정</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/</link>
       <pubDate>Fri, 25 Sep 2020 20:09:17 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/</guid>
       <description>이 글은 휴고의 설정값들에 대해 설명합니다. Configure Hugo https://gohugo.io/getting-started/configuration/ hugo의 기본 설정값들에 대한 페이지 입니다. Configuration File 휴고는 기본적으로 폴더의 루트에 존재하는 config.toml, config.yaml 또는 config.json 파일</description>
     </item>
@@ -185,7 +185,7 @@
       <title>휴고_설치하기</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</link>
       <pubDate>Fri, 25 Sep 2020 14:56:28 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</guid>
       <description>이 글에서는 휴고 설치하는 법과 휴고가 생성하는 사이트의 폴더 구조에 대해 살펴볼 것입니다. Install Hugo 휴고 시작하기 https://gohugo.io/getting-started/ 휴고는 Go 컴파일러가 돌아가는 곳이면 어디에서든 작</description>
     </item>
@@ -194,7 +194,7 @@
       <title>[hugo] 휴고에 대해 알아보자 (1)</title>
       <link>http://dev2820.github.io/what_is_hugo/what_is_hugo/</link>
       <pubDate>Wed, 23 Sep 2020 21:30:23 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/what_is_hugo/</guid>
       <description>글머리 이 글은 Hugo(이하 휴고) 공식 홈페이지와 공식 홈페이지에서 소개하는 휴고에 대해 다루고 있습니다. 페이지 설명을 번역하며 휴고에 대해서 알아볼 것입니</description>
     </item>

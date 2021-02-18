@@ -6,14 +6,14 @@
     <description>Recent content in 휴고설치 on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <managingEditor>second28200@gmail.com (dev2820)</managingEditor>
-    <webMaster>second28200@gmail.com (dev2820)</webMaster>
+    <managingEditor>second28200@gmail.com (YANG GI JO )</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO )</webMaster>
     <lastBuildDate>Fri, 25 Sep 2020 20:09:17 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0%EC%84%A4%EC%B9%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>휴고의_환경설정</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/</link>
       <pubDate>Fri, 25 Sep 2020 20:09:17 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0%EC%9D%98_%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/</guid>
       <description>이 글은 휴고의 설정값들에 대해 설명합니다. Configure Hugo https://gohugo.io/getting-started/configuration/ hugo의 기본 설정값들에 대한 페이지 입니다. Configuration File 휴고는 기본적으로 폴더의 루트에 존재하는 config.toml, config.yaml 또는 config.json 파일</description>
     </item>
@@ -22,7 +22,7 @@
       <title>휴고_설치하기</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</link>
       <pubDate>Fri, 25 Sep 2020 14:56:28 +0900</pubDate>
-      <author>second28200@gmail.com (dev2820)</author>
+      <author>second28200@gmail.com (YANG GI JO )</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0_%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</guid>
       <description>이 글에서는 휴고 설치하는 법과 휴고가 생성하는 사이트의 폴더 구조에 대해 살펴볼 것입니다. Install Hugo 휴고 시작하기 https://gohugo.io/getting-started/ 휴고는 Go 컴파일러가 돌아가는 곳이면 어디에서든 작</description>
     </item>
