@@ -6,14 +6,14 @@
     <description>Recent content in URL on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <managingEditor>second28200@gmail.com (YANG GI JO )</managingEditor>
-    <webMaster>second28200@gmail.com (YANG GI JO )</webMaster>
+    <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
     <lastBuildDate>Thu, 01 Oct 2020 21:56:57 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/url/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>휴고 URL Management</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/</link>
       <pubDate>Thu, 01 Oct 2020 21:56:57 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO )</author>
+      <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-url-management/</guid>
       <description>이번글은 휴고가 지원하는 permalinks, aliases, link canonicalization 그리고 절대경로와 상대경로를 다루는 옵션들에 대해 다룹니다. https://gohugo.io/content-management/urls/ Permalinks 휴고가 여러분의 사이트를 build 하게 되면 생성되는 웹사이트는 public/</description>
     </item>

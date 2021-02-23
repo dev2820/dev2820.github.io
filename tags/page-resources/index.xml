@@ -6,14 +6,14 @@
     <description>Recent content in Page Resources on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <managingEditor>second28200@gmail.com (YANG GI JO )</managingEditor>
-    <webMaster>second28200@gmail.com (YANG GI JO )</webMaster>
+    <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
     <lastBuildDate>Sat, 03 Oct 2020 17:47:18 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/page-resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>휴고 Page Resources</title>
       <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/</link>
       <pubDate>Sat, 03 Oct 2020 17:47:18 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO )</author>
+      <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-page-resources/</guid>
       <description>이미지, 다른 페이지, 문서 등등 모든 페이지 리소스는 relative URL과 메타데이터를 가집니다. 페이지 리소스는 페이지 리소스가 포함된 페이지 번들에서만 사용가능합니</description>
     </item>

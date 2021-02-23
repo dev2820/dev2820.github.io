@@ -6,14 +6,14 @@
     <description>Recent content in diary on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <managingEditor>second28200@gmail.com (YANG GI JO )</managingEditor>
-    <webMaster>second28200@gmail.com (YANG GI JO )</webMaster>
+    <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
     <lastBuildDate>Sat, 25 Jul 2020 02:23:43 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/diary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>test 글 작성 중</title>
       <link>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test3/</link>
       <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO )</author>
+      <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>http://dev2820.github.io/%EC%9D%BC%EC%83%81/test/test3/</guid>
       <description>md 작성 테스트 중 h1 h2 h3 h4 h5 h6 1 &amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt; hello hugo title1 sub title1 sub title2 sub sub title</description>
     </item>
