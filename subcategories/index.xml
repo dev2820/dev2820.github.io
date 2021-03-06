@@ -8,7 +8,16 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Sun, 15 Nov 2020 13:26:07 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/subcategories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Mar 2021 21:33:27 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/subcategories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>programming_language</title>
+      <link>http://dev2820.github.io/subcategories/programming_language/</link>
+      <pubDate>Sat, 06 Mar 2021 21:33:27 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>http://dev2820.github.io/subcategories/programming_language/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>http://dev2820.github.io/subcategories/hugo/</link>

@@ -8,7 +8,34 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Sun, 15 Nov 2020 13:26:07 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Mar 2021 21:33:27 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PL</title>
+      <link>http://dev2820.github.io/tags/pl/</link>
+      <pubDate>Sat, 06 Mar 2021 21:33:27 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>http://dev2820.github.io/tags/pl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>공부</title>
+      <link>http://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/</link>
+      <pubDate>Sat, 06 Mar 2021 21:33:27 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>http://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>프로그래밍언어</title>
+      <link>http://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4/</link>
+      <pubDate>Sat, 06 Mar 2021 21:33:27 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>http://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>http://dev2820.github.io/tags/hugo/</link>

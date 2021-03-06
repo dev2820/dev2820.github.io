@@ -4,7 +4,67 @@
   
   <url>
     <loc>http://dev2820.github.io/categories/</loc>
-    <lastmod>2020-11-15T13:26:07+09:00</lastmod>
+    <lastmod>2021-03-06T21:33:27+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/categories/computer_science/</loc>
+    <lastmod>2021-03-06T21:33:27+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/pl/</loc>
+    <lastmod>2021-03-06T21:33:27+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/subcategories/programming_language/</loc>
+    <lastmod>2021-03-06T21:33:27+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/subcategories/</loc>
+    <lastmod>2021-03-06T21:33:27+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/</loc>
+    <lastmod>2021-03-06T21:33:27+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/</loc>
+    <lastmod>2021-03-06T21:33:27+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4/</loc>
+    <lastmod>2021-03-06T21:33:27+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B41/</loc>
+    <lastmod>2021-03-06T21:33:27+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/computer_science/</loc>
+    <lastmod>2021-03-06T12:19:54+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>http://dev2820.github.io/computer_science/programming_language/</loc>
+    <lastmod>2021-03-06T12:19:54+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
@@ -22,18 +82,6 @@
   
   <url>
     <loc>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</loc>
-    <lastmod>2020-11-15T13:26:07+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/subcategories/</loc>
-    <lastmod>2020-11-15T13:26:07+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://dev2820.github.io/tags/</loc>
     <lastmod>2020-11-15T13:26:07+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>

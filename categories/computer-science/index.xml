@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer science on dev2820 개발일지</title>
+    <link>http://dev2820.github.io/categories/computer-science/</link>
+    <description>Recent content in computer science on dev2820 개발일지</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
+    <lastBuildDate>Sat, 06 Mar 2021 21:33:27 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/categories/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>프로그래밍언어를 배워야하는 이유</title>
+      <link>http://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4%EB%A5%BC-%EB%B0%B0%EC%9B%8C%EC%95%BC%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0/</link>
+      <pubDate>Sat, 06 Mar 2021 21:33:27 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>http://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4%EB%A5%BC-%EB%B0%B0%EC%9B%8C%EC%95%BC%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
