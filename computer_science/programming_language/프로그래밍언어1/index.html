@@ -2,16 +2,16 @@
 <html><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>프로그래밍언어(1)  | dev2820 개발일지</title>
+    <title>프로그래밍언어 (1)  | dev2820 개발일지</title>
     <meta name="description"
-        content="dev2820의 개발일지 저장소 '프로그래밍언어(1)'을 한 번 살펴보세요.">
-    <meta property="og:title" content="프로그래밍언어(1)">
+        content="dev2820의 개발일지 저장소 '프로그래밍언어 (1)'을 한 번 살펴보세요.">
+    <meta property="og:title" content="프로그래밍언어 (1)">
     
     <meta property="og:type" content="article">
     <meta property="article:published_time" content="2021-03-06">
     
     <meta property="og:description"
-        content="dev2820의 개발일지 저장소 '프로그래밍언어(1)'을 한 번 살펴보세요.">
+        content="dev2820의 개발일지 저장소 '프로그래밍언어 (1)'을 한 번 살펴보세요.">
     <meta property="og:url" content="http://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B41/">
     <meta property="og:site_name" content="dev2820 개발일지">
     
@@ -45,7 +45,25 @@
             <span class="description">
                 loading
             </span>
-        </div><aside id="left-aside">
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
     <div class="profile-container">
         <div class="profile">
     <div class="cover">
@@ -98,7 +116,6 @@
                 </li>
             </ul>
         </nav>
-        
     </div>
 </aside>
 
@@ -106,10 +123,10 @@
 
   <div class="curtain center appear-100ms">
     <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
-    <h1 class="title">프로그래밍언어(1)</h1>
+    <h1 class="title">프로그래밍언어 (1)</h1>
     <div class="meta-data appear-300ms">
       <p class="date"> <i class="far fa-calendar icon"></i> 2021.03.06 </p>
-      <p class="wordcount"> <i class="far fa-clock icon"></i> 8</p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 8m</p>
     </div>
   </div>
 </header>
@@ -118,7 +135,7 @@
   <div class="roller"></div>
   <section id="content" class="appear-700ms">
     <article class="content card">
-      <p>이 글은 ROBERT W.SEBESTA의 **concepts of programming languages (11th, global edition)**에 의거하여 작성된 글이며, 필자가 번역 및 공부하면서 정리하는 글이라 오류가 있을 수 있습니다. 오류,오타 지적은 환영입니다.</p>
+      <p>이 글은 ROBERT W.SEBESTA의 <strong>concepts of programming languages (11th, global edition)</strong> 에 의거하여 작성된 글이며, 필자가 번역 및 공부하면서 정리하는 글이라 오류가 있을 수 있습니다. 오류,오타 지적은 환영입니다.</p>
 <h2 id="프로그래밍-언어들의-개념을-공부해야하는-이유">프로그래밍 언어들의 개념을 공부해야하는 이유</h2>
 <p>컴퓨터 과학의 여러 중요한 개념들 중에서도 프로그래밍 언어를 공부하면 다음과 같은 이점을 얻을 수 있습니다.</p>
 <ul>
@@ -191,7 +208,7 @@
 대부분의 프로그래밍 언어는 같은 메모리에 접근할 수 있는 방법을 여럿 제시합니다.(C는 여러개의 포인터가 같은 메모리를 가리키도록 할 수 있죠) 같은 메모리에 접근할 수 있는 방법이 여러개이기 때문에 프로그래머는 어떤 변수가 어떤 메모리에 접근하는지 잘 기억할 필요가 있습니다. 몇몇 추상화기능이 없는 언어들은 이를 극복하기 위해 aliasing을 사용하지만, 다른 언어들은 aliasing을 제한해 신뢰도를 높입니다.(Java의 경우 포인터의 개념이 아에 없죠)</p>
 <h4 id="가독성과-작문성">가독성과 작문성</h4>
 <p>가독성과 작문성도 신뢰도에 영향을 줍니다. 잘못 읽고 쓰는 일이 줄어들면 코드가 에러를 일으킬 확률도 줄어드니까요.</p>
-<h3 id="cost">Cost</h3>
+<h2 id="cost">Cost</h2>
 <p>프로그래밍 언어는 다양한 cost를 발생시킵니다.</p>
 <ul>
 <li>언어 습득에 드는 비용</li>
@@ -206,8 +223,8 @@
 <li>컴퓨터 구조</li>
 <li>프로그래밍 설계 방법론</li>
 </ul>
-<p>과거엔 <strong>Von Neumann 아키텍처</strong>가 유명했고 컴퓨터는 이 아키텍처대로 만들어졌습니다. Von Neumann 아키텍처 컴퓨터는 <strong>fetch-execute cycle</strong>이라 불리는 프로세스를 가지는데, 과거의 프로그래밍 언어는 이 구조를 반영하고 있었습니다.</p>
-<p><img src="von_neumann_architecture.png" alt="von Neumann architecture"></p>
+<p>과거엔 <strong>Von Neumann 아키텍처</strong>가 유명했고 컴퓨터는 이 아키텍처대로 만들어졌습니다. Von Neumann 아키텍처 컴퓨터는 <strong>fetch-execute cycle</strong>이라 불리는 프로세스를 가지는데, 과거의 프로그래밍 언어는 이 구조를 반영하고 있습니다.</p>
+<p><img src="../von_neumann_architecture.png" alt="von Neumann architecture"></p>
 <p>(폰 노이만 아키텍쳐, memory에 올라간 명령을 control unit이 읽어 ALU를 통해 계산하고 다시 메모리에 저장하는 식의 아키텍처이다)</p>
 <p>프로그램은 명령들이 메모리에 올라가고 명령을 순차적으로 또는 Jump 해가며 명령을 수행했기 때문에 이러한 구조가 반영된 언어를 명령형 언어라고 했습니다.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -296,7 +313,7 @@
   <span style="color:#ff79c6">end program </span>average
 </code></pre></td></tr></table>
 </div>
-</div><p>위키백과에 올라와 있는 fortran 90의 코드입니다. 포트란이 대표적인 명령형 언어인데 보이다싶이 거의 어셈블리어와 닮아있습니다. 실제로 컴퓨터의 Control Unit이 읽는 명령도 위 코드들과 비슷하게 명령, 메모리 (메모리) 순으로 이루어집니다. (자세한 내용은 컴퓨터구조를 공부해보세요)</p>
+</div><p>위 코드는 위키백과에 올라와 있는 fortran 90의 코드입니다. 포트란이 대표적인 명령형 언어인데, 보이다시피 거의 어셈블리어와 닮아있습니다. 실제로 컴퓨터의 Control Unit이 읽는 명령도 위 코드들과 비슷하게 명령, 메모리1 (메모리2) 순으로 이루어집니다. (자세한 내용은 컴퓨터구조를 공부해보세요)</p>
 <p>명령형 언어가 줄줄이 나오던 1960후반, 새로운 프로그램 설계 기법이 등장하게 됩니다. 프로그램을 명령들의 실행들로 보는 것이 아닌, 객체들의 상호작용으로 보는 새로운 관점의 언어가 나오는데 이게 바로 <strong>객체지향언어</strong>입니다. 객체지향언어는 Smalltalk(Goldberg and Robson, 1989)라는 실험적인 언어를 시작으로 처음 만들어졌는데, 이는 나중에 Java, C++, C#등의 주류 언어로 발전하게 되죠.</p>
 <p>최근에 들어선 함수형 언어가 새로운 패러다임을 불러일으키고 있는데 이건 없는 내용이라 패스하겠습니다.</p>
 <h2 id="프로그래밍-언어의-종류">프로그래밍 언어의 종류</h2>
@@ -319,9 +336,9 @@
         <li><a href="#가독성">가독성</a></li>
         <li><a href="#작문성writability">작문성(Writability)</a></li>
         <li><a href="#신뢰도">신뢰도</a></li>
-        <li><a href="#cost">Cost</a></li>
       </ul>
     </li>
+    <li><a href="#cost">Cost</a></li>
     <li><a href="#언어-설계에-영향을-주는-점들">언어 설계에 영향을 주는 점들</a></li>
     <li><a href="#프로그래밍-언어의-종류">프로그래밍 언어의 종류</a></li>
   </ul>
@@ -330,7 +347,7 @@
 </div>
     </aside>
   </section>
-  <section id="sectioin-move">
+  <section id="section-move">
     <nav class="section-move">
     
     

@@ -39,7 +39,25 @@
             <span class="description">
                 loading
             </span>
-        </div><aside id="left-aside">
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
     <div class="profile-container">
         <div class="profile">
     <div class="cover">
@@ -92,7 +110,6 @@
                 </li>
             </ul>
         </nav>
-        
     </div>
 </aside>
 
