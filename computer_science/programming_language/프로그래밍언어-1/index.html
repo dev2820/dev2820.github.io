@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그래밍언어 (1)  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 '프로그래밍언어 (1)'을 한 번 살펴보세요.">
+    <meta property="og:title" content="프로그래밍언어 (1)">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2021-03-06">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 '프로그래밍언어 (1)'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-1/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="프로그래밍언어">
+    
+    <meta property="og:tags" content="PL">
+    
+    <meta property="og:tags" content="공부">
+    
+    
+    <link rel="icon" href="http://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="http://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-1/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script data-ad-client=ca-pub-2663364582943679 async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="/js/default.js"></script>
+    
+</head>
+<body id="body">
+        <div id="loader">
+            <span class="description">
+                loading
+            </span>
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/space.jpg" class="round-card">
+        
+    </div>
+    
+    
+    <h2>dev2820</h2>
+    
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="center">
+        <div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <div class="navigation-container">
+        <nav class="aside-menu center">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="http://dev2820.github.io/">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="http://dev2820.github.io//categories">Categories</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="http://dev2820.github.io//tags">Tags</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="http://dev2820.github.io//search">Search</a>
+                </li>
+                <li>
+                    <i class="fas fa-user icon"></i>
+                    <a href="http://dev2820.github.io//about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+<header id="single-header" class="card-inset bg-cover">
+
+  <div class="curtain center appear-100ms">
+    <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
+    <h1 class="title">프로그래밍언어 (1)</h1>
+    <div class="meta-data appear-300ms">
+      <p class="date"> <i class="far fa-calendar icon"></i> 2021.03.06 </p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 8m</p>
+    </div>
+  </div>
+</header>
+
+<main id="single-main">
+  <div class="roller"></div>
+  <section id="content" class="appear-700ms">
+    <article class="content card">
+      <p>이 글은 ROBERT W.SEBESTA의 <strong>concepts of programming languages (11th, global edition)</strong> 에 의거하여 작성된 글이며, 필자가 번역 및 공부하면서 정리하는 글이라 오류가 있을 수 있습니다. 오류,오타 지적은 환영입니다.</p>
+<h2 id="프로그래밍-언어들의-개념을-공부해야하는-이유">프로그래밍 언어들의 개념을 공부해야하는 이유</h2>
+<p>컴퓨터 과학의 여러 중요한 개념들 중에서도 프로그래밍 언어를 공부하면 다음과 같은 이점을 얻을 수 있습니다.</p>
+<ul>
+<li>표현력의 증가(같은 코드를 다양한 언어로 짤 수 있게 된다.)</li>
+<li>프로그램에 적합한 언어를 선택하는데 필요한 지식이 늘어난다.</li>
+<li>새로운 언어를 배우기 쉬워진다.</li>
+<li>프로그램 구현의 중요성을 더 잘 이해하게 된다.</li>
+<li>이미 아는 언어도 더 잘 사용할 수 있게 된다.</li>
+<li>프로그래밍 실력이 전반적으로 향상된다.</li>
+</ul>
+<p>음&hellip; 같은 말을 반복하는거 같은데 어쨌든 PL(programming language)을 공부하면 프로그래밍을 더 잘하게 된다는 뜻 같습니다. 가장 큰 장점은 각 언어의 장단점을 알게되어 <strong>특정 프로그램을 구현할 때 어떤 언어를 선택하면 좋은지</strong> 알게된다는 점인것 같네요.</p>
+<h2 id="언어-평가-기준">언어 평가 기준</h2>
+<p>언어를 평가하는 기준은 크게 3가지가 있고 이 기준에 영향을 주는 요인들이 있습니다.</p>
+<ul>
+<li>가독성이 좋은가?
+<ul>
+<li>언어가 간단한가?</li>
+<li>직교성(orthogonality)를 가지는가?</li>
+<li>데이터 타입(int,double 등)을 제공하는가?</li>
+<li>문법이 잘 설계되었는가?</li>
+</ul>
+</li>
+<li>코드 작성이 편리한가?
+<ul>
+<li>추상화 개념(function,class)을 제공하는가?</li>
+<li>코드의 표현성이 좋은가?</li>
+</ul>
+</li>
+<li>코드의 신뢰도가 높은가?
+<ul>
+<li>타입 체크를 진행하는가?</li>
+<li>예외 처리를 위한 문법을 제공하는가?</li>
+<li>하나의 데이터에 여러 이름으로 접근이 가능한가?</li>
+</ul>
+</li>
+</ul>
+<h3 id="가독성">가독성</h3>
+<p>1970년 이전엔 <strong>소프트웨어 개발 = 코딩</strong> 으로 여겨졌습니다. 따라서 초기의 프로그래밍 언어들은 코드의 가독성보다 효율을 중시한다는 특징을 가집니다. 언어는 실제 컴퓨터에서 코드가 작동하는 방식과 비슷하게 구성되었습니다.(어셈블리어등을 생각하면 되겠죠?)</p>
+<p>그러나 1970년에 들어서면서 소프트웨어 생명주기(software life-cycle)이라는 개념이 등장합니다. 즉, 사람들은 단순히 코드만 잘 짜면 되는게 아니라 코드를 잘 관리해야 개발비용(cost)가 줄어든다는 사실을 알았고, 코드를 잘 관리하려면 가독성이 좋아야 한다는 사실 또한 부각됩니다. 좋은 프로그램과 프로그래밍 언어의 기준이 가독성이 된것입니다. 이는 프로그래밍 언어가 기계중심에서 인간 중심이 되게 하는 반환점이 됩니다.</p>
+<h4 id="전반적인-간결성">전반적인 간결성</h4>
+<p>코드의 간결함은 가독성에 큰 영향을 줍니다. 100줄짜리 코드와 10줄짜리 코드가 같은 기능을 수행한다면 당연히 10줄짜리 코드가 좋겠지요?</p>
+<h4 id="직교성orthogonality">직교성(Orthogonality)</h4>
+<p>프로그래밍 언어에서 직교성을 가진다는 말은 상대적으로 작은 초기 구조들을 엮어 더 큰 데이터 구조를 만들고 제어할 수 있다는 뜻입니다. 예를 들어, 한 언어가 데이터 타입(int,float,double,character)와 배열,포인터를 지원한다고 합시다. 우리는 char형 2차원 배열을 선언해(작은 초기 구조를 엮어) 사람의 이름을 저장하는 list(더 큰 데이터구조)를 만들고 데이터를 읽거나 변경할 수 있습니다.</p>
+<p>직교성을 가지는 언어는 언어의 간결성과 직접적인 관련이 있습니다. 만약 한 언어가 영어와 문법이 같다면 코드를 짜는 사람이 알아야 하는 문법이 아주 많고 다양한 예외를 가지게 되겠죠?</p>
+<h4 id="데이터-타입">데이터 타입</h4>
+<p>데이터 타입의 존재여부는 가독성에 큰 영향을 줍니다. 예를 들어 Boolean 타입이 없어서 숫자로 true,false 여부를 표현해야 한다고 합시다. (C를 생각하면 되겠죠?)</p>
+<pre><code>timeOut = 1
+</code></pre><p>이 코드만 읽은 사람은 timeOut이 1을 저장하고 있다는 의미인지, true를 저장하고 있다는 의미인지 알 수 없습니다. 하지만 Boolean타입이 있다면</p>
+<pre><code>timeOut = true
+</code></pre><p>다르게 해석할 여지는 없겠죠?</p>
+<h4 id="문법-설계">문법 설계</h4>
+<p>언어를 구성하는 요소들의 형태와 의미도 프로그램의 가독성에 큰 영향을 줍니다.
+문법이 의미하는 바가 명확해야 코드의 가독성이 높아집니다. (ex. <code>while</code>,<code>class</code>,<code>for</code> 등)
+그리고 문법에 사용되는 단어가 변수이름으로 쓸 수 있으면 문제가 됩니다. 예를 들어 Fortran 95에서는 <code>Do</code>와 <code>End</code>를 변수 이름으로 사용할 수 있었습니다. 따라서 이러한 단어의 등장은 의미가 있을 수도, 없을 수도 있었습니다.</p>
+<h3 id="작문성writability">작문성(Writability)</h3>
+<p>뭐라고 번역해야 좋을지 몰라서 작문성이라고 번역을 했는데, 더 좋은 표현을 댓글로 달아주시면 감사하겠습니다.</p>
+<p>작문성은 그 언어가 얼마나 사용하기 쉬운지를 알려준다. 대부분의 언어에서 가독성에 영향을 주는 특성은 작문성에도 영향을 줍니다. 예를 들어, Visual BASIC은 코드작성이 C에 비해 극도로 쉽습니다. 바로 Visual BASIC은 GUI를 제공하기 때문이죠.</p>
+<h4 id="간결성과-직교성">간결성과 직교성</h4>
+<p>간결한 문법과 적절한 직교성을 제공하면 작문성이 좋아집니다. 대부분의 언어가 특정 배열에 접근하는데 <code>[]</code>를 사용하죠. 이는 간결해서 코드를 작성할때도, 코드를 읽을 때에도 좋습니다.</p>
+<h4 id="표현성">표현성</h4>
+<p>코드의 표현성이 좋아 코드를 쓰는 사람이 편하면 좋겠죠? 예를 들면 C는 <code>count = count + 1</code>을 <code>count++</code>로 표현할 수 있습니다.</p>
+<h3 id="신뢰도">신뢰도</h3>
+<p>쓰여진 코드를 믿을 수 있는가?(신뢰할만한가?)도 중요합니다. 코드에 안전장치가 없어 걷잡을 수 없는 에러를 일으키면 너무 슬프겠죠?</p>
+<h4 id="타입-체크">타입 체크</h4>
+<p>타입체크는 단순히 계산하려는 두 변수의 타입이 다르면 에러를 일으킵니다. C언어에서 포인터와 int형 변수를 더하면 컴파일러가 에러를 띄웁니다. 컴파일러가 이러한 에러를 잡지 못하고 run-time중에 에러가 일어나버리면 더 큰일로 번질 수 있기 때문에 타입 체크는 언어의 신뢰도에 영향을 줍니다. javascript와 typescript의 차이를 생각하면 되겠네요.</p>
+<h4 id="예외-처리">예외 처리</h4>
+<p>컴파일러가 잡을 수 없는 run-time에 일어나는 오류들을 잡는 예외 처리 장치들을 제공하는 지도 신뢰도에 영향을 줍니다. <code>try catch</code>가 왜 유용하며 필요한지는 다 아실겁니다.</p>
+<h4 id="aliasing">aliasing</h4>
+<p>같은 메모리에 접근할 수 있는 다양한 변수를 제공하는 것은 일반적으로 위험하다고 여겨집니다.
+대부분의 프로그래밍 언어는 같은 메모리에 접근할 수 있는 방법을 여럿 제시합니다.(C는 여러개의 포인터가 같은 메모리를 가리키도록 할 수 있죠) 같은 메모리에 접근할 수 있는 방법이 여러개이기 때문에 프로그래머는 어떤 변수가 어떤 메모리에 접근하는지 잘 기억할 필요가 있습니다. 몇몇 추상화기능이 없는 언어들은 이를 극복하기 위해 aliasing을 사용하지만, 다른 언어들은 aliasing을 제한해 신뢰도를 높입니다.(Java의 경우 포인터의 개념이 아에 없죠)</p>
+<h4 id="가독성과-작문성">가독성과 작문성</h4>
+<p>가독성과 작문성도 신뢰도에 영향을 줍니다. 잘못 읽고 쓰는 일이 줄어들면 코드가 에러를 일으킬 확률도 줄어드니까요.</p>
+<h2 id="cost">Cost</h2>
+<p>프로그래밍 언어는 다양한 cost를 발생시킵니다.</p>
+<ul>
+<li>언어 습득에 드는 비용</li>
+<li>언어 사용에 드는 비용</li>
+<li>컴파일에 드는 비용</li>
+<li>실행에 드는 비용</li>
+</ul>
+<p>너무 어려운 언어나 코드 작성이 오래걸리는 언어, 컴파일이 오래걸리거나 성능이 안좋은 언어는 당연 high cost가 발생하겠죠</p>
+<h2 id="언어-설계에-영향을-주는-점들">언어 설계에 영향을 주는 점들</h2>
+<p>언어 설계에 영향을 주는 요인은 다음과 같은 요인이 있습니다.</p>
+<ul>
+<li>컴퓨터 구조</li>
+<li>프로그래밍 설계 방법론</li>
+</ul>
+<p>과거엔 <strong>Von Neumann 아키텍처</strong>가 유명했고 컴퓨터는 이 아키텍처대로 만들어졌습니다. Von Neumann 아키텍처 컴퓨터는 <strong>fetch-execute cycle</strong>이라 불리는 프로세스를 가지는데, 과거의 프로그래밍 언어는 이 구조를 반영하고 있습니다.</p>
+<p><img src="../von_neumann_architecture.png" alt="von Neumann architecture"></p>
+<p>(폰 노이만 아키텍쳐, memory에 올라간 명령을 control unit이 읽어 ALU를 통해 계산하고 다시 메모리에 저장하는 식의 아키텍처이다)</p>
+<p>프로그램은 명령들이 메모리에 올라가고 명령을 순차적으로 또는 Jump 해가며 명령을 수행했기 때문에 이러한 구조가 반영된 언어를 명령형 언어라고 했습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1"> 1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2"> 2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3"> 3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4"> 4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5"> 5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6"> 6</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-7"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-7"> 7</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-8"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-8"> 8</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-9"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-9"> 9</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-10"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-10">10</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-11"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-11">11</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-12"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-12">12</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-13"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-13">13</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-14"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-14">14</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-15"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-15">15</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-16"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-16">16</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-17"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-17">17</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-18"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-18">18</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-19"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-19">19</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-20"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-20">20</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-21"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-21">21</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-22"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-22">22</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-23"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-23">23</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-24"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-24">24</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-25"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-25">25</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-26"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-26">26</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-27"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-27">27</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-28"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-28">28</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-29"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-29">29</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-30"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-30">30</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-31"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-31">31</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-32"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-32">32</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-33"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-33">33</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-34"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-34">34</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-35"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-35">35</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-36"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-36">36</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-37"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-37">37</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-38"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-38">38</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-39"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-39">39</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-40"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-40">40</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-f90" data-lang="f90"><span style="color:#ff79c6">program </span>average
+
+  <span style="color:#6272a4">! Read in some numbers and take the average
+</span><span style="color:#6272a4"></span>  <span style="color:#6272a4">! As written, if there are no data points, an average of zero is returned
+</span><span style="color:#6272a4"></span>  <span style="color:#6272a4">! While this may not be desired behavior, it keeps this example simple
+</span><span style="color:#6272a4"></span>
+  <span style="color:#ff79c6">implicit none
+</span><span style="color:#ff79c6">
+</span><span style="color:#ff79c6">  </span><span style="color:#8be9fd">real</span>, <span style="color:#ff79c6">dimension</span>(:), <span style="color:#ff79c6">allocatable</span> <span style="color:#8be9fd;font-style:italic">::</span> points
+  <span style="color:#8be9fd">integer</span>                         <span style="color:#8be9fd;font-style:italic">::</span> number_of_points
+  <span style="color:#8be9fd">real</span>                            <span style="color:#8be9fd;font-style:italic">::</span> average_points<span style="color:#ff79c6">=</span><span style="color:#bd93f9">0.</span>, positive_average<span style="color:#ff79c6">=</span><span style="color:#bd93f9">0.</span>, negative_average<span style="color:#ff79c6">=</span><span style="color:#bd93f9">0.</span>
+
+  <span style="color:#ff79c6">write</span> (<span style="color:#ff79c6">*</span>,<span style="color:#ff79c6">*</span>) <span style="color:#f1fa8c">&#34;Input number of points to average:&#34;</span>
+  <span style="color:#ff79c6">read</span>  (<span style="color:#ff79c6">*</span>,<span style="color:#ff79c6">*</span>) number_of_points
+
+  <span style="color:#ff79c6">allocate</span> (points(number_of_points))
+
+  <span style="color:#ff79c6">write</span> (<span style="color:#ff79c6">*</span>,<span style="color:#ff79c6">*</span>) <span style="color:#f1fa8c">&#34;Enter the points to average:&#34;</span>
+  <span style="color:#ff79c6">read</span>  (<span style="color:#ff79c6">*</span>,<span style="color:#ff79c6">*</span>) points
+
+  <span style="color:#6272a4">! Take the average by summing points and dividing by number_of_points
+</span><span style="color:#6272a4"></span>  <span style="color:#ff79c6">if</span> (number_of_points <span style="color:#ff79c6">&gt;</span> <span style="color:#bd93f9">0</span>) average_points <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">sum</span>(points) <span style="color:#ff79c6">/</span> number_of_points
+
+  <span style="color:#6272a4">! Now form average over positive and negative points only
+</span><span style="color:#6272a4"></span>  <span style="color:#ff79c6">if</span> (<span style="color:#8be9fd;font-style:italic">count</span>(points <span style="color:#ff79c6">&gt;</span> <span style="color:#bd93f9">0.</span>) <span style="color:#ff79c6">&gt;</span> <span style="color:#bd93f9">0</span>) <span style="color:#ff79c6">then
+</span><span style="color:#ff79c6">     </span>positive_average <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">sum</span>(points, points <span style="color:#ff79c6">&gt;</span> <span style="color:#bd93f9">0.</span>) <span style="color:#ff79c6">/</span> <span style="color:#8be9fd;font-style:italic">count</span>(points <span style="color:#ff79c6">&gt;</span> <span style="color:#bd93f9">0.</span>)
+  <span style="color:#ff79c6">end if
+</span><span style="color:#ff79c6">
+</span><span style="color:#ff79c6">  if</span> (<span style="color:#8be9fd;font-style:italic">count</span>(points <span style="color:#ff79c6">&lt;</span> <span style="color:#bd93f9">0.</span>) <span style="color:#ff79c6">&gt;</span> <span style="color:#bd93f9">0</span>) <span style="color:#ff79c6">then
+</span><span style="color:#ff79c6">     </span>negative_average <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">sum</span>(points, points <span style="color:#ff79c6">&lt;</span> <span style="color:#bd93f9">0.</span>) <span style="color:#ff79c6">/</span> <span style="color:#8be9fd;font-style:italic">count</span>(points <span style="color:#ff79c6">&lt;</span> <span style="color:#bd93f9">0.</span>)
+  <span style="color:#ff79c6">end if
+</span><span style="color:#ff79c6">
+</span><span style="color:#ff79c6">  deallocate</span> (points)
+
+  <span style="color:#6272a4">! Print result to terminal
+</span><span style="color:#6272a4"></span>  <span style="color:#ff79c6">write</span> (<span style="color:#ff79c6">*</span>,<span style="color:#f1fa8c">&#39;(a,g12.4)&#39;</span>) <span style="color:#f1fa8c">&#39;Average = &#39;</span>, average_points
+  <span style="color:#ff79c6">write</span> (<span style="color:#ff79c6">*</span>,<span style="color:#f1fa8c">&#39;(a,g12.4)&#39;</span>) <span style="color:#f1fa8c">&#39;Average of positive points = &#39;</span>, positive_average
+  <span style="color:#ff79c6">write</span> (<span style="color:#ff79c6">*</span>,<span style="color:#f1fa8c">&#39;(a,g12.4)&#39;</span>) <span style="color:#f1fa8c">&#39;Average of negative points = &#39;</span>, negative_average
+
+  <span style="color:#ff79c6">end program </span>average
+</code></pre></td></tr></table>
+</div>
+</div><p>위 코드는 위키백과에 올라와 있는 fortran 90의 코드입니다. 포트란이 대표적인 명령형 언어인데, 보이다시피 거의 어셈블리어와 닮아있습니다. 실제로 컴퓨터의 Control Unit이 읽는 명령도 위 코드들과 비슷하게 명령, 메모리1 (메모리2) 순으로 이루어집니다. (자세한 내용은 컴퓨터구조를 공부해보세요)</p>
+<p>명령형 언어가 줄줄이 나오던 1960후반, 새로운 프로그램 설계 기법이 등장하게 됩니다. 프로그램을 명령들의 실행들로 보는 것이 아닌, 객체들의 상호작용으로 보는 새로운 관점의 언어가 나오는데 이게 바로 <strong>객체지향언어</strong>입니다. 객체지향언어는 Smalltalk(Goldberg and Robson, 1989)라는 실험적인 언어를 시작으로 처음 만들어졌는데, 이는 나중에 Java, C++, C#등의 주류 언어로 발전하게 되죠.</p>
+<p>최근에 들어선 함수형 언어가 새로운 패러다임을 불러일으키고 있는데 이건 없는 내용이라 패스하겠습니다.</p>
+<h2 id="프로그래밍-언어의-종류">프로그래밍 언어의 종류</h2>
+<p>프로그래밍 언어는 크게 네 가지로 분류됩니다: 명령형, 함수형, 논리형 그리고 객체지향형. 하지만 여기에선 객체지향언어는 기존 언어의 확장이라 여겨 따로 새로운 언어군으로 분류하진 않겠습니다.</p>
+<p>명령형 언어는 알골, 포트란, 그리고 C 정도가 있고 함수형 언어는 하스켈, 스칼라 등이 있습니다. 논리형 언어는 머큐리, 앨리스 등이 있다는데&hellip; 저는 처음 듣네요. 그리고 객체지향형 언어는 Java, C++등 잘 알려진 언어들이 있죠.</p>
+<p>그리고 최근(책이 쓰여진 시점 기준) 새로운 종류의 언어가 만들어졌는데 바로 HTML(markup programming hybrid languages)입니다. 말그대로 마크업을 만드는 언어죠. HTML은 프로그래밍 언어는 아닙니다. 즉, HTML로 반복작업을 하거나 값을 연산하는 것은 불가능합니다.</p>
+
+    </article>
+    <aside id="right-aside">
+      <div class="post-toc card" id="post-toc">
+    <div class="post-toc-title">
+        <span>차례</span>
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#프로그래밍-언어들의-개념을-공부해야하는-이유">프로그래밍 언어들의 개념을 공부해야하는 이유</a></li>
+    <li><a href="#언어-평가-기준">언어 평가 기준</a>
+      <ul>
+        <li><a href="#가독성">가독성</a></li>
+        <li><a href="#작문성writability">작문성(Writability)</a></li>
+        <li><a href="#신뢰도">신뢰도</a></li>
+      </ul>
+    </li>
+    <li><a href="#cost">Cost</a></li>
+    <li><a href="#언어-설계에-영향을-주는-점들">언어 설계에 영향을 주는 점들</a></li>
+    <li><a href="#프로그래밍-언어의-종류">프로그래밍 언어의 종류</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </aside>
+  </section>
+  <section id="section-move">
+    <nav class="section-move">
+    
+    
+      <a href="http://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-2/" class="next card">
+        <div class="title">
+          <small>next</small>  
+          <span>프로그래밍언어 (2)</span>
+        </div>
+        <i class="fas fa-angle-double-right icon slide-right"></i>
+      </a>
+    
+</nav>
+  
+  </section>
+  <section id="meta">
+    <div class="card">
+      
+      
+<div class="category_breadcrumb_title">
+    <h2 class="title"><i class="fas fa-folder icon"></i>Categories</h2>
+</div>
+<div class="category_breadcrumb">
+    <a href="http://dev2820.github.io/categories/computer_science" class="action name">
+        
+        computer_science
+    </a>
+    <span class="action slash">/</span>
+    
+    <a href="http://dev2820.github.io/subcategories/programming_language" class="action name">
+        
+        <span class="name">Programming language</span>     
+    </a>
+    
+</div>
+
+
+      <div class="tag_list_title">
+    <h2 class="title"><i class="fas fa-hashtag icon"></i>Tags</h2>
+</div>
+<ul class="tags tag_list">
+    
+        <li><a href="http://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4/" class="action"><i class="fas fa-hashtag icon"></i>프로그래밍언어</a></li>
+    
+        <li><a href="http://dev2820.github.io/tags/pl/" class="action"><i class="fas fa-hashtag icon"></i>PL</a></li>
+    
+        <li><a href="http://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/" class="action"><i class="fas fa-hashtag icon"></i>공부</a></li>
+    
+</ul>
+
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </section>
+</main>
+
+  <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    
+    <div class="center"><div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div><div class="copyright center">
+        <span>COPYRIGHT 2021-2021. <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+        <span>ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>

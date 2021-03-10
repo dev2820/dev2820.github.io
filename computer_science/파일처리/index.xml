@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>파일처리 on dev2820 개발일지</title>
+    <link>http://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</link>
+    <description>Recent content in 파일처리 on dev2820 개발일지</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
+    <lastBuildDate>Wed, 10 Mar 2021 11:40:48 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro 및 파일처리의 역사</title>
+      <link>http://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/intro-%EB%B0%8F-%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC%EC%9D%98-%EC%97%AD%EC%82%AC/</link>
+      <pubDate>Wed, 10 Mar 2021 11:42:53 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>http://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/intro-%EB%B0%8F-%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC%EC%9D%98-%EC%97%AD%EC%82%AC/</guid>
+      <description>오타,오류 지적 환영합니다. 용어정리 및 기초지식 Secondary Memory 컴퓨터는 총 4가지의 메모리로 구성됩니다. ALU의 연산값을 저장하는 Registar 캐싱을 위해 존재하는 Cache</description>
+    </item>
+    
+  </channel>
+</rss>
