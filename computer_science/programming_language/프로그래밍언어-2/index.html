@@ -36,6 +36,16 @@
     
     <script>hljs.initHighlightingOnLoad();</script>
     
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTD4CD0DNR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TTD4CD0DNR');
+    </script>
+    
+    
     <script data-ad-client=ca-pub-2663364582943679 async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="/js/default.js"></script>
     
@@ -126,7 +136,7 @@
     <h1 class="title">프로그래밍언어 (2)</h1>
     <div class="meta-data appear-300ms">
       <p class="date"> <i class="far fa-calendar icon"></i> 2021.03.10 </p>
-      <p class="wordcount"> <i class="far fa-clock icon"></i> 0m</p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 4m</p>
     </div>
   </div>
 </header>
@@ -135,7 +145,91 @@
   <div class="roller"></div>
   <section id="content" class="appear-700ms">
     <article class="content card">
-      
+      <p>이 글은 ROBERT W.SEBESTA의 <strong>concepts of programming languages (11th, global edition)</strong> 에 의거하여 작성된 글이며, 필자가 번역 및 공부하면서 정리하는 글이라 오류가 있을 수 있습니다. 오류,오타 지적은 환영입니다.</p>
+<h2 id="코드-실행-방법에-따른-분류">코드 실행 방법에 따른 분류</h2>
+<p>High-Level Language을 기계어로 변환해주는 방법은 일반적으로 3가지가 있습니다.</p>
+<ol>
+<li>컴파일러를 이용한다.</li>
+<li>인터프리터를 이용한다.</li>
+<li>하이브리드를 이용한다.</li>
+</ol>
+<h3 id="컴파일러">컴파일러</h3>
+<p>컴퓨터가 프로그램을 실행할 때 바로 실행할 수 있도록 미리 기계어로 번역해 놓는 방법입니다.</p>
+<p><img src="../compile_process.png" alt="compile process"></p>
+<p>소스코드를 컴파일하면</p>
+<ol>
+<li>
+<p>소스코드를 어휘별로 분류합니다.(Lexical analyzer)</p>
+</li>
+<li>
+<p>그 어휘들이 문법적으로 옳은지 분석하고 parse tree로 만듦니다.(syntax analyzer)</p>
+</li>
+<li>
+<p>중간 코드 생성기를 통해 중간 코드로 컴파일 합니다. (자바의 bytecode 같은걸 만드는 겁니다.)</p>
+</li>
+<li>
+<p>중간 코드를 기계어(목적코드)로 컴파일합니다.</p>
+</li>
+<li>
+<p>컴퓨터가 기계어를 실행합니다.</p>
+</li>
+</ol>
+<p>의 단계를 거치게 됩니다.</p>
+<h3 id="인터프리터">인터프리터</h3>
+<p>컴파일러가 코드를 통째로 목적코드로 변환한다면, 인터프리터는 소스코드를 한 줄씩 읽고 수행합니다.</p>
+<p>장점은 소스레벨에서 디버깅이 가능하며 인터프리터만 있으면 어디서든 실행이 가능합니다.(portability) 즉, 자바의 가상머신처럼 실행환경에 영향을 받지 않습니다.</p>
+<p>단점은 컴파일러에 비해 실행속도가 느리다는 것입니다. 또한 메모리 공간도 더 많이 차지합니다.
+<img src="../interpreter.png" alt="interpreter process"></p>
+<h3 id="하이브리드-코드-실행-시스템">하이브리드 코드 실행 시스템</h3>
+<p>compiler + interpreter 말그대로 반반 섞어놓은 시스템입니다. 초기의 자바가 이런 시스템을 채택했는데, 자바소스코드를 자바바이트코드로 변환한 뒤, JVM에서 코드를 실행하는 방식이었습니다. 장점은 인터프리터보단 빨랐지만 여전히 컴파일러를 쓰는 것에 비해 한참 느렸습니다.</p>
+<p>Just in Time(JIT) 실행 시스템은 하이브리드 코드 실행 시스템을 조금 더 보완한 시스템입니다. 먼저 중간 언어로 컴파일 하는 것 까지는 같지만, 함수가 호출될 때 함수를 컴파일 합니다. 현재는 자바가 이 방식을 사용하고 .NET 언어도 이 방식을 사용합니다.</p>
+<p><img src="../hybrid.png" alt="hybrid code implementation system"></p>
+<h3 id="전처리기">전처리기</h3>
+<p>프로그램을 실행할 때 프로그램이 컴파일 되기 직전에 실행되는 프로그램입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#ff79c6">#include</span> <span style="color:#ff79c6">&#34;myLib.h&#34;</span><span style="color:#ff79c6">
+</span></code></pre></td></tr></table>
+</div>
+</div><p>흔히 아는 전처리기가 c에서 헤더파일이 전처리기를 이용해 c코드로 변환되죠</p>
+<h2 id="메이저-프로그래밍-언어들의-역사">메이저 프로그래밍 언어들의 역사</h2>
+<ul>
+<li>Fortran: 연산목적</li>
+<li>COBOL: 비지니스 목적</li>
+<li>LISP: AI용 함수형언어</li>
+<li>ALGOL 60,68: C언어, Pascal의 모체</li>
+<li>Smalltalk 80: 객체지향언어의 시작</li>
+<li>pascal: Ada83의 모체</li>
+<li>C++,Java,Python,C#</li>
+</ul>
+<h3 id="fortran">Fortran</h3>
+<p>Fortran은 FORmula TRANslating System의 약자로 1957년 IBM 704에서 지원하기위해 만들어졌습니다.</p>
+<p>포트란이 개발될 무렵의 상황은 이러했습니다.</p>
+<ol>
+<li>컴퓨터의 메모리는 매우 작고 느리며 신뢰할 수 없었습니다.</li>
+<li>초기 컴퓨터의 주 목적은 과학적 계산들을 지원하는 것이었습니다.</li>
+<li>컴퓨터를 프로그래밍할 효과적이고 효율적인 방법이 없었습니다.</li>
+<li>초기 컴퓨터는 굉장히 비쌌습니다.</li>
+</ol>
+<p>따라서 포트란 컴파일러의 1차 목표는 빠르게 오브젝트 코드를 만들어내는 것이었습니다.</p>
+<h3 id="lisp">LISP</h3>
+<p>AI의 개념이 1950년대 등장하게 되면서, 언어학자는 자연어의 동작원리에 대해서, 물리학자들은 인간의 뇌를 함수적 프로세스로 모델링 한다는 점에서, 수학자들은 지능을 기계화 한다는 점에서 이 개념에 매료되었습니다. 이러한 관심사는 한가지 결론을 도출하게됩니다:</p>
+<p>&ldquo;컴퓨터가 기호들로 연결된 문장을 처리할 수 있는 방법을 만들어야해!&rdquo;</p>
+<p>MIT의 John McCarthy는 기호연산에 대해 조사하고 컴퓨터가 기호연산을 계산할 수 있는 방법을 연구하게 됩니다. 그 결과 연결된 문장을 처리하는 소프트웨어를 만들게 되고 이를 Advice Taker라고 불렀으며 이는 발전하여 list-processing language(LISP)가 됩니다.</p>
+<h3 id="algol">ALGOL</h3>
+<p>알골은 현대언어의 이론적 배경을 제공해준 언어입니다.
+수학자들은</p>
+<ol>
+<li>읽을 수 있으면서 수학 표기법과 최대한 유사한 언어가 필요했고</li>
+<li>이 언어는 알고리즘을 묘사할 수 있어야 했으며</li>
+<li>최종적으로는 기계적인 방법으로 기계어로 번역할 수 있길 원했습니다.</li>
+</ol>
+<p>그렇게 ALGOL 58이 만들어집니다. 이 알골58에 대해 격렬한 논쟁이 유럽과 미국에서 있었고 다양한 요구사항들이 생겨납니다. 1960년 수학자들은 다시 뭉치게 되었고 결국 ALGOL 60이 탄생하게 됩니다.
+ALGOL 60은 드라마틱하게 바뀌었습니다. block structure를 지원해 스코프의 개념이 생겨났고, 서브프로그램에 값을 전달하는 것과 이름을 전달하는 것, 두 가지의 파라미터 제공방법이 생겼습니다. 또 재귀문이 사용 가능해졌고 static-dynamic array도 지원하게 됩니다.</p>
+
     </article>
     <aside id="right-aside">
       <div class="post-toc card" id="post-toc">
@@ -143,7 +237,25 @@
         <span>차례</span>
     </div>
     <div id="table">
-        <nav id="TableOfContents"></nav>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#코드-실행-방법에-따른-분류">코드 실행 방법에 따른 분류</a>
+      <ul>
+        <li><a href="#컴파일러">컴파일러</a></li>
+        <li><a href="#인터프리터">인터프리터</a></li>
+        <li><a href="#하이브리드-코드-실행-시스템">하이브리드 코드 실행 시스템</a></li>
+        <li><a href="#전처리기">전처리기</a></li>
+      </ul>
+    </li>
+    <li><a href="#메이저-프로그래밍-언어들의-역사">메이저 프로그래밍 언어들의 역사</a>
+      <ul>
+        <li><a href="#fortran">Fortran</a></li>
+        <li><a href="#lisp">LISP</a></li>
+        <li><a href="#algol">ALGOL</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
     </aside>

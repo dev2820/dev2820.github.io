@@ -8,7 +8,16 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Wed, 10 Mar 2021 11:42:53 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/subcategories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 17:42:53 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/subcategories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>파일처리</title>
+      <link>http://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</link>
+      <pubDate>Wed, 10 Mar 2021 17:42:53 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>http://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>programming_language</title>
       <link>http://dev2820.github.io/subcategories/programming_language/</link>
@@ -19,18 +28,9 @@
     </item>
     
     <item>
-      <title>파일처리</title>
-      <link>http://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</link>
-      <pubDate>Wed, 10 Mar 2021 11:42:53 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>http://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>hugo</title>
       <link>http://dev2820.github.io/subcategories/hugo/</link>
-      <pubDate>Sun, 15 Nov 2020 13:26:07 +0900</pubDate>
+      <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>http://dev2820.github.io/subcategories/hugo/</guid>
       <description></description>
@@ -60,15 +60,6 @@
       <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>http://dev2820.github.io/subcategories/nas_project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>일상</title>
-      <link>http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81/</link>
-      <pubDate>Sat, 08 Aug 2020 19:53:55 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>http://dev2820.github.io/subcategories/%EC%9D%BC%EC%83%81/</guid>
       <description></description>
     </item>
     

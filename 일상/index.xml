@@ -18,14 +18,5 @@
       <description>어차어차하다 지인으로부터 웹에서 vscode를 돌아가게 하는 &amp;lsquo;code-server&amp;rsquo; 라는게 있는 것을 알아서 지금 도커로 &amp;lsquo;code-server&amp;rsquo;를</description>
     </item>
     
-    <item>
-      <title>Hello Programmer Theme</title>
-      <link>http://dev2820.github.io/%EC%9D%BC%EC%83%81/hello-programmer-theme/</link>
-      <pubDate>Sat, 08 Aug 2020 19:53:55 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>http://dev2820.github.io/%EC%9D%BC%EC%83%81/hello-programmer-theme/</guid>
-      <description>이 테마를 쓰면서 알게된 점 정리 config.toml 에 적어둔 title을 메뉴에서 선택할 수 있다. 그 타이틀을 메뉴에서 선택하면 메인화면으로 간다. projects 라는 이름의 형식을 arch</description>
-    </item>
-    
   </channel>
 </rss>

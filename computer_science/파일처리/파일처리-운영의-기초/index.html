@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파일처리 운영의 기초  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 '파일처리 운영의 기초'을 한 번 살펴보세요.">
+    <meta property="og:title" content="파일처리 운영의 기초">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2021-03-10">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 '파일처리 운영의 기초'을 한 번 살펴보세요.">
+    <meta property="og:url" content="http://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC-%EC%9A%B4%EC%98%81%EC%9D%98-%EA%B8%B0%EC%B4%88/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="http://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="파일처리">
+    
+    <meta property="og:tags" content="공부">
+    
+    
+    <link rel="icon" href="http://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="http://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC-%EC%9A%B4%EC%98%81%EC%9D%98-%EA%B8%B0%EC%B4%88/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTD4CD0DNR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TTD4CD0DNR');
+    </script>
+    
+    
+    <script data-ad-client=ca-pub-2663364582943679 async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="/js/default.js"></script>
+    
+</head>
+<body id="body">
+        <div id="loader">
+            <span class="description">
+                loading
+            </span>
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" />
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/space.jpg" class="round-card">
+        
+    </div>
+    
+    
+    <h2>dev2820</h2>
+    
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="center">
+        <div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <div class="navigation-container">
+        <nav class="aside-menu center">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="http://dev2820.github.io/">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="http://dev2820.github.io//categories">Categories</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="http://dev2820.github.io//tags">Tags</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="http://dev2820.github.io//search">Search</a>
+                </li>
+                <li>
+                    <i class="fas fa-user icon"></i>
+                    <a href="http://dev2820.github.io//about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+<header id="single-header" class="card-inset bg-cover">
+
+  <div class="curtain center appear-100ms">
+    <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
+    <h1 class="title">파일처리 운영의 기초</h1>
+    <div class="meta-data appear-300ms">
+      <p class="date"> <i class="far fa-calendar icon"></i> 2021.03.10 </p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 4m</p>
+    </div>
+  </div>
+</header>
+
+<main id="single-main">
+  <div class="roller"></div>
+  <section id="content" class="appear-700ms">
+    <article class="content card">
+      <p>오타,오류 지적 환영합니다.</p>
+<h2 id="용어정리">용어정리</h2>
+<ul>
+<li>물리적 파일: secondary memory에 저장된 실제 파일입니다. OS에 의해 관리됩니다.</li>
+<li>논리적 파일: 프로그램을 통해 보게되는 파일입니다. 프로그램은 실제 물리적 파일이 어떻게 사용되는지 모릅니다.</li>
+</ul>
+<p>프로그램은 물리적 파일에 직접 접근하지 않고 논리적 파일을 통해 파일을 어떻게 처리할지 OS에게 알려줍니다. OS는 논리적 파일을 읽어 물리적 파일로 변환하고 기록하게 됩니다. 읽기의 경우도 마찬가지로 프로그램이 논리적 파일을 요구하면 OS가 물리적 파일을 읽어 프로그램에 전달합니다.</p>
+<h2 id="논리적-파일과-물리적-파일간의-connect">논리적 파일과 물리적 파일간의 connect</h2>
+<p>예를 들어 C언어에서 system call 함수인 <code>open</code>을 사용하게 되면</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8be9fd">int</span> fd <span style="color:#ff79c6">=</span> open(<span style="color:#f1fa8c">&#34;myfile.dat&#34;</span>,O_RDWR);
+</code></pre></td></tr></table>
+</div>
+</div><p>프로그램이 OS에  <code>논리적 myfile.dat</code>파일의 내용을 요청하고 OS는 <code>물리적 myfile.dat</code>을 읽어들여 그 내용을 반환합니다.</p>
+<h2 id="system-calls">System Calls</h2>
+<p>아래 함수들은 <code>fcntl.h</code> 헤더를 include 하게 되면 쓸 수 있는 시스템 함수들 입니다. POSIX.1 규정을 준수하며 커널수준에서 동작합니다.</p>
+<ul>
+<li>fd = open(filename, flags [, pmode])</li>
+<li>close(fd)</li>
+<li>lseek(fd,offset,origin)</li>
+<li>read(fd,buf,size)</li>
+<li>write(fd,buf,size)</li>
+</ul>
+<p>위에서부터 파일열기,닫기,커서위치이동,읽기,쓰기 입니다.</p>
+<p>똑같은 역할을 하지만 ANSI-C 규정을 따르는 함수들도 있습니다. 아래 함수들은 <code>stdio.h</code> 헤더를 include하게 되면 쓸 수 있는 파일 제어 함수들입니다.</p>
+<ul>
+<li>fp = fopen(filename, type)</li>
+<li>fclose(fp)</li>
+<li>fseek(fp,offset,origin)</li>
+<li>fread(buf,num,len,fp)</li>
+<li>fwrite(buf,num,len,fp)</li>
+</ul>
+<p>주의할점은 open은 int를 return하고 fopen은 FILE*를 반환합니다.</p>
+<h3 id="open">Open</h3>
+<p>파일을 여는 함수입니다. 이미 존재하는 파일을 열거나 새로운 파일을 만들어 열 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8be9fd">int</span> fd <span style="color:#ff79c6">=</span> open(filename, flags [,pmode]);
+</code></pre></td></tr></table>
+</div>
+</div><p>반환값은 file descriptor(integer), 파일 고유 식별번호로 생각하시면 됩니다. 에러시에 -1을 반환합니다.</p>
+<p>filename: 열고자하는 물리적파일이름</p>
+<p>flags: O_APPEND, O_CREAT, O_EXCL, O_RDONLY, O_RDWR, O_TRUNC, O_WRONLY. 각자 파일을 어떤 상태로 열지 알려주는 플레그들 입니다.</p>
+<table>
+<thead>
+<tr>
+<th>flag</th>
+<th style="text-align:center">의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>O_APPEND</code></td>
+<td style="text-align:center">이어쓰기</td>
+</tr>
+<tr>
+<td><code>O_CREAT</code></td>
+<td style="text-align:center">파일생성</td>
+</tr>
+<tr>
+<td><code>O_EXCL</code></td>
+<td style="text-align:center">이미 파일이 존재한다면 -1을 반환한다.</td>
+</tr>
+<tr>
+<td><code>O_RDONLY</code></td>
+<td style="text-align:center">읽기만</td>
+</tr>
+<tr>
+<td><code>O_RDWR</code></td>
+<td style="text-align:center">읽기,쓰기</td>
+</tr>
+<tr>
+<td><code>O_TRUNC</code></td>
+<td style="text-align:center">파일비우기</td>
+</tr>
+<tr>
+<td><code>O_WRONLY</code></td>
+<td style="text-align:center">쓰기만</td>
+</tr>
+</tbody>
+</table>
+<p>말고도 다른 flag들도 있으니 궁금한 분들은 직접 찾아보시기 바랍니다.</p>
+<p>플래그는 <code>|</code> 를 이용해 여럿을 조합하여 사용할 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1"> 1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2"> 2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3"> 3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4"> 4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5"> 5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6"> 6</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-7"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-7"> 7</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-8"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-8"> 8</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-9"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-9"> 9</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-10"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-10">10</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-11"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-11">11</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-12"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-12">12</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-13"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-13">13</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-14"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-14">14</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8be9fd">int</span> fd;
+
+fd <span style="color:#ff79c6">=</span> open(fname, O_RDWR<span style="color:#ff79c6">|</span>O_CREAT,<span style="color:#bd93f9">0751</span>); 
+<span style="color:#6272a4">// 파일이 없으면 생성하여 751 권한을 부여하고 읽기,쓰기 모드로 연다.
+</span><span style="color:#6272a4"></span>close(fd);
+
+fd <span style="color:#ff79c6">=</span> open(fname, O_RDWR<span style="color:#ff79c6">|</span>O_CREAT<span style="color:#ff79c6">|</span>O_TRUNC, <span style="color:#bd93f9">0751</span>); 
+<span style="color:#6272a4">// 파일이 없으면 생성하여 751 권한을 부여하고, 파일이 이미 있으면 해당 파일을 비운뒤, 읽기 쓰기 모드로 연다. 
+</span><span style="color:#6272a4"></span>close(fd);
+
+fd <span style="color:#ff79c6">=</span> open(fname, O_RDWR<span style="color:#ff79c6">|</span>O_CREAT<span style="color:#ff79c6">|</span>O_EXCL, <span style="color:#bd93f9">0751</span>); 
+<span style="color:#6272a4">// 파일이 없으면 생성하고 751권한을 부여한 뒤, 읽기 쓰기 모드로 열되, 이미 파일이 존재하면 -1을 반환한다.(에러를 일으킨다.)
+</span><span style="color:#6272a4"></span>close(fd);
+
+</code></pre></td></tr></table>
+</div>
+</div><p>pmode: protection mode, O_CREAT를 이용해 파일을 새로 만들고 여는 경우 파일의 접근 권한을 어떻게 설정할지 알려주는 플레그입니다.</p>
+<p>8진수 3자리로 값을 나타내는데, 각 수는 Owner, Group, Others의 권한을, 각 수의 각 비트는 read권한,write권한,execute권한을 의미합니다.</p>
+<p>ex) pmode = 0751 = 111 101 001 인 경우<br>
+Owner(7): read:true, write:true, execute:true<br>
+Group(5): read:true, write:false, execute:true<br>
+Others(1): read:false, write:false, execute:true</p>
+<h3 id="close">Close</h3>
+<p>열린 파일을 닫습니다. 이미 열려있는 파일이 있으면 다른 파일을 열 수 없기 때문에, open시에 꼭 close도 해줘야합니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">close(fd); <span style="color:#6272a4">// fd는 file descriptor 
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="read--write">Read &amp; Write</h3>
+<p>열린 파일을 읽거나 쓰는 함수입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1"> 1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2"> 2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3"> 3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4"> 4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5"> 5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6"> 6</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-7"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-7"> 7</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-8"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-8"> 8</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-9"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-9"> 9</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-10"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-10">10</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">read(source_file, destination_addr, size);
+<span style="color:#6272a4">//source_file의 값을 size만큼 읽어서 destination_addr에 덮어써라
+</span><span style="color:#6272a4"></span>
+write(destination_file, source_addr, size);
+<span style="color:#6272a4">//source_addr를 size만큼 읽어서 destination_addr에 덮어써라
+</span><span style="color:#6272a4"></span>
+<span style="color:#6272a4">//ex
+</span><span style="color:#6272a4"></span><span style="color:#8be9fd">char</span> c<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;A&#39;</span>;
+write(<span style="color:#bd93f9">1</span>,<span style="color:#ff79c6">&amp;</span>c,<span style="color:#bd93f9">1</span>);
+<span style="color:#6272a4">//standard_output(커널환경이라면 커널이 standard_output에 해당하겠죠?)에 c의 주소에서 1byte만큼 읽어서 출력합니다.
+</span></code></pre></td></tr></table>
+</div>
+</div><p>source_file, destination_file: file descriptor, 0은 Standard_Input,1은 Standard_Output, 2는 Standard_Error를 의미합니다.
+destination_addr, source_addr: 목적지 주소값을 넣어주면 됩니다.<br>
+size: 몇 byte를 읽을지 써줍니다.</p>
+<p>하지만 read,write함수에겐 파일의 어느 위치에 읽기/쓰기를 실행할지 알려주지 않습니다. 읽기/쓰기는 현재 파일의 커서가 어디에 위치해있는가에 따라 실행 위치가 달라집니다.</p>
+<p>그럼 파일의 커서는 어떻게 움직일까요? 바로 lseek 함수가 여기 사용됩니다.</p>
+<h3 id="lseek">lseek</h3>
+<p>파일 내에서 어느 위치에서 작업을 수행할지 알려주는 함수, 즉 커서를 움직여주는 함수입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4">4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5">5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6">6</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-7"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-7">7</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-8"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-8">8</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-9"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-9">9</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">lseek(source_file, offset, origin);
+<span style="color:#6272a4">//source_file의 커서를 origin 위치에서 offset만큼 이동시켜라
+</span><span style="color:#6272a4"></span>
+<span style="color:#6272a4">//ex
+</span><span style="color:#6272a4"></span>lseek(fd, <span style="color:#bd93f9">6L</span>, SEEK_SET); 
+<span style="color:#6272a4">//fd파일의 시작 위치에서 6byte 떨어진 곳에 커서를 위치시켜라
+</span><span style="color:#6272a4"></span>
+lseek(fd, <span style="color:#ff79c6">-</span><span style="color:#bd93f9">3L</span>, <span style="color:#bd93f9">2</span>); 
+<span style="color:#6272a4">//fd파일의 끝 위치에서 -3byte 떨어진 곳에 커서를 위치시켜라
+</span></code></pre></td></tr></table>
+</div>
+</div><p>source_file: file descriptor</p>
+<p>offset: origin 위치에서 몇 byte만큼 이동한 위치에 커서를 둘지 결정합니다. 양수를 쓰면 오른쪽으로 이동하고 음수를 쓰면 왼쪽으로 이동합니다. 단위는 <code>long</code>을 사용합니다.</p>
+<p>origin: 커서의 기준 위치로 SEEK_SET(파일의 시작부), SEEK_CUR(현재 커서 위치), SEEK_END(파일의 끝,EOF) 세가지 값을 사용할 수 있습니다.</p>
+<p>SEEK_SET:0, SEEK_CUR:1, SEEK_END:2에 대응하므로 숫자를 대신 써줄 수도 있습니다.</p>
+<p>read &amp; write를 실행하고 나면 커서는 그 끝부분으로 이동합니다.</p>
+
+    </article>
+    <aside id="right-aside">
+      <div class="post-toc card" id="post-toc">
+    <div class="post-toc-title">
+        <span>차례</span>
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#용어정리">용어정리</a></li>
+    <li><a href="#논리적-파일과-물리적-파일간의-connect">논리적 파일과 물리적 파일간의 connect</a></li>
+    <li><a href="#system-calls">System Calls</a>
+      <ul>
+        <li><a href="#open">Open</a></li>
+        <li><a href="#close">Close</a></li>
+        <li><a href="#read--write">Read &amp; Write</a></li>
+        <li><a href="#lseek">lseek</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </aside>
+  </section>
+  <section id="section-move">
+    <nav class="section-move">
+    
+      <a href="http://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/intro-%EB%B0%8F-%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC%EC%9D%98-%EC%97%AD%EC%82%AC/" class="previous card"> 
+        <i class="fas fa-angle-double-left icon slide-left"></i>
+        <div class="title">
+          <small>prev</small>
+          <span>Intro 및 파일처리의 역사</span>
+        </div>
+      </a>
+    
+    
+</nav>
+  
+  </section>
+  <section id="meta">
+    <div class="card">
+      
+      
+<div class="category_breadcrumb_title">
+    <h2 class="title"><i class="fas fa-folder icon"></i>Categories</h2>
+</div>
+<div class="category_breadcrumb">
+    <a href="http://dev2820.github.io/categories/computer_science" class="action name">
+        
+        computer_science
+    </a>
+    <span class="action slash">/</span>
+    
+    <a href="http://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC" class="action name">
+        
+        <span class="name">파일처리</span>     
+    </a>
+    
+</div>
+
+
+      <div class="tag_list_title">
+    <h2 class="title"><i class="fas fa-hashtag icon"></i>Tags</h2>
+</div>
+<ul class="tags tag_list">
+    
+        <li><a href="http://dev2820.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/" class="action"><i class="fas fa-hashtag icon"></i>파일처리</a></li>
+    
+        <li><a href="http://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/" class="action"><i class="fas fa-hashtag icon"></i>공부</a></li>
+    
+</ul>
+
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </section>
+</main>
+
+  <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    
+    <div class="center"><div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div><div class="copyright center">
+        <span>COPYRIGHT 2021-2021. <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+        <span>ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>
