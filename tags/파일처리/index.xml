@@ -8,7 +8,16 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Wed, 10 Mar 2021 17:42:53 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Mar 2021 22:59:00 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hard Disk Drive 2</title>
+      <link>https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/hard-disk-drive-2/</link>
+      <pubDate>Tue, 16 Mar 2021 22:59:00 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/hard-disk-drive-2/</guid>
+      <description>record를 읽는 순서 레코드를 읽는 순서에 따라 HDD의 Read, Write 시간이 달라질 수 있습니다. 다음과 같이 가정해보겠습니다. 스펙 값 Average seek time 8ms Spindle speed 10000rpm Average rotational delay 3ms Bytes per</description>
+    </item>
+    
     <item>
       <title>파일처리 운영의 기초</title>
       <link>https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC-%EC%9A%B4%EC%98%81%EC%9D%98-%EA%B8%B0%EC%B4%88/</link>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Disk Drive 2  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 'Hard Disk Drive 2'을 한 번 살펴보세요.">
+    <meta property="og:title" content="Hard Disk Drive 2">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2021-03-16">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 'Hard Disk Drive 2'을 한 번 살펴보세요.">
+    <meta property="og:url" content="https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/hard-disk-drive-2/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="https://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="파일처리">
+    
+    <meta property="og:tags" content="공부">
+    
+    
+    <link rel="icon" href="https://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/hard-disk-drive-2/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTD4CD0DNR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TTD4CD0DNR');
+    </script>
+    
+    
+    
+    <script src="/js/default.js"></script>
+    
+</head>
+<body id="body">
+        <div id="loader">
+            <span class="description">
+                loading
+            </span>
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" width="96px"/>
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/cover.jpg" class="round-card">
+        
+    </div>
+    
+    
+    <h2>dev2820</h2>
+    
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="center">
+        <div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <div class="navigation-container">
+        <nav class="aside-menu center">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="https://dev2820.github.io/">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="https://dev2820.github.io//categories">Categories</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="https://dev2820.github.io//tags">Tags</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="https://dev2820.github.io//search">Search</a>
+                </li>
+                <li>
+                    <i class="fas fa-user icon"></i>
+                    <a href="https://dev2820.github.io//about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+<header id="single-header" class="card-inset bg-cover">
+
+  <div class="curtain center">
+    <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
+    <h1 class="title">Hard Disk Drive 2</h1>
+    <div class="meta-data appear-300ms">
+      <p class="date"> <i class="far fa-calendar icon"></i> 2021.03.16 </p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 4m</p>
+    </div>
+  </div>
+</header>
+
+<main id="single-main">
+  <div class="roller"></div>
+  <section id="content" class="appear-700ms">
+    <article class="content card">
+      <h2 id="record를-읽는-순서">record를 읽는 순서</h2>
+<p>레코드를 읽는 순서에 따라 HDD의 Read, Write 시간이 달라질 수 있습니다.</p>
+<p>다음과 같이 가정해보겠습니다.</p>
+<table>
+<thead>
+<tr>
+<th>스펙</th>
+<th style="text-align:center">값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average seek time</td>
+<td style="text-align:center">8ms</td>
+</tr>
+<tr>
+<td>Spindle speed</td>
+<td style="text-align:center">10000rpm</td>
+</tr>
+<tr>
+<td>Average rotational delay</td>
+<td style="text-align:center">3ms</td>
+</tr>
+<tr>
+<td>Bytes per sector</td>
+<td style="text-align:center">512</td>
+</tr>
+<tr>
+<td>Sectors per track</td>
+<td style="text-align:center">170</td>
+</tr>
+</tbody>
+</table>
+<p>위의 스펙을 가지는 하드디스크가 있고, 이 하드디스크에는 8,704KByte 크기의 파일이 256 Byte 레코드 34,000개에 나누어져 저장되어 있다고 합시다. 그렇다면 이 파일 전체를 읽는 데 걸리는 시간은 얼마나 될까요?
+(1 Cluster=8 sectors이며, 하드에 다른 파일은 없다고 가정합니다)</p>
+<h3 id="순차적으로-레코드를-읽을-때-걸리는-시간">순차적으로 레코드를 읽을 때 걸리는 시간</h3>
+<p>한 Program이 이 파일의 모든 레코드를 순서대로 읽어 들인다고 합시다. 0번 레코드 읽으면 다음은 1번 레코드 읽고 그 다음은 2번 레코드 읽고 &hellip; 이렇게 읽어 들이는 겁니다.</p>
+<p>레코드를 순서대로 읽기 때문에 HDD는 한 트랙씩 데이터를 읽어 들이면 됩니다.</p>
+<p>먼저 읽어야 하는 트랙의 수부터 구해봅시다. 256 Bytes 크기의 레코드가 34,000개 있으니 읽어야 하는 Byte 수는 8,704,000개입니다.</p>
+<blockquote>
+<p>읽어야 하는 Bytes = (256*34000) Bytes = 8,704,000 Bytes</p>
+</blockquote>
+<p>그럼 트랙당 Byte 수는 총 몇 개일까요?
+위의 스펙 표를 참고해보면 한 트랙은 170개의 섹터가 있고, 한 섹터는 512 Bytes를 가지고 있으니 한 트랙의 Byte 수는 87,040개입니다.</p>
+<blockquote>
+<p>트랙당 Bytes = (170*512) Bytes = 87,040 Bytes</p>
+</blockquote>
+<p>따라서 읽어야 하는 트랙의 수는 100개가 나옵니다.</p>
+<blockquote>
+<p>읽어야 하는 트랙의 수 = 읽어야 하는 Bytes / 트랙 당 Bytes = 8,704,000/87,040 = 100</p>
+</blockquote>
+<p>한 트랙을 읽는 데 걸리는 시간은 Seek Time + Rotational Delay + Transfer Time입니다.
+Seek Time과 Rotational Delay는 위 스펙 표에서 나오니 알 수 있습니다.</p>
+<p>한 트랙을 전부 transfer 하는데 걸리는 시간은 rpm의 역수입니다. 
+(1분에 10000번 회전하니, 1번 회전하는 데 걸리는 시간은 1/10000분입니다)</p>
+<blockquote>
+<p>Transfer Time = 1/10,000m = 6ms</p>
+</blockquote>
+<p>따라서</p>
+<blockquote>
+<p>한 트랙을 읽는 데 걸리는 시간 = Seek Time + Rotational Delay + Transfer Time = (8 + 3 + 6) ms = 17ms</p>
+</blockquote>
+<p>100트랙을 읽어야 하니 17*100ms = 1.7 seconds, <strong>1.7초</strong>가 걸립니다.</p>
+<h3 id="비순차적으로-레코드를-읽을-때-걸리는-시간">비순차적으로 레코드를 읽을 때 걸리는 시간</h3>
+<p>비순차적으로 레코드를 읽는다는 것은 1번 레코드를 읽고 99번 레코드를 읽고 10500번 레코드를 읽고 &hellip; 이렇게 랜덤한 순서로 레코드를 읽는다는 뜻입니다.</p>
+<p>한 레코드를 읽을 때마다 읽어야 하는 레코드의 위치가 바뀌니, HDD는 트랙 단위로 파일을 읽을 수 없고, 최악의 경우 레코드의 수 만큼 클러스터를 읽어 들여야 합니다.</p>
+<p>한 클러스터를 Transfer 하는 시간은 얼마일까요?</p>
+<p>1 클러스터 = 8 섹터라고 했고, 한 트랙은 170 섹터로 이루어진다고 했습니다. 따라서 Transfer Time은 8/170*6ms입니다.</p>
+<blockquote>
+<p>1 Cluster Transfer Time = 8/170 * 6ms = 0.28ms</p>
+</blockquote>
+<p>이제 한 레코드를 읽는 데 걸리는 시간은</p>
+<blockquote>
+<p>한 클러스터를 읽는 데 걸리는 시간 = Seek Time + Rotational Delay + Transfer Time = (8 + 3 + 0.28) ms = 11.28ms</p>
+</blockquote>
+<p>최악의 경우 34,000개의 클러스터를 읽게 되므로 모든 파일을 읽는 데 걸리는 시간은 34000*11.28ms = 383.52 seconds, 약 <strong>6분 30초</strong> 가까이 걸립니다.</p>
+<p>Program이 레코드를 순서대로 읽는다면 1.7초면 이 파일을 다 읽지만, 순서대로 읽지 않는다면 6분까지도 cost가 발생합니다. 왜 이렇게 큰 차이가 나는 걸까요?</p>
+<h3 id="왜-두-번째-방법이-느릴까">왜 두 번째 방법이 느릴까?</h3>
+<p><img src="../images/%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%9D%BD%EC%9D%84-%EB%95%8C-min.jpg" alt="파일을 읽을 때"></p>
+<p>위 그림과 같이 User Program이 반복적으로 read()를 실행한다고 합시다. 처음 User Program은 read()로 0번 레코드를 읽어달라고 OS에게 부탁합니다. OS는 FAT을 참조해 해당 레코드가 있는 클러스터를 HDD에게 읽어달라고 부탁하게 됩니다.</p>
+<p>여기서 알 수 있듯, OS는 클러스터만큼 파일을 읽어 들이기 때문에 0번 레코드만 읽게 되는 것이 아니라 1, 2,&hellip; 레코드들도 같이 읽게 됩니다. 위의 문제에선 1 cluster = 8 sectors, 1 sector = 256Byte, 1 record = 256Byte 이기 때문에 OS는 한 번에 0~7번 레코드까지 읽어 들이게 됩니다.</p>
+<p>HDD는 읽은 데이터를 OS에게 넘겨주고 OS는 이 데이터를 Buffer에 저장하게 되는데, OS는 다시 이 버퍼에서 레코드 단위로 읽어 User Program에게 보내주게 됩니다. 실제론 read에서 파라미터로 정해준 주소 값에 값을 복사해서 저장하겠죠?</p>
+<p>다시, User Program이 1번 레코드를 읽어 달라고 OS에 요청하면 OS는 먼저 버퍼에 해당 레코드가 존재하는지 확인합니다. 1번 레코드는 버퍼에 존재하고, OS는 FAT을 참조해 데이터를 읽어달라고 HDD에게 요청하지 않아도 됩니다. 따라서 HDD에 접근하면서 생기는 cost가 발생하지 않게 되죠.</p>
+<p>반면 User Program이 비순차적으로 레코드를 요청한다고 가정합시다.
+음&hellip; 예를 들어 1번 레코드 -&gt; 10번 레코드 -&gt; 200번 레코드 이렇게 요청한다고 하죠. 이 경우 1번 레코드를 읽고 나면 버퍼엔 1, 2,&hellip; 8 번 레코드가 존재하게 됩니다. 10번 레코드는 버퍼에 존재하지 않기 때문에 다시 HDD에 요청을 보내게 되고, 또다시 cost가 발생합니다. 최악의 경우 읽어야 하는 레코드의 수 만큼 cost가 발생합니다.</p>
+<h2 id="write-하는-경우-os의-동작">write 하는 경우 OS의 동작</h2>
+<p>좀 더 자세한 OS의 동작을 살펴보기 위해 이번엔 User Program이 &lsquo;p&rsquo;라는 문자(1Byte)를 TEXT 파일의 마지막 위치에 저장하는 경우를 살펴봅시다.</p>
+<p><img src="../images/%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%93%B8-%EB%95%8C-min.jpg" alt="파일을 쓸 때"></p>
+<p>이상으로 HDD에 대한 내용은 마칩니다. 다음 글부터는 Flash Memory에 대해 알아보겠습니다.</p>
+
+    </article>
+    <aside id="right-aside">
+      <div class="post-toc card" id="post-toc">
+    <div class="post-toc-title">
+        <span>차례</span>
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#record를-읽는-순서">record를 읽는 순서</a>
+      <ul>
+        <li><a href="#순차적으로-레코드를-읽을-때-걸리는-시간">순차적으로 레코드를 읽을 때 걸리는 시간</a></li>
+        <li><a href="#비순차적으로-레코드를-읽을-때-걸리는-시간">비순차적으로 레코드를 읽을 때 걸리는 시간</a></li>
+        <li><a href="#왜-두-번째-방법이-느릴까">왜 두 번째 방법이 느릴까?</a></li>
+      </ul>
+    </li>
+    <li><a href="#write-하는-경우-os의-동작">write 하는 경우 OS의 동작</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </aside>
+  </section>
+  <section id="section-move">
+    <nav class="section-move">
+    
+      <a href="https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC-%EC%9A%B4%EC%98%81%EC%9D%98-%EA%B8%B0%EC%B4%88/" class="previous card"> 
+        <i class="fas fa-angle-double-left icon slide-left"></i>
+        <div class="title">
+          <small>prev</small>
+          <span>파일처리 운영의 기초</span>
+        </div>
+      </a>
+    
+    
+</nav>
+  
+  </section>
+  <section id="meta">
+    <div class="card">
+      
+      
+<div class="category_breadcrumb_title">
+    <h2 class="title"><i class="fas fa-folder icon"></i>Categories</h2>
+</div>
+<div class="category_breadcrumb">
+    <a href="https://dev2820.github.io/categories/computer_science" class="action name">
+        
+        computer_science
+    </a>
+    <span class="action slash">/</span>
+    
+    <a href="https://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC" class="action name">
+        
+        <span class="name">파일처리</span>     
+    </a>
+    
+</div>
+
+
+      <div class="tag_list_title">
+    <h2 class="title"><i class="fas fa-hashtag icon"></i>Tags</h2>
+</div>
+<ul class="tags tag_list">
+    
+        <li><a href="https://dev2820.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/" class="action"><i class="fas fa-hashtag icon"></i>파일처리</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/" class="action"><i class="fas fa-hashtag icon"></i>공부</a></li>
+    
+</ul>
+
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </section>
+</main>
+
+  <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    
+    <div class="center"><div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div><div class="copyright center">
+        <span>COPYRIGHT 2021-2021. <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+        <span>ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>

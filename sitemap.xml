@@ -4,42 +4,54 @@
   
   <url>
     <loc>https://dev2820.github.io/categories/</loc>
-    <lastmod>2021-03-10T17:42:53+09:00</lastmod>
+    <lastmod>2021-03-16T22:59:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>https://dev2820.github.io/categories/computer_science/</loc>
-    <lastmod>2021-03-10T17:42:53+09:00</lastmod>
+    <loc>https://dev2820.github.io/categories/computer-science/</loc>
+    <lastmod>2021-03-16T22:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/hard-disk-drive-2/</loc>
+    <lastmod>2021-03-16T22:59:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://dev2820.github.io/subcategories/</loc>
-    <lastmod>2021-03-10T17:42:53+09:00</lastmod>
+    <lastmod>2021-03-16T22:59:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://dev2820.github.io/tags/</loc>
-    <lastmod>2021-03-10T17:42:53+09:00</lastmod>
+    <lastmod>2021-03-16T22:59:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/</loc>
-    <lastmod>2021-03-10T17:42:53+09:00</lastmod>
+    <lastmod>2021-03-16T22:59:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://dev2820.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</loc>
-    <lastmod>2021-03-10T17:42:53+09:00</lastmod>
+    <lastmod>2021-03-16T22:59:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</loc>
+    <lastmod>2021-03-16T22:59:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/categories/computer_science/</loc>
     <lastmod>2021-03-10T17:42:53+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
