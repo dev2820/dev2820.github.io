@@ -2,64 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Subcategories on dev2820 개발일지</title>
-    <link>https://dev2820.github.io/subcategories/</link>
+    <link>http://dev2820.github.io/subcategories/</link>
     <description>Recent content in Subcategories on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Wed, 10 Mar 2021 17:42:53 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/subcategories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 17:42:53 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/subcategories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>파일처리</title>
-      <link>https://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</link>
+      <link>http://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</link>
       <pubDate>Wed, 10 Mar 2021 17:42:53 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</guid>
+      <guid>http://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programming_language</title>
-      <link>https://dev2820.github.io/subcategories/programming_language/</link>
+      <link>http://dev2820.github.io/subcategories/programming_language/</link>
       <pubDate>Wed, 10 Mar 2021 11:42:53 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/subcategories/programming_language/</guid>
+      <guid>http://dev2820.github.io/subcategories/programming_language/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>https://dev2820.github.io/subcategories/hugo/</link>
+      <link>http://dev2820.github.io/subcategories/hugo/</link>
       <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/subcategories/hugo/</guid>
+      <guid>http://dev2820.github.io/subcategories/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test</title>
-      <link>https://dev2820.github.io/subcategories/test/</link>
+      <link>http://dev2820.github.io/subcategories/test/</link>
       <pubDate>Sat, 26 Sep 2020 21:35:04 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/subcategories/test/</guid>
+      <guid>http://dev2820.github.io/subcategories/test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>추천</title>
-      <link>https://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C/</link>
+      <link>http://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C/</link>
       <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C/</guid>
+      <guid>http://dev2820.github.io/subcategories/%EC%B6%94%EC%B2%9C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nas_project</title>
-      <link>https://dev2820.github.io/subcategories/nas_project/</link>
+      <link>http://dev2820.github.io/subcategories/nas_project/</link>
       <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/subcategories/nas_project/</guid>
+      <guid>http://dev2820.github.io/subcategories/nas_project/</guid>
       <description></description>
     </item>
     

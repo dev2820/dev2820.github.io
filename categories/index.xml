@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on dev2820 개발일지</title>
-    <link>https://dev2820.github.io/categories/</link>
+    <link>http://dev2820.github.io/categories/</link>
     <description>Recent content in Categories on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Wed, 10 Mar 2021 17:42:53 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 17:42:53 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>computer_science</title>
-      <link>https://dev2820.github.io/categories/computer_science/</link>
+      <link>http://dev2820.github.io/categories/computer_science/</link>
       <pubDate>Wed, 10 Mar 2021 17:42:53 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/categories/computer_science/</guid>
+      <guid>http://dev2820.github.io/categories/computer_science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>what_is_hugo</title>
-      <link>https://dev2820.github.io/categories/what_is_hugo/</link>
+      <link>http://dev2820.github.io/categories/what_is_hugo/</link>
       <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/categories/what_is_hugo/</guid>
+      <guid>http://dev2820.github.io/categories/what_is_hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>일상</title>
-      <link>https://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/</link>
+      <link>http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/</link>
       <pubDate>Sat, 26 Sep 2020 21:35:04 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/</guid>
+      <guid>http://dev2820.github.io/categories/%EC%9D%BC%EC%83%81/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://dev2820.github.io/categories/projects/</link>
+      <link>http://dev2820.github.io/categories/projects/</link>
       <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/categories/projects/</guid>
+      <guid>http://dev2820.github.io/categories/projects/</guid>
       <description></description>
     </item>
     

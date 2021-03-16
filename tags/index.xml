@@ -2,379 +2,379 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on dev2820 개발일지</title>
-    <link>https://dev2820.github.io/tags/</link>
+    <link>http://dev2820.github.io/tags/</link>
     <description>Recent content in Tags on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Wed, 10 Mar 2021 17:42:53 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 17:42:53 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>공부</title>
-      <link>https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/</link>
+      <link>http://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/</link>
       <pubDate>Wed, 10 Mar 2021 17:42:53 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/</guid>
+      <guid>http://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/</guid>
       <description></description>
     </item>
     
     <item>
       <title>파일처리</title>
-      <link>https://dev2820.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</link>
+      <link>http://dev2820.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</link>
       <pubDate>Wed, 10 Mar 2021 17:42:53 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</guid>
+      <guid>http://dev2820.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PL</title>
-      <link>https://dev2820.github.io/tags/pl/</link>
+      <link>http://dev2820.github.io/tags/pl/</link>
       <pubDate>Wed, 10 Mar 2021 11:42:53 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/pl/</guid>
+      <guid>http://dev2820.github.io/tags/pl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>프로그래밍언어</title>
-      <link>https://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4/</link>
+      <link>http://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4/</link>
       <pubDate>Wed, 10 Mar 2021 11:42:53 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4/</guid>
+      <guid>http://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>disqus</title>
-      <link>https://dev2820.github.io/tags/disqus/</link>
+      <link>http://dev2820.github.io/tags/disqus/</link>
       <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/disqus/</guid>
+      <guid>http://dev2820.github.io/tags/disqus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>https://dev2820.github.io/tags/hugo/</link>
+      <link>http://dev2820.github.io/tags/hugo/</link>
       <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/hugo/</guid>
+      <guid>http://dev2820.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>코멘트 추가하기</title>
-      <link>https://dev2820.github.io/tags/%EC%BD%94%EB%A9%98%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link>
+      <link>http://dev2820.github.io/tags/%EC%BD%94%EB%A9%98%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%EC%BD%94%EB%A9%98%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid>
+      <guid>http://dev2820.github.io/tags/%EC%BD%94%EB%A9%98%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>휴고</title>
-      <link>https://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
+      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</link>
       <pubDate>Sun, 18 Oct 2020 21:17:54 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
+      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>이미지 처리</title>
-      <link>https://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/</link>
+      <link>http://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/</link>
       <pubDate>Sat, 03 Oct 2020 17:47:33 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/</guid>
+      <guid>http://dev2820.github.io/tags/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Page Resources</title>
-      <link>https://dev2820.github.io/tags/page-resources/</link>
+      <link>http://dev2820.github.io/tags/page-resources/</link>
       <pubDate>Sat, 03 Oct 2020 17:47:18 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/page-resources/</guid>
+      <guid>http://dev2820.github.io/tags/page-resources/</guid>
       <description></description>
     </item>
     
     <item>
       <title>multilingual mode</title>
-      <link>https://dev2820.github.io/tags/multilingual-mode/</link>
+      <link>http://dev2820.github.io/tags/multilingual-mode/</link>
       <pubDate>Sat, 03 Oct 2020 17:46:56 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/multilingual-mode/</guid>
+      <guid>http://dev2820.github.io/tags/multilingual-mode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>다중언어지원</title>
-      <link>https://dev2820.github.io/tags/%EB%8B%A4%EC%A4%91%EC%96%B8%EC%96%B4%EC%A7%80%EC%9B%90/</link>
+      <link>http://dev2820.github.io/tags/%EB%8B%A4%EC%A4%91%EC%96%B8%EC%96%B4%EC%A7%80%EC%9B%90/</link>
       <pubDate>Sat, 03 Oct 2020 17:46:56 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%EB%8B%A4%EC%A4%91%EC%96%B8%EC%96%B4%EC%A7%80%EC%9B%90/</guid>
+      <guid>http://dev2820.github.io/tags/%EB%8B%A4%EC%A4%91%EC%96%B8%EC%96%B4%EC%A7%80%EC%9B%90/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Table of Contents</title>
-      <link>https://dev2820.github.io/tags/table-of-contents/</link>
+      <link>http://dev2820.github.io/tags/table-of-contents/</link>
       <pubDate>Fri, 02 Oct 2020 20:00:12 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/table-of-contents/</guid>
+      <guid>http://dev2820.github.io/tags/table-of-contents/</guid>
       <description></description>
     </item>
     
     <item>
       <title>목차</title>
-      <link>https://dev2820.github.io/tags/%EB%AA%A9%EC%B0%A8/</link>
+      <link>http://dev2820.github.io/tags/%EB%AA%A9%EC%B0%A8/</link>
       <pubDate>Fri, 02 Oct 2020 20:00:12 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%EB%AA%A9%EC%B0%A8/</guid>
+      <guid>http://dev2820.github.io/tags/%EB%AA%A9%EC%B0%A8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>문서에 목차 달기</title>
-      <link>https://dev2820.github.io/tags/%EB%AC%B8%EC%84%9C%EC%97%90-%EB%AA%A9%EC%B0%A8-%EB%8B%AC%EA%B8%B0/</link>
+      <link>http://dev2820.github.io/tags/%EB%AC%B8%EC%84%9C%EC%97%90-%EB%AA%A9%EC%B0%A8-%EB%8B%AC%EA%B8%B0/</link>
       <pubDate>Fri, 02 Oct 2020 20:00:12 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%EB%AC%B8%EC%84%9C%EC%97%90-%EB%AA%A9%EC%B0%A8-%EB%8B%AC%EA%B8%B0/</guid>
+      <guid>http://dev2820.github.io/tags/%EB%AC%B8%EC%84%9C%EC%97%90-%EB%AA%A9%EC%B0%A8-%EB%8B%AC%EA%B8%B0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>static</title>
-      <link>https://dev2820.github.io/tags/static/</link>
+      <link>http://dev2820.github.io/tags/static/</link>
       <pubDate>Fri, 02 Oct 2020 18:14:55 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/static/</guid>
+      <guid>http://dev2820.github.io/tags/static/</guid>
       <description></description>
     </item>
     
     <item>
       <title>static files</title>
-      <link>https://dev2820.github.io/tags/static-files/</link>
+      <link>http://dev2820.github.io/tags/static-files/</link>
       <pubDate>Fri, 02 Oct 2020 18:14:55 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/static-files/</guid>
+      <guid>http://dev2820.github.io/tags/static-files/</guid>
       <description></description>
     </item>
     
     <item>
       <title>menu</title>
-      <link>https://dev2820.github.io/tags/menu/</link>
+      <link>http://dev2820.github.io/tags/menu/</link>
       <pubDate>Thu, 01 Oct 2020 23:42:40 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/menu/</guid>
+      <guid>http://dev2820.github.io/tags/menu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>URL</title>
-      <link>https://dev2820.github.io/tags/url/</link>
+      <link>http://dev2820.github.io/tags/url/</link>
       <pubDate>Thu, 01 Oct 2020 21:56:57 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/url/</guid>
+      <guid>http://dev2820.github.io/tags/url/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ref and relref</title>
-      <link>https://dev2820.github.io/tags/ref-and-relref/</link>
+      <link>http://dev2820.github.io/tags/ref-and-relref/</link>
       <pubDate>Thu, 01 Oct 2020 21:25:59 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/ref-and-relref/</guid>
+      <guid>http://dev2820.github.io/tags/ref-and-relref/</guid>
       <description></description>
     </item>
     
     <item>
       <title>taxonomy</title>
-      <link>https://dev2820.github.io/tags/taxonomy/</link>
+      <link>http://dev2820.github.io/tags/taxonomy/</link>
       <pubDate>Wed, 30 Sep 2020 19:06:31 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/taxonomy/</guid>
+      <guid>http://dev2820.github.io/tags/taxonomy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>https://dev2820.github.io/tags/shortcodes/</link>
+      <link>http://dev2820.github.io/tags/shortcodes/</link>
       <pubDate>Wed, 30 Sep 2020 15:45:34 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/shortcodes/</guid>
+      <guid>http://dev2820.github.io/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>archetypes</title>
-      <link>https://dev2820.github.io/tags/archetypes/</link>
+      <link>http://dev2820.github.io/tags/archetypes/</link>
       <pubDate>Tue, 29 Sep 2020 23:48:55 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/archetypes/</guid>
+      <guid>http://dev2820.github.io/tags/archetypes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>content section</title>
-      <link>https://dev2820.github.io/tags/content-section/</link>
+      <link>http://dev2820.github.io/tags/content-section/</link>
       <pubDate>Tue, 29 Sep 2020 23:48:55 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/content-section/</guid>
+      <guid>http://dev2820.github.io/tags/content-section/</guid>
       <description></description>
     </item>
     
     <item>
       <title>content type</title>
-      <link>https://dev2820.github.io/tags/content-type/</link>
+      <link>http://dev2820.github.io/tags/content-type/</link>
       <pubDate>Tue, 29 Sep 2020 23:48:55 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/content-type/</guid>
+      <guid>http://dev2820.github.io/tags/content-type/</guid>
       <description></description>
     </item>
     
     <item>
       <title>front matter</title>
-      <link>https://dev2820.github.io/tags/front-matter/</link>
+      <link>http://dev2820.github.io/tags/front-matter/</link>
       <pubDate>Tue, 29 Sep 2020 21:54:15 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/front-matter/</guid>
+      <guid>http://dev2820.github.io/tags/front-matter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>연관성 있는 컨텐츠</title>
-      <link>https://dev2820.github.io/tags/%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/</link>
+      <link>http://dev2820.github.io/tags/%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/</link>
       <pubDate>Sun, 27 Sep 2020 16:35:32 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/</guid>
+      <guid>http://dev2820.github.io/tags/%EC%97%B0%EA%B4%80%EC%84%B1-%EC%9E%88%EB%8A%94-%EC%BB%A8%ED%85%90%EC%B8%A0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>code fence</title>
-      <link>https://dev2820.github.io/tags/code-fence/</link>
+      <link>http://dev2820.github.io/tags/code-fence/</link>
       <pubDate>Sun, 27 Sep 2020 15:09:40 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/code-fence/</guid>
+      <guid>http://dev2820.github.io/tags/code-fence/</guid>
       <description></description>
     </item>
     
     <item>
       <title>highlight</title>
-      <link>https://dev2820.github.io/tags/highlight/</link>
+      <link>http://dev2820.github.io/tags/highlight/</link>
       <pubDate>Sun, 27 Sep 2020 15:09:40 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/highlight/</guid>
+      <guid>http://dev2820.github.io/tags/highlight/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo management</title>
-      <link>https://dev2820.github.io/tags/hugo-management/</link>
+      <link>http://dev2820.github.io/tags/hugo-management/</link>
       <pubDate>Sat, 26 Sep 2020 20:39:14 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/hugo-management/</guid>
+      <guid>http://dev2820.github.io/tags/hugo-management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>컨텐츠 관리</title>
-      <link>https://dev2820.github.io/tags/%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</link>
+      <link>http://dev2820.github.io/tags/%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</link>
       <pubDate>Sat, 26 Sep 2020 20:39:14 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</guid>
+      <guid>http://dev2820.github.io/tags/%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</guid>
       <description></description>
     </item>
     
     <item>
       <title>휴고 시작하기</title>
-      <link>https://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</link>
+      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</link>
       <pubDate>Sat, 26 Sep 2020 20:39:14 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</guid>
+      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>휴고설치</title>
-      <link>https://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0%EC%84%A4%EC%B9%98/</link>
+      <link>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0%EC%84%A4%EC%B9%98/</link>
       <pubDate>Fri, 25 Sep 2020 20:09:17 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0%EC%84%A4%EC%B9%98/</guid>
+      <guid>http://dev2820.github.io/tags/%ED%9C%B4%EA%B3%A0%EC%84%A4%EC%B9%98/</guid>
       <description></description>
     </item>
     
     <item>
       <title>info</title>
-      <link>https://dev2820.github.io/tags/info/</link>
+      <link>http://dev2820.github.io/tags/info/</link>
       <pubDate>Wed, 23 Sep 2020 21:30:23 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/info/</guid>
+      <guid>http://dev2820.github.io/tags/info/</guid>
       <description></description>
     </item>
     
     <item>
       <title>code-server</title>
-      <link>https://dev2820.github.io/tags/code-server/</link>
+      <link>http://dev2820.github.io/tags/code-server/</link>
       <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/code-server/</guid>
+      <guid>http://dev2820.github.io/tags/code-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>웹에서 코딩</title>
-      <link>https://dev2820.github.io/tags/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%BD%94%EB%94%A9/</link>
+      <link>http://dev2820.github.io/tags/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%BD%94%EB%94%A9/</link>
       <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%BD%94%EB%94%A9/</guid>
+      <guid>http://dev2820.github.io/tags/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%BD%94%EB%94%A9/</guid>
       <description></description>
     </item>
     
     <item>
       <title>추천</title>
-      <link>https://dev2820.github.io/tags/%EC%B6%94%EC%B2%9C/</link>
+      <link>http://dev2820.github.io/tags/%EC%B6%94%EC%B2%9C/</link>
       <pubDate>Wed, 23 Sep 2020 12:19:54 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/%EC%B6%94%EC%B2%9C/</guid>
+      <guid>http://dev2820.github.io/tags/%EC%B6%94%EC%B2%9C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DIY</title>
-      <link>https://dev2820.github.io/tags/diy/</link>
+      <link>http://dev2820.github.io/tags/diy/</link>
       <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/diy/</guid>
+      <guid>http://dev2820.github.io/tags/diy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>projects</title>
-      <link>https://dev2820.github.io/tags/projects/</link>
+      <link>http://dev2820.github.io/tags/projects/</link>
       <pubDate>Fri, 18 Sep 2020 18:20:55 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/projects/</guid>
+      <guid>http://dev2820.github.io/tags/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>diary</title>
-      <link>https://dev2820.github.io/tags/diary/</link>
+      <link>http://dev2820.github.io/tags/diary/</link>
       <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/diary/</guid>
+      <guid>http://dev2820.github.io/tags/diary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test</title>
-      <link>https://dev2820.github.io/tags/test/</link>
+      <link>http://dev2820.github.io/tags/test/</link>
       <pubDate>Sat, 25 Jul 2020 02:23:43 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/tags/test/</guid>
+      <guid>http://dev2820.github.io/tags/test/</guid>
       <description></description>
     </item>
     

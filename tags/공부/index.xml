@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>공부 on dev2820 개발일지</title>
-    <link>https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/</link>
+    <link>http://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/</link>
     <description>Recent content in 공부 on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Wed, 10 Mar 2021 17:42:53 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 17:42:53 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>파일처리 운영의 기초</title>
-      <link>https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC-%EC%9A%B4%EC%98%81%EC%9D%98-%EA%B8%B0%EC%B4%88/</link>
+      <link>http://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC-%EC%9A%B4%EC%98%81%EC%9D%98-%EA%B8%B0%EC%B4%88/</link>
       <pubDate>Wed, 10 Mar 2021 17:42:53 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC-%EC%9A%B4%EC%98%81%EC%9D%98-%EA%B8%B0%EC%B4%88/</guid>
+      <guid>http://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC-%EC%9A%B4%EC%98%81%EC%9D%98-%EA%B8%B0%EC%B4%88/</guid>
       <description>오타,오류 지적 환영합니다. 용어정리 물리적 파일: secondary memory에 저장된 실제 파일입니다. OS에 의해 관리됩니다. 논리적 파일: 프로그램을 통해 보게되는</description>
     </item>
     
     <item>
       <title>Intro 및 파일처리의 역사</title>
-      <link>https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/intro-%EB%B0%8F-%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC%EC%9D%98-%EC%97%AD%EC%82%AC/</link>
+      <link>http://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/intro-%EB%B0%8F-%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC%EC%9D%98-%EC%97%AD%EC%82%AC/</link>
       <pubDate>Wed, 10 Mar 2021 11:42:53 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/intro-%EB%B0%8F-%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC%EC%9D%98-%EC%97%AD%EC%82%AC/</guid>
+      <guid>http://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/intro-%EB%B0%8F-%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC%EC%9D%98-%EC%97%AD%EC%82%AC/</guid>
       <description>오타,오류 지적 환영합니다. 용어정리 및 기초지식 Secondary Memory 컴퓨터는 총 4가지의 메모리로 구성됩니다. ALU의 연산값을 저장하는 Registar 캐싱을 위해 존재하는 Cache</description>
     </item>
     
     <item>
       <title>프로그래밍언어 (2)</title>
-      <link>https://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-2/</link>
+      <link>http://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-2/</link>
       <pubDate>Wed, 10 Mar 2021 11:42:53 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-2/</guid>
+      <guid>http://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-2/</guid>
       <description>이 글은 ROBERT W.SEBESTA의 concepts of programming languages (11th, global edition) 에 의거하여 작성된 글이며, 필자가 번역 및 공부하면서 정리하는 글이라 오류가 있을 수 있습니다. 오류,오타 지적은</description>
     </item>
     
     <item>
       <title>프로그래밍언어 (1)</title>
-      <link>https://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-1/</link>
+      <link>http://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-1/</link>
       <pubDate>Sat, 06 Mar 2021 21:33:27 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-1/</guid>
+      <guid>http://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-1/</guid>
       <description>이 글은 ROBERT W.SEBESTA의 concepts of programming languages (11th, global edition) 에 의거하여 작성된 글이며, 필자가 번역 및 공부하면서 정리하는 글이라 오류가 있을 수 있습니다. 오류,오타 지적은</description>
     </item>
     

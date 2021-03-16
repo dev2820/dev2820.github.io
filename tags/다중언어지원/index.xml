@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>다중언어지원 on dev2820 개발일지</title>
-    <link>https://dev2820.github.io/tags/%EB%8B%A4%EC%A4%91%EC%96%B8%EC%96%B4%EC%A7%80%EC%9B%90/</link>
+    <link>http://dev2820.github.io/tags/%EB%8B%A4%EC%A4%91%EC%96%B8%EC%96%B4%EC%A7%80%EC%9B%90/</link>
     <description>Recent content in 다중언어지원 on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Sat, 03 Oct 2020 17:46:56 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/%EB%8B%A4%EC%A4%91%EC%96%B8%EC%96%B4%EC%A7%80%EC%9B%90/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2020 17:46:56 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/%EB%8B%A4%EC%A4%91%EC%96%B8%EC%96%B4%EC%A7%80%EC%9B%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>휴고 Multilingual Mode</title>
-      <link>https://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/</link>
+      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/</link>
       <pubDate>Sat, 03 Oct 2020 17:46:56 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/</guid>
+      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-multilingual-mode/</guid>
       <description>이번글은 휴고 사이트의 다중언어지원에 대한 글입니다. https://gohugo.io/content-management/multilingual/ Configure Languages 다음 예제는 다중언어지원을 위한 config 파일입니다. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22</description>
     </item>
     
