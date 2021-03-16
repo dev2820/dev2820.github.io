@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>컨텐츠 관리 on dev2820 개발일지</title>
-    <link>http://dev2820.github.io/tags/%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</link>
+    <link>https://dev2820.github.io/tags/%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</link>
     <description>Recent content in 컨텐츠 관리 on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Sat, 26 Sep 2020 20:39:14 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/tags/%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Sep 2020 20:39:14 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>휴고의 컨텐츠 관리</title>
-      <link>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</link>
+      <link>https://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</link>
       <pubDate>Sat, 26 Sep 2020 20:39:14 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>http://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</guid>
+      <guid>https://dev2820.github.io/what_is_hugo/%ED%9C%B4%EA%B3%A0-%EC%BB%A8%ED%85%90%EC%B8%A0-%EA%B4%80%EB%A6%AC/</guid>
       <description>이번 글에서는 휴고의 컨텐츠 관리에 관해서 알아보겠습니다. https://gohugo.io/content-management/ Content Organization 휴고의 컨텐츠 조직화에 관한 페이지입니다. https://gohugo.io/content-management/organization/ page Bundles 휴고는 페이지별로 다른 설정, 다른 front matter 값을</description>
     </item>
     

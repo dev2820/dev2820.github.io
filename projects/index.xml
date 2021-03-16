@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on dev2820 개발일지</title>
-    <link>http://dev2820.github.io/projects/</link>
+    <link>https://dev2820.github.io/projects/</link>
     <description>Recent content in Projects on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Sat, 19 Sep 2020 12:19:54 +0900</lastBuildDate><atom:link href="http://dev2820.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Sep 2020 12:19:54 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
