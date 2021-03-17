@@ -10,6 +10,24 @@
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
     <lastBuildDate>Sat, 19 Sep 2020 12:19:54 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>SIC-XE란</title>
+      <link>https://dev2820.github.io/computer_science/%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/sic-xe%EB%9E%80/</link>
+      <pubDate>Wed, 17 Mar 2021 23:46:25 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/computer_science/%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/sic-xe%EB%9E%80/</guid>
+      <description>SIC/XE란? 제목을 SIC/XE로 하고 싶었는데 파일명에 /를 못 써서 SIC-XE라고 썼습니다&amp;hellip; 원래 표기는 SIC/XE가 맞아요. S</description>
+    </item>
+    
+    <item>
+      <title>SIC란</title>
+      <link>https://dev2820.github.io/computer_science/%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/sic%EB%9E%80/</link>
+      <pubDate>Wed, 17 Mar 2021 14:05:19 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/computer_science/%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/sic%EB%9E%80/</guid>
+      <description>SIC 머신이란 SIC 머신이란 Simplified Instructional Computer 즉, 간략화된 교육용 컴퓨터입니다. 간략화되어서 메모리도 작고 1 Word도 3 Bytes 밖에 안되며 정수만 지원하는 등 기능이 제한되어 있</description>
+    </item>
+    
+    <item>
       <title>Hard Disk Drive 2</title>
       <link>https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/hard-disk-drive-2/</link>
       <pubDate>Tue, 16 Mar 2021 22:59:00 +0900</pubDate>
@@ -51,7 +69,7 @@
       <pubDate>Sat, 06 Mar 2021 21:33:27 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>https://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-1/</guid>
-      <description>이 글은 ROBERT W.SEBESTA의 concepts of programming languages (11th, global edition) 에 의거하여 작성된 글이며, 필자가 번역 및 공부하면서 정리하는 글이라 오류가 있을 수 있습니다. 오류,오타 지적은</description>
+      <description>필자가 번역 및 공부하면서 정리하는 글이라 오류가 있을 수 있습니다. 오류,오타 지적은 환영입니다. 프로그래밍 언어들의 개념을 공부해야하는 이유 컴퓨터 과학의 여</description>
     </item>
     
     <item>
