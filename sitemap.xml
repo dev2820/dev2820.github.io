@@ -9,7 +9,7 @@
   </url>
   
   <url>
-    <loc>https://dev2820.github.io/categories/computer-science/</loc>
+    <loc>https://dev2820.github.io/categories/computer_science/</loc>
     <lastmod>2021-03-17T23:46:25+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
@@ -77,12 +77,6 @@
   <url>
     <loc>https://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/</loc>
     <lastmod>2021-03-16T22:59:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/categories/computer_science/</loc>
-    <lastmod>2021-03-10T17:42:53+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
