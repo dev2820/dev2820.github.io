@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nodejs on dev2820 개발일지</title>
+    <link>https://dev2820.github.io/study/nodejs/</link>
+    <description>Recent content in Nodejs on dev2820 개발일지</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
+    <lastBuildDate>Sat, 06 Mar 2021 12:19:54 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/study/nodejs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
