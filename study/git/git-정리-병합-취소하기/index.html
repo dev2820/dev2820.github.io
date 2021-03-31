@@ -2,17 +2,17 @@
 <html><head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Git정리] 브랜치 병합  | dev2820 개발일지</title>
+    <title>[Git 정리] 병합 취소하기  | dev2820 개발일지</title>
     <meta name="description"
-        content="dev2820의 개발일지 저장소 '[Git정리] 브랜치 병합'을 한 번 살펴보세요.">
-    <meta property="og:title" content="[Git정리] 브랜치 병합">
+        content="dev2820의 개발일지 저장소 '[Git 정리] 병합 취소하기'을 한 번 살펴보세요.">
+    <meta property="og:title" content="[Git 정리] 병합 취소하기">
     
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2021-03-28">
+    <meta property="article:published_time" content="2021-03-31">
     
     <meta property="og:description"
-        content="dev2820의 개발일지 저장소 '[Git정리] 브랜치 병합'을 한 번 살펴보세요.">
-    <meta property="og:url" content="https://dev2820.github.io/study/git/git%EC%A0%95%EB%A6%AC-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B3%91%ED%95%A9/">
+        content="dev2820의 개발일지 저장소 '[Git 정리] 병합 취소하기'을 한 번 살펴보세요.">
+    <meta property="og:url" content="https://dev2820.github.io/study/git/git-%EC%A0%95%EB%A6%AC-%EB%B3%91%ED%95%A9-%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0/">
     <meta property="og:site_name" content="dev2820 개발일지">
     
     <meta property="og:image" content="https://dev2820.github.io/images/thumbnail.png">
@@ -30,7 +30,7 @@
     
     
     <link rel="icon" href="https://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
-    <link rel="canonical" href="https://dev2820.github.io/study/git/git%EC%A0%95%EB%A6%AC-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B3%91%ED%95%A9/">
+    <link rel="canonical" href="https://dev2820.github.io/study/git/git-%EC%A0%95%EB%A6%AC-%EB%B3%91%ED%95%A9-%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0/">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
     <link rel="stylesheet" href="/css/styles.css">
@@ -136,10 +136,10 @@
 
   <div class="curtain center">
     <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
-    <h1 class="title">[Git정리] 브랜치 병합</h1>
+    <h1 class="title">[Git 정리] 병합 취소하기</h1>
     <div class="meta-data appear-300ms">
-      <p class="date"> <i class="far fa-calendar icon"></i> 2021.03.28 </p>
-      <p class="wordcount"> <i class="far fa-clock icon"></i> 4m</p>
+      <p class="date"> <i class="far fa-calendar icon"></i> 2021.03.31 </p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 3m</p>
     </div>
   </div>
 </header>
@@ -148,51 +148,48 @@
   <div class="roller"></div>
   <section id="content" class="appear-700ms">
     <article class="content card">
-      <h2 id="merge-브랜치-합치기"><code>merge</code>: 브랜치 합치기</h2>
+      <p>이번 글에서는 병합을 취소하는 명령어들을 배웁니다.</p>
+<h2 id="reset을-이용한-병합-취소"><code>reset</code>을 이용한 병합 취소</h2>
+<p>병합이 일어난 직후엔 git엔 ORIG_HEAD라는 새로운 참조 commit을 가집니다. 혹여나 실수로 병합을 한 경우에 즉시 병합을 취소할 수 있도록 하기 위함입니다.
+<img src="../images/git-reset-merge.png" alt="git reset merge"></p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4">4</a>
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4"># git merge [브랜치 이름]</span>
-git merge good-idea
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git reset --merge ORIG_HEAD
+
+<span style="color:#6272a4"># 위와 같은 효과를 냅니다.</span>
+git reset --hard ORIG_HEAD
 </code></pre></td></tr></table>
 </div>
-</div><p>두 서로다른 브랜치를 하나로 합치는 명령입니다.</p>
-<p>여러분은 굉장히 좋은 아이디어가 떠올라 good-idea라는 브랜치를 만들었고, 훌륭한 코드가 적용된 commit들이 여럿 생겼습니다. 이제 이 아이디어를 master 브랜치에도 적용해주고 싶습니다. 그럴때 master 브랜치에 good-idea의 commit들을 붙이는 명령입니다.</p>
-<h3 id="fast-forward-병합">Fast-forward 병합</h3>
-<p><img src="../images/git-merge-1.png" alt="git merge 1"></p>
-<p>만약 현재 브랜치의 상황이 이렇다면 크게 문제될 것 없습니다. master 브랜치가 good-idea의 가장 최신 commit을 가리키게 하면 됩니다.</p>
-<p><img src="../images/git-merge-2.png" alt="git merge 2">
-위 그림처럼 단순히 branch가 가리키는 commit만 바꿔주어 병합을 진행하는 방식을 <strong>Fast-forward 병합</strong> 또는 빨리감기 병합 이라고 합니다.</p>
-<p>기본적으론 이 Fast-forward 방식으로 병합을 진행합니다.</p>
-<h3 id="rebase를-통한-fast-forward-병합">Rebase를 통한 Fast-forward 병합</h3>
-<p>그런데 브랜치를 오가면서 작업을 하다보니 그만 다음과 같은 상황이 됐다고 가정합시다.</p>
-<p><img src="../images/git-merge-3.png" alt="git merge 3"></p>
-<p>이 경우 단순히 가리키는 commit을 바꿔주는 것으론 병합이 불가능합니다. 이 경우 2가지 선택지가 있습니다.</p>
-<ul>
-<li>rebase를 통한 Fast-forward 병합</li>
-<li>완전 병합</li>
-</ul>
-<p>rebase를 통한 Fast-forward 병합은 commit의 부모 commit을 변경하는 것으로 fast-forward 병합이 이루어질 수 있는 상황을 만들어주는 겁니다. rebase가 뭔지 모른다면 모르고 넘기시고, 다음 글을 참고하시면 됩니다.</p>
-<p><img src="../images/git-merge-4.png" alt="git merge 4">
-good-idea 브랜치의 분기 commit을 commit1에서 commit7으로 바꿔주는 과정 즉, rebase 과정을 진행하여 Fast-forward할 수 있는 상황을 만들어주고, Fast-forward 병합을 진행합니다.</p>
-<h3 id="완전-병합">완전 병합</h3>
-<p>완전 병합의 경우 단순히 브랜치가 가리키는 commit만 바꾸는 것이 아니라 병합 commit이라는 commit이 새로 생깁니다. 또한 이 병합 commit은 2개의 부모 commit을 가지게 됩니다. 진정한 의미의 병합이라고 볼 수 있는거죠. 완전병합을 하면 병합되었더라도 두 브랜치의 commit들이 다른 라인으로 공존하기 때문에 병합을 해제하거나 commit들을 관리하기에 더 편한 점이 있습니다.</p>
-<p>Fast-forward 병합을 진행하지 못하는 경우 완전 병합으로 병합이 이루어지지만, Fast-forward를 할 수 있는 경우에도 <code>--no-ff</code> 옵션을 주어 완전 병합이 이루어지도록 할 수 있습니다.</p>
+</div><p>위 명령은 바로 직전 병합을 취소하는 명령입니다. fast-forward병합이나 완전병합에서도 똑같이 먹힙니다.</p>
+<h2 id="revert-없던일로-만들기2"><code>revert</code>: 없던일로 만들기2</h2>
+<p><code>revert</code>명령은 기존의 커밋과 정확히 반대되는 커밋을 만듦니다.</p>
+<p>예를 들어 A.txt에 2번 줄을 추가하는 커밋이 있다면 <code>revert</code>는 A.txt에 2번 줄을 빼는 커밋을 만듦니다.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4">4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5">5</a>
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4"># git merge --no-ff [브랜치 이름]</span>
-git merge --no-ff good-idea
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4"># git revert [무력화할 commit]</span>
+<span style="color:#6272a4"># commit 605f5e3 test2</span>
+git revert 605f5e3
+
+<span style="color:#6272a4"># 1c4d874 (HEAD -&gt; main) Revert &#34;test2&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><img src="../images/git-merge-5.png" alt="git merge 5"></p>
-<h3 id="그래프로-병합-보기">그래프로 병합 보기</h3>
+</div><p>이전 commit들 중 605f5e3를 revert 시켰더니 HEAD에 새로운 commit 1c4d874이 생겼습니다.</p>
+<p>사실 기존의 commit들을 <code>reset</code>으로 삭제하거나 변경하는 것 보다는 <code>revert</code>로 기존 commit을 무력화 시키는 것이 history관리 측에서 더 좋습니다. 혼자하는 프로젝트가 아니라 팀원들이 함께하는 프로젝트라면 더더욱 master 브랜치의 commit은 되도록 건들이지 않고 <code>revert</code>로 무력화만 시키는 것을 추천드립니다. 공유할 브랜치의 history를 바꿔버리면 팀원들에게 혼란만 일으킵니다.</p>
+<h2 id="revert를-이용한-병합-취소"><code>revert</code>를 이용한 병합 취소</h2>
+<p>병합 commit이 있다면(완전 병합으로 병합된 경우) <code>revert</code>를 이용해 쉽게 병합을 취소할 수 있습니다. 이때 <code>--mainline</code> 옵션으로 어느 브랜치를 남길지 결정할 수 있습니다.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
@@ -201,84 +198,47 @@ git merge --no-ff good-idea
 <pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git log --oneline --graph
 </code></pre></td></tr></table>
 </div>
-</div><p>위 명령으로 commit들의 병합이 어떻게 이루어졌는지 시각적으로 확인할 수 있습니다.</p>
-<h2 id="병합-충돌">병합 충돌</h2>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">&lt;&lt;&lt;&lt;&lt;&lt;</span>&lt; <span style="color:#8be9fd;font-style:italic">HEAD</span>
-<span style="color:#ff79c6">=======</span> 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; good-idea
-</code></pre></td></tr></table>
-</div>
-</div><p>위와 같은 코드를 보면 병합 충돌이 일어난 것입니다.</p>
-<p>충돌이 일어나면 병합을 멈추고 HEAD도 처음보는 branch를 가리킵니다.</p>
+</div><p>위 명령은 commit들을 그래프로 보여줘 어느 commit이 병합 commit인지 알 수 있게 해줍니다.</p>
+<p><img src="../images/git-merge-revert.png" alt="git merge revert"></p>
+<p>혹은 <code>git log --merges</code>로 merge commit만 모아볼 수도 있습니다.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">(</span>master|MERGING<span style="color:#ff79c6">)</span>
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git log --merges
 </code></pre></td></tr></table>
 </div>
-</div><p>병합 중에 두 커밋의 내용이 충돌하는 경우는 아주아주아주 자주 일어납니다.</p>
-<p>예를 들어봅시다. commit2에서 a 파일의 10번 줄은 &lsquo;a = 10&rsquo; 인데 commit5에서 a 파일의 10번 줄은 &lsquo;a = 20&rsquo;이라고 써진 경우 git은 어느게 맞는 내용인지 햇갈린다며 사용자에게 선택지를 줍니다.</p>
-<ul>
-<li>현재 브랜치의 변경 사항(a = 20)만 남길래?</li>
-<li>병합 브랜치의 변경 사항(a = 10)만 남길래?</li>
-<li>아니면 둘다 남길래?</li>
-</ul>
-<p>vscode는 친절하게 클릭해서 선택할 수 있게 해주지만 CLI를 쓰는 불우한 유저는 파일을 열고 위 <code>&lt;&lt;&lt;&lt;&lt;&lt;</code>,<code>======</code>,<code>&gt;&gt;&gt;&gt;&gt;&gt;</code> 지워줘야합니다. 또는 <code>git mergetool</code>을 사용해 병합을 이어가야하는데, <code>mergetool</code>은 따로 다루지는 않겠습니다. 한번 써보세요.</p>
-<p>충돌 나는 내용을 해결해주면 저장하고 commit으로 만들어줘야합니다. commit을 만들게 되면 즉시 git은 병합을 마무리 짓고 다시 HEAD를 master 브랜치로 돌려놓습니다.</p>
-<h2 id="--squashcommit을-하나로-합치는-옵션"><code>--squash</code>:commit을 하나로 합치는 옵션</h2>
-<p>master브랜치에서 good-idea 브랜치를 merge할 때 <code>--squash</code>옵션을 주면 good-idea의 commit들을 하나로 합쳐 새로운 commit으로 만듦니다.</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4"># main branch에서 </span>
-<span style="color:#6272a4"># git merge [병합할 브랜치] --squash</span>
-git merge good-idea --squash
-</code></pre></td></tr></table>
-</div>
-</div><p>위 명령을 잘 이행해도 병합 과정이 끝난 것은 아닙니다. 충돌이 일어난다면 충돌을 해결해줘야하고, 또한 commit들을 하나로 합쳐 다시 staged상태로 사용자의 commit 명령을 대기합니다. 사용자가 커밋 메세지를 달아주며 <code>commit</code> 해줘야 비로소 병합이 끝납니다.</p>
-<h3 id="주의">주의</h3>
-<p><code>--squash</code>옵션은 한 브랜치의 작업 내용을 하나로 뭉쳐서 master 브랜치에 병합시켜버리기 때문에, 이런 작업은 되돌릴 수 없습니다. 필요없이 commit이 여럿으로 쪼개졌던 경우라던가 
-아주아주 간단한 작업에 한해서 이 옵션을 써주는 것이 좋습니다.</p>
-<h2 id="--abort-병합-중단하기"><code>--abort</code>: 병합 중단하기</h2>
-<p>병합하던 도중 뭔가 아차! 싶어지며 병합을 취소하고 싶어지면 <code>--abort</code>옵션을 쓸 수 있습니다.</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git merge --abort
-</code></pre></td></tr></table>
-</div>
-</div><p>위 명령은 단순히 merge 하기 전으로 되돌립니다.</p>
-<h2 id="cherry-pick-일부-commit만-병합하기"><code>cherry-pick</code>: 일부 commit만 병합하기</h2>
-<p>브랜치 전체를 병합하는게 아니라 일부 commit들만 따와서 병합하고자 한다면 <code>cherry-pick</code>명령을 써볼 수 있습니다.</p>
+</div><p>이제 merge를 <code>revert</code> 해봅시다.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4"># git cherry-pick [가져올 commit]</span>
-git cherry-pick 74b386f
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4"># git revert --mainline [남길 line] [병합 commit]</span>
+git revert --mainline <span style="color:#bd93f9">1</span> cb70c2d
 </code></pre></td></tr></table>
 </div>
-</div><p>위 명령은 현재 브랜치에 다른 브랜치의 commit 하나를 가져와 붙입니다. 정확히는 복사해옵니다. 따라서 복사해온 commit엔 다른 hash값이 붙게 됩니다.</p>
-<p><img src="../images/git-cherry-pick.png" alt="git cherry pick"></p>
+</div><p>위 그림에서 직선인 왼쪽 그래프가 1번 라인, 오른쪽 그래프가 2번 라인이 됩니다. revert하면서 1번 라인을 남길지 2번 라인을 남길지 결정하면 됩니다.</p>
+<p><img src="../images/git-merge-revert-2.png" alt="git merge revert 2"></p>
+<p><code>revert</code>도 마찬가지로 충돌이 일어날 수 있습니다. 당황할 것 없이 merge할때 처럼 충돌을 해결하고 <code>git revert --continue</code> 해주시면 됩니다.</p>
+<p>혹은 <code>revert</code>를 중단하고 싶다면 <code>git revert --abort</code>해주시면 됩니다.</p>
+<h3 id="연속된-commit을-revert-하기">연속된 commit을 revert 하기</h3>
+<p>연속된 commit들을 revert하려 한다면 한번에 revert해줄 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4"># git revert --no-commit [from commit]..[to commit] </span>
+git revert --no-commit 605f5e3..402b4bf
+</code></pre></td></tr></table>
+</div>
+</div><p>위 명령은 여러 연속된 commit을 revert하지만 하나의 commit만 생성되므로 history를 더 깔끔하게 관리할 수 있습니다.</p>
 <h2 id="마치며">마치며</h2>
-<p>다음 글에선 작업을 취소하는 명령어 reset, rebase 에 대해 알아보겠습니다.</p>
+<p>다음 글에선 원격저장소의 연결을 관리하는 명령들에 대해 알아보겠습니다.</p>
 
     </article>
     <aside id="right-aside">
@@ -289,22 +249,13 @@ git cherry-pick 74b386f
     <div id="table">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#merge-브랜치-합치기"><code>merge</code>: 브랜치 합치기</a>
+    <li><a href="#reset을-이용한-병합-취소"><code>reset</code>을 이용한 병합 취소</a></li>
+    <li><a href="#revert-없던일로-만들기2"><code>revert</code>: 없던일로 만들기2</a></li>
+    <li><a href="#revert를-이용한-병합-취소"><code>revert</code>를 이용한 병합 취소</a>
       <ul>
-        <li><a href="#fast-forward-병합">Fast-forward 병합</a></li>
-        <li><a href="#rebase를-통한-fast-forward-병합">Rebase를 통한 Fast-forward 병합</a></li>
-        <li><a href="#완전-병합">완전 병합</a></li>
-        <li><a href="#그래프로-병합-보기">그래프로 병합 보기</a></li>
+        <li><a href="#연속된-commit을-revert-하기">연속된 commit을 revert 하기</a></li>
       </ul>
     </li>
-    <li><a href="#병합-충돌">병합 충돌</a></li>
-    <li><a href="#--squashcommit을-하나로-합치는-옵션"><code>--squash</code>:commit을 하나로 합치는 옵션</a>
-      <ul>
-        <li><a href="#주의">주의</a></li>
-      </ul>
-    </li>
-    <li><a href="#--abort-병합-중단하기"><code>--abort</code>: 병합 중단하기</a></li>
-    <li><a href="#cherry-pick-일부-commit만-병합하기"><code>cherry-pick</code>: 일부 commit만 병합하기</a></li>
     <li><a href="#마치며">마치며</a></li>
   </ul>
 </nav>
@@ -315,22 +266,14 @@ git cherry-pick 74b386f
   <section id="section-move">
     <nav class="section-move">
     
-      <a href="https://dev2820.github.io/study/git/git%EC%A0%95%EB%A6%AC-%EB%B8%8C%EB%9E%9C%EC%B9%98/" class="previous card"> 
+      <a href="https://dev2820.github.io/study/git/git%EC%A0%95%EB%A6%AC-%EC%9E%91%EC%97%85-%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0/" class="previous card"> 
         <i class="fas fa-angle-double-left icon slide-left"></i>
         <div class="title">
           <small>prev</small>
-          <span>[Git정리] 브랜치</span>
-        </div>
-      </a>
-    
-    
-      <a href="https://dev2820.github.io/study/git/git%EC%A0%95%EB%A6%AC-%EC%9E%91%EC%97%85-%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0/" class="next card">
-        <div class="title">
-          <small>next</small>  
           <span>[Git정리] 작업 취소하기</span>
         </div>
-        <i class="fas fa-angle-double-right icon slide-right"></i>
       </a>
+    
     
 </nav>
   
