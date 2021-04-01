@@ -8,7 +8,16 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Wed, 31 Mar 2021 18:46:18 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Mar 2021 21:19:53 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Git 정리] 원격저장소와 연결하기</title>
+      <link>https://dev2820.github.io/study/git/git-%EC%A0%95%EB%A6%AC-%EC%9B%90%EA%B2%A9%EC%A0%80%EC%9E%A5%EC%86%8C%EC%99%80-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Wed, 31 Mar 2021 21:19:53 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/study/git/git-%EC%A0%95%EB%A6%AC-%EC%9B%90%EA%B2%A9%EC%A0%80%EC%9E%A5%EC%86%8C%EC%99%80-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/</guid>
+      <description>이제 로컬에서 git을 다루는 것은 얼추 다룬 것 같으니 원격저장소와 통신하는 것에 대해 알아봅시다. 이 글에선 원격저장소 github을 기준으로 설명드리겠습니</description>
+    </item>
+    
     <item>
       <title>[Git 정리] 병합 취소하기</title>
       <link>https://dev2820.github.io/study/git/git-%EC%A0%95%EB%A6%AC-%EB%B3%91%ED%95%A9-%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0/</link>
