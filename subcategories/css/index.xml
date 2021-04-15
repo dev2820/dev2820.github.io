@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>css on dev2820 개발일지</title>
-    <link>https://dev2820.github.io/tags/css/</link>
-    <description>Recent content in css on dev2820 개발일지</description>
+    <title>CSS on dev2820 개발일지</title>
+    <link>https://dev2820.github.io/subcategories/css/</link>
+    <description>Recent content in CSS on dev2820 개발일지</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Tue, 13 Apr 2021 00:15:14 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 00:15:14 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/subcategories/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CSS 선택자</title>
       <link>https://dev2820.github.io/study/html-css-browser/css-%EC%84%A0%ED%83%9D%EC%9E%90/</link>
@@ -16,15 +16,6 @@
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>https://dev2820.github.io/study/html-css-browser/css-%EC%84%A0%ED%83%9D%EC%9E%90/</guid>
       <description>CSS 선택자가 뭔지는 설명 안하겠습니다. CSS 선택자 * 선택자 모든 태그를 선택하는 선택자 입니다. 1 2 3 * { //css code } Tag 선택자 주어진 이름의 태그를 선택하는 선택자입</description>
-    </item>
-    
-    <item>
-      <title>개요</title>
-      <link>https://dev2820.github.io/projects/holy_shit/%EA%B0%9C%EC%9A%94/</link>
-      <pubDate>Sat, 20 Mar 2021 00:23:58 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/projects/holy_shit/%EA%B0%9C%EC%9A%94/</guid>
-      <description>똥피하기 웹게임 프로젝트입니다. 학습용 프로젝트이며 HTML, CSS, JS과 웹페이지 서비스의 전반적인 내용을 공부,적용해보는 것을 목적으로 하고있습니다. 주제선정 이</description>
     </item>
     
   </channel>
