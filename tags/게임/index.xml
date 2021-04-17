@@ -8,7 +8,16 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Sat, 20 Mar 2021 11:23:58 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/%EA%B2%8C%EC%9E%84/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Apr 2021 00:53:40 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/%EA%B2%8C%EC%9E%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Html,css로 간단한 화면 만들기 1</title>
+      <link>https://dev2820.github.io/projects/holy_shit/htmlcss%EB%A1%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%99%94%EB%A9%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
+      <pubDate>Sat, 17 Apr 2021 00:53:40 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/projects/holy_shit/htmlcss%EB%A1%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%99%94%EB%A9%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
+      <description>준비사항 HTML,CSS관련 책을 읽고 (아니면 생활코딩인강이라도 듣고) 아주 간단한 HTML파일, CSS파일을 작성할 수 있는 능력은 갖춰야합니다. (하</description>
+    </item>
+    
     <item>
       <title>아주 기초적인 git</title>
       <link>https://dev2820.github.io/projects/holy_shit/simple_git_study/</link>
@@ -19,12 +28,12 @@
     </item>
     
     <item>
-      <title>개요</title>
-      <link>https://dev2820.github.io/projects/holy_shit/%EA%B0%9C%EC%9A%94/</link>
+      <title>똥피하기 개요</title>
+      <link>https://dev2820.github.io/projects/holy_shit/%EB%98%A5%ED%94%BC%ED%95%98%EA%B8%B0-%EA%B0%9C%EC%9A%94/</link>
       <pubDate>Sat, 20 Mar 2021 00:23:58 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/projects/holy_shit/%EA%B0%9C%EC%9A%94/</guid>
-      <description>똥피하기 웹게임 프로젝트입니다. 학습용 프로젝트이며 HTML, CSS, JS과 웹페이지 서비스의 전반적인 내용을 공부,적용해보는 것을 목적으로 하고있습니다. 주제선정 이</description>
+      <guid>https://dev2820.github.io/projects/holy_shit/%EB%98%A5%ED%94%BC%ED%95%98%EA%B8%B0-%EA%B0%9C%EC%9A%94/</guid>
+      <description>똥피하기 웹게임 프로젝트입니다. 학습용 프로젝트이며 HTML, CSS, JS과 웹페이지 서비스의 전반적인 내용을 공부,적용해보는 것을 목적으로 하고있습니다. 본 프로젝트</description>
     </item>
     
   </channel>

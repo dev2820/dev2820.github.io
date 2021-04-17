@@ -4,7 +4,61 @@
   
   <url>
     <loc>https://dev2820.github.io/categories/</loc>
-    <lastmod>2021-04-13T00:15:14+09:00</lastmod>
+    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/subcategories/holy_shit/</loc>
+    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/projects/holy_shit/htmlcss%EB%A1%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%99%94%EB%A9%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
+    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/categories/projects/</loc>
+    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/subcategories/</loc>
+    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/</loc>
+    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/%EA%B2%8C%EC%9E%84/</loc>
+    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/%EB%98%A5%ED%94%BC%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%8F%BC/</loc>
+    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
+    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
@@ -34,18 +88,6 @@
   
   <url>
     <loc>https://dev2820.github.io/categories/study/</loc>
-    <lastmod>2021-04-13T00:15:14+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/subcategories/</loc>
-    <lastmod>2021-04-13T00:15:14+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/</loc>
     <lastmod>2021-04-13T00:15:14+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
@@ -159,43 +201,7 @@
   </url>
   
   <url>
-    <loc>https://dev2820.github.io/subcategories/holy_shit/</loc>
-    <lastmod>2021-03-20T11:23:58+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/categories/projects/</loc>
-    <lastmod>2021-03-20T11:23:58+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/%EA%B2%8C%EC%9E%84/</loc>
-    <lastmod>2021-03-20T11:23:58+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/%EB%98%A5%ED%94%BC%ED%95%98%EA%B8%B0/</loc>
-    <lastmod>2021-03-20T11:23:58+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%8F%BC/</loc>
-    <lastmod>2021-03-20T11:23:58+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
     <loc>https://dev2820.github.io/projects/holy_shit/simple_git_study/</loc>
-    <lastmod>2021-03-20T11:23:58+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
     <lastmod>2021-03-20T11:23:58+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
@@ -213,7 +219,7 @@
   </url>
   
   <url>
-    <loc>https://dev2820.github.io/projects/holy_shit/%EA%B0%9C%EC%9A%94/</loc>
+    <loc>https://dev2820.github.io/projects/holy_shit/%EB%98%A5%ED%94%BC%ED%95%98%EA%B8%B0-%EA%B0%9C%EC%9A%94/</loc>
     <lastmod>2021-03-20T00:23:58+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
