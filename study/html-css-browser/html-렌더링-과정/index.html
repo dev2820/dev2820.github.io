@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 렌더링 과정  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 'HTML 렌더링 과정'을 한 번 살펴보세요.">
+    <meta property="og:title" content="HTML 렌더링 과정">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2021-04-03">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 'HTML 렌더링 과정'을 한 번 살펴보세요.">
+    <meta property="og:url" content="https://dev2820.github.io/study/html-css-browser/html-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="https://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="study">
+    
+    <meta property="og:tags" content="컴퓨터 기술">
+    
+    <meta property="og:tags" content="공부정리">
+    
+    <meta property="og:tags" content="HTML">
+    
+    <meta property="og:tags" content="web">
+    
+    
+    <link rel="icon" href="https://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://dev2820.github.io/study/html-css-browser/html-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTD4CD0DNR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TTD4CD0DNR');
+    </script>
+    
+    
+    
+    <script src="/js/default.js"></script>
+    
+</head>
+<body id="body">
+        <div id="loader">
+            <span class="description">
+                loading
+            </span>
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" width="96px"/>
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/cover.jpg" class="round-card">
+        
+    </div>
+    
+    
+    <h2>dev2820</h2>
+    
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="center">
+        <div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <div class="navigation-container">
+        <nav class="aside-menu center">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="https://dev2820.github.io/">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="https://dev2820.github.io//categories">Categories</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="https://dev2820.github.io//tags">Tags</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="https://dev2820.github.io//search">Search</a>
+                </li>
+                <li>
+                    <i class="fas fa-user icon"></i>
+                    <a href="https://dev2820.github.io//about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+<header id="single-header" class="card-inset bg-cover">
+
+  <div class="curtain center">
+    <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
+    <h1 class="title">HTML 렌더링 과정</h1>
+    <div class="meta-data appear-300ms">
+      <p class="date"> <i class="far fa-calendar icon"></i> 2021.04.03 </p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 4m</p>
+    </div>
+  </div>
+</header>
+
+<main id="single-main">
+  <div class="roller"></div>
+  <section id="content" class="appear-700ms">
+    <article class="content card">
+      <p>팀프로젝트를 진행하던 중 갑자기 html 렌더링 과정이 궁금해졌습니다. 인터넷 뒤적이며 조사한 내용을 바탕으로 작성한 글이니 부정확할 수 있습니다. 오타, 오류 지적 환영입니다.</p>
+<h2 id="렌더링-엔진">렌더링 엔진</h2>
+<p>브라우저마다 사용하는 엔진이 다릅니다. 크로미움이 자바스크립트를 실행할 때 V8 엔진을 쓰고 파이어폭스는 SpiderMonkey엔진을 사용하듯, HTML과 CSS를 렌더링할 때도 서로 다른 엔진을 사용합니다. 이 HTML, CSS 렌더링 엔진을 <strong>렌더링 엔진</strong>이라고 합니다. 렌더링 엔진은 HTML, CSS를 통해 DOM tree를 만들고, 브라우저의 JS 엔진에 JS 관련 작업을 요청합니다.</p>
+<table>
+<thead>
+<tr>
+<th>브라우저</th>
+<th style="text-align:center">JS 엔진</th>
+<th style="text-align:right">레이아웃 엔진</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chrome(chromium)</td>
+<td style="text-align:center">V8</td>
+<td style="text-align:right">Blink,Webkit</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td style="text-align:center">V8</td>
+<td style="text-align:right">Blink,Webkit</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td style="text-align:center">SpiderMonkey</td>
+<td style="text-align:right">Gecko(Servo)</td>
+</tr>
+<tr>
+<td>safari</td>
+<td style="text-align:center">Webkit</td>
+<td style="text-align:right">Webkit</td>
+</tr>
+<tr>
+<td>웨일</td>
+<td style="text-align:center">V8</td>
+<td style="text-align:right">Blink,Webkit</td>
+</tr>
+</tbody>
+</table>
+<div style="color:#999999; text-align:center">- 브라우저들의 JS엔진과 레이아웃 엔진 -</div>
+    
+<p>요즘은 웹브라우저들이 거의 크로미움 기반이다 보니 V8, Blink 위주로 쓰이는 것 같고, ios때문에 Webkit을 같이 지원하는 것 같네요. 참고로 Blink도 Webkit 기반으로 만들어진 엔진입니다.</p>
+<h2 id="렌더링-엔진의-작동방식">렌더링 엔진의 작동방식</h2>
+<p><i class="fas fa-link"></i>
+<a target="_blank" href="https://docs.google.com/document/d/1aitSOucL0VHZa9Z2vbRJSyAIsAz24kX8LFByQ5xQnUg/edit">
+    How Blink works
+</a><br>
+<div style="color:#999999; text-align:center">- chromium 프로젝트의 blink 문서 -</div>
+    </p>
+<p>엔진마다 조금씩 다르겠지만, Blink 엔진에 기반해서 알아봅시다.</p>
+<p>Blink 엔진이 하는 일은 다음과 같습니다.</p>
+<ul>
+<li>웹 명세에 따라 DOM tree 구현</li>
+<li>V8 엔진을 통한 JavaScript 실행</li>
+<li>네트워크 스택에 리소스 요청(index.html 등등)</li>
+<li>스타일과 레이아웃 계산</li>
+<li>크롬 컴포지터를 통해 그래픽스 그리기(화면 연출)</li>
+</ul>
+<h3 id="dom-tree-구현">DOM tree 구현</h3>
+<p>음&hellip; 딱히 설명은 안 하겠습니다.</p>
+<h3 id="v8-엔진을-통한-javascript-실행">V8 엔진을 통한 JavaScript 실행</h3>
+<p>DOM을 변형, 추가하는 JavaScript 코드는 V8을 통해 실행합니다.</p>
+<h3 id="네트워크-스택에-리소스-요청">네트워크 스택에 리소스 요청</h3>
+<p>HTML 안에 사용되는 css,js, img 파일들이 기술되어 있고, 화면을 완전히 구현하려면 이 파일들을 받아와야겠죠? 그 요청을 네트워크 스택의 아랫단(Socket,TCP)으로 전달하는 요청을 말합니다.</p>
+<h3 id="스타일과-레이아웃-계산">스타일과 레이아웃 계산</h3>
+<p>스타일 계산은 CSS 선택자를 참조해 어느 요소에 CSS를 적용할지 계산하는 프로세스를 말합니다. 레이아웃 계산은 요소를 어느 위치에 어떠한 크기로 위치할지 계산하는 프로세스를 말합니다.</p>
+<h3 id="크롬-컴포지터를-통해-그래픽스-그리기">크롬 컴포지터를 통해 그래픽스 그리기</h3>
+<p>최종적으로 표출될 화면을 생성합니다. 앞서 생성한 DOM tree, 스타일, 레이아웃 계산을 바탕으로 요소의 배치 순서를 고려해 픽셀 단위로 화면을 배치하는 거죠.</p>
+<p>조사하다 보니 이 이상 조사하면 심연에 빠지는 것 같아서 여기서 중단하고 다시 HTML 렌더링에 집중해 봅시다.</p>
+<p>정리하면 Chrome의 렌더링 엔진은 Blink이고, 렌더러 프로세스는 각 탭 안에 각각의 웹페이지를 띄우는 프로세스입니다. chrome의 경우 Blink 엔진이 이 프로세스에 사용되는 거죠.</p>
+<h2 id="렌더링-과정">렌더링 과정</h2>
+<p>렌더링 과정은 다음과 같습니다.</p>
+<ol>
+<li>Parsing: DOM(문서 객체 모델),CSSOM(css 객체 모델)을 생성한다.</li>
+<li>Rendering: DOM과 CSSOM을 기반으로 Render tree를 생성한다.</li>
+<li>layout: Render tree를 기반으로 viewport내에 요소들의 배치를 결정한다.</li>
+<li>painting: 픽셀 단위로 실제 화면을 그린다.</li>
+</ol>
+<h3 id="parsing">Parsing</h3>
+<p><code>.html</code>,<code>.css</code>파일을 이용해 DOM tree와 CSSOM tree를 생성합니다. DOM tree는 요소들의 부모-자식 관계를 기반으로 생성되고, CSSOM tree도 CSS 선택자 규칙에 맞춰 tree를 생성합니다.</p>
+<h3 id="rendering">Rendering</h3>
+<p>DOM과 CSSOM을 합성하는 과정입니다. 요소 간의 부모-자식 관계와 각 요소에 어떤 CSS가 적용되는지 묘사된 tree를 생성합니다.</p>
+<h4 id="visibility-hidden-vs-displaynone">visibility: hidden vs display:none</h4>
+<p>재미있게도, 이 과정에서 <code>visibility: hidden</code>과 <code>display:none</code>의 차이가 드러납니다. <code>visibility:hidden</code> 된 요소는 Render tree에 포함됩니다. 반면 <code>display:none</code> 된 요소는 Render tree에서 배제됩니다. 웹페이지의 개발자 모드를 켜보면 <code>display:none</code>은 아예 요소가 생성도 안 된 것을 볼 수 있죠. 이 점이 성능 차이를 가져오기도 합니다. 당연히 Render tree의 노드 수가 적을수록 속도가 빨라지겠죠.</p>
+<h3 id="layout">layout</h3>
+<p>이제 생성된 render tree를 실제 화면에선 어떻게 표출할지 정해줘야 합니다. span이 viewport를 기준으로 위에서 몇 px, 왼쪽에서 몇 px 떨어져 있는지 계산하는 단계입니다. 상대적 위치가 절대적 위치로 변환되는 과정이라고 보면 됩니다.</p>
+<h3 id="painting">painting</h3>
+<p>&lsquo;페인팅&rsquo; 또는 &lsquo;래스터화&rsquo; 라고 하는 이 단계는 이전 단계에서 계산한 결과를 바탕으로 뷰포트에 실제 픽셀들을 그리는 단계입니다. 스타일이 단순하면 페인팅 속도는 빠르지만, <code>transform</code>, <code>animation</code>, <code>box-shadow</code>,<code>gradient</code> 등등, 복잡하고 계산이 들어가는 스타일이 많이 적용될수록 느려집니다.</p>
+<h2 id="마치며">마치며</h2>
+<p>음&hellip; 원래는 복잡하지 않고 간단하겠지? 싶어서 조사하게 됐는데, 뭔가 보면 안 될 심연을 들여다본 기분이네요. 생각보다 복잡하고 조사할 내용이 많았습니다. 하지만 몰랐던 부분을 많이 알게 되어 기분은 좋네요.</p>
+<h2 id="참고">참고</h2>
+<p><a href="https://d2.naver.com/helloworld/5237120">https://d2.naver.com/helloworld/5237120</a>
+<a href="https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/</a>
+<a href="https://developers.google.com/web/updates/2018/09/inside-browser-part1">https://developers.google.com/web/updates/2018/09/inside-browser-part1</a>
+<a href="https://developer.mozilla.org/ko/docs/Web/Performance/How_browsers_work">https://developer.mozilla.org/ko/docs/Web/Performance/How_browsers_work</a>
+<a href="https://docs.google.com/document/d/1aitSOucL0VHZa9Z2vbRJSyAIsAz24kX8LFByQ5xQnUg/edit">https://docs.google.com/document/d/1aitSOucL0VHZa9Z2vbRJSyAIsAz24kX8LFByQ5xQnUg/edit</a>
+<a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction?hl=ko">https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction?hl=ko</a></p>
+
+    </article>
+    <aside id="right-aside">
+      <div class="post-toc card" id="post-toc">
+    <div class="post-toc-title">
+        <span>차례</span>
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#렌더링-엔진">렌더링 엔진</a></li>
+    <li><a href="#렌더링-엔진의-작동방식">렌더링 엔진의 작동방식</a>
+      <ul>
+        <li><a href="#dom-tree-구현">DOM tree 구현</a></li>
+        <li><a href="#v8-엔진을-통한-javascript-실행">V8 엔진을 통한 JavaScript 실행</a></li>
+        <li><a href="#네트워크-스택에-리소스-요청">네트워크 스택에 리소스 요청</a></li>
+        <li><a href="#스타일과-레이아웃-계산">스타일과 레이아웃 계산</a></li>
+        <li><a href="#크롬-컴포지터를-통해-그래픽스-그리기">크롬 컴포지터를 통해 그래픽스 그리기</a></li>
+      </ul>
+    </li>
+    <li><a href="#렌더링-과정">렌더링 과정</a>
+      <ul>
+        <li><a href="#parsing">Parsing</a></li>
+        <li><a href="#rendering">Rendering</a></li>
+        <li><a href="#layout">layout</a></li>
+        <li><a href="#painting">painting</a></li>
+      </ul>
+    </li>
+    <li><a href="#마치며">마치며</a></li>
+    <li><a href="#참고">참고</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </aside>
+  </section>
+  <section id="section-move">
+    <nav class="section-move">
+    
+    
+      <a href="https://dev2820.github.io/study/html-css-browser/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/" class="next card">
+        <div class="title">
+          <small>next</small>  
+          <span>의미론적 HTML</span>
+        </div>
+        <i class="fas fa-angle-double-right icon slide-right"></i>
+      </a>
+    
+</nav>
+  
+  </section>
+  <section id="meta">
+    <div class="card">
+      
+      
+<div class="category_breadcrumb_title">
+    <h2 class="title"><i class="fas fa-folder icon"></i>Categories</h2>
+</div>
+<div class="category_breadcrumb">
+    <a href="https://dev2820.github.io/categories/study" class="action name">
+        
+        study
+    </a>
+    <span class="action slash">/</span>
+    
+    <a href="https://dev2820.github.io/subcategories/html-css-browser" class="action name">
+        
+        <span class="name">Html css browser</span>     
+    </a>
+    
+</div>
+
+
+      <div class="tag_list_title">
+    <h2 class="title"><i class="fas fa-hashtag icon"></i>Tags</h2>
+</div>
+<ul class="tags tag_list">
+    
+        <li><a href="https://dev2820.github.io/tags/study/" class="action"><i class="fas fa-hashtag icon"></i>study</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B8%B0%EC%88%A0/" class="action"><i class="fas fa-hashtag icon"></i>컴퓨터 기술</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80%EC%A0%95%EB%A6%AC/" class="action"><i class="fas fa-hashtag icon"></i>공부정리</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/html/" class="action"><i class="fas fa-hashtag icon"></i>html</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/web/" class="action"><i class="fas fa-hashtag icon"></i>web</a></li>
+    
+</ul>
+
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </section>
+</main>
+
+  <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    
+    <div class="center"><div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div><div class="copyright center">
+        <span>COPYRIGHT 2021-2021. <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+        <span>ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>

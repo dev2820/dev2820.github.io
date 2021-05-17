@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Disk Drive  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 'Hard Disk Drive'을 한 번 살펴보세요.">
+    <meta property="og:title" content="Hard Disk Drive">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2021-03-11">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 'Hard Disk Drive'을 한 번 살펴보세요.">
+    <meta property="og:url" content="https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/hard-disk-drive/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="https://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="파일처리">
+    
+    <meta property="og:tags" content="공부">
+    
+    <meta property="og:tags" content="HDD">
+    
+    <meta property="og:tags" content="하드디스크">
+    
+    
+    <link rel="icon" href="https://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/hard-disk-drive/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    
+    
+    
+    
+    <script src="/js/default.js"></script>
+    
+</head>
+<body id="body">
+        <div id="loader">
+            <span class="description">
+                loading
+            </span>
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" width="96px"/>
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/cover.jpg" class="round-card">
+        
+    </div>
+    
+    
+    <h2>dev2820</h2>
+    
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="center">
+        <div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <div class="navigation-container">
+        <nav class="aside-menu center">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="https://dev2820.github.io/">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="https://dev2820.github.io//categories">Categories</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="https://dev2820.github.io//tags">Tags</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="https://dev2820.github.io//search">Search</a>
+                </li>
+                <li>
+                    <i class="fas fa-user icon"></i>
+                    <a href="https://dev2820.github.io//about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+<header id="single-header" class="card-inset bg-cover">
+
+  <div class="curtain center">
+    <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
+    <h1 class="title">Hard Disk Drive</h1>
+    <div class="meta-data appear-300ms">
+      <p class="date"> <i class="far fa-calendar icon"></i> 2021.03.11 </p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 4m</p>
+    </div>
+  </div>
+</header>
+
+<main id="single-main">
+  <div class="roller"></div>
+  <section id="content" class="appear-700ms">
+    <article class="content card">
+      <p>대표적인 Secondary storage인 HDD에 대해 알아보겠습니다.</p>
+<h2 id="하드디스크의-구성">하드디스크의 구성</h2>
+<p><img src="../images/hdd.png" alt="하드디스크 구성"></p>
+<p>[그림이 허접해서 미안합니다&hellip;]</p>
+<ol>
+<li>platter: 실제 데이터가 저장되는 원판입니다. 자기적 특성을 이용해 데이터를 저장합니다. 이러한 원판이 여러 겹으로 쌓여있습니다.</li>
+<li>spindle: 원판을 회전시키는 모터입니다.</li>
+<li>head: platter 위에 접촉해 데이터를 읽어 들입니다.</li>
+<li>arm: 헤드를 데이터가 있는 위치로 이동시키는 역할을 합니다.</li>
+<li>buffer: 하드 겉으로 드러나지는 않지만, 내부에 존재합니다. Head가 읽은 정보를 임시로 저장하는 역할을 합니다.</li>
+<li>IO connection: 데이터가 나가고 들어오는 입구입니다.</li>
+</ol>
+<p><img src="../images/hdd_side.png" alt="하드디스크 측면"></p>
+<p>하드디스크를 옆에서 보면 이런 구조가 됩니다. 여러 장의 platter들 사이사이에 head가 끼워져 있는 형태가 됩니다.</p>
+<p><img src="../images/platter.png" alt="플레터의 구성"></p>
+<p>하나의 플레터는 여러 개의 트랙으로 구성되어 있고 각 트랙은 여러 개의 sector로 이루어집니다. 그리고 이 sector는 gap으로 구분됩니다.</p>
+<p><img src="../images/cylinder.png" alt="실린더의 구성"></p>
+<p>실제 하드디스크는 여러 장의 플레터가 겹겹이 쌓여있는 구조입니다. 한 하드가 6개의 플레터로 구성되어 있다고 한다면, 지름이 같은 track들이 6개 존재할 것입니다. 이 지름이 같은 track들을 묶어서 cylinder라고 합니다. 즉 한 하드에는 한 플레터에 존재하는 track의 수 만큼 cylinder가 존재합니다. cylinder는 논리적 단위입니다.</p>
+<p>그렇다면 한 하드디스크가 다음과 같은 특성을 가진다고 합시다.</p>
+<ul>
+<li>한 섹터 당 512byte 저장</li>
+<li>한 트랙당 63 섹터로 구성</li>
+<li>한 실린더는 16개 트랙으로 구성</li>
+<li>실린더는 총 4092개</li>
+</ul>
+<p>이때 이 하드디스크의 총 용량은 512 * 63 * 16 * 4092byte, 약  정도 됩니다.</p>
+<p>그렇다면 256byte 크기의 레코드 50,000개로 이루어진 파일을 저장한다고 하면 몇개의 실린더가 사용될까요?</p>
+<p>파일의 크기 : 50000 * 256byte<br>
+한 실린더의 크기: 512 * 63 * 16byte</p>
+<p>약 24.8개의 실린더가 필요하다는 결론이 나옵니다. 실제론 데이터가 이렇게 연달아 저장되는 것이 아닌 여러 실린더에 분산되어 저장되므로 그 이상의 실린더가 필요합니다.</p>
+<h2 id="sector-cluster-extent">sector, cluster, extent</h2>
+<h3 id="sector">sector</h3>
+<p>섹터에 대해 조금 더 알아봅시다.<br>
+섹터는 주소를 알 수 있는 최소 단위 입니다. 또한 모든 섹터의 크기는 같습니다.</p>
+<p>HDD는 index file을 만들어 주소를 참조하여 데이터를 찾기 때문에 한 섹터 당 하나의 레코드를 저장한다면 시간적으론 굉장히 효율적인 데이터 접근이 가능합니다. 하지만 낭비되는 공간이 많아지겠죠. 한 섹터에 여러 레코드가 들어갈 수 있게 한다면 공간은 더 효율적으로 쓰게 되지만, 데이터 접근에 걸리는 시간이 길어집니다.</p>
+<h3 id="cluster">cluster</h3>
+<p>클러스터는 FAT file system에서 사용하는 논리적 단위로 한 파일을 저장할 때 사용되는 가장 작은 단위 입니다. 1 file = 10 cluster처럼 말이죠. OS는 HDD를 클러스터 단위로 읽습니다. 하나의 클러스터는 여러 개의 섹터로 구성됩니다. 또한 이 섹터들은 물리적으로 연속될 필요는 없습니다.</p>
+<p>한 클러스터의 크기가 커지면 그만큼 비어있는 섹터도 많아지기 때문에 메모리 단편화(비어있지만 사용하지 못하는 메모리들 때문에 데이터를 더 저장하지 못하는 상황을 불러올 수 있습니다.</p>
+<p>FAT file system의 FAT는 File Allocation Table의 약자입니다. 이전 장에서 배운 HDD는 index file을 쓴다고 했습니다. FAT는 파일들을 클러스터별로 구분하여 어느 파일이 어떤 클러스터를 쓰는지, 각 클러스터의 주소는 어떻게 되는지 저장하여 사용합니다.</p>
+<h3 id="extents">Extents</h3>
+<p>한 파일을 저장하기 위해 사용 중인 연속된 클러스터들의 수입니다. 
+파일을 저장할 때 꼭 연속된 클러스터만 사용하는 것은 아닙니다. 만약 연속된 클러스터 3개가 한 파일을 저장한다면 extent는 1이지만, 떨어져 있는 클러스터 하나와 붙어있는 클러스터 2개를 사용해 저장한다면 extents는 2입니다.</p>
+<h2 id="disk-access-cost">Disk Access Cost</h2>
+<p>하드디스크가 disk access 할 땐 3가지 동작으로 이루어지고 각 동작에서 cost가 발생합니다.</p>
+<ol>
+<li>head를 알맞은 cylinder의 위치로 옮길 때 드는 시간(seek time)</li>
+<li>알맞은 sector에 head가 위치하도록 platter를 회전시키는 시간(rotational delay)</li>
+<li>데이터를 읽어 들이는 시간(transfer time)</li>
+</ol>
+<h3 id="seek-time">seek time</h3>
+<p>최악의 경우 맨 안쪽 실린더에서 맨 바깥 쪽 실린더로 arm을 이동시켜야 하므로 cylinder의 수 만큼 시간이 걸리겠지만, 평균적으로 1/3만큼의 시간이 걸린다고 여깁니다.</p>
+<h3 id="rotational-delay">Rotational Delay</h3>
+<p>알맞은 sector에 head가 위치하도록 platter를 회전시키는 데 드는 시간입니다. 이 delay는 하드디스크의 회전속도에 따라 결정됩니다. 한 하드디스크가 5,000rpm이라면 한 번 회전하는 데 12ms가 걸립니다. (역수)</p>
+<p>rotational delay는 평균적으로 한 바퀴 회전하는 데 드는 시간의 1/2만큼이라고 여깁니다.</p>
+<h3 id="transfer-time">transfer time</h3>
+<p>데이터를 head가 읽어 들이는데 걸리는 시간은 다음과 같은 공식으로 구합니다.</p>
+<blockquote>
+<p>transfer time = (읽어 들일 byte 수) / (트랙당 byte 수) * (한 바퀴 회전하는 데 드는 시간)</p>
+</blockquote>
+<p>위 공식은</p>
+<p>(트랙 사이즈):(회전 시간) = (데이터 사이즈):(데이터를 읽는 데 드는 시간)</p>
+<p>에서 유도됩니다.</p>
+<h3 id="하드디스크-스펙-표에서-성능-추측하기">하드디스크 스펙 표에서 성능 추측하기</h3>
+<table>
+<thead>
+<tr>
+<th>스펙</th>
+<th style="text-align:center">값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average seek time</td>
+<td style="text-align:center">8ms</td>
+</tr>
+<tr>
+<td>Spindle speed</td>
+<td style="text-align:center">10000rpm</td>
+</tr>
+<tr>
+<td>Average rotational delay</td>
+<td style="text-align:center">3ms</td>
+</tr>
+<tr>
+<td>Bytes per sector</td>
+<td style="text-align:center">512</td>
+</tr>
+<tr>
+<td>Sectors per track</td>
+<td style="text-align:center">170</td>
+</tr>
+</tbody>
+</table>
+<p>한 하드웨어가 위와 같은 스펙을 가진다고 하면 이 하드디스크가 1byte를 Input/Output에 걸리는 속도는 8ms(seek time) + 3ms(rotational delay) + 1/(512 * 170) * 6ms 가 됩니다.</p>
+
+    </article>
+    <aside id="right-aside">
+      <div class="post-toc card" id="post-toc">
+    <div class="post-toc-title">
+        <span>차례</span>
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#하드디스크의-구성">하드디스크의 구성</a></li>
+    <li><a href="#sector-cluster-extent">sector, cluster, extent</a>
+      <ul>
+        <li><a href="#sector">sector</a></li>
+        <li><a href="#cluster">cluster</a></li>
+        <li><a href="#extents">Extents</a></li>
+      </ul>
+    </li>
+    <li><a href="#disk-access-cost">Disk Access Cost</a>
+      <ul>
+        <li><a href="#seek-time">seek time</a></li>
+        <li><a href="#rotational-delay">Rotational Delay</a></li>
+        <li><a href="#transfer-time">transfer time</a></li>
+        <li><a href="#하드디스크-스펙-표에서-성능-추측하기">하드디스크 스펙 표에서 성능 추측하기</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </aside>
+  </section>
+  <section id="section-move">
+    <nav class="section-move">
+    
+      <a href="https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC-%EC%9A%B4%EC%98%81%EC%9D%98-%EA%B8%B0%EC%B4%88/" class="previous card"> 
+        <i class="fas fa-angle-double-left icon slide-left"></i>
+        <div class="title">
+          <small>prev</small>
+          <span>파일처리 운영의 기초</span>
+        </div>
+      </a>
+    
+    
+      <a href="https://dev2820.github.io/computer_science/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/hard-disk-drive-2/" class="next card">
+        <div class="title">
+          <small>next</small>  
+          <span>Hard Disk Drive 2</span>
+        </div>
+        <i class="fas fa-angle-double-right icon slide-right"></i>
+      </a>
+    
+</nav>
+  
+  </section>
+  <section id="meta">
+    <div class="card">
+      
+      
+<div class="category_breadcrumb_title">
+    <h2 class="title"><i class="fas fa-folder icon"></i>Categories</h2>
+</div>
+<div class="category_breadcrumb">
+    <a href="https://dev2820.github.io/categories/computer_science" class="action name">
+        
+        computer_science
+    </a>
+    <span class="action slash">/</span>
+    
+    <a href="https://dev2820.github.io/subcategories/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC" class="action name">
+        
+        <span class="name">파일처리</span>     
+    </a>
+    
+</div>
+
+
+      <div class="tag_list_title">
+    <h2 class="title"><i class="fas fa-hashtag icon"></i>Tags</h2>
+</div>
+<ul class="tags tag_list">
+    
+        <li><a href="https://dev2820.github.io/tags/%ED%8C%8C%EC%9D%BC%EC%B2%98%EB%A6%AC/" class="action"><i class="fas fa-hashtag icon"></i>파일처리</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/" class="action"><i class="fas fa-hashtag icon"></i>공부</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/hdd/" class="action"><i class="fas fa-hashtag icon"></i>HDD</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%ED%95%98%EB%93%9C%EB%94%94%EC%8A%A4%ED%81%AC/" class="action"><i class="fas fa-hashtag icon"></i>하드디스크</a></li>
+    
+</ul>
+
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </section>
+</main>
+
+  <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    
+    <div class="center"><div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div><div class="copyright center">
+        <span>COPYRIGHT 2021-2021. <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+        <span>ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>

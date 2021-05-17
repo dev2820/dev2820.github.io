@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-little-raspi  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 'my-little-raspi'을 한 번 살펴보세요.">
+    <meta property="og:title" content="my-little-raspi">
+    
+    <meta property="og:type" content="website">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 'my-little-raspi'을 한 번 살펴보세요.">
+    <meta property="og:url" content="https://dev2820.github.io/subcategories/my-little-raspi/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="https://dev2820.github.io/images/thumbnail.png">
+    
+    
+    
+    <link rel="icon" href="https://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://dev2820.github.io/subcategories/my-little-raspi/">
+    <link rel="alternate" type="application/rss+xml" href="https://dev2820.github.io/subcategories/my-little-raspi/index.xml" title="dev2820 개발일지" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    
+    
+    
+    
+    <script src="/js/default.js"></script>
+    
+</head>
+<body id="body">
+        <div id="loader">
+            <span class="description">
+                loading
+            </span>
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" width="96px"/>
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/cover.jpg" class="round-card">
+        
+    </div>
+    
+    
+    <h2>dev2820</h2>
+    
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="center">
+        <div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <div class="navigation-container">
+        <nav class="aside-menu center">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="https://dev2820.github.io/">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="https://dev2820.github.io//categories">Categories</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="https://dev2820.github.io//tags">Tags</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="https://dev2820.github.io//search">Search</a>
+                </li>
+                <li>
+                    <i class="fas fa-user icon"></i>
+                    <a href="https://dev2820.github.io//about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<header id="taxonomy-header" class="card-inset bg-cover">
+    <div class="center">
+        <h1 class="title">
+            
+                <i class="fas fa-folder-open"></i>
+            
+            my-little-raspi
+        </h1>
+        <div class="taxonomy-count">
+            
+            <p class="counter">총 2 개의 글</p>
+        </div>
+    </div>
+</header>
+
+<script>
+    function byDate() {
+        const elByDate = document.querySelector('main#taxonomy-main div.by-date');
+        const elByDateReverse = document.querySelector('main#taxonomy-main div.by-date-reverse');
+        const elByDateOption = document.querySelector('main#taxonomy-main button.by-date');
+        const elByDateReverseOption = document.querySelector('main#taxonomy-main button.by-date-reverse');
+        if(elByDate.classList.contains('hidden')) {
+            elByDate.classList.remove('hidden');
+            elByDateOption.classList.add('toggle-on');
+        }
+        if(!elByDateReverse.classList.contains('hidden')) {
+            elByDateReverse.classList.add('hidden');
+            elByDateReverseOption.classList.remove('toggle-on');
+        }
+    }
+    function byDateReverse() {
+        const elByDate = document.querySelector('main#taxonomy-main div.by-date');
+        const elByDateReverse = document.querySelector('main#taxonomy-main div.by-date-reverse');
+        const elByDateOption = document.querySelector('main#taxonomy-main button.by-date');
+        const elByDateReverseOption = document.querySelector('main#taxonomy-main button.by-date-reverse');
+        if(elByDateReverse.classList.contains('hidden')) {
+            elByDateReverse.classList.remove('hidden');
+            elByDateReverseOption.classList.add('toggle-on');
+        }
+        if(!elByDate.classList.contains('hidden')) {
+            elByDate.classList.add('hidden');
+            elByDateOption.classList.remove('toggle-on');
+        }
+    }
+</script>
+<main id="taxonomy-main">
+    <div class="roller"></div>
+    <section id="taxonomy-list">   
+        <div class="sort-options card">
+            <button class="by-date option solid" onclick="byDate()">오래된글부터</button>
+            <button class="by-date-reverse option solid toggle-on" onclick="byDateReverse()">최신글부터</button>        
+        </div> 
+        <div class="by-date hidden">
+            <ul class="contents">
+    
+        <li>
+            <div>  
+                <article class="summary card appear-500ms">
+  
+  
+  <div class="cover-image" onclick="goToUrl(&#34;https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
+  
+  <div class="cover-content">
+    <a href="https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/">
+      
+      <img class="icon" src="/projects/project-icon.png" />
+      
+      <h2 class="title">프로젝트 개요</h2>
+    </a>
+    
+    <div class="post-meta">
+      <i class="far fa-calendar icon" aria-hidden="true"></i>
+      <span class="date">2021.04.18 | </span>
+      <i class="fas fa-comments icon" aria-hidden="true"></i>
+      <a href="https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/#disqus_thread"></a>
+    </div>
+    <div class="content">나의 작은 라즈베리파이 프로젝트입니다. 뭐 라즈베리파이로 말을 만든다던가 그런건 아니고 라즈베리파이에 우분투를 탑재시켜 웹서버로 만드는 것 까지가 목표입니다</div>
+    <div class="read-more">
+      <a class="go-to-read" href="https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/">
+        <span>더 보기</span>
+        <i class="fas fa-angle-right icon"></i>
+      </a>
+    </div>
+  </div>
+</article>
+            </div>
+        </li>
+    
+        <li>
+            <div>  
+                <article class="summary card appear-500ms">
+  
+  
+  <div class="cover-image" onclick="goToUrl(&#34;https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
+  
+  <div class="cover-content">
+    <a href="https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/">
+      
+      <img class="icon" src="/projects/project-icon.png" />
+      
+      <h2 class="title">라즈베리파이4와 우분투 설치</h2>
+    </a>
+    
+    <div class="post-meta">
+      <i class="far fa-calendar icon" aria-hidden="true"></i>
+      <span class="date">2021.04.18 | </span>
+      <i class="fas fa-comments icon" aria-hidden="true"></i>
+      <a href="https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/#disqus_thread"></a>
+    </div>
+    <div class="content">라즈베리파이? - 라즈베리파이 로고 - 라즈베리파이 재단에서 만든 교육용 초소형 컴퓨터입니다. 핸드폰이 들고다니는 초소형 컴퓨터라면 이해가 빠를 겁니다. 제가</div>
+    <div class="read-more">
+      <a class="go-to-read" href="https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/">
+        <span>더 보기</span>
+        <i class="fas fa-angle-right icon"></i>
+      </a>
+    </div>
+  </div>
+</article>
+            </div>
+        </li>
+    
+</ul>
+
+        </div>
+        <div class="by-date-reverse">
+            <ul class="contents">
+    
+        <li>
+            <div>  
+                <article class="summary card appear-500ms">
+  
+  
+  <div class="cover-image" onclick="goToUrl(&#34;https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
+  
+  <div class="cover-content">
+    <a href="https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/">
+      
+      <img class="icon" src="/projects/project-icon.png" />
+      
+      <h2 class="title">라즈베리파이4와 우분투 설치</h2>
+    </a>
+    
+    <div class="post-meta">
+      <i class="far fa-calendar icon" aria-hidden="true"></i>
+      <span class="date">2021.04.18 | </span>
+      <i class="fas fa-comments icon" aria-hidden="true"></i>
+      <a href="https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/#disqus_thread"></a>
+    </div>
+    <div class="content">라즈베리파이? - 라즈베리파이 로고 - 라즈베리파이 재단에서 만든 교육용 초소형 컴퓨터입니다. 핸드폰이 들고다니는 초소형 컴퓨터라면 이해가 빠를 겁니다. 제가</div>
+    <div class="read-more">
+      <a class="go-to-read" href="https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/">
+        <span>더 보기</span>
+        <i class="fas fa-angle-right icon"></i>
+      </a>
+    </div>
+  </div>
+</article>
+            </div>
+        </li>
+    
+        <li>
+            <div>  
+                <article class="summary card appear-500ms">
+  
+  
+  <div class="cover-image" onclick="goToUrl(&#34;https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/&#34;)" style="background-image: url(/images/default_summary.png);"></div>
+  
+  <div class="cover-content">
+    <a href="https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/">
+      
+      <img class="icon" src="/projects/project-icon.png" />
+      
+      <h2 class="title">프로젝트 개요</h2>
+    </a>
+    
+    <div class="post-meta">
+      <i class="far fa-calendar icon" aria-hidden="true"></i>
+      <span class="date">2021.04.18 | </span>
+      <i class="fas fa-comments icon" aria-hidden="true"></i>
+      <a href="https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/#disqus_thread"></a>
+    </div>
+    <div class="content">나의 작은 라즈베리파이 프로젝트입니다. 뭐 라즈베리파이로 말을 만든다던가 그런건 아니고 라즈베리파이에 우분투를 탑재시켜 웹서버로 만드는 것 까지가 목표입니다</div>
+    <div class="read-more">
+      <a class="go-to-read" href="https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/">
+        <span>더 보기</span>
+        <i class="fas fa-angle-right icon"></i>
+      </a>
+    </div>
+  </div>
+</article>
+            </div>
+        </li>
+    
+</ul>
+        </div>
+        <div class="center">
+            <div class="pagination">
+  
+  
+  <span class="page">
+    1 / 1
+  </span>
+  
+  
+</div>  
+
+        </div>
+    </section>
+</main>
+  <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    
+    <div class="center"><div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div><div class="copyright center">
+        <span>COPYRIGHT 2021-2021. <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+        <span>ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>

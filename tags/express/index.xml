@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>express on dev2820 개발일지</title>
+    <link>https://dev2820.github.io/tags/express/</link>
+    <description>Recent content in express on dev2820 개발일지</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
+    <lastBuildDate>Sun, 18 Apr 2021 17:27:37 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/express/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>라즈베리파이4와 우분투 설치</title>
+      <link>https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/</link>
+      <pubDate>Sun, 18 Apr 2021 17:27:37 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/</guid>
+      <description>라즈베리파이? - 라즈베리파이 로고 - 라즈베리파이 재단에서 만든 교육용 초소형 컴퓨터입니다. 핸드폰이 들고다니는 초소형 컴퓨터라면 이해가 빠를 겁니다. 제가</description>
+    </item>
+    
+    <item>
+      <title>프로젝트 개요</title>
+      <link>https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/</link>
+      <pubDate>Sun, 18 Apr 2021 16:56:09 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/</guid>
+      <description>나의 작은 라즈베리파이 프로젝트입니다. 뭐 라즈베리파이로 말을 만든다던가 그런건 아니고 라즈베리파이에 우분투를 탑재시켜 웹서버로 만드는 것 까지가 목표입니다</description>
+    </item>
+    
+  </channel>
+</rss>

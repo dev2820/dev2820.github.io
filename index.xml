@@ -10,6 +10,15 @@
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
     <lastBuildDate>Sat, 19 Sep 2020 12:19:54 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>간단한 웹앱구축</title>
+      <link>https://dev2820.github.io/projects/holy_shit/%EA%B0%84%EB%8B%A8%ED%95%9C-%EC%9B%B9%EC%95%B1%EA%B5%AC%EC%B6%95/</link>
+      <pubDate>Sun, 16 May 2021 18:11:24 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/projects/holy_shit/%EA%B0%84%EB%8B%A8%ED%95%9C-%EC%9B%B9%EC%95%B1%EA%B5%AC%EC%B6%95/</guid>
+      <description>만들어진 html,css,js 파일들을 호스팅할 웹앱을 만들어봅시다. 호스팅 환경은 다음과 같습니다. 호스팅 환경 라즈베리파이4B ubuntu server 20.04 LTS 웹앱 Nodejs &amp;amp; Express를 사용합니</description>
+    </item>
+    
+    <item>
       <title>Html,css로 간단한 화면 만들기 1</title>
       <link>https://dev2820.github.io/projects/holy_shit/htmlcss%EB%A1%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%99%94%EB%A9%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
       <pubDate>Sat, 17 Apr 2021 00:53:40 +0900</pubDate>
@@ -34,6 +43,15 @@
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>https://dev2820.github.io/study/html-css-browser/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/</guid>
       <description>오타, 오류 지적 환영입니다. Semantic HTML semantic html, 해석하면 의미론적 html입니다. 별 생각 없이 html을 작성하다 보면 &amp;lt;div&amp;gt;에 클릭 이벤트를 달고 &amp;</description>
+    </item>
+    
+    <item>
+      <title>HTML 렌더링 과정</title>
+      <link>https://dev2820.github.io/study/html-css-browser/html-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95/</link>
+      <pubDate>Sat, 03 Apr 2021 14:35:24 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/study/html-css-browser/html-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95/</guid>
+      <description>팀프로젝트를 진행하던 중 갑자기 html 렌더링 과정이 궁금해졌습니다. 인터넷 뒤적이며 조사한 내용을 바탕으로 작성한 글이니 부정확할 수 있습니다. 오타, 오류 지적 환</description>
     </item>
     
     <item>

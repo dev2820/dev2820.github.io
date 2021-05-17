@@ -4,67 +4,73 @@
   
   <url>
     <loc>https://dev2820.github.io/categories/</loc>
-    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
+    <lastmod>2021-05-16T18:11:24+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://dev2820.github.io/subcategories/holy_shit/</loc>
-    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
+    <lastmod>2021-05-16T18:11:24+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/categories/projects/</loc>
+    <lastmod>2021-05-16T18:11:24+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/subcategories/</loc>
+    <lastmod>2021-05-16T18:11:24+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/</loc>
+    <lastmod>2021-05-16T18:11:24+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/projects/holy_shit/%EA%B0%84%EB%8B%A8%ED%95%9C-%EC%9B%B9%EC%95%B1%EA%B5%AC%EC%B6%95/</loc>
+    <lastmod>2021-05-16T18:11:24+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/%EA%B2%8C%EC%9E%84/</loc>
+    <lastmod>2021-05-16T18:11:24+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/%EB%98%A5%ED%94%BC%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2021-05-16T18:11:24+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%8F%BC/</loc>
+    <lastmod>2021-05-16T18:11:24+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
+    <lastmod>2021-05-16T18:11:24+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/projects/my-little-raspi/</loc>
+    <lastmod>2021-04-18T16:56:35+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
     <loc>https://dev2820.github.io/projects/holy_shit/htmlcss%EB%A1%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%99%94%EB%A9%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
     <lastmod>2021-04-17T00:53:40+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/categories/projects/</loc>
-    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/subcategories/</loc>
-    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/</loc>
-    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/%EA%B2%8C%EC%9E%84/</loc>
-    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/%EB%98%A5%ED%94%BC%ED%95%98%EA%B8%B0/</loc>
-    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%8F%BC/</loc>
-    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</loc>
-    <lastmod>2021-04-17T00:53:40+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/subcategories/css/</loc>
-    <lastmod>2021-04-13T00:15:14+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
@@ -76,6 +82,12 @@
   
   <url>
     <loc>https://dev2820.github.io/study/html-css-browser/css-%EC%84%A0%ED%83%9D%EC%9E%90/</loc>
+    <lastmod>2021-04-13T00:15:14+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/subcategories/html-css-browser/</loc>
     <lastmod>2021-04-13T00:15:14+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
@@ -123,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://dev2820.github.io/subcategories/html/</loc>
+    <loc>https://dev2820.github.io/study/html-css-browser/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/</loc>
     <lastmod>2021-04-03T14:35:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
   <url>
-    <loc>https://dev2820.github.io/study/html-css-browser/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/</loc>
-    <lastmod>2021-04-03T14:35:32+09:00</lastmod>
+    <loc>https://dev2820.github.io/study/html-css-browser/html-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95/</loc>
+    <lastmod>2021-04-03T14:35:24+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
@@ -268,12 +280,6 @@
   
   <url>
     <loc>https://dev2820.github.io/%EC%9D%BC%EC%83%81/test/</loc>
-    <lastmod>2020-09-19T12:19:54+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/projects/nas_project/</loc>
     <lastmod>2020-09-19T12:19:54+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>

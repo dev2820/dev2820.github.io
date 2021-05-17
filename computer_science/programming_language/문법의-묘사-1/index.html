@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문법의 묘사 (1)  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 '문법의 묘사 (1)'을 한 번 살펴보세요.">
+    <meta property="og:title" content="문법의 묘사 (1)">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2021-03-17">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 '문법의 묘사 (1)'을 한 번 살펴보세요.">
+    <meta property="og:url" content="https://dev2820.github.io/computer_science/programming_language/%EB%AC%B8%EB%B2%95%EC%9D%98-%EB%AC%98%EC%82%AC-1/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="https://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="프로그래밍언어">
+    
+    <meta property="og:tags" content="PL">
+    
+    <meta property="og:tags" content="공부">
+    
+    
+    <link rel="icon" href="https://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://dev2820.github.io/computer_science/programming_language/%EB%AC%B8%EB%B2%95%EC%9D%98-%EB%AC%98%EC%82%AC-1/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    
+    
+    
+    
+    <script src="/js/default.js"></script>
+    
+</head>
+<body id="body">
+        <div id="loader">
+            <span class="description">
+                loading
+            </span>
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" width="96px"/>
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/cover.jpg" class="round-card">
+        
+    </div>
+    
+    
+    <h2>dev2820</h2>
+    
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="center">
+        <div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <div class="navigation-container">
+        <nav class="aside-menu center">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="https://dev2820.github.io/">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="https://dev2820.github.io//categories">Categories</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="https://dev2820.github.io//tags">Tags</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="https://dev2820.github.io//search">Search</a>
+                </li>
+                <li>
+                    <i class="fas fa-user icon"></i>
+                    <a href="https://dev2820.github.io//about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+<header id="single-header" class="card-inset bg-cover">
+
+  <div class="curtain center">
+    <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
+    <h1 class="title">문법의 묘사 (1)</h1>
+    <div class="meta-data appear-300ms">
+      <p class="date"> <i class="far fa-calendar icon"></i> 2021.03.17 </p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 4m</p>
+    </div>
+  </div>
+</header>
+
+<main id="single-main">
+  <div class="roller"></div>
+  <section id="content" class="appear-700ms">
+    <article class="content card">
+      <h2 id="context-free-grammers">Context-Free Grammers</h2>
+<p>1950년대 중반 Noam Chomsky와 John Backus 두 사람은 비록 연구 분야는 달랐지만 각기 비슷한 문법 묘사 형식을 개발합니다. 그리고 이 형식은 프로그래밍 언어 문법에 가장 널리 사용되는 형식이 됩니다.</p>
+<h3 id="context-free-문법">Context-Free 문법</h3>
+<p>Noam Chomsky가 제안한 Context-Free 문법이란 한 단어가 한가지 의미만 가지는 문법입니다. 반대의 개념은 Context-Sensitive 문법인데, 한 단어가 여러 의미를 가질 수 있는 문법을 말합니다.</p>
+<h4 id="example">Example</h4>
+<blockquote>
+<p>배를 타고 배를 먹는다.</p>
+</blockquote>
+<p>배가 boat로도, pear로도 해석되기 때문에 한국어는 Context-Sensitive합니다</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8be9fd">int</span> <span style="color:#ff79c6">if</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">3</span>; <span style="color:#6272a4">// Syntax Error 
+</span></code></pre></td></tr></table>
+</div>
+</div><p>반면 프로그래밍 언어에서는 한 단어가 한가지 의미로만 쓰입니다.
+<code>if</code>문은 이미 분기문의 의미로 쓰이기 때문에 <code>if</code>라는 이름의 변수를 선언하거나 등의 사용은 문법상 막혀있지요.</p>
+<h2 id="backus-naur-form">Backus-Naur Form</h2>
+<p>Chomsky의 논문 발표가 있고 얼마 뒤, ACM-GAMM은 ALGOL 58의 설계에 착수합니다. John Backus는 ALGOL 58에 대한 묘사가 들어간 논문을 1959년도에 발표합니다. 이 논문에는 프로그래밍 언어 문법에 사용될 새로운 표기 형식에 대한 소개가 포함되어 있었습니다.</p>
+<p>이후 이 새로운 표기 형식은 Peter Naur가 간략화시켜 ALGOL 60을 만들게 됩니다. 그리고 이 표기 형식을 <strong>Backus-Naur Form</strong>, 줄여서 <strong>BNF</strong>라고 부릅니다.</p>
+<h2 id="bnf">BNF</h2>
+<p>자, 이제 BNF에 대해서 좀 더 자세히 알아봅시다. BNF는 <strong>metalanguage</strong> 즉, <strong>언어를 묘사하기 위한 언어</strong> 입니다.
+프로그래밍 언어를 묘사하는데 사용되죠.</p>
+<p>BNF는 <code>→</code>,<code>&lt; &gt;</code>,<code>|</code> 3가지의 문법만 가지는데, 다음과 같습니다.</p>
+<h3 id="heading">→</h3>
+<p>BNF에서 <code>a→b</code> 는 <code>a는 b로 구성된다</code>라는 의미입니다.</p>
+<p>예를 들어, Java에서 변수에 값을 배정하는 문법은 다음과 같이 묘사될 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BNF" data-lang="BNF">&lt;배정문&gt; → &lt;변수&gt; = &lt;표현식&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>또 이러한 문장을 rule이라고 부르며, 프로그래밍 언어의 문법은 이 rule들의 집합이 됩니다.</p>
+<h3 id="-">&lt; &gt;</h3>
+<p>위 예제에서 <code>&lt;&gt;</code>안에 들어가는 어휘를 <strong>non-terminal</strong>이라고 합니다. 정확히는 문법상 정의된 단어는 <strong>terminal</strong>이고 문법상 정의되지 않은 단어는 <strong>non-terminal</strong>이 됩니다. 위 예제의 경우 <code>배정문</code>, <code>변수</code>, <code>표현식</code>이 non-terminal이고, <code>=</code>는 terminal입니다.</p>
+<h3 id="heading-1">|</h3>
+<p><code>|</code>는 <code>또는</code> 이라는 의미입니다. <code>if</code>분기문의 경우 <code>if</code>,<code>if-else</code> 두 가지의 활용이 가능하니 BNF로 Java의 <code>if</code>문을 나타내면 다음과 같습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BNF" data-lang="BNF">&lt;if문&gt; → if( &lt;논리표현식&gt; ) &lt;문장&gt; | if( &lt;논리표현식&gt; ) &lt;문장&gt; else &lt;문장&gt;
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BNF" data-lang="BNF">&lt;if문&gt; → if( &lt;논리표현식&gt; ) &lt;문장&gt;
+&lt;if문&gt; → if( &lt;논리표현식&gt; ) &lt;문장&gt; else &lt;문장&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>위 코드도 같은 의미 입니다.</p>
+<p><code>|</code>로 연결된 rule들은 개별로 샙니다. 따라서 <code>if문</code>의 rule은 2개가 됩니다.</p>
+<p>재귀적인 문법도 표현 가능합니다.</p>
+<p>C에서 <code>int a, b, c, d,... ;</code> 같이 여러 변수를 한꺼번에 선언하는 문법은 다음과 같이 묘사할 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BNF" data-lang="BNF">&lt;식별자_리스트&gt; → 식별자 | 식별자, &lt;식별자_리스트&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="예제">예제</h2>
+<p>아주 간단한 언어 문법 예제입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4">4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5">5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6">6</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-7"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-7">7</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-8"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-8">8</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BNF" data-lang="BNF">&lt;<span style="color:#50fa7b">program</span>&gt; → begin &lt;<span style="color:#50fa7b">stmt_list</span>&gt; end
+&lt;<span style="color:#50fa7b">stmt_list</span>&gt; → &lt;<span style="color:#50fa7b">stmt</span>&gt;
+            | &lt;<span style="color:#50fa7b">stmt</span>&gt; ; &lt;<span style="color:#50fa7b">stmt_list</span>&gt;
+&lt;<span style="color:#50fa7b">stmt</span>&gt; → &lt;<span style="color:#50fa7b">var</span>&gt; = &lt;<span style="color:#50fa7b">expression</span>&gt;
+&lt;<span style="color:#50fa7b">var</span>&gt; → A | B | C
+&lt;<span style="color:#50fa7b">expression</span>&gt; → &lt;<span style="color:#50fa7b">var</span>&gt; + &lt;<span style="color:#50fa7b">var</span>&gt;
+            | &lt;<span style="color:#50fa7b">var</span>&gt; - &lt;<span style="color:#50fa7b">var</span>&gt;
+            | &lt;<span style="color:#50fa7b">var</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>더하기,빼기, 배정이 가능하고 변수도 A,B,C만 쓸 수 있는 아주 간단한 언어입니다.</p>
+<p>위 문법은<br>
+<code>begin</code>, <code>end</code>, <code>;</code>, <code>=</code>, <code>+</code>, <code>-</code>, <code>A</code>, <code>B</code>, <code>C</code> terminals로 이루어 졌고</p>
+<p><code>program</code>, <code>stmt_list</code>, <code>stmt</code>, <code>var</code>, <code>expression</code> non-terminals로 이루어 졌습니다.</p>
+<p>참고로 시작 non-terminal이 되는 <code>program</code>은 <strong>start symbol</strong>이라고 합니다.</p>
+<p>이제 다음 문장을 parsing 해봅시다.</p>
+<pre><code>begin A = B + C ; B = C end
+</code></pre><p>non-terminal이 다수 포함된 문장은 문법을 적용할 때 왼쪽부터 적용합니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1"> 1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2"> 2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3"> 3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4"> 4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5"> 5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6"> 6</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-7"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-7"> 7</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-8"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-8"> 8</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-9"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-9"> 9</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-10"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-10">10</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-11"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-11">11</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-12"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-12">12</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-13"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-13">13</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-14"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-14">14</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-15"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-15">15</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-16"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-16">16</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-17"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-17">17</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-18"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-18">18</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-19"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-19">19</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-20"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-20">20</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-21"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-21">21</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-22"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-22">22</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-23"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-23">23</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-BNF" data-lang="BNF">&lt;<span style="color:#50fa7b">program</span>&gt;
+
+begin &lt;<span style="color:#50fa7b">stmt_list</span>&gt; end
+
+begin &lt;<span style="color:#50fa7b">stmt</span>&gt; ; &lt;<span style="color:#50fa7b">stmt_list</span>&gt; end
+
+begin &lt;<span style="color:#50fa7b">var</span>&gt; = &lt;<span style="color:#50fa7b">expression</span>&gt; ; &lt;<span style="color:#50fa7b">stmt_list</span>&gt; end
+
+begin A = &lt;<span style="color:#50fa7b">expression</span>&gt; ; &lt;<span style="color:#50fa7b">stmt_list</span>&gt; end
+
+begin A = &lt;<span style="color:#50fa7b">var</span>&gt; + &lt;<span style="color:#50fa7b">var</span>&gt; ; &lt;<span style="color:#50fa7b">stmt_list</span>&gt; end
+
+begin A = B + &lt;<span style="color:#50fa7b">var</span>&gt; ; &lt;<span style="color:#50fa7b">stmt_list</span>&gt; end
+
+begin A = B + C ; &lt;<span style="color:#50fa7b">stmt_list</span>&gt; end
+
+begin A = B + C ; &lt;<span style="color:#50fa7b">var</span>&gt; = &lt;<span style="color:#50fa7b">expression</span>&gt; end
+
+begin A = B + C ; B = &lt;<span style="color:#50fa7b">expression</span>&gt; end
+
+begin A = B + C ; B = &lt;<span style="color:#50fa7b">var</span>&gt; end
+
+begin A = B + C ; B = C end
+</code></pre></td></tr></table>
+</div>
+</div><p>모든 non-terminal를 terminal로 치환했고 치환하지 못한 non-terminal이 없으므로 위 문장은 문법적으로 맞는 문장입니다.</p>
+
+    </article>
+    <aside id="right-aside">
+      <div class="post-toc card" id="post-toc">
+    <div class="post-toc-title">
+        <span>차례</span>
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#context-free-grammers">Context-Free Grammers</a>
+      <ul>
+        <li><a href="#context-free-문법">Context-Free 문법</a></li>
+      </ul>
+    </li>
+    <li><a href="#backus-naur-form">Backus-Naur Form</a></li>
+    <li><a href="#bnf">BNF</a>
+      <ul>
+        <li><a href="#heading">→</a></li>
+        <li><a href="#-">&lt; &gt;</a></li>
+        <li><a href="#heading-1">|</a></li>
+      </ul>
+    </li>
+    <li><a href="#예제">예제</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </aside>
+  </section>
+  <section id="section-move">
+    <nav class="section-move">
+    
+      <a href="https://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-2/" class="previous card"> 
+        <i class="fas fa-angle-double-left icon slide-left"></i>
+        <div class="title">
+          <small>prev</small>
+          <span>프로그래밍언어 (2)</span>
+        </div>
+      </a>
+    
+    
+      <a href="https://dev2820.github.io/computer_science/programming_language/%EB%AC%B8%EB%B2%95%EC%9D%98-%EB%AC%98%EC%82%AC-2/" class="next card">
+        <div class="title">
+          <small>next</small>  
+          <span>문법의 묘사 (2)</span>
+        </div>
+        <i class="fas fa-angle-double-right icon slide-right"></i>
+      </a>
+    
+</nav>
+  
+  </section>
+  <section id="meta">
+    <div class="card">
+      
+      
+<div class="category_breadcrumb_title">
+    <h2 class="title"><i class="fas fa-folder icon"></i>Categories</h2>
+</div>
+<div class="category_breadcrumb">
+    <a href="https://dev2820.github.io/categories/computer_science" class="action name">
+        
+        computer_science
+    </a>
+    <span class="action slash">/</span>
+    
+    <a href="https://dev2820.github.io/subcategories/programming-language" class="action name">
+        
+        <span class="name">Programming language</span>     
+    </a>
+    
+</div>
+
+
+      <div class="tag_list_title">
+    <h2 class="title"><i class="fas fa-hashtag icon"></i>Tags</h2>
+</div>
+<ul class="tags tag_list">
+    
+        <li><a href="https://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4/" class="action"><i class="fas fa-hashtag icon"></i>프로그래밍언어</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/pl/" class="action"><i class="fas fa-hashtag icon"></i>PL</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80/" class="action"><i class="fas fa-hashtag icon"></i>공부</a></li>
+    
+</ul>
+
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </section>
+</main>
+
+  <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    
+    <div class="center"><div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div><div class="copyright center">
+        <span>COPYRIGHT 2021-2021. <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+        <span>ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>

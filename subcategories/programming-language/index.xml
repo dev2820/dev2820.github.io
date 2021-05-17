@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming language on dev2820 개발일지</title>
+    <link>https://dev2820.github.io/subcategories/programming-language/</link>
+    <description>Recent content in programming language on dev2820 개발일지</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
+    <lastBuildDate>Thu, 18 Mar 2021 21:18:11 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/subcategories/programming-language/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>문법의 묘사 (2)</title>
+      <link>https://dev2820.github.io/computer_science/programming_language/%EB%AC%B8%EB%B2%95%EC%9D%98-%EB%AC%98%EC%82%AC-2/</link>
+      <pubDate>Thu, 18 Mar 2021 21:18:11 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/computer_science/programming_language/%EB%AC%B8%EB%B2%95%EC%9D%98-%EB%AC%98%EC%82%AC-2/</guid>
+      <description>예제2 이번엔 간단한 배정문 문법 예제를 살펴봅시다. 1 2 3 4 5 6 &amp;lt;assign&amp;gt; → &amp;lt;id&amp;gt; = &amp;lt;expr&amp;gt; &amp;lt;id&amp;gt; → A | B | C &amp;lt;expr&amp;gt; → &amp;lt;id&amp;gt; + &amp;lt;expr&amp;gt; | &amp;lt;id&amp;gt; * &amp;lt;expr&amp;gt; | ( &amp;lt;expr&amp;gt; ) | &amp;lt;id&amp;gt; 위 문법은 assign을 start sy</description>
+    </item>
+    
+    <item>
+      <title>문법의 묘사 (1)</title>
+      <link>https://dev2820.github.io/computer_science/programming_language/%EB%AC%B8%EB%B2%95%EC%9D%98-%EB%AC%98%EC%82%AC-1/</link>
+      <pubDate>Wed, 17 Mar 2021 11:44:40 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/computer_science/programming_language/%EB%AC%B8%EB%B2%95%EC%9D%98-%EB%AC%98%EC%82%AC-1/</guid>
+      <description>Context-Free Grammers 1950년대 중반 Noam Chomsky와 John Backus 두 사람은 비록 연구 분야는 달랐지만 각기 비슷한 문법 묘사 형식을 개발합니다. 그리고 이 형식은 프로그래밍 언어 문법</description>
+    </item>
+    
+  </channel>
+</rss>

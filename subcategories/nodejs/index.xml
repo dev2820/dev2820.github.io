@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodejs on dev2820 개발일지</title>
+    <link>https://dev2820.github.io/subcategories/nodejs/</link>
+    <description>Recent content in nodejs on dev2820 개발일지</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
+    <lastBuildDate>Sun, 28 Mar 2021 12:37:51 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/subcategories/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nodejs정리 1</title>
+      <link>https://dev2820.github.io/study/nodejs/nodejs%EC%A0%95%EB%A6%AC-1/</link>
+      <pubDate>Sun, 28 Mar 2021 12:37:51 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/study/nodejs/nodejs%EC%A0%95%EB%A6%AC-1/</guid>
+      <description>Node.js? nodejs 홈페이지 Node.js®는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임입니다. 위의 홈페이지에 들어가면 우리를 반겨주는 문구입니다. 말 그대로 JavaScript 실행환경입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

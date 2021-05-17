@@ -10,6 +10,15 @@
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
     <lastBuildDate>Sat, 20 Mar 2021 00:23:58 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/projects/holy_shit/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>간단한 웹앱구축</title>
+      <link>https://dev2820.github.io/projects/holy_shit/%EA%B0%84%EB%8B%A8%ED%95%9C-%EC%9B%B9%EC%95%B1%EA%B5%AC%EC%B6%95/</link>
+      <pubDate>Sun, 16 May 2021 18:11:24 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/projects/holy_shit/%EA%B0%84%EB%8B%A8%ED%95%9C-%EC%9B%B9%EC%95%B1%EA%B5%AC%EC%B6%95/</guid>
+      <description>만들어진 html,css,js 파일들을 호스팅할 웹앱을 만들어봅시다. 호스팅 환경은 다음과 같습니다. 호스팅 환경 라즈베리파이4B ubuntu server 20.04 LTS 웹앱 Nodejs &amp;amp; Express를 사용합니</description>
+    </item>
+    
+    <item>
       <title>Html,css로 간단한 화면 만들기 1</title>
       <link>https://dev2820.github.io/projects/holy_shit/htmlcss%EB%A1%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%99%94%EB%A9%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
       <pubDate>Sat, 17 Apr 2021 00:53:40 +0900</pubDate>

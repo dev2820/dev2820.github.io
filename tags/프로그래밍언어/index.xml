@@ -8,7 +8,25 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Wed, 10 Mar 2021 11:42:53 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Mar 2021 21:18:11 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>문법의 묘사 (2)</title>
+      <link>https://dev2820.github.io/computer_science/programming_language/%EB%AC%B8%EB%B2%95%EC%9D%98-%EB%AC%98%EC%82%AC-2/</link>
+      <pubDate>Thu, 18 Mar 2021 21:18:11 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/computer_science/programming_language/%EB%AC%B8%EB%B2%95%EC%9D%98-%EB%AC%98%EC%82%AC-2/</guid>
+      <description>예제2 이번엔 간단한 배정문 문법 예제를 살펴봅시다. 1 2 3 4 5 6 &amp;lt;assign&amp;gt; → &amp;lt;id&amp;gt; = &amp;lt;expr&amp;gt; &amp;lt;id&amp;gt; → A | B | C &amp;lt;expr&amp;gt; → &amp;lt;id&amp;gt; + &amp;lt;expr&amp;gt; | &amp;lt;id&amp;gt; * &amp;lt;expr&amp;gt; | ( &amp;lt;expr&amp;gt; ) | &amp;lt;id&amp;gt; 위 문법은 assign을 start sy</description>
+    </item>
+    
+    <item>
+      <title>문법의 묘사 (1)</title>
+      <link>https://dev2820.github.io/computer_science/programming_language/%EB%AC%B8%EB%B2%95%EC%9D%98-%EB%AC%98%EC%82%AC-1/</link>
+      <pubDate>Wed, 17 Mar 2021 11:44:40 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/computer_science/programming_language/%EB%AC%B8%EB%B2%95%EC%9D%98-%EB%AC%98%EC%82%AC-1/</guid>
+      <description>Context-Free Grammers 1950년대 중반 Noam Chomsky와 John Backus 두 사람은 비록 연구 분야는 달랐지만 각기 비슷한 문법 묘사 형식을 개발합니다. 그리고 이 형식은 프로그래밍 언어 문법</description>
+    </item>
+    
     <item>
       <title>프로그래밍언어 (2)</title>
       <link>https://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-2/</link>
@@ -24,7 +42,7 @@
       <pubDate>Sat, 06 Mar 2021 21:33:27 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>https://dev2820.github.io/computer_science/programming_language/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4-1/</guid>
-      <description>필자가 번역 및 공부하면서 정리하는 글이라 오류가 있을 수 있습니다. 오류,오타 지적은 환영입니다. 프로그래밍 언어들의 개념을 공부해야하는 이유 컴퓨터 과학의 여</description>
+      <description>필자가 공부하면서 정리하는 글이라 오류가 있을 수 있습니다. 오류,오타 지적은 환영입니다. 프로그래밍 언어들의 개념을 공부해야하는 이유 프로그래밍 언어를 공부</description>
     </item>
     
   </channel>

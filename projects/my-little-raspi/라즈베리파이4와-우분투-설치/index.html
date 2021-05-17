@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라즈베리파이4와 우분투 설치  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 '라즈베리파이4와 우분투 설치'을 한 번 살펴보세요.">
+    <meta property="og:title" content="라즈베리파이4와 우분투 설치">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2021-04-18">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 '라즈베리파이4와 우분투 설치'을 한 번 살펴보세요.">
+    <meta property="og:url" content="https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="https://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="라즈베리파이4">
+    
+    <meta property="og:tags" content="웹서버">
+    
+    <meta property="og:tags" content="nodejs">
+    
+    <meta property="og:tags" content="vue.js">
+    
+    <meta property="og:tags" content="mariadb">
+    
+    <meta property="og:tags" content="express">
+    
+    
+    <link rel="icon" href="https://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    
+    
+    
+    
+    <script src="/js/default.js"></script>
+    
+</head>
+<body id="body">
+        <div id="loader">
+            <span class="description">
+                loading
+            </span>
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" width="96px"/>
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/cover.jpg" class="round-card">
+        
+    </div>
+    
+    
+    <h2>dev2820</h2>
+    
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="center">
+        <div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <div class="navigation-container">
+        <nav class="aside-menu center">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="https://dev2820.github.io/">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="https://dev2820.github.io//categories">Categories</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="https://dev2820.github.io//tags">Tags</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="https://dev2820.github.io//search">Search</a>
+                </li>
+                <li>
+                    <i class="fas fa-user icon"></i>
+                    <a href="https://dev2820.github.io//about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+<header id="single-header" class="card-inset bg-cover">
+
+  <div class="curtain center">
+    <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
+    <h1 class="title">라즈베리파이4와 우분투 설치</h1>
+    <div class="meta-data appear-300ms">
+      <p class="date"> <i class="far fa-calendar icon"></i> 2021.04.18 </p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 1m</p>
+    </div>
+  </div>
+</header>
+
+<main id="single-main">
+  <div class="roller"></div>
+  <section id="content" class="appear-700ms">
+    <article class="content card">
+      <h2 id="라즈베리파이">라즈베리파이?</h2>
+<figure role="img">
+    <img src="../images/raspberry-pi.png" alt="raspberry-pi icon">
+    <figcaption>- 
+라즈베리파이 로고
+ -</figcaption>
+</figure>
+<br/>
+<p>라즈베리파이 재단에서 만든 교육용 초소형 컴퓨터입니다. 핸드폰이 들고다니는 초소형 컴퓨터라면 이해가 빠를 겁니다. 제가 사용할 모델은 라즈베리파이4B 4GB모델입니다.</p>
+<figure role="img">
+    <img src="../images/%eb%9d%bc%ec%a6%88%eb%b2%a0%eb%a6%ac%ed%8c%8c%ec%9d%b44-1.png" alt="raspberry-pi icon">
+    <figcaption>- 
+라즈베리파이4B (4GB)
+ -</figcaption>
+</figure>
+<br/>
+<h3 id="사용-환경">사용 환경</h3>
+<p>todo:표로 라즈베리파이 스펙 정리
+128gb micro memory 사용</p>
+<h3 id="발열-이슈">발열 이슈</h3>
+<p>발열이 어쩌구 저쩌구 해서 예쁜 쿨러 하나 달아줬습니다.</p>
+<h3 id="못마땅">못마땅&hellip;</h3>
+<p>다좋은데 쿨러를 다니까 사용할 수 있는 케이스가 없어서 짜증났습니다. 언제 한번 3d 프린터도 공부하든지 해야겠어요. ㅡㅡ</p>
+<h2 id="라즈베리파이-설치">라즈베리파이 설치</h2>
+<h2 id="우분투-설치">우분투 설치</h2>
+
+    </article>
+    <aside id="right-aside">
+      <div class="post-toc card" id="post-toc">
+    <div class="post-toc-title">
+        <span>차례</span>
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#라즈베리파이">라즈베리파이?</a>
+      <ul>
+        <li><a href="#사용-환경">사용 환경</a></li>
+        <li><a href="#발열-이슈">발열 이슈</a></li>
+        <li><a href="#못마땅">못마땅&hellip;</a></li>
+      </ul>
+    </li>
+    <li><a href="#라즈베리파이-설치">라즈베리파이 설치</a></li>
+    <li><a href="#우분투-설치">우분투 설치</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </aside>
+  </section>
+  <section id="section-move">
+    <nav class="section-move">
+    
+      <a href="https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/" class="previous card"> 
+        <i class="fas fa-angle-double-left icon slide-left"></i>
+        <div class="title">
+          <small>prev</small>
+          <span>프로젝트 개요</span>
+        </div>
+      </a>
+    
+    
+</nav>
+  
+  </section>
+  <section id="meta">
+    <div class="card">
+      
+      
+<div class="category_breadcrumb_title">
+    <h2 class="title"><i class="fas fa-folder icon"></i>Categories</h2>
+</div>
+<div class="category_breadcrumb">
+    <a href="https://dev2820.github.io/categories/projects" class="action name">
+        
+        projects
+    </a>
+    <span class="action slash">/</span>
+    
+    <a href="https://dev2820.github.io/subcategories/my-little-raspi" class="action name">
+        
+        <span class="name">My little raspi</span>     
+    </a>
+    
+</div>
+
+
+      <div class="tag_list_title">
+    <h2 class="title"><i class="fas fa-hashtag icon"></i>Tags</h2>
+</div>
+<ul class="tags tag_list">
+    
+        <li><a href="https://dev2820.github.io/tags/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44/" class="action"><i class="fas fa-hashtag icon"></i>라즈베리파이4</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EC%9B%B9%EC%84%9C%EB%B2%84/" class="action"><i class="fas fa-hashtag icon"></i>웹서버</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/nodejs/" class="action"><i class="fas fa-hashtag icon"></i>nodejs</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/vue.js/" class="action"><i class="fas fa-hashtag icon"></i>vue.js</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/mariadb/" class="action"><i class="fas fa-hashtag icon"></i>mariadb</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/express/" class="action"><i class="fas fa-hashtag icon"></i>express</a></li>
+    
+</ul>
+
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </section>
+</main>
+
+  <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    
+    <div class="center"><div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div><div class="copyright center">
+        <span>COPYRIGHT 2021-2021. <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+        <span>ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>
