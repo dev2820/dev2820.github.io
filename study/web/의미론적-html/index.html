@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의미론적 HTML  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 '의미론적 HTML'을 한 번 살펴보세요.">
+    <meta property="og:title" content="의미론적 HTML">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2021-04-03">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 '의미론적 HTML'을 한 번 살펴보세요.">
+    <meta property="og:url" content="https://dev2820.github.io/study/web/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="https://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="study">
+    
+    <meta property="og:tags" content="컴퓨터 기술">
+    
+    <meta property="og:tags" content="공부정리">
+    
+    <meta property="og:tags" content="HTML">
+    
+    <meta property="og:tags" content="web">
+    
+    
+    <link rel="icon" href="https://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://dev2820.github.io/study/web/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTD4CD0DNR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TTD4CD0DNR');
+    </script>
+    
+    
+    
+    <script src="/js/default.js"></script>
+    
+</head>
+<body id="body">
+        <div id="loader">
+            <span class="description">
+                loading
+            </span>
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" width="96px"/>
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/cover.jpg" class="round-card">
+        
+    </div>
+    
+    
+    <h2>dev2820</h2>
+    
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="center">
+        <div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <div class="navigation-container">
+        <nav class="aside-menu center">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="https://dev2820.github.io/">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="https://dev2820.github.io//categories">Categories</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="https://dev2820.github.io//tags">Tags</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="https://dev2820.github.io//search">Search</a>
+                </li>
+                <li>
+                    <i class="fas fa-user icon"></i>
+                    <a href="https://dev2820.github.io//about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+<header id="single-header" class="card-inset bg-cover">
+
+  <div class="curtain center">
+    <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
+    <h1 class="title">의미론적 HTML</h1>
+    <div class="meta-data appear-300ms">
+      <p class="date"> <i class="far fa-calendar icon"></i> 2021.04.03 </p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 7m</p>
+    </div>
+  </div>
+</header>
+
+<main id="single-main">
+  <div class="roller"></div>
+  <section id="content" class="appear-700ms">
+    <article class="content card">
+      <p>오타, 오류 지적 환영입니다.</p>
+<h2 id="semantic-html">Semantic HTML</h2>
+<p>semantic html, 해석하면 의미론적 html입니다. 별 생각 없이 html을 작성하다 보면 <code>&lt;div&gt;</code>에 클릭 이벤트를 달고 <code>&lt;button&gt;</code>처럼 쓴다던가, <code>&lt;aside&gt;</code>를 <code>&lt;div class=&quot;aside&quot;&gt;</code>로 쓴다던가 등등의 코드를 작성하게 됩니다. 이런 경우가 바로 semantic 하지 못한 HTML입니다.</p>
+<blockquote>
+<p>Semantic HTML = HTML tag를 의미에 맞게 사용하는 것</p>
+</blockquote>
+<p>사실 웹을 시작하는 사람들에게 HTML은 짧게 거쳐 가는 단계이기 때문에 <code>div</code>,<code>span</code>,<code>header</code> 같은 태그들을 구분하지 않고 CSS로 고쳐 사용하는 경우가 더러 있습니다. <strong>왜 Semantic 하게 짜야 하는가?</strong> 를 모르니까요.</p>
+<p>알고도 semantic 하게 코드를 짜지 않을 때도 있지만, 몰라서 못 하는 경우도 있습니다. 제가 이 블로그 테마를 만들 때에도 가장 애먹었던 부분이 바로 <strong>무슨 태그를 써야 하는가?</strong> 였습니다. 블로그에 대한 지식이 전무했기 때문에 무슨 기능을 달아야 하지? 이런 페이지를 뭐라고 하지? 이런 지식이 없어서 다른 블로그를 돌아다니면서 조사하는데 시간을 꽤 많이 쏟았습니다. (여러분 블로그는 만들어진 테마를 쓰세요. 제발&hellip;)</p>
+<h2 id="왜-semantic하게-html을-짜야-하는가">왜 Semantic하게 HTML을 짜야 하는가?</h2>
+<p>semantic 하게 코드를 짜면 다음과 같은 이점이 있습니다.</p>
+<ul>
+<li>다른 사람이 내 코드를 볼 때 편해진다.</li>
+<li>모바일 환경에서 유리하다.</li>
+<li>SEO에 더 좋다.</li>
+</ul>
+<h3 id="다른-사람을-위한-semantic-html">다른 사람을 위한 Semantic HTML</h3>
+<p>사실 뭐 혼자 볼 코드면 semantic 하지 않아도 됩니다. 문제는 다른 사람이 내 코드를 볼 때 일어나죠. 
+<figure role="img">
+    <img src="images/non-semantic-code.png" alt="non semantic code">
+    <figcaption>- 
+non-semantic하게 짠 코드
+ -</figcaption>
+</figure>
+<br/>
+<figure role="img">
+    <img src="images/semantic-code.png" alt="semantic code">
+    <figcaption>- 
+semantic하게 짠 코드
+ -</figcaption>
+</figure>
+<br/></p>
+<p>non-semantic 한 코드와 semantic 한 코드 둘 중 어느 코드가 더 나은가요? 구조가 단순해서 non-semantic 한 코드도 무슨 코드인지는 알아볼 법하지만 자세히 들여다보아야 하고 무수한 <code>&lt;div&gt;</code>들 때문에 코드 간 구별이 잘 되지도 않습니다.</p>
+<p>반면 semantic 하게 짠 코드는 태그만 봐도 무슨 역할인지 알 수 있기 때문에 자세히 보지 않아도 무슨 코드인지 짐작이 갑니다.</p>
+<p>아니라구요? 당신은 지금부터 그렇게 생각하게 됩니다. 레드 썬!</p>
+<p>&hellip; 여튼 그러한 장점이 있습니다.</p>
+<h3 id="모바일-환경에서-유리하다">모바일 환경에서 유리하다</h3>
+<p>semantic하게 짠 HTML은 상대적으로 non-semantic한 HTML보다 파일 사이즈가 가볍습니다. 코드가 짧아지니까요. 또한 반응형 페이지 작성을 더 쉽게 할 수 있게 해줍니다. 코드를 짜는 사람에게도 이점이 있는 것이죠.</p>
+<h3 id="seo를-위한-semantic-html">SEO를 위한 Semantic HTML</h3>
+<p>SEO(search engine optimization)은 검색 엔진이 내 페이지를 찾을 수 있도록 페이지를 최적화하는 것을 말합니다. 검색 결과와 내가 만든 페이지가 부합할수록 검색엔진의 상단에 페이지가 노출됩니다. 블로그나 상업적으로 이용할 페이지를 만든다면 검색엔진에 잘 노출될 수 있도록 SEO 작업을 해줘야합니다.</p>
+<p>Semantic한 HTML은 마냥 <code>div</code>만 쓴 코드보다 search engine에 내 페이지에 대한 정보를 더 많이 제공합니다. semantic한 코드를 짜는 것도 SEO 작업의 일부가 되는 거죠.</p>
+<h2 id="무슨-태그를-써야-하는가">무슨 태그를 써야 하는가?</h2>
+<p>자 그러면 무슨 코드가 있으며, 어떤 의미를 가지는지 알아봅시다.
+<figure role="img">
+    <img src="images/semantic.png" alt="semantic struct">
+    <figcaption>- 
+sementic한 HTML 구성
+ -</figcaption>
+</figure>
+<br/></p>
+<p>일반적인 구조의 웹페이지를 작성할 때 위와 같은 구조의 html을 작성하게 됩니다.</p>
+<p>이렇게 짜라고 정해진 것은 아닙니다. semantic한 HTML에 정답은 없습니다. 다만 디자인도 취향 차이지만 좋은 디자인이 있고 나쁜 디자인이 있듯, HTML도 semantic과 non-semantic이 있는 것입니다.</p>
+<h3 id="구획을-나누는-태그">구획을 나누는 태그</h3>
+<p>화면의 전체적인 구성을 나눌 때 사용하는 태그들 입니다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">태그</th>
+<th style="text-align:center">설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>&lt;address&gt;</code></td>
+<td style="text-align:center">사람, 단체, 회사 등의 연락처,주소 정보를 담는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;article&gt;</code></td>
+<td style="text-align:center">문서,페이지,애플리케이션, 또는 사이트 안에서 독립적으로 구분해 배포하거나 재사용할 수 있는 구획을 담는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;aside&gt;</code></td>
+<td style="text-align:center">문서 주 내용과 간접적으로만 관련있는 정보를 담는 태그. 사이드 광고 영역이나 menu바 등을 담을 때 사용한다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;footer&gt;</code></td>
+<td style="text-align:center">구획 콘텐츠의 하단에 위치하는 태그로 작성자,저작권 정보, 관련 문서 등의 내용을 담는다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;header&gt;</code></td>
+<td style="text-align:center">구획 콘텐츠의 상단에 위치하는 태그로 제목, 로고, 검색폼, 작성자 이름 등등의 정보를 담는다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;h1&gt;</code>,<code>&lt;h2&gt;</code>,<code>&lt;h3&gt;</code>,<code>&lt;h4&gt;</code>,<code>&lt;h5&gt;</code>,<code>&lt;h6&gt;</code></td>
+<td style="text-align:center">구획의 제목을 담는 태그로 h1은 가장 높은 구획 단계의 제목이고 h6는 가장 낮은 구획 단계의 제목이다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;main&gt;</code></td>
+<td style="text-align:center">body의 주요 콘텐츠를 나타낸다. 문서의 핵심주제나 앱의 핵심 기능에 직접적으로 연결되거나 확장하는 콘텐츠로 이루어진다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;nav&gt;</code></td>
+<td style="text-align:center">네비게이션바 태그입니다. 다른 페이지로 이동하는 링크를 담는 메뉴,목차 등에 사용된다.</td>
+</tr>
+</tbody>
+</table>
+<p><code>&lt;section&gt;</code>을 여러 개 쓰거나 안쓰거나  <code>&lt;main&gt;</code>을 쓰지 않거나,<code>&lt;footer&gt;</code>에 <code>&lt;address&gt;</code>를 넣거나 등등은 작성하려는 웹에 맞게 적절히 작성하면 됩니다.</p>
+<h3 id="콘텐츠-구성에-사용하는-태그">콘텐츠 구성에 사용하는 태그</h3>
+<p>전체적인 구성말고 내부에 세세한 구성을 나타내는 태그 또는 유의미한 기능이 달린 태그</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">태그</th>
+<th style="text-align:center">설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>&lt;div&gt;</code></td>
+<td style="text-align:center">통용 컨테이너로 display:block 말고 적용되는 css가 없다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;span&gt;</code></td>
+<td style="text-align:center">div와 같지만 적용되는 css가 없다. (display는 default가 inline)</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;hr&gt;</code></td>
+<td style="text-align:center">이야기 장면 전환, 구획 내 주제 변경 등 문단 레벨 요소에서 주제의 분리를 나타낼 때 사용한다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;figcaption&gt;</code></td>
+<td style="text-align:center">부모 figure 요소가 포함하는 콘텐츠에 대한 설명을 나타낸다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;figure&gt;</code></td>
+<td style="text-align:center">독립적인 콘텐츠를 표현합니다. img와 figcaption을 묶거나 하는 등에 사용한다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;blockquote&gt;</code></td>
+<td style="text-align:center">인용문을 적을 때 사용하는 태그, cite 속성으로 원본 출처를 적어줄 수 있다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;li&gt;</code></td>
+<td style="text-align:center">목록의 한 항목을 나타낼 때 쓴다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;ul&gt;</code></td>
+<td style="text-align:center">정렬되지 않은 목록을 나타낼 때 쓴다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;ol&gt;</code></td>
+<td style="text-align:center">정렬된 목록을 나타낼 때 쓴다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;li&gt;</code></td>
+<td style="text-align:center">목록의 한 항목을 나타낼 때 쓴다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;summary&gt;</code></td>
+<td style="text-align:center"><code>&lt;details&gt;</code> 태그의 요약정보를 담는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;details&gt;</code></td>
+<td style="text-align:center">접고 펴서 문서의 정보를 숨겼다 보여줬다 하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;time&gt;</code></td>
+<td style="text-align:center">날짜/시간 정보를 담는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;cite&gt;</code></td>
+<td style="text-align:center">저작물의 출처를 표기할 때 사용하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;data&gt;</code></td>
+<td style="text-align:center">code단에서 유의미한 데이터를 담을 때 사용하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;code&gt;</code></td>
+<td style="text-align:center">소스코드를 담을 때 사용하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;i&gt;</code></td>
+<td style="text-align:center">문장 내에서 다른 문장과 구분할 때 사용하는 태그, font-awesome 아이콘같은 용도로 사용한다 보면 된다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;mark&gt;</code></td>
+<td style="text-align:center">텍스트에 형광펜칠할때 사용하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;small&gt;</code></td>
+<td style="text-align:center">작은 글씨 태그, copyright같이 작은 글자 표기할 때 사용</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;strong&gt;</code></td>
+<td style="text-align:center">텍스트를 강조할 때 사용하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;sub&gt;</code></td>
+<td style="text-align:center">아래 첨자 텍스트 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;sup&gt;</code></td>
+<td style="text-align:center">위 첨자 텍스트 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;menu&gt;</code></td>
+<td style="text-align:center">table_of_content 등에 주로 사용되는 접고 필 수 있는 메뉴 묶음 태그</td>
+</tr>
+</tbody>
+</table>
+<h3 id="이미지멀티미디어-태그">이미지&amp;멀티미디어 태그</h3>
+<p>hyper text 기능이 달린 태그들 입니다.
+<i class="fas fa-link"></i>
+<a target="_blank" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element#%EC%9D%B4%EB%AF%B8%EC%A7%80_%EB%A9%80%ED%8B%B0%EB%AF%B8%EB%94%94%EC%96%B4">
+    MDN 이미지&멀티미디어
+</a> 이 url을 참고하세요.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">태그</th>
+<th style="text-align:center">설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>&lt;area&gt;</code></td>
+<td style="text-align:center"><code>&lt;map&gt;</code>요소 내의 클릭 영역을 지정하고 hyperlink를 다는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;img&gt;</code></td>
+<td style="text-align:center">소리 콘텐츠를 포함시킬때 사용하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;map&gt;</code></td>
+<td style="text-align:center"><code>&lt;area&gt;</code>태그를 이용해 이미지 내에 클릭 가능한 영역을 설정하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;track&gt;</code></td>
+<td style="text-align:center"><code>&lt;audio&gt;</code>,<code>&lt;video&gt;</code>태그의 자식으로 자막,언어 등의 텍스트 트랙 종류를 표시하는 태그이다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;video&gt;</code></td>
+<td style="text-align:center">비디오 플레이백을 지원하는 미디어 플레이어를 삽입하는 태그</td>
+</tr>
+</tbody>
+</table>
+<h3 id="표와-관련된-태그">표와 관련된 태그</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">태그</th>
+<th style="text-align:center">설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>&lt;caption&gt;</code></td>
+<td style="text-align:center">표의 설명 또는 제목 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;col&gt;</code></td>
+<td style="text-align:center">표의 열을 나타내는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;colgroup&gt;</code></td>
+<td style="text-align:center">표의 열을 묶는 그룹 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;table&gt;</code></td>
+<td style="text-align:center">표의 본문 태그, 표의 body에 해당하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;tbody&gt;</code></td>
+<td style="text-align:center">여러 행(tr)을 묶어서 표 본문을 구성하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;th&gt;</code></td>
+<td style="text-align:center">표의 하나의 헤더 셀 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;td&gt;</code></td>
+<td style="text-align:center">표의 하나의 셀 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;tr&gt;</code></td>
+<td style="text-align:center">표의 하나의 행 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;tfoot&gt;</code></td>
+<td style="text-align:center">표의 footer에 해당하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;thead&gt;</code></td>
+<td style="text-align:center">표의 header에 해당하는 태그</td>
+</tr>
+</tbody>
+</table>
+<h3 id="여러가지-양식-태그">여러가지 양식 태그</h3>
+<i class="fas fa-link"></i>
+<a target="_blank" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/#%EC%96%91%EC%8B%9D">
+    MDN 양식 태그
+</a>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">태그</th>
+<th style="text-align:center">설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>&lt;button&gt;</code></td>
+<td style="text-align:center">버튼 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;datalist&gt;</code></td>
+<td style="text-align:center"><code>&lt;input&gt;</code>의 선택지 리스트를 보여줄 때 사용하는 태그, <code>&lt;option&gt;</code>태그를 여럿 담는다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;fieldset&gt;</code></td>
+<td style="text-align:center">여러 양식(form)들과 <code>&lt;label&gt;</code>,<code>&lt;legend&gt;</code>태그를 묶는 컨테이너 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;form&gt;</code></td>
+<td style="text-align:center">정보를 제출하기 위한 대화형 컨트롤 태그를 포함하는 컨테이너 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;input&gt;</code></td>
+<td style="text-align:center">웹 양식에서 사용자의 데이터를 받을 수 있는 대화형 컨트롤 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;legend&gt;</code></td>
+<td style="text-align:center"><code>&lt;fieldset&gt;</code>의 설명 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;label&gt;</code></td>
+<td style="text-align:center">인터페이스 항목 설명 태그, <code>&lt;input&gt;</code>에 어떤 용도의 <code>input</code>인지 설명을 달거나 하는 등에 쓴다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;meter&gt;</code></td>
+<td style="text-align:center"><code>&lt;progress&gt;</code>와 비슷한 백분율 값을 나타내는데 사용하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;select&gt;</code></td>
+<td style="text-align:center">옵션 메뉴를 제공하는 컨트롤 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;optgroup&gt;</code></td>
+<td style="text-align:center">선택지 그룹 태그,<code>&lt;select&gt;</code>에서 <code>&lt;option&gt;</code>을 묶을 때 사용한다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;option&gt;</code></td>
+<td style="text-align:center">선택지 태그, <code>&lt;select&gt;</code>에서 선택할 옵션을 제공할 때 사용한다.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;progress&gt;</code></td>
+<td style="text-align:center">작업의 진척도를 나타낼 때 사용하는 태그</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;textarea&gt;</code></td>
+<td style="text-align:center"><code>&lt;input&gt;</code>과 비슷하지만 멀티라인 텍스트 편집 컨트롤을 제공하는  태그</td>
+</tr>
+</tbody>
+</table>
+<h2 id="마치며">마치며</h2>
+<p>많이 적었지만 말고도 많은 태그들이 있습니다. 아래에 글 쓸 때 참고한 링크를 남겨놨으니 참고하세요.</p>
+<p>모든 태그를 기억할 필요는 없습니다. 다만, javascript와 css로 <code>&lt;div&gt;</code>에 기능을 달아주기 전에 이미 있는 태그들을 한 번 살펴보면 좋을 것 같습니다.</p>
+<p>이 블로그는 semantic 하냐구요? 앞으로 그럴 예정입니다.^^</p>
+<h2 id="참고출처">참고&amp;출처</h2>
+<p><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element#%EC%9D%B4%EB%AF%B8%EC%A7%80_%EB%A9%80%ED%8B%B0%EB%AF%B8%EB%94%94%EC%96%B4">https://developer.mozilla.org/ko/docs/Web/HTML/Element#%EC%9D%B4%EB%AF%B8%EC%A7%80_%EB%A9%80%ED%8B%B0%EB%AF%B8%EB%94%94%EC%96%B4</a></p>
+<p><a href="https://www.w3schools.com/tags/default.asp">https://www.w3schools.com/tags/default.asp</a></p>
+
+    </article>
+    <aside id="right-aside">
+      <div class="post-toc card" id="post-toc">
+    <div class="post-toc-title">
+        <span>차례</span>
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#semantic-html">Semantic HTML</a></li>
+    <li><a href="#왜-semantic하게-html을-짜야-하는가">왜 Semantic하게 HTML을 짜야 하는가?</a>
+      <ul>
+        <li><a href="#다른-사람을-위한-semantic-html">다른 사람을 위한 Semantic HTML</a></li>
+        <li><a href="#모바일-환경에서-유리하다">모바일 환경에서 유리하다</a></li>
+        <li><a href="#seo를-위한-semantic-html">SEO를 위한 Semantic HTML</a></li>
+      </ul>
+    </li>
+    <li><a href="#무슨-태그를-써야-하는가">무슨 태그를 써야 하는가?</a>
+      <ul>
+        <li><a href="#구획을-나누는-태그">구획을 나누는 태그</a></li>
+        <li><a href="#콘텐츠-구성에-사용하는-태그">콘텐츠 구성에 사용하는 태그</a></li>
+        <li><a href="#이미지멀티미디어-태그">이미지&amp;멀티미디어 태그</a></li>
+        <li><a href="#표와-관련된-태그">표와 관련된 태그</a></li>
+        <li><a href="#여러가지-양식-태그">여러가지 양식 태그</a></li>
+      </ul>
+    </li>
+    <li><a href="#마치며">마치며</a></li>
+    <li><a href="#참고출처">참고&amp;출처</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </aside>
+  </section>
+  <section id="section-move">
+    <nav class="section-move">
+    
+      <a href="https://dev2820.github.io/study/web/html-%EB%A0%8C%EB%8D%94%EB%A7%81/" class="previous card"> 
+        <i class="fas fa-angle-double-left icon slide-left"></i>
+        <div class="title">
+          <small>prev</small>
+          <span>HTML 렌더링 과정</span>
+        </div>
+      </a>
+    
+    
+      <a href="https://dev2820.github.io/study/web/css-%EC%84%A0%ED%83%9D%EC%9E%90-%EC%A0%95%EB%A6%AC/" class="next card">
+        <div class="title">
+          <small>next</small>  
+          <span>CSS 선택자</span>
+        </div>
+        <i class="fas fa-angle-double-right icon slide-right"></i>
+      </a>
+    
+</nav>
+  
+  </section>
+  <section id="meta">
+    <div class="card">
+      
+      
+<div class="category_breadcrumb_title">
+    <h2 class="title"><i class="fas fa-folder icon"></i>Categories</h2>
+</div>
+<div class="category_breadcrumb">
+    <a href="https://dev2820.github.io/categories/study" class="action name">
+        
+        study
+    </a>
+    <span class="action slash">/</span>
+    
+    <a href="https://dev2820.github.io/subcategories/web" class="action name">
+        
+        <span class="name">Web</span>     
+    </a>
+    
+</div>
+
+
+      <div class="tag_list_title">
+    <h2 class="title"><i class="fas fa-hashtag icon"></i>Tags</h2>
+</div>
+<ul class="tags tag_list">
+    
+        <li><a href="https://dev2820.github.io/tags/study/" class="action"><i class="fas fa-hashtag icon"></i>study</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B8%B0%EC%88%A0/" class="action"><i class="fas fa-hashtag icon"></i>컴퓨터 기술</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80%EC%A0%95%EB%A6%AC/" class="action"><i class="fas fa-hashtag icon"></i>공부정리</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/html/" class="action"><i class="fas fa-hashtag icon"></i>html</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/web/" class="action"><i class="fas fa-hashtag icon"></i>web</a></li>
+    
+</ul>
+
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </section>
+</main>
+
+  <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    
+    <div class="center"><div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div><div class="copyright center">
+        <span>COPYRIGHT 2021-2021. <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+        <span>ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>

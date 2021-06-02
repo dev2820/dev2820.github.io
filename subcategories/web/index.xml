@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web on dev2820 개발일지</title>
+    <link>https://dev2820.github.io/subcategories/web/</link>
+    <description>Recent content in web on dev2820 개발일지</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
+    <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
+    <lastBuildDate>Wed, 02 Jun 2021 20:55:44 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/subcategories/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>console창에 문구 띄우기</title>
+      <link>https://dev2820.github.io/study/web/console%EC%B0%BD%EC%97%90-%EB%AC%B8%EA%B5%AC%EB%9D%84%EC%9A%B0%EA%B8%B0/</link>
+      <pubDate>Wed, 02 Jun 2021 20:55:44 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/study/web/console%EC%B0%BD%EC%97%90-%EB%AC%B8%EA%B5%AC%EB%9D%84%EC%9A%B0%EA%B8%B0/</guid>
+      <description>다른 사람들이 작성한 코드를 참고하려 티스토리 블로그를 돌아다니다보면 가끔 그런 블로그를 볼 때가 있습니다. 예시 코드가 가운데 정렬(text-align:c</description>
+    </item>
+    
+    <item>
+      <title>CSS 선택자</title>
+      <link>https://dev2820.github.io/study/web/css-%EC%84%A0%ED%83%9D%EC%9E%90-%EC%A0%95%EB%A6%AC/</link>
+      <pubDate>Tue, 13 Apr 2021 00:15:14 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/study/web/css-%EC%84%A0%ED%83%9D%EC%9E%90-%EC%A0%95%EB%A6%AC/</guid>
+      <description>CSS 선택자가 뭔지는 설명 안하겠습니다. CSS 선택자 * 선택자 모든 태그를 선택하는 선택자 입니다. 1 2 3 * { //css code } Tag 선택자 주어진 이름의 태그를 선택하는 선택자입</description>
+    </item>
+    
+    <item>
+      <title>의미론적 HTML</title>
+      <link>https://dev2820.github.io/study/web/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/</link>
+      <pubDate>Sat, 03 Apr 2021 14:35:32 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/study/web/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/</guid>
+      <description>오타, 오류 지적 환영입니다. Semantic HTML semantic html, 해석하면 의미론적 html입니다. 별 생각 없이 html을 작성하다 보면 &amp;lt;div&amp;gt;에 클릭 이벤트를 달고 &amp;</description>
+    </item>
+    
+    <item>
+      <title>HTML 렌더링 과정</title>
+      <link>https://dev2820.github.io/study/web/html-%EB%A0%8C%EB%8D%94%EB%A7%81/</link>
+      <pubDate>Sat, 03 Apr 2021 14:35:24 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/study/web/html-%EB%A0%8C%EB%8D%94%EB%A7%81/</guid>
+      <description>팀프로젝트를 진행하던 중 갑자기 html 렌더링 과정이 궁금해졌습니다. 인터넷 뒤적이며 조사한 내용을 바탕으로 작성한 글이니 부정확할 수 있습니다. 오타, 오류 지적 환</description>
+    </item>
+    
+  </channel>
+</rss>

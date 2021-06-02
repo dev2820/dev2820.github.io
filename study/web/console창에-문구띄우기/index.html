@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console창에 문구 띄우기  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 'console창에 문구 띄우기'을 한 번 살펴보세요.">
+    <meta property="og:title" content="console창에 문구 띄우기">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2021-06-02">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 'console창에 문구 띄우기'을 한 번 살펴보세요.">
+    <meta property="og:url" content="https://dev2820.github.io/study/web/console%EC%B0%BD%EC%97%90-%EB%AC%B8%EA%B5%AC%EB%9D%84%EC%9A%B0%EA%B8%B0/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="https://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="study">
+    
+    <meta property="og:tags" content="컴퓨터 기술">
+    
+    <meta property="og:tags" content="공부정리">
+    
+    <meta property="og:tags" content="web">
+    
+    <meta property="og:tags" content="콘솔창에 로고">
+    
+    <meta property="og:tags" content="크롬 콘솔창">
+    
+    
+    <link rel="icon" href="https://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://dev2820.github.io/study/web/console%EC%B0%BD%EC%97%90-%EB%AC%B8%EA%B5%AC%EB%9D%84%EC%9A%B0%EA%B8%B0/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTD4CD0DNR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TTD4CD0DNR');
+    </script>
+    
+    
+    
+    <script src="/js/default.js"></script>
+    
+</head>
+<body id="body">
+        <div id="loader">
+            <span class="description">
+                loading
+            </span>
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" width="96px"/>
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/cover.jpg" class="round-card">
+        
+    </div>
+    
+    
+    <h2>dev2820</h2>
+    
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="center">
+        <div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <div class="navigation-container">
+        <nav class="aside-menu center">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="https://dev2820.github.io/">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="https://dev2820.github.io//categories">Categories</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="https://dev2820.github.io//tags">Tags</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="https://dev2820.github.io//search">Search</a>
+                </li>
+                <li>
+                    <i class="fas fa-user icon"></i>
+                    <a href="https://dev2820.github.io//about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+<header id="single-header" class="card-inset bg-cover">
+
+  <div class="curtain center">
+    <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
+    <h1 class="title">console창에 문구 띄우기</h1>
+    <div class="meta-data appear-300ms">
+      <p class="date"> <i class="far fa-calendar icon"></i> 2021.06.02 </p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 5m</p>
+    </div>
+  </div>
+</header>
+
+<main id="single-main">
+  <div class="roller"></div>
+  <section id="content" class="appear-700ms">
+    <article class="content card">
+      <p>다른 사람들이 작성한 코드를 참고하려 티스토리 블로그를 돌아다니다보면 가끔 그런 블로그를 볼 때가 있습니다. 예시 코드가 가운데 정렬(<code>text-align:center</code>)되어 나오는 블로그들이요. 보는데 크게 불편한건 아니지만 뭔가 속으로 불ㅡ편 해서 구지 콘솔창을 키고 css를 직접 수정해서 코드를 읽곤합니다.</p>
+<p>그때도 별 생각없이 콘솔창을 켰는데&hellip;</p>
+<figure role="img">
+    <img src="images/%ed%8b%b0%ec%8a%a4%ed%86%a0%eb%a6%ac%20%ec%bd%98%ec%86%94%ec%b0%bd%20%eb%ac%b8%ea%b5%ac.png" alt="티스토리 콘솔창">
+    <figcaption>- 
+어느날 발견한 티스토리 콘솔창
+ -</figcaption>
+</figure>
+<br/>
+<p>아니, 콘솔창에 저런 문구가 있는 겁니다. 처음엔 이미지를 콘솔창에 띄우는 방법이 있나? 라고 생각했는데, 다시보니 Text를 출력한 거였습니다. Text여도 이쁘게 색을 입혀서 출력된 문구가 너무 탐스러웠습니다. 알아보니 상당히 생소한 방법으로 문구를 넣더라구요.</p>
+<h2 id="문구-넣는-방법">문구 넣는 방법</h2>
+<p><code>&lt;head&gt;&lt;/head&gt;</code>사이에 script를 집어넣어서 만들더라구요.</p>
+<p><a href="https://webmini.tistory.com/m/996">참고한 블로그</a></p>
+<p>위 블로그에 올라온 소스코드를 참고해서 방법을 알아보겠습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1"> 1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2"> 2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3"> 3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4"> 4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5"> 5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6"> 6</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-7"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-7"> 7</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-8"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-8"> 8</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-9"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-9"> 9</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-10"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-10">10</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">&lt;</span>head<span style="color:#ff79c6">&gt;</span>
+    <span style="color:#ff79c6">&lt;</span>script<span style="color:#ff79c6">&gt;</span>
+        <span style="color:#8be9fd;font-style:italic">var</span> cssRule<span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;font-size:2em;&#34;</span>
+        <span style="color:#8be9fd;font-style:italic">var</span> cssLogo1 <span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;color:#da6c37;&#34;</span> <span style="color:#ff79c6">+</span><span style="color:#f1fa8c">&#34;font-size: 60px;&#34;</span> <span style="color:#ff79c6">+</span><span style="color:#f1fa8c">&#34;font-weight: bold;&#34;</span> <span style="color:#ff79c6">+</span><span style="color:#f1fa8c">&#34;letter-space:-1px;&#34;</span> <span style="color:#ff79c6">+</span><span style="color:#f1fa8c">&#34;font-family:Tahoma,Arial,sans-serif&#34;</span>;
+        <span style="color:#ff79c6">if</span>(<span style="color:#8be9fd;font-style:italic">window</span>.console<span style="color:#ff79c6">!=</span><span style="color:#ff79c6">undefined</span>){
+            setTimeout(console.log.bind(console,<span style="color:#f1fa8c">&#34;%cTISTORY&#34;</span>, cssLogo1),<span style="color:#bd93f9">0</span>);
+            setTimeout(console.log.bind(console,<span style="color:#f1fa8c">&#34;%c 나를 표현하는 블로그&#34;</span>,cssRule),<span style="color:#bd93f9">0</span>);
+        }
+    <span style="color:#ff79c6">&lt;</span>/script&gt;
+<span style="color:#ff79c6">&lt;</span>/head&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>위와 같이 head에 script를 집어넣습니다. 하나하나 뜯어봅시다.</p>
+<h3 id="consolelogbind">console.log.bind</h3>
+<p>console.log는 뭔지 다 아실겁니다. 콘솔창에 로그를 출력하는 console객체의 메소드이죠.</p>
+<p><code>bind</code> 함수는 ES6부터 추가된 함수로, 특정 this를 가지는 함수를 반환하는 함수입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1"> 1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2"> 2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3"> 3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4"> 4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5"> 5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6"> 6</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-7"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-7"> 7</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-8"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-8"> 8</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-9"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-9"> 9</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-10"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-10">10</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-11"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-11">11</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-12"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-12">12</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-13"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-13">13</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-14"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-14">14</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-15"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-15">15</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#8be9fd;font-style:italic">window</span>.a <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;a in window&#39;</span>;
+    <span style="color:#ff79c6">const</span> obj1 <span style="color:#ff79c6">=</span> {
+        a<span style="color:#ff79c6">:</span><span style="color:#f1fa8c">&#39;a in obj1&#39;</span>,
+        func<span style="color:#ff79c6">:</span> <span style="color:#8be9fd;font-style:italic">function</span>(arg1) {
+            console.log(<span style="color:#f1fa8c">&#39;arg:&#39;</span><span style="color:#ff79c6">+</span>arg1);
+            console.log(<span style="color:#ff79c6">this</span>.a);
+        }
+    }
+    <span style="color:#ff79c6">const</span> obj2 <span style="color:#ff79c6">=</span> {
+        a<span style="color:#ff79c6">:</span><span style="color:#f1fa8c">&#39;a in obj2&#39;</span>,
+    }
+    <span style="color:#ff79c6">const</span> func1 <span style="color:#ff79c6">=</span> obj1.func.bind(<span style="color:#ff79c6">this</span>,<span style="color:#bd93f9">1</span>);
+    <span style="color:#ff79c6">const</span> func2 <span style="color:#ff79c6">=</span> obj1.func.bind(obj2,<span style="color:#bd93f9">2</span>);
+    func1();
+    func2();
+</code></pre></td></tr></table>
+</div>
+</div><figure role="img">
+    <img src="images/bind%20%ec%98%88%ec%a0%9c%ec%bd%94%eb%93%9c.png" alt="bind 예제코드">
+    <figcaption>- 
+예제 코드 실행 결과
+ -</figcaption>
+</figure>
+<br/>
+<p>위 예제에서 <code>func1</code>은 obj1의 메소드임에도 <code>this.a</code>를 출력했을 때 window.a를 출력하는 것을 볼 수 있습니다. func1을 만들 때 window를 this로 사용하도록했기 때문입니다.</p>
+<p>bind의 첫 번째 파라미터는 this가 될 객체, 두 번째 파라미터부터는 함수의 파라미터입니다.</p>
+<h3 id="consolelog-서식문자">console.log 서식문자</h3>
+<p>console.log는 파라미터를 2가지 방식으로 줄 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">console.log(obj1 [,obj2, ..., objN]);
+console.log(msg [,subst1, ..., substN]);
+</code></pre></td></tr></table>
+</div>
+</div><p>첫 번째 방식은 출력할 변수를 나열하는 방식입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">console.log(<span style="color:#f1fa8c">&#34;I&#34;</span>,<span style="color:#f1fa8c">&#34;am&#34;</span>,<span style="color:#f1fa8c">&#34;a&#34;</span>,<span style="color:#f1fa8c">&#34;boy&#34;</span>);
+</code></pre></td></tr></table>
+</div>
+</div><p><figure role="img">
+    <img src="images/console.log%20%ec%98%88%ec%a0%9c1.png" alt="console.log 예제코드">
+    <figcaption>- 
+console.log 예제 1
+ -</figcaption>
+</figure>
+<br/>
+나열한 문자열을 순서대로 출력합니다.</p>
+<p>두 번째 방식은 서식문자가 들어가는 경우입니다. C언어의 printf와 같은 방식이라고 생각하면 됩니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">console.log(<span style="color:#f1fa8c">&#34;%s. I am %d years old.&#34;</span>,<span style="color:#f1fa8c">&#34;I am a boy&#34;</span>,<span style="color:#bd93f9">24</span>);
+</code></pre></td></tr></table>
+</div>
+</div><figure role="img">
+    <img src="images/console.log%20%ec%98%88%ec%a0%9c2.png" alt="console.log 예제코드2">
+    <figcaption>- 
+console.log 예제 2
+ -</figcaption>
+</figure>
+<br/>
+<p>서식문자의 의미는 다음과 같습니다.</p>
+<ul>
+<li><code>%s</code>: 문자열</li>
+<li><code>%d</code>: 숫자</li>
+<li><code>%o</code>: 객체</li>
+</ul>
+<p>이 외에도 <code>%c</code> 서식문자를 사용할 수 있습니다. <code>%c</code>는 출력할 문구의 style을 지정해줄 수 있습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">console.log(<span style="color:#f1fa8c">&#34;%cA %cB %cC&#34;</span>,<span style="color:#f1fa8c">&#34;color:red;font-size:1rem&#34;</span>,<span style="color:#f1fa8c">&#34;color:blue;font-size:1.5rem&#34;</span>,<span style="color:#f1fa8c">&#34;color:green;font-size:2rem&#34;</span>);
+</code></pre></td></tr></table>
+</div>
+</div><figure role="img">
+    <img src="images/console.log%20%ec%98%88%ec%a0%9c3.png" alt="console.log 예제코드3">
+    <figcaption>- 
+console.log 예제 3
+
+ -</figcaption>
+</figure>
+<br/>
+<h3 id="settimeout0">setTimeout(~,0)</h3>
+<p><code>setTimeout(~,0)</code>. 이렇게 setTimeout에 0ms를 설정해주는 것은 처음보는 사람은 이게 무슨 의미가 있는 코드야? 라고 생각하겠지만, 의외로 유용하고 유명한 <strong>편법</strong>입니다.</p>
+<p>웹의 동작과정을 자세히 살펴보는 시간은 아니니 간단하게만 설명하겠습니다.</p>
+<p>자바스크립트 엔진은 싱글스레드로 작동합니다. 즉, 한번에 한가지 동작밖에 못하죠. 자바스크립트 엔진을 사용하는 환경(브라우저 또는 node.js)에선 <strong>이벤트 루프</strong>라는 이름의 while문을 돌면서 태스크가 발생하는 것을 감시합니다. 태스크가 발생하면 <strong>task queue</strong>라는 큐에 태스크가 쌓이는데, 이벤트루프는 task queue에 태스크가 쌓이는 것을 감지하고 task queue에서 태스크를 꺼내 <strong>call stack</strong>이라는 스택에 집어넣습니다. 자바스크립트 엔진은 이 call stack에서 태스크를 하나씩 꺼내 처리합니다.</p>
+<p>그럼 setTimeout이 일어나면 어떻게 될까요? 다음 코드를 태스크1이라 합시다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4">4</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">setTimeout(()=&gt;{
+    console.log(<span style="color:#f1fa8c">&#39;A&#39;</span>);
+},<span style="color:#bd93f9">0</span>);
+console.log(<span style="color:#f1fa8c">&#39;B&#39;</span>);
+</code></pre></td></tr></table>
+</div>
+</div><p>setTimeout은 2개의 파라미터를 가집니다.</p>
+<ol>
+<li>콜백함수</li>
+<li>딜레이</li>
+</ol>
+<p>딜레이 만큼의 시간이 지나면 콜백함수가 태스크로 발생합니다. 이 태스크는 태스크2라고 합시다. 이벤트루프가 태스크2를 감지하고 call stack에 집어 넣겠죠. 근데 태스크1이 아직 끝나지 않았기 때문에 이벤트루프는 태스크2를 call stack에 집어넣지 않습니다. 태스크1이 <code>console.log('B')</code>를 출력하고 종료하면 태스크2를 call stack에 집어넣고 실행하겠죠.</p>
+<p>따라서 수행 결과는</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">B
+A
+</code></pre></td></tr></table>
+</div>
+</div><p>가 됩니다. 이렇게 현재 수행중인 태스크가 완료되고 콜백함수를 실행시키고 싶다면 <code>setTimeout(~,0)</code>을 사용합니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1"> 1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2"> 2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3"> 3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4"> 4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5"> 5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6"> 6</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-7"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-7"> 7</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-8"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-8"> 8</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-9"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-9"> 9</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-10"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-10">10</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-11"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-11">11</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-12"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-12">12</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-13"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-13">13</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-14"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-14">14</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-15"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-15">15</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-16"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-16">16</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-17"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-17">17</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#ff79c6">html</span> <span style="color:#50fa7b">lang</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;en&#34;</span>&gt;
+&lt;<span style="color:#ff79c6">head</span>&gt;
+    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">charset</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">http-equiv</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;X-UA-Compatible&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;IE=edge&#34;</span>&gt;
+    &lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;viewport&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+    &lt;<span style="color:#ff79c6">title</span>&gt;Document&lt;/<span style="color:#ff79c6">title</span>&gt;
+    &lt;<span style="color:#ff79c6">script</span>&gt;
+        setTimeout(console.log(<span style="color:#f1fa8c">&#39;B&#39;</span>),<span style="color:#bd93f9">0</span>);
+    &lt;/<span style="color:#ff79c6">script</span>&gt;
+&lt;/<span style="color:#ff79c6">head</span>&gt;
+&lt;<span style="color:#ff79c6">body</span>&gt;
+    &lt;<span style="color:#ff79c6">script</span>&gt;
+        console.log(<span style="color:#f1fa8c">&#39;A&#39;</span>);
+    &lt;/<span style="color:#ff79c6">script</span>&gt;
+&lt;/<span style="color:#ff79c6">body</span>&gt;
+&lt;/<span style="color:#ff79c6">html</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>이제 위 페이지의 콘솔에는 A,B가 찍힐까요?</p>
+<h2 id="코드-해석">코드 해석</h2>
+<p>다시 처음으로 돌아와서 코드를 해석해봅시다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1"> 1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2"> 2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3"> 3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4"> 4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5"> 5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6"> 6</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-7"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-7"> 7</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-8"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-8"> 8</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-9"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-9"> 9</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-10"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-10">10</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">&lt;</span>head<span style="color:#ff79c6">&gt;</span>
+    <span style="color:#ff79c6">&lt;</span>script<span style="color:#ff79c6">&gt;</span>
+        <span style="color:#8be9fd;font-style:italic">var</span> cssRule<span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;font-size:2em;&#34;</span>
+        <span style="color:#8be9fd;font-style:italic">var</span> cssLogo1 <span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;color:#da6c37;&#34;</span> <span style="color:#ff79c6">+</span><span style="color:#f1fa8c">&#34;font-size: 60px;&#34;</span> <span style="color:#ff79c6">+</span><span style="color:#f1fa8c">&#34;font-weight: bold;&#34;</span> <span style="color:#ff79c6">+</span><span style="color:#f1fa8c">&#34;letter-space:-1px;&#34;</span> <span style="color:#ff79c6">+</span><span style="color:#f1fa8c">&#34;font-family:Tahoma,Arial,sans-serif&#34;</span>;
+        <span style="color:#ff79c6">if</span>(<span style="color:#8be9fd;font-style:italic">window</span>.console<span style="color:#ff79c6">!=</span><span style="color:#ff79c6">undefined</span>){
+            setTimeout(console.log.bind(console,<span style="color:#f1fa8c">&#34;%cTISTORY&#34;</span>, cssLogo1),<span style="color:#bd93f9">0</span>);
+            setTimeout(console.log.bind(console,<span style="color:#f1fa8c">&#34;%c 나를 표현하는 블로그&#34;</span>,cssRule),<span style="color:#bd93f9">0</span>);
+        }
+    <span style="color:#ff79c6">&lt;</span>/script&gt;
+<span style="color:#ff79c6">&lt;</span>/head&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>먼저 <code>if(window.console!=undefined)</code>는 window에 console객체가 있는지 확인하고 있습니다. 낮은 버전의 IE의 경우 console 객체를 지원하지 않는 경우가 있어 window에 console 객체가 있는지 확인하는 것 같습니다.</p>
+<p>다음으로 <code>console.log.bind(console)</code>은 큰 의미는 없고, <code>console.log(&quot;%cTISTORY&quot;,cssLogo1)</code>을 실행하는 함수를 만드는 코드인 것 같습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">setTimeout(()=&gt;{
+    console.log(<span style="color:#f1fa8c">&#34;%cTISTORY&#34;</span>, cssLogo1);
+},<span style="color:#bd93f9">0</span>);
+</code></pre></td></tr></table>
+</div>
+</div><p>위 코드와 같은 의미가 아닌가 싶네요.</p>
+<p>마지막으로 setTimeout을 쓰는 이유는 랜더링이 끝난 뒤에 콘솔창에 문구를 띄우기 위함인 것 같습니다. head에 들어가는 코드는 dom 렌더링이 끝나기 전에 실행되기 때문에 console.log가 리소스를 잡아먹지 않게 렌더링이 끝나고 실행되도록 한 것 같네요.</p>
+<h3 id="참고한-사이트">참고한 사이트</h3>
+<p><a href="https://developer.mozilla.org/ko/docs/Web/API/Console/log">https://developer.mozilla.org/ko/docs/Web/API/Console/log</a>
+<a href="https://webmini.tistory.com/m/996">https://webmini.tistory.com/m/996</a>
+<a href="https://stackoverflow.com/questions/28668759/what-does-this-statement-do-console-log-bindconsole">https://stackoverflow.com/questions/28668759/what-does-this-statement-do-console-log-bindconsole</a></p>
+
+    </article>
+    <aside id="right-aside">
+      <div class="post-toc card" id="post-toc">
+    <div class="post-toc-title">
+        <span>차례</span>
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#문구-넣는-방법">문구 넣는 방법</a>
+      <ul>
+        <li><a href="#consolelogbind">console.log.bind</a></li>
+        <li><a href="#consolelog-서식문자">console.log 서식문자</a></li>
+        <li><a href="#settimeout0">setTimeout(~,0)</a></li>
+      </ul>
+    </li>
+    <li><a href="#코드-해석">코드 해석</a>
+      <ul>
+        <li><a href="#참고한-사이트">참고한 사이트</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </aside>
+  </section>
+  <section id="section-move">
+    <nav class="section-move">
+    
+      <a href="https://dev2820.github.io/study/web/css-%EC%84%A0%ED%83%9D%EC%9E%90-%EC%A0%95%EB%A6%AC/" class="previous card"> 
+        <i class="fas fa-angle-double-left icon slide-left"></i>
+        <div class="title">
+          <small>prev</small>
+          <span>CSS 선택자</span>
+        </div>
+      </a>
+    
+    
+</nav>
+  
+  </section>
+  <section id="meta">
+    <div class="card">
+      
+      
+<div class="category_breadcrumb_title">
+    <h2 class="title"><i class="fas fa-folder icon"></i>Categories</h2>
+</div>
+<div class="category_breadcrumb">
+    <a href="https://dev2820.github.io/categories/study" class="action name">
+        
+        study
+    </a>
+    <span class="action slash">/</span>
+    
+    <a href="https://dev2820.github.io/subcategories/web" class="action name">
+        
+        <span class="name">Web</span>     
+    </a>
+    
+</div>
+
+
+      <div class="tag_list_title">
+    <h2 class="title"><i class="fas fa-hashtag icon"></i>Tags</h2>
+</div>
+<ul class="tags tag_list">
+    
+        <li><a href="https://dev2820.github.io/tags/study/" class="action"><i class="fas fa-hashtag icon"></i>study</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B8%B0%EC%88%A0/" class="action"><i class="fas fa-hashtag icon"></i>컴퓨터 기술</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80%EC%A0%95%EB%A6%AC/" class="action"><i class="fas fa-hashtag icon"></i>공부정리</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/web/" class="action"><i class="fas fa-hashtag icon"></i>web</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EC%BD%98%EC%86%94%EC%B0%BD%EC%97%90-%EB%A1%9C%EA%B3%A0/" class="action"><i class="fas fa-hashtag icon"></i>콘솔창에 로고</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%ED%81%AC%EB%A1%AC-%EC%BD%98%EC%86%94%EC%B0%BD/" class="action"><i class="fas fa-hashtag icon"></i>크롬 콘솔창</a></li>
+    
+</ul>
+
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </section>
+</main>
+
+  <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    
+    <div class="center"><div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div><div class="copyright center">
+        <span>COPYRIGHT 2021-2021. <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+        <span>ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>

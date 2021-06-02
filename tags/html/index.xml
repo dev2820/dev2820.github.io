@@ -11,19 +11,19 @@
     <lastBuildDate>Sat, 03 Apr 2021 14:35:32 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>의미론적 HTML</title>
-      <link>https://dev2820.github.io/study/html-css-browser/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/</link>
+      <link>https://dev2820.github.io/study/web/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/</link>
       <pubDate>Sat, 03 Apr 2021 14:35:32 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/study/html-css-browser/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/</guid>
+      <guid>https://dev2820.github.io/study/web/%EC%9D%98%EB%AF%B8%EB%A1%A0%EC%A0%81-html/</guid>
       <description>오타, 오류 지적 환영입니다. Semantic HTML semantic html, 해석하면 의미론적 html입니다. 별 생각 없이 html을 작성하다 보면 &amp;lt;div&amp;gt;에 클릭 이벤트를 달고 &amp;</description>
     </item>
     
     <item>
       <title>HTML 렌더링 과정</title>
-      <link>https://dev2820.github.io/study/html-css-browser/html-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95/</link>
+      <link>https://dev2820.github.io/study/web/html-%EB%A0%8C%EB%8D%94%EB%A7%81/</link>
       <pubDate>Sat, 03 Apr 2021 14:35:24 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/study/html-css-browser/html-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95/</guid>
+      <guid>https://dev2820.github.io/study/web/html-%EB%A0%8C%EB%8D%94%EB%A7%81/</guid>
       <description>팀프로젝트를 진행하던 중 갑자기 html 렌더링 과정이 궁금해졌습니다. 인터넷 뒤적이며 조사한 내용을 바탕으로 작성한 글이니 부정확할 수 있습니다. 오타, 오류 지적 환</description>
     </item>
     
