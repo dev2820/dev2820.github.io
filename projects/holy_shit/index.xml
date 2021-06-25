@@ -10,39 +10,12 @@
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
     <lastBuildDate>Sat, 20 Mar 2021 00:23:58 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/projects/holy_shit/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>간단한 웹앱구축</title>
-      <link>https://dev2820.github.io/projects/holy_shit/%EA%B0%84%EB%8B%A8%ED%95%9C-%EC%9B%B9%EC%95%B1%EA%B5%AC%EC%B6%95/</link>
-      <pubDate>Sun, 16 May 2021 18:11:24 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/projects/holy_shit/%EA%B0%84%EB%8B%A8%ED%95%9C-%EC%9B%B9%EC%95%B1%EA%B5%AC%EC%B6%95/</guid>
-      <description>만들어진 html,css,js 파일들을 호스팅할 웹앱을 만들어봅시다. 호스팅 환경은 다음과 같습니다. 호스팅 환경 라즈베리파이4B ubuntu server 20.04 LTS 웹앱 Nodejs &amp;amp; Express를 사용합니</description>
-    </item>
-    
-    <item>
-      <title>Html,css로 간단한 화면 만들기 1</title>
-      <link>https://dev2820.github.io/projects/holy_shit/htmlcss%EB%A1%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%99%94%EB%A9%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
-      <pubDate>Sat, 17 Apr 2021 00:53:40 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/projects/holy_shit/htmlcss%EB%A1%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-%ED%99%94%EB%A9%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
-      <description>준비사항 HTML,CSS관련 책을 읽고 (아니면 생활코딩인강이라도 듣고) 아주 간단한 HTML파일, CSS파일을 작성할 수 있는 능력은 갖춰야합니다. (하</description>
-    </item>
-    
-    <item>
       <title>아주 기초적인 git</title>
       <link>https://dev2820.github.io/projects/holy_shit/simple_git_study/</link>
       <pubDate>Sat, 20 Mar 2021 11:23:58 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>https://dev2820.github.io/projects/holy_shit/simple_git_study/</guid>
       <description>페이지들을 만들기 전, 프로젝트를 시작하기 위한 아주아주아주 간단한 git 강의입니다. 오타, 오류 지적 환영입니다. Git? git은 형성 관리 시스템중 하나입니다. 소</description>
-    </item>
-    
-    <item>
-      <title>똥피하기 개요</title>
-      <link>https://dev2820.github.io/projects/holy_shit/%EB%98%A5%ED%94%BC%ED%95%98%EA%B8%B0-%EA%B0%9C%EC%9A%94/</link>
-      <pubDate>Sat, 20 Mar 2021 00:23:58 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/projects/holy_shit/%EB%98%A5%ED%94%BC%ED%95%98%EA%B8%B0-%EA%B0%9C%EC%9A%94/</guid>
-      <description>똥피하기 웹게임 프로젝트입니다. 학습용 프로젝트이며 HTML, CSS, JS과 웹페이지 서비스의 전반적인 내용을 공부,적용해보는 것을 목적으로 하고있습니다. 본 프로젝트</description>
     </item>
     
   </channel>
