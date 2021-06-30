@@ -8,11 +8,11 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Wed, 02 Jun 2021 20:55:44 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Jun 2021 00:06:58 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>study</title>
       <link>https://dev2820.github.io/tags/study/</link>
-      <pubDate>Wed, 02 Jun 2021 20:55:44 +0900</pubDate>
+      <pubDate>Tue, 29 Jun 2021 00:06:58 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>https://dev2820.github.io/tags/study/</guid>
       <description></description>
@@ -21,7 +21,7 @@
     <item>
       <title>web</title>
       <link>https://dev2820.github.io/tags/web/</link>
-      <pubDate>Wed, 02 Jun 2021 20:55:44 +0900</pubDate>
+      <pubDate>Tue, 29 Jun 2021 00:06:58 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>https://dev2820.github.io/tags/web/</guid>
       <description></description>
@@ -30,7 +30,7 @@
     <item>
       <title>공부정리</title>
       <link>https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80%EC%A0%95%EB%A6%AC/</link>
-      <pubDate>Wed, 02 Jun 2021 20:55:44 +0900</pubDate>
+      <pubDate>Tue, 29 Jun 2021 00:06:58 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80%EC%A0%95%EB%A6%AC/</guid>
       <description></description>
@@ -39,7 +39,7 @@
     <item>
       <title>컴퓨터 기술</title>
       <link>https://dev2820.github.io/tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B8%B0%EC%88%A0/</link>
-      <pubDate>Wed, 02 Jun 2021 20:55:44 +0900</pubDate>
+      <pubDate>Tue, 29 Jun 2021 00:06:58 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>https://dev2820.github.io/tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B8%B0%EC%88%A0/</guid>
       <description></description>
@@ -60,6 +60,42 @@
       <pubDate>Wed, 02 Jun 2021 20:55:44 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>https://dev2820.github.io/tags/%ED%81%AC%EB%A1%AC-%EC%BD%98%EC%86%94%EC%B0%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cookie</title>
+      <link>https://dev2820.github.io/tags/cookie/</link>
+      <pubDate>Mon, 24 May 2021 20:52:16 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/tags/cookie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>express</title>
+      <link>https://dev2820.github.io/tags/express/</link>
+      <pubDate>Mon, 24 May 2021 20:52:16 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/tags/express/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodejs</title>
+      <link>https://dev2820.github.io/tags/nodejs/</link>
+      <pubDate>Mon, 24 May 2021 20:52:16 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>쿠키</title>
+      <link>https://dev2820.github.io/tags/%EC%BF%A0%ED%82%A4/</link>
+      <pubDate>Mon, 24 May 2021 20:52:16 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/tags/%EC%BF%A0%ED%82%A4/</guid>
       <description></description>
     </item>
     

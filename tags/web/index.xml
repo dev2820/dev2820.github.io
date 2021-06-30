@@ -8,14 +8,32 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Wed, 02 Jun 2021 20:55:44 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Jun 2021 00:06:58 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nodejs의 세션</title>
+      <link>https://dev2820.github.io/study/web/nodejs%EC%9D%98-%EC%84%B8%EC%85%98/</link>
+      <pubDate>Tue, 29 Jun 2021 00:06:58 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/study/web/nodejs%EC%9D%98-%EC%84%B8%EC%85%98/</guid>
+      <description>세션에 대해 조사한 내용 + 알던 내용 정리 + nodejs,express 예제 글입니다. https://www.npmjs.com/package/express-session 를 위주로 작성하였습니다. 세션 세션(session)은 서버에 저장되는 key-value 형식의 데이터입니다</description>
+    </item>
+    
     <item>
       <title>console창에 문구 띄우기</title>
       <link>https://dev2820.github.io/study/web/console%EC%B0%BD%EC%97%90-%EB%AC%B8%EA%B5%AC%EB%9D%84%EC%9A%B0%EA%B8%B0/</link>
       <pubDate>Wed, 02 Jun 2021 20:55:44 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
       <guid>https://dev2820.github.io/study/web/console%EC%B0%BD%EC%97%90-%EB%AC%B8%EA%B5%AC%EB%9D%84%EC%9A%B0%EA%B8%B0/</guid>
-      <description>다른 사람들이 작성한 코드를 참고하려 티스토리 블로그를 돌아다니다보면 가끔 그런 블로그를 볼 때가 있습니다. 예시 코드가 가운데 정렬(text-align:c</description>
+      <description>다른 사람들이 작성한 코드를 참고하려 티스토리 블로그를 돌아다니다 보면 가끔 그런 블로그를 볼 때가 있습니다. 예시 코드가 가운데 정렬(text-align:c</description>
+    </item>
+    
+    <item>
+      <title>nodejs의 쿠키</title>
+      <link>https://dev2820.github.io/study/web/nodejs%EC%9D%98-%EC%BF%A0%ED%82%A4/</link>
+      <pubDate>Mon, 24 May 2021 20:52:16 +0900</pubDate>
+      <author>second28200@gmail.com (YANG GI JO)</author>
+      <guid>https://dev2820.github.io/study/web/nodejs%EC%9D%98-%EC%BF%A0%ED%82%A4/</guid>
+      <description>쿠키에 대해 조사한 내용 + 알던 내용 정리 + nodejs, express 예제 글입니다. 쿠키 쿠키는 클라이언트 측(브라우저)에 저장되는 key-value 형식의 데이터파일입니다. 브라우저에서도 쿠</description>
     </item>
     
     <item>

@@ -8,32 +8,14 @@
     <language>ko-KR</language>
     <managingEditor>second28200@gmail.com (YANG GI JO)</managingEditor>
     <webMaster>second28200@gmail.com (YANG GI JO)</webMaster>
-    <lastBuildDate>Sun, 18 Apr 2021 17:27:37 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 May 2021 20:52:16 +0900</lastBuildDate><atom:link href="https://dev2820.github.io/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>라즈베리파이4와 우분투 설치</title>
-      <link>https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/</link>
-      <pubDate>Sun, 18 Apr 2021 17:27:37 +0900</pubDate>
+      <title>nodejs의 쿠키</title>
+      <link>https://dev2820.github.io/study/web/nodejs%EC%9D%98-%EC%BF%A0%ED%82%A4/</link>
+      <pubDate>Mon, 24 May 2021 20:52:16 +0900</pubDate>
       <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/projects/my-little-raspi/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B44%EC%99%80-%EC%9A%B0%EB%B6%84%ED%88%AC-%EC%84%A4%EC%B9%98/</guid>
-      <description>라즈베리파이? - 라즈베리파이 로고 - 라즈베리파이 재단에서 만든 교육용 초소형 컴퓨터입니다. 핸드폰이 들고다니는 초소형 컴퓨터라면 이해가 빠를 겁니다. 제가</description>
-    </item>
-    
-    <item>
-      <title>프로젝트 개요</title>
-      <link>https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/</link>
-      <pubDate>Sun, 18 Apr 2021 16:56:09 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/projects/my-little-raspi/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94/</guid>
-      <description>나의 작은 라즈베리파이 프로젝트입니다. 뭐 라즈베리파이로 말을 만든다던가 그런건 아니고 라즈베리파이에 우분투를 탑재시켜 웹서버로 만드는 것 까지가 목표입니다</description>
-    </item>
-    
-    <item>
-      <title>Nodejs정리 1</title>
-      <link>https://dev2820.github.io/study/nodejs/nodejs%EC%A0%95%EB%A6%AC-1/</link>
-      <pubDate>Sun, 28 Mar 2021 12:37:51 +0900</pubDate>
-      <author>second28200@gmail.com (YANG GI JO)</author>
-      <guid>https://dev2820.github.io/study/nodejs/nodejs%EC%A0%95%EB%A6%AC-1/</guid>
-      <description>Node.js? nodejs 홈페이지 Node.js®는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임입니다. 위의 홈페이지에 들어가면 우리를 반겨주는 문구입니다. 말 그대로 JavaScript 실행환경입니다.</description>
+      <guid>https://dev2820.github.io/study/web/nodejs%EC%9D%98-%EC%BF%A0%ED%82%A4/</guid>
+      <description>쿠키에 대해 조사한 내용 + 알던 내용 정리 + nodejs, express 예제 글입니다. 쿠키 쿠키는 클라이언트 측(브라우저)에 저장되는 key-value 형식의 데이터파일입니다. 브라우저에서도 쿠</description>
     </item>
     
   </channel>
