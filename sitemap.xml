@@ -9,7 +9,25 @@
   </url>
   
   <url>
+    <loc>https://dev2820.github.io/tags/express/</loc>
+    <lastmod>2021-06-29T00:06:58+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/nodejs/</loc>
+    <lastmod>2021-06-29T00:06:58+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
     <loc>https://dev2820.github.io/study/web/nodejs%EC%9D%98-%EC%84%B8%EC%85%98/</loc>
+    <lastmod>2021-06-29T00:06:58+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dev2820.github.io/tags/session/</loc>
     <lastmod>2021-06-29T00:06:58+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
@@ -82,18 +100,6 @@
   
   <url>
     <loc>https://dev2820.github.io/tags/cookie/</loc>
-    <lastmod>2021-05-24T20:52:16+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/express/</loc>
-    <lastmod>2021-05-24T20:52:16+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://dev2820.github.io/tags/nodejs/</loc>
     <lastmod>2021-05-24T20:52:16+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
