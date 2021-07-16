@@ -309,8 +309,8 @@ console.log 예제 3
 <br/>
 <h3 id="settimeout0">setTimeout(~,0)</h3>
 <p><code>setTimeout(~,0)</code>. 이렇게 setTimeout에 0ms를 설정해주는 것은 처음보는 사람은 이게 무슨 의미가 있는 코드야? 라고 생각하겠지만, 의외로 유용하고 유명한 <strong>편법</strong>입니다.</p>
-<p>웹의 동작과정을 자세히 살펴보는 시간은 아니니 간단하게만 설명하겠습니다.</p>
-<p>자바스크립트 엔진은 싱글스레드로 작동합니다. 즉, 한번에 한가지 태스크만 처리할 수 있습니다. 자바스크립트 엔진을 사용하는 환경(브라우저 또는 node.js)에선 <strong>이벤트 루프</strong>라는 이름의 while문을 돌면서 태스크가 발생하는 것을 감시합니다. 태스크가 발생하면 <strong>task queue</strong>라는 큐에 태스크가 쌓이는데, 이벤트루프는 task queue에 태스크가 쌓이는 것을 감지하고 task queue에서 태스크를 꺼내 <strong>call stack</strong>(호출 스택)이라는 스택에 집어넣습니다. 자바스크립트 엔진은 이 call stack에서 태스크를 하나씩 꺼내 처리합니다.</p>
+<p>웹의 동작과정을 자세히 살펴보는 시간은 아니니 간단하게만 설명하겠습니다.(실제 작동은 훨씬 복잡합니다.)</p>
+<p>자바스크립트 엔진은 한번에 하나의 작업만 실행합니다. 자바스크립트 엔진을 사용하는 환경(브라우저 또는 node.js)에선 <strong>이벤트 루프</strong>라는 이름의 while문을 돌면서 태스크가 발생하는 것을 감시합니다. 태스크가 발생하면 <strong>task queue</strong>라는 큐에 태스크가 쌓이는데, 이벤트루프는 task queue에 태스크가 쌓이는 것을 감지하고 task queue에서 태스크를 꺼내 <strong>call stack</strong>(호출 스택)이라는 스택에 집어넣습니다. 자바스크립트 엔진은 이 call stack에서 태스크를 하나씩 꺼내 처리합니다.</p>
 <p>그럼 setTimeout이 일어나면 어떻게 될까요? 다음 코드를 Task1이라 합시다.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -423,22 +423,14 @@ A
   <section id="section-move">
     <nav class="section-move">
     
-      <a href="https://dev2820.github.io/study/web/nodejs%EC%9D%98-%EC%BF%A0%ED%82%A4/" class="previous card"> 
+      <a href="https://dev2820.github.io/study/web/css-%EC%84%A0%ED%83%9D%EC%9E%90-%EC%A0%95%EB%A6%AC/" class="previous card"> 
         <i class="fas fa-angle-double-left icon slide-left"></i>
         <div class="title">
           <small>prev</small>
-          <span>nodejs의 쿠키</span>
+          <span>CSS 선택자</span>
         </div>
       </a>
     
-    
-      <a href="https://dev2820.github.io/study/web/nodejs%EC%9D%98-%EC%84%B8%EC%85%98/" class="next card">
-        <div class="title">
-          <small>next</small>  
-          <span>nodejs의 세션</span>
-        </div>
-        <i class="fas fa-angle-double-right icon slide-right"></i>
-      </a>
     
 </nav>
   

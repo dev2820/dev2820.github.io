@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nodejs의 세션  | dev2820 개발일지</title>
+    <meta name="description"
+        content="dev2820의 개발일지 저장소 'nodejs의 세션'을 한 번 살펴보세요.">
+    <meta property="og:title" content="nodejs의 세션">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2021-06-29">
+    
+    <meta property="og:description"
+        content="dev2820의 개발일지 저장소 'nodejs의 세션'을 한 번 살펴보세요.">
+    <meta property="og:url" content="https://dev2820.github.io/study/nodejs/nodejs%EC%9D%98-%EC%84%B8%EC%85%98/">
+    <meta property="og:site_name" content="dev2820 개발일지">
+    
+    <meta property="og:image" content="https://dev2820.github.io/images/thumbnail.png">
+    
+    
+    <meta property="og:tags" content="study">
+    
+    <meta property="og:tags" content="컴퓨터 기술">
+    
+    <meta property="og:tags" content="공부정리">
+    
+    <meta property="og:tags" content="web">
+    
+    <meta property="og:tags" content="session">
+    
+    <meta property="og:tags" content="nodejs">
+    
+    <meta property="og:tags" content="express">
+    
+    
+    <link rel="icon" href="https://dev2820.github.io/images/favicon_32.png" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://dev2820.github.io/study/nodejs/nodejs%EC%9D%98-%EC%84%B8%EC%85%98/">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTD4CD0DNR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TTD4CD0DNR');
+    </script>
+    
+    
+    
+    <script src="/js/default.js"></script>
+    
+</head>
+<body id="body">
+        <div id="loader">
+            <span class="description">
+                loading
+            </span>
+        </div><div id="topbar" class="card">
+  <div class="menus">
+    <div class="logo">
+      <a href="/">
+        
+        <img src="/images/site_logo_dark.png" height="32px" width="96px"/>
+        
+      </a>
+    </div>
+    <div class="burger">
+      <button onclick="event.stopPropagation(); goToUrl('/search')">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </button>
+      <button onclick="event.stopPropagation(); toggleAside(true)">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div><aside id="left-aside">
+    <div class="profile-container">
+        <div class="profile">
+    <div class="cover">
+        
+        <img src="/images/cover.jpg" class="round-card">
+        
+    </div>
+    
+    
+    <h2>dev2820</h2>
+    
+    <p>풀스텍 웹개발을 지향합니다</p>
+    <div class="center">
+        <div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <div class="navigation-container">
+        <nav class="aside-menu center">
+            <ul>
+                <li>
+                    <i class="fas fa-home icon"></i>
+                    <a href="https://dev2820.github.io/">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-list icon"></i>
+                    <a href="https://dev2820.github.io//categories">Categories</a>
+                </li>
+                <li>
+                    <i class="fas fa-tags icon"></i>
+                    <a href="https://dev2820.github.io//tags">Tags</a>
+                </li>
+                <li>
+                    <i class="fas fa-search icon"></i>
+                    <a href="https://dev2820.github.io//search">Search</a>
+                </li>
+                <li>
+                    <i class="fas fa-user icon"></i>
+                    <a href="https://dev2820.github.io//about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+<header id="single-header" class="card-inset bg-cover">
+
+  <div class="curtain center">
+    <a class="go-back" href="javascript:history.back()"><i class="fas fa-arrow-left icon"></i></a>
+    <h1 class="title">nodejs의 세션</h1>
+    <div class="meta-data appear-300ms">
+      <p class="date"> <i class="far fa-calendar icon"></i> 2021.06.29 </p>
+      <p class="wordcount"> <i class="far fa-clock icon"></i> 8m</p>
+    </div>
+  </div>
+</header>
+
+<main id="single-main">
+  <div class="roller"></div>
+  <section id="content" class="appear-700ms">
+    <article class="content card">
+      <p>세션에 대해 조사한 내용 + 알던 내용 정리 + nodejs,express 예제 글입니다. <a href="https://www.npmjs.com/package/express-session">https://www.npmjs.com/package/express-session</a> 를 위주로 작성하였습니다.</p>
+<h2 id="세션">세션</h2>
+<p>세션(session)은 서버에 저장되는 key-value 형식의 데이터입니다.</p>
+<p>세션과 쿠키의 차이를 헷갈리시는 분들이 있는데, 간단하게 세션은 서버에 저장되고 쿠키는 브라우저에 저장된다고 생각하면 됩니다.</p>
+<h3 id="http-세션의-동작">Http 세션의 동작</h3>
+<p>세션은 클라이언트에서 생성할 수 없고 서버에서만 생성할 수 있습니다.
+서버 측에서 세션을 생성할 땐, 클라이언트에게 SID(session id)를 발급합니다. 클라이언트를 구분하는 고유번호라 생각하면 되는데, 세션이 발급되면 connect.sid 쿠키가 생성된 것을 확인할 수 있습니다. 앞으로 이 쿠키를 SID 쿠키라고 하겠습니다. 서버 측엔 해당 클라이언트가 사용할 세션을 저장합니다. 클라이언트에 SID 쿠키가 저장되어 있으니, 클라이언트로부터 request가 오면 request의 쿠키로부터 SID를 확인할 수 있음으로 해당 클라이언트의 세션을 매핑해 사용할 수 있습니다.</p>
+<h2 id="세션의-용도">세션의 용도</h2>
+<p>보통 사용자가 로그인하면 로그인 상태를 저장해 세션이 만료되기 전까지 서비스를 이용할 수 있게 하는 데 사용합니다. 사이트에 로그인해놓고 한참 뒤에 다시 이용하려고 하면 &lsquo;세션이 만료되었습니다.&lsquo;라고 뜨면서 다시 로그인 해야 하는 경험이 있으실 겁니다.</p>
+<h2 id="express에서-session-사용하기">Express에서 session 사용하기</h2>
+<p>express에서 세션을 사용하는 방법을 알아봅시다.</p>
+<h3 id="세션-모듈-설치">세션 모듈 설치</h3>
+<p>nodejs,express에선 세션을 내장 모듈로 지원하지 않기 때문에 express-session을 설치해줘야 합니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm i express-session
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="세션-미들웨어-추가">세션 미들웨어 추가</h3>
+<p>세션을 이용하기 위해 미들웨어를 등록해야 합니다. 뇌피셜이긴 하지만, 세션 미들웨어에서 request의 쿠키를 확인해 SID가 있다면 request에 세션 객체를 추가하는 과정이 일어나지 싶습니다. 모듈을 뜯어보진 않아서 정확하진 않습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4">4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5">5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6">6</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">app.use(session({
+    secret<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;12345&#39;</span>,
+    resave<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+    saveUninitialized<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span>,
+    cookie<span style="color:#ff79c6">:</span> { secure<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span> }
+}))
+</code></pre></td></tr></table>
+</div>
+</div><p>session에 사용할 수 있는 옵션들은 아래에서 정리해 설명하겠습니다.</p>
+<h3 id="세션-추가하기">세션 추가하기</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4">4</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">req.session.test <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;test string&#34;</span>;
+req.session.save(()=&gt;{
+    res.send(<span style="color:#f1fa8c">&#39;세션 생성 완료&#39;</span>);
+})
+</code></pre></td></tr></table>
+</div>
+</div><p>세션은 req.session으로 접속할 수 있습니다. 단순하게 <code>req.session['key'] = 'value'</code> 형식으로 저장하면 됩니다. <code>req.session.save</code>를 통해 세션을 명시적으로 저장할 수도 있지만, session data가 변경되면 response가 일어날 때 자동으로 save가 호출되기 때문에 사용하지 않아도 됩니다.</p>
+<h3 id="세션-가져오기">세션 가져오기</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4">4</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">if</span>(req.session.test){
+    console.log(req.session.test);
+    res.send(<span style="color:#f1fa8c">&#39;세션 o&#39;</span>);
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>저장된 세션을 읽어올 때는 단순히 req.session에서 요소를 읽어오면 됩니다.</p>
+<h3 id="세션-삭제">세션 삭제</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4">4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5">5</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">if</span>(req.session){
+    req.session.destroy(()=&gt;{
+        res.redirect(<span style="color:#f1fa8c">&#39;/&#39;</span>);
+    });
+}
+</code></pre></td></tr></table>
+</div>
+</div><p><code>req.session.destroy</code> 함수를 통해 세션을 제거합니다.</p>
+<h3 id="미들웨어-옵션">미들웨어 옵션</h3>
+<p>미들웨어를 등록할 때 줄 수 있는 옵션은 아래와 같습니다.</p>
+<ul>
+<li>
+<p>cookie<br>
+SID 쿠키에 대한 설정입니다. cookie 옵션은 객체 형식으로 줄 수 있으며 default는 <code>{ path: '/', httpOnly: true, secure: false, maxAge: null }</code>입니다. 쿠키에 설정하는 옵션과 같습니다. 여기서는 default로 설정된 쿠키 옵션만 알아보겠습니다.</p>
+<ul>
+<li><code>path</code>: String, 쿠키를 전송할 경로를 지정합니다. 세션의 경우 session을 사용하게 될 path를 정해주는 역할을 합니다. 정해진 path가 아닌 경로에 접근하면 session이 없는 것처럼 작동합니다.</li>
+<li><code>httpOnly</code>: Boolean, 클라이언트 측에서 쿠키에 접근하는 것을 막습니다. 즉, document.cookie를 통한 쿠키 접근을 막습니다.</li>
+<li><code>secure</code>: Boolean, https 통신에서만 쿠키 전송을 허용합니다. express-session 개발자는 <code>secure: true</code>를 사용할 것을 권장합니다.</li>
+<li><code>maxAge</code>: 쿠키가 유지될 기간입니다. 초 단위로 설정할 수 있습니다. 세션을 통한 로그인 유지를 구현하려면 maxAge를 설정해줘야겠죠.</li>
+</ul>
+</li>
+</ul>
+<p>쿠키 옵션에 대해 더 알고 싶다면 제 블로그의 <i class="fas fa-link"></i>
+<a target="_blank" href="/study/web/nodejs%ec%9d%98-%ec%bf%a0%ed%82%a4/">
+    쿠키 정리 글
+</a>을 보셔도 좋고, <i class="fas fa-link"></i>
+<a target="_blank" href="https://www.npmjs.com/package/express-session">
+    express-session npm 공식 페이지
+</a>를 직접 읽어보셔도 좋습니다.</p>
+<ul>
+<li>
+<p>genid<br>
+SID로 사용할 로직을 정의하는 옵션입니다. <code>genid: function(req){}</code>형식으로 사용하면 되고, SID로 사용할 String을 return 하면 됩니다. default로 uid-safe 라이브러리를 통한 SID 생성 함수를 사용합니다.</p>
+</li>
+<li>
+<p>name<br>
+SID 쿠키의 이름을 설정합니다. default는 <code>connect.sid</code>입니다.</p>
+</li>
+<li>
+<p>proxy<br>
+리버스 프록시를 사용하는 경우 설정하는 옵션입니다. <code>true</code>로 설정하면 <code>X-Forwarded-Proto</code> 헤더가 사용됩니다. default는 <code>undefined</code>로, express에 <code>trust proxy</code>로 등록된 주소에 대해서만 세션이 동작합니다.</p>
+</li>
+<li>
+<p>resave<br>
+express-session은 기본적으로 세션에 변경이 있을 때만 세션을 저장합니다. <code>resave:true</code>로 설정한다면 변경사항이 없어도 session을 다시 저장합니다. default는 <code>true</code>입니다. <code>false</code>로 설정하면 불필요한 session 저장을 막아주기 때문에 보통 <code>false</code>로 설정합니다.</p>
+</li>
+<li>
+<p>saveUninitialized<br>
+세션이 생성되었지만 어떠한 데이터도 추가되거나 변경되지 않은 상태를 <strong>uninitialized</strong> 라고 합니다. <code>saveUninitialized:true</code>로 설정한다면 uninitialized session도 저장합니다. <code>false</code>로 설정하면 uninitialized session은 저장하지 않으므로 리소스 활용 측면에서 조금 더 유리합니다.</p>
+</li>
+</ul>
+<p>default값은 <code>true</code>이지만 개발자가 이후에 default를 바꿀 수도 있다고 합니다.</p>
+<ul>
+<li>rolling<br>
+세션이 만료되기 전, 새로 고침 또는 페이지 이동이 일어나면 세션 만료를 갱신하는 옵션입니다. default는 <code>rolling:false</code>입니다.</li>
+</ul>
+<p>한 가지 주의할 점은, <code>saveUninitialized</code> 옵션이 <code>false</code>인 경우 uninitialized 세션에 대해선 rolling이 작동하지 않습니다. 따라서 단순히 로그인 여부 확인을 위해 session을 사용한다면(즉, uninitialized 세션을 사용하는 경우) saveUninitialized 옵션을 <code>true</code>로 설정해 줘야합니다.</p>
+<ul>
+<li>
+<p>secret<br>
+<strong>필수적으로 설정해줘야 하는 옵션</strong>입니다. SID를 생성할 때 사용되는 비밀키로 String 또는 Array를 사용할 수 있습니다. Array를 사용하는 경우, 첫 번째 요소를 비밀키로 사용합니다.</p>
+</li>
+<li>
+<p>store<br>
+세션을 어디에 저장할지 결정하는 옵션입니다. default는 MemoryStore로 메모리에 저장됩니다. 따라서 프로세스가 종료되면 세션이 없어집니다. 프로세스가 예상치 못하게 종료되어도 세션을 유지하기 위해 세션을 저장하는 방법을 알아야겠죠? express-session은 store 옵션을 통해 session을 저장할 곳을 결정할 수 있습니다.</p>
+</li>
+</ul>
+<i class="fas fa-link"></i>
+<a target="_blank" href="https://www.npmjs.com/package/express-session#compatible-session-stores">
+    compatible-session-stores
+</a>
+<p>express-session에 연동되어 session을 저장할 수 있는 모듈들은 위 링크를 참고하시길 바랍니다.</p>
+<p>보통은 file, redis, mongoDB 등을 사용하는데, 여기까지 다루면 글이 길어지니 다음에 다뤄보겠습니다.</p>
+<ul>
+<li>unset<br>
+삭제된 session을 어떻게 관리할지 결정하는 옵션입니다. <code>destroy</code>와 <code>keep</code>을 사용할 수 있는데, <code>destroy</code>는 response가 끝날 때 store에서 삭제하는 옵션, <code>keep</code>은 store에선 삭제하지 않지만 더 이상 변경할 수 없게 하는 옵션입니다. default는 <code>keep</code>입니다.</li>
+</ul>
+<h2 id="session-메소드들">session 메소드들</h2>
+<p>session에 내장된 메소드들을 알아봅시다.</p>
+<h3 id="regeneratecallback">regenerate(callback)</h3>
+<p>세션을 재생성하는 메소드로, SID가 새로 부과됩니다. callback으로 재생성 후 수행할 함수를 전달해주면 됩니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">req.session.regenerate(<span style="color:#8be9fd;font-style:italic">function</span>(err){
+    <span style="color:#6272a4">// will have a new session here
+</span><span style="color:#6272a4"></span>})
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="destroycallback">destroy(callback)</h3>
+<p>세션을 명시적으로 삭제하는 메소드입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">req.session.destroy(<span style="color:#8be9fd;font-style:italic">function</span>(err){
+    <span style="color:#6272a4">// cannot access session here
+</span><span style="color:#6272a4"></span>})
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="reloadcallback">reload(callback)</h3>
+<p>store에 저장된 session date를 다시 불러오는 메소드입니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">req.session.reload(<span style="color:#8be9fd;font-style:italic">function</span>(err) {
+  <span style="color:#6272a4">// session updated
+</span><span style="color:#6272a4"></span>})
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="savecallback">save(callback)</h3>
+<p>세션을 store에 명시적으로 저장하는 메소드입니다. 앞서 언급했듯, response의 마지막에 session을 자동으로 저장하기 때문에 보통은 사용하지 않아도 됩니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2">2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3">3</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">req.session.save(<span style="color:#8be9fd;font-style:italic">function</span>(err) {
+  <span style="color:#6272a4">// session saved
+</span><span style="color:#6272a4"></span>})
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="touch">touch()</h3>
+<p>명시적으로 세션의 maxAge를 갱신합니다. (rolling옵션의 역할과 비슷)</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1">1</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">req.session.touch()
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="session에-포함된-변수들">session에 포함된 변수들</h2>
+<h3 id="sessionid-sessionid">session.id, sessionID</h3>
+<p>sessionID는 말 그대로 SID입니다. 변경 불가능한 값으로 session을 load 하거나 생성할 때 부과되는 값입니다. 세션이 갱신되면 이 값도 변경됩니다.</p>
+<p>req.session.id는 req.sessionID의 별칭(alias)입니다.</p>
+<h3 id="sessioncookie">session.cookie</h3>
+<p>SID 쿠키의 설정값이 들어있습니다. 이 값은 수정할 수 있어서 사용자마다 다르게 쿠키 설정을 해줄 수 있습니다.</p>
+<h2 id="간단한-세션-예제">간단한 세션 예제</h2>
+<p>간단하게 session을 달아 express를 실행시켜보겠습니다.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-1"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-1"> 1</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-2"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-2"> 2</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-3"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-3"> 3</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-4"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-4"> 4</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-5"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-5"> 5</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-6"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-6"> 6</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-7"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-7"> 7</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-8"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-8"> 8</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-9"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-9"> 9</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-10"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-10">10</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-11"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-11">11</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-12"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-12">12</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-13"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-13">13</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-14"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-14">14</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-15"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-15">15</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-16"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-16">16</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-17"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-17">17</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-18"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-18">18</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-19"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-19">19</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-20"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-20">20</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-21"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-21">21</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-22"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-22">22</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-23"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-23">23</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-24"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-24">24</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-25"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-25">25</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-26"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-26">26</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-27"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-27">27</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-28"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-28">28</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-29"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-29">29</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-30"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-30">30</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-31"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-31">31</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-32"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-32">32</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-33"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-33">33</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-34"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-34">34</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-35"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-35">35</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-36"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-36">36</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-37"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-37">37</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-38"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-38">38</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-39"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-39">39</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-40"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-40">40</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-41"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-41">41</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-42"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-42">42</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-43"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-43">43</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-44"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-44">44</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-45"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-45">45</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-46"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-46">46</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-47"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-47">47</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-48"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-48">48</a>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="prefix-49"><a style="outline: none; text-decoration:none; color:inherit" href="#prefix-49">49</a>
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ff79c6">const</span> express <span style="color:#ff79c6">=</span> require(<span style="color:#f1fa8c">&#39;express&#39;</span>);
+<span style="color:#ff79c6">const</span> session <span style="color:#ff79c6">=</span> require(<span style="color:#f1fa8c">&#39;express-session&#39;</span>);
+<span style="color:#ff79c6">const</span> port <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">3000</span>;
+
+<span style="color:#ff79c6">const</span> app <span style="color:#ff79c6">=</span> express();
+app.use(session({
+    secret<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;12345&#39;</span>,
+    resave<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+    saveUninitialized<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span>,
+    cookie<span style="color:#ff79c6">:</span> { secure<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span> }
+}))
+app.get(<span style="color:#f1fa8c">&#39;/&#39;</span>,(req, res) =&gt; {
+    res.send(<span style="color:#f1fa8c">&#39;hello world&#39;</span>);
+})
+app.get(<span style="color:#f1fa8c">&#39;/makeSession&#39;</span>, (req, res) =&gt; {
+    <span style="color:#ff79c6">if</span>(req.session.test){
+        res.send(<span style="color:#f1fa8c">&#39;세션이 이미 존재&#39;</span>);
+    }
+    <span style="color:#ff79c6">else</span> {  
+        req.session.test <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;test string&#34;</span>;
+        res.send(<span style="color:#f1fa8c">&#39;세션 생성&#39;</span>);
+    }
+})
+
+app.get(<span style="color:#f1fa8c">&#39;/confirmSession&#39;</span>, (req, res) =&gt; {
+    <span style="color:#ff79c6">if</span>(req.session.test){
+        console.log(req.session);
+        res.send(<span style="color:#f1fa8c">&#39;세션 o&#39;</span>);
+    }
+    <span style="color:#ff79c6">else</span> {
+        console.log(<span style="color:#f1fa8c">&#39;no session&#39;</span>);
+        res.send(<span style="color:#f1fa8c">&#39;세션 x&#39;</span>);
+    }
+})
+
+app.get(<span style="color:#f1fa8c">&#39;/deleteSession&#39;</span>, (req, res) =&gt; {
+    <span style="color:#ff79c6">if</span>(req.session){
+        req.session.destroy(()=&gt;{
+            res.redirect(<span style="color:#f1fa8c">&#39;/&#39;</span>);
+        });
+    }
+    <span style="color:#ff79c6">else</span> {
+        res.send(<span style="color:#f1fa8c">&#39;제거할 세션이 없습니다.&#39;</span>);
+    }
+})
+
+app.listen(port, () =&gt; {
+    console.log(<span style="color:#f1fa8c">`session 테스트용 앱 http://localhost:</span><span style="color:#f1fa8c">${</span>port<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>)
+})
+</code></pre></td></tr></table>
+</div>
+</div><p><figure role="img">
+    <img src="images/%ec%84%b8%ec%85%98%ec%98%88%ec%a0%9c1.png" alt="nodejs session">
+    <figcaption>- 
+예제 앱 실행
+ -</figcaption>
+</figure>
+<br/>
+<figure role="img">
+    <img src="images/%ec%84%b8%ec%85%98%ec%98%88%ec%a0%9c2.png" alt="nodejs session">
+    <figcaption>- 
+`localhost:3000`에 접속한 결과
+ -</figcaption>
+</figure>
+<br/>
+아직 session을 생성하지 않았기 때문에 SID가 발급되지 않은 것을 확인할 수 있습니다.</p>
+<p><figure role="img">
+    <img src="images/%ec%84%b8%ec%85%98%ec%98%88%ec%a0%9c3.png" alt="nodejs session">
+    <figcaption>- 
+`/makeSession`에 접속한 결과
+ -</figcaption>
+</figure>
+<br/>
+<code>/makeSession</code>에 접속해 세션을 생성했습니다.</p>
+<p>개발자모드를 열어 쿠키를 확인해보면 <code>connect.sid</code>라는 쿠키가 생성된 것을 확인할 수 있습니다.</p>
+<p>이제 <code>/confirmSession</code>에 접속해봅시다.
+<figure role="img">
+    <img src="images/%ec%84%b8%ec%85%98%ec%98%88%ec%a0%9c4.png" alt="nodejs session">
+    <figcaption>- 
+`/confirmSession`에 접속한 결과
+ -</figcaption>
+</figure>
+<br/>
+<figure role="img">
+    <img src="images/%ec%84%b8%ec%85%98%ec%98%88%ec%a0%9c5.png" alt="nodejs session">
+    <figcaption>- 
+test가 생성된 것을 확인할 수 있다.
+ -</figcaption>
+</figure>
+<br/>
+이번엔 <code>/deleteSession</code>에 접속해 세션을 삭제해 봅시다.
+<figure role="img">
+    <img src="images/%ec%84%b8%ec%85%98%ec%98%88%ec%a0%9c6.png" alt="nodejs session">
+    <figcaption>- 
+`/deleteSession`에 접속한 결과
+ -</figcaption>
+</figure>
+<br/>
+세션 삭제시 <code>/</code>로 redirect하게 만들었기 때문에 <code>/</code>로 돌아온 것을 확인할 수 있습니다. 개발자모드를 열어보면 SID는 삭제되지 않은 것을 확인할 수 있습니다. 세션을 삭제해도 SID 쿠키는 삭제되지 않습니다.</p>
+<p>다시 <code>/confirmSession</code>에 접속해봅시다.
+<figure role="img">
+    <img src="images/%ec%84%b8%ec%85%98%ec%98%88%ec%a0%9c7.png" alt="nodejs session">
+    <figcaption>- 
+`/confirmSession`에 재접속
+ -</figcaption>
+</figure>
+<br/>
+<figure role="img">
+    <img src="images/%ec%84%b8%ec%85%98%ec%98%88%ec%a0%9c8.png" alt="nodejs session">
+    <figcaption>- 
+no session이 출력된 것을 확인할 수 있다.
+ -</figcaption>
+</figure>
+<br/></p>
+<h2 id="마치며">마치며</h2>
+<p>세션을 redis나 file형식으로 저장하는 방법은 다음에 호스팅하겠습니다. 언제라고는 장담 못 하겠네요. 🤔</p>
+<h2 id="참고한-링크">참고한 링크</h2>
+<p><a href="https://www.npmjs.com/package/express-session">https://www.npmjs.com/package/express-session</a></p>
+
+    </article>
+    <aside id="right-aside">
+      <div class="post-toc card" id="post-toc">
+    <div class="post-toc-title">
+        <span>차례</span>
+    </div>
+    <div id="table">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#세션">세션</a>
+      <ul>
+        <li><a href="#http-세션의-동작">Http 세션의 동작</a></li>
+      </ul>
+    </li>
+    <li><a href="#세션의-용도">세션의 용도</a></li>
+    <li><a href="#express에서-session-사용하기">Express에서 session 사용하기</a>
+      <ul>
+        <li><a href="#세션-모듈-설치">세션 모듈 설치</a></li>
+        <li><a href="#세션-미들웨어-추가">세션 미들웨어 추가</a></li>
+        <li><a href="#세션-추가하기">세션 추가하기</a></li>
+        <li><a href="#세션-가져오기">세션 가져오기</a></li>
+        <li><a href="#세션-삭제">세션 삭제</a></li>
+        <li><a href="#미들웨어-옵션">미들웨어 옵션</a></li>
+      </ul>
+    </li>
+    <li><a href="#session-메소드들">session 메소드들</a>
+      <ul>
+        <li><a href="#regeneratecallback">regenerate(callback)</a></li>
+        <li><a href="#destroycallback">destroy(callback)</a></li>
+        <li><a href="#reloadcallback">reload(callback)</a></li>
+        <li><a href="#savecallback">save(callback)</a></li>
+        <li><a href="#touch">touch()</a></li>
+      </ul>
+    </li>
+    <li><a href="#session에-포함된-변수들">session에 포함된 변수들</a>
+      <ul>
+        <li><a href="#sessionid-sessionid">session.id, sessionID</a></li>
+        <li><a href="#sessioncookie">session.cookie</a></li>
+      </ul>
+    </li>
+    <li><a href="#간단한-세션-예제">간단한 세션 예제</a></li>
+    <li><a href="#마치며">마치며</a></li>
+    <li><a href="#참고한-링크">참고한 링크</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </aside>
+  </section>
+  <section id="section-move">
+    <nav class="section-move">
+    
+      <a href="https://dev2820.github.io/study/nodejs/nodejs%EC%9D%98-%EC%BF%A0%ED%82%A4/" class="previous card"> 
+        <i class="fas fa-angle-double-left icon slide-left"></i>
+        <div class="title">
+          <small>prev</small>
+          <span>nodejs의 쿠키</span>
+        </div>
+      </a>
+    
+    
+</nav>
+  
+  </section>
+  <section id="meta">
+    <div class="card">
+      
+      
+<div class="category_breadcrumb_title">
+    <h2 class="title"><i class="fas fa-folder icon"></i>Categories</h2>
+</div>
+<div class="category_breadcrumb">
+    <a href="https://dev2820.github.io/categories/study" class="action name">
+        
+        study
+    </a>
+    <span class="action slash">/</span>
+    
+    <a href="https://dev2820.github.io/subcategories/web" class="action name">
+        
+        <span class="name">Web</span>     
+    </a>
+    
+</div>
+
+
+      <div class="tag_list_title">
+    <h2 class="title"><i class="fas fa-hashtag icon"></i>Tags</h2>
+</div>
+<ul class="tags tag_list">
+    
+        <li><a href="https://dev2820.github.io/tags/study/" class="action"><i class="fas fa-hashtag icon"></i>study</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B8%B0%EC%88%A0/" class="action"><i class="fas fa-hashtag icon"></i>컴퓨터 기술</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/%EA%B3%B5%EB%B6%80%EC%A0%95%EB%A6%AC/" class="action"><i class="fas fa-hashtag icon"></i>공부정리</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/web/" class="action"><i class="fas fa-hashtag icon"></i>web</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/session/" class="action"><i class="fas fa-hashtag icon"></i>session</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/nodejs/" class="action"><i class="fas fa-hashtag icon"></i>nodejs</a></li>
+    
+        <li><a href="https://dev2820.github.io/tags/express/" class="action"><i class="fas fa-hashtag icon"></i>express</a></li>
+    
+</ul>
+
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dev2820-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </section>
+</main>
+
+  <footer id="footer" class="bg-cover" style="background-image:url(/images/footer.png)">
+    <button onclick="scrollToTop()" class="scroll-to-top card">
+      <i class="fas fa-angle-double-up icon"></i>
+    </button>
+    <button onclick="scrollToBottom()" class="scroll-to-bottom card">
+      <i class="fas fa-angle-double-down icon"></i>
+    </button>
+    
+    <div class="center"><div class="share">
+    <a href ="https://github.com/dev2820">
+        <i class="fab fa-github icon"></i>
+    </a>
+    <a href ="https://mailto:second28200@gmail.com">
+        <i class="fas fa-envelope icon"></i>
+    </a> 
+    <a href ="/index.xml">
+        <i class="fas fa-rss icon"></i>
+    </a>
+</div><div class="copyright center">
+        <span>COPYRIGHT 2021-2021. <a href="https://dev2820.github.io"> GIJO YANG (DEV2820).</a></span>
+        <span>ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  <script id="dsq-count-scr" src="//dev2820-github-io.disqus.com/count.js" async></script>
+    </body>
+</html>
